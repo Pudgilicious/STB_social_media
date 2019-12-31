@@ -1,0 +1,48 @@
+---
+title: "List of POIs"
+author: "Zheng Yifei"
+date: "26/11/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(stringr)
+```
+
+
+```{r}
+cleaned_poi <- read.csv("cleaned_poi.csv", colClasses = "character")
+sum_footfall <- read.csv("sum_footfall.csv", colClasses = "character")
+```
+
+```{r}
+head(cleaned_poi)
+```
+
+```{r}
+head(sum_footfall)
+```
+
+```{r}
+df <- subset(cleaned_poi, poi_name %in% sum_footfall$poi)
+df <- df[order(df$poi_name), ]
+df
+subset(df, facebook_places_id != 0)
+```
+
+```{r}
+subset(sum_footfall, poi %in% cleaned_poi$poi_name)
+```
+
+```{r}
+subset(sum_footfall, !(poi %in% cleaned_poi$poi_name))
+```
+
+```{r}
+
+```
+

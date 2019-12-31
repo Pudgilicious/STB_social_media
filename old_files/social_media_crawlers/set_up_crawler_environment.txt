@@ -1,0 +1,21 @@
+#Installing google chrome driver from here-->https://chromedriver.storage.googleapis.com/index.html?path=75.0.3770.140/
+#Put it in the same folder as the crawlers
+
+conda create -n crawl python=3.7
+
+source activate crawl
+
+pip install requests
+pip install scrapy	#1.7.1
+pip install selenium	#3.141.0
+
+pip install pandas     #0.25.0
+pip install twint      #1.2.0.0
+
+pip install aiohttp-socks  #0.2.2 
+
+pip install --upgrade -e git+https://github.com/twintproject/twint.git@origin/master#egg=twint
+
+#-e git+https://github.com/twintproject/twint.git@d35a1d9aa8ee595e0071d4326f68a0fcca36d6ab#egg=twint
+
+

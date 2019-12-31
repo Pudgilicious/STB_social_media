@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1566050728666.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "409E8698",
+    "lastKnownWriteTime" : 1566051497,
+    "last_content_update" : 1566051497992,
+    "path" : "~/Desktop/NUS_deliverables/190816_social_media_crawlers/trip/R/dedup_linkedlist.R",
+    "project_path" : "R/dedup_linkedlist.R",
+    "properties" : {
+        "cursorPosition" : "5,2",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

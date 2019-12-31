@@ -1,0 +1,22 @@
+# Download google chrome driver from the following:
+# https://chromedriver.storage.googleapis.com/index.html?path=78.0.3904.105/
+
+# Unzip and place chromedriver into same folder as crawler.py
+
+# Conda environment to be created as follows:
+
+conda create -n crawl python=3.7
+
+source activate crawl
+
+pip install mysql-connector-python
+pip install scrapy
+pip install selenium	
+pip install pandas
+pip install urllib3
+pip install twint
+pip install aiohttp-socks
+pip install ibm_watson
+pip install ibm_cloud_sdk_core
+pip install json
+pip install --upgrade -e git+https://github.com/twintproject/twint.git@origin/master#egg=twint
