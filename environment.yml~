@@ -174,4 +174,5 @@ dependencies:
     - yarl==1.4.2
     - zipp==0.6.0
     - zope-interface==4.7.1
+prefix: /home/zyf0717/anaconda3/envs/crawl
 

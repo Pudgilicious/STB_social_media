@@ -1,0 +1,4 @@
+host: localhost
+database: sentimentDB
+user: test_user
+password: Password123!
