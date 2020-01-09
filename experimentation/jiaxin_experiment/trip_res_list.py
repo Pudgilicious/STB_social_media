@@ -65,7 +65,7 @@ for i in range(28):
         
 driver.quit()
 
-#Write out as data-frame
+#Write out as data-frame with date
 today = date.today()
 today_date = today.strftime("%Y%m%d")
 poi_df.to_csv("./experimentation/jiaxin_experiment/" + today_date + "_attractions_list.csv", encoding='utf-8', index = False)
