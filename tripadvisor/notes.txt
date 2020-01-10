@@ -1,0 +1,46 @@
+### 'read more' button ###
+
+<span class="location-review-review-list-parts-ExpandableReview__cta--2mR2g">Read more</span>
+<span class="location-review-review-list-parts-ExpandableReview__cta--2mR2g">Read more</span>
+
+### reviewer url ###
+
+<a class="ui_header_link social-member-event-MemberEventOnObjectBlock__member--35-jC" href="/Profile/274HadarG">Hadar G</a>
+
+### reviewer name ###
+
+<a class="ui_header_link social-member-event-MemberEventOnObjectBlock__member--35-jC" href="/Profile/609kylieh">Kylie H</a>
+
+### review date ###
+
+<div class="social-member-event-MemberEventOnObjectBlock__event_type--3njyv"><span><a class="ui_header_link social-member-event-MemberEventOnObjectBlock__member--35-jC" href="/Profile/crystaldreams">crystaldreams</a> wrote a review Yesterday</span></div>
+
+### raw home location ###
+
+<span class="default social-member-common-MemberHometown__hometown--3kM9S small"><span class="ui_icon map-pin-fill social-member-common-MemberHometown__icon--3WpeC"></span>Sydney, Australia</span>
+
+### date of experience ###
+
+<span class="location-review-review-list-parts-EventDate__event_date--1epHa"><span class="location-review-review-list-parts-EventDate__bold--3b3PE">Date of experience:</span> December 2019</span>
+
+### review rating ###
+
+<div class="location-review-review-list-parts-RatingLine__bubbles--GcJvM" data-test-target="review-rating"><span class="ui_bubble_rating bubble_30"></span></div>
+
+<span class="ui_bubble_rating bubble_50"></span>
+
+### review title ###
+
+<a href="/ShowUserReviews-g294265-d1837767-r738045852-Marina_Bay_Sands_Skypark-Singapore.html" class="location-review-review-list-parts-ReviewTitle__reviewTitleText--2tFRT"><span><span>Must see in singapore</span></span></a>
+
+### review body ###
+<q class="location-review-review-list-parts-ExpandableReview__reviewText--gOmRC"><span>These gardens are absolutely incredible. this place is a must see. we visited Singapore for a week and went to the gardens a few times. they are worth the trip. when its day time you can enjoy all the beautiful and rear vegetation and flower and the incredible structures the domes and the supertree groves. at night you will love the amazing light show its spectacular. everything is lit and they do a musical light show twice every evening. we stayed for both show because its just so awesome! you will need a few hours for this so if you can only go once make  sure you go at around 4pm so you'll be able to enjoy the place at day time and see the light show in the evening after the sun goes down.</span></q>
+
+<q class="location-review-review-list-parts-ExpandableReview__reviewText--gOmRC"><span>My college teen and I spent time in both the day and went back at night if you can only see it once, go at night, spectacular. There's a lot to see here, tickets are available on the day of only not in advance. It's was quiet during the day but at night it all comes alive. There are several restaurants and seasonal events, Great place for the anyone to visit.</span></q>
+
+### 'Next' button ###
+
+<a class="ui_button nav next primary " href="/Attraction_Review-g294265-d1837767-Reviews-or5-Marina_Bay_Sands_Skypark-Singapore.html">Next</a>
+
+#####################
+
