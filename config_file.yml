@@ -1,4 +1,11 @@
-host: localhost
-database: sentimentDB
-user: test_user
-password: Password123!
+General:
+    host: localhost
+    database: sentimentDB
+    user: test_user
+    password: Password123!
+    chromedriver_path: ./chromedriver
+    
+TripAdvisor:
+    end_date: '01/01/2016' # dd/mm/yy
+    db_in_flag: False
+    db_out_flag: False
