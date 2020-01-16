@@ -7,5 +7,5 @@ General:
     
 TripAdvisor:
     end_date: '01/01/2016' # dd/mm/yy
-    db_in_flag: False
-    db_out_flag: False
+    db_in_flag: 'csv' # csv, sqlite, mysql
+    db_out_flag: 'csv' # csv, sqlite, mysql
