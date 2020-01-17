@@ -6,6 +6,5 @@ General:
     chromedriver_path: ./chromedriver
     
 TripAdvisor:
-    end_date: '160101' # yymmdd (%y%m%d)
-    db_in_flag: 'csv' # csv, sqlite, mysql
-    db_out_flag: 'csv' # csv, sqlite, mysql
+    db_in_flag: False
+    db_out_flag: False
