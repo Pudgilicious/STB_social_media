@@ -145,7 +145,7 @@ class CrawlTripAdvisor:
         poi_attributes_dict = dict(zip(self.attributes_col_names, poi_attributes))
         self.attributes_df = self.attributes_df.append(poi_attributes_dict, ignore_index=True)
 
-    def crawl_reviews_1_page(self, poi_index, earliest_date=None):
+    def crawl_reviews_1_page(self, poi_index):
         driver = self.driver
 
         # To crawl all languages, uncomment the follwing 3 lines:
@@ -180,7 +180,7 @@ class CrawlTripAdvisor:
             trip_type = self.parse_trip_type(review_body_elements[i].text)
 
             review_details = [None,  # REVIEW_INDEX
-                              1, # WEBSITE_INDEX (TripAdvisor is '1')
+                              1,  # WEBSITE_INDEX (TripAdvisor is '1')
                               poi_index,
                               reviewer_url,
                               review_id,
