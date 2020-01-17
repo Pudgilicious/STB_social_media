@@ -267,10 +267,12 @@ class CrawlTripAdvisor:
     def parse_location_contributions_votes(text):
         location, contributions, votes = None, None, None
 
+        # Need to parse ','.
         votes_search = re.search('(\d+) helpful votes?', text)
         if votes_search is not None:
             votes = int(votes_search.group(1))
 
+        # Need to parse ','.
         contributions_search = re.search('(\d+) contributions?', text)
         if contributions_search is not None:
             contributions = int(contributions_search.group(1))
