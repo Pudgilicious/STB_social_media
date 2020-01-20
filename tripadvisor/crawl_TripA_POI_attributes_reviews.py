@@ -147,6 +147,7 @@ class CrawlTripAdvisor:
 
     def crawl_reviews_1_page(self, poi_index):
         driver = self.driver
+        sleep(2)
 
         # To crawl all languages, uncomment the follwing 3 lines:
         # all_languages_button = driver.find_element_by_xpath('//span[@class="location-review-review-list-parts-LanguageFilter__no_wrap--2Dckv"]')
@@ -158,14 +159,18 @@ class CrawlTripAdvisor:
         sleep(1)
 
         # Crawling review elements.
-        reviewer_url_elements = driver.find_elements_by_xpath('//a[@class="ui_header_link social-member-event-MemberEventOnObjectBlock__member--35-jC"]')
+        reviewer_url_elements = driver.find_elements_by_xpath('//div[@class="social-member-event-MemberEventOnObjectBlock__event_type--3njyv"]/span/a')
         reviewer_details_elements = driver.find_elements_by_xpath('//div[@class="social-member-event-MemberEventOnObjectBlock__event_wrap--1YkeG"]')
         review_id_elements = driver.find_elements_by_xpath('//div[@class="location-review-review-list-parts-SingleReview__mainCol--1hApa"]')
         review_rating_elements = driver.find_elements_by_xpath('//div[@class="location-review-review-list-parts-RatingLine__bubbles--GcJvM"]/span')
         review_title_elements = driver.find_elements_by_xpath('//a[@class="location-review-review-list-parts-ReviewTitle__reviewTitleText--2tFRT"]')
         review_body_elements = driver.find_elements_by_xpath('//div[@class="location-review-review-list-parts-ExpandableReview__containerStyles--1G0AE"]')
 
-        for i in range(len(reviewer_url_elements)):
+        reviews_per_page = len(reviewer_url_elements)
+        if reviews_per_page != 5:
+            print(len(reviewer_url_elements))
+
+        for i in range(reviews_per_page):
 
             # Parsing review and reviewer details
             reviewer_url = reviewer_url_elements[i].get_attribute('href')
@@ -213,7 +218,6 @@ class CrawlTripAdvisor:
         next_button = driver.find_element_by_xpath('//a[@class="ui_button nav next primary "]')
         if next_button:
             next_button.click()
-            sleep(1)
 
     # Methods below are all static utility functions.
     @staticmethod
