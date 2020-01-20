@@ -51,6 +51,8 @@ class CrawlTripAdvisor:
 
         self.number_of_pages = None
         self.earliest_date = None
+        self.current_date = None
+        self.review_final_page = False
         self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
         self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
@@ -65,9 +67,10 @@ class CrawlTripAdvisor:
         # Read CSVs, add to database, then cnx.commit().
         return
 
-    def crawl_pois(self, number_of_pages=None, earliest_date=None):
+    def crawl_pois(self, number_of_pages=None, earliest_date=None): # earliest_date in 'dd-mm-yyyy'
         self.number_of_pages = number_of_pages
-        self.earliest_date = earliest_date
+        self.earliest_date = datetime.strptime(earliest_date, '%d-%m-%Y')
+
         for _, row in self.poi_df.iterrows():
             print('########## {} ##########'.format(row['poi_name']))
             self.driver.get(row['poi_url'])
@@ -80,8 +83,16 @@ class CrawlTripAdvisor:
 
     def crawl_reviews(self, poi_index):
         if self.earliest_date is not None:
-            # Crawl up till earliest_date.
-            pass
+            self.current_date = datetime.now()
+            page_number = 1
+            while self.current_date >= self.earliest_date:
+                print('Page {}'.format(page_number))
+                self.crawl_reviews_1_page(poi_index)
+                self.reviews_df.to_csv('./tripadvisor/output/reviews_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
+                self.reviewers_df.to_csv('./tripadvisor/output/reviewers_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
+                self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
+                self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
+                page_number += 1
         elif self.number_of_pages is not None:
             for i in range(self.number_of_pages):
                 print('Page {}'.format(i+1))
@@ -90,9 +101,19 @@ class CrawlTripAdvisor:
                 self.reviewers_df.to_csv('./tripadvisor/output/reviewers_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
                 self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
                 self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
+                if self.review_final_page:
+                    self.review_final_page = False
+                    break
         else:
-            # Crawl all pages.
-            pass
+            page_number = 1
+            while not self.review_final_page:
+                print('Page {}'.format(page_number))
+                self.crawl_reviews_1_page(poi_index)
+                self.reviews_df.to_csv('./tripadvisor/output/reviews_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
+                self.reviewers_df.to_csv('./tripadvisor/output/reviewers_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
+                self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
+                self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
+                page_number += 1
 
     def crawl_attributes(self, poi_index):
         driver = self.driver
@@ -177,6 +198,8 @@ class CrawlTripAdvisor:
             reviewer_name = reviewer_url_elements[i].text
             review_id = self.parse_review_id_elements(review_id_elements[i].get_attribute('data-reviewid'))
             review_date = self.parse_review_date(reviewer_details_elements[i].text)
+            if self.current_date < self.earliest_date:
+                break
             location_contribution_votes = self.parse_location_contributions_votes(reviewer_details_elements[i].text)
             review_rating = self.parse_review_rating(review_rating_elements[i].get_attribute('class'))
             review_title = review_title_elements[i].text
@@ -218,6 +241,8 @@ class CrawlTripAdvisor:
         next_button = driver.find_element_by_xpath('//a[@class="ui_button nav next primary "]')
         if next_button:
             next_button.click()
+        else:
+            self.review_final_page = True
 
     # Methods below are all static utility functions.
     @staticmethod
@@ -248,24 +273,33 @@ class CrawlTripAdvisor:
     def parse_address_text(text_1, text_2, text_3, text_4):
         return '{}, {}, {} {}'.format(text_1, text_2, text_3, text_4)
 
-    @staticmethod
-    def parse_review_date(text):
+    def parse_review_date(self, text):
         date_string = text[text.find('wrote a review ')+15:text.find('\n')]
 
         if date_string == 'Today':
-            return datetime.now().strftime('%d-%m-%Y')
+            date = datetime.now()
+            self.current_date = date
+            return date.strftime('%d-%m-%Y')
         elif date_string == 'Yesterday':
-            return (datetime.now() - timedelta(1)).strftime('%d-%m-%Y')
+            date = datetime.now() - timedelta(1)
+            self.current_date = date
+            return date.strftime('%d-%m-%Y')
 
         re_search = re.search('(\d+) (\w+)', date_string)
         current_year = datetime.now().strftime('%Y')
         if re_search is not None:
             if len(re_search.group(1)) == 1:
-                return datetime.strptime('0' + date_string + ' ' + current_year, '%d %b %Y').strftime('%d-%m-%Y')
+                date = datetime.strptime('0' + date_string + ' ' + current_year, '%d %b %Y')
+                self.current_date = date
+                return date.strftime('%d-%m-%Y')
             else:
-                return datetime.strptime(date_string + ' ' + current_year, '%d %b %Y').strftime('%d-%m-%Y')
+                date = datetime.strptime(date_string + ' ' + current_year, '%d %b %Y')
+                self.current_date = date
+                return date.strftime('%d-%m-%Y')
 
-        return datetime.strptime(date_string, '%b %Y').strftime('%m-%Y')
+        date = datetime.strptime(date_string, '%b %Y')
+        self.current_date = date
+        return date.strftime('%m-%Y')
 
     @staticmethod
     def parse_location_contributions_votes(text):

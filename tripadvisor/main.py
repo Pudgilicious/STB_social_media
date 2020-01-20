@@ -45,6 +45,6 @@ else:
 if __name__=="__main__":
     crawler = CrawlTripAdvisor(chromedriver_path, poi_df, cnx, db_out_flag)
     start_time = time.time()
-    crawler.crawl_pois(number_of_pages=100)
+    crawler.crawl_pois(earliest_date='15-01-2020')
     end_time = time.time()
     print('Total time taken (min): ' + str((end_time - start_time)/60))
