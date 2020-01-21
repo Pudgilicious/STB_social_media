@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import re
+import traceback
 from selenium import webdriver
 from datetime import datetime, timedelta
 from time import sleep
@@ -95,7 +96,8 @@ class CrawlTripAdvisor:
             except Exception as e:
                 log_file = open('./tripadvisor/output/{}/log.txt'.format(self.datetime_string), 'a+')
                 log_file.write('{}, {}, page: {}, {}\n'.format(row['poi_index'], row['poi_name'], self.current_page, datetime.now()))
-                log_file.write(repr(e) + '\n')
+                # log_file.write(repr(e) + '\n')
+                log_file.write(traceback.format_exc() + '\n')
                 log_file.close()
                 break
 
@@ -191,14 +193,24 @@ class CrawlTripAdvisor:
         # all_languages_button.click()
         # sleep(1)
 
-        read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
-        time_out_counter = 0
-        while len(read_more_button_elements) == 0 and time_out_counter < 30:
-            sleep(2)
-            read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
-            time_out_counter += 1
-        read_more_button_elements[0].click()
-        sleep(1)
+        try:
+            read_more_button = driver.find_element_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
+            read_more_button.click()
+            sleep(1)
+        except:
+            sleep(5)
+            read_more_button = driver.find_element_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
+            read_more_button.click()
+            sleep(1)
+
+        # read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
+        # time_out_counter = 0
+        # while len(read_more_button_elements) == 0 and time_out_counter < 30:
+            # sleep(2)
+            # read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
+            # time_out_counter += 1
+        # read_more_button_elements[0].click()
+        # sleep(1)
 
         # Crawling review elements.
         reviewer_url_elements = driver.find_elements_by_xpath('//div[@class="social-member-event-MemberEventOnObjectBlock__event_type--3njyv"]/span/a')
@@ -343,11 +355,11 @@ class CrawlTripAdvisor:
 
     @staticmethod
     def parse_review_title(text):
-        return text.replace(";", ",")
+        return text.replace(';', ',')  # ';' results in splits in output, not sure where error is
 
     @staticmethod
     def parse_review_body(text):
-        return text[:text.find('Read less')-1].replace(";", ",")
+        return text[:text.find('Read less')-1].replace(';', ',')  # As above
 
     @staticmethod
     def parse_date_of_experience(text):
