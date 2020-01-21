@@ -1,6 +1,6 @@
 // .gitignore
 
 # api keys
-.env       
+api_keys.yml       
 
 
