@@ -52,6 +52,7 @@ class CrawlTripAdvisor:
         self.number_of_pages = None
         self.earliest_date = None
         self.current_date = None
+        self.current_page = None
         self.current_poi_index = None
         self.review_final_page = False
         self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
@@ -92,37 +93,41 @@ class CrawlTripAdvisor:
                 if self.db_out_flag != 'csv':
                     self.add_to_database()
             except Exception as e:
-                with open('./tripadvisor/output/{}/log.txt', 'w') as log_file:
-                    log_file.write(e + '\n')
+                log_file = open('./tripadvisor/output/{}/log.txt', 'a+')
+                log_file.write('{}, {}, page: {}, {}\n'.format(row['poi_index'], row['poi_name'], self.current_page, datetime.now()))
+                log_file.write(e + '\n')
+                log_file.close()
                 break
 
     def crawl_reviews(self, poi_index):
         if self.earliest_date is not None:
             self.current_date = datetime.now()
-            page_number = 1
+            self.current_page = 1
             while self.current_date >= self.earliest_date:
-                print('Page {}'.format(page_number))
+                print('Page {}'.format(self.current_page))
                 self.crawl_reviews_1_page(poi_index)
                 self.reviews_to_csv()
-                page_number += 1
+                self.current_page += 1
                 if self.review_final_page:
                     self.review_final_page = False
                     break
         elif self.number_of_pages is not None:
+            self.current_page = 1
             for i in range(self.number_of_pages):
-                print('Page {}'.format(i+1))
+                print('Page {}'.format(self.current_page))
                 self.crawl_reviews_1_page(poi_index)
                 self.reviews_to_csv()
+                self.current_page += 1
                 if self.review_final_page:
                     self.review_final_page = False
                     break
         else:
-            page_number = 1
+            self.current_page = 1
             while not self.review_final_page:
-                print('Page {}'.format(page_number))
+                print('Page {}'.format(self.current_page))
                 self.crawl_reviews_1_page(poi_index)
                 self.reviews_to_csv()
-                page_number += 1
+                self.current_page += 1
                 if self.review_final_page:
                     self.review_final_page = False
                     break
