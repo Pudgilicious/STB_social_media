@@ -15,6 +15,11 @@ url = "https://www.mafengwo.cn/poi/5422487.html"
 
 driver.get(url)
 
+#Forming selector path
+sleep(1) 
+sel = Selector(text=driver.page_source)
+sleep(1)
+
 #Get review title
 #/html/body/div[2]/div[4]/div/div/div[4]/div[1]/ul/li[1]/a
 #/html/body/div[2]/div[4]/div/div/div[4]/div[1]/ul/li[2]/a
