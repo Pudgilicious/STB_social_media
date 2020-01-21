@@ -81,7 +81,7 @@ class CrawlTripAdvisor:
             # Create <POI_INDEX>.csv in reviews and reviewers folders.
             self.current_poi_index = row['poi_index']
             self.reviews_df.to_csv('./tripadvisor/output/{}/reviews/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', index=False)
-            self.reviews_df.to_csv('./tripadvisor/output/{}/reviewers/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', index=False)
+            self.reviewers_df.to_csv('./tripadvisor/output/{}/reviewers/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', index=False)
 
             # Crawl
             try:
@@ -93,9 +93,9 @@ class CrawlTripAdvisor:
                 if self.db_out_flag != 'csv':
                     self.add_to_database()
             except Exception as e:
-                log_file = open('./tripadvisor/output/{}/log.txt', 'a+')
+                log_file = open('./tripadvisor/output/{}/log.txt'.format(self.datetime_string), 'a+')
                 log_file.write('{}, {}, page: {}, {}\n'.format(row['poi_index'], row['poi_name'], self.current_page, datetime.now()))
-                log_file.write(e + '\n')
+                log_file.write(repr(e) + '\n')
                 log_file.close()
                 break
 
@@ -219,7 +219,7 @@ class CrawlTripAdvisor:
                 break
             location_contribution_votes = self.parse_location_contributions_votes(reviewer_details_elements[i].text)
             review_rating = self.parse_review_rating(review_rating_elements[i].get_attribute('class'))
-            review_title = review_title_elements[i].text
+            review_title = self.parse_review_title(review_title_elements[i].text)
             review_body = self.parse_review_body(review_body_elements[i].text)
             date_of_experience = self.parse_date_of_experience(review_body_elements[i].text)
             trip_type = self.parse_trip_type(review_body_elements[i].text)
@@ -342,8 +342,12 @@ class CrawlTripAdvisor:
         return int(text[-2:])//10
 
     @staticmethod
+    def parse_review_title(text):
+        return text.replace(";", ",")
+
+    @staticmethod
     def parse_review_body(text):
-        return text[:text.find('Read less')-1]
+        return text[:text.find('Read less')-1].replace(";", ",")
 
     @staticmethod
     def parse_date_of_experience(text):
