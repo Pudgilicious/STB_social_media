@@ -68,8 +68,10 @@ class CrawlTripAdvisor:
         return
 
     def crawl_pois(self, number_of_pages=None, earliest_date=None): # earliest_date in 'dd-mm-yyyy'
-        self.number_of_pages = number_of_pages
-        self.earliest_date = datetime.strptime(earliest_date, '%d-%m-%Y')
+        if number_of_pages is not None:
+            self.number_of_pages = number_of_pages
+        if earliest_date is not None:
+            self.earliest_date = datetime.strptime(earliest_date, '%d-%m-%Y')
 
         for _, row in self.poi_df.iterrows():
             print('########## {} ##########'.format(row['poi_name']))
@@ -93,6 +95,9 @@ class CrawlTripAdvisor:
                 self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
                 self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
                 page_number += 1
+                if self.review_final_page:
+                    self.review_final_page = False
+                    break
         elif self.number_of_pages is not None:
             for i in range(self.number_of_pages):
                 print('Page {}'.format(i+1))
@@ -114,6 +119,9 @@ class CrawlTripAdvisor:
                 self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
                 self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
                 page_number += 1
+                if self.review_final_page:
+                    self.review_final_page = False
+                    break
 
     def crawl_attributes(self, poi_index):
         driver = self.driver
@@ -121,10 +129,7 @@ class CrawlTripAdvisor:
         # Crawling attributes elements.
         ranking_text = driver.find_element_by_xpath('//span[@class="header_popularity popIndexValidation "]').text
         rating_breakdown_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ReviewRatingFilter__row_num--3cSP7"]')
-        address_text_1 = driver.find_element_by_xpath('//span[@class="street-address"]').text
-        address_text_2 = driver.find_element_by_xpath('//span[@class="extended-address"]').text
-        address_text_3 = driver.find_element_by_xpath('//span[@class="locality"]').text
-        address_text_4 = driver.find_element_by_xpath('//span[@class="country-name"]').text
+        address_text = driver.find_element_by_xpath('//span[@class="textAlignWrapper address"]').text
         about_more_button = driver.find_elements_by_xpath('//span[@class="attractions-attraction-detail-about-card-Description__readMore--2pd33"]')
         if about_more_button:
             about_more_button[0].click()
@@ -142,11 +147,7 @@ class CrawlTripAdvisor:
         ranking = self.parse_ranking_text(ranking_text)
         average_rating = self.calculate_average_rating(rating_breakdown)
         about = about_text
-        address = self.parse_address_text(address_text_1,
-                                          address_text_2,
-                                          address_text_3,
-                                          address_text_4
-                                         )
+        address = address_text
 
         poi_attributes = [poi_index,
                           total_reviews,
@@ -187,18 +188,14 @@ class CrawlTripAdvisor:
         review_title_elements = driver.find_elements_by_xpath('//a[@class="location-review-review-list-parts-ReviewTitle__reviewTitleText--2tFRT"]')
         review_body_elements = driver.find_elements_by_xpath('//div[@class="location-review-review-list-parts-ExpandableReview__containerStyles--1G0AE"]')
 
-        reviews_per_page = len(reviewer_url_elements)
-        if reviews_per_page != 5:
-            print(len(reviewer_url_elements))
-
-        for i in range(reviews_per_page):
+        for i in range(len(reviewer_url_elements)):
 
             # Parsing review and reviewer details
             reviewer_url = reviewer_url_elements[i].get_attribute('href')
             reviewer_name = reviewer_url_elements[i].text
             review_id = self.parse_review_id_elements(review_id_elements[i].get_attribute('data-reviewid'))
             review_date = self.parse_review_date(reviewer_details_elements[i].text)
-            if self.current_date < self.earliest_date:
+            if self.earliest_date is not None and self.current_date < self.earliest_date:
                 break
             location_contribution_votes = self.parse_location_contributions_votes(reviewer_details_elements[i].text)
             review_rating = self.parse_review_rating(review_rating_elements[i].get_attribute('class'))
@@ -238,9 +235,9 @@ class CrawlTripAdvisor:
             reviewer_details_dict = dict(zip(self.reviewers_col_names, reviewer_details))
             self.reviewers_df = self.reviewers_df.append(reviewer_details_dict, ignore_index=True)
 
-        next_button = driver.find_element_by_xpath('//a[@class="ui_button nav next primary "]')
-        if next_button:
-            next_button.click()
+        next_button_element = driver.find_elements_by_xpath('//a[@class="ui_button nav next primary "]')
+        if next_button_element:
+            next_button_element[0].click()
         else:
             self.review_final_page = True
 
@@ -268,10 +265,6 @@ class CrawlTripAdvisor:
             text = element.text
             rating_breakdown.append(int(text.replace(",", "")))
         return rating_breakdown
-
-    @staticmethod
-    def parse_address_text(text_1, text_2, text_3, text_4):
-        return '{}, {}, {} {}'.format(text_1, text_2, text_3, text_4)
 
     def parse_review_date(self, text):
         date_string = text[text.find('wrote a review ')+15:text.find('\n')]
@@ -305,17 +298,15 @@ class CrawlTripAdvisor:
     def parse_location_contributions_votes(text):
         location, contributions, votes = None, None, None
 
-        # Need to parse ','.
-        votes_search = re.search('(\d+) helpful votes?', text)
+        votes_search = re.search('((\d+)?,?\d+) helpful votes?', text)
         if votes_search is not None:
-            votes = int(votes_search.group(1))
+            votes = int(votes_search.group(1).replace(",", ""))
 
-        # Need to parse ','.
-        contributions_search = re.search('(\d+) contributions?', text)
-        if contributions_search is not None:
-            contributions = int(contributions_search.group(1))
+        # This field is always present.
+        contributions_search = re.search('((\d+)?,?\d+) contributions?', text)
+        contributions = int(contributions_search.group(1).replace(",", ""))
 
-        location_search = re.search('(.+?){} contributions?'.format(contributions), text)
+        location_search = re.search('(.+?){} contributions?'.format(contributions_search.group(1)), text)
         if location_search is not None:
             location = location_search.group(1)
 

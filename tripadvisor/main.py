@@ -15,12 +15,16 @@ db_out_flag = configs['TripAdvisor']['db_out_flag']
 if not db_in_flag:
     
     ### FOR POC ONLY ###
-    poi_index = [1, 2]
+    poi_index = [1, 24, 242, 660]
     poi_name = ['Gardens by the Bay', 
-                'Marina Bay Sands Skypark'
+                'National Gallery Singapore',
+                'West Coast Plaza',
+                'NTU Centre for Contemporary Art'
                ]
     poi_url = ['https://www.tripadvisor.com.sg/Attraction_Review-g294265-d2149128-Reviews-Gardens_by_the_Bay-Singapore.html',
-               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d1837767-Reviews-Marina_Bay_Sands_Skypark-Singapore.html'
+               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d8077179-Reviews-National_Gallery_Singapore-Singapore.html',
+               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d12204918-Reviews-West_Coast_Plaza-Singapore.html',
+               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d8738861-Reviews-NTU_Centre_for_Contemporary_Art-Singapore.html'
               ]
     poi_df = pd.DataFrame(
         dict(
@@ -45,6 +49,6 @@ else:
 if __name__=="__main__":
     crawler = CrawlTripAdvisor(chromedriver_path, poi_df, cnx, db_out_flag)
     start_time = time.time()
-    crawler.crawl_pois(earliest_date='15-01-2020')
+    crawler.crawl_pois(number_of_pages=5)
     end_time = time.time()
     print('Total time taken (min): ' + str((end_time - start_time)/60))
