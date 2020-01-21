@@ -1,0 +1,6 @@
+// .gitignore
+
+# api keys
+.env       
+
+
