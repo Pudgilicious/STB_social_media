@@ -89,7 +89,7 @@ class CrawlTripAdvisor:
                 self.attributes_df.to_csv('./tripadvisor/output/{}/attributes.csv'.format(self.datetime_string), mode='a', header=False, index=False)
                 self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
                 self.crawl_reviews(row['poi_index'])
-                if self.db_out_flag is not 'csv':
+                if self.db_out_flag != 'csv':
                     self.add_to_database()
             except Exception as e:
                 with open('./tripadvisor/output/{}/log.txt', 'w') as log_file:
@@ -188,7 +188,7 @@ class CrawlTripAdvisor:
 
         read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
         time_out_counter = 0
-        while read_more_button_elements is None and time_out_counter < 30:
+        while len(read_more_button_elements) == 0 and time_out_counter < 30:
             sleep(2)
             read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
             time_out_counter += 1
