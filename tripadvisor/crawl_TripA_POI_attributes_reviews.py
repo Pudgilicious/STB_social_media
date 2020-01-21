@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 import re
 from selenium import webdriver
 from datetime import datetime, timedelta
@@ -45,43 +46,55 @@ class CrawlTripAdvisor:
     def __init__(self, chromedriver_path, poi_df, cnx, db_out_flag):
         self.driver = webdriver.Chrome(chromedriver_path)
         self.poi_df = poi_df
-        if cnx is not None:
+        if cnx:
             self.cursor = cnx.cursor()
         self.db_out_flag = db_out_flag
-
         self.number_of_pages = None
         self.earliest_date = None
         self.current_date = None
+        self.current_poi_index = None
         self.review_final_page = False
         self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
         self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
 
-        # Create unique CSVs.
+        # Create unique folder, sub-folders and attribute.csv
         self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
-        self.attributes_df.to_csv('./tripadvisor/output/attributes_{}.csv'.format(self.datetime_string), mode='a', index=False)
-        self.reviews_df.to_csv('./tripadvisor/output/reviews_{}.csv'.format(self.datetime_string), mode='a', index=False)
-        self.reviewers_df.to_csv('./tripadvisor/output/reviewers_{}.csv'.format(self.datetime_string), mode='a', index=False)
+        os.makedirs('./tripadvisor/output/{}/'.format(self.datetime_string))
+        os.makedirs('./tripadvisor/output/{}/reviews'.format(self.datetime_string))
+        os.makedirs('./tripadvisor/output/{}/reviewers'.format(self.datetime_string))
+        self.attributes_df.to_csv('./tripadvisor/output/{}/attributes.csv'.format(self.datetime_string), mode='a', index=False)
 
     def add_to_database(self):
-        # Read CSVs, add to database, then cnx.commit().
+        # Read CSVs, add to database, then cnx.commit()
         return
 
-    def crawl_pois(self, number_of_pages=None, earliest_date=None): # earliest_date in 'dd-mm-yyyy'
+    def crawl_pois(self, number_of_pages=None, earliest_date=None):
         if number_of_pages is not None:
             self.number_of_pages = number_of_pages
         if earliest_date is not None:
             self.earliest_date = datetime.strptime(earliest_date, '%d-%m-%Y')
-
         for _, row in self.poi_df.iterrows():
             print('########## {} ##########'.format(row['poi_name']))
-            self.driver.get(row['poi_url'])
-            self.crawl_attributes(row['poi_index'])
-            self.attributes_df.to_csv('./tripadvisor/output/attributes_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
-            self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
-            self.crawl_reviews(row['poi_index'])
-            if self.db_out_flag:
-                self.add_to_database()
+
+            # Create <POI_INDEX>.csv in reviews and reviewers folders.
+            self.current_poi_index = row['poi_index']
+            self.reviews_df.to_csv('./tripadvisor/output/{}/reviews/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', index=False)
+            self.reviews_df.to_csv('./tripadvisor/output/{}/reviewers/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', index=False)
+
+            # Crawl
+            try:
+                self.driver.get(row['poi_url'])
+                self.crawl_attributes(row['poi_index'])
+                self.attributes_df.to_csv('./tripadvisor/output/{}/attributes.csv'.format(self.datetime_string), mode='a', header=False, index=False)
+                self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
+                self.crawl_reviews(row['poi_index'])
+                if self.db_out_flag is not 'csv':
+                    self.add_to_database()
+            except Exception as e:
+                with open('./tripadvisor/output/{}/log.txt', 'w') as log_file:
+                    log_file.write(e + '\n')
+                break
 
     def crawl_reviews(self, poi_index):
         if self.earliest_date is not None:
@@ -90,10 +103,7 @@ class CrawlTripAdvisor:
             while self.current_date >= self.earliest_date:
                 print('Page {}'.format(page_number))
                 self.crawl_reviews_1_page(poi_index)
-                self.reviews_df.to_csv('./tripadvisor/output/reviews_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
-                self.reviewers_df.to_csv('./tripadvisor/output/reviewers_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
-                self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
-                self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
+                self.reviews_to_csv()
                 page_number += 1
                 if self.review_final_page:
                     self.review_final_page = False
@@ -102,10 +112,7 @@ class CrawlTripAdvisor:
             for i in range(self.number_of_pages):
                 print('Page {}'.format(i+1))
                 self.crawl_reviews_1_page(poi_index)
-                self.reviews_df.to_csv('./tripadvisor/output/reviews_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
-                self.reviewers_df.to_csv('./tripadvisor/output/reviewers_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
-                self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
-                self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
+                self.reviews_to_csv()
                 if self.review_final_page:
                     self.review_final_page = False
                     break
@@ -114,14 +121,17 @@ class CrawlTripAdvisor:
             while not self.review_final_page:
                 print('Page {}'.format(page_number))
                 self.crawl_reviews_1_page(poi_index)
-                self.reviews_df.to_csv('./tripadvisor/output/reviews_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
-                self.reviewers_df.to_csv('./tripadvisor/output/reviewers_{}.csv'.format(self.datetime_string), mode='a', header=False, index=False)
-                self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
-                self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
+                self.reviews_to_csv()
                 page_number += 1
                 if self.review_final_page:
                     self.review_final_page = False
                     break
+
+    def reviews_to_csv(self):
+        self.reviews_df.to_csv('./tripadvisor/output/{}/reviews/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', header=False, index=False)
+        self.reviewers_df.to_csv('./tripadvisor/output/{}/reviewers/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', header=False, index=False)
+        self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
+        self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
 
     def crawl_attributes(self, poi_index):
         driver = self.driver
@@ -171,13 +181,18 @@ class CrawlTripAdvisor:
         driver = self.driver
         sleep(2)
 
-        # To crawl all languages, uncomment the follwing 3 lines:
+        # To crawl all languages, uncomment the following 3 lines:
         # all_languages_button = driver.find_element_by_xpath('//span[@class="location-review-review-list-parts-LanguageFilter__no_wrap--2Dckv"]')
         # all_languages_button.click()
         # sleep(1)
 
-        read_more_button = driver.find_element_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
-        read_more_button.click()
+        read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
+        time_out_counter = 0
+        while read_more_button_elements is None and time_out_counter < 30:
+            sleep(2)
+            read_more_button_elements = driver.find_elements_by_xpath('//span[@class="location-review-review-list-parts-ExpandableReview__cta--2mR2g"]')
+            time_out_counter += 1
+        read_more_button_elements[0].click()
         sleep(1)
 
         # Crawling review elements.
@@ -241,31 +256,7 @@ class CrawlTripAdvisor:
         else:
             self.review_final_page = True
 
-    # Methods below are all static utility functions.
-    @staticmethod
-    def calculate_total_reviews(rating_breakdown):
-        return sum(rating_breakdown)
-
-    @staticmethod
-    def parse_ranking_text(text):
-        return int(text[1:text.find(' of')].replace(',', ''))
-
-    @staticmethod
-    def calculate_average_rating(rating_breakdown):
-        total = sum(rating_breakdown)
-        average = 0
-        for i, j in enumerate(rating_breakdown[::-1]):
-            average += (i+1)*j/total
-        return average
-
-    @staticmethod
-    def parse_rating_breakdown_elements(elements):
-        rating_breakdown = []
-        for element in elements:
-            text = element.text
-            rating_breakdown.append(int(text.replace(",", "")))
-        return rating_breakdown
-
+    # Instance method which also updates self.current_date.
     def parse_review_date(self, text):
         date_string = text[text.find('wrote a review ')+15:text.find('\n')]
 
@@ -293,6 +284,31 @@ class CrawlTripAdvisor:
         date = datetime.strptime(date_string, '%b %Y')
         self.current_date = date
         return date.strftime('%m-%Y')
+
+    # Methods below are all static utility functions.
+    @staticmethod
+    def calculate_total_reviews(rating_breakdown):
+        return sum(rating_breakdown)
+
+    @staticmethod
+    def parse_ranking_text(text):
+        return int(text[1:text.find(' of')].replace(',', ''))
+
+    @staticmethod
+    def calculate_average_rating(rating_breakdown):
+        total = sum(rating_breakdown)
+        average = 0
+        for i, j in enumerate(rating_breakdown[::-1]):
+            average += (i+1)*j/total
+        return average
+
+    @staticmethod
+    def parse_rating_breakdown_elements(elements):
+        rating_breakdown = []
+        for element in elements:
+            text = element.text
+            rating_breakdown.append(int(text.replace(",", "")))
+        return rating_breakdown
 
     @staticmethod
     def parse_location_contributions_votes(text):
