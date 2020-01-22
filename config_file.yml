@@ -8,5 +8,5 @@ General:
 TripAdvisor:
     db_in_flag: csv # csv, mysql, sqlite
     db_out_flag: csv # csv, mysql, sqlite
-    earliest_date: 01-01-2016 # dd-mm-yyyy or None. Higher priority than number_of_pages.
+    earliest_date: 20-01-2020 # dd-mm-yyyy or None. Higher priority than number_of_pages.
     number_of_pages: 5 # int or None.
