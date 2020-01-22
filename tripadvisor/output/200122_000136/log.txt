@@ -1,0 +1,2 @@
+1, Gardens by the Bay, page: 71, 2020-01-22 00:06:49.793018
+ElementNotInteractableException('element not interactable\n  (Session info: chrome=79.0.3945.130)', None, None)

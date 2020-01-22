@@ -1,0 +1,58 @@
+class TripAdvisorFSA:
+    def __init__(self):
+        self.crawler = TripAdvisorCrawler(<parameters from config file>)
+
+    def start(self):
+        while crawler.state != 4:
+            if crawler.state == 0:
+                self.state_0_to_1()
+            elif crawler.state == 3:
+                self.state_3_to_2()
+
+    def state_0_to_1(self):
+        crawler.state = 1
+        crawler.crawl_pois(<parameters from config file>)
+
+
+class TripAdvisorCrawler:
+    def __init__(self):
+        - self.latest_date
+        - self.review_start_page
+        - self.state = 0
+
+
+    def crawl_pois(self, number_of_pages=None, earliest_date=None):
+        - deduplicate()
+
+
+    def crawl_reviews(self, poi_index):
+
+
+    def reviews_to_csv(self):
+
+
+    def add_to_database(self):
+
+
+    def crawl_attributes(self, poi_index):
+        - try to obtain lat-long
+
+
+    def crawl_reviews_1_page(self, poi_index):
+        - 10 reviews per page
+        - 'more' button is now not a certainty -> need to if-else
+        - no more trip type
+        -
+
+
+    def find_start_page(self):
+        - determines review_start_page from latest_date
+
+
+    # Static utility functions
+
+    - update parser for review date (n days, n weeks ago, or '%d %B % Y')
+
+
+    @staticmethod
+    def deduplicate():
