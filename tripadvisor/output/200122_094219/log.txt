@@ -1,0 +1,32 @@
+1, Gardens by the Bay, page: None, None, 2020-01-22 09:42:26.371848
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 90, in crawl_pois
+    self.crawl_attributes(row['poi_index'])
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 178, in crawl_attributes
+    rating_breakdown[0],
+IndexError: list index out of range
+
+24, National Gallery Singapore, page: None, None, 2020-01-22 09:42:32.058434
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 90, in crawl_pois
+    self.crawl_attributes(row['poi_index'])
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 178, in crawl_attributes
+    rating_breakdown[0],
+IndexError: list index out of range
+
+242, West Coast Plaza, page: None, None, 2020-01-22 09:42:35.854404
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 90, in crawl_pois
+    self.crawl_attributes(row['poi_index'])
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 178, in crawl_attributes
+    rating_breakdown[0],
+IndexError: list index out of range
+
+660, NTU Centre for Contemporary Art, page: None, None, 2020-01-22 09:42:40.153773
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 90, in crawl_pois
+    self.crawl_attributes(row['poi_index'])
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/crawl_TripA_POI_attributes_reviews.py", line 178, in crawl_attributes
+    rating_breakdown[0],
+IndexError: list index out of range
+
