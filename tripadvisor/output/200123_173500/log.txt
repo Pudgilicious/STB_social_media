@@ -1,0 +1,10 @@
+242, West Coast Plaza, page: 2015-12-16 00:00:00, None, 2020-01-23 17:37:33.777079
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 123, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 175, in crawl_attributes
+    average_rating = self.calculate_average_rating(rating_breakdown)
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 327, in calculate_average_rating
+    average += (i+1)*j/total
+ZeroDivisionError: division by zero
+

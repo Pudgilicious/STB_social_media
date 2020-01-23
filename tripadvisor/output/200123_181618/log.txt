@@ -1,0 +1,16 @@
+40, Henderson Waves, page: None, None, 2020-01-23 18:16:25.017870
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 126, in crawl_poi_by_trip_type
+    traveller_type_element = self.driver.find_element_by_xpath('//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
