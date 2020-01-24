@@ -86,7 +86,7 @@ class TripAdvisorCrawler:
         # Read CSVs, add to database, then cnx.commit()
         return
 
-    def crawl_pois(self, start_page=None, number_of_pages=None, earliest_date=None, trip_types=["Family", "Couples", "Solo", "Business", "Friends"]):
+    def crawl_pois(self, start_page=None, number_of_pages=None, earliest_date=None, trip_types=['Family', 'Couples', 'Solo', 'Business', 'Friends']):
         self.fsm_state = 1
         if start_page is not None:
             self.start_page = start_page
@@ -122,29 +122,32 @@ class TripAdvisorCrawler:
             self.driver.get(self.current_poi_url)
             sleep(2)
 
-            # Click on "Traveller Type" filter, based on trip types 1-5
-            traveller_type_element = self.driver.find_element_by_xpath('//div[@data-tracker="{}"]'.format(self.current_trip_type))
-            traveller_type_element.click()
-            sleep(2)
+            if self.current_trip_type != 'all':
+                # Click on "Traveller Type" filter, based on trip types 1-5
+                traveller_type_element = self.driver.find_element_by_xpath('//div[@data-tracker="{}"]'.format(self.current_trip_type))
+                traveller_type_element.click()
+                sleep(2)
 
             self.crawl_attributes()
             self.attributes_df.to_csv('./tripadvisor/output/{}/attributes.csv'.format(self.datetime_string), mode='a', header=False, index=False)
             self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
             self.crawl_reviews()
             self.trip_types_to_crawl.pop(0)
-            self.current_date = None
-            self.current_page = None
-            self.current_trip_type = None
 
             if self.db_out_flag != 'csv':
                 self.add_to_database()
 
-            # Need to un-filter "Traveller Type"
-            self.driver.execute_script("scroll(0, 0);")  # JavaScript
-            sleep(2)
-            traveller_type_element = self.driver.find_element_by_xpath('//div[@data-tracker="{}"]'.format(self.current_trip_type))
-            traveller_type_element.click()
-            sleep(2)
+            if self.current_trip_type != 'all':
+                # Need to un-filter "Traveller Type"
+                self.driver.execute_script("scroll(0, 0);")  # JavaScript
+                sleep(2)
+                traveller_type_element = self.driver.find_element_by_xpath('//div[@data-tracker="{}"]'.format(self.current_trip_type))
+                traveller_type_element.click()
+                sleep(2)
+
+            self.current_date = None
+            self.current_page = None
+            self.current_trip_type = None
 
         except Exception as e:
             self.fsm_state = 3
@@ -160,7 +163,7 @@ class TripAdvisorCrawler:
             log.close()
 
     ### KIV: WIP ###
-    def open_to_page(self):
+    def go_to_page(self):
         pass
 
     def crawl_attributes(self):
@@ -245,9 +248,9 @@ class TripAdvisorCrawler:
         self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
 
     def crawl_reviews_1_page(self, poi_index):
-        review_more_button = self.driver.find_elements_by_xpath('//span[@class="taLnk ulBlueLinks"]')
-        if review_more_button:
-            review_more_button[0].click()
+        review_more_buttons = self.driver.find_elements_by_xpath('//span[@class="taLnk ulBlueLinks"]')
+        if review_more_buttons:
+            review_more_buttons[0].click()
             sleep(2)
 
         # Crawling review elements.
@@ -257,7 +260,7 @@ class TripAdvisorCrawler:
         review_container_elements = self.driver.find_elements_by_xpath('//div[@class="review-container"]')
         review_title_elements = self.driver.find_elements_by_xpath('//span[@class="noQuotes"]')
         review_body_elements = self.driver.find_elements_by_xpath('//p[@class="partial_entry"]')
-        date_of_experience_elements = self.driver.find_elements_by_xpath('//div[@data-prwidget-name="reviews_stay_date_hsx"]')
+        review_selector_elements = self.driver.find_elements_by_xpath('//div[@class="reviewSelector"]')
 
         for i in range(len(reviewer_name_elements)):
             reviewer_url = self.parse_userid_elements(reviewer_name_elements[i].text)
@@ -269,7 +272,7 @@ class TripAdvisorCrawler:
             review_rating = self.parse_review_rating_element(review_rating_element)
             review_title = review_title_elements[i].text
             review_body = review_body_elements[i].text
-            date_of_experience = self.parse_date_of_experience(date_of_experience_elements[i].text)
+            date_of_experience = self.parse_review_selector_elements(review_selector_elements[i].text)
 
             if self.earliest_date is not None and self.current_date < self.earliest_date:
                 break
@@ -305,9 +308,9 @@ class TripAdvisorCrawler:
             reviewer_details_dict = dict(zip(self.reviewers_col_names, reviewer_details))
             self.reviewers_df = self.reviewers_df.append(reviewer_details_dict, ignore_index=True)
 
-        next_button_element = self.driver.find_elements_by_xpath('//a[@class="nav next ui_button primary"]')
-        if next_button_element:
-            next_button_element[0].click()
+        next_button_elements = self.driver.find_elements_by_xpath('//div[@class="unified ui_pagination "]/a[@class="nav next ui_button primary"]')
+        if next_button_elements:
+            next_button_elements[0].click()
             sleep(2)
         else:
             self.review_final_page = True
@@ -360,6 +363,9 @@ class TripAdvisorCrawler:
         return text[text.find(reviewer_name) + len(reviewer_name):]
 
     @staticmethod
-    def parse_date_of_experience(text): ###
-        substring = re.search('Date of experience: (.+)', text).group(1)
-        return datetime.strptime(substring, '%B %Y').strftime('%m-%Y')
+    def parse_review_selector_elements(text):
+        substring = re.search('Date of experience: (.+)\n', text)
+        if substring is not None:
+            return datetime.strptime(substring.group(1), '%B %Y').strftime('%m-%Y')
+        else:
+            return None

@@ -48,7 +48,8 @@ if __name__=="__main__":
     crawler = TripAdvisorCrawler(chromedriver_path, poi_df, cnx, db_out_flag)
     start_time = time.time()  # Time at start.
     crawler.crawl_pois(earliest_date=configs['TripAdvisor']['earliest_date'],
-                       number_of_pages=configs['TripAdvisor']['number_of_pages']
+                       number_of_pages=configs['TripAdvisor']['number_of_pages'],
+                       trip_types = ['Family', 'Couples', 'Solo', 'Business', 'Friends']
                        )
     end_time = time.time()  # Time at end.
     print('Total time taken (min): ' + str((end_time - start_time)/60))  # Print time difference.
