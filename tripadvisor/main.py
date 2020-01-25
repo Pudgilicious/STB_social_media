@@ -16,12 +16,17 @@ db_out_flag = configs['TripAdvisor']['db_out_flag']
 if db_in_flag == 'csv':
 
     ### FOR POC ONLY ###
-    poi_index = [40, 242, 660]
-    poi_name = ['Henderson Waves',
+    poi_index = [1,
+                 40,
+                 242,
+                 660]
+    poi_name = ['Gardens by the Bay',
+                'Henderson Waves',
                 'West Coast Plaza',
                 'NTU Centre for Contemporary Art'
                ]
-    poi_url = ['https://www.tripadvisor.com.sg/Attraction_Review-g294265-d3561693-Reviews-Henderson_Waves-Singapore.html',
+    poi_url = ['https://www.tripadvisor.com.sg/Attraction_Review-g294265-d2149128-Reviews-Gardens_by_the_Bay-Singapore.html',
+               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d3561693-Reviews-Henderson_Waves-Singapore.html',
                'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d12204918-Reviews-West_Coast_Plaza-Singapore.html',
                'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d8738861-Reviews-NTU_Centre_for_Contemporary_Art-Singapore.html'
               ]
