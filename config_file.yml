@@ -6,8 +6,8 @@ General:
     chromedriver_path: ./chromedriver
     
 TripAdvisor:
-    read_from_database:             # mysql, sqlite or None
-    write_to_database:              # mysql, sqlite or None
+    read_from_database: csv            # mysql, sqlite or None
+    write_to_database: csv            # mysql, sqlite or None
     earliest_date: 01-01-2016       # dd-mm-yyyy or None. Higher priority than number_of_pages.
     number_of_pages: 5              # int or None.
     csv_folder:

@@ -155,8 +155,9 @@ class TripAdvisorCrawler:
             self.fsm_state = 3
             print("Exception has occurred. Please check log file.")
             log = open('./tripadvisor/output/{}/log.txt'.format(self.datetime_string), 'a+')
-            log.write('{}, {}, page: {}, {}, {}\n'.format(self.current_poi_index,
+            log.write('{}, {}, {}, page: {}, {}, {}\n'.format(self.current_poi_index,
                                                           self.current_poi_name,
+                                                          self.current_trip_type,
                                                           self.current_page,
                                                           self.current_date,
                                                           datetime.now()
