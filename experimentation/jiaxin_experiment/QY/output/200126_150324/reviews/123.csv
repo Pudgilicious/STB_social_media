@@ -1,0 +1,3 @@
+REVIEW_INDEX,WEBSITE_INDEX,POI_INDEX,REVIEWER_URL,REVIEW_RATING,REVIEW_DATE,REVIEW_BODY,ATTRIBUTES_CRAWLED_TIME
+,4,123,[],[],[],[],2020-01-26 15:27:52.934256
+,4,123,['//www.qyer.com/u/760342'],[4],"[datetime.datetime(2014, 4, 16, 0, 0)]",['玩具博物馆不是很大，基本都是主人的收藏。好的铁皮玩具。也有一些中国旧时代的玩具。反而看到了喜欢的披头士的一些东西。意外。'],2020-01-26 15:27:58.073001

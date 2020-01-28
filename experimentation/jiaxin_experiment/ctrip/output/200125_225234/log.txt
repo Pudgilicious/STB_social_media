@@ -1,0 +1,10 @@
+564, 千灯寺 , page: 2, 2020-01-26 01:44:13.237990, current POI does not exist1481, Anti-Oxidant, page: 2, 2020-01-26 04:13:41.759746
+Traceback (most recent call last):
+  File "<ipython-input-4-c95ce129d32b>", line 85, in crawl_pois
+    self.crawl_attributes(row['poi_index'])
+  File "<ipython-input-4-c95ce129d32b>", line 178, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "<ipython-input-4-c95ce129d32b>", line 299, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+

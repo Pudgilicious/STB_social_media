@@ -1,0 +1,3 @@
+REVIEW_INDEX,WEBSITE_INDEX,POI_INDEX,REVIEWER_URL,REVIEW_RATING,REVIEW_DATE,REVIEW_BODY,ATTRIBUTES_CRAWLED_TIME
+,4,94,[],[],[],[],2020-01-26 15:24:47.662818
+,4,94,"['//www.qyer.com/u/3590978', '//www.qyer.com/u/5272102']","[5, 3]","[datetime.datetime(2015, 4, 23, 0, 0), datetime.datetime(2014, 12, 19, 0, 0)]","['这里很多当地人来，周末带着家人和小狗来沙滩边打沙滩排球，很舒服，喝喝小酒坐在沙滩边上十分惬意', '丹戎海滩是圣淘沙岛最东的一处海滩，也是海滩小火车的终点站，喜欢在沙滩上度过宁静午后的人，丹戎海滩是最适合不过的。']",2020-01-26 15:24:51.009741

@@ -1,0 +1,15 @@
+3, 
+滨海湾花园
+  
+, page: 2, 2020-01-26 19:00:21.045332
+Traceback (most recent call last):
+  File "<ipython-input-7-b0a48e41f2d1>", line 94, in crawl_pois
+    self.crawl_attributes(row['poi_index'])
+  File "<ipython-input-7-b0a48e41f2d1>", line 210, in crawl_attributes
+    ranking=self.parse_ranking(ranking_bf)
+  File "<ipython-input-7-b0a48e41f2d1>", line 318, in parse_ranking
+    return int(re.search(r'\d+', text).group())
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
