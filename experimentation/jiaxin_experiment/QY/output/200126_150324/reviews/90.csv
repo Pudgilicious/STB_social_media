@@ -1,0 +1,3 @@
+REVIEW_INDEX,WEBSITE_INDEX,POI_INDEX,REVIEWER_URL,REVIEW_RATING,REVIEW_DATE,REVIEW_BODY,ATTRIBUTES_CRAWLED_TIME
+,4,90,[],[],[],[],2020-01-26 15:24:28.708701
+,4,90,"['//www.qyer.com/u/4510321', '//www.qyer.com/u/2587444']","[4, 3]","[datetime.datetime(2014, 12, 27, 0, 0), datetime.datetime(2014, 7, 23, 0, 0)]","['滨海堤坝横贯滨海水道河口,是新加坡第十五大水库,也是首个建在市中心的水库。', '虽然说滨海堤坝是个堤坝，但在本地人心中其实是一个美丽的风景胜地，适合全家人周末来玩。平时的时候可以野餐、放风筝，国庆的时候还可以在这里看烟火。']",2020-01-26 15:24:32.454307

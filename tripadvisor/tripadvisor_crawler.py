@@ -58,7 +58,7 @@ class TripAdvisorCrawler:
         self.number_of_pages = None
         self.earliest_date = None
         self.start_page = None
-        self.trip_types_to_crawl = None
+        self.trip_types_to_crawl = []
 
         # Reset after every trip type
         self.current_date = None
@@ -80,13 +80,22 @@ class TripAdvisorCrawler:
         os.makedirs('./tripadvisor/output/{}/'.format(self.datetime_string))
         os.makedirs('./tripadvisor/output/{}/reviews'.format(self.datetime_string))
         os.makedirs('./tripadvisor/output/{}/reviewers'.format(self.datetime_string))
-        self.attributes_df.to_csv('./tripadvisor/output/{}/attributes.csv'.format(self.datetime_string), mode='a', index=False)
+        self.attributes_df.to_csv(
+            './tripadvisor/output/{}/attributes.csv'.format(self.datetime_string),
+            mode='a',
+            index=False
+        )
 
     def add_to_database(self):
         # Read CSVs, add to database, then cnx.commit()
         return
 
-    def crawl_pois(self, start_page=None, number_of_pages=None, earliest_date=None, trip_types=['Family', 'Couples', 'Solo', 'Business', 'Friends']):
+    def crawl_pois(self,
+                   start_page=None,
+                   number_of_pages=None,
+                   earliest_date=None,
+                   trip_types=['Family', 'Couples', 'Solo', 'Business', 'Friends']
+                   ):
         self.fsm_state = 1
         if start_page is not None:
             self.start_page = start_page
@@ -101,18 +110,30 @@ class TripAdvisorCrawler:
             self.current_poi_index = row['poi_index']
             self.current_poi_name = row['poi_name']
             self.current_poi_url = row['poi_url']
-            self.reviews_df.to_csv('./tripadvisor/output/{}/reviews/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', index=False)
-            self.reviewers_df.to_csv('./tripadvisor/output/{}/reviewers/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', index=False)
+            self.reviews_df.to_csv(
+                './tripadvisor/output/{}/reviews/{}.csv'.format(
+                    self.datetime_string,
+                    self.current_poi_index),
+                mode='a',
+                index=False
+            )
+            self.reviewers_df.to_csv(
+                './tripadvisor/output/{}/reviewers/{}.csv'.format(
+                    self.datetime_string,
+                    self.current_poi_index),
+                mode='a',
+                index=False
+            )
 
             if not self.trip_types_to_crawl:
-                self.trip_types_to_crawl = trip_types
+                self.trip_types_to_crawl = trip_types.copy()
 
             while self.trip_types_to_crawl:
                 self.current_trip_type = self.trip_types_to_crawl[0]
                 if self.fsm_state != 3:
                     self.crawl_poi_by_trip_type()
                 else:
-                    return
+                    return  # Note: not break
 
     def crawl_poi_by_trip_type(self):
         print('########## {}, {} ##########'.format(self.current_poi_name, self.current_trip_type))
@@ -120,16 +141,23 @@ class TripAdvisorCrawler:
         try:
             self.fsm_state = 2
             self.driver.get(self.current_poi_url)
-            sleep(2)
+            sleep(5)
 
             if self.current_trip_type != 'all':
                 # Click on "Traveller Type" filter, based on trip types 1-5
-                traveller_type_element = self.driver.find_element_by_xpath('//div[@data-tracker="{}"]'.format(self.current_trip_type))
+                traveller_type_element = self.driver.find_element_by_xpath(
+                    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
                 traveller_type_element.click()
-                sleep(2)
+                sleep(3)
+                self.driver.execute_script("scroll(0, 0);")
+                sleep(1)
 
             self.crawl_attributes()
-            self.attributes_df.to_csv('./tripadvisor/output/{}/attributes.csv'.format(self.datetime_string), mode='a', header=False, index=False)
+            self.attributes_df.to_csv(
+                './tripadvisor/output/{}/attributes.csv'.format(self.datetime_string),
+                mode='a',
+                header=False,
+                index=False)
             self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
             self.crawl_reviews()
             self.trip_types_to_crawl.pop(0)
@@ -139,11 +167,13 @@ class TripAdvisorCrawler:
 
             if self.current_trip_type != 'all':
                 # Need to un-filter "Traveller Type"
-                self.driver.execute_script("scroll(0, 0);")  # JavaScript
-                sleep(2)
-                traveller_type_element = self.driver.find_element_by_xpath('//div[@data-tracker="{}"]'.format(self.current_trip_type))
+                self.driver.execute_script("scroll(0, 0);")
+                sleep(1)
+                traveller_type_element = self.driver.find_element_by_xpath(
+                    '//div[@data-tracker="{}"]'.format(self.current_trip_type)
+                )
                 traveller_type_element.click()
-                sleep(2)
+                sleep(3)
 
             self.current_date = None
             self.current_page = None
@@ -153,33 +183,46 @@ class TripAdvisorCrawler:
             self.fsm_state = 3
             print("Exception has occurred. Please check log file.")
             log = open('./tripadvisor/output/{}/log.txt'.format(self.datetime_string), 'a+')
-            log.write('{}, {}, page: {}, {}, {}\n'.format(self.current_poi_index,
-                                                          self.current_poi_name,
-                                                          self.current_date,
-                                                          self.current_page,
-                                                          datetime.now()
-                                                          ))
+            log.write('{}, {}, {}, page: {}, {}, {}\n'.format(self.current_poi_index,
+                                                              self.current_poi_name,
+                                                              self.current_trip_type,
+                                                              self.current_page,
+                                                              self.current_date,
+                                                              datetime.now()
+                                                              ))
             log.write(traceback.format_exc() + '\n')
             log.close()
 
     ### KIV: WIP ###
     def go_to_page(self):
         pass
+    ################
 
     def crawl_attributes(self):
-        ranking_text = self.driver.find_element_by_xpath('//span[@class="header_popularity popIndexValidation "]').text
-        rating_breakdown_elements = self.driver.find_elements_by_xpath('//span[@class="row_num  is-shown-at-tablet"]')
-        address_text = self.driver.find_element_by_xpath('//span[@class="textAlignWrapper address"]').text
-        about_more_button = self.driver.find_elements_by_xpath('//span[@class="attractions-attraction-detail-about-card-Description__readMore--2pd33"]')
+        ranking_text = self.driver.find_element_by_xpath(
+            '//span[@class="header_popularity popIndexValidation "]')\
+            .text
+        rating_breakdown_elements = self.driver.find_elements_by_xpath(
+            '//span[@class="row_num  is-shown-at-tablet"]')
+        address_text = self.driver.find_element_by_xpath(
+            '//span[@class="textAlignWrapper address"]')\
+            .text
+        about_more_button = self.driver.find_elements_by_xpath(
+            '//span[@class="attractions-attraction-detail-about-card-Description__readMore--2pd33"]')
         if about_more_button:
             about_more_button[0].click()
-            sleep(2)
-            about_text = self.driver.find_element_by_xpath('//div[@class="attractions-attraction-detail-about-card-Description__modalText--1oJCY"]').text
-            about_more_close_button = self.driver.find_element_by_xpath('//div[@class="_2EFRp_bb"]')
+            sleep(1)
+            about_text = self.driver.find_element_by_xpath(
+                '//div[@class="attractions-attraction-detail-about-card-Description__modalText--1oJCY"]')\
+                .text
+            about_more_close_button = self.driver.find_element_by_xpath(
+                '//div[@class="_2EFRp_bb"]')
             about_more_close_button.click()
-            sleep(2)
+            sleep(1)
         else:
-            about_text = self.driver.find_element_by_xpath('//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]').text
+            about_text = self.driver.find_element_by_xpath(
+                '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+                .text
 
         # Parsing attributes
         rating_breakdown = self.parse_rating_breakdown_elements(rating_breakdown_elements)
@@ -242,25 +285,49 @@ class TripAdvisorCrawler:
                     break
 
     def reviews_to_csv(self):
-        self.reviews_df.to_csv('./tripadvisor/output/{}/reviews/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', header=False, index=False)
-        self.reviewers_df.to_csv('./tripadvisor/output/{}/reviewers/{}.csv'.format(self.datetime_string, self.current_poi_index), mode='a', header=False, index=False)
+        self.reviews_df.to_csv(
+            './tripadvisor/output/{}/reviews/{}.csv'.format(
+                self.datetime_string,
+                self.current_poi_index),
+            mode='a',
+            header=False,
+            index=False
+        )
+        self.reviewers_df.to_csv(
+            './tripadvisor/output/{}/reviewers/{}.csv'.format(
+                self.datetime_string,
+                self.current_poi_index),
+            mode='a',
+            header=False,
+            index=False
+        )
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
         self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
 
     def crawl_reviews_1_page(self, poi_index):
-        review_more_buttons = self.driver.find_elements_by_xpath('//span[@class="taLnk ulBlueLinks"]')
+        review_more_buttons = self.driver.find_elements_by_xpath(
+            '//span[@class="taLnk ulBlueLinks"]')
         if review_more_buttons:
             review_more_buttons[0].click()
             sleep(2)
 
         # Crawling review elements.
-        reviewer_name_elements = self.driver.find_elements_by_xpath('//div[@class="info_text pointer_cursor"]/div[1]')
-        home_location_elements = self.driver.find_elements_by_xpath('//div[@class="info_text pointer_cursor"]')
-        review_date_elements = self.driver.find_elements_by_xpath('//span[@class="ratingDate"]')
-        review_container_elements = self.driver.find_elements_by_xpath('//div[@class="review-container"]')
-        review_title_elements = self.driver.find_elements_by_xpath('//span[@class="noQuotes"]')
-        review_body_elements = self.driver.find_elements_by_xpath('//p[@class="partial_entry"]')
-        review_selector_elements = self.driver.find_elements_by_xpath('//div[@class="reviewSelector"]')
+        reviewer_name_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="info_text pointer_cursor"]/div[1]')
+        home_location_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="info_text pointer_cursor"]')
+        review_date_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="review-container"]/div/div/div/div[2]/span[2]')
+        review_container_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="review-container"]')
+        review_title_elements = self.driver.find_elements_by_xpath(
+            '//span[@class="noQuotes"]')
+        review_body_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="review-container"]/div/div/div/div[2]/div[@class="prw_rup prw_reviews_text_summary_hsx"]/div/p')
+        review_selector_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="review-container"]')
+        contributions_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="member_info"]/div[2]/div/span[2]')
 
         for i in range(len(reviewer_name_elements)):
             reviewer_url = self.parse_userid_elements(reviewer_name_elements[i].text)
@@ -268,11 +335,18 @@ class TripAdvisorCrawler:
             review_id = review_container_elements[i].get_attribute('data-reviewid')
             review_date = self.parse_review_date(review_date_elements[i].get_attribute('title'))
             home_location = self.parse_home_location(home_location_elements[i].text, reviewer_name)
-            review_rating_element = self.driver.find_element_by_xpath('//*[@id="review_{}"]/div/div[2]/span[1]'.format(review_id)).get_attribute('class')
+            review_rating_element = self.driver.find_element_by_xpath(
+                '//*[@id="review_{}"]/div/div[2]/span[1]'.format(review_id))\
+                .get_attribute('class')
             review_rating = self.parse_review_rating_element(review_rating_element)
             review_title = review_title_elements[i].text
             review_body = review_body_elements[i].text
-            date_of_experience = self.parse_review_selector_elements(review_selector_elements[i].text)
+            date_of_experience = self.parse_date_of_experience(review_selector_elements[i].text)
+            contributions = self.parse_contribution(contributions_elements[i].text)
+            helpful_votes_element = self.driver.find_elements_by_xpath(
+                '//*[@id="review_{}"]/div/div[1]/div/div/div[2]/div/span[4]'.format(review_id)
+            )
+            helpful_votes = self.parse_helpful_votes_element(helpful_votes_element)
 
             if self.earliest_date is not None and self.current_date < self.earliest_date:
                 break
@@ -295,8 +369,8 @@ class TripAdvisorCrawler:
                                 reviewer_name,
                                 home_location,
                                 None,  # CLEANED_HOME_LOCATION
-                                "CONTRIBUTION",
-                                "VOTES",
+                                contributions,
+                                helpful_votes,
                                 datetime.now()
                                ]
 
@@ -308,10 +382,11 @@ class TripAdvisorCrawler:
             reviewer_details_dict = dict(zip(self.reviewers_col_names, reviewer_details))
             self.reviewers_df = self.reviewers_df.append(reviewer_details_dict, ignore_index=True)
 
-        next_button_elements = self.driver.find_elements_by_xpath('//div[@class="unified ui_pagination "]/a[@class="nav next ui_button primary"]')
+        next_button_elements = self.driver.find_elements_by_xpath(
+            '//div[@class="unified ui_pagination "]/a[@class="nav next ui_button primary"]')
         if next_button_elements:
             next_button_elements[0].click()
-            sleep(2)
+            sleep(3)
         else:
             self.review_final_page = True
 
@@ -363,9 +438,20 @@ class TripAdvisorCrawler:
         return text[text.find(reviewer_name) + len(reviewer_name):]
 
     @staticmethod
-    def parse_review_selector_elements(text):
+    def parse_date_of_experience(text):
         substring = re.search('Date of experience: (.+)\n', text)
         if substring is not None:
             return datetime.strptime(substring.group(1), '%B %Y').strftime('%m-%Y')
         else:
             return None
+
+    @staticmethod
+    def parse_contribution(text):
+        return int(text.replace(",", ""))
+
+    @staticmethod
+    def parse_helpful_votes_element(elements):
+        if not elements:
+            return None
+        else:
+            return int(elements[0].text.replace(",", ""))

@@ -1,0 +1,11 @@
+General:
+    host: localhost
+    database: sentimentDB
+    user: test_user
+    password: Password123!
+    chromedriver_path: ./chromedriver
+    
+TripAdvisor:
+    end_date: '160101' # yymmdd (%y%m%d)
+    db_in_flag: 'csv' # csv, sqlite, mysql
+    db_out_flag: 'csv' # csv, sqlite, mysql

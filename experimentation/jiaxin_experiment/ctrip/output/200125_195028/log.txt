@@ -1,0 +1,10 @@
+564, 千灯寺 , page: 2, 2020-01-25 22:39:42.674787, current POI does not exist575, Ambassador Transit Lounge, page: 2, 2020-01-25 22:41:21.071049
+Traceback (most recent call last):
+  File "<ipython-input-4-c95ce129d32b>", line 85, in crawl_pois
+    self.crawl_attributes(row['poi_index'])
+  File "<ipython-input-4-c95ce129d32b>", line 178, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "<ipython-input-4-c95ce129d32b>", line 299, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+

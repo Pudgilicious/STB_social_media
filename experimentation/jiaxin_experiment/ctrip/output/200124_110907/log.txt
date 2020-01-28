@@ -1,0 +1,10 @@
+1, Orchard Road, page: 1, 2020-01-24 11:09:20.264816
+Traceback (most recent call last):
+  File "<ipython-input-157-96c2e6a6ae41>", line 88, in crawl_pois
+    self.crawl_reviews(row['poi_index'])
+  File "<ipython-input-157-96c2e6a6ae41>", line 107, in crawl_reviews
+    self.crawl_reviews_1_page(poi_index)
+  File "<ipython-input-157-96c2e6a6ae41>", line 224, in crawl_reviews_1_page
+    review_body=list(map(self.parse_review_body1,review))
+AttributeError: 'CrawlCtrip' object has no attribute 'parse_review_body1'
+

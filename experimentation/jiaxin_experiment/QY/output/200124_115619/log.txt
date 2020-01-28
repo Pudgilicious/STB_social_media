@@ -1,0 +1,6 @@
+1, Gardens by the Bay, page: None, 2020-01-24 11:56:22.973441
+Traceback (most recent call last):
+  File "<ipython-input-123-aba01fcfac3f>", line 85, in crawl_pois
+    if  int(re.search(r'\d+', self.res.extract_first()).group())== 404:
+AttributeError: 'NoneType' object has no attribute 'group'
+

@@ -1,0 +1,6 @@
+1, Gardens by the Bay, page: None, 2020-01-24 11:59:10.557214
+Traceback (most recent call last):
+  File "<ipython-input-125-24b5ebaf0fa3>", line 85, in crawl_pois
+    if  int(re.search(r'\d+', self.res.extract_first()))==404:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+

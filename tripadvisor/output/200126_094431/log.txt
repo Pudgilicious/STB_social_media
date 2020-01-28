@@ -1,0 +1,10 @@
+7, Singapore Flyer, page: 6, 2019-07-28 00:00:00, 2020-01-26 13:22:22.234534
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 136, in crawl_poi_by_trip_type
+    self.crawl_reviews()
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 220, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 278, in crawl_reviews_1_page
+    review_body = review_body_elements[i].text
+IndexError: list index out of range
+

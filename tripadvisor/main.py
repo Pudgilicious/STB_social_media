@@ -10,20 +10,25 @@ with open('config_file.yml') as file:
 
 chromedriver_path = configs['General']['chromedriver_path']
 
-db_in_flag = configs['TripAdvisor']['db_in_flag']
-db_out_flag = configs['TripAdvisor']['db_out_flag']
+db_in_flag = configs['TripAdvisor']['read_from_database']
+db_out_flag = configs['TripAdvisor']['write_to_database']
 
 if db_in_flag == 'csv':
 
     ### FOR POC ONLY ###
-    poi_index = [40, 242, 660]
-    poi_name = ['Henderson Waves',
-                'West Coast Plaza',
-                'NTU Centre for Contemporary Art'
+    poi_index = [#2,
+                 #3,
+                 #7,
+                 58]
+    poi_name = [#'Singapore Botanic Gardens',
+                #'Singapore Zoo',
+                #'Singapore Flyer',
+                'Night Safari'
                ]
-    poi_url = ['https://www.tripadvisor.com.sg/Attraction_Review-g294265-d3561693-Reviews-Henderson_Waves-Singapore.html',
-               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d12204918-Reviews-West_Coast_Plaza-Singapore.html',
-               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d8738861-Reviews-NTU_Centre_for_Contemporary_Art-Singapore.html'
+    poi_url = [#'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d310900-Reviews-Singapore_Botanic_Gardens-Singapore.html',
+               #'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d324542-Reviews-Singapore_Zoo-Singapore.html',
+               #'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d678639-Reviews-Singapore_Flyer-Singapore.html',
+               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d324761-Reviews-Night_Safari-Singapore.html'
               ]
     poi_df = pd.DataFrame(
         dict(poi_index=poi_index,

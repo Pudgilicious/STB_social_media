@@ -6,7 +6,8 @@ General:
     chromedriver_path: ./chromedriver
     
 TripAdvisor:
-    db_in_flag: csv # csv, mysql, sqlite
-    db_out_flag: csv # csv, mysql, sqlite
-    earliest_date: 01-01-2000 # dd-mm-yyyy or None. Higher priority than number_of_pages.
-    number_of_pages: 5 # int or None.
+    read_from_database: csv            # mysql, sqlite or None
+    write_to_database: csv            # mysql, sqlite or None
+    earliest_date: 01-01-2016       # dd-mm-yyyy or None. Higher priority than number_of_pages.
+    number_of_pages: 5              # int or None. if 0, only Attributes are crawled.
+    csv_folder:
