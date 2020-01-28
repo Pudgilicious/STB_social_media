@@ -18,7 +18,7 @@ driver.get(url)
 poi_df = pd.DataFrame(columns=['POI', 'link', 'num_reviews'])
 
 # There are 28 pages of attractions in Tripadvisor.
-for i in range(28):
+for i in range(29):
     
     print("page" + str(i)) #counter to keep track at which page    
     driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')  #To scroll down
@@ -32,6 +32,8 @@ for i in range(28):
     end_link = '/div/div/div/div[1]/div/div[1]/div[3]/a[@target="_blank"]/@href'     #Alternative: end_link = '/div/div/div/div[2]/a[@target="_blank"]/@href'
     end_text = '/div/div/div/div[1]/div/div[1]/div[3]/a[@target="_blank"]/text()'
     end_reviews = '/div/div/div/div[1]/div/div[1]/div[4]/div[2]/div/span[2]/a[@target="_blank"]/text()'
+    end_reviews1 = '/div/div/div/div[1]/div/div[1]/div[5]/div[2]/div/span[2]/a[@target="_blank"]/text()'
+
     
     #Looping through the div nodes
     for i in range(1, 100):
@@ -40,10 +42,14 @@ for i in range(28):
         xpath_link = 'div[' + str(i) +']' + end_link   
         xpath_text = 'div[' + str(i) +']' + end_text
         xpath_reviews = 'div[' + str(i) +']' + end_reviews
+        xpath_reviews1 = 'div[' + str(i) +']' + end_reviews1
         
         link = res.xpath(xpath_link).extract_first()     #eg. link = res.xpath('div[1]/div/div/div/div[2]/a[@target="_blank"]/@href').extract_first()       
         text = res.xpath(xpath_text).extract_first()  
         reviews = res.xpath(xpath_reviews).extract_first() 
+        
+        if reviews is None :
+            reviews = res.xpath(xpath_reviews1).extract_first()            
     
         try:
             if link:     #If link exist   
