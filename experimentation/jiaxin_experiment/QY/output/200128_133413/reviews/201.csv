@@ -1,0 +1,2 @@
+REVIEW_INDEX,WEBSITE_INDEX,POI_INDEX,REVIEWER_URL,REVIEW_RATING,REVIEW_DATE,REVIEW_BODY,ATTRIBUTES_CRAWLED_TIME
+,4,201,"['//www.qyer.com/u/986558', '//www.qyer.com/u/1723611']","[3, 4]","[datetime.datetime(2015, 10, 27, 0, 0), datetime.datetime(2015, 5, 7, 0, 0)]","['这个工厂是一个古老的建筑，有中国人最早创办的，上百年历史了，主要是购物的地方，可以看看制作的工艺过程。东西都很贵。', '这是一家工厂兼博物馆兼锡品超市。有着世界上最大的锡杯，各种精美绝伦的锡制品，非常值得一去。']",2020-01-28 14:25:24.378217
