@@ -15,8 +15,7 @@ import re
 from time import sleep
 from datetime import date
 from selenium.common.exceptions import NoSuchElementException 
-from random import randint  
-#crawl out reviews for Gardens by the bay, Ctrip, 1st page 
+from random import random  
 
 
 driver = webdriver.Chrome('./chromedriver')
@@ -37,9 +36,9 @@ for i in range(1,6):
   
     driver.execute_script('window.scrollTo(0,4500)')  #To scroll down
     #Forming selector path
-    sleep(randint(1,4)) 
+    sleep(1+random()*2)
     sel = Selector(text=driver.page_source)
-    sleep(randint(1,3)) 
+    sleep(1+random()*2)
     
     #selecting review list
     res = sel.xpath('//div[@class="_j_commentlist"]')    
