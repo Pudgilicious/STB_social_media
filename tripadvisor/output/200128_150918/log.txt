@@ -1,0 +1,104 @@
+58, Night Safari, Family, page: 2, 2019-12-21 00:00:00, 2020-01-28 15:09:52.065473
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 183, in crawl_poi_by_trip_type
+    self.crawl_reviews()
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 306, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 371, in crawl_reviews_1_page
+    contributions = self.parse_contribution(contributions_elements[i].text)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=79.0.3945.130)
+
+
+58, Night Safari, Family, page: 2, 2019-12-21 00:00:00, 2020-01-28 15:10:03.452826
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 161, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+58, Night Safari, Family, page: 2, 2019-12-21 00:00:00, 2020-01-28 15:10:13.987830
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 161, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+58, Night Safari, Family, page: 1, 2019-12-21 00:00:00, 2020-01-28 15:10:34.471031
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 183, in crawl_poi_by_trip_type
+    self.crawl_reviews()
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 306, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 335, in crawl_reviews_1_page
+    '//span[@class="taLnk ulBlueLinks"]')
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 410, in find_elements_by_xpath
+    return self.find_elements(by=By.XPATH, value=xpath)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 1007, in find_elements
+    'value': value})['value'] or []
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=79.0.3945.130)
+
+
+58, Night Safari, Family, page: 1, 2019-12-21 00:00:00, 2020-01-28 15:10:45.692567
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 161, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+58, Night Safari, Family, page: 2, 2019-12-21 00:00:00, 2020-01-28 15:11:07.246694
+Traceback (most recent call last):
+  File "/home/zyf0717/git_environment/STB_social_media_analytics/tripadvisor/tripadvisor_crawler_v2.py", line 194, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/zyf0717/anaconda3/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+

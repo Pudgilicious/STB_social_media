@@ -18,16 +18,16 @@ if db_in_flag == 'csv':
     ### FOR POC ONLY ###
     poi_index = [#2,
                  #3,
-                 7,
+                 #7,
                  58]
     poi_name = [#'Singapore Botanic Gardens',
                 #'Singapore Zoo',
-                'Singapore Flyer',
+                #'Singapore Flyer',
                 'Night Safari'
                ]
     poi_url = [#'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d310900-Reviews-Singapore_Botanic_Gardens-Singapore.html',
                #'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d324542-Reviews-Singapore_Zoo-Singapore.html',
-               'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d678639-Reviews-Singapore_Flyer-Singapore.html',
+               #'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d678639-Reviews-Singapore_Flyer-Singapore.html',
                'https://www.tripadvisor.com.sg/Attraction_Review-g294265-d324761-Reviews-Night_Safari-Singapore.html'
               ]
     poi_df = pd.DataFrame(
