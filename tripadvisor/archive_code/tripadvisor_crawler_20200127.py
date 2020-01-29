@@ -3,7 +3,7 @@ import os
 import re
 import traceback
 from selenium import webdriver
-from datetime import datetime
+from datetime import datetime, timedelta
 from time import sleep
 
 class TripAdvisorCrawler:
@@ -46,17 +46,15 @@ class TripAdvisorCrawler:
                           ]
 
     def __init__(self, chromedriver_path, poi_df, cnx, db_out_flag):
-        self.chromedriver_path = chromedriver_path
-        self.driver = None
+        self.driver = webdriver.Chrome(chromedriver_path)
         self.poi_df = poi_df
         if cnx:
             self.cursor = cnx.cursor()
         self.db_out_flag = db_out_flag
 
-        # For FSM
         self.fsm_state = 0
 
-        # User input parameters into crawl_pois method, from config.yml
+        # User input parameters into crawl_pois method
         self.number_of_pages = None
         self.earliest_date = None
         self.start_page = None
@@ -66,7 +64,6 @@ class TripAdvisorCrawler:
         self.current_date = None
         self.current_page = None
         self.current_trip_type = None
-        self.attributes_crawled = False
 
         # Reset after every POI
         self.current_poi_index = None
@@ -97,43 +94,36 @@ class TripAdvisorCrawler:
                    start_page=None,
                    number_of_pages=None,
                    earliest_date=None,
-                   trip_types=None
+                   trip_types=['Family', 'Couples', 'Solo', 'Business', 'Friends']
                    ):
-        if trip_types is None:
-            trip_types = ['Family', 'Couples', 'Solo', 'Business', 'Friends']
-        if self.fsm_state == 0:
-            if start_page is not None:
-                self.start_page = start_page
-            if number_of_pages is not None:
-                self.number_of_pages = number_of_pages
-            if earliest_date is not None:
-                self.earliest_date = datetime.strptime(earliest_date, '%d-%m-%Y')
-            # Note change in FSM state
-            self.fsm_state = 1
+        self.fsm_state = 1
+        if start_page is not None:
+            self.start_page = start_page
+        if number_of_pages is not None:
+            self.number_of_pages = number_of_pages
+        if earliest_date is not None:
+            self.earliest_date = datetime.strptime(earliest_date, '%d-%m-%Y')
 
-        self.driver = webdriver.Chrome(self.chromedriver_path)
-
-        while len(self.poi_df.index) > 0:
+        for _, row in self.poi_df.iterrows():
 
             # Create <POI_INDEX>.csv in reviews and reviewers folders.
-            if self.fsm_state == 1:
-                self.current_poi_index = self.poi_df.iloc[0][0]
-                self.current_poi_name = self.poi_df.iloc[0][1]
-                self.current_poi_url = self.poi_df.iloc[0][2]
-                self.reviews_df.to_csv(
-                    './tripadvisor/output/{}/reviews/{}.csv'.format(
-                        self.datetime_string,
-                        self.current_poi_index),
-                    mode='a',
-                    index=False
-                )
-                self.reviewers_df.to_csv(
-                    './tripadvisor/output/{}/reviewers/{}.csv'.format(
-                        self.datetime_string,
-                        self.current_poi_index),
-                    mode='a',
-                    index=False
-                )
+            self.current_poi_index = row['poi_index']
+            self.current_poi_name = row['poi_name']
+            self.current_poi_url = row['poi_url']
+            self.reviews_df.to_csv(
+                './tripadvisor/output/{}/reviews/{}.csv'.format(
+                    self.datetime_string,
+                    self.current_poi_index),
+                mode='a',
+                index=False
+            )
+            self.reviewers_df.to_csv(
+                './tripadvisor/output/{}/reviewers/{}.csv'.format(
+                    self.datetime_string,
+                    self.current_poi_index),
+                mode='a',
+                index=False
+            )
 
             if not self.trip_types_to_crawl:
                 self.trip_types_to_crawl = trip_types.copy()
@@ -145,16 +135,11 @@ class TripAdvisorCrawler:
                 else:
                     return  # Note: not break
 
-            self.poi_df = self.poi_df.iloc[1:]
-
-        self.driver.quit()
-        self.fsm_state = 4
-
     def crawl_poi_by_trip_type(self):
         print('########## {}, {} ##########'.format(self.current_poi_name, self.current_trip_type))
 
         try:
-
+            self.fsm_state = 2
             self.driver.get(self.current_poi_url)
             sleep(5)
 
@@ -164,34 +149,24 @@ class TripAdvisorCrawler:
                     '//div[@data-tracker="{}"]'.format(self.current_trip_type))
                 traveller_type_element.click()
                 sleep(3)
-
-            # Crawl attributes
-            if not self.attributes_crawled:
                 self.driver.execute_script("scroll(0, 0);")
                 sleep(1)
-                self.crawl_attributes()
-                self.attributes_df.to_csv(
-                    './tripadvisor/output/{}/attributes.csv'.format(self.datetime_string),
-                    mode='a',
-                    header=False,
-                    index=False)
-                self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
-                self.attributes_crawled = True
 
-            if self.fsm_state == 2:
-                self.driver.get(self.current_poi_url)
-                sleep(5)
-                # Note change in FSM state
-                self.fsm_state = 1
-
-            # Crawl reviews
+            self.crawl_attributes()
+            self.attributes_df.to_csv(
+                './tripadvisor/output/{}/attributes.csv'.format(self.datetime_string),
+                mode='a',
+                header=False,
+                index=False)
+            self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
             self.crawl_reviews()
+            self.trip_types_to_crawl.pop(0)
 
             if self.db_out_flag != 'csv':
                 self.add_to_database()
 
-            # Un-filter "Traveller Type"
             if self.current_trip_type != 'all':
+                # Need to un-filter "Traveller Type"
                 self.driver.execute_script("scroll(0, 0);")
                 sleep(1)
                 traveller_type_element = self.driver.find_element_by_xpath(
@@ -200,18 +175,12 @@ class TripAdvisorCrawler:
                 traveller_type_element.click()
                 sleep(3)
 
-            # Remove trip type from list of trip types to crawl
-            self.trip_types_to_crawl.pop(0)
-
-            # Reset markers
             self.current_date = None
             self.current_page = None
             self.current_trip_type = None
-            self.attributes_crawled = False
 
-        except:
+        except Exception as e:
             self.fsm_state = 3
-            self.driver.quit()
             print("Exception has occurred. Please check log file.")
             log = open('./tripadvisor/output/{}/log.txt'.format(self.datetime_string), 'a+')
             log.write('{}, {}, {}, page: {}, {}, {}\n'.format(self.current_poi_index,
@@ -223,6 +192,11 @@ class TripAdvisorCrawler:
                                                               ))
             log.write(traceback.format_exc() + '\n')
             log.close()
+
+    ### KIV: WIP ###
+    def go_to_page(self):
+        pass
+    ################
 
     def crawl_attributes(self):
         ranking_text = self.driver.find_element_by_xpath(
@@ -278,32 +252,33 @@ class TripAdvisorCrawler:
         self.attributes_df = self.attributes_df.append(poi_attributes_dict, ignore_index=True)
 
     def crawl_reviews(self):
-        if self.current_page is None:
-            self.current_page = 1
         if self.earliest_date is not None:
             self.current_date = datetime.now()
+            self.current_page = 1
             while self.current_date >= self.earliest_date:
+                print('Page {}'.format(self.current_page))
                 self.crawl_reviews_1_page(self.current_poi_index)
                 self.reviews_to_csv()
-                print('Page {} done.'.format(self.current_page))
                 self.current_page += 1
                 if self.review_final_page:
                     self.review_final_page = False
                     break
         elif self.number_of_pages is not None:
+            self.current_page = 1
             for i in range(self.number_of_pages):
+                print('Page {}'.format(self.current_page))
                 self.crawl_reviews_1_page(self.current_poi_index)
                 self.reviews_to_csv()
-                print('Page {} done.'.format(self.current_page))
                 self.current_page += 1
                 if self.review_final_page:
                     self.review_final_page = False
                     break
         else:
+            self.current_page = 1
             while not self.review_final_page:
+                print('Page {}'.format(self.current_page))
                 self.crawl_reviews_1_page(self.current_poi_index)
                 self.reviews_to_csv()
-                print('Page {} done.'.format(self.current_page))
                 self.current_page += 1
                 if self.review_final_page:
                     self.review_final_page = False
@@ -330,7 +305,6 @@ class TripAdvisorCrawler:
         self.reviewers_df = pd.DataFrame(columns=self.reviewers_col_names)
 
     def crawl_reviews_1_page(self, poi_index):
-        sleep(3)
         review_more_buttons = self.driver.find_elements_by_xpath(
             '//span[@class="taLnk ulBlueLinks"]')
         if review_more_buttons:
@@ -412,6 +386,7 @@ class TripAdvisorCrawler:
             '//div[@class="unified ui_pagination "]/a[@class="nav next ui_button primary"]')
         if next_button_elements:
             next_button_elements[0].click()
+            sleep(3)
         else:
             self.review_final_page = True
 

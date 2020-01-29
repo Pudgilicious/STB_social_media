@@ -1,5 +1,5 @@
 from time import sleep
-from tripadvisor_crawler_v2 import TripAdvisorCrawler
+from tripadvisor_crawler import TripAdvisorCrawler
 
 class TripAdvisorFSM:
     def __init__(self, chromedriver_path, poi_df, cnx, db_out_flag):
