@@ -10,6 +10,7 @@ class TripAdvisorCrawler:
     attributes_col_names = ['POI_INDEX',
                             'TOTAL_REVIEWS',
                             'RANKING',
+                            'POI_TYPE',
                             'TRIP_TYPE',
                             'AVERAGE_RATING',
                             'RATING_5_COUNT',
@@ -230,6 +231,8 @@ class TripAdvisorCrawler:
             .text
         rating_breakdown_elements = self.driver.find_elements_by_xpath(
             '//span[@class="row_num  is-shown-at-tablet"]')
+        poi_type_elements = self.driver.find_elements_by_xpath(
+            '//span[@class="is-hidden-mobile header_detail attractionCategories"]')
         address_text = self.driver.find_element_by_xpath(
             '//span[@class="textAlignWrapper address"]')\
             .text
@@ -254,6 +257,7 @@ class TripAdvisorCrawler:
         rating_breakdown = self.parse_rating_breakdown_elements(rating_breakdown_elements)
         total_reviews = self.calculate_total_reviews(rating_breakdown)
         ranking = self.parse_ranking_text(ranking_text)
+        poi_type = self.parse_poi_type_elements(poi_type_elements)
         average_rating = self.calculate_average_rating(rating_breakdown)
         about = about_text
         address = address_text
@@ -261,6 +265,7 @@ class TripAdvisorCrawler:
         poi_attributes = [self.current_poi_index,
                           total_reviews,
                           ranking,
+                          poi_type,
                           self.current_trip_type,
                           average_rating,
                           rating_breakdown[0],
@@ -431,6 +436,11 @@ class TripAdvisorCrawler:
     @staticmethod
     def parse_ranking_text(text):
         return int(text[1:text.find(' of')].replace(',', ''))
+
+    @staticmethod
+    def parse_poi_type_elements(elements):
+        if elements:
+            return elements[0].text
 
     @staticmethod
     def calculate_average_rating(rating_breakdown):
