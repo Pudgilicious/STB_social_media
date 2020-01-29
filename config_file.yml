@@ -6,6 +6,7 @@ General:
     chromedriver_path: ./chromedriver
     
 TripAdvisor:
+    csv_input_path: ./tripadvisor/20191208_attractions_list.csv
     read_from_database: csv  # mysql, sqlite or csv
     write_to_database: csv  # mysql, sqlite or csv
     start_page:  # int or None
