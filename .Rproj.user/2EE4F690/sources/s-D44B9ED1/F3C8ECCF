@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580291290172.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1670101343",
+    "id" : "F3C8ECCF",
+    "lastKnownWriteTime" : 1580354967,
+    "last_content_update" : 1580354967681,
+    "path" : "~/Desktop/stb_crawl/STB_social_media_analytics/qiongyou/8_prep_qy_agg_list.R",
+    "project_path" : "qiongyou/8_prep_qy_agg_list.R",
+    "properties" : {
+        "cursorPosition" : "37,0",
+        "scrollLine" : "10",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
