@@ -5,7 +5,7 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3486639844",
     "id" : "5167ECA0",
     "lastKnownWriteTime" : 1580291163,
     "last_content_update" : 1580291163,
@@ -13,9 +13,9 @@
     "project_path" : "ctrip/ctrip_r/8_prep_ctrip_agg_list.R",
     "properties" : {
         "cursorPosition" : "36,0",
-        "scrollLine" : "12"
+        "scrollLine" : "0"
     },
-    "relative_order" : 2,
+    "relative_order" : 1,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_source"

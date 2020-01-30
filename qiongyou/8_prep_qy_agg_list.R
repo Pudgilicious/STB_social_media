@@ -16,8 +16,17 @@ keys = read_yaml("./api_keys.yml")
 
 #If eng_name is NA and POI is english name
 df$eng_name_modified = ifelse(is.na(df$eng_name) & df$poi_is_english == 1, df$POI, df$eng_name)
-  
 google.dataset.out <- translate(dataset = df,
+                                content.field = 'POI',
+                                google.api.key = keys$General$google_translate_api,
+                                source.lang = 'zh-TW',
+                                target.lang = 'zh-CN')
+
+google.dataset.out$POI = google.dataset.out$translatedContent 
+google.dataset.out = google.dataset.out[, -which(names(google.dataset.out) == "translatedContent")]
+
+  
+google.dataset.out <- translate(dataset = google.dataset.out,
                                 content.field = 'POI',
                                 google.api.key = keys$General$google_translate_api,
                                 source.lang = 'zh-CN',
