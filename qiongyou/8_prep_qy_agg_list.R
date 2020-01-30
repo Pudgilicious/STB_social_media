@@ -27,7 +27,7 @@ google.dataset.out$is_translated = ifelse(is.na(google.dataset.out$eng_name_modi
 google.dataset.out$eng_name_modified = ifelse(is.na(google.dataset.out$eng_name_modified), google.dataset.out$translatedContent, google.dataset.out$eng_name_modified)
 
 google.dataset.out$num_reviews = gsub("[^0-9.-]", "", google.dataset.out$num_reviews)
-google.dataset.out$WEBSITE_INDEX = 3
+google.dataset.out$WEBSITE_INDEX = 4
 
 #POI_NAME is modified
 names(google.dataset.out) = c("POI_INDEX", "POI_CHINESE_NAME", "POI_RAW_NAME", "URL", "TOTAL_REVIEWS", "POI_CHINESE_NAME_IS_ENGLISH", "POI_NAME", "POI_CHINESE_NAME_TRANSLATED", "POI_NAME_IS_TRANSLATED", "WEBSITE_INDEX")
