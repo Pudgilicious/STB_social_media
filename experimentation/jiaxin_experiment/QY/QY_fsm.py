@@ -20,12 +20,10 @@ class QY_FSM:
             crawler.crawl_pois(number_of_pages)
             # Case were POI link is not working
             if crawler.fsm_state == 3:
-                print("exxxxccccccccutttttttttttttttiiiiiiiiiiiiiinnnnnnnnnngggggggg")
                 sleep(2)  # 2 second window for keyboard interrupt
+                print('exccccuuuuutttttttttiiiiiinnnnnggg')
                 crawler.fsm_state = 2
                 crawler.crawl_pois(number_of_pages)
-           # if crawler.fsm_state == 3 and crawler.attributes_crawled ==True:
-            #    for i in range(len())
 
 #state 0: initialization
 #state 1: start crawling
