@@ -46,19 +46,7 @@ class QYCrawler:
                          #'TRANSLATED_REVIEW_BODY_WATSON'
                         ]
     
-    #reviewers_col_names = ['REVIEWER_URL',
-                           #'REVIEWER_NAME',
-                           #'REVIEWER_LEVEL',
-                           #'GENDER',
-                           #'IMAGE_URL',
-                           #'CHINESE_RAW_LOCATION',
-                           #'CLEANED_ENGLISH_LOCATION',
-                           #'NUM_CITIES_VISITED',
-                           #'NUM_CTRIES_VISITED',
-                           #'REVIEWER_UPDATED_TIME'
-                          #]
-    
-    
+
     def __init__(self, chromedriver_path, poi_df, cnx, db_out_flag):
         self.chromedriver_path = chromedriver_path
         self.driver = None
@@ -125,12 +113,11 @@ class QYCrawler:
                                        )
                      
             self.driver.get(self.current_poi_url)
-            print('state_check_1:   '+str(self.fsm_state))
             if self.fsm_state == 3: 
                 self.fsm_state=2
-            print('state_check_2:   '+str(self.fsm_state))
             sleep(1+random()*2)
             self.sel = Selector(text=self.driver.page_source)
+            
             #################trial part to handle error of blank pages#########
             
             res = self.sel.xpath('//div[@id="app"]')
@@ -146,10 +133,9 @@ class QYCrawler:
                 log_file.close()
                 continue
 
-        #######################################################################  
+            ###################################################################
             
             if self.fsm_state != 3:
-                print('state_check_3:   '+str(self.fsm_state))
                 if self.fsm_state == 2:
                     # Note change in FSM state
                     self.fsm_state = 1   
@@ -164,7 +150,6 @@ class QYCrawler:
                                                       index=False)
                             self.attributes_df = pd.DataFrame(
                                 columns=self.attributes_col_names)
-                            print('attributes crawled')
                             self.attributes_crawled = True  
                    
                     # Crawl reviews
@@ -187,7 +172,6 @@ class QYCrawler:
                     self.fsm_state=3
                     self.driver.quit()
                     self.current_page = None
-                    print("Exception has occurred. Please check log file.")
                     log_file = open('./output/{}/log.txt'
                                     .format(self.datetime_string), 'a+')
                     log_file.write('{}, {}, page: {}, {}\n'\
@@ -202,6 +186,7 @@ class QYCrawler:
                                                                  self.current_poi_index), "w")
                     f.truncate()
                     f.close()
+                    print("Exception has occurred. Please check log file.")
                     sleep(1)
                     return
             
@@ -338,8 +323,9 @@ class QYCrawler:
     
 
     def crawl_reviews_1_page(self, poi_index):        
-        sleep(1+random()*2)
+        
         res1 = self.sel.xpath('.//div[@class="compo-main compo-feed"]') 
+        sleep(1+random()*2)
         
         xpath_url = './/a[@class="largeavatar"]/@href' 
         reviewer_url1 = res1.xpath(xpath_url).getall()
@@ -381,26 +367,11 @@ class QYCrawler:
                               datetime.now()
                               ]
             
-        #reviewer_details = [reviewer_url,
-                            #reviewer_name,
-                            #reviewer_level,
-                            #gender,
-                            #image_url,
-                            #chinese_raw_location,
-                            #cleaned-english_location,
-                            #num_cities_visited,
-                            #num_ctries_visited,
-                            #eviewer_update_time
-                            #datetime.now()
-                            #]
-            
+
         # Inserting reviews into dataframe.
             review_details_dict = dict(zip(self.reviews_col_names, review_details))
             self.reviews_df = self.reviews_df.append(review_details_dict, ignore_index=True)
             
-        # Inserting reviewers into dataframe.
-        #reviewer_details_dict = dict(zip(self.reviewers_col_names, reviewer_details))
-        #self.reviewers_df = self.reviewers_df.append(reviewer_details_dict, ignore_index=True)
 
         next_page_button = self.driver.find_elements_by_xpath('//a[@title="下一页"]')
         if next_page_button:
