@@ -1,0 +1,276 @@
+61, Little India, Family, page: None, None, 2020-01-31 09:08:41.265406
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+62, National Library of Singapore, Family, page: None, None, 2020-01-31 09:27:26.072844
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 166, in crawl_poi_by_trip_type
+    traveller_type_element.click()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:40:11.589480
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:40:28.785062
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:40:46.204346
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:40:59.059175
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:41:15.942091
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:41:32.905652
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:41:46.063071
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:42:03.262815
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:42:20.715137
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:42:33.827046
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:42:46.710670
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:43:00.023798
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:43:13.043229
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:43:25.949374
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+64, Mustafa Centre, Family, page: None, None, 2020-01-31 09:43:37.495758
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 160, in crawl_poi_by_trip_type
+    sleep(5)
+KeyboardInterrupt
+

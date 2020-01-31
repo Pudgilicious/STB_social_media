@@ -46,19 +46,7 @@ class QYCrawler:
                          #'TRANSLATED_REVIEW_BODY_WATSON'
                         ]
     
-    #reviewers_col_names = ['REVIEWER_URL',
-                           #'REVIEWER_NAME',
-                           #'REVIEWER_LEVEL',
-                           #'GENDER',
-                           #'IMAGE_URL',
-                           #'CHINESE_RAW_LOCATION',
-                           #'CLEANED_ENGLISH_LOCATION',
-                           #'NUM_CITIES_VISITED',
-                           #'NUM_CTRIES_VISITED',
-                           #'REVIEWER_UPDATED_TIME'
-                          #]
-    
-    
+
     def __init__(self, chromedriver_path, poi_df, cnx, db_out_flag):
         self.chromedriver_path = chromedriver_path
         self.driver = None
@@ -81,6 +69,7 @@ class QYCrawler:
         self.current_poi_url = None
         self.review_final_page = False
         self.attributes_crawled=False
+        self.reviews_crawled=False
         self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
         self.sel = None                                                        
@@ -104,13 +93,13 @@ class QYCrawler:
         if self.fsm_state == 0:
             if number_of_pages is not None:
                 self.number_of_pages = number_of_pages
-            #start crawling, change state
+            #initialization finish, change state
             self.fsm_state = 1
             
         self.driver = webdriver.Chrome(self.chromedriver_path)  
 
         while len(self.poi_df.index) > 0:
-
+    
             # Create <POI_INDEX>.csv in reviews and reviewers folders.
             if self.fsm_state == 1:
                 self.current_poi_index = self.poi_df.iloc[0][0]
@@ -122,101 +111,95 @@ class QYCrawler:
                                        mode='a',
                                        index=False
                                        )
-                        
-
+                     
             self.driver.get(self.current_poi_url)
-                    
-            #################trial part to handle error of blank pages#############
-            driver=self.driver
-            self.sel = Selector(text=driver.page_source)
-            sleep(random()*2)
+            if self.fsm_state == 3: 
+                self.fsm_state=2
+            sleep(1+random()*2)
+            self.sel = Selector(text=self.driver.page_source)
+            
+            #################trial part to handle error of blank pages#########
+            
             res = self.sel.xpath('//div[@id="app"]')
             if  res == []:                                             #if find a 404                                      #output a log file,out of the loop
                 log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
                 
                 log_file.write('{}, {}, page:{}, {}, {}'\
                                   .format(self.current_poi_index,
-                                          self.current_poi_name,
-                                          self.current_page,
-                                          datetime.now()),
-                                         'POI website not working')
+                                        self.current_poi_name,
+                                        self.current_page,
+                                        datetime.now(),
+                                        'POI website not working'))
                 log_file.close()
                 continue
-        
 
-        #######################################################################  
-           
+            ###################################################################
+            
             if self.fsm_state != 3:
-                self.crawl_info()
-            else:
-                print('xxxxxxxxxxxxxxxx')
-                return
+                if self.fsm_state == 2:
+                    # Note change in FSM state
+                    self.fsm_state = 1   
+                    
+                try:
+                    if not self.attributes_crawled:    
+                            print('########## {}##########'.format(self.current_poi_name))
+                            self.crawl_attributes()
+                            self.attributes_df.to_csv('./output/{}/attributes.csv'.format(self.datetime_string),
+                                                      mode='a', 
+                                                      header=False,
+                                                      index=False)
+                            self.attributes_df = pd.DataFrame(
+                                columns=self.attributes_col_names)
+                            self.attributes_crawled = True  
+                   
+                    # Crawl reviews
+                    if not self.reviews_crawled:
+                        self.crawl_reviews()
+            
+                        if self.db_out_flag != 'csv':
+                            self.add_to_database()
+                            
+                    
+                    self.current_page = None
+                    self.attributes_crawled = False
+                    self.reviews_crawled = False
+                    
+                    self.poi_df = self.poi_df.iloc[1:]
+        
+                        
+                   
+                except:
+                    self.fsm_state=3
+                    self.driver.quit()
+                    self.current_page = None
+                    log_file = open('./output/{}/log.txt'
+                                    .format(self.datetime_string), 'a+')
+                    log_file.write('{}, {}, page: {}, {}\n'\
+                               .format(self.current_poi_index,
+                                       self.current_poi_name,
+                                       self.current_page,
+                                       datetime.now()))
+                    log_file.write(traceback.format_exc() + '\n')
+                    log_file.close()
+                    #erase every thing from the POI review csv, rewrite in next loop
+                    f = open("./output/{}/reviews/{}.csv".format(self.datetime_string,
+                                                                 self.current_poi_index), "w")
+                    f.truncate()
+                    f.close()
+                    print("Exception has occurred. Please check log file.")
+                    sleep(1)
+                    return
+            
                 
                 
-            if self.fsm_state == 2:
-                self.driver.get(self.current_poi_url)
-                sleep(5)
-                # Note change in FSM state
-                self.fsm_state = 1
             
         self.driver.quit()
         self.fsm_state = 4
             
-   
 
-    def crawl_info(self):
-         try:
-                
-                if not self.attributes_crawled:    
-                    print('########## {}##########'.format(self.current_poi_name))
-                    self.crawl_attributes()
-                    self.attributes_df.to_csv('./output/{}/attributes.csv'.format(self.datetime_string),
-                                              mode='a', 
-                                              header=False,
-                                              index=False)
-                    self.attributes_df = pd.DataFrame(
-                        columns=self.attributes_col_names)
-                    self.attributes_crawled = True  
-                    
-                    
-                
-                 # Crawl reviews
-                self.crawl_reviews()
-    
-                if self.db_out_flag != 'csv':
-                    self.add_to_database()
-                
-                self.current_date = None
-                self.current_page = None
-                self.current_trip_type = None
-                self.attributes_crawled = False
-                
-                self.poi_df = self.poi_df.iloc[1:]
-
-                
-           
-         except:
-                self.fsm_state=3
-                self.driver.quit()
-                print("Exception has occurred. Please check log file.")
-                log_file = open('./output/{}/log.txt'
-                                .format(self.datetime_string), 'a+')
-                log_file.write('{}, {}, page: {}, {}\n'\
-                           .format(self.current_poi_index,
-                                   self.current_poi_name,
-                                   self.current_page,
-                                   datetime.now()))
-                log_file.write(traceback.format_exc() + '\n')
-                log_file.close()
-
-        
-        
-       
-    
-    
-   
+  
     def crawl_attributes(self):
-
+        sleep(1+random())
         #select areas where we going to extract info
         res = self.sel.xpath('.//div[@class="poi-detail"]')    
         
@@ -312,9 +295,9 @@ class QYCrawler:
         if self.number_of_pages is not None:
             for i in range(self.number_of_pages):
                 self.crawl_reviews_1_page(self.current_poi_index)
-                self.reviews_to_csv()
                 print('Page {} done.'.format(self.current_page))
                 self.current_page += 1
+                self.reviews_to_csv()
                 if self.review_final_page:
                     self.review_final_page = False
                     break
@@ -340,20 +323,18 @@ class QYCrawler:
     
 
     def crawl_reviews_1_page(self, poi_index):        
-        driver=self.driver
-        self.sel = Selector(text=driver.page_source)
+        
         res1 = self.sel.xpath('.//div[@class="compo-main compo-feed"]') 
-        sleep(random()*2)
+        sleep(1+random()*2)
         
         xpath_url = './/a[@class="largeavatar"]/@href' 
-        reviewer_url = res1.xpath(xpath_url).getall()   
-        sleep(1+random()*2)
+        reviewer_url1 = res1.xpath(xpath_url).getall()
 
         xpath_rates = './/ul[@class="comment-list"]//li//span[@class="poi-stars"]'
         star = res1.xpath(xpath_rates).getall()
         def regex_cnt(string,pattern):
             return len(re.findall(pattern,string))
-        review_rating=list(map(lambda x:regex_cnt(x,"singlestar full"),star))
+        review_rating1=list(map(lambda x:regex_cnt(x,"singlestar full"),star))
        
 
         xpath_date = './/a[@class="date"]/text()'  
@@ -365,51 +346,49 @@ class QYCrawler:
         
         
         # Parsing reviews
-        review_body=list(map(self.parse_review_body,review_body1))
-        review_date=list(map(self.parse_review_date,review_date1))
+        review_body1=list(map(self.parse_review_body,review_body1))
+        review_date1=list(map(self.parse_review_date,review_date1))
+        
+        for i in range(len(reviewer_url1)):
+            reviewer_url = reviewer_url1[i]
+            review_date =  review_date1[i]
+            review_rating = review_rating1[i]
+            review_body = review_body1[i]
             
-        review_details = [None, # REVIEW_INDEX
-                          4, # WEBSITE_INDEX (QY is '4')
-                          self.current_poi_index,
-                          reviewer_url,
-                          review_rating,
-                          review_date,
-                          review_body,
-                          #translated_review_body_google,
-                          #translated_review_body_watson,
-                          datetime.now()
-                          ]
+            review_details = [None, # REVIEW_INDEX
+                              4, # WEBSITE_INDEX (QY is '4')
+                              self.current_poi_index,
+                              reviewer_url,
+                              review_rating,
+                              review_date,
+                              review_body,
+                              #translated_review_body_google,
+                              #translated_review_body_watson,
+                              datetime.now()
+                              ]
             
-        #reviewer_details = [reviewer_url,
-                            #reviewer_name,
-                            #reviewer_level,
-                            #gender,
-                            #image_url,
-                            #chinese_raw_location,
-                            #cleaned-english_location,
-                            #num_cities_visited,
-                            #num_ctries_visited,
-                            #eviewer_update_time
-                            #datetime.now()
-                            #]
-            
+
         # Inserting reviews into dataframe.
-        review_details_dict = dict(zip(self.reviews_col_names, review_details))
-        self.reviews_df = self.reviews_df.append(review_details_dict, ignore_index=True)
+            review_details_dict = dict(zip(self.reviews_col_names, review_details))
+            self.reviews_df = self.reviews_df.append(review_details_dict, ignore_index=True)
             
-        # Inserting reviewers into dataframe.
-        #reviewer_details_dict = dict(zip(self.reviewers_col_names, reviewer_details))
-        #self.reviewers_df = self.reviewers_df.append(reviewer_details_dict, ignore_index=True)
 
         next_page_button = self.driver.find_elements_by_xpath('//a[@title="下一页"]')
         if next_page_button:
-            sleep(1+random()*2)
-            self.driver.execute_script("arguments[0].click()",next_page_button[0])
-            sleep(1+random()*2)
-            self.sel = Selector(text=self.driver.page_source)
+            if self.driver.current_url!= self.current_poi_url:
+                raise Exception("wrong_page")
+            else:
+                self.driver.execute_script("arguments[0].click()",next_page_button[0])
+                sleep(1+random()*2)
+                self.sel = Selector(text=self.driver.page_source)
         else :
-            print("Can't click or last page")
-            self.review_final_page= True
+            sleep(1+random())
+            if self.current_page <= self.number_of_pages:
+                raise Exception("random clicking happened")
+            else:
+                print("Can't click or last page")
+                self.reviews_crawled=True
+                self.review_final_page= True
          
     
     # Methods below are all utility functions.all are static method
