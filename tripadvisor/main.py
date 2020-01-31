@@ -17,7 +17,8 @@ db_out_flag = configs['TripAdvisor']['write_to_database']
 if db_in_flag == 'csv':
     poi_df = pd.read_csv(csv_input_path)
     poi_df['URL'] = poi_df['URL'].apply(lambda x: 'https://tripadvisor.com.sg' + x)
-    poi_df = poi_df[8:]
+    poi_df = poi_df[49:]
+    # poi_df = poi_df.iloc[[12, 23],]
 
 if db_in_flag != 'csv':
     poi_df = pd.DataFrame()
