@@ -26,7 +26,7 @@ driver.get(url)
 poi_df = pd.DataFrame(columns=['POI','eng_name', 'link', 'num_reviews'])
 
 # There are 24 pages of attractions in QY.
-for i in range(1,5):
+for i in range(1,25):
        
 
         print("page" + str(i)) #counter to keep track at which page    
@@ -77,4 +77,5 @@ driver.quit()
 #Write out as data-frame with date
 today = date.today()
 today_date = today.strftime("%Y%m%d")
-poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/trialQYlist.csv")# changed storage position and name_jia
+poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/aggregate list/{}_qy_list.csv"\
+                  .format(today_date))
