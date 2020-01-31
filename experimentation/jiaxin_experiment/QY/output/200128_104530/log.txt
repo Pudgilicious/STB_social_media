@@ -1,8 +1,0 @@
-1, Gardens by the Bay, page: None, 2020-01-28 10:45:33.002373
-Traceback (most recent call last):
-  File "<ipython-input-16-e1a56ee1e963>", line 97, in crawl_pois
-    self.crawl_attributes(row['poi_index'])
-  File "<ipython-input-16-e1a56ee1e963>", line 165, in crawl_attributes
-    ticket_info=int(res.xpath(xpath_ticket).extract_first())
-ValueError: invalid literal for int() with base 10: '温室成人28新币，儿童（3-12岁）15新币；空中栈道成人8新币，儿童（3-12岁）5新币'
-

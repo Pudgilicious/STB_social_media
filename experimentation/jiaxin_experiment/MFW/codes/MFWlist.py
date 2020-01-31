@@ -76,4 +76,4 @@ driver.quit()
 #Write out as data-frame with date
 today = date.today()
 today_date = today.strftime("%Y%m%d")
-poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/trialMFWlist.csv")
+poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment//aggregate list/{}_mfw_list.csv".format(today_date))

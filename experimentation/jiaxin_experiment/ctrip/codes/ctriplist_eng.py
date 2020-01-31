@@ -87,24 +87,11 @@ for i in range(1,113):
         url1= "https://you.ctrip.com/sight/singapore53/s0-p{}.html".format(i+1)   
         chrome.get(url1) 
         
-#try:
-     #       next_page_button = driver.find_element_by_xpath('//a[@class="nextpage"]')
-       
-#except:
-         #   sleep(1)
-          #  next_page_button = driver.find_element_by_xpath('//a[@class="nextpage"]')
-        
-    
-#try:
-           # next_page_button.click()  
-          #  sel = Selector(text=driver.page_source)
-       
-#except:
-            #print("Can't click or last page")
+
         
 chrome.quit()
 
 #Write out as data-frame with date
 today = date.today()
 today_date = today.strftime("%Y%m%d")
-poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/eng_Ctrip.csv")
+poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/aggregate list/{}_eng_ctrip_list.csv".format(today_date))
