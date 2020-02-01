@@ -1,13 +1,15 @@
 import pandas as pd
+import traceback
 from datetime import datetime
 from pandas.io.json import json_normalize
+from time import sleep
 
 from ibm_watson import NaturalLanguageUnderstandingV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson.natural_language_understanding_v1 import Features, EntitiesOptions, KeywordsOptions
 
 # Setup the API caller
-authenticator = IAMAuthenticator('bkC6hyTVS4qonY34vS0d8Q5F2YY4Kz9m0fyj1cN-5VFw')
+authenticator = IAMAuthenticator('3HnVdWKI3sLAgms50soYv3zA4Kw-V2UIy6hM_aWkLpR1')  # API key
 natural_language_understanding = NaturalLanguageUnderstandingV1(
     version='2019-07-12',
     authenticator=authenticator
@@ -18,8 +20,11 @@ natural_language_understanding.set_service_url(
 # Open CSV containing reviews to score
 folder_name = '200125_142611'
 poi_index = 1
-reviews_df = pd.read_csv('./tripadvisor/finalised_output/{}/reviews/{}.csv'.format(folder_name, poi_index))
-row_number = 2776
+reviews_df = pd.read_csv('./tripadvisor/finalised_output/{}/reviews/{}.csv'.format(
+    folder_name,
+    poi_index
+))
+row_number = 19847
 reviews_df = reviews_df.iloc[row_number:]
 
 # Create CSVs
@@ -94,60 +99,80 @@ entities_col_names_map = {
 while len(reviews_df.index) > 0:
     text = reviews_df.iloc[0][8]
     print('Row number: {}'.format(row_number))
-    response = natural_language_understanding.analyze(
-        text=text,
-        features=Features(
-            entities=EntitiesOptions(emotion=True, sentiment=True, limit=1000),
-            keywords=KeywordsOptions(emotion=True, sentiment=True, limit=1000)
-        )
-    ).get_result()
 
-    keywords_df = json_normalize(response['keywords']).rename(columns=keywords_col_names_map)
-    keywords_df.insert(0, 'REVIEW_ID', reviews_df.iloc[0][4])
-    keywords_df.insert(0, 'WEBSITE_ID', 1)
-    keywords_df = keywords_col_names_df.append(keywords_df, sort=False)
-    """
-    # Ensure consistent number of columns for sorting
-    if 'MIXED_SENTIMENT' not in keywords_df.columns.values:
-        keywords_df['MIXED_SENTIMENT'] = None
-
-    # Sort columns
-    keywords_df = keywords_df[keywords_col_names]
-    """
-    keywords_df.to_csv(
-        keywords_file_path,
-        mode='a',
-        header=False,
-        index=False
-    )
-
-    if 'entities' in response.keys():
-        entities_df = json_normalize(response['entities']).rename(columns=entities_col_names_map)
-        if entities_df.shape[1] != 0:
-            entities_df.insert(0, 'REVIEW_ID', reviews_df.iloc[0][4])
-            entities_df.insert(0, 'WEBSITE_ID', 1)
-            entities_df = entities_col_names_df.append(entities_df, sort=False)
-            """
-            # Ensure consistent number of columns for sorting
-            if 'MIXED_SENTIMENT' not in entities_df.columns.values:
-                entities_df['MIXED_SENTIMENT'] = None
-            if 'DISAMBIGUATION_SUBTYPE' not in entities_df.columns.values:
-                entities_df['DISAMBIGUATION_SUBTYPE'] = None
-            if 'DISAMBIGUATION_NAME' not in entities_df.columns.values:
-                entities_df['DISAMBIGUATION_NAME'] = None
-            if 'DISAMBIGUATION_RESOURCE' not in entities_df.columns.values:
-                entities_df['DISAMBIGUATION_RESOURCE'] = None
-    
-            # Sort columns
-            entities_df = entities_df[entities_col_names]
-            """
-            entities_df.to_csv(
-                entities_file_path,
-                mode='a',
-                header=False,
-                index=False
+    try:
+        response = natural_language_understanding.analyze(
+            text=text,
+            features=Features(
+                entities=EntitiesOptions(emotion=True, sentiment=True, limit=1000),
+                keywords=KeywordsOptions(emotion=True, sentiment=True, limit=1000)
             )
+        ).get_result()
 
-    reviews_df = reviews_df.iloc[1:]
-    row_number += 1
+        keywords_df = json_normalize(response['keywords']).rename(columns=keywords_col_names_map)
+        keywords_df.insert(0, 'REVIEW_ID', reviews_df.iloc[0][4])
+        keywords_df.insert(0, 'WEBSITE_ID', 1)
+        keywords_df = keywords_col_names_df.append(keywords_df, sort=False)
+        """
+        # Ensure consistent number of columns for sorting
+        if 'MIXED_SENTIMENT' not in keywords_df.columns.values:
+            keywords_df['MIXED_SENTIMENT'] = None
+    
+        # Sort columns
+        keywords_df = keywords_df[keywords_col_names]
+        """
+        keywords_df.to_csv(
+            keywords_file_path,
+            mode='a',
+            header=False,
+            index=False
+        )
+
+        if 'entities' in response.keys():
+            entities_df = json_normalize(response['entities']).rename(columns=entities_col_names_map)
+            if entities_df.shape[1] != 0:
+                entities_df.insert(0, 'REVIEW_ID', reviews_df.iloc[0][4])
+                entities_df.insert(0, 'WEBSITE_ID', 1)
+                entities_df = entities_col_names_df.append(entities_df, sort=False)
+                """
+                # Ensure consistent number of columns for sorting
+                if 'MIXED_SENTIMENT' not in entities_df.columns.values:
+                    entities_df['MIXED_SENTIMENT'] = None
+                if 'DISAMBIGUATION_SUBTYPE' not in entities_df.columns.values:
+                    entities_df['DISAMBIGUATION_SUBTYPE'] = None
+                if 'DISAMBIGUATION_NAME' not in entities_df.columns.values:
+                    entities_df['DISAMBIGUATION_NAME'] = None
+                if 'DISAMBIGUATION_RESOURCE' not in entities_df.columns.values:
+                    entities_df['DISAMBIGUATION_RESOURCE'] = None
+        
+                # Sort columns
+                entities_df = entities_df[entities_col_names]
+                """
+                entities_df.to_csv(
+                    entities_file_path,
+                    mode='a',
+                    header=False,
+                    index=False
+                )
+
+        reviews_df = reviews_df.iloc[1:]
+        row_number += 1
+
+    except:
+        print("Exception has occurred. Please check log file.")
+        log = open(
+            './tripadvisor/finalised_output/{}/reviews/log.txt'.format(folder_name),
+            'a+')
+        log.write('POI index: {}, row number: {}, {}\n'.format(
+            poi_index,
+            row_number,
+            datetime.now()))
+        log.write(traceback.format_exc() + '\n')
+        log.close()
+
+        # Continue with next review
+        reviews_df = reviews_df.iloc[1:]
+        row_number += 1
+
+        sleep(300)
 
