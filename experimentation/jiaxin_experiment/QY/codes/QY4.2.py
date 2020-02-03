@@ -20,14 +20,14 @@ from random import randint
 driver = webdriver.Chrome('./chromedriver')
 
 
-#url = "https://place.qyer.com/poi/V2YJalFkBzBTbA/"
+url = "https://place.qyer.com/poi/V2MJYFFvBzZTZQ/"
 
 driver.get(url)
 
 # Initialize pandas data-frame with name of place and link
 poi_df = pd.DataFrame(columns=['reviews'])
 
-for i in range(0,5):
+for i in range(1,5):
     print("page" + str(i)) #counter to keep track at which page   
     driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')  #To scroll down
 
@@ -61,14 +61,25 @@ for i in range(0,5):
 
     xpath_date = '//a[@class="date"]/text()'  #passed
     date = res.xpath(xpath_date).getall()   #a list containing all the dates from 1st page of review
+    
+    review_body_list=[]
+    for i in range(1,11):
+        xpath_body='//li[{}]//p[@class="content"]/text()'.format(i)
+        reviews=res.xpath(xpath_body).getall()
+        review_body_list.append(reviews)
+        print(review_body_list)
+    
+    #xpath_body= '//p[@class="content"]/text()'  #passed
+    #reviews = res.xpath(xpath_body).getall()   #a list containing all the reviews from 1st page of review
 
-    xpath_body= '//p[@class="content"]/text()'  #passed
-    reviews = res.xpath(xpath_body).getall()   #a list containing all the reviews from 1st page of review
+    for j in range(len(reviewer_urls)):
+            reviewer_url = reviewer_urls[j]
+            review_date =  date[j]
+            review_rating = rates[j]
+            review_body = review_body_list[j]
 
 
-
-
-    poi_df.loc[poi_df.shape[0]] = [date]#for illustration only, changes the variables accordingly
+            poi_df.loc[poi_df.shape[0]] = [review_body]#for illustration only, changes the variables accordingly
 
 
     next_page_button = driver.find_elements_by_xpath('//a[@title="下一页"]')

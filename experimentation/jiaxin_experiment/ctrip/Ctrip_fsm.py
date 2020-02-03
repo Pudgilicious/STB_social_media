@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jan 28 18:17:35 2020
+Created on Fri Jan 31 17:12:26 2020
 
 @author: jia
 """
 
 from time import sleep
-from QY_crawler import QYCrawler
+from Ctrip_crawler import CtripCrawler
 
-class QY_FSM:
+class Ctrip_FSM:
     def __init__(self, chromedriver_path, poi_df, cnx, db_out_flag):
-        self.crawler = QYCrawler(chromedriver_path, poi_df, cnx, db_out_flag)
+        self.crawler = CtripCrawler(chromedriver_path, poi_df, cnx, db_out_flag)
 
 
     def start(self,number_of_pages=None):

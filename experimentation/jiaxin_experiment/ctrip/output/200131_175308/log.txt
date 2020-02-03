@@ -1,0 +1,16 @@
+0, 新加坡环球影城, page: None, 2020-01-31 17:53:23.200836
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 147, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 195, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+TypeError: crawl_reviews_1_page() takes 1 positional argument but 2 were given
+
+0, 新加坡环球影城, page: None, 2020-01-31 17:53:34.791344
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 147, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 195, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+TypeError: crawl_reviews_1_page() takes 1 positional argument but 2 were given
+

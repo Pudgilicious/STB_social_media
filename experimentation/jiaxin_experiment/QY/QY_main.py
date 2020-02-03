@@ -26,45 +26,38 @@ db_out_flag = configs['QY']['write_to_database']
 
 if db_in_flag == 'csv':
     
-    df = pd.read_csv(csv_input_path)
+    #df = pd.read_csv(csv_input_path)
     
-    def parse_reviews(text):
-        if re.search(r'\d+',str(text)):
-            return int(re.search(r'\d+', text).group())
-        else:
-            return 0
+    #def parse_reviews(text):
+     #   if re.search(r'\d+',str(text)):
+      #      return int(re.search(r'\d+', text).group())
+       # else:
+        #    return 0
 
-    df['POI'] = df['POI'].apply(lambda x: x.replace(' ',''))    
-    df['num_reviews'] = df['num_reviews'].apply(parse_reviews)
-    df['link'] = df['link'].apply(lambda x: 'https://'+x[2:])
+    #df['POI'] = df['POI'].apply(lambda x: x.replace(' ',''))    
+    #df['num_reviews'] = df['num_reviews'].apply(parse_reviews)
+    #df['link'] = df['link'].apply(lambda x: 'https://'+x[2:])
     
-    poi_index=list(range(len(df['POI'])))
+    #poi_index=list(range(len(df['POI'])))
     
-    poi_df = pd.DataFrame({'poi_index':poi_index, 
-                           'poi_name':df['POI'], 
-                           'poi_url':df['link']}
-                           )
-    
-    ### FOR POC ONLY ###
-    #poi_index = [1, 2, 3, 4, 5]
-    #poi_name = ['Gardens by the Bay',                        #2 popular POI, 2 not so popular ones, 1 404 test 
-     #           'Marina Bay Sands Hotel and Sands Skypark',
-      #          'Thian Hock Keng Temple',
-       #         'Arab Street',
-        #        '404test'
-         #      ]
-    #poi_url = ['https://place.qyer.com/poi/V2UJY1FlBzZTZFI3/',
-     #          'https://place.qyer.com/poi/V2YJalFkBzBTbA/',
-      #         'https://place.qyer.com/poi/V2EJZVFnBz9TYA/',
-       #        'https://place.qyer.com/poi/V2AJY1FmBzFTZg/',
-        #       'https://place.qyer.com/poi/V2AJY1jjtest/'
-         #     ]
     #poi_df = pd.DataFrame({'poi_index':poi_index, 
-     #                      'poi_name':poi_name, 
-      #                     'poi_url':poi_url}
+     #                      'poi_name':df['POI'], 
+      #                     'poi_url':df['link']}
        #                    )
-    ####################
-
+    
+    poi_index = [1, 2]
+    poi_name = ['Merlion Park',                        
+                    'Singapore Zoo',
+                    
+                   ]
+    poi_url = ['https://place.qyer.com/poi/V2MJYFFvBzZTZQ/',
+                   'https://place.qyer.com/poi/V2AJa1FuBz5TYA/',
+                  ]
+    poi_df = pd.DataFrame({'poi_index':poi_index, 
+                               'poi_name':poi_name, 
+                               'poi_url':poi_url}
+                               )
+    
 if db_in_flag != 'csv':
     poi_df = pd.DataFrame()
 

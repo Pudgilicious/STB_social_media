@@ -1,0 +1,10 @@
+0, 新加坡环球影城, page: None, 2020-01-31 17:56:23.291650
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 147, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 195, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 358, in crawl_reviews_1_page
+    raise Exception("wrong_page")
+Exception: wrong_page
+
