@@ -23,7 +23,7 @@ driver.get(url)
 
 
 # Initialize pandas data-frame with name of place and link
-poi_df = pd.DataFrame(columns=['POI','eng_name', 'link', 'num_reviews'])
+poi_df = pd.DataFrame(columns=['WEBSITE_INDEX','POI_NAME','ENGLISH_NAME', 'link', 'num_reviews'])
 
 # There are 24 pages of attractions in QY.
 for i in range(1,25):

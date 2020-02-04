@@ -6,9 +6,9 @@ General:
     chromedriver_path: ./chromedriver
     
 QY:
-    csv_input_path: ./trialQYlist.csv
+    csv_input_path: ./20200203_qy_list.csv
     read_from_database: csv  # mysql, sqlite or csv
     write_to_database: csv  # mysql, sqlite or csv
-    number_of_pages: 3 # int or None. if 0, only Attributes are crawled.
+    number_of_pages:  # int or None. if 0, only Attributes are crawled.
     start_page:  # int or None
     csv_folder:  # in the format yyymmdd_hhmmss

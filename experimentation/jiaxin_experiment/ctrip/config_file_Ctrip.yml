@@ -6,6 +6,10 @@ General:
     chromedriver_path: ./chromedriver
     
 Ctrip:
-    end_date: '160101' # yymmdd (%y%m%d)
-    db_in_flag: 'csv' # csv, sqlite, mysql
-    db_out_flag: 'csv' # csv, sqlite, mysql
+    csv_input_path: ./ctrip_list.csv
+    read_from_database: csv  # mysql, sqlite or csv
+    write_to_database: csv  # mysql, sqlite or csv
+    number_of_pages: 3 # int or None. if 0, only Attributes are crawled.
+    start_page:  # int or None
+    csv_folder:  # in the format yyymmdd_hhmmss
+    

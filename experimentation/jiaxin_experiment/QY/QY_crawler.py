@@ -41,7 +41,7 @@ class QYCrawler:
                          'REVIEW_RATING',
                          'REVIEW_DATE',
                          'REVIEW_BODY',
-                         'ATTRIBUTES_CRAWLED_TIME'
+                         'REVIEW_CRAWLED_TIME'
                          #'TRANSLATED_REVIEW_BODY_GOOGLE',
                          #'TRANSLATED_REVIEW_BODY_WATSON'
                         ]
@@ -72,8 +72,12 @@ class QYCrawler:
         self.reviews_crawled=False
         self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
-        self.sel = None                                                        
-        
+        self.sel = None   
+        self.last_page_number=None 
+
+        #to deal with lagging problem
+        self.count=1                                                        #tp count the number of reloading
+                                                                
         # Create unique CSVs.
         self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
         os.makedirs('./output/{}/'.format(self.datetime_string))
@@ -112,28 +116,10 @@ class QYCrawler:
                                        index=False
                                        )
                      
-            self.driver.get(self.current_poi_url)
-            if self.fsm_state == 3: 
+            if self.fsm_state == 3:                                            #put logic error in readme. file
                 self.fsm_state=2
             sleep(1+random()*2)
-            self.sel = Selector(text=self.driver.page_source)
             
-            #################trial part to handle error of blank pages#########
-            
-            res = self.sel.xpath('//div[@id="app"]')
-            if  res == []:                                             #if find a 404                                      #output a log file,out of the loop
-                log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
-                
-                log_file.write('{}, {}, page:{}, {}, {}'\
-                                  .format(self.current_poi_index,
-                                        self.current_poi_name,
-                                        self.current_page,
-                                        datetime.now(),
-                                        'POI website not working'))
-                log_file.close()
-                continue
-
-            ###################################################################
             
             if self.fsm_state != 3:
                 if self.fsm_state == 2:
@@ -141,6 +127,23 @@ class QYCrawler:
                     self.fsm_state = 1   
                     
                 try:
+                    self.driver.get(self.current_poi_url)
+                    sleep(1+random()*2)
+                    self.sel = Selector(text=self.driver.page_source)
+                    res = self.sel.xpath('//div[@id="app"]')           
+                    if  res == []: 
+                        self.count+=1
+                        log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
+                        log_file.write('{}, {}, {}, {}\n'\
+                                          .format(self.current_poi_index,
+                                                self.current_poi_name,
+                                                datetime.now(),
+                                                'POI website not working'))
+                        log_file.close()
+                        if self.count==5:
+                            self.poi_df = self.poi_df.iloc[1:]
+                            continue
+                    #crawl attributes
                     if not self.attributes_crawled:    
                             print('########## {}##########'.format(self.current_poi_name))
                             self.crawl_attributes()
@@ -160,11 +163,11 @@ class QYCrawler:
                             self.add_to_database()
                             
                     
-                    self.current_page = None
-                    self.attributes_crawled = False
-                    self.reviews_crawled = False
+                        self.current_page = None
+                        self.attributes_crawled = False
+                        self.reviews_crawled = False
                     
-                    self.poi_df = self.poi_df.iloc[1:]
+                    self.poi_df = self.poi_df.iloc[1:]                         #remove the poi(first row) from df once crawled
         
                         
                    
@@ -182,11 +185,12 @@ class QYCrawler:
                     log_file.write(traceback.format_exc() + '\n')
                     log_file.close()
                     #erase every thing from the POI review csv, rewrite in next loop
-                    f = open("./output/{}/reviews/{}.csv".format(self.datetime_string,
-                                                                 self.current_poi_index), "w")
-                    f.truncate()
-                    f.close()
+                    if self.reviews_crawled==True:
+                        os.remove('./output/{}/reviews/{}.csv'
+                                           .format(self.datetime_string,
+                                                   self.current_poi_index)) 
                     print("Exception has occurred. Please check log file.")
+                    self.reviews_crawled=False
                     sleep(1)
                     return
             
@@ -199,7 +203,7 @@ class QYCrawler:
 
   
     def crawl_attributes(self):
-        sleep(1+random())
+        sleep(random())
         #select areas where we going to extract info
         res = self.sel.xpath('.//div[@class="poi-detail"]')    
         
@@ -290,13 +294,23 @@ class QYCrawler:
         
         
     def crawl_reviews(self):
-        if self.current_page==None:
-            self.current_page=1
+        sleep(random())
+        res = self.sel.xpath('.//div[@class="compo-main compo-feed"]') 
+        xpath_last_page='.//div[@class="ui_page"]/a/@data-page'
+        page_list=res.xpath(xpath_last_page).getall()
+        if len(page_list)>1:                                                   #get the last page_number for the poi,which is the second last element
+            self.last_page_number=int(page_list[-2])                           #example(...88)
+        else:
+            self.last_page_number=1
+            
+        if self.current_page==None:                                 
+            self.current_page=0
+            
         if self.number_of_pages is not None:
             for i in range(self.number_of_pages):
                 self.crawl_reviews_1_page(self.current_poi_index)
-                print('Page {} done.'.format(self.current_page))
                 self.current_page += 1
+                print('Page {} done.'.format(self.current_page))
                 self.reviews_to_csv()
                 if self.review_final_page:
                     self.review_final_page = False
@@ -304,9 +318,9 @@ class QYCrawler:
         else:
             while not self.review_final_page:
                 self.crawl_reviews_1_page(self.current_poi_index)
-                self.reviews_to_csv()
-                print('Page {} done.'.format(self.current_page))
                 self.current_page += 1
+                print('Page {} done.'.format(self.current_page))
+                self.reviews_to_csv()
                 if self.review_final_page:
                     self.review_final_page = False
                     break
@@ -322,10 +336,11 @@ class QYCrawler:
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
     
 
-    def crawl_reviews_1_page(self, poi_index):        
-        
-        res1 = self.sel.xpath('.//div[@class="compo-main compo-feed"]') 
-        sleep(1+random()*2)
+    def crawl_reviews_1_page(self, poi_index): 
+        self.sel = Selector(text=self.driver.page_source)
+        res1 = self.sel.xpath('.//div[@class="compo-main compo-feed"]')
+        self.reviews_crawled=True
+        sleep(random())
         
         xpath_url = './/a[@class="largeavatar"]/@href' 
         reviewer_url1 = res1.xpath(xpath_url).getall()
@@ -336,24 +351,27 @@ class QYCrawler:
             return len(re.findall(pattern,string))
         review_rating1=list(map(lambda x:regex_cnt(x,"singlestar full"),star))
        
-
+        
         xpath_date = './/a[@class="date"]/text()'  
         review_date1 = res1.xpath(xpath_date).getall()   
 
-        xpath_body= './/p[@class="content"]/text()'  
-        review_body1= res1.xpath(xpath_body).getall()
         
-        
+        review_body_list=[]
+        for i in range(1,len(reviewer_url1)+1):
+            xpath_body='//li[{}]//p[@class="content"]/text()'.format(i)
+            reviews= res1.xpath(xpath_body).getall()
+            review_body_list.append(reviews)
+            
         
         # Parsing reviews
-        review_body1=list(map(self.parse_review_body,review_body1))
         review_date1=list(map(self.parse_review_date,review_date1))
         
         for i in range(len(reviewer_url1)):
             reviewer_url = reviewer_url1[i]
             review_date =  review_date1[i]
             review_rating = review_rating1[i]
-            review_body = review_body1[i]
+            review_body = self.parse_review_body(review_body_list[i])
+            
             
             review_details = [None, # REVIEW_INDEX
                               4, # WEBSITE_INDEX (QY is '4')
@@ -383,12 +401,82 @@ class QYCrawler:
                 self.sel = Selector(text=self.driver.page_source)
         else :
             sleep(1+random())
-            if self.current_page <= self.number_of_pages:
-                raise Exception("random clicking happened")
-            else:
-                print("Can't click or last page")
-                self.reviews_crawled=True
+            if self.last_page_number== 1:
                 self.review_final_page= True
+            elif self.number_of_pages!= None and self.current_page <= self.number_of_pages:
+                raise Exception("random clicking happened")
+            elif self.last_page_number >1 and self.current_page < self.last_page_number-1:
+                raise Exception("lagged, need to recrawl")
+            else:
+                self.review_final_page= True
+            
+    def crawl_agg_list(self):
+        url= "https://place.qyer.com/singapore/sight/"
+        self.driver = webdriver.Chrome(self.chromedriver_path) 
+        self.driver.get(url)
+
+        # Initialize pandas data-frame with name of place and link
+        poi_df = pd.DataFrame(columns=['WEBSITE_INDEX',
+                                       'POI_NAME',
+                                       'ENGLISH_NAME',
+                                       'URL'])
+        
+        # There are 24 pages of attractions in QY.                             #config file/x path
+        for i in range(1,25):
+               
+        
+                print("page" + str(i)) #counter to keep track at which page    
+                sleep(randint(1,3))
+                self.driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')  #To scroll down
+            
+                 #Forming selector path
+                sleep(1+random()*2)
+                self.sel = Selector(text=self.driver.page_source)
+                
+                
+                res = self.sel.xpath('//div[@class="qyMain fl"]')    
+                end_link = '/div/h3/a/@href'     
+                end_text = '/div/h3/a[@target="_blank"]/text()'
+                end_eng='/div/h3/a[@target="_blank"]/span/text()'
+                end_reviews = '/div/div[1]/span[2]/a/text()'
+            
+                #For each page, there are 15 attractions listed
+                for a in range (1,16):
+                
+                    #Forming a string
+                    xpath_link = '//*[@id="poiLists"]/li[' + str(a) +']' + end_link   
+                    xpath_text = '//*[@id="poiLists"]/li[' + str(a) +']' + end_text
+                    xpath_eng = '//*[@id="poiLists"]/li[' + str(a) +']' + end_eng
+                    xpath_reviews = '//*[@id="poiLists"]/li[' + str(a) +']' + end_reviews
+                    
+                    website_index=4
+                    link =str(res.xpath(xpath_link).extract_first())     #eg. link = res.xpath('div[1]/div/div/div/div[2]/a[@target="_blank"]/@href').extract_first()       
+                    text =str( res.xpath(xpath_text).extract_first())  
+                    eng =str(res.xpath(xpath_eng).extract_first() ) 
+                    reviews = str(res.xpath(xpath_reviews).extract_first() )
+                    
+                  
+                    poi_df.loc[poi_df.shape[0]] = [website_index] + [text] + [eng] + [link] #+ [review_number]
+                        
+                        
+                next_page_button = self.driver.find_elements_by_xpath('//a[@title="下一页"]')
+                if next_page_button:
+                    sleep(1+random())    
+                    self.driver.execute_script("arguments[0].click()",next_page_button[0])
+                else:
+                    print("Can't click or last page")
+                    
+                sleep(randint(1,5))  
+                self.sel = Selector(text=self.driver.page_source)
+                
+        self.driver.quit()
+        poi_df['POI_NAME'] = poi_df['POI_NAME'].apply(lambda x: x.replace(' ',''))    
+        poi_df['URL'] = poi_df['URL'].apply(lambda x: 'https://'+x[2:])
+        
+        #Write out as data-frame with date
+        today = date.today()
+        today_date = today.strftime("%Y%m%d")
+        poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/QY/{}_qy_list.csv".format(today_date))
          
     
     # Methods below are all utility functions.all are static method
@@ -411,7 +499,15 @@ class QYCrawler:
         text1=text.replace('\n                  ','')
         return datetime.strptime(text1[0:10],"%Y-%m-%d")
     
-    def parse_review_body(self, text):
+    def parse_review_body(self, list_item):
+        text=' '.join(list_item)
         return text.replace('\n','')
     
+    def parse_review_numbers(self, text):
+        if re.search(r'\d+',str(text)):
+            return int(re.search(r'\d+', text).group())
+        else:
+            return 0
+    
+
     
