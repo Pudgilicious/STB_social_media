@@ -155,7 +155,6 @@ class TripAdvisorCrawler:
         print('########## {}, {} ##########'.format(self.current_poi_name, self.current_trip_type))
 
         try:
-
             self.driver.get(self.current_poi_url)
             sleep(5)
 

@@ -1,0 +1,155 @@
+70, Emerald Hill, Family, page: None, None, 2020-01-31 16:19:30.682161
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+70, Emerald Hill, Family, page: None, None, 2020-01-31 16:19:44.463118
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+70, Emerald Hill, Family, page: None, None, 2020-01-31 16:19:57.530155
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+70, Emerald Hill, Family, page: None, None, 2020-01-31 16:20:10.796527
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+72, Singapore River, Solo, page: 53, 2017-05-14 00:00:00, 2020-01-31 16:44:04.377442
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 189, in crawl_poi_by_trip_type
+    self.crawl_reviews()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 291, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 419, in crawl_reviews_1_page
+    next_button_elements[0].click()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a data-page-number="6" data-offset="50" class="nav next ui_button primary" onclick="widgetEvCall('handlers.paginate', event, this); widgetEvCall('handlers.trackClick', event, this, 'pagination_next', '6');" href="/Attraction_Review-g294265-d4283466-Reviews-or50-Singapore_River-Singapore.html">...</a> is not clickable at point (838, 887). Other element would receive the click: <div class="rev_wrap ui_columns is-multiline">...</div>
+  (Session info: chrome=79.0.3945.130)
+
+
+83, City Square Mall, Solo, page: 3, 2017-05-03 00:00:00, 2020-01-31 17:35:45.888224
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 189, in crawl_poi_by_trip_type
+    self.crawl_reviews()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 291, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 342, in crawl_reviews_1_page
+    review_more_buttons[0].click()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span class="taLnk ulBlueLinks" onclick="widgetEvCall('handlers.clickCollapse',event,this);">...</span> is not clickable at point (214, 762). Other element would receive the click: <div id="taplc_hotels_loading_box_ar_responsive_0" class="ppr_rup ppr_priv_hotels_loading_box" data-placement-name="hotels_loading_box:ar_responsive" style="display: block;">...</div>
+  (Session info: chrome=79.0.3945.130)
+
+
+83, City Square Mall, Solo, page: 3, 2017-05-03 00:00:00, 2020-01-31 17:36:04.279188
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Solo"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+87, Joo Chiat/Katong, Family, page: None, None, 2020-01-31 17:46:55.068349
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 159, in crawl_poi_by_trip_type
+    self.driver.get(self.current_poi_url)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+

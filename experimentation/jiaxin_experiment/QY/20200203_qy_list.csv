@@ -1,0 +1,406 @@
+,WEBSITE_INDEX,POI_NAME,ENGLISH_NAME,URL
+0,4,"
+滨海湾金沙酒店与金沙空中花园
+  
+",Marina Bay Sands Hotel and Sands Sky Park,https://place.qyer.com/poi/V2YJalFkBzBTbA/
+1,4,"
+圣淘沙岛
+  
+",Sentosa Island,https://place.qyer.com/poi/V2AJZ1FjBzJTbQ/
+2,4,"
+新加坡环球影城
+  
+",Universal Studios Singapore,https://place.qyer.com/poi/V2AJZ1FjBzBTZg/
+3,4,"
+滨海湾花园
+  
+",Gardens by the bay,https://place.qyer.com/poi/V2UJY1FlBzZTZFI3/
+4,4,"
+圣淘沙名胜世界
+  
+",Resorts World Sentosa,https://place.qyer.com/poi/V20JZVFmBz5TYg/
+5,4,"
+新加坡摩天观景轮
+  
+",Singapore Flyer,https://place.qyer.com/poi/V2EJYlFhBzdTYQ/
+6,4,"
+克拉码头
+  
+",Clarke Quay,https://place.qyer.com/poi/V2EJalFiBz5TYw/
+7,4,"
+新加坡动物园
+  
+",Singapore Zoological Gardens,https://place.qyer.com/poi/V2AJa1FuBz5TYA/
+8,4,"
+鱼尾狮公园
+  
+",Merlion Park,https://place.qyer.com/poi/V2MJYFFvBzZTZQ/
+9,4,"
+滨海湾花园超级树
+  
+",Solar Supertrees,https://place.qyer.com/poi/V2UJYVFkBzJTYFI4/
+10,4,"
+乌节路
+  
+",Orchard Rd,https://place.qyer.com/poi/V2EJYlFhBzBTYw/
+11,4,"
+新加坡植物园
+  
+",Singapore Botanic Gardens,https://place.qyer.com/poi/V2AJalFmBzRTZQ/
+12,4,"
+莱佛士酒店
+  
+",Raffles Hotel,https://place.qyer.com/poi/V2cJZFFnBzNTYA/
+13,4,"
+圣淘沙鱼尾狮塔
+  
+",Sentosa Merlion,https://place.qyer.com/poi/V2cJa1FgBzdTYw/
+14,4,"
+滨海艺术中心
+  
+",Esplanade - Theatres on the Bay,https://place.qyer.com/poi/V2EJZlFuBzBTYw/
+15,4,新加坡夜间野生动物园  ,Night Safari of Singapore,https://place.qyer.com/poi/V2EJZlFlBzFTZA/
+16,4,新加坡河  ,Singapore River,https://place.qyer.com/poi/V2UJYVFnBz9TbVI4/
+17,4,螺旋桥  ,Helix Bridge,https://place.qyer.com/poi/V20JZVFmBz5TYw/
+18,4,牛车水原貌馆  ,Chinatown Heritage Centre,https://place.qyer.com/poi/V2AJa1FvBz5TYQ/
+19,4,新加坡佛牙寺龙华院  ,Buddha Tooth Relic Temple & Museum,https://place.qyer.com/poi/V2EJZlFvBzJTYA/
+20,4,新加坡S.E.A.海洋馆  ,S.E.A. Aquarium,https://place.qyer.com/poi/V2UJYlFuBzVTbVI_/
+21,4,新加坡圣安德烈教堂  ,St. Andrew's Cathedral in Singapore,https://place.qyer.com/poi/V2MJYFFuBz9TbA/
+22,4,哈芝巷  ,Haji Lane,https://place.qyer.com/poi/V2EJa1FmBzJTZw/
+23,4,新加坡总统府  ,Istana,https://place.qyer.com/poi/V2EJZlFvBzRTYQ/
+24,4,艺术科学博物馆  ,ArtScience Museum,https://place.qyer.com/poi/V2UJY1FuBzZTY1I5/
+25,4,新加坡小印度  ,Little India,https://place.qyer.com/poi/V2AJa1FuBzBTZw/
+26,4,新加坡国家博物馆  ,National Museum of Singapore,https://place.qyer.com/poi/V2wJZFFkBzJTZw/
+27,4,西罗索海滩  ,"Siloso Beach Resort, Sentosa",https://place.qyer.com/poi/V2YJalFnBzFTYQ/
+28,4,新加坡马里安曼兴都庙  ,Sri Mariamman Temple,https://place.qyer.com/poi/V2EJYFFmBzNTZg/
+29,4,苏丹回教堂  ,Sultan Mosque,https://place.qyer.com/poi/V2EJZlFvBzRTZg/
+30,4,阿拉伯街  ,Arab Street,https://place.qyer.com/poi/V2AJY1FmBzFTZg/
+31,4,富丽敦酒店  ,The Fullerton Hotel,https://place.qyer.com/poi/V2YJalFkBzNTZA/
+32,4,新加坡旧国会大厦  ,Old Parliament House / The Arts House,https://place.qyer.com/poi/V2MJYFFuBz9TbQ/
+33,4,新加坡东海岸公园  ,East Coast Park,https://place.qyer.com/poi/V2wJYFFkBzVTZA/
+34,4,新加坡艺术博物馆  ,Singapore Art Museum,https://place.qyer.com/poi/V2EJZlFvBzJTZQ/
+35,4,圣淘沙鱼尾狮塔  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI3Cmw/
+36,4,花柏山公园  ,Mt Faber Park,https://place.qyer.com/poi/V2EJZlFhBz5TbA/
+37,4,南洋理工大学  ,Nanyang Technological University,https://place.qyer.com/poi/V2UJYVFnBzdTYFI9/
+38,4,新加坡新闻及艺术部大厦  ,MICA Building,https://place.qyer.com/poi/V2AJa1FuBzZTbA/
+39,4,丹达乌他帕尼兴都庙  ,Sri Thandayuthapani Temple,https://place.qyer.com/poi/V2UJY1FkBz9TY1I8/
+40,4,莱佛士登岸遗址  ,Raffles Landing Site,https://place.qyer.com/poi/V2UJY1FkBzFTY1I6/
+41,4,赞美广场  ,Chijmes,https://place.qyer.com/poi/V2AJY1FnBzNTYw/
+42,4,万里胡姬花公园  ,Mandai Orchid Gardens,https://place.qyer.com/poi/V2cJa1FjBzdTYw/
+43,4,福康宁公园  ,Fort Canning Hill,https://place.qyer.com/poi/V2EJYFFhBz9TYA/
+44,4,鱼尾狮步行街  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI3Cm4/
+45,4,亚洲大陆最南点  ,Southernmost Point of Continental Asia,https://place.qyer.com/poi/V2UJYVFiBzFTYVI4/
+46,4,圣淘沙缆车站  ,None,https://place.qyer.com/poi/V2UJYVFnBzdTYVI3CmU/
+47,4,新加坡政府大厦  ,City Hall of SIngapore,https://place.qyer.com/poi/V2UJY1FkBz9TZVI7/
+48,4,亚洲文明博物馆  ,Asian Civilisations Museum,https://place.qyer.com/poi/V2EJZlFuBz5TZA/
+49,4,新加坡和平纪念碑  ,Civilian War Memorial,https://place.qyer.com/poi/V2UJY1FkBz5TbFI_/
+50,4,新加坡科学馆  ,Singapore Science Centre,https://place.qyer.com/poi/V2AJZVFhBzdTZw/
+51,4,麦里芝蓄水池  ,MacRitchie Reservoir,https://place.qyer.com/poi/V2EJYlFgBz9TbQ/
+52,4,乌敏岛  ,Pulau Ubin,https://place.qyer.com/poi/V2EJZlFhBz5TYA/
+53,4,巴拉湾海滩  ,Palawan Beach,https://place.qyer.com/poi/V2UJYVFnBzFTZ1I9/
+54,4,新加坡集邮馆  ,Singapore Philatelic Museum,https://place.qyer.com/poi/V2EJZlFiBzZTbA/
+55,4,双螺旋桥  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI4Cmk/
+56,4,新加坡亲子游  ,None,https://place.qyer.com/poi/V2UJYlFiBzVTYFI7Cm4/
+57,4,武吉知马自然保护区  ,Bukit Timah Nature Reserve,https://place.qyer.com/poi/V2EJZFFlBzJTYg/
+58,4,阵亡纪念碑  ,Cenotaph,https://place.qyer.com/poi/V2UJY1FkBz9TZ1I4/
+59,4,新加坡国大博物馆  ,NUS Museum,https://place.qyer.com/poi/V2EJY1FgBzZTZQ/
+60,4,小印度  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI3Cms/
+61,4,新加坡红点设计博物馆  ,Red Dot Design Museum,https://place.qyer.com/poi/V2UJY1FkBzNTY1I8/
+62,4,新加坡国家美术馆  ,National Gallery Singapore,https://place.qyer.com/poi/V2UJYlFiBzFTbVI2Cm0/
+63,4,新加坡海豚乐园  ,Dolphin Lagoon,https://place.qyer.com/poi/V2EJa1FiBzZTYQ/
+64,4,新加坡圣淘沙名胜世界  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI4Cmg/
+65,4,云雾森林玻璃屋  ,Cloud Forest,https://place.qyer.com/poi/V2YJZVFuBzZTYFI8/
+66,4,维拉玛卡里雅曼兴都庙  ,Sri Veeramakaliamman Temple,https://place.qyer.com/poi/V2AJZVFgBzNTZQ/
+67,4,Formula1SingaporeGrandPrix新加坡站(F1新加坡大奖赛)  ,Formula 1 Singapore Grand Prix,https://place.qyer.com/poi/V2MJYFFvBzdTYw/
+68,4,新加坡南部山脊  ,The Southern Ridges,https://place.qyer.com/poi/V2UJY1FlBzZTZVI8/
+69,4,新加坡国家兰花园  ,National Orchid Garden,https://place.qyer.com/poi/V2UJYlFiBzVTZVI3Cm0/
+70,4,新加坡水上探险乐园  ,Adventure Cove Waterpark,https://place.qyer.com/poi/V2EJa1FnBzRTZFI6/
+71,4,观音堂佛祖庙  ,Kwan Im Thong Hood Cho Temple,https://place.qyer.com/poi/V2AJZ1FgBzZTYA/
+72,4,天福宫  ,Thian Hock Keng Temple,https://place.qyer.com/poi/V2EJZVFnBz9TYA/
+73,4,亨德申波浪桥  ,Henderson Waves,https://place.qyer.com/poi/V2UJYVFmBzBTY1I6/
+74,4,乌节路图书馆  ,library@orchard,https://place.qyer.com/poi/V2YJY1FnBzVTZVI9/
+75,4,尼维沙伯鲁玛兴都庙  ,Sri Srinivasa Perumal Temple,https://place.qyer.com/poi/V2AJZVFhBzNTYA/
+76,4,安详山  ,Ann Siang Hill,https://place.qyer.com/poi/V2UJY1FmBzNTZFI6/
+77,4,双溪布洛湿地保护区  ,Sungei Buloh Wetland Reserve,https://place.qyer.com/poi/V2AJa1FvBz9TZQ/
+78,4,四马路观音堂  ,Kwan Im Tng  Temple,https://place.qyer.com/poi/V2EJZVFkBzZTYA/
+79,4,詹美清真寺  ,Jamae Mosque,https://place.qyer.com/poi/V2MJYFFvBzZTZw/
+80,4,武吉士街  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI3CmQ/
+81,4,裕华园  ,Chinese Garden,https://place.qyer.com/poi/V2UJY1FkBzFTbFI9/
+82,4,土生华人博物馆  ,Peranakan Museum,https://place.qyer.com/poi/V2EJY1FhBzdTYA/
+83,4,圣安德烈教堂  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI8Cm4/
+84,4,芽笼  ,Geylang,https://place.qyer.com/poi/V2UJYVFnBzFTYVI7CmU/
+85,4,新加坡亚美尼亚教堂  ,Armenian Church,https://place.qyer.com/poi/V2EJYVFvBzZTYQ/
+86,4,南洋理工大学学习中心  ,Learning Hub,https://place.qyer.com/poi/V2EJa1FmBz5TY1I9/
+87,4,西乐索炮台  ,Fort Siloso,https://place.qyer.com/poi/V2UJY1FkBz9TZFI_/
+88,4,河的子民雕塑群  ,People of the River,https://place.qyer.com/poi/V2UJY1FkBz5TZlI6/
+89,4,裕廊花园  ,Jurong Gardens,https://place.qyer.com/poi/V2EJZlFuBzNTbQ/
+90,4,滨海堤坝  ,Marina Barrage,https://place.qyer.com/poi/V2UJYVFiBzdTbFI6/
+91,4,翡翠山路  ,Emerald Hill Road,https://place.qyer.com/poi/V2AJZ1FgBzRTYQ/
+92,4,新加坡滨海艺术中心--音乐厅  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI4Cm4/
+93,4,南洋理工大学艺术设计媒体学院  ,NTU-ADM,https://place.qyer.com/poi/V2EJa1FmBz5TY1I7/
+94,4,丹戎海滩  ,Tanjong Beach,https://place.qyer.com/poi/V2UJYVFnBzFTZ1I3/
+95,4,马来传统文化馆  ,Malay Heritage Centre,https://place.qyer.com/poi/V2AJZ1FhBzVTZA/
+96,4,英比奥山顶景区  ,Imbiah Lookout,https://place.qyer.com/poi/V2MJYFFuBz9TYQ/
+97,4,肯特岗公园  ,Kent Ridge Park,https://place.qyer.com/poi/V2EJYFFjBzFTZA/
+98,4,民防与消防历史博物廊  ,Civil Defence Heritage Gallery,https://place.qyer.com/poi/V2EJa1FmBzZTbA/
+99,4,圣淘沙天际线斜坡滑车  ,Skyline Sentosa Luge,https://place.qyer.com/poi/V2UJYlFgBzVTZlI2Cmk/
+100,4,旧禧街警察局  ,Old Hill Street Police Station,https://place.qyer.com/poi/V2UJYVFnBzFTYVI2Cm4/
+101,4,阿都卡夫回教堂  ,Masjid Abdul Gafoor,https://place.qyer.com/poi/V2UJY1FkBz9TbFI8/
+102,4,新加坡特丽爱3D美术馆  ,Trick Eye Museum,https://place.qyer.com/poi/V2UJYVFkBzRTZVI9/
+103,4,亚洲大陆最南端  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI4CmQ/
+104,4,拉柏多自然保护区  ,Labrador Nature Reserve,https://place.qyer.com/poi/V2AJZVFgBzVTZQ/
+105,4,荷兰村  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI8Cms/
+106,4,大巴窑  ,Toa Payoh,https://place.qyer.com/poi/V2UJYlFgBzdTZFI9Cm0/
+107,4,新加坡丹戎巴葛火车站  ,Tanjong Pagar Railway Station,https://place.qyer.com/poi/V2YJY1FnBzVTZVI_/
+108,4,NationalLibraryofSingapore  ,None,https://place.qyer.com/poi/V2YJZVFuBzZTYlI9/
+109,4,新加坡城市画廊  ,Singapore City Gallery,https://place.qyer.com/poi/V2UJYVFnBz9TbVI8/
+110,4,罗拔申码头  ,Robertson Quay,https://place.qyer.com/poi/V2AJalFmBzdTZA/
+111,4,樟宜海滨公园  ,Changi Beach Park,https://place.qyer.com/poi/V2UJYlFvBzFTY1I6/
+112,4,孙中山南洋纪念馆  ,Sun Yat Sen Nanyang Memorial Hall,https://place.qyer.com/poi/V2EJZlFuBzNTZA/
+113,4,东海岸快速公路  ,None,https://place.qyer.com/poi/V2UJZVFjBzdTZFI8/
+114,4,陈东龄故居  ,House of Tan Teng Niah,https://place.qyer.com/poi/V2UJYVFmBzBTbFI9/
+115,4,坤成路  ,Koon Seng Road,https://place.qyer.com/poi/V2UJYVFmBzBTY1I7/
+116,4,达士岭组屋  ,The Pinnacle Duxton Skybridge,https://place.qyer.com/poi/V2UJZ1FiBzBTYFI4CmQ/
+117,4,麦里芝自然小径  ,MacRitchie Nature Trail,https://place.qyer.com/poi/V2YJZVFuBzZTZ1I4/
+118,4,新加坡杜莎夫人蜡像馆  ,Madame Tussauds Singapore,https://place.qyer.com/poi/V2YJY1FlBzJTbFI_/
+119,4,圣母圣诞堂  ,Church of the Nativity of the Blessed Virgin Mary,https://place.qyer.com/poi/V2UJYlFiBzJTYlI4Cm0/
+120,4,粤海清庙  ,Wak Hai Cheng Bio Temple,https://place.qyer.com/poi/V2EJa1FiBzdTZg/
+121,4,FlowerDome  ,None,https://place.qyer.com/poi/V2YJZVFuBzZTYFI_/
+122,4,圣淘沙大自然探索中心  ,Sentosa Nature Discovery,https://place.qyer.com/poi/V2UJYVFiBzFTYVI3/
+123,4,上海玩具博物馆  ,Museum of Shanghai Toys,https://place.qyer.com/poi/V2AJZ1FjBzVTbQ/
+124,4,莱佛士滨海俱乐部  ,Raffles Marina,https://place.qyer.com/poi/V2EJZlFuBz9TYQ/
+125,4,新加坡中华总商会  ,Singapore Chinese Chamber of Commerce,https://place.qyer.com/poi/V2UJZVFiBzFTbFI3/
+126,4,新加坡知新馆  ,S'pore Discovery Centre,https://place.qyer.com/poi/V2UJY1FlBzZTbVI2/
+127,4,OrchardRoad  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI8CmQ/
+128,4,登布西山  ,Dempsey Hill,https://place.qyer.com/poi/V2YJY1FlBzJTbFI-/
+129,4,卡佩芝台和翡翠山  ,Cuppage Terrace & Emerald Hill,https://place.qyer.com/poi/V2EJZlFuBzFTZw/
+130,4,麦里芝水库/麦里芝蓄水池  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI3CmU/
+131,4,海豚园  ,None,https://place.qyer.com/poi/V2EJa1FnBz5TZ1I3/
+132,4,花柏山景  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI-CmQ/
+133,4,新加坡国立大学柏林墙  ,Berlin Wall In NUS,https://place.qyer.com/poi/V2UJZ1FjBzZTYFI-Cms/
+134,4,新加坡科技与设计大学  ,Singapore University of Technology andDesign,https://place.qyer.com/poi/V2UJZ1FiBzBTYVI8CmQ/
+135,4,新加坡艺术学院  ,School Of The Arts,https://place.qyer.com/poi/V2UJZ1FiBzBTYFI3Cmw/
+136,4,新加坡圣若瑟堂  ,Saint Joseph's Church,https://place.qyer.com/poi/V2YJY1FkBz5TZFI_/
+137,4,莲山双林寺  ,Lian Shan Shuang Lin Monastery,https://place.qyer.com/poi/V2AJZ1FgBzRTZA/
+138,4,圣詹姆斯发电厂  ,St. James Power Station,https://place.qyer.com/poi/V2MJYFFvBzdTbQ/
+139,4,科尼岛公园  ,Coney Island Park,https://place.qyer.com/poi/V2UJYlFiBzZTYVI3Cms/
+140,4,新加坡西海岸公园  ,West Coast Park,https://place.qyer.com/poi/V2EJalFiBz5TYg/
+141,4,亚历山大拱桥  ,Alexandra Arch,https://place.qyer.com/poi/V2UJYVFmBzFTbVI-/
+142,4,达豪施纪念碑  ,Dalhousie Obelisk,https://place.qyer.com/poi/V2UJY1FkBz5TZlI4/
+143,4,拉萨尔设计学院  ,LASALLE College of the Arts,https://place.qyer.com/poi/V2UJZVFlBz9TZVI2/
+144,4,新加坡军事博物馆  ,Army Museum of Singapore,https://place.qyer.com/poi/V2UJY1FkBz9TZVI-/
+145,4,新加坡基督教青年会  ,YMCA Singapore,https://place.qyer.com/poi/V2UJY1FkBz9TZ1I6/
+146,4,鸦片山岗战役纪念馆  ,Reflections at Bukit Chandu,https://place.qyer.com/poi/V2EJYFFmBzVTZw/
+147,4,峇峇住宅  ,Baba House,https://place.qyer.com/poi/V2UJY1FkBz5TY1I5/
+148,4,良木园大酒店  ,Goodwood Park Hotel (Tower Block),https://place.qyer.com/poi/V2UJYlFiBzJTZFI_CmU/
+149,4,新加坡国家档案馆  ,NATIONAL  ARCHIVES OF SINGAPORE,https://place.qyer.com/poi/V2YJY1FhBzNTZFI4/
+150,4,新加坡新生水展览馆  ,NEWater Visitor Centre,https://place.qyer.com/poi/V2UJZ1FiBz9TYlI6Cm0/
+151,4,新加坡圣约翰岛  ,San John's Island,https://place.qyer.com/poi/V2YJY1FkBzBTY1I_/
+152,4,Onsight攀岩  ,Onsight Climbing,https://place.qyer.com/poi/V2UJZ1FjBzVTZ1I7Cmo/
+153,4,哈里德回教堂清真寺  ,Masjid Khalid,https://place.qyer.com/poi/V2UJZ1FiBz9TYlI6Cm8/
+154,4,凯文思大道  ,Cavenagh Road,https://place.qyer.com/poi/V2EJZFFvBz9TZVI2/
+155,4,新加坡国家体育场  ,Singapore National Stadium,https://place.qyer.com/poi/V2UJYVFmBzFTbVI8Cmw/
+156,4,新加坡爱来魔相艺术馆  ,Alive Museum Singapore,https://place.qyer.com/poi/V2UJYlFiBzFTbVI3Cmw/
+157,4,陈氏宗祠  ,Tan Si Chong Su,https://place.qyer.com/poi/V2UJYlFiBzVTYFI6Cm4/
+158,4,新加坡圣伯多禄圣保禄堂  ,Church of Saints Peter and Paul,https://place.qyer.com/poi/V2YJY1FkBz5TZFI9/
+159,4,露德圣母堂  ,Church of Our Lady of Lourdes,https://place.qyer.com/poi/V2YJY1FkBz5TZFI-/
+160,4,皇后坊大厦  ,Empress Place Building,https://place.qyer.com/poi/V2UJY1FkBz5TZVI2/
+161,4,直落亚逸礼拜堂  ,Telok Ayer Chinese Methodist Church,https://place.qyer.com/poi/V2UJYVFnBz9TbVI-/
+162,4,阿尔阿布拉回教堂  ,Al Abrar Mosque,https://place.qyer.com/poi/V2UJYVFnBz9TbVI9/
+163,4,哈查花蒂玛回教堂  ,Hajjah Fatimah Mosque,https://place.qyer.com/poi/V2EJYVFvBzBTbA/
+164,4,善牧主教座堂  ,Cathedral of the Good Shepherd,https://place.qyer.com/poi/V2YJY1FnBzBTZVI9/
+165,4,亚米尼亚教堂  ,Armenian Apostolic Church of Saint Gregory the Illuminator,https://place.qyer.com/poi/V2UJYlFiBzVTZ1I7Cmo/
+166,4,中正总校竹林楼与牌坊  , Chung Cheng High School (Main) Administration Building and Entrance Arch,https://place.qyer.com/poi/V2UJYlFiBzVTZlI5Cmk/
+167,4,Orto  ,None,https://place.qyer.com/poi/V2YJZVFuBzZTZlI8/
+168,4,WaterfrontPromenade  ,None,https://place.qyer.com/poi/V2YJZVFuBzZTYFI9/
+169,4,TheIntan  ,None,https://place.qyer.com/poi/V2YJZVFuBzZTYlI5/
+170,4,老饕湾美食中心  ,Makansutra,https://place.qyer.com/poi/V2YJYVFuBzNTY1I5/
+171,4,三巴旺公园  ,Sembawang Park,https://place.qyer.com/poi/V2UJY1FjBzFTZlI-/
+172,4,华裔馆  ,Chinese Heritage Centre,https://place.qyer.com/poi/V2UJY1FkBz5TYFI_/
+173,4,白沙公园  ,Pasir Ris Park,https://place.qyer.com/poi/V2UJYlFvBzFTbFI6/
+174,4,缅甸玉佛寺  ,Sasana Ramsi Burmese Buddhist Temple,https://place.qyer.com/poi/V2cJZFFnBzNTZA/
+175,4,胡姬山庄  ,Orchidville,https://place.qyer.com/poi/V2cJZFFkBzVTbA/
+176,4,武吉巴督市镇公园  ,Bukit Batok Town Park,https://place.qyer.com/poi/V2EJalFiBz5TYQ/
+177,4,新加坡空军博物馆  ,Air Force Museum of Singapore,https://place.qyer.com/poi/V2UJY1FkBz9TZVI8/
+178,4,新加坡钱币博物馆  ,Singapor Coins and Notes Museum,https://place.qyer.com/poi/V2UJYVFgBzJTZFI4/
+179,4,洛阳大伯公宫  ,Loyang Tua Pek Kong Temple,https://place.qyer.com/poi/V2AJZ1FjBzdTYA/
+180,4,樟宜礼拜堂与博物馆  ,Changi Museum & Chapel,https://place.qyer.com/poi/V2EJZlFvBzNTbA/
+181,4,马拉巴清真寺  ,Malabar Muslim Jama-Ath Mosque,https://place.qyer.com/poi/V2UJY1FhBzRTZ1I4/
+182,4,侨福广场  ,Parkview Square,https://place.qyer.com/poi/V2UJY1FkBz5TZ1I2/
+183,4,亚历山大医院  ,Alexandra Hospital,https://place.qyer.com/poi/V2UJY1FkBz9TYFI6/
+184,4,新加坡圣家堂  ,Church of the Holy Family,https://place.qyer.com/poi/V2AJZ1FgBzBTZA/
+185,4,都城隍庙  ,Seng Wong Beo Temple,https://place.qyer.com/poi/V2AJa1FuBzFTYg/
+186,4,新加坡雕塑广场  ,Sculpture Square,https://place.qyer.com/poi/V2UJYVFlBz9TZlI-/
+187,4,克兰芝乡村  ,Kranji Countryside,https://place.qyer.com/poi/V2UJZVFiBzBTY1I3/
+188,4,新加坡泰勒印刷学院  ,Singapore Tyler Print Institute,https://place.qyer.com/poi/V2EJYFFmBzVTbQ/
+189,4,圣帕加维那雅加兴都庙  ,Sri Senpaga Vinayagar Temple,https://place.qyer.com/poi/V2EJa1FuBz9TYw/
+190,4,昭南福特车厂纪念馆  ,Memories at Ford Factory,https://place.qyer.com/poi/V2UJY1FkBz9TZVI_/
+191,4,仟湖渔场  ,Qian Hu Fish Farm,https://place.qyer.com/poi/V2EJa1FhBzBTYA/
+192,4,欧亚文化遗产中心  ,Eurasian Heritage Centre,https://place.qyer.com/poi/V2UJY1FkBz5TYFI-/
+193,4,福德祠博物馆  ,Fuk Tak Chi Museum,https://place.qyer.com/poi/V2UJY1FkBz9TZVI9/
+194,4,直落亚逸集市  ,Telok Ayer Market,https://place.qyer.com/poi/V2UJYlFiBzVTZ1I6CmU/
+195,4,芳林公园  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI7Cmo/
+196,4,加东古董屋  ,Katong Antique House,https://place.qyer.com/poi/V2AJZ1FnBzNTZw/
+197,4,碉堡博物馆  ,Battle Box Museum,https://place.qyer.com/poi/V2AJZVFjBz9TbQ/
+198,4,千光寺  ,Sakaya Muni Buddha Gaya Temple,https://place.qyer.com/poi/V2EJZlFuBz5TbQ/
+199,4,海滨公园纪念碑群  ,Esplanade Park Memorials,https://place.qyer.com/poi/V2UJYlFiBzVTZlI4CmU/
+200,4,皇家雪兰莪锡镴器皿博物馆  ,Royal Selangor Pewter Gallery,https://place.qyer.com/poi/V2EJa1FiBzZTbA/
+201,4,内学堂  ,Nei Xue Tang,https://place.qyer.com/poi/V2EJa1FjBzBTYw/
+202,4,裕廊镇大会堂  ,Jurong Town Hall,https://place.qyer.com/poi/V2UJYlFiBzVTZlI6Cm8/
+203,4,普济寺佛学研究会  ,Pu Ji Si Buddhist Research Centre,https://place.qyer.com/poi/V2AJa1FgBz9TbA/
+204,4,KetnaPatelStudioGallery  ,None,https://place.qyer.com/poi/V2AJalFmBzZTZw/
+205,4,Lukisan艺术长廊  ,Lukisan Art Gallery,https://place.qyer.com/poi/V2EJa1FjBzBTZg/
+206,4,新加坡陆路交通展览馆  ,Land Transport Gallery,https://place.qyer.com/poi/V2UJYVFgBzJTZFI3/
+207,4,圣约瑟教堂  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI9CmQ/
+208,4,新加坡玉皇宫  ,Singapore Yu Huang Gong,https://place.qyer.com/poi/V2UJYlFiBzVTZ1I3Cm0/
+209,4,明园和白蜡博物馆  ,Ming Village & Pewter Museum,https://place.qyer.com/poi/V2EJZlFuBzBTZw/
+210,4,陈旭年宅第  ,Former House of Tan Yeok Nee,https://place.qyer.com/poi/V2UJYlFiBzVTZ1I5Cmk/
+211,4,圣特蕾莎教堂  ,Church of St Teresa,https://place.qyer.com/poi/V2UJYlFiBzVTZ1I3CmQ/
+212,4,节日步行街  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI3Cmw/
+213,4,马西岭公园  ,Marsiling Park,https://place.qyer.com/poi/V2UJZFFvBzBTbVI9Cmg/
+214,4,新加坡淡滨尼中心-综合游泳馆  ,Our Tampines Hub - Swimming Complex,https://place.qyer.com/poi/V2UJZ1FgBzBTY1I7Cm8/
+215,4,加文纳桥  ,Cavenagh Bridge,https://place.qyer.com/poi/V2UJZ1FgBzBTZlI6Cms/
+216,4,Kinetics攀岩  ,Kinetics Climbing,https://place.qyer.com/poi/V2UJZ1FjBzVTZ1I7Cmk/
+217,4,城市规划展览馆  ,city galary,https://place.qyer.com/poi/V2UJZ1FiBz5TYVI4CmU/
+218,4,碧山公共图书馆  ,Bishan PublicLibrary,https://place.qyer.com/poi/V2UJZ1FiBzBTYFI4CmU/
+219,4,SkyHabitat  ,None,https://place.qyer.com/poi/V2UJZ1FiBzBTYFI4Cms/
+220,4,新加坡趣智尼亚儿童职场体验公园  ,KidZania Singapore,https://place.qyer.com/poi/V2UJYlFiBz5TZFI_Cmw/
+221,4,国立大学武吉知马校园  ,National University of Singapore (NUS) Bukit Timah Campus,https://place.qyer.com/poi/V2UJYlFiBzJTZlI4CmQ/
+222,4,中央医院博物馆  ,Bowyer Block,https://place.qyer.com/poi/V2UJYlFiBzJTZlI5Cm8/
+223,4,纳哥德卡殿  ,Former Nagore Dargah,https://place.qyer.com/poi/V2UJYlFiBzVTZ1I4CmQ/
+224,4,克兰芝阵亡战士纪念碑  ,Kranji War Memorial,https://place.qyer.com/poi/V2AJYlFgBz5TYQ/
+225,4,季节画廊  ,Art Seasons,https://place.qyer.com/poi/V2EJZFFlBzdTbQ/
+226,4,新加坡净宗学会  ,Amitabha Buddhist Centre,https://place.qyer.com/poi/V2EJZlFvBzVTYg/
+227,4,马海阿布犹太会堂  ,Maghain Aboth Synagogue,https://place.qyer.com/poi/V2UJY1FkBz9TbFI2/
+228,4,Art-2画廊  ,Art-2 Gallery,https://place.qyer.com/poi/V2AJY1FmBzdTZw/
+229,4,Gajah画廊  ,Gajah Gallery,https://place.qyer.com/poi/V2EJZVFkBzJTYg/
+230,4,實龍崗上段阿卡夫回教堂  ,Alkaff Upper Serangoon Mosque,https://place.qyer.com/poi/V2UJYlFiBzVTZlI6CmU/
+231,4,动物禽鸟天地  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI4Cmw/
+232,4,碧山宏茂桥公园  ,Bishan-Ang Mo Kio Park,https://place.qyer.com/poi/V2UJZFFvBzBTZVI9CmQ/
+233,4,前指挥楼  ,Former Command House,https://place.qyer.com/poi/V2UJYlFiBzVTZ1I4Cms/
+234,4,圣乔治教堂  , Saint George's Church,https://place.qyer.com/poi/V2UJYlFiBzVTYFI6CmQ/
+235,4,女皇  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI6Cm8/
+236,4,新加坡印象  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI2Cmk/
+237,4,OrchardCityChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI7Cm4/
+238,4,丹戎海滩  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI4Cmk/
+239,4,奇幻乐园POLW  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI3Cm0/
+240,4,万象新加坡LIVE  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI2Cmg/
+241,4,8Q新加坡艺术馆  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI_CmU/
+242,4,新加坡丰盛灵粮堂BreadofAbundantLife(Singapore)  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI-Cm0/
+243,4,汽车人，出发！–科幻城市  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI-Cmg/
+244,4,克里斯南兴都庙  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI7Cm0/
+245,4,長老會恩澤堂裕廊聚會  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI7Cmg/
+246,4,城市丰收教会  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI7Cmk/
+247,4,KingOfGloryChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI7Cmo/
+248,4,FullGospelKoreanChurch(Singapore)  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI6Cm4/
+249,4,CommunityForChristMission  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI6Cmg/
+250,4,ChurchoftheSacredHeart  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI6Cmk/
+251,4,FairfieldMethodistChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI5Cm4/
+252,4,Munch-It!  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI5Cms/
+253,4,印比亞山  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI5CmQ/
+254,4,LifelinkChristianChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI4Cms/
+255,4,RedemptionHillChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI3Cm0/
+256,4,仙祖宫  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI3Cm4/
+257,4,牛车水蟹厨神  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI3Cm8/
+258,4,纳哥德卡回教圣殿  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI3Cmo/
+259,4,LightOfChristCityChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI2Cm8/
+260,4,SingaporeLifeChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI2Cmk/
+261,4,FoochowMethodistChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI2Cmo/
+262,4,KampongKaporMethodistChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI2Cms/
+263,4,ChurchOftheTrueLight  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI2CmQ/
+264,4,LighthouseBaptistChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI_Cmw/
+265,4,莆田天道堂  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI_Cm0/
+266,4,ElimChurchAssemblyOfGod  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI_CmU/
+267,4,St.Paul'sChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI-Cmo/
+268,4,SerangoonCatholicChurchStJosephDyingAidAssn  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI-CmU/
+269,4,TokyoPastaMario(威士马广场店)  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI9Cmk/
+270,4,GraceSingaporeChineseChristianChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI7Cm4/
+271,4,NewCreationChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI7Cm8/
+272,4,圣淘沙海事博物馆  ,None,https://place.qyer.com/poi/V2UJZFFvBzBTZFI8Cm0/
+273,4,中央消防局  ,Central Fire Station,https://place.qyer.com/poi/V2UJYVFnBzZTYlI7Cmg/
+274,4,翠城新景  ,The Interlace,https://place.qyer.com/poi/V2UJZ1FiBzBTYFI3Cmo/
+275,4,新加坡最高法院  ,Supreme Court Singapore,https://place.qyer.com/poi/V2UJZ1FiBzBTYFI3Cmg/
+276,4,虎豹别墅  ,Haw Par Villa,https://place.qyer.com/poi/V2EJZFFlBz5TYA/
+277,4,圣淘沙自然探索中心  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI5CmU/
+278,4,晚晴园  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI_Cmk/
+279,4,名胜世界娱乐场  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI-Cmk/
+280,4,新加坡玩具博物馆  ,Singapore Mint Museum of Toys,https://place.qyer.com/poi/V2UJYVFgBzJTZFI5/
+281,4,圣淘沙儿童俱乐部  ,Resorts World Sentosa Kids Club,https://place.qyer.com/poi/V2EJa1FnBz5TYFI8/
+282,4,TigerSkyTower  ,None,https://place.qyer.com/poi/V2UJYlFiBzFTbVI4Cms/
+283,4,蝴蝶园与昆虫王国  ,Butterfly Park and Insect Kingdom,https://place.qyer.com/poi/V2UJYVFiBzFTYlI-/
+284,4,海底世界  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI_Cm0/
+285,4,甘榜格南  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI9CmU/
+286,4,ChangiChapelandMuseum  ,None,https://place.qyer.com/poi/V2YJZVFuBzZTZ1I3/
+287,4,新加坡滨海湾街道赛道  ,Marina Bay Street Circuit,https://place.qyer.com/poi/V2UJZ1FiBzFTZVI2CmU/
+288,4,新加坡人气景点TOP10  ,None,https://place.qyer.com/poi/V2UJYlFiBz9TYVI4Cms/
+289,4,新加坡河  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYlI8Cm0/
+290,4,圣淘沙音乐喷泉  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI2Cmo/
+291,4,新加坡圣淘沙海洋生物园  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI4Cm8/
+292,4,滨海湾金沙酒店  ,Marina Bay Sands,https://place.qyer.com/poi/V2UJZFFvBzFTZlI3Cm4/
+293,4,兀兰海滨公园  ,Woodlands Waterfront Park,https://place.qyer.com/poi/V2UJZFFvBzBTbVI9Cmo/
+294,4,汤姆森自然公园  ,Thomson Nature Park,https://place.qyer.com/poi/V2UJZFFvBzBTbVI-Cmg/
+295,4,海军部公园  ,Admiralty Park,https://place.qyer.com/poi/V2UJZFFvBzBTbVI-Cm8/
+296,4,MarineCovePlayground  ,None,https://place.qyer.com/poi/V2UJZFFvBzNTZ1I5CmU/
+297,4,西罗索炮台天空步道  ,Fort Siloso Sky Walk,https://place.qyer.com/poi/V2UJZFFvBzVTZFI5Cm8/
+298,4,印度遗产中心  ,Indian Heritage Centre,https://place.qyer.com/poi/V2UJYlFgBzVTZlI2Cm4/
+299,4,旧福特汽车工厂  ,Former Ford Factory,https://place.qyer.com/poi/V2UJYlFiBzJTZlI2Cmw/
+300,4,凤山寺  ,Hong San See,https://place.qyer.com/poi/V2UJYlFiBzVTYFI6Cmk/
+301,4,SkyTower  ,None,https://place.qyer.com/poi/V2cJa1FjBzZTYA/
+302,4,新加坡大会堂  ,Former Singapore Conference Hall and Trade Union House,https://place.qyer.com/poi/V2UJYlFiBzVTZlI4Cmo/
+303,4,斗母宫  ,Tou Mu Kung Temple,https://place.qyer.com/poi/V2UJYlFiBzJTZlI2Cmk/
+304,4,TheHouseOfPrayer  ,None,https://place.qyer.com/poi/V2UJYVFmBz9TbFI_Cmk/
+305,4,警察文物中心  ,None,https://place.qyer.com/poi/V2UJYVFmBz9TbFI_Cms/
+306,4,YuJihFishballMeatMee  ,None,https://place.qyer.com/poi/V2UJYVFmBz9TbFI_CmQ/
+307,4,LongHuaCoffee&Tea  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTZ1I2Cmw/
+308,4,N'HoodPark  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTZ1I2Cm0/
+309,4,勿兰镇公园  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTZ1I2Cmk/
+310,4,HongHuatVegetarianFood  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTZ1I2CmU/
+311,4,XingWangShouGongBanMian  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYFI_Cmw/
+312,4,义顺城镇公园  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI8CmQ/
+313,4,Post-Museum  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI6Cms/
+314,4,金珠厨艺馆  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI5Cm4/
+315,4,TibetanDziAndArtMuseum  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI5Cmk/
+316,4,FukTakChiMuseum  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI5CmQ/
+317,4,Aryaseni艺术廊  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI4Cmw/
+318,4,大自然步行街  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYVI4Cm8/
+319,4,BattleBox  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI_Cmg/
+320,4,HengArtland(百利宫店)  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI_CmQ/
+321,4,Phuture概念营销  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI-Cmw/
+322,4,VictoryFamilyCentreLtd  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI-Cm4/
+323,4,维多利亚剧院和音乐厅  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI-CmU/
+324,4,MerlinFrameMaker&ArtGallery(百利宫店)  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI8Cms/
+325,4,GaleriesBartoux(ION店)  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI8CmU/
+326,4,国家文物局  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI5Cm4/
+327,4,JacobBallasCentre  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI4Cmg/
+328,4,KranjiWarMemorial  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI3Cms/
+329,4,EternalLifeAssembly  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI3CmU/
+330,4,FranciscanMissionariesOfMary  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI2Cm0/
+331,4,SingaporeBaptistConvention  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI2Cm4/
+332,4,Seventh-DayAdventistMission(S'pore)  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI2Cm8/
+333,4,IECSingapore  ,None,https://place.qyer.com/poi/V2UJYVFnBzZTYlI2Cmk/
+334,4,TheSalvationEratchippuCorps  ,None,https://place.qyer.com/poi/V2UJYVFnBzdTYVI2CmQ/
+335,4,ChurchOfOurLadyStarOfTheSea  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI3Cmk/
+336,4,棕榈景观花园  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI2Cmw/
+337,4,ChurchOfSingapore(woodlands)  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI2Cm4/
+338,4,BukitPanjangMethodistChurchKindergarten  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI2Cm8/
+339,4,ChurchOfVictory  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI2Cmg/
+340,4,StJohn'sChapel  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYFI2Cmk/
+341,4,TheChurchofJesusChristofLatter-daySaints  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI_Cm0/
+342,4,LutheranChurchMasKuning  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI_Cm4/
+343,4,ShaddaiBaptistChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI_Cm8/
+344,4,YuanLiShuShi  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI_Cmg/
+345,4,SukaRamaiFoodStall  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI_Cmk/
+346,4,XinZhou  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI_CmQ/
+347,4,ChurchofStAnthony  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI_CmU/
+348,4,NewLifeBiblePresbyterianChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI-Cmw/
+349,4,RiShengFishballNoodle.Laksa  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI-Cm0/
+350,4,YishunMethodistChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI9Cmk/
+351,4,Jesus'DisciplesBaptistCommunityChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI9Cms/
+352,4,SembawangTamilMethodistChurch  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI9CmQ/
+353,4,纽顿生命堂  ,None,https://place.qyer.com/poi/V2UJYVFnBzFTYVI7Cmw/
+354,4,None,None,https://ne
+355,4,None,None,https://ne
+356,4,None,None,https://ne
+357,4,None,None,https://ne
+358,4,None,None,https://ne
+359,4,None,None,https://ne

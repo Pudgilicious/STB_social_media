@@ -1,0 +1,22 @@
+150, 新加坡新生水展览馆  , page: None, 2020-02-03 22:37:28.291135
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/QY/QY_crawler.py", line 127, in crawl_pois
+    self.driver.get(self.current_poi_url)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout
+  (Session info: chrome=79.0.3945.130)
+
+
+217, 城市规划展览馆  , 2020-02-03 22:48:18.646166, POI website not working
+240, 万象新加坡LIVE  , 2020-02-03 22:52:02.370944, POI website not working
+354, None, 2020-02-03 23:08:58.585452, POI website not working
+355, None, 2020-02-03 23:09:03.427343, POI website not working
+356, None, 2020-02-03 23:09:07.980245, POI website not working
+357, None, 2020-02-03 23:09:13.065702, POI website not working
+358, None, 2020-02-03 23:09:18.536764, POI website not working
+359, None, 2020-02-03 23:09:23.200916, POI website not working

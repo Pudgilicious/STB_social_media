@@ -1,6 +1,0 @@
-0, 新加坡环球影城, page: None, 2020-01-31 17:38:24.483514
-Traceback (most recent call last):
-  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 136, in crawl_pois
-    self.crawl_attributes()
-TypeError: crawl_attributes() missing 1 required positional argument: 'poi_index'
-

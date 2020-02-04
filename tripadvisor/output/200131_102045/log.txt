@@ -1,0 +1,105 @@
+69, Takashimaya Singapore, Family, page: None, None, 2020-01-31 10:41:52.991036
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+69, Takashimaya Singapore, Family, page: None, None, 2020-01-31 10:42:06.377647
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 165, in crawl_poi_by_trip_type
+    '//div[@data-tracker="{}"]'.format(self.current_trip_type))
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-tracker="Family"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+69, Takashimaya Singapore, Family, page: None, None, 2020-01-31 10:42:23.500912
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+69, Takashimaya Singapore, Family, page: None, None, 2020-01-31 10:42:40.708873
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 173, in crawl_poi_by_trip_type
+    self.crawl_attributes()
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 253, in crawl_attributes
+    '//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]')\
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="attractions-attraction-detail-about-card-AttractionDetailAboutCard__section--1_Efg"]"}
+  (Session info: chrome=79.0.3945.130)
+
+
+69, Takashimaya Singapore, Family, page: None, None, 2020-01-31 10:42:47.742670
+Traceback (most recent call last):
+  File "/home/ds/git/STB_social_media_analytics/tripadvisor/tripadvisor_crawler.py", line 159, in crawl_poi_by_trip_type
+    self.driver.get(self.current_poi_url)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/ds/anaconda3/envs/crawl/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+

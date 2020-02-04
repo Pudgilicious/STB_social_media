@@ -1,0 +1,18 @@
+1, Merlion Park, page: None, 2020-02-03 11:55:55.065639
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/QY/QY_crawler.py", line 154, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/QY/QY_crawler.py", line 314, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/QY/QY_crawler.py", line 397, in crawl_reviews_1_page
+    self.sel = Selector(text=self.driver.page_source)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 679, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=79.0.3945.130)
+
+

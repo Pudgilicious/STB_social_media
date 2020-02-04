@@ -122,6 +122,8 @@ class CtripCrawler:
                                                        self.current_poi_name,
                                                        datetime.now(),
                                                        'current POI does not exist'))
+                log_file.close()
+                self.poi_df = self.poi_df.iloc[1:]
                 continue
     ####################################################################################################
     
@@ -227,8 +229,8 @@ class CtripCrawler:
             xpath_total_reviews = '//a[@data-reactid="58"]/text()'    
             total_review =res.xpath(xpath_total_reviews).extract_first() 
 
-            xpath_name = '//h2[@data-reactid="38"]/text()'    
-            name=res.xpath(xpath_name).extract_first()   
+            #xpath_name = '//h2[@data-reactid="38"]/text()'    
+            #name=res.xpath(xpath_name).extract_first()   
 
             xpath_rate = '//i[@class="num"]/text()'    
             rating=res.xpath(xpath_rate).extract_first()  
@@ -246,8 +248,8 @@ class CtripCrawler:
             xpath_total_reviews = '//span[@class="f_orange"]/text()'  
             total_reviews =res1.xpath(xpath_total_reviews).extract_first() 
 
-            xpath_name = '//div[@class="f_left"]/h1/a/text()'    
-            name=res1.xpath(xpath_name).extract_first()   
+            #xpath_name = '//div[@class="f_left"]/h1/a/text()'    
+            #name=res1.xpath(xpath_name).extract_first()   
 
             xpath_rate = '//span[@class="score"]/b/text()'    
             rating=res1.xpath(xpath_rate).extract_first()  
@@ -304,7 +306,7 @@ class CtripCrawler:
             #parsing elements
             review_date1= list(map(self.parse_review_date1,review_time_tgt))
             review_time1= list(map(self.parse_review_time1,review_time_tgt))
-            review_rating1= list(map(self.parse_review_rating1,review_ratings))
+            review_ratings1= list(map(self.parse_review_rating1,review_ratings))
             review_body1=list(map(self.parse_review_body1,review))
         
         else:
@@ -330,7 +332,7 @@ class CtripCrawler:
             reviewer_name=reviewer_name1[i]
             review_date=review_date1[i]
             review_time=review_time1[i]
-            review_rating=review_rating1[i]
+            review_ratings=review_ratings1[i]
             review_body=review_body1[i]
             
         
