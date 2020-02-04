@@ -17,7 +17,7 @@ from random import randint
 
 driver = webdriver.Chrome('./chromedriver')
 
-url= "https://you.ctrip.com/sight/Singapore53.html"
+url= "https://you.ctrip.com/shoppinglist/Singapore53.html?ordertype=11"
 driver.get(url)
 
 
@@ -25,47 +25,47 @@ driver.get(url)
 poi_df = pd.DataFrame(columns=['POI', 'link', 'num_reviews'])
 
 # There are 112 pages of attractions in Ctrip.
-for i in range(1,5):
-       
+for i in range(1,21):
 
-        print("page" + str(i)) #counter to keep track at which page    
+
+        print("page" + str(i)) #counter to keep track at which page
         driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')  #To scroll down
-    
+
          #Forming selector path
         sleep(randint(1,3))
         sel = Selector(text=driver.page_source)
         sleep(randint(1,3))
-        
-        res = sel.xpath('//div[/html/body/div[4]/div/div[2]/div/div[3]]')    
-        end_link = '/div[2]/dl/dt/a/@href'     
+
+        res = sel.xpath('//div[/html/body/div[4]/div/div[2]/div/div[3]]')
+        end_link = '/div[2]/dl/dt/a/@href'
         end_text = '/div[2]/dl/dt/a[@target="_blank"]/@title'
         end_reviews = '/div[2]/ul/li[3]/a[@target="_blank"]/text()'
-    
+
         #For each page, there are 15 attractions listed
         for a in range (1,20):
-        
+
             #Forming a string
-            xpath_link = 'div[' + str(a) +']' + end_link   
+            xpath_link = 'div[' + str(a) +']' + end_link
             xpath_text = 'div[' + str(a) +']' + end_text
             xpath_reviews = 'div[' + str(a) +']' + end_reviews
-        
-            link = res.xpath(xpath_link).extract_first()     
-            text = res.xpath(xpath_text).extract_first()  
-            reviews = res.xpath(xpath_reviews).extract_first() 
-        
-  
-            poi_df.loc[poi_df.shape[0]] = [text] + [link] + [reviews]
-          
-                
-                
-        url1= "https://you.ctrip.com/sight/singapore53/s0-p{}.html".format(i+1)   
-        driver.get(url1) 
-        
 
-        
+            link = res.xpath(xpath_link).extract_first()
+            text = res.xpath(xpath_text).extract_first()
+            reviews = res.xpath(xpath_reviews).extract_first()
+
+
+            poi_df.loc[poi_df.shape[0]] = [text] + [link] + [reviews]
+
+
+
+        url1= "https://you.ctrip.com/shoppinglist/singapore53/s0-p{}.html?ordertype=11".format(i+1)
+        driver.get(url1)
+
+
+
 driver.quit()
 
 #Write out as data-frame with date
 today = date.today()
 today_date = today.strftime("%Y%m%d")
-poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/aggregate list/{}_chinese_ctrip_list.csv".format(today_date))# changed storage position and name_jia
+poi_df.to_csv("./experimentation/jiaxin_experiment/aggregate list/{}_chinese_ctrip_list.csv".format(today_date))# changed storage position and name_jia
