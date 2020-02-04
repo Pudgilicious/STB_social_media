@@ -104,8 +104,8 @@ while len(reviews_df.index) > 0:
         response = natural_language_understanding.analyze(
             text=text,
             features=Features(
-                entities=EntitiesOptions(emotion=True, sentiment=True, limit=1000),
-                keywords=KeywordsOptions(emotion=True, sentiment=True, limit=1000)
+                entities=EntitiesOptions(emotion=True, sentiment=True, limit=10000),
+                keywords=KeywordsOptions(emotion=True, sentiment=True, limit=10000)
             )
         ).get_result()
 
@@ -174,5 +174,5 @@ while len(reviews_df.index) > 0:
         reviews_df = reviews_df.iloc[1:]
         row_number += 1
 
-        sleep(300)
+        sleep(60)
 
