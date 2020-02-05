@@ -63,13 +63,14 @@ class TripAdvisorCrawler:
         self.start_page = None
         self.trip_types_to_crawl = []
 
-        # Reset after every trip type
+        # Reset to the below (default) after every trip type
         self.current_date = None
         self.current_page = None
         self.current_trip_type = None
         self.attributes_crawled = False
 
-        # Reset after every POI
+        # Re-assigned for every POI
+        self.current_df_row = None
         self.current_poi_index = None
         self.current_poi_name = None
         self.current_poi_url = None  # Original POI URL, not crawling/current page
@@ -118,9 +119,10 @@ class TripAdvisorCrawler:
 
             # Create <POI_INDEX>.csv in reviews and reviewers folders.
             if self.fsm_state == 1:
-                self.current_poi_index = self.poi_df.iloc[0][0]
-                self.current_poi_name = self.poi_df.iloc[0][1]
-                self.current_poi_url = self.poi_df.iloc[0][2]
+                self.current_df_row = self.poi_df.iloc[0]
+                self.current_poi_index = self.current_df_row['POI_INDEX']
+                self.current_poi_name = self.current_df_row['POI_NAME']
+                self.current_poi_url = self.current_df_row['URL']
                 self.reviews_df.to_csv(
                     './tripadvisor/output/{}/reviews/{}.csv'.format(
                         self.datetime_string,
@@ -367,7 +369,7 @@ class TripAdvisorCrawler:
             home_location = self.parse_home_location(home_location_elements[i].text, reviewer_name)
             review_rating_element = self.driver.find_element_by_xpath(
                 '//*[@id="review_{}"]/div/div[2]/span[1]'.format(review_id))\
-                .get_attribute('class')
+                .get_attribute('class')  # Review rating is one of five possible images.
             review_rating = self.parse_review_rating_element(review_rating_element)
             review_title = review_title_elements[i].text
             review_body = review_body_elements[i].text
@@ -465,7 +467,7 @@ class TripAdvisorCrawler:
 
     @staticmethod
     def parse_review_rating_element(text):
-        return int(text[-2])
+        return int(text[-2])  # 2nd last character of the class attribute indicates the rating
 
     @staticmethod
     def parse_home_location(text, reviewer_name):
