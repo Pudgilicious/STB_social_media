@@ -1,0 +1,137 @@
+#Documentation
+
+#config file
+
+csv_input_path:   
+#the aggregate list of POIs from QY, contains POI names(english and chinese), number of reviews, and url to the POI
+#to crawl a new list, please refer to the crawl_agg_list section in the QY_crawler.py(see below)
+
+read_from_database: csv  # mysql, sqlite or csv, format of the input file
+write_to_database: csv  # mysql, sqlite or csv, format of the output file
+
+number_of_pages:  # int or None. Crawl the first x pages of reviews for each POI.if 0, only Attributes are crawled. 
+
+csv_folder:  # in the format yyymmdd_hhmmss, the folder stores all the output data
+
+
+
+
+
+#QY_main
+open config file and read values there, change the imput file into dataframe for further processing
+
+import the Finite State Machine(FSM,see below)
+
+start_time and end_time are used to record the total crawl time
+
+
+
+
+#QY_fsm
+Finite State Machine for QYCrawler(see below)
+four state: 	0 - initialization
+		1 - start crawling
+		2 - transition between state 3 and state 1
+		3 - crashed
+		4 - finish 
+
+logic flow of the FSM
+0 -> 1 -> 4
+   or  -> 3 -> 2 -> 1 (may repeat for a few times) -> 4
+
+call the QYCrawler to start crawling
+
+
+
+
+#QY_crawler
+
+#initialization
+fsm_state=0
+
+#def crawl_pois(self,number_of_pages)
+this function is used to crawl all POIs from the input csv file
+E.g.1    
+crawl_pois(number_of_pages=0)
+only attributes of each POI will be crawled, for all POI
+
+E.g.2    
+crawl_pois(number_of_pages=3)
+the first 3 review pages will be crawled for each POI, for all POI
+
+E.g.3    
+crawl_pois(number_of_pages=None)
+all reviews for all POIs will be crawled, this is set as the default value
+
+#logic flow of crawl_pois(number_of_pages)
+if fsm_state==0(initialization), move to fsm_state=1(start crawling)
+for the whole df input, if fsm_state==1 read only the first line
+
+if fsm_state == 3(crashed), move to the transition state, 2.
+Note!:      
+this is to caputure the unrealised logic flow in the FSM
+
+
+
+
+#def crawl_attributde(self)
+the method is used to crawl attributes for ndividual POI, contains:
+	POI index, 
+	total number of reviews, 
+	ranking,
+	about_summary, 
+	ticket info,
+	ratings,
+	address, 
+	phone number, 
+	website, 
+	transportaion methods
+	opening hours
+some of the attribute may not be available and will be stated
+
+
+
+#def crawl_reviews(self)
+the method is used to crawl reviews for individual POI, first identify the last page number,initialize current page number, and crawl all reviews(if number_of_pages==None), or the first n pages(if number_of_pages== n)
+
+
+
+
+#def reviews_to_csv(self)
+to put crawled reviews in to csv output
+
+
+
+#def crawl_reviews_1_page(self,poi_index)
+poi_index is the index of current poi. This method crawls a single page of reviews in one POI, and click to next page if the page button is available
+
+
+
+#def crawl_agg_list
+crawl the aggregate list of POIs from QY, output can be used as an input for the crawler
+Note!:     
+hardcoded the number of pages of aggregate list here
+
+
+
+#utility functions, static methods
+#def parse_total_reviews
+use to parse the number of reviews in craw_agg_list, the raw element is always in the form of 
+(number)条点评/暂无点评, search for integers in the raw element, if cannot find, returns 0
+
+#def parse_ranking
+第x位，search for the integer in the text
+
+#def parse_rate
+deleting the empty strings in the raw element
+
+#def parse_review_date
+turn the date string into a datetime object
+
+#def parse_review_body
+cleaning the review body, removing irrelevant emptu strings and '\n'
+
+#def parse_review_numbers
+use to parse the number of reviews when crawling attributes of individual POI, similar as parse_Total_reviews
+
+		

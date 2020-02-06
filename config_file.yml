@@ -12,4 +12,4 @@ TripAdvisor:
     start_page:  # int or None
     earliest_date: 01-01-2016  # dd-mm-yyyy or None. Higher priority than number_of_pages.
     number_of_pages:  # int or None. if 0, only Attributes are crawled.
-    csv_folder:  # in the format yyymmdd_hhmmss
+    target_folder:  # in the format yyymmdd_hhmmss

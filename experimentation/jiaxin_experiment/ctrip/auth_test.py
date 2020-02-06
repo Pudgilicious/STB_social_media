@@ -22,9 +22,9 @@ class unlockScrapy(object):
         super(unlockScrapy, self).__init__()
         # selenium驱动
         self.driver = driver
-        self.WAPPID = '百度文字识别appid'
-        self.WAPPKEY = '百度文字识别appkey'
-        self.WSECRETKEY = '百度文字识别secretkey'
+        self.WAPPID = '18383870'                                               #'百度文字识别appid'
+        self.WAPPKEY = 'U9A5vH5d7ITt3T5VE08Fooib'                              #'百度文字识别appkey'
+        self.WSECRETKEY ='r1QkcgOYWMNMrXOj35x1ZV2XKaxAV6nR'                    #'百度文字识别secretkey'
         # 百度文字识别sdk客户端
         self.WCLIENT = AipOcr(self.WAPPID, self.WAPPKEY, self.WSECRETKEY)
  
@@ -173,9 +173,6 @@ def unlock():
  
 if __name__ == '__main__':
     unlock()
-程序执行后会打开Chrome浏览器，然后就会开始破解携程的验证，破解过程如下：
 
 
-————————————————
-版权声明：本文为CSDN博主「程序猿洋洋」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/hhy1107786871/article/details/88342976
+
