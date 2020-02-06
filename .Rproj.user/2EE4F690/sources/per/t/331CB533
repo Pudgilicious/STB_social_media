@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580812337382.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "213321131",
+    "id" : "331CB533",
+    "lastKnownWriteTime" : 1580813529,
+    "last_content_update" : 1580813529581,
+    "path" : "~/Desktop/stb_crawl/STB_social_media_analytics/ctrip/format_shopping_list.R",
+    "project_path" : "ctrip/format_shopping_list.R",
+    "properties" : {
+        "cursorPosition" : "24,107",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
