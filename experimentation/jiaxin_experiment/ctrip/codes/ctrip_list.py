@@ -17,7 +17,8 @@ from random import random
 
 driver = webdriver.Chrome('./chromedriver')
 
-url= "https://you.ctrip.com/shoppinglist/Singapore53.html"
+
+url= "https://you.ctrip.com/shoppinglist/Singapore53.html?ordertype=11"
 driver.get(url)
 
 
@@ -30,56 +31,48 @@ def parse_reviews(text):
         else:
             return 0
 
-# There are 240 pages of shopping areas in Ctrip.
-for i in range(1,241):
-       
 
-        print("page" + str(i)) #counter to keep track at which page    
-       # driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')  #To scroll down
-    
+# There are 112 pages of attractions in Ctrip.
+for i in range(1,21):
+
+
+        print("page" + str(i)) #counter to keep track at which page
+        driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')  #To scroll down
+
          #Forming selector path
         sel = Selector(text=driver.page_source)
-        sleep(random())
-        
-        res = sel.xpath('//div[@class="list_wide_mod2"]')    
-        end_link = './/div[2]/dl/dt/a/@href'     
-        end_text = './/div[2]/dl/dt/a[@target="_blank"]/@title'
-        end_reviews = './/div[2]/ul/li[3]/a[@target="_blank"]/text()'
-        end_address='.//div[2]/dl/dd[@class="ellipsis"]/text()'
-    
-        #For each page, there are 15 attractions listed
-        #for a in range (1,16):
-        
-            #Forming a string
-         #   xpath_link = '//div[' + str(a) +']' + end_link   
-          #  xpath_text = '//div[' + str(a) +']' + end_text
-           # xpath_reviews = '//div[' + str(a) +']' + end_reviews
-            #xpath_address = '//div[' + str(a) +']' + end_address
-        
-        link1 = res.xpath(end_link).getall()     
-        text1= res.xpath(end_text).getall()  
-        reviews1 = res.xpath(end_reviews).getall() 
-        address1= res.xpath(end_address).getall() 
-        
-        
-        for a in range(len(link1)):
-            link="https://you.ctrip.com"+str(link1[a])
-            text= text1[a]
-            reviews=parse_reviews(str(reviews1[a]))
-            address=address1[a]
-  
-            poi_df.loc[poi_df.shape[0]] = [text] + [link] + [reviews] + [address]
-        
-                
-                
-        url1= "https://you.ctrip.com/shoppinglist/singapore53/s0-p{}.html".format(i+1)   
-        driver.get(url1) 
-        
 
-        
+        sleep(randint(1,3))
+
+        res = sel.xpath('//div[/html/body/div[4]/div/div[2]/div/div[3]]')
+        end_link = '/div[2]/dl/dt/a/@href'
+        end_text = '/div[2]/dl/dt/a[@target="_blank"]/@title'
+        end_reviews = '/div[2]/ul/li[3]/a[@target="_blank"]/text()'
+
+        #For each page, there are 15 attractions listed
+        for a in range (1,20):
+
+            #Forming a string
+            xpath_link = 'div[' + str(a) +']' + end_link
+            xpath_text = 'div[' + str(a) +']' + end_text
+            xpath_reviews = 'div[' + str(a) +']' + end_reviews
+
+            link = res.xpath(xpath_link).extract_first()
+            text = res.xpath(xpath_text).extract_first()
+            reviews = res.xpath(xpath_reviews).extract_first()
+
+
+            poi_df.loc[poi_df.shape[0]] = [text] + [link] + [reviews]
+
+
+
+        url1= "https://you.ctrip.com/shoppinglist/singapore53/s0-p{}.html?ordertype=11".format(i+1)
+        driver.get(url1)
+
+
 driver.quit()
 
 #Write out as data-frame with date
 today = date.today()
 today_date = today.strftime("%Y%m%d")
-poi_df.to_csv("/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/aggregate list/{}_chinese_ctrip_list.csv".format(today_date))# changed storage position and name_jia
+poi_df.to_csv("./experimentation/jiaxin_experiment/aggregate list/{}_chinese_ctrip_list.csv".format(today_date))# changed storage position and name_jia
