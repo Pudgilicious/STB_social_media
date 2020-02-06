@@ -66,16 +66,17 @@ class SentimentScorer:
         os.makedirs(self.sentiment_folder_path)
 
         self.nlu = None
+        self.api_calls_made = 0
         self.fsm_state = 0
 
-        # Fields below change for every POI
+        # Per-POI variables
         self.datetime_string = None
         self.current_poi_index = None
         self.current_reviews_df = None
         self.keywords_file_path = None
         self.entities_file_path = None
 
-        # Fields below reset for every review
+        # Per-review variables
         self.current_df_row = None
         self.current_row_number = None
         self.current_review_id = None
@@ -89,7 +90,7 @@ class SentimentScorer:
         while self.poi_list:
 
             # Only create the below if FSM state is not 2 or 3
-            if self.fsm_state != 2 and self.fsm_state != 3:
+            if self.fsm_state not in (2, 3):
                 self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
                 self.current_poi_index = self.poi_list.pop(0)
                 self.keywords_file_path = self.sentiment_folder_path + '{}_keywords_{}.csv'.format(
@@ -118,62 +119,76 @@ class SentimentScorer:
             # Scoring
             self.score_sentiments_1_poi()
 
-            # Return if error has occured (FSM state is 2 or 3)
-            if self.fsm_state != 1:
+            # End function if error has occured, preserving per-POI variables
+            if self.fsm_state in (2, 3):
                 return
+
+            # Reset per-POI variables
+            self.reset_per_poi_variables()
 
         self.fsm_state = 4
 
     def score_sentiments_1_poi(self):
+
+        # FSM state 1 is the normal running mode
         self.fsm_state = 1
-        if self.current_reviews_df is None or len(self.current_reviews_df.index) == 0:
-            self.current_reviews_df = pd.read_csv('./tripadvisor/finalised_output/{}/reviews/{}.csv'.format(
-                self.target_folder,
-                self.current_poi_index
-            ))
+
+        if self.current_reviews_df is None:
+            self.current_reviews_df = pd.read_csv(
+                './tripadvisor/finalised_output/{}/reviews/{}.csv'.format(
+                    self.target_folder,
+                    self.current_poi_index
+                )
+            )
 
         while len(self.current_reviews_df.index) > 0:
             self.current_df_row = self.current_reviews_df.iloc[0]
             self.current_review_id = self.current_df_row['REVIEW_ID']
             self.current_review_text = self.current_df_row['REVIEW_BODY']
-            print(self.current_review_id)
+            self.api_calls_made += 1
+            print('Total API calls: {}, Review ID: {}'.format(self.api_calls_made, self.current_review_id))
 
             try:
                 self.get_api_response()
-            except:
-                self.fsm_state = 2
+
+            except Exception as e:
                 print("Error in API call. Please see log file.")
                 log = open(self.sentiment_folder_path + 'log.txt', 'a+')
-                log.write('POI index: {}, row number: {}, {}\n'.format(
+                log.write('POI index: {}, Review ID: {}, {}\n'.format(
                     self.current_poi_index,
-                    self.current_row_number,
+                    self.current_review_id,
                     datetime.now()))
                 log.write(traceback.format_exc() + '\n')
                 log.close()
-                return
+                if str(e).find('unsupported text language') != -1:
+                    self.reset_per_review_variables()
+                    continue
+                elif str(e).find('Forbidden'):
+                    self.fsm_state = 2
+                    return  # Per-review variables preserved.
+                else:
+                    self.fsm_state = 3
+                    return  # Per-review variables preserved.
 
             try:
                 self.parse_response()
-            except:
-                self.fsm_state = 3
-                print("Error in parsing API response. Please see log file.")
+                self.write_to_csv()
+            except Exception as e:
+                print("Error in parsing API response or writing to CSV. Please see log file.")
                 log = open(self.sentiment_folder_path + 'log.txt', 'a+')
-                log.write('POI index: {}, row number: {}, {}\n'.format(
+                log.write('POI index: {}, Review ID: {}, {}\n'.format(
                     self.current_poi_index,
-                    self.current_row_number,
+                    self.current_review_id,
                     datetime.now()))
                 log.write(traceback.format_exc() + '\n')
                 log.close()
-                return
+                self.fsm_state = 3
+                return  # Per-review variables preserved.
 
-            self.write_to_csv()
-            self.current_df_row = None
-            self.current_row_number = None
-            self.current_review_id = None
-            self.current_review_text = None
-            self.current_api_response = None
-            self.keywords_df = None
-            self.entities_df = None
+            # Reset per-review variables
+            self.reset_per_review_variables()
+
+            # Drop first row of reviews_df
             self.current_reviews_df = self.current_reviews_df.iloc[1:]
 
     def get_api_response(self):
@@ -215,3 +230,18 @@ class SentimentScorer:
                 header=False,
                 index=False
             )
+
+    def reset_per_poi_variables(self):
+        self.datetime_string = None
+        self.current_poi_index = None
+        self.current_reviews_df = None
+        self.keywords_file_path = None
+        self.entities_file_path = None
+
+    def reset_per_review_variables(self):
+        self.current_df_row = None
+        self.current_review_id = None
+        self.current_review_text = None
+        self.current_api_response = None
+        self.keywords_df = None
+        self.entities_df = None
