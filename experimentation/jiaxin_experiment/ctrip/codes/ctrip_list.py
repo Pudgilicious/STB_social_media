@@ -7,22 +7,30 @@ This is a temporary script file.
 
 from selenium import webdriver
 from scrapy import Selector
-from scrapy.http import HtmlResponse
+
 import pandas as pd
 import csv
 import re
 from time import sleep
 from datetime import date
-from random import randint
+from random import random
 
 driver = webdriver.Chrome('./chromedriver')
+
 
 url= "https://you.ctrip.com/shoppinglist/Singapore53.html?ordertype=11"
 driver.get(url)
 
 
 # Initialize pandas data-frame with name of place and link
-poi_df = pd.DataFrame(columns=['POI', 'link', 'num_reviews'])
+poi_df = pd.DataFrame(columns=['POI', 'link', 'num_reviews','address'])
+
+def parse_reviews(text):
+        if re.search(r'\d+',str(text)):
+            return int(re.search(r'\d+', text).group())
+        else:
+            return 0
+
 
 # There are 112 pages of attractions in Ctrip.
 for i in range(1,21):
@@ -32,8 +40,8 @@ for i in range(1,21):
         driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')  #To scroll down
 
          #Forming selector path
-        sleep(randint(1,3))
         sel = Selector(text=driver.page_source)
+
         sleep(randint(1,3))
 
         res = sel.xpath('//div[/html/body/div[4]/div/div[2]/div/div[3]]')
@@ -60,7 +68,6 @@ for i in range(1,21):
 
         url1= "https://you.ctrip.com/shoppinglist/singapore53/s0-p{}.html?ordertype=11".format(i+1)
         driver.get(url1)
-
 
 
 driver.quit()
