@@ -7,18 +7,20 @@ Created on Fri Jan 31 17:12:27 2020
 """
 
 import pandas as pd
-import mysql.connector
 from scrapy import Selector
 import os
 import re
-import yaml
 import utils
 from time import sleep
 import traceback
-from random import random
+from random import random,randint
 from selenium import webdriver
 from datetime import datetime, date, timedelta
 from random import random
+#for proxy account
+from http_request_randomizer.requests.proxy.requestProxy import RequestProxy
+
+
 
 class CtripCrawler:
     attributes_col_names = ['POI_INDEX',
@@ -50,7 +52,7 @@ class CtripCrawler:
         self.poi_df = poi_df
         if cnx:
             self.cursor = cnx.cursor()
-            
+        self.db_out_flag = db_out_flag 
         #for FMS
         self.fsm_state=0
         
@@ -69,8 +71,11 @@ class CtripCrawler:
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
         self.sel = None                                
         self.current_url=None
-        
+        self.last_page_number=0
        
+        #for authentication test
+        self.count=1
+        self.ip_number=0
         
         # Create unique CSVs.
         self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
@@ -91,11 +96,21 @@ class CtripCrawler:
                 self.number_of_pages = number_of_pages
             #initialization finish, change state
             self.fsm_state = 1
-            
-        self.driver = webdriver.Chrome(self.chromedriver_path)  
+        
+        
 
         while len(self.poi_df.index) > 0:
-    
+            req_proxy = RequestProxy() #you may get different number of proxy when  you run th
+            proxies = req_proxy.get_proxy_list();#this will create proxy list
+            PROXY = proxies[self.ip_number].get_address();
+            webdriver.DesiredCapabilities.CHROME['proxy']={
+                                "httpProxy":PROXY,
+                                "ftpProxy":PROXY,
+                                "sslProxy":PROXY,                    
+                                "proxyType":"MANUAL",          
+                            }
+            self.driver = webdriver.Chrome(self.chromedriver_path)  
+            
             # Create <POI_INDEX>.csv in reviews and reviewers folders.
             if self.fsm_state == 1:
                 self.current_poi_index = self.poi_df.iloc[0][0]
@@ -112,18 +127,23 @@ class CtripCrawler:
             if self.fsm_state == 3: 
                 self.fsm_state=2
             sleep(1+random()*2)
-            self.sel = Selector(text=self.driver.page_source)
+            self.sel = Selector(text=self.driver.page_source)               
+    #################handle error of authentication########################################
+            res=self.sel.xpath('/html/body/div[3]/div[3]/img')
+            if res != []:
+                self.count+=1
+                if self.count == 5:
+                    log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
+                    log_file.write('{}, {}, {}, {}\n'.format(self.current_poi_index,
+                                                           self.current_poi_name,
+                                                           datetime.now(),
+                                                           'Caught by Ctrip, go authentication test'))
+                    log_file.close()
+                    self.driver.quit()
+                    self.ip_number=randint(2,100)
+                    self.count = 1
+
                 
-    #################handle error of redirecting########################################
-            self. current_url= self.driver.current_url
-            if self.current_url == 'https://you.ctrip.com/':
-                log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
-                log_file.write('{}, {}, {}, {}'.format(self.current_poi_index,
-                                                       self.current_poi_name,
-                                                       datetime.now(),
-                                                       'current POI does not exist'))
-                log_file.close()
-                self.poi_df = self.poi_df.iloc[1:]
                 continue
     ####################################################################################################
     
@@ -133,6 +153,19 @@ class CtripCrawler:
                     self.fsm_state = 1   
                     
                 try:
+            #################handle error of redirecting########################################
+                    self. current_url= self.driver.current_url
+                    if self.current_url == 'https://you.ctrip.com/':
+                        log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
+                        log_file.write('{}, {}, {}, {}\n'.format(self.current_poi_index,
+                                                               self.current_poi_name,
+                                                               datetime.now(),
+                                                               'current POI does not exist'))
+                        log_file.close()
+                        raise Exception("current POI does not exist")
+                        self.poi_df = self.poi_df.iloc[1:]
+                        continue
+            ####################################################################################################
                     if not self.attributes_crawled:    
                             print('########## {}##########'.format(self.current_poi_name))
                             self.crawl_attributes()
@@ -162,7 +195,7 @@ class CtripCrawler:
                    
                 except:
                     self.fsm_state=3
-                    self.driver.quit()
+                    #self.driver.quit()
                     self.current_page = None
                     log_file = open('./output/{}/log.txt'
                                     .format(self.datetime_string), 'a+')
@@ -174,11 +207,13 @@ class CtripCrawler:
                     log_file.write(traceback.format_exc() + '\n')
                     log_file.close()
                     #erase every thing from the POI review csv, rewrite in next loop
-                    f = open("./output/{}/reviews/{}.csv".format(self.datetime_string,
-                                                                 self.current_poi_index), "w")
-                    f.truncate()
-                    f.close()
+                
+                    if self.reviews_crawled==True:
+                        os.remove('./output/{}/reviews/{}.csv'
+                                           .format(self.datetime_string,
+                                                   self.current_poi_index)) 
                     print("Exception has occurred. Please check log file.")
+                    self.reviews_crawled=False
                     sleep(1)
                     return
             
@@ -190,6 +225,18 @@ class CtripCrawler:
  
                 
     def crawl_reviews(self):
+        res = self.sel.xpath('//div[@class="clearfix"]')    
+        res1= self.sel.xpath('//div[@class="weibocombox"]')
+        if res:
+            xpath_end='.//a[@class="btn-last-page  "]/text()'
+            last=res.xpath(xpath_end).getall()
+        else:
+            xpath_end='//b[@class="numpage"]/text()'
+            last=res1.xpath(xpath_end).getall()
+        if last==[]:
+            self.last_page_number==1
+        else:
+            self.last_page_number = int(last[0])
         if self.current_page==None:
             self.current_page=1
         if self.number_of_pages is not None:
@@ -219,10 +266,9 @@ class CtripCrawler:
     
     def crawl_attributes(self):
         poi_index=self.current_poi_index
-      
         #select areas where we going to extract info
         res = self.sel.xpath('.//div[@class="brief-box clearfix"]')
-        res1= self.sel.xpath('.//body') 
+        res1= self.sel.xpath('.//div[@class="content cf dest_details"]') 
 
         
         if res:
@@ -291,17 +337,31 @@ class CtripCrawler:
         res1= self.sel.xpath('//div[@class="weibocombox"]')
     
         if res:
+            
             xpath_user_name = './/li/div[@class="user-date"]/span/text()[1]'  
             reviewer_name1 = res.xpath(xpath_user_name).getall()   
-
+            
             xpath_review_time ='.//li/div[@class="user-date"]/span/text()[3]'  
             review_time_tgt =res.xpath(xpath_review_time).getall() 
             
             xpath_review='.//li/p/text()'
             review=res.xpath(xpath_review).getall() 
-    
-            xpath_rates='.//li/h4/span/text()[2]'
-            review_ratings=res.xpath(xpath_rates).getall()
+            
+            #check rating exist or not
+            xpath_existance='.//li/div[@style="margin-bottom: 0px;"]'
+            if res.xpath(xpath_existance).getall() != []:
+                review_ratings=[]
+                for i in range(len(reviewer_name1)):
+                    xpath_rates='.//li[{}]/h4/span/text()[2]'.format(i)
+                    individual_rate=res.xpath(xpath_rates).extract_first()
+                    if individual_rate != None:
+                        review_ratings += individual_rate
+                    else:
+                        review_ratings += "9"                                  #if rating does not exist, print 9
+                    
+            else:
+                xpath_rates='.//li/h4/span/text()[2]'
+                review_ratings=res.xpath(xpath_rates).getall()
             
             #parsing elements
             review_date1= list(map(self.parse_review_date1,review_time_tgt))
@@ -318,15 +378,15 @@ class CtripCrawler:
 
             xpath_review='.//span[@class="heightbox"]/text()'
             review_body=res1.xpath(xpath_review).getall() 
-    
+            
             xpath_rates='.//ul//span/@style'
             rates=res1.xpath(xpath_rates).getall()
             
-            review_time1 = 'Not Available'
+            review_time1 = ['Not Available']*len(reviewer_name1)
             
             # Parsing attributes.
             review_ratings1= list(map(self.parse_review_rating2,rates))
-            review_body1=list(map(self.parse_review_body1,review_body1))
+            review_body1=list(map(self.parse_review_body1,review_body))
         
         for i in range(len(reviewer_name1)):
             reviewer_name=reviewer_name1[i]
@@ -336,41 +396,41 @@ class CtripCrawler:
             review_body=review_body1[i]
             
         
-        review_details = [None, # REVIEW_INDEX
-                          2, # WEBSITE_INDEX (Ctrip is '2')
-                          poi_index,
-                          reviewer_name,
-                          review_ratings,
-                          review_date,
-                          review_time,
-                          review_body,
-                          datetime.now()
-                          ]
+            review_details = [None, # REVIEW_INDEX
+                              2, # WEBSITE_INDEX (Ctrip is '2')
+                              poi_index,
+                              reviewer_name,
+                              review_ratings,
+                              review_date,
+                              review_time,
+                              review_body,
+                              datetime.now()
+                              ]
             
             
             
-        # Inserting reviews into dataframe.
-        review_details_dict = dict(zip(self.reviews_col_names, review_details))
-        self.reviews_df = self.reviews_df.append(review_details_dict, ignore_index=True)
+            # Inserting reviews into dataframe.
+            review_details_dict = dict(zip(self.reviews_col_names, review_details))
+            self.reviews_df = self.reviews_df.append(review_details_dict, ignore_index=True)
         
         if res:
             next_page_button = self.driver.find_elements_by_xpath('//a[@class="down  "]')
             if next_page_button:
-                if self.driver.current_url!= self.current_poi_url:
-                    raise Exception("wrong_page")
-                else:
-                    self.driver.execute_script("arguments[0].click()",next_page_button[0])
-                    sleep(1+random()*2)
-                    self.sel = Selector(text=self.driver.page_source)
+                self.driver.execute_script("arguments[0].click()",next_page_button[0])
+                sleep(1+random()*2)
+                self.sel = Selector(text=self.driver.page_source)
             else :
                 sleep(1+random())
-                if self.current_page <= self.number_of_pages:
-                    raise Exception("random clicking happened")
+                if self.number_of_pages!= None:
+                    if self.last_page_number < self.number_of_pages and self.current_page < self.last_page_number:
+                        raise Exception("lagged, need to recrawl")
+                    else:
+                        self.review_final_page= True
                 else:
-                    print("Can't click or last page")
-                    self.reviews_crawled=True
                     self.review_final_page= True
-                    
+                
+                
+                
         else:
             next_page_button = self.driver.find_elements_by_xpath('//a[@class="nextpage"]')
             if next_page_button:
@@ -382,12 +442,14 @@ class CtripCrawler:
                     self.sel = Selector(text=self.driver.page_source)
             else :
                 sleep(1+random())
-                if self.current_page <= self.number_of_pages:
-                    raise Exception("random clicking happened")
+                if self.number_of_pages!= None:
+                    if self.last_page_number < self.number_of_pages and self.current_page < self.last_page_number:
+                        raise Exception("lagged, need to recrawl")
+                    else:
+                        self.review_final_page= True
                 else:
-                    print("Can't click or last page")
-                    self.reviews_crawled=True
                     self.review_final_page= True
+                
             
         
             
@@ -405,11 +467,10 @@ class CtripCrawler:
         return (text[3:]).replace(' ','')
     
     def parse_review_date1(self, text):
-        return datetime.strptime(text[0:10],"%Y-%m-%d")
+        return datetime.strptime(text[0:10],"%Y-%m-%d").date()
         
     def parse_review_time1(self, text):
-        return datetime.strptime(text[11:16],"%H:%M")
-
+        return format(datetime.strptime(text[11:16],"%H:%M"),"%H:%M")
     
     def parse_review_rating1(self, text):
         return int(text)

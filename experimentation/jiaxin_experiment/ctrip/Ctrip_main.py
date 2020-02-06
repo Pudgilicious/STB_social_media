@@ -34,7 +34,7 @@ if db_in_flag == 'csv':
             return int(re.search(r'\d+', text).group())
         else:
             return 0
-
+        
     df['num_reviews'] = df['num_reviews'].apply(parse_reviews)
     df['link'] = df['link'].apply(lambda x: "https://you.ctrip.com"+x)
     
@@ -44,6 +44,18 @@ if db_in_flag == 'csv':
                            'poi_name':df['POI'], 
                            'poi_url':df['link']}
                            )
+    
+    ''' poi_index = [1,2]
+    poi_name=['Red dot Museum',
+              'Big Bus Singapore']
+            
+    poi_url=['https://you.ctrip.com/sight/singapore53/147110.html',
+             'https://you.ctrip.com/sight/singapore53/2482004.html'] 
+    
+    poi_df = pd.DataFrame({'poi_index':poi_index,
+                           'poi_name':poi_name,
+                           'poi_url':poi_url},
+                          )'''
     
 if db_in_flag != 'csv':
     poi_df = pd.DataFrame()

@@ -7,7 +7,7 @@ Created on Tue Jan 28 18:17:35 2020
 """
 
 from time import sleep
-from QY_crawler import QYCrawler
+from qiongyou.QY_crawler import QYCrawler
 
 class QY_FSM:
     def __init__(self, chromedriver_path, poi_df, cnx, db_out_flag):

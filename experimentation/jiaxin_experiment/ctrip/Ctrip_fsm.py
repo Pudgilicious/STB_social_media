@@ -22,7 +22,7 @@ class Ctrip_FSM:
             if crawler.fsm_state == 3:
                 sleep(2)  # 2 second window for keyboard interrupt
                 crawler.fsm_state = 2
-                crawler.crawl_pois(number_of_pages)
+               #crawler.crawl_pois(number_of_pages)
 
 #state 0: initialization
 #state 1: start crawling
