@@ -8,7 +8,7 @@ from sentiment_scorer import SentimentScorer
 with open('config_file.yml') as file:
     configs = yaml.load(file, Loader=yaml.FullLoader)
 
-with open('api_keys.yml') as file:
+with open('./tripadvisor/api_keys.yml') as file:
     api_keys = yaml.load(file, Loader=yaml.FullLoader)['API_Keys']
 
 target_folder = '200126_094431'
