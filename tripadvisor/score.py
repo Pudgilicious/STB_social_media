@@ -8,7 +8,7 @@ from sentiment_scorer import SentimentScorer
 with open('config_file.yml') as file:
     configs = yaml.load(file, Loader=yaml.FullLoader)
 
-with open('./tripadvisor/api_keys.yml') as file:
+with open('api_keys.yml') as file:
     api_keys = yaml.load(file, Loader=yaml.FullLoader)['API_Keys']
 
 target_folder = '200126_094431'
@@ -38,10 +38,14 @@ class SentimentScorerFSM:
             self.sentiment_scorer.score_sentiments(self.nlu)
             if self.sentiment_scorer.fsm_state == 2:
                 self.api_key_index += 1
-                print('\nFSM state is 2, sleeping for 2 seconds.\n')
+                print('#######################################')
+                print('FSM state is 2, sleeping for 2 seconds.')
+                print('#######################################')
                 sleep(2)
             if self.sentiment_scorer.fsm_state == 3:
-                print('\nFSM state is 3, sleeping for 2 seconds.\n')
+                print('#######################################')
+                print('FSM state is 3, sleeping for 2 seconds.')
+                print('#######################################')
                 sleep(2)
                 continue
 

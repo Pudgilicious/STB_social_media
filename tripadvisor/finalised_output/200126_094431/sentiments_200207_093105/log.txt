@@ -1,0 +1,64 @@
+POI index: 2, Review ID: 740129353, 2020-02-07 09:31:06.897700
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 152, in score_sentiments_1_poi
+    self.get_api_response()
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 199, in get_api_response
+    keywords=KeywordsOptions(emotion=True, sentiment=True, limit=10000)
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: Forbidden, Code: 403
+
+POI index: 2, Review ID: 529889129, 2020-02-07 12:02:22.539978
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 152, in score_sentiments_1_poi
+    self.get_api_response()
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 199, in get_api_response
+    keywords=KeywordsOptions(emotion=True, sentiment=True, limit=10000)
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: Forbidden, Code: 403
+
+POI index: 2, Review ID: 446882420, 2020-02-07 12:13:29.889623
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 175, in score_sentiments_1_poi
+    self.write_to_csv()
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 226, in write_to_csv
+    if self.entities_df.shape[1] != 0:
+AttributeError: 'NoneType' object has no attribute 'shape'
+
+POI index: 2, Review ID: 446882420, 2020-02-07 12:13:35.179101
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 175, in score_sentiments_1_poi
+    self.write_to_csv()
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 226, in write_to_csv
+    if self.entities_df.shape[1] != 0:
+AttributeError: 'NoneType' object has no attribute 'shape'
+
+POI index: 2, Review ID: 446882420, 2020-02-07 12:13:40.173363
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 175, in score_sentiments_1_poi
+    self.write_to_csv()
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 226, in write_to_csv
+    if self.entities_df.shape[1] != 0:
+AttributeError: 'NoneType' object has no attribute 'shape'
+
+POI index: 2, Review ID: 446882420, 2020-02-07 12:13:49.924181
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 175, in score_sentiments_1_poi
+    self.write_to_csv()
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 226, in write_to_csv
+    if self.entities_df.shape[1] != 0:
+AttributeError: 'NoneType' object has no attribute 'shape'
+
+POI index: 2, Review ID: 446882420, 2020-02-07 12:13:54.945538
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 175, in score_sentiments_1_poi
+    self.write_to_csv()
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 226, in write_to_csv
+    if self.entities_df.shape[1] != 0:
+AttributeError: 'NoneType' object has no attribute 'shape'
+

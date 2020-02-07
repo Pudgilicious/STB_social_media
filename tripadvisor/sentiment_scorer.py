@@ -223,7 +223,7 @@ class SentimentScorer:
             header=False,
             index=False
         )
-        if self.entities_df.shape[1] != 0:
+        if self.entities_df is None or self.entities_df.shape[1] != 0:
             self.entities_df.to_csv(
                 self.entities_file_path,
                 mode='a',
