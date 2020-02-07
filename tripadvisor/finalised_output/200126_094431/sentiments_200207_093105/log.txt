@@ -62,3 +62,23 @@ Traceback (most recent call last):
     if self.entities_df.shape[1] != 0:
 AttributeError: 'NoneType' object has no attribute 'shape'
 
+POI index: 3, Review ID: 372559200, 2020-02-07 18:00:10.853687
+Traceback (most recent call last):
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 172, in score_sentiments_1_poi
+    self.current_row_index
+  File "/home/zyf0717/git/STB_social_media_analytics/tripadvisor/sentiment_scorer.py", line 220, in get_api_response
+    self.current_api_response = self.nlu.analyze(
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/zyf0717/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: <HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;21781bb8&#46;1581069610&#46;df5b8bf
+</BODY></HTML>
+, Code: 503
+

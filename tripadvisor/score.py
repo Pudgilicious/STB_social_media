@@ -11,13 +11,20 @@ with open('config_file.yml') as file:
 with open('api_keys.yml') as file:
     api_keys = yaml.load(file, Loader=yaml.FullLoader)['API_Keys']
 
+# Amend the following 3 variables to continue from previous API calls.
 target_folder = '200126_094431'
-target_folder = configs['TripAdvisor']['target_folder']
+continue_in_folder = None
+continue_from_poi_index = None
+continue_from_index = None
 
 
 class SentimentScorerFSM:
-    def __init__(self, target_folder):
-        self.sentiment_scorer = SentimentScorer(target_folder)
+    def __init__(self):
+        self.sentiment_scorer = SentimentScorer(
+            target_folder=target_folder,
+            continue_in_folder=continue_in_folder,
+            continue_from_poi_index=continue_from_poi_index,
+            continue_from_index=continue_from_index)
         self.authenticator = None
         self.nlu = None
         self.api_key_index = None
@@ -32,23 +39,23 @@ class SentimentScorerFSM:
             'https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2019-07-12')
 
     def start(self):
-        self.api_key_index = 0
+        self.api_key_index = 2
         while self.sentiment_scorer.fsm_state != 4:
             self.initialise_nlu()
             self.sentiment_scorer.score_sentiments(self.nlu)
             if self.sentiment_scorer.fsm_state == 2:
                 self.api_key_index += 1
                 print('#######################################')
-                print('FSM state is 2, sleeping for 2 seconds.')
+                print('FSM state is 2, sleeping for 5 seconds.')
                 print('#######################################')
-                sleep(2)
+                sleep(5)
             if self.sentiment_scorer.fsm_state == 3:
                 print('#######################################')
-                print('FSM state is 3, sleeping for 2 seconds.')
+                print('FSM state is 3, sleeping for 5 seconds.')
                 print('#######################################')
-                sleep(2)
+                sleep(5)
                 continue
 
 
-fsm = SentimentScorerFSM(target_folder)
+fsm = SentimentScorerFSM()
 fsm.start()

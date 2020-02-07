@@ -52,18 +52,30 @@ class SentimentScorer:
         'disambiguation.dbpedia_resource': 'DISAMBIGUATION_RESOURCE'
     }
 
-    def __init__(self, target_folder):
+    def __init__(self, target_folder, continue_in_folder=None, continue_from_poi_index=None, continue_from_index=None):
         self.target_folder = target_folder
+        self.continue_in_folder = continue_in_folder
+        self.continue_from_poi_index = continue_from_poi_index
+        self.continue_from_index = continue_from_index
         self.csv_list = os.listdir('./tripadvisor/finalised_output/{}/reviews'.format(target_folder))
         self.poi_list = sorted([int(i[:i.find('.csv')]) for i in self.csv_list])  # List of POI indexes from file names
         self.keywords_col_names_df = pd.DataFrame(columns=self.keywords_col_names)
         self.entities_col_names_df = pd.DataFrame(columns=self.entities_col_names)
 
-        self.sentiment_folder_path = './tripadvisor/finalised_output/{}/sentiments_{}/'.format(
-            self.target_folder,
-            datetime.now().strftime('%y%m%d_%H%M%S')
-        )
-        os.makedirs(self.sentiment_folder_path)
+        if self.continue_in_folder is None:
+            self.sentiment_folder_path = './tripadvisor/finalised_output/{}/sentiments_{}/'.format(
+                self.target_folder,
+                datetime.now().strftime('%y%m%d_%H%M%S')
+            )
+            os.makedirs(self.sentiment_folder_path)
+        else:
+            self.sentiment_folder_path = './tripadvisor/finalised_output/{}/sentiments_{}/'.format(
+                self.target_folder,
+                self.continue_in_folder
+            )
+
+        if self.continue_from_poi_index is not None:
+            self.poi_list = self.poi_list[self.poi_list.find(self.continue_from_poi_index):]
 
         self.nlu = None
         self.api_calls_made = 0
@@ -75,10 +87,10 @@ class SentimentScorer:
         self.current_reviews_df = None
         self.keywords_file_path = None
         self.entities_file_path = None
+        self.current_row_index = None
 
         # Per-review variables
         self.current_df_row = None
-        self.current_row_number = None
         self.current_review_id = None
         self.current_review_text = None
         self.current_api_response = None
@@ -141,12 +153,24 @@ class SentimentScorer:
                 )
             )
 
+        if self.continue_from_index is None:
+            self.current_row_index = 0
+        else:
+            self.current_row_index = self.continue_from_index
+            self.continue_from_index = None
+
+        self.current_reviews_df = self.current_reviews_df.iloc[self.current_row_index:]
+
         while len(self.current_reviews_df.index) > 0:
             self.current_df_row = self.current_reviews_df.iloc[0]
             self.current_review_id = self.current_df_row['REVIEW_ID']
             self.current_review_text = self.current_df_row['REVIEW_BODY']
             self.api_calls_made += 1
-            print('Total API calls: {}, Review ID: {}'.format(self.api_calls_made, self.current_review_id))
+            print('total API calls: {}, review ID: {}, row index: {}'.format(
+                self.api_calls_made,
+                self.current_review_id,
+                self.current_row_index
+            ))
 
             try:
                 self.get_api_response()
@@ -154,9 +178,10 @@ class SentimentScorer:
             except Exception as e:
                 print("Error in API call. Please see log file.")
                 log = open(self.sentiment_folder_path + 'log.txt', 'a+')
-                log.write('POI index: {}, Review ID: {}, {}\n'.format(
+                log.write('POI index: {}, review ID: {}, row index: {}, time: {}\n'.format(
                     self.current_poi_index,
                     self.current_review_id,
+                    self.current_row_index,
                     datetime.now()))
                 log.write(traceback.format_exc() + '\n')
                 log.close()
@@ -176,9 +201,10 @@ class SentimentScorer:
             except Exception as e:
                 print("Error in parsing API response or writing to CSV. Please see log file.")
                 log = open(self.sentiment_folder_path + 'log.txt', 'a+')
-                log.write('POI index: {}, Review ID: {}, {}\n'.format(
+                log.write('POI index: {}, review ID: {}, row index: {}, time: {}\n'.format(
                     self.current_poi_index,
                     self.current_review_id,
+                    self.current_row_index,
                     datetime.now()))
                 log.write(traceback.format_exc() + '\n')
                 log.close()
@@ -190,6 +216,7 @@ class SentimentScorer:
 
             # Drop first row of reviews_df
             self.current_reviews_df = self.current_reviews_df.iloc[1:]
+            self.current_row_index += 1
 
     def get_api_response(self):
         self.current_api_response = self.nlu.analyze(
@@ -223,7 +250,9 @@ class SentimentScorer:
             header=False,
             index=False
         )
-        if self.entities_df is None or self.entities_df.shape[1] != 0:
+        if self.entities_df is None or self.entities_df.shape[1] == 0:
+            return
+        else:
             self.entities_df.to_csv(
                 self.entities_file_path,
                 mode='a',
@@ -237,6 +266,7 @@ class SentimentScorer:
         self.current_reviews_df = None
         self.keywords_file_path = None
         self.entities_file_path = None
+        self.current_row_index = None
 
     def reset_per_review_variables(self):
         self.current_df_row = None

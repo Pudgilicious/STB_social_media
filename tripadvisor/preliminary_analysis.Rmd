@@ -25,11 +25,14 @@ for (i in c(2, 3, 7, 11)) {
     reviews_df[,i] <- as.factor(reviews_df[,i])
 }
 
-reviews_df[,6] <- lubridate::parse_date_time(reviews_df[,6], orders=c('dmy'))
-reviews_df[,10] <- lubridate::parse_date_time(reviews_df[,10], orders=c('my'))
-reviews_df[,12] <- lubridate::parse_date_time(reviews_df[,12], orders=c('ymdHMS'))
+reviews_df[,6] <- lubridate::parse_date_time(reviews_df[,6], orders=c("dmy"))
+reviews_df[,10] <- lubridate::parse_date_time(reviews_df[,10], orders=c("my"))
+reviews_df[,12] <- lubridate::parse_date_time(reviews_df[,12], orders=c("ymdHMS"))
 
 reviews_df <- reviews_df[,3:12]
+
+reviews_df$MONTH_OF_EXPERIENCE <- as.factor(format(reviews_df$DATE_OF_EXPERIENCE, format="%m"))
+reviews_df$YEAR_OF_EXPERIENCE <- as.factor(format(reviews_df$DATE_OF_EXPERIENCE, format="%Y"))
 
 head(reviews_df)
 ```
@@ -39,11 +42,10 @@ summary(reviews_df)
 ```
 
 ```{r}
-GGally::ggpairs(reviews_df[,c(4, 5, 8, 9)])
+GGally::ggpairs(reviews_df[,c(4, 5, 9, 11, 12)])
 ```
 
 ```{r}
-ggplot(reviews_df, aes(REVIEW_DATE, DATE_OF_EXPERIENCE)) + geom_line()
-
+ggplot(reviews_df, aes(DATE_OF_EXPERIENCE)) + geom_bar() 
 ```
 
