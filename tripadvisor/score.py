@@ -12,10 +12,10 @@ with open('api_keys.yml') as file:
     api_keys = yaml.load(file, Loader=yaml.FullLoader)['API_Keys']
 
 # Amend the following 3 variables to continue from previous API calls.
-target_folder = '200126_094431'
-continue_in_folder = None
-continue_from_poi_index = None
-continue_from_index = None
+target_folder = configs['TripAdvisor']['target_folder']
+continue_in_folder = configs['TripAdvisor']['continue_in_folder']
+continue_from_poi_index = configs['TripAdvisor']['continue_from_poi_index']
+continue_from_row_index = configs['TripAdvisor']['continue_from_row_index']
 
 
 class SentimentScorerFSM:
@@ -24,7 +24,7 @@ class SentimentScorerFSM:
             target_folder=target_folder,
             continue_in_folder=continue_in_folder,
             continue_from_poi_index=continue_from_poi_index,
-            continue_from_index=continue_from_index)
+            continue_from_row_index=continue_from_row_index)
         self.authenticator = None
         self.nlu = None
         self.api_key_index = None
@@ -41,20 +41,30 @@ class SentimentScorerFSM:
     def start(self):
         self.api_key_index = 2
         while self.sentiment_scorer.fsm_state != 4:
-            self.initialise_nlu()
+            initialisation_count = 0
+            while initialisation_count < 5:
+                try:
+                    print('Initialising IBM Watson NLU')
+                    self.initialise_nlu()
+                    break
+                except:
+                    print('Failed to initialise IBM Watson NLU.')
+                    initialisation_count += 1
+            if initialisation_count == 5:
+                print('Breaking out of FSM loop due to failure to initialise IBM Watson NLU.')
+                break
             self.sentiment_scorer.score_sentiments(self.nlu)
             if self.sentiment_scorer.fsm_state == 2:
+                print('#########################################################')
+                print('FSM state is 2. changing API key. Sleeping for 5 seconds.')
+                print('#########################################################')
                 self.api_key_index += 1
-                print('#######################################')
-                print('FSM state is 2, sleeping for 5 seconds.')
-                print('#######################################')
                 sleep(5)
             if self.sentiment_scorer.fsm_state == 3:
                 print('#######################################')
-                print('FSM state is 3, sleeping for 5 seconds.')
+                print('FSM state is 3. Sleeping for 5 seconds.')
                 print('#######################################')
                 sleep(5)
-                continue
 
 
 fsm = SentimentScorerFSM()

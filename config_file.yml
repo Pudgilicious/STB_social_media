@@ -15,7 +15,7 @@ TripAdvisor:
     number_of_pages:  # int or None. if 0, only Attributes are crawled.
 
     # Scorer parameters
-    target_folder: '200126_094431'  # in the format yyymmdd_hhmmss, in quotes to preserve '_'
-    continue_in_folder:
-    continue_from_poi_index:
-    continue_from_index:
+    target_folder: '200126_094431'  # in the format 'yyymmdd_hhmmss'
+    continue_in_folder: '200207_093105' # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
+    continue_from_poi_index: 3
+    continue_from_row_index: 6419
