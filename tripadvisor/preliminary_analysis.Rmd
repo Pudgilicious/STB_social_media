@@ -46,6 +46,10 @@ GGally::ggpairs(reviews_df[,c(4, 5, 9, 11, 12)])
 ```
 
 ```{r}
-ggplot(reviews_df, aes(DATE_OF_EXPERIENCE)) + geom_bar() 
+ggplot(reviews_df, aes(DATE_OF_EXPERIENCE)) + geom_bar()
+```
+
+```{r}
+
 ```
 

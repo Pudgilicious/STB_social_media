@@ -99,7 +99,7 @@ class SentimentScorer:
 
     def score_sentiments(self, nlu):
         self.nlu = nlu
-        while self.poi_list:
+        while self.poi_list or self.current_poi_index is not None:
 
             # Only create the below if FSM state is not 2 or 3
             if self.fsm_state not in (2, 3):
@@ -131,7 +131,7 @@ class SentimentScorer:
             # Scoring
             self.score_sentiments_1_poi()
 
-            # End function if error has occured, preserving per-POI variables
+            # End function if error has occurred, preserving per-POI variables
             if self.fsm_state in (2, 3):
                 return
 
@@ -142,10 +142,6 @@ class SentimentScorer:
         print("Scoring has ended.")
 
     def score_sentiments_1_poi(self):
-
-        # FSM state 1 is the normal running mode
-        self.fsm_state = 1
-
         if self.current_reviews_df is None:
             self.current_reviews_df = pd.read_csv(
                 './tripadvisor/finalised_output/{}/reviews/{}.csv'.format(
@@ -154,21 +150,27 @@ class SentimentScorer:
                 )
             )
 
-        if self.continue_from_row_index is None:
-            self.current_row_index = 0
-        else:
+        if self.continue_from_row_index is not None:
             self.current_row_index = self.continue_from_row_index
-            self.continue_from_row_index = None
+            self.continue_from_row_index = None  # Need to reset
+        elif self.current_row_index is None:
+            self.current_row_index = 0
 
-        self.current_reviews_df = self.current_reviews_df.iloc[self.current_row_index:]
+        # To allow starting from certain row index
+        if self.fsm_state not in (2, 3):
+            self.current_reviews_df = self.current_reviews_df.iloc[self.current_row_index:]
+
+        # FSM state 1 is the normal running mode
+        self.fsm_state = 1
 
         while len(self.current_reviews_df.index) > 0:
             self.current_df_row = self.current_reviews_df.iloc[0]
             self.current_review_id = self.current_df_row['REVIEW_ID']
             self.current_review_text = self.current_df_row['REVIEW_BODY']
             self.api_calls_made += 1
-            print('total API calls: {}, review ID: {}, row index: {}'.format(
+            print('API calls made: {}, POI index: {}, review ID: {}, row index: {}'.format(
                 self.api_calls_made,
+                self.current_poi_index,
                 self.current_review_id,
                 self.current_row_index
             ))
@@ -187,12 +189,20 @@ class SentimentScorer:
                     datetime.now()))
                 log.write(traceback.format_exc() + '\n')
                 log.close()
+
+                # Unsupported text language case
                 if str(e).find('unsupported text language') != -1:
                     self.reset_per_review_variables()
+                    self.current_reviews_df = self.current_reviews_df.iloc[1:]
+                    self.current_row_index += 1
                     continue
-                elif str(e).find('Forbidden'):
+
+                # API call limit reached case
+                elif str(e).find('Forbidden') != -1:
                     self.fsm_state = 2
                     return  # Per-review variables preserved.
+
+                # Any other case
                 else:
                     self.fsm_state = 3
                     return  # Per-review variables preserved.

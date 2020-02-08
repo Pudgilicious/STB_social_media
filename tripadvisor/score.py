@@ -39,7 +39,7 @@ class SentimentScorerFSM:
             'https://gateway.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2019-07-12')
 
     def start(self):
-        self.api_key_index = 2
+        self.api_key_index = 0
         while self.sentiment_scorer.fsm_state != 4:
             initialisation_count = 0
             while initialisation_count < 5:
@@ -53,17 +53,28 @@ class SentimentScorerFSM:
             if initialisation_count == 5:
                 print('Breaking out of FSM loop due to failure to initialise IBM Watson NLU.')
                 break
+
+            # Scoring is done here
             self.sentiment_scorer.score_sentiments(self.nlu)
+
+            # FSM state handling
             if self.sentiment_scorer.fsm_state == 2:
-                print('#########################################################')
-                print('FSM state is 2. changing API key. Sleeping for 5 seconds.')
-                print('#########################################################')
+                log = open(self.sentiment_scorer.sentiment_folder_path + 'log.txt', 'a+')
+                log.write('API key {} has been exhausted.\n'.format(self.api_key_index))
+                log.close()
                 self.api_key_index += 1
+                print('##########')
+                print(
+                    'FSM state is 2. changing to API key {}. Sleeping for 5 seconds.'.format(
+                        self.api_key_index
+                    )
+                )
+                print('##########')
                 sleep(5)
-            if self.sentiment_scorer.fsm_state == 3:
-                print('#######################################')
+            elif self.sentiment_scorer.fsm_state == 3:
+                print('##########')
                 print('FSM state is 3. Sleeping for 5 seconds.')
-                print('#######################################')
+                print('##########')
                 sleep(5)
 
 

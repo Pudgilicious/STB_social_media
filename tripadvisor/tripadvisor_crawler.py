@@ -6,6 +6,7 @@ from selenium import webdriver
 from datetime import datetime
 from time import sleep
 
+
 class TripAdvisorCrawler:
     attributes_col_names = ['POI_INDEX',
                             'TOTAL_REVIEWS',
