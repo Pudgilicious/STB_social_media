@@ -65,17 +65,15 @@ class SentimentScorerFSM:
                 self.api_key_index += 1
                 print('##########')
                 print(
-                    'FSM state is 2. changing to API key {}. Sleeping for 5 seconds.'.format(
+                    'FSM state is 2. changing to API key {}.'.format(
                         self.api_key_index
                     )
                 )
                 print('##########')
-                sleep(5)
             elif self.sentiment_scorer.fsm_state == 3:
                 print('##########')
-                print('FSM state is 3. Sleeping for 5 seconds.')
+                print('FSM state is 3.')
                 print('##########')
-                sleep(5)
 
 
 fsm = SentimentScorerFSM()
