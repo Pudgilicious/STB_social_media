@@ -1,0 +1,377 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+1,699090233,Facility,Abit,0.978348,1,0.678787,0.748599,positive,0.432499,0.246596,0.255764,0.057879,0.086194,,,,
+1,652790204,GeographicFeature,Singapore River,0.970822,3,0.945155,0.973777,positive,0.060136,0.63432,0.106911,0.077985,0.068839,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,652790204,Facility,Clarke Quay and Marina Bay,0.883817,1,0.377353,0.0,neutral,0.105091,0.203838,0.146612,0.126522,0.084379,,,,
+1,652790204,Facility,Boat Quay,0.815744,3,0.992317,0.963677,positive,0.240381,0.310919,0.16274,0.12895,0.134749,,,,
+1,652790204,Location,Singapore,0.422639,1,0.998456,0.0,neutral,0.105091,0.203838,0.146612,0.126522,0.084379,,,Singapore,http://dbpedia.org/resource/Singapore
+1,643949422,GeographicFeature,Singapore river,0.958279,1,0.900314,0.93716,positive,0.370323,0.270144,0.362269,0.073356,0.0704,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,643949422,Facility,Elgin Bridge,0.342154,1,0.875397,0.93716,positive,0.370323,0.270144,0.362269,0.073356,0.0704,,"['Location', 'Bridge']",Elgin_Bridge,http://dbpedia.org/resource/Elgin_Bridge
+1,643949422,Facility,Clarke Quay,0.050265,1,0.394992,0.93716,positive,0.370323,0.270144,0.362269,0.073356,0.0704,,,,
+1,598777295,Location,riverside,0.963296,1,0.497512,0.0,neutral,0.107558,0.266159,0.065069,0.033375,0.106755,,,,
+1,598777295,Location,Singapore,0.961704,2,0.999999,-0.583694,negative,0.101509,0.569123,0.04079,0.040217,0.053645,,,Singapore,http://dbpedia.org/resource/Singapore
+1,580279063,GeographicFeature,Singapore river,0.963296,1,0.877087,0.594393,positive,0.065623,0.432759,0.166754,0.092471,0.280447,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,580279063,GeographicFeature,Marina bay,0.699701,1,0.48849,0.594393,positive,0.065623,0.432759,0.166754,0.092471,0.280447,,,,
+1,576201193,GeographicFeature,river bank,0.978348,1,0.194253,0.652742,positive,0.118605,0.611013,0.147961,0.03065,0.061644,,,,
+1,574475215,Facility,Raffles Place,0.95577,1,0.530445,0,neutral,0.074948,0.323175,0.259137,0.124036,0.302282,,"['Location', 'Building']",Raffles_Place,http://dbpedia.org/resource/Raffles_Place
+1,574475215,Facility,Boat Quay,0.911835,1,0.510589,0,neutral,0.074948,0.323175,0.259137,0.124036,0.302282,,,,
+1,574475215,GeographicFeature,The river bank,0.793155,1,0.098759,0,neutral,0.501698,0.20158,0.117863,0.127685,0.185043,,,,
+1,574475215,GeographicFeature,river bank,0.480521,1,0.13202,0,neutral,0.350089,0.216492,0.330469,0.113779,0.10905,,,,
+1,554880758,Person,Clarke quay,0.978348,1,0.344804,0.893619,positive,0.08023,0.678782,0.052361,0.018022,0.039643,,,,
+1,551897913,Person,Chilli Crab,0.978348,1,0.369009,0.637443,positive,0.154844,0.099174,0.139045,0.117569,0.043338,,,,
+1,504323775,Quantity,18 years,0.978348,1,0.8,0.976394,positive,0.066478,0.800734,0.042305,0.019103,0.047038,,,,
+1,492874690,GeographicFeature,The Singapore River,0.963296,1,0.48819,0.0,neutral,0.249903,0.256835,0.212805,0.230117,0.271464,,,,
+1,492874690,Location,Singapore,0.755581,2,0.999777,0.98462,positive,0.150166,0.662472,0.034112,0.021498,0.029537,,,Singapore,http://dbpedia.org/resource/Singapore
+1,475379648,Quantity,10%,0.963296,2,0.96,-0.666256,negative,0.268144,0.021313,0.051418,0.184798,0.129172,,,,
+1,475379648,Quantity,30%,0.785948,1,0.8,0.0,neutral,0.204606,0.020129,0.060985,0.218134,0.098891,,,,
+1,475379648,Location,riverside,0.761899,1,0.173064,0.956823,positive,0.066805,0.788112,0.03275,0.031247,0.016797,,,,
+1,475379648,Quantity,20%,0.015478,1,0.8,0.0,neutral,0.17212,0.109552,0.042908,0.236545,0.070627,,,,
+1,475144311,Location,Singapore,0.978348,1,0.989008,0.929244,positive,0.098173,0.771104,0.063364,0.012533,0.024906,,,Singapore,http://dbpedia.org/resource/Singapore
+1,462841042,Facility,Asian Museum,0.978348,1,0.642548,0,neutral,0.238652,0.363569,0.250858,0.047597,0.228081,,,,
+1,445792373,Person,Clarke,0.963296,1,0.718201,0.0,neutral,0.360231,0.266567,0.008754,0.061602,0.118815,,,,
+1,445792373,Quantity,40 percent,0.73599,1,0.8,-0.656099,negative,0.259312,0.058051,0.133767,0.07033,0.254487,,,,
+1,433395491,Location,Singapore,0.978348,2,0.999818,-0.791925,negative,0.294834,0.09459,0.260707,0.21539,0.232147,,,Singapore,http://dbpedia.org/resource/Singapore
+1,433395491,Quantity,twenty years,0.424921,1,0.8,-0.871513,negative,0.529021,0.123608,0.070941,0.063854,0.058711,,,,
+1,425854051,Location,Riverside,0.963296,1,0.871164,0.88788,positive,0.032028,0.72642,0.04978,0.035313,0.028439,,,,
+1,425854051,Location,riverside,0.556872,1,0.711305,0.88788,positive,0.032028,0.72642,0.04978,0.035313,0.028439,,,,
+1,423702657,Facility,Clarkes Quay,0.963296,1,0.665613,-0.610467,negative,0.301368,0.604986,0.055019,0.017655,0.038957,,,,
+1,423702657,Person,Clarkes,0.674362,1,0.805524,-0.610467,negative,0.301368,0.604986,0.055019,0.017655,0.038957,,,,
+1,419324548,Facility,Bay Good High End Food,0.963296,1,0.158028,0.980017,positive,0.061783,0.868349,0.034904,0.013146,0.031902,,,,
+1,419324548,Facility,Marina Bay,0.040213,1,0.110013,0.980017,positive,0.061783,0.868349,0.034904,0.013146,0.031902,,,,
+1,416399723,Facility,Fullerton Hotel,0.963296,1,0.682966,-0.560809,negative,0.105889,0.636189,0.079697,0.08745,0.07933,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,416399723,Facility,Clarke Quay,0.361516,1,0.773836,0.660096,positive,0.152947,0.452471,0.083139,0.131509,0.036138,,,,
+1,413450487,Location,singapore,0.963296,1,0.987697,0.990901,positive,0.153495,0.541542,0.057493,0.026668,0.018696,,,Singapore,http://dbpedia.org/resource/Singapore
+1,413450487,Quantity,seven day,0.13567,1,0.8,-0.325756,negative,0.363372,0.296552,0.20186,0.064063,0.146224,,,,
+1,397773854,Quantity,100 grams,0.978348,1,0.8,-0.711328,negative,0.129028,0.101194,0.132216,0.116112,0.21191,,,,
+1,394981939,Location,singapore,0.963296,1,0.999077,0,neutral,0.123291,0.322053,0.186788,0.047508,0.213742,,,Singapore,http://dbpedia.org/resource/Singapore
+1,394981939,Company,sun,0.680103,1,0.623187,0,neutral,0.16738,0.598289,0.099274,0.012887,0.142562,,,,
+1,384660149,GeographicFeature,Singapore River,0.963296,1,0.678023,0,neutral,0.059646,0.201626,0.168362,0.121271,0.207494,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,384660149,Facility,Clarke Quay,0.796498,1,0.679184,0,neutral,0.059646,0.201626,0.168362,0.121271,0.207494,,,,
+1,383580186,Location,riverside,0.978348,1,0.89371,0.542228,positive,0.158931,0.12441,0.071557,0.150364,0.187699,,,,
+1,378800352,Facility,Boat Quay,0.958279,1,0.589427,0,neutral,0.102567,0.26416,0.154648,0.059394,0.131951,,,,
+1,378800352,Facility,Clarke Quay,0.877026,1,0.847065,0,neutral,0.102567,0.26416,0.154648,0.059394,0.131951,,,,
+1,378800352,Location,Singapore,0.660418,2,0.999485,0,neutral,0.111749,0.429739,0.197411,0.069937,0.126157,,,Singapore,http://dbpedia.org/resource/Singapore
+1,367046250,Facility,New Bridge,0.95577,1,0.531734,0.0,neutral,0.050034,0.514498,0.179675,0.028539,0.009089,,,,
+1,367046250,Facility,Parliament Building,0.936864,1,0.612737,0.0,neutral,0.050034,0.514498,0.179675,0.028539,0.009089,,['Building'],Austrian_Parliament_Building,http://dbpedia.org/resource/Austrian_Parliament_Building
+1,367046250,Location,Singapore,0.557856,1,0.972857,0.922361,positive,0.046151,0.742923,0.042444,0.030089,0.015286,,,Singapore,http://dbpedia.org/resource/Singapore
+1,367046250,GeographicFeature,River Bank,0.018797,1,0.411676,0.860558,positive,0.093691,0.772283,0.053514,0.02561,0.08338,,,,
+1,364141971,Location,Singapore,0.978348,1,0.992316,-0.564795,negative,0.444533,0.040849,0.256971,0.183153,0.400967,,,Singapore,http://dbpedia.org/resource/Singapore
+1,362706699,Location,Singapore,0.978348,1,0.997835,0.942536,positive,0.037233,0.730398,0.063201,0.065223,0.046597,,,Singapore,http://dbpedia.org/resource/Singapore
+1,358114015,Person,River Cruise,0.963296,1,0.156215,0,neutral,0.152477,0.518309,0.123492,0.088971,0.106441,,,,
+1,358114015,Person,Clark Quay,0.638276,1,0.406311,0,neutral,0.127042,0.213847,0.054763,0.05252,0.090504,,,,
+1,353336853,Facility,Clifford Quay,0.978348,1,0.60495,0,neutral,0.238753,0.17007,0.176609,0.081295,0.16858,,,,
+1,352601441,Location,singapore,0.9999,2,0.999279,0.902924,positive,0.146176,0.787021,0.018693,0.003749,0.06111,,,Singapore,http://dbpedia.org/resource/Singapore
+1,348752663,GeographicFeature,Singapore river,0.978348,1,0.524117,0.921572,positive,0.030046,0.830527,0.042584,0.024657,0.021888,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,348714698,Facility,clarke quay,0.978348,1,0.94205,0,neutral,0.091019,0.102313,0.127493,0.105197,0.050943,,,,
+1,348411538,Quantity,1 hour,0.978348,1,0.8,0.890493,positive,0.079111,0.65408,0.152805,0.055244,0.11741,,,,
+1,348043130,Facility,Clarke Quay,0.963296,1,0.937554,0.0,neutral,0.35181,0.206086,0.17605,0.280777,0.184565,,,,
+1,348043130,Location,Singapore,0.458469,1,0.999267,0.847152,positive,0.070361,0.613541,0.031377,0.036259,0.076005,,,Singapore,http://dbpedia.org/resource/Singapore
+1,347251995,Location,Singapore,0.963296,1,0.998678,0.363896,positive,0.085968,0.595097,0.141574,0.040706,0.106053,,,Singapore,http://dbpedia.org/resource/Singapore
+1,347251995,Person,Robertsons Quay,0.862984,1,0.37542,0.994061,positive,0.030559,0.931122,0.005056,0.002242,0.0143,,,,
+1,346487811,Quantity,5 minutes,0.978348,1,0.8,-0.835119,negative,0.486472,0.14901,0.158039,0.02745,0.353226,,,,
+1,346010477,GeographicFeature,Singapore river,0.958279,1,0.197176,0.91971,positive,0.05051,0.70594,0.12538,0.021134,0.037927,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,346010477,Location,Singapore,0.895902,2,0.999999,0.0,neutral,0.040339,0.581265,0.028777,0.02233,0.071906,,,Singapore,http://dbpedia.org/resource/Singapore
+1,346010477,TwitterHandle,@,0.374754,1,0.8,0.91971,positive,0.05051,0.70594,0.12538,0.021134,0.037927,,,,
+1,343226498,Location,Singapore,0.978348,1,0.966252,0,neutral,0.380074,0.065523,0.090647,0.101202,0.235107,,,Singapore,http://dbpedia.org/resource/Singapore
+1,343118917,Quantity,$25,0.963296,1,0.8,0.506306,positive,0.16361,0.163207,0.112905,0.171457,0.274911,,,,
+1,343118917,Quantity,40 minute,0.425467,1,0.8,0.506306,positive,0.16361,0.163207,0.112905,0.171457,0.274911,,,,
+1,342787664,Location,Singapore,0.9999,2,0.99994,0.887303,positive,0.106474,0.578299,0.148525,0.065911,0.059458,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341258483,GeographicFeature,Singapore river,0.978348,1,0.707909,0,neutral,0.060126,0.301409,0.121081,0.102746,0.052233,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,712088765,Location,Singapore,0.963296,1,0.881071,0.962205,positive,0.140603,0.806641,0.003821,0.011948,0.036833,,,Singapore,http://dbpedia.org/resource/Singapore
+1,712088765,Sport,Rugby,0.449987,1,0.99222,0.962205,positive,0.140603,0.806641,0.003821,0.011948,0.036833,,,Rugby_union,http://dbpedia.org/resource/Rugby_union
+1,674459660,GeographicFeature,Singapore River,0.978348,1,0.922417,0,neutral,0.147545,0.221109,0.116403,0.098132,0.132778,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,668682572,Quantity,$850,0.963296,1,0.8,-0.816827,negative,0.130086,0.2699,0.03732,0.120958,0.169163,,,,
+1,668682572,Quantity,$600,0.798125,1,0.8,-0.975555,negative,0.168373,0.05574,0.1138,0.396887,0.164184,,,,
+1,663914144,Location,Singapore,0.978348,1,0.980985,0.88644,positive,0.071117,0.622153,0.027021,0.024866,0.024485,,,Singapore,http://dbpedia.org/resource/Singapore
+1,659190818,Facility,Elgin Bridge,0.963296,1,0.952109,0.55309,positive,0.135748,0.515894,0.214972,0.056632,0.024664,,"['Location', 'Bridge']",Elgin_Bridge,http://dbpedia.org/resource/Elgin_Bridge
+1,659190818,Location,Singapore,0.805558,1,0.992781,0.55309,positive,0.135748,0.515894,0.214972,0.056632,0.024664,,,Singapore,http://dbpedia.org/resource/Singapore
+1,655878240,Location,Singapore,0.9999,4,1,-0.440216,negative,0.210585,0.466808,0.176066,0.046665,0.130897,,,Singapore,http://dbpedia.org/resource/Singapore
+1,654260047,Company,SG,0.978348,1,0.375402,0.957186,positive,0.077333,0.475938,0.047513,0.01903,0.04413,,,,
+1,652651557,Facility,Victorian London pub,0.963296,1,0.634317,0.844854,positive,0.091968,0.856456,0.020584,0.016202,0.028691,,,,
+1,652651557,Quantity,two hours,0.204819,1,0.8,0.844854,positive,0.091968,0.856456,0.020584,0.016202,0.028691,,,,
+1,642364013,Location,Singapore,0.978348,1,0.998027,0.931319,positive,0.048096,0.803113,0.030262,0.023743,0.016678,,,Singapore,http://dbpedia.org/resource/Singapore
+1,630858897,Facility,Clarke quays Great place,0.978348,1,0.090894,0.937693,positive,0.061588,0.828384,0.071249,0.018007,0.043451,,,,
+1,627950073,Facility,UOB Centre,0.958279,1,0.8704,0.536276,positive,0.223481,0.454134,0.035809,0.291357,0.066938,,,,
+1,627950073,Facility,Elgin Bridge,0.884336,1,0.952962,0.536276,positive,0.223481,0.454134,0.035809,0.291357,0.066938,,"['Location', 'Bridge']",Elgin_Bridge,http://dbpedia.org/resource/Elgin_Bridge
+1,627950073,Location,South Bank,0.772741,1,0.212144,0.536276,positive,0.223481,0.454134,0.035809,0.291357,0.066938,,,,
+1,617721971,Location,Singapore,0.9999,2,0.999946,0.603461,positive,0.215797,0.536055,0.088352,0.104766,0.075124,,,Singapore,http://dbpedia.org/resource/Singapore
+1,614880518,Facility,western tourist market,0.963296,1,0.132573,-0.874218,negative,0.554905,0.107335,0.221236,0.119728,0.139297,,,,
+1,614880518,Facility,Clarke Quay,0.046224,1,0.439343,-0.864331,negative,0.141719,0.191139,0.08519,0.078108,0.091797,,,,
+1,612706155,GeographicFeature,Singapore river,0.978348,1,0.412832,0.985157,positive,0.04536,0.905268,0.00689,0.027981,0.017014,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,603684755,Location,Singapore,0.978348,1,0.998746,0.841532,positive,0.303501,0.251057,0.235718,0.25371,0.075649,,,Singapore,http://dbpedia.org/resource/Singapore
+1,594227247,Facility,Clark Quay,0.978348,1,0.889489,0,neutral,0.091719,0.341846,0.104155,0.100836,0.166648,,,,
+1,583910768,Location,Singapore City,0.958279,1,0.915783,0.806448,positive,0.37721,0.043752,0.028025,0.01476,0.014391,,,Singapore,http://dbpedia.org/resource/Singapore
+1,583910768,Location,riverside,0.392082,1,0.758836,0.510499,positive,0.329912,0.178786,0.078423,0.168436,0.248088,,,,
+1,583910768,Company,McDonald,0.104075,1,0.968079,0.0,neutral,0.119283,0.569485,0.063644,0.070757,0.09279,,,,
+1,581902744,GeographicFeature,Singapore River,0.963296,1,0.812042,0.989873,positive,0.03862,0.866721,0.014125,0.021691,0.042288,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,581902744,HealthCondition,cold,0.72816,1,0.535021,0.989873,positive,0.03862,0.866721,0.014125,0.021691,0.042288,,,,
+1,571733760,Facility,Clark Quay,0.978348,1,0.187722,0.926258,positive,0.031512,0.784463,0.086086,0.015781,0.055279,,,,
+1,565946046,Quantity,28 dol,0.963296,1,0.8,0.731027,positive,0.170444,0.17062,0.268731,0.153252,0.227865,,,,
+1,565946046,Quantity,112 dol,0.886231,1,0.8,0.742653,positive,0.170444,0.17062,0.268731,0.153252,0.227865,,,,
+1,564979897,Quantity,20%,0.963296,1,0.8,0.474919,positive,0.192895,0.639082,0.038773,0.043126,0.062476,,,,
+1,564979897,Location,Singapore,0.320692,1,0.998738,0.474919,positive,0.192895,0.639082,0.038773,0.043126,0.062476,,,Singapore,http://dbpedia.org/resource/Singapore
+1,563798400,GeographicFeature,Singapore River,0.958279,1,0.898631,0.691154,positive,0.057922,0.595945,0.091331,0.050941,0.146428,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,563798400,GeographicFeature,the River Merchants,0.957183,1,0.302744,0.0,neutral,0.153921,0.463399,0.078146,0.178811,0.211996,,,,
+1,563798400,Location,Singapore,0.455642,1,0.810739,0.0,neutral,0.153921,0.463399,0.078146,0.178811,0.211996,,,Singapore,http://dbpedia.org/resource/Singapore
+1,563298724,Person,Clark Quay,0.963296,1,0.433203,0.913799,positive,0.106006,0.348138,0.069186,0.061956,0.068401,,,,
+1,563298724,Facility,Clarke Quay,0.328383,1,0.483035,0.70273,positive,0.126575,0.438686,0.113926,0.034764,0.051145,,,,
+1,561640723,Facility,Clark Quay,0.958279,1,0.359486,0.844191,positive,0.049032,0.593769,0.154134,0.045414,0.095192,,,,
+1,561640723,Location,Shenton,0.333778,1,0.494785,0.926442,positive,0.199389,0.663656,0.130786,0.036244,0.019782,,,,
+1,561640723,Location,London,0.07863,1,0.999965,0.887747,positive,0.10988,0.696171,0.103052,0.014765,0.060303,,,,
+1,559361259,Facility,Clark Quay,0.958279,1,0.727095,0.0,neutral,0.137514,0.20065,0.150683,0.098144,0.122751,,,,
+1,559361259,GeographicFeature,the Singapore river,0.913596,1,0.560576,0.0,neutral,0.137514,0.20065,0.150683,0.098144,0.122751,,,,
+1,559361259,Location,Singapore,0.143865,1,0.977072,0.955607,positive,0.042848,0.837364,0.032911,0.041782,0.043738,,,Singapore,http://dbpedia.org/resource/Singapore
+1,552268782,GeographicFeature,Singapore River,0.963296,1,0.954851,-0.644107,negative,0.603592,0.13658,0.116606,0.261064,0.05373,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,552268782,Location,Singapore,0.330556,1,0.966079,0.925737,positive,0.041719,0.707261,0.008681,0.05522,0.012936,,,Singapore,http://dbpedia.org/resource/Singapore
+1,551205877,Location,Singapore,0.963296,1,0.99855,0.631814,positive,0.062305,0.332586,0.195954,0.117716,0.101224,,,Singapore,http://dbpedia.org/resource/Singapore
+1,551205877,Facility,Boat Quay,0.560641,1,0.661856,0.631814,positive,0.062305,0.332586,0.195954,0.117716,0.101224,,,,
+1,534509445,Facility,Harry’s Bar,0.958279,1,0.574699,0.454323,positive,0.117331,0.602242,0.042678,0.138379,0.020726,,,,
+1,534509445,Person,Liam Neeson,0.579812,1,0.995005,0.454323,positive,0.117331,0.602242,0.042678,0.138379,0.020726,,"['Actor', 'MusicalArtist', 'AwardNominee', 'AwardWinner', 'Celebrity', 'FilmActor', 'TVActor', 'VideoGameActor']",Liam_Neeson,http://dbpedia.org/resource/Liam_Neeson
+1,534509445,Person,Cavenaugh bridges,0.5787,1,0.485165,0.696156,positive,0.10257,0.736358,0.049915,0.012679,0.111715,,,,
+1,530566705,Facility,Clarke Quay,0.953262,1,0.582496,0.0,neutral,0.139725,0.278372,0.219056,0.138274,0.223924,,,,
+1,530566705,Facility,Harry's bar,0.800648,1,0.601271,0.930399,positive,0.085842,0.643675,0.013576,0.17209,0.172541,,,,
+1,530566705,Person,Nick Leeson,0.769226,1,0.999548,0.930399,positive,0.085842,0.643675,0.013576,0.17209,0.172541,,['FilmWriter'],Nick_Leeson,http://dbpedia.org/resource/Nick_Leeson
+1,530566705,Location,London,0.332801,1,0.995944,0.930399,positive,0.085842,0.643675,0.013576,0.17209,0.172541,,,,
+1,530566705,Facility,Stanford Raffles,0.089704,1,0.248832,0.626927,positive,0.251832,0.217597,0.171738,0.070972,0.136084,,,,
+1,530566705,Location,Singapore,0.014595,1,0.984661,0.626927,positive,0.251832,0.217597,0.171738,0.070972,0.136084,,,Singapore,http://dbpedia.org/resource/Singapore
+1,525055273,Facility,Forum restaurant,0.958279,1,0.565759,-0.998884,negative,0.689783,0.00315,0.112412,0.394439,0.044286,,,Forum_Restaurant,http://dbpedia.org/resource/Forum_Restaurant
+1,525055273,Quantity,10 minutes,0.190068,1,0.8,-0.936341,negative,0.360089,0.273711,0.160061,0.213216,0.091977,,,,
+1,525055273,Location,Singapore,0.045424,1,0.979129,-0.919647,negative,0.451678,0.111104,0.14813,0.214784,0.315808,,,Singapore,http://dbpedia.org/resource/Singapore
+1,517845697,GeographicFeature,Singapore River,0.963296,1,0.477248,0,neutral,0.05376,0.386545,0.202542,0.082218,0.207538,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,517845697,TwitterHandle,@,0.428286,1,0.8,0,neutral,0.05376,0.386545,0.202542,0.082218,0.207538,,,,
+1,517710015,Facility,clarke quay,0.978348,1,0.576892,-0.476904,negative,0.279455,0.154207,0.070858,0.112105,0.035038,,,,
+1,503365112,Facility,Clarke Quay,0.9999,2,0.949105,0.79693,positive,0.053294,0.761799,0.062914,0.035562,0.050162,,,,
+1,501523311,Company,ok.after,0.978348,1,0.867281,0.94782,positive,0.064898,0.80197,0.024837,0.008657,0.016323,,,,
+1,483841881,Location,Singapore,0.9999,2,0.999999,0.76424,positive,0.084587,0.791751,0.059746,0.033885,0.025708,,,Singapore,http://dbpedia.org/resource/Singapore
+1,476301128,Facility,fab Indian restaurant,0.963296,1,0.134029,0.971862,positive,0.032209,0.907543,0.012506,0.024027,0.005534,,,,
+1,476301128,Quantity,three day,0.737495,1,0.8,0.746242,positive,0.19152,0.421614,0.134547,0.066523,0.211775,,,,
+1,473010522,Quantity,40 minutes,0.978348,1,0.8,0,neutral,0.476642,0.106594,0.124188,0.143188,0.173415,,,,
+1,472037976,Location,Singapore,0.968313,2,0.999719,0.832873,positive,0.189163,0.556636,0.209668,0.096105,0.027712,,,Singapore,http://dbpedia.org/resource/Singapore
+1,472037976,Quantity,40 minutes,0.53002,1,0.8,0.667901,positive,0.259891,0.318986,0.25811,0.078819,0.048823,,,,
+1,472037976,Facility,Marina bay,0.399832,1,0.250665,0.667901,positive,0.259891,0.318986,0.25811,0.078819,0.048823,,,,
+1,470577911,Location,Singapore,0.978348,1,0.988084,0,neutral,0.050873,0.238184,0.07416,0.126297,0.026174,,,Singapore,http://dbpedia.org/resource/Singapore
+1,470200199,GeographicFeature,the Singapore River,0.963296,1,0.576953,0.854963,positive,0.047071,0.734765,0.074946,0.07071,0.051903,,,,
+1,470200199,Location,Singapore,0.547421,1,0.999344,0.854963,positive,0.047071,0.734765,0.074946,0.07071,0.051903,,,Singapore,http://dbpedia.org/resource/Singapore
+1,464772664,GeographicFeature,Singapore River,0.963296,1,0.783751,0,neutral,0.136014,0.214922,0.170218,0.09467,0.225461,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,464772664,Location,Singapore,0.785566,1,0.977989,0,neutral,0.136014,0.214922,0.170218,0.09467,0.225461,,,Singapore,http://dbpedia.org/resource/Singapore
+1,462482560,Facility,Clarke Quay,0.978348,3,0.946334,0,neutral,0.192424,0.153651,0.412526,0.139049,0.125282,,,,
+1,462482560,Quantity,25 years,0.466989,1,0.8,0,neutral,0.135804,0.356079,0.161018,0.084916,0.085934,,,,
+1,462482560,Location,Singapore,0.443028,1,0.697812,0,neutral,0.135804,0.356079,0.161018,0.084916,0.085934,,,Singapore,http://dbpedia.org/resource/Singapore
+1,448773538,Facility,Clarke Quay,0.958279,1,0.601109,-0.776587,negative,0.563775,0.19296,0.140719,0.057498,0.113614,,,,
+1,448773538,Facility,Marina Bay,0.151226,1,0.040681,0.0,neutral,0.115168,0.262345,0.274486,0.072961,0.178725,,,,
+1,448773538,Person,Clarke,0.149475,1,0.502692,0.0,neutral,0.115168,0.262345,0.274486,0.072961,0.178725,,,,
+1,431142150,Facility,Clarke Quay,0.978348,1,0.654034,0,neutral,0.159192,0.151674,0.107128,0.106149,0.045884,,,,
+1,417777639,Facility,Raffles Place MRT,0.963296,1,0.748873,0.758264,positive,0.049444,0.706922,0.035724,0.115356,0.0538,,,,
+1,417777639,Facility,Merlion Park,0.853258,1,0.938975,0.758264,positive,0.049444,0.706922,0.035724,0.115356,0.0538,,['Location'],Merlion_Park,http://dbpedia.org/resource/Merlion_Park
+1,409062070,Location,Singapore,0.978348,1,0.996019,0.952591,positive,0.046757,0.815171,0.019957,0.02585,0.076604,,,Singapore,http://dbpedia.org/resource/Singapore
+1,407595156,Location,Singapore,0.968313,2,0.997751,0.836859,positive,0.03673,0.367782,0.050758,0.506924,0.077326,,,Singapore,http://dbpedia.org/resource/Singapore
+1,407595156,Location,Riverside,0.912662,1,0.272612,0.775614,positive,0.036061,0.130342,0.114514,0.627498,0.096788,,,,
+1,407595156,Location,India,0.206122,1,0.179454,0.873785,positive,0.32794,0.088046,0.096151,0.173742,0.041687,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,400957698,Person,Clarke Quay,0.963296,1,0.421438,-0.460593,negative,0.127171,0.496943,0.190585,0.078992,0.197602,,,,
+1,400957698,Person,Clarke,0.257907,1,0.988557,0.783738,positive,0.051688,0.46768,0.191085,0.102271,0.282046,,,,
+1,393382330,Location,Singapore,0.978348,1,0.852071,0.897728,positive,0.057218,0.675147,0.058013,0.088893,0.075824,,,Singapore,http://dbpedia.org/resource/Singapore
+1,391173779,Facility,Clark Quay,0.978348,1,0.856489,0.877765,positive,0.264712,0.532755,0.133901,0.022549,0.068021,,,,
+1,391009563,Facility,Clarke Quay,0.978348,1,0.497306,0,neutral,0.144548,0.185315,0.087573,0.077654,0.090723,,,,
+1,379835500,Facility,Clark Quay,0.963296,1,0.874112,0.892077,positive,0.056683,0.729873,0.048424,0.040409,0.04573,,,,
+1,379835500,Facility,Merlion Park,0.932112,1,0.957598,0.892077,positive,0.056683,0.729873,0.048424,0.040409,0.04573,,['Location'],Merlion_Park,http://dbpedia.org/resource/Merlion_Park
+1,378139233,Facility,Clark Quay,0.963296,1,0.668758,0,neutral,0.218733,0.270023,0.160332,0.128369,0.164313,,,,
+1,378139233,Quantity,10 minute,0.415711,1,0.8,0,neutral,0.218733,0.270023,0.160332,0.128369,0.164313,,,,
+1,372236336,Location,Singapore,0.978348,1,0.998811,0.985716,positive,0.049457,0.776216,0.046489,0.036572,0.052239,,,Singapore,http://dbpedia.org/resource/Singapore
+1,370668248,Facility,Clarke Quay,0.963296,2,0.983279,0.0,neutral,0.159992,0.513745,0.104158,0.087126,0.064825,,,,
+1,370668248,GeographicFeature,Singapore River,0.732957,1,0.498503,0.749004,positive,0.091102,0.543799,0.230607,0.120406,0.089058,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,370668248,Organization,National Parliament,0.321878,1,0.746778,0.0,neutral,0.232876,0.546798,0.062796,0.086547,0.083015,,['GovernmentalBody'],Oireachtas,http://dbpedia.org/resource/Oireachtas
+1,370668248,Organization,Supreme Court,0.07937,1,0.903485,0.0,neutral,0.232876,0.546798,0.062796,0.086547,0.083015,,,,
+1,369530211,Facility,Bq Bar,0.9999,2,0.70459,-0.436071,negative,0.36816,0.393554,0.116342,0.150753,0.092073,,,,
+1,368893913,Facility,Marina Bay Sands hotel,0.958279,1,0.18385,0.50767,positive,0.031425,0.465485,0.253653,0.183789,0.101383,,,,
+1,368893913,Facility,Raffles Square,0.539277,1,0.897327,0.752385,positive,0.339769,0.565815,0.011404,0.106221,0.006455,,,Raffles_City_Shanghai,http://dbpedia.org/resource/Raffles_City_Shanghai
+1,368893913,Location,Singapore,0.51506,1,0.990688,-0.344195,negative,0.074685,0.862716,0.016276,0.016894,0.008154,,,Singapore,http://dbpedia.org/resource/Singapore
+1,365122025,Person,Clark quay,0.963296,1,0.313688,0.773439,positive,0.161109,0.301512,0.112588,0.068721,0.121058,,,,
+1,365122025,Location,Singapore,0.485949,1,0.998237,0.773439,positive,0.161109,0.301512,0.112588,0.068721,0.121058,,,Singapore,http://dbpedia.org/resource/Singapore
+1,363597120,Location,riverside,0.978348,1,0.617935,-0.368335,negative,0.158398,0.163229,0.045371,0.223945,0.05738,,,,
+1,363035643,Facility,Clarke Quay,0.963296,1,0.939723,0,neutral,0.237576,0.101498,0.432014,0.133951,0.266946,,,,
+1,363035643,Location,Singapore,0.043852,1,0.961681,0,neutral,0.746849,0.014222,0.106805,0.181341,0.148372,,,Singapore,http://dbpedia.org/resource/Singapore
+1,362431729,Facility,Newton Circus,0.978348,1,0.59173,0.403226,positive,0.216813,0.397952,0.111639,0.158025,0.09804,,,,
+1,360210786,Person,Clarke quay,0.963296,1,0.449488,0,neutral,0.063396,0.485435,0.123578,0.049866,0.186892,,,,
+1,360210786,Quantity,5 minutes,0.152327,1,0.8,0,neutral,0.063396,0.485435,0.123578,0.049866,0.186892,,,,
+1,358479228,Company,San Miguel,0.978348,1,0.808951,-0.698621,negative,0.129474,0.561891,0.045469,0.07845,0.204706,,,,
+1,356003758,Location,Singapore,0.978348,1,0.992004,0.928089,positive,0.264993,0.297644,0.106457,0.057155,0.093916,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355715364,Facility,Clarke Quay,0.958279,1,0.712666,0.0,neutral,0.179202,0.371169,0.09601,0.057504,0.057621,,,,
+1,355715364,Location,Singapore,0.547863,2,0.999681,0.923038,positive,0.049908,0.767537,0.049533,0.013939,0.045571,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355715364,Quantity,2 years,0.017084,1,0.8,0.923038,positive,0.0369,0.775745,0.041644,0.010859,0.053938,,,,
+1,355453287,Person,Robertson's,0.978348,1,0.478577,-0.486767,negative,0.352078,0.088382,0.264598,0.205724,0.36232,,,,
+1,354913532,Facility,Raffles place MRT,0.963296,1,0.089283,0,neutral,0.281247,0.52659,0.026839,0.086043,0.103237,,,,
+1,354913532,GeographicFeature,the Singapore river,0.062274,1,0.6002,0,neutral,0.111436,0.45152,0.140809,0.210736,0.108856,,,,
+1,354580536,Facility,Clarke Quay,0.958279,1,0.872385,0.0,neutral,0.14423,0.261191,0.047858,0.255726,0.08343,,,,
+1,354580536,Facility,Marina Bay Sands Laser,0.350395,1,0.017217,0.592284,positive,0.104191,0.403082,0.092797,0.132652,0.05302,,,,
+1,354580536,Location,Singapore,0.044699,1,0.999498,-0.345252,negative,0.21022,0.358055,0.151443,0.037551,0.058905,,,Singapore,http://dbpedia.org/resource/Singapore
+1,352259136,Location,Singapore,0.963296,1,0.975858,0.806813,positive,0.225117,0.30157,0.204613,0.057239,0.050923,,,Singapore,http://dbpedia.org/resource/Singapore
+1,352259136,Facility,Clark Quay,0.848794,1,0.911247,0.806813,positive,0.225117,0.30157,0.204613,0.057239,0.050923,,,,
+1,351616725,Facility,Fullerton Hotel,0.978348,1,0.783382,0.829834,positive,0.03356,0.81628,0.037984,0.03851,0.043317,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,351105743,Facility,Clarke Quay,0.978348,1,0.615453,0.749685,positive,0.061472,0.694291,0.075905,0.099967,0.094489,,,,
+1,350993491,Location,Singapore,0.978348,1,0.999274,0.941044,positive,0.323476,0.315143,0.089877,0.06939,0.240216,,,Singapore,http://dbpedia.org/resource/Singapore
+1,347565852,Location,Singapore,0.963296,1,0.992701,-0.894109,negative,0.395847,0.036075,0.143375,0.121815,0.430935,,,Singapore,http://dbpedia.org/resource/Singapore
+1,347565852,Organization,RCC,0.298127,1,0.766793,-0.894109,negative,0.395847,0.036075,0.143375,0.121815,0.430935,,,,
+1,347248053,Location,Singapore,0.978348,1,0.995768,0.999463,positive,0.052604,0.886936,0.038201,0.022187,0.009562,,,Singapore,http://dbpedia.org/resource/Singapore
+1,347135857,Person,Clarke quay,0.978348,1,0.462394,0.971699,positive,0.086571,0.492528,0.093654,0.06183,0.073074,,,,
+1,346424014,Location,Singapore,0.978348,1,0.886958,0.943196,positive,0.061598,0.772921,0.067484,0.031903,0.041115,,,Singapore,http://dbpedia.org/resource/Singapore
+1,344602863,Location,Singapore,0.978348,1,0.985043,0.979771,positive,0.016938,0.805481,0.117086,0.064886,0.026903,,,Singapore,http://dbpedia.org/resource/Singapore
+1,343267086,Location,Singapore,0.978348,1,0.998737,0.928278,positive,0.018771,0.782713,0.039513,0.017931,0.100867,,,Singapore,http://dbpedia.org/resource/Singapore
+1,343238627,Facility,Clarke Quay,0.963296,1,0.572169,0,neutral,0.049063,0.18871,0.113116,0.058286,0.144274,,,,
+1,343238627,Location,Singapore,0.388897,1,0.998743,0,neutral,0.049063,0.18871,0.113116,0.058286,0.144274,,,Singapore,http://dbpedia.org/resource/Singapore
+1,342751101,GeographicFeature,Singapore river,0.978348,1,0.857012,0.922075,positive,0.051476,0.875913,0.019105,0.007691,0.022767,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,342139233,GeographicFeature,Singapore River Cruise,0.963296,1,0.335999,0.914601,positive,0.079965,0.746669,0.079834,0.048042,0.038274,,,,
+1,342139233,Facility,Clarke Quay,0.043857,1,0.436021,0.0,neutral,0.168811,0.146256,0.134187,0.088795,0.12704,,,,
+1,340679544,Facility,Fullerton Hotel,0.963296,1,0.840313,-0.664197,negative,0.022789,0.417261,0.075299,0.375117,0.074428,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,340679544,Location,Singapore,0.592461,1,0.985502,0.97967,positive,0.017311,0.897545,0.009903,0.049583,0.012865,,,Singapore,http://dbpedia.org/resource/Singapore
+1,340526468,Location,Singapore,0.978348,1,0.945852,0.815195,positive,0.355138,0.259017,0.123354,0.083503,0.130658,,,Singapore,http://dbpedia.org/resource/Singapore
+1,339299101,Facility,Great place,0.978348,1,0.555309,0.92941,positive,0.054369,0.821564,0.079275,0.018328,0.018865,,,,
+1,336406946,Location,Singapore,0.978348,1,0.996918,0.873488,positive,0.128753,0.272965,0.212399,0.127347,0.193218,,,Singapore,http://dbpedia.org/resource/Singapore
+1,731144748,Facility,Fullerton Hotel,0.963296,1,0.956298,0.611922,positive,0.099817,0.479933,0.21672,0.060574,0.228991,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,731144748,Facility,Asian Civilisation Museum,0.621951,1,0.749393,0.611922,positive,0.099817,0.479933,0.21672,0.060574,0.228991,,"['Location', 'Building', 'Museum']",Asian_Civilisations_Museum,http://dbpedia.org/resource/Asian_Civilisations_Museum
+1,719767344,GeographicFeature,the river mouth,0.963296,1,0.224992,0.465104,positive,0.292008,0.425316,0.191771,0.119273,0.130077,,,,
+1,719767344,Location,Singapore,0.326573,1,0.98147,0.465104,positive,0.292008,0.425316,0.191771,0.119273,0.130077,,,Singapore,http://dbpedia.org/resource/Singapore
+1,660226929,Facility,Anderson Bridge,0.954265,1,0.873632,0.0,neutral,0.043106,0.226816,0.327192,0.037455,0.218674,,"['Location', 'Bridge']",Anderson_Bridge,http://dbpedia.org/resource/Anderson_Bridge
+1,660226929,Facility,Marina Bay Sands,0.657079,1,0.095961,0.877539,positive,0.078922,0.49999,0.147997,0.044292,0.073158,,,,
+1,660226929,Location,Singapore,0.248314,1,0.958814,0.877539,positive,0.078922,0.49999,0.147997,0.044292,0.073158,,,Singapore,http://dbpedia.org/resource/Singapore
+1,660226929,Quantity,12 min,0.126973,1,0.8,0.0,neutral,0.253621,0.297712,0.121386,0.139603,0.187856,,,,
+1,660226929,Facility,Clarke Quay,0.016004,1,0.661561,0.0,neutral,0.253621,0.297712,0.121386,0.139603,0.187856,,,,
+1,626438396,Location,Singapore,0.9999,2,0.999468,0.893882,positive,0.134967,0.483563,0.121612,0.034452,0.261197,,,Singapore,http://dbpedia.org/resource/Singapore
+1,565551157,Facility,Marina Bay Sands hotel,0.978348,1,0.259722,0.87357,positive,0.071437,0.844024,0.052287,0.028004,0.016118,,,,
+1,562776768,Location,Singapore,0.978348,1,0.990822,0.979474,positive,0.022714,0.687752,0.136025,0.098105,0.102958,,,Singapore,http://dbpedia.org/resource/Singapore
+1,559473239,Facility,Boat Quay,0.978348,1,0.758966,0.614306,positive,0.050927,0.54376,0.087995,0.083888,0.039106,,,,
+1,557234555,Location,Singapore,0.9999,3,0.999993,-0.771146,negative,0.526245,0.056432,0.257358,0.178162,0.271867,,,Singapore,http://dbpedia.org/resource/Singapore
+1,548546911,Location,Singapore,0.963296,1,0.894398,0.96072,positive,0.035937,0.7481,0.017959,0.028643,0.068546,,,Singapore,http://dbpedia.org/resource/Singapore
+1,548546911,Quantity,20%,0.705619,1,0.8,0.747112,positive,0.196765,0.279174,0.093372,0.070809,0.125521,,,,
+1,546937088,GeographicFeature,Singapore River,0.978348,1,0.658625,0.791231,positive,0.05536,0.808735,0.047301,0.040583,0.059761,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,538148586,Facility,Clarke Quay,0.958279,1,0.657544,0.664892,positive,0.319804,0.183268,0.105855,0.048813,0.081635,,,,
+1,538148586,Location,Marina Sands,0.672558,1,0.349275,0.972311,positive,0.080082,0.554607,0.04895,0.143711,0.051516,,,,
+1,538148586,Quantity,10 minute,0.100378,1,0.8,0.883011,positive,0.080945,0.701159,0.111502,0.037041,0.106269,,,,
+1,524600185,Location,Singapore,0.978348,2,0.997621,0.969131,positive,0.088394,0.755288,0.056044,0.025786,0.074284,,,Singapore,http://dbpedia.org/resource/Singapore
+1,524600185,GeographicFeature,river bank,0.015378,1,0.250915,0.0,neutral,0.238581,0.177753,0.187526,0.220238,0.061209,,,,
+1,514322622,Quantity,10 years,0.978348,1,0.8,-0.753928,negative,0.341711,0.41185,0.093391,0.111749,0.045875,,,,
+1,497174166,Location,Singapore,0.978348,1,0.983221,0,neutral,0.108106,0.245346,0.260412,0.031119,0.125044,,,Singapore,http://dbpedia.org/resource/Singapore
+1,488437187,Facility,Raffles Place MRT station,0.952545,1,0.699306,-0.365866,negative,0.054216,0.166183,0.050404,0.077218,0.074307,,"['Location', 'Station', 'Building']",Raffles_Place_MRT_Station,http://dbpedia.org/resource/Raffles_Place_MRT_Station
+1,488437187,Facility,Fullerton hotel,0.518451,1,0.476702,0.0,neutral,0.067979,0.510028,0.139711,0.064363,0.059927,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,488437187,Facility,Clarke Quay,0.472691,1,0.811831,0.0,neutral,0.257463,0.387614,0.061079,0.028708,0.057519,,,,
+1,488437187,Quantity,100 bars,0.453726,1,0.8,0.0,neutral,0.299966,0.213178,0.164561,0.242147,0.029467,,,,
+1,488437187,Quantity,two decades,0.258503,1,0.8,0.654925,positive,0.702633,0.246654,0.055285,0.059064,0.013209,,,,
+1,488437187,Organization,Supreme court,0.252193,1,0.503113,0.0,neutral,0.081172,0.271296,0.3173,0.221556,0.136644,,,,
+1,488437187,Facility,Irish Pub,0.054615,1,0.853653,-0.421543,negative,0.232579,0.479633,0.025329,0.222314,0.095299,,,,
+1,460852873,Facility,Fullerton Hotel,0.95577,1,0.949721,0,neutral,0.070373,0.634961,0.065841,0.031176,0.1507,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,460852873,Facility,Cavenagh Bridge,0.773111,1,0.934359,0,neutral,0.070373,0.634961,0.065841,0.031176,0.1507,,"['Location', 'Bridge']",Cavenagh_Bridge,http://dbpedia.org/resource/Cavenagh_Bridge
+1,460852873,Facility,Asian Civilization Museum,0.493905,1,0.804773,0,neutral,0.070373,0.634961,0.065841,0.031176,0.1507,,,,
+1,460852873,Facility,Elgin Bridge,0.115948,1,0.976733,0,neutral,0.070373,0.634961,0.065841,0.031176,0.1507,,"['Location', 'Bridge']",Elgin_Bridge,http://dbpedia.org/resource/Elgin_Bridge
+1,447187211,GeographicFeature,the singapore river,0.978348,1,0.488989,0,neutral,0.054549,0.091522,0.080043,0.09548,0.032443,,,,
+1,429101634,Facility,Road Quay,0.978348,1,0.665148,0.795218,positive,0.120663,0.676591,0.110752,0.046221,0.025399,,,,
+1,422500684,GeographicFeature,Singapore River,0.978348,1,0.434046,0.629824,positive,0.215372,0.58631,0.123771,0.00462,0.072722,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,392465914,Location,Singapore,0.978348,2,0.99984,0,neutral,0.126039,0.108122,0.094486,0.192227,0.28561,,,Singapore,http://dbpedia.org/resource/Singapore
+1,392465914,Organization,Government,0.330231,1,0.642091,0,neutral,0.126039,0.108122,0.094486,0.192227,0.28561,,"['FieldOfStudy', 'BuildingFunction']",Government,http://dbpedia.org/resource/Government
+1,386788763,Location,Singapore,0.978348,1,0.768045,-0.75007,negative,0.150606,0.170114,0.159049,0.037167,0.034874,,,Singapore,http://dbpedia.org/resource/Singapore
+1,383118597,Facility,Clarke Quay,0.978348,2,0.971812,0.0,neutral,0.062481,0.28119,0.242965,0.111622,0.108752,,,,
+1,383118597,GeographicFeature,Singapore River,0.703707,2,0.871613,0.904864,positive,0.049673,0.631902,0.073865,0.089869,0.138161,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,382116471,Location,Singapore,0.978348,1,0.994284,0.893713,positive,0.097283,0.565387,0.120291,0.052204,0.087575,,,Singapore,http://dbpedia.org/resource/Singapore
+1,377650337,Location,riverside,0.978348,1,0.746928,0.93171,positive,0.11,0.742655,0.041166,0.072311,0.026693,,,,
+1,357347329,GeographicFeature,Singapore river,0.978348,1,0.286764,0.8776,positive,0.057215,0.713025,0.12256,0.054529,0.020026,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,354230699,Facility,Clarke Quay,0.95577,1,0.773006,-0.292396,negative,0.13251,0.480555,0.128798,0.08487,0.124874,,,,
+1,354230699,GeographicFeature,Marina Bay,0.917233,1,0.482431,-0.292396,negative,0.13251,0.480555,0.128798,0.08487,0.124874,,,,
+1,354230699,Location,Singapore,0.709286,1,0.998886,-0.292396,negative,0.13251,0.480555,0.128798,0.08487,0.124874,,,Singapore,http://dbpedia.org/resource/Singapore
+1,354230699,Quantity,2 kilometer,0.542875,1,0.8,-0.292396,negative,0.13251,0.480555,0.128798,0.08487,0.124874,,,,
+1,352065250,Person,Clarke,0.958279,1,0.818951,0.715732,positive,0.281338,0.186824,0.200949,0.041079,0.209693,,,,
+1,352065250,Location,Singapore,0.908636,1,0.972317,0.883739,positive,0.084228,0.737702,0.055132,0.016426,0.025008,,,Singapore,http://dbpedia.org/resource/Singapore
+1,352065250,Person,Bridges,0.691728,1,0.471474,0.831511,positive,0.038513,0.540873,0.130855,0.059304,0.015251,,,,
+1,349846962,Location,Singapore,0.978348,1,0.994398,0,neutral,0.151013,0.165159,0.132378,0.071425,0.112159,,,Singapore,http://dbpedia.org/resource/Singapore
+1,347581544,Location,Singapore,0.978348,1,0.997806,0.938475,positive,0.024777,0.841471,0.042332,0.016163,0.008357,,,Singapore,http://dbpedia.org/resource/Singapore
+1,568088254,Facility,Song Fa Bak Kut Teh restaurant,0.952545,1,0.540159,0.784601,positive,0.098518,0.63557,0.157978,0.018301,0.043673,,,,
+1,568088254,Facility,Fullerton hotel,0.87722,1,0.561579,0.733904,positive,0.042266,0.594016,0.095859,0.232009,0.088792,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,568088254,GeographicFeature,Singapore river,0.821051,1,0.542971,0.0,neutral,0.196308,0.270341,0.185659,0.059126,0.040609,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,568088254,GeographicFeature,side & river,0.619337,1,0.450318,0.241579,positive,0.138662,0.28486,0.218727,0.252882,0.154234,,,,
+1,568088254,Quantity,one year,0.567415,1,0.8,0.0,neutral,0.378134,0.223923,0.339148,0.029208,0.172867,,,,
+1,568088254,Quantity,15 minutes,0.377931,1,0.8,0.845937,positive,0.3114,0.47644,0.042739,0.039023,0.236554,,,,
+1,568088254,Facility,Marina Bay Sands,0.264285,1,0.063292,0.554973,positive,0.096881,0.428737,0.098211,0.049147,0.024749,,,,
+1,551914570,GeographicFeature,river bank,0.963296,1,0.063725,0.921625,positive,0.127793,0.476208,0.204118,0.058715,0.204451,,,,
+1,551914570,Location,Singapore,0.479737,2,0.999896,0.564657,positive,0.108384,0.556349,0.177724,0.156784,0.03823,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,540382854,Location,Singapore,0.978348,1,0.998008,0,neutral,0.12498,0.329706,0.055254,0.055788,0.076512,,,Singapore,http://dbpedia.org/resource/Singapore
+1,528374293,Facility,Cavenaugh Bridge,0.956845,2,0.940759,0.569559,positive,0.078952,0.643967,0.091016,0.063783,0.169296,,,,
+1,528374293,Facility,Fulllerton Hotel,0.887375,1,0.987153,0.538466,positive,0.172486,0.400749,0.226013,0.12976,0.163542,,,,
+1,528374293,Facility,Elgin Bridge,0.838489,1,0.938589,0.519143,positive,0.074878,0.659922,0.101277,0.022639,0.041047,,"['Location', 'Bridge']",Elgin_Bridge,http://dbpedia.org/resource/Elgin_Bridge
+1,528374293,Facility,Clarke Quay,0.781315,2,0.950435,-0.627567,negative,0.155337,0.436288,0.146395,0.117746,0.117472,,,,
+1,528374293,GeographicFeature,Marina Bay,0.59175,1,0.495479,0.538466,positive,0.172486,0.400749,0.226013,0.12976,0.163542,,,,
+1,528374293,Quantity,10 degrees,0.319906,1,0.8,-0.386529,negative,0.107159,0.787986,0.02395,0.011388,0.022396,,,,
+1,528374293,Location,Singapore,0.001125,1,0.98593,0.0,neutral,0.070983,0.690751,0.041863,0.052833,0.054713,,,Singapore,http://dbpedia.org/resource/Singapore
+1,489044737,Quantity,50%,0.978348,1,0.8,0.639762,positive,0.207933,0.222559,0.063233,0.219357,0.050681,,,,
+1,428149273,Location,Singapore,0.978348,1,0.997469,0.863346,positive,0.094202,0.780434,0.033829,0.02745,0.016262,,,Singapore,http://dbpedia.org/resource/Singapore
+1,399033555,GeographicFeature,Singapore river,0.978348,1,0.635494,0,neutral,0.162571,0.509164,0.110719,0.115385,0.031736,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,392557088,Facility,Clarke quay,0.963296,1,0.799393,-0.259794,negative,0.182893,0.388327,0.179721,0.060263,0.05086,,,,
+1,392557088,Location,Singapore,0.163174,1,0.977496,-0.839991,negative,0.151522,0.209328,0.070678,0.180751,0.068916,,,Singapore,http://dbpedia.org/resource/Singapore
+1,366480925,Location,singapore,0.963296,1,0.988003,0.865062,positive,0.06282,0.753733,0.027093,0.024305,0.016028,,,Singapore,http://dbpedia.org/resource/Singapore
+1,366480925,GeographicFeature,singapore river,0.496998,1,0.308056,0.402969,positive,0.141716,0.392385,0.08409,0.14022,0.145353,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,365876211,Facility,Clarke Quay,0.978348,1,0.426778,0.823288,positive,0.101686,0.494728,0.15105,0.10665,0.217571,,,,
+1,363765763,Facility,Merlion park,0.978348,1,0.97394,0.907678,positive,0.07151,0.814346,0.0683,0.022404,0.04502,,['Location'],Merlion_Park,http://dbpedia.org/resource/Merlion_Park
+1,362508730,Facility,Clark Quay,0.978348,1,0.967387,0.662765,positive,0.090011,0.180154,0.104169,0.060524,0.041038,,,,
+1,354312953,Facility,Clarke Quay,0.978348,1,0.897762,0.650775,positive,0.205191,0.199983,0.039492,0.358969,0.106058,,,,
+1,349404859,Location,Singapore,0.978348,1,0.951824,0.926259,positive,0.067503,0.67902,0.040461,0.070204,0.027564,,,Singapore,http://dbpedia.org/resource/Singapore
+1,343224094,Location,Singapore,0.978348,1,0.968103,0.772847,positive,0.174388,0.227461,0.051897,0.066289,0.040126,,,Singapore,http://dbpedia.org/resource/Singapore
+1,721564255,Facility,Clarke quay,0.978348,1,0.842355,0,neutral,0.071941,0.236818,0.123329,0.077487,0.123311,,,,
+1,702383981,GeographicFeature,Singapore river,0.963296,1,0.917014,0.96017,positive,0.301097,0.080012,0.263533,0.30172,0.179265,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,702383981,Facility,Boat Quay,0.068339,1,0.529113,0.911848,positive,0.158656,0.511908,0.087723,0.065407,0.226774,,,,
+1,681357330,GeographicFeature,Singapore river,0.978348,1,0.174434,0,neutral,0.046242,0.828554,0.029699,0.039174,0.035919,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,673238742,GeographicFeature,Singapore river,0.978348,1,0.694146,-0.819886,negative,0.497183,0.080789,0.251037,0.229036,0.222358,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,635706660,Location,Singapore,0.958279,1,0.997031,0.838474,positive,0.029753,0.780276,0.032519,0.019404,0.071146,,,Singapore,http://dbpedia.org/resource/Singapore
+1,635706660,Location,riverside,0.877038,1,0.61909,0.926808,positive,0.065566,0.27412,0.081225,0.070266,0.027416,,,,
+1,635706660,Person,Chandrashekar,0.059943,1,0.986906,0.0,neutral,0.0,0.0,0.0,0.0,0.0,,,,
+1,605947004,Quantity,25 years,0.978348,1,0.8,0,neutral,0.299856,0.436914,0.076496,0.052947,0.063761,,,,
+1,605181531,Quantity,1900 hours,0.978348,1,0.8,0,neutral,0.142536,0.381173,0.073847,0.070011,0.054877,,,,
+1,589742044,GeographicFeature,The Singapore River,0.958279,1,0.458525,0,neutral,0.274868,0.426987,0.115151,0.065886,0.10528,,,,
+1,589742044,Location,Singapore,0.56492,2,0.999219,0,neutral,0.129015,0.512684,0.135363,0.042623,0.179737,,,Singapore,http://dbpedia.org/resource/Singapore
+1,589742044,GeographicFeature,Singapore River,0.471403,1,0.525067,0,neutral,0.091643,0.395212,0.165274,0.045736,0.221949,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,583554409,Person,Mango Lassi,0.978348,1,0.568354,0.863872,positive,0.261213,0.487931,0.05309,0.150311,0.073177,,,,
+1,564770160,GeographicFeature,Singapore river,0.978348,1,0.583477,0,neutral,0.134819,0.350639,0.160438,0.211613,0.195039,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,546548142,GeographicFeature,Marina Bay,0.978348,1,0.406515,0.648197,positive,0.033865,0.729997,0.025457,0.036394,0.023985,,,,
+1,537793933,Quantity,4days,0.978348,1,0.8,0,neutral,0.149471,0.686057,0.098543,0.012012,0.025609,,,,
+1,517052506,GeographicFeature,singapore river bank,0.978348,1,0.516941,0.814833,positive,0.149994,0.737112,0.04818,0.018589,0.046803,,,,
+1,516950908,Location,Singapore,0.978348,1,0.998843,0,neutral,0.184122,0.14944,0.108227,0.07804,0.105549,,,Singapore,http://dbpedia.org/resource/Singapore
+1,513409393,Location,Singapore,0.978348,1,0.998746,0.943007,positive,0.046258,0.74217,0.046501,0.011306,0.08538,,,Singapore,http://dbpedia.org/resource/Singapore
+1,475216228,Facility,Clarke Quay,0.978348,1,0.889622,0,neutral,0.386735,0.183286,0.070484,0.066758,0.103778,,,,
+1,468003779,Facility,Boat quay,0.978348,1,0.860031,0.316253,positive,0.145279,0.42164,0.174253,0.128891,0.108704,1,,,
+1,467345100,Facility,Fullerton Hotel,0.978348,1,0.965186,0.910765,positive,0.030716,0.740771,0.06901,0.083515,0.091355,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,442184589,Facility,Clark Quay,0.978348,1,0.810363,0.867782,positive,0.102237,0.591656,0.123265,0.026716,0.141668,,,,
+1,436979132,Location,Singapore,0.978348,1,0.885279,0.762671,positive,0.048645,0.70333,0.070259,0.007396,0.050357,,,Singapore,http://dbpedia.org/resource/Singapore
+1,421941532,Facility,Clarke Quay,0.963296,1,0.869748,0.862906,positive,0.031117,0.617372,0.102393,0.019766,0.019903,,,,
+1,421941532,Quantity,45 minutes,0.927905,1,0.8,0.825029,positive,0.059459,0.114467,0.261586,0.034354,0.302761,,,,
+1,417732097,Facility,Fullerton Hotel,0.958279,1,0.743668,0.81336,positive,0.015182,0.737376,0.044553,0.100681,0.027405,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,417732097,Facility,Marina Bay Sands Hotel,0.88497,1,0.344751,0.913377,positive,0.015182,0.737376,0.044553,0.100681,0.027405,,,,
+1,417732097,GeographicFeature,Singapore River,0.750659,1,0.845249,0.719566,positive,0.224811,0.589969,0.037192,0.089587,0.040575,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,414828229,Person,Mac Donald,0.963296,1,0.444453,0,neutral,0.149646,0.209288,0.066938,0.063251,0.136871,,,,
+1,414828229,Quantity,24 hours,0.607898,1,0.8,0,neutral,0.149646,0.209288,0.066938,0.063251,0.136871,,,,
+1,400220939,Location,Singapore,0.978348,1,0.989745,0.808619,positive,0.22264,0.653694,0.009976,0.047287,0.009848,,,Singapore,http://dbpedia.org/resource/Singapore
+1,391015367,Facility,Robertson Quay,0.963296,1,0.382744,-0.688334,negative,0.670399,0.028735,0.128104,0.021671,0.131016,,,,
+1,391015367,Facility,Clarke Quay,0.531295,1,0.4677,-0.688334,negative,0.670399,0.028735,0.128104,0.021671,0.131016,,,,
+1,386886665,Person,clark quay,0.978348,1,0.890087,0.658241,positive,0.087367,0.698181,0.094814,0.095692,0.056808,,,,
+1,382619037,Facility,Clarke Quay,0.963296,1,0.898596,0,neutral,0.05833,0.472285,0.121397,0.199975,0.101577,,,,
+1,382619037,Facility,Fullerton Hotel,0.540686,1,0.927142,0,neutral,0.05833,0.472285,0.121397,0.199975,0.101577,,"['Location', 'Building']",The_Fullerton_Hotel_Singapore,http://dbpedia.org/resource/The_Fullerton_Hotel_Singapore
+1,372768715,Facility,UOB Plaza,0.958279,1,0.988091,-0.921066,negative,0.149371,0.17422,0.069698,0.065792,0.316634,,"['Location', 'Building', 'Skyscraper']",UOB_Plaza,http://dbpedia.org/resource/UOB_Plaza
+1,372768715,Location,Salvador,0.617758,1,0.744133,0.0,neutral,0.149371,0.17422,0.069698,0.065792,0.316634,,,,
+1,372768715,Location,Singapore,0.586568,1,0.998881,0.0,neutral,0.092013,0.619127,0.165815,0.060406,0.038154,,,Singapore,http://dbpedia.org/resource/Singapore
+1,370301040,Facility,clarke quay,0.978348,1,0.636016,0,neutral,0.071206,0.113963,0.217398,0.057491,0.152703,,,,
+1,367657649,Location,Singapore,0.978348,1,0.981191,0,neutral,0.046594,0.720017,0.047753,0.036224,0.055907,,,Singapore,http://dbpedia.org/resource/Singapore
+1,361988882,GeographicFeature,Singapore river,0.963296,1,0.848624,-0.94953,negative,0.245515,0.567089,0.127147,0.02711,0.102114,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,361988882,Facility,Clarke Quay,0.584162,1,0.472928,-0.94953,negative,0.245515,0.567089,0.127147,0.02711,0.102114,,,,
+1,361031848,Location,Amsterdam,0.978348,1,0.998651,0,neutral,0.092909,0.495721,0.174543,0.137251,0.023192,,,,
+1,359417315,Facility,Clarke Quay,0.978348,1,0.56723,0.843247,positive,0.180403,0.508768,0.082701,0.042836,0.011728,,,,
+1,359173361,Location,Singapore,0.978348,1,0.996902,0.578253,positive,0.226629,0.292684,0.10993,0.063239,0.102111,,,Singapore,http://dbpedia.org/resource/Singapore
+1,358366372,GeographicFeature,Singapore river,0.978348,1,0.663043,0.439906,positive,0.189884,0.447369,0.257006,0.056647,0.108861,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,358131778,Location,Singapore,0.978348,1,0.975761,0.671764,positive,0.023898,0.799726,0.054551,0.027894,0.045503,,,Singapore,http://dbpedia.org/resource/Singapore
+1,357436714,Facility,Raffles statue,0.953262,1,0.628877,0.772368,positive,0.078625,0.715366,0.04438,0.088031,0.08977,,,,
+1,357436714,Facility,Asian Civilisation Museum,0.862325,1,0.361864,0.772368,positive,0.078625,0.715366,0.04438,0.088031,0.08977,,"['Location', 'Building', 'Museum']",Asian_Civilisations_Museum,http://dbpedia.org/resource/Asian_Civilisations_Museum
+1,357436714,Location,Singapore,0.532422,1,0.998795,0.658141,positive,0.100197,0.37333,0.107572,0.019996,0.446039,,,Singapore,http://dbpedia.org/resource/Singapore
+1,357436714,Quantity,1$,0.51891,1,0.8,0.772368,positive,0.078625,0.715366,0.04438,0.088031,0.08977,,,,
+1,357436714,GeographicFeature,Singapore River view,0.306931,1,0.367537,0.772368,positive,0.078625,0.715366,0.04438,0.088031,0.08977,,,,
+1,357436714,Facility,majestic Fullerton Hotel,0.087294,1,0.697687,0.772368,positive,0.078625,0.715366,0.04438,0.088031,0.08977,,,,
+1,356918166,Quantity,20%,0.963296,1,0.8,-0.667689,negative,0.298693,0.295519,0.017891,0.248291,0.039015,,,,
+1,356918166,Location,riverside,0.64646,1,0.725752,0.0,neutral,0.039898,0.069073,0.065373,0.09235,0.026069,,,,
+1,355914007,Location,singapore,0.978348,1,0.999317,0,neutral,0.471263,0.04552,0.125027,0.173377,0.175188,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355164085,Location,europe,0.978348,1,0.998851,0.872445,positive,0.140151,0.616841,0.017327,0.042281,0.03901,,,,
+1,354575518,Facility,Jumbo Seafood,0.978348,1,0.601329,0.63285,positive,0.087313,0.389301,0.212208,0.054927,0.227712,,,,
+1,348733103,Location,riverside,0.978348,1,0.768163,-0.550208,negative,0.138227,0.149758,0.145733,0.22518,0.049773,,,,
+1,346039221,Facility,Raffles MRT,0.963296,1,0.421272,0.640379,positive,0.204852,0.294136,0.16914,0.044238,0.095419,,,,
+1,346039221,Facility,Clark Quay,0.707631,1,0.915245,0.640379,positive,0.204852,0.294136,0.16914,0.044238,0.095419,,,,
+1,341895882,Location,Singapore,0.978348,1,0.995472,0.977022,positive,0.028971,0.866063,0.059088,0.011637,0.037479,,,Singapore,http://dbpedia.org/resource/Singapore

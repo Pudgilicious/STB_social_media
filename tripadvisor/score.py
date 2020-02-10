@@ -60,7 +60,7 @@ class SentimentScorerFSM:
             # FSM state handling
             if self.sentiment_scorer.fsm_state == 2:
                 log = open(self.sentiment_scorer.sentiment_folder_path + 'log.txt', 'a+')
-                log.write('API key {} has been exhausted.\n'.format(self.api_key_index))
+                log.write('API key {} exhausted.\n\n'.format(self.api_key_index))
                 log.close()
                 self.api_key_index += 1
                 print('##########')

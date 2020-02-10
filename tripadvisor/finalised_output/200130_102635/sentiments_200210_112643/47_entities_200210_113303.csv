@@ -1,0 +1,405 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+1,665607610,Quantity,8 year,0.963296,1,0.8,0.636588,positive,0.262521,0.400801,0.08071,0.116792,0.1063,,,,
+1,665607610,Quantity,5 minutes,0.899184,1,0.8,0.0,neutral,0.339616,0.238525,0.128882,0.185558,0.145794,,,,
+1,660445012,Quantity,45 mins,0.978348,1,0.8,0,neutral,0.452699,0.235496,0.078856,0.10394,0.225772,,,,
+1,656684665,Facility,Peranakan Museum,0.958279,2,0.99957,0.467899,positive,0.132482,0.498257,0.155255,0.129053,0.167747,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,656684665,Facility,City Hall MRT station,0.532069,1,0.849957,0.944691,positive,0.063677,0.544639,0.271504,0.08362,0.072732,,,,
+1,656684665,Location,Malaysia,0.049271,1,0.99996,0.933957,positive,0.044929,0.779796,0.049733,0.024145,0.097066,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,656684665,Location,Indonesia,0.048041,1,0.99963,0.933957,positive,0.044929,0.779796,0.049733,0.024145,0.097066,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,656684665,Location,Singapore,0.04692,1,0.999973,0.980953,positive,0.044929,0.779796,0.049733,0.024145,0.097066,,,Singapore,http://dbpedia.org/resource/Singapore
+1,656684665,Person,Sylvia Tan,0.021042,1,0.988863,-0.401807,negative,0.150362,0.759053,0.007174,0.00795,0.025371,,,,
+1,652862431,Quantity,100 years,0.978348,1,0.8,0.620411,positive,0.243346,0.415335,0.271445,0.06482,0.069067,,,,
+1,631601296,Facility,Asian Civilisation Museum,0.95577,1,0.375989,-0.404131,negative,0.209025,0.649625,0.038627,0.026245,0.08756,,"['Location', 'Building', 'Museum']",Asian_Civilisations_Museum,http://dbpedia.org/resource/Asian_Civilisations_Museum
+1,631601296,Location,Malaysia,0.140568,1,0.999966,0.0,neutral,0.356623,0.36618,0.058244,0.204601,0.172885,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,631601296,Location,Singapore,0.138369,1,0.999952,0.0,neutral,0.356623,0.36618,0.058244,0.204601,0.172885,,,Singapore,http://dbpedia.org/resource/Singapore
+1,631601296,Location,Indonesia,0.131235,1,0.999152,-0.751959,negative,0.356623,0.36618,0.058244,0.204601,0.172885,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,605576153,Quantity,$13,0.958279,1,0.8,0.756934,positive,0.166278,0.278259,0.126486,0.020402,0.062206,,,,
+1,605576153,Quantity,4 years,0.610089,1,0.8,0.0,neutral,0.348101,0.266679,0.322292,0.104706,0.098355,,,,
+1,605576153,Location,Singapore,0.189074,1,0.971384,0.817499,positive,0.166278,0.278259,0.126486,0.020402,0.062206,,,Singapore,http://dbpedia.org/resource/Singapore
+1,588873305,Location,Singapore,0.978348,1,0.99824,0.957193,positive,0.073731,0.688895,0.047103,0.044237,0.053837,,,Singapore,http://dbpedia.org/resource/Singapore
+1,588710574,Facility,Bras Brasah station,0.978348,1,0.409412,0.95362,positive,0.425649,0.072783,0.092596,0.06615,0.088609,,,,
+1,583445976,Location,Singapore,0.978348,2,0.997782,0.532882,positive,0.289729,0.367633,0.063409,0.064995,0.264702,,,Singapore,http://dbpedia.org/resource/Singapore
+1,583445976,Quantity,3 hours,0.172126,1,0.8,0.965185,positive,0.220861,0.496602,0.052237,0.018466,0.231236,,,,
+1,552142710,Location,Singapore,0.978348,1,0.999604,0.859204,positive,0.158711,0.282055,0.073393,0.065381,0.134187,,,Singapore,http://dbpedia.org/resource/Singapore
+1,546374479,Location,Singapore,0.963296,1,0.996068,0.0,neutral,0.064757,0.280011,0.026423,0.010698,0.013863,,,Singapore,http://dbpedia.org/resource/Singapore
+1,546374479,Quantity,3 hours,0.542333,1,0.8,0.454808,positive,0.341052,0.548118,0.068538,0.045875,0.028038,,,,
+1,543240143,Facility,Peranakan Mansion Museum,0.954265,1,0.970216,0.0,neutral,0.106633,0.596533,0.091904,0.091534,0.085193,,,,
+1,543240143,Location,Penang,0.509706,1,0.993426,0.0,neutral,0.106633,0.596533,0.091904,0.091534,0.085193,,,,
+1,543240143,Company,SK,0.405525,1,0.872383,-0.935812,negative,0.05509,0.062962,0.037203,0.047627,0.048286,,"['MusicalGroup', 'BroadcastArtist', 'MusicalArtist', 'MusicalGroupMember']",Sleater-Kinney,http://dbpedia.org/resource/Sleater-Kinney
+1,543240143,Quantity,15 minutes,0.384479,1,0.8,0.0,neutral,0.325115,0.204326,0.271348,0.138905,0.183274,,,,
+1,543240143,Quantity,45 minutes,0.306206,1,0.8,0.96336,positive,0.124793,0.722292,0.014696,0.013346,0.011913,,,,
+1,536983582,Quantity,18 year,0.978348,1,0.8,0,neutral,0.097328,0.708702,0.067523,0.082407,0.036126,,,,
+1,534361800,Location,Singapore,0.968313,4,1.0,0.9555,positive,0.151744,0.745455,0.042478,0.010315,0.045616,,,Singapore,http://dbpedia.org/resource/Singapore
+1,534361800,Location,Malaya,0.521687,1,0.899196,0.945107,positive,0.079945,0.714459,0.080509,0.00837,0.034603,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,534361800,Location,Malacca,0.487713,1,0.996687,0.0,neutral,0.229711,0.249745,0.059626,0.220391,0.093853,,,Straits_Settlement_of_Malacca,http://dbpedia.org/resource/Straits_Settlement_of_Malacca
+1,534361800,Location,Penang,0.433795,1,0.978433,0.0,neutral,0.229711,0.249745,0.059626,0.220391,0.093853,,,,
+1,534361800,Quantity,$10,0.329385,1,0.8,0.364551,positive,0.10331,0.083064,0.105195,0.316274,0.304591,,,,
+1,534361800,Location,China,0.212239,1,0.999685,0.824255,positive,0.119924,0.682451,0.00947,0.012909,0.023963,,"['Region', 'AdministrativeDivision', 'Country', 'GovernmentalJurisdiction', 'Kingdom', 'FilmScreeningVenue']",China,http://dbpedia.org/resource/China
+1,520109567,Location,Singapore,0.9999,2,0.99955,0.627645,positive,0.148397,0.379026,0.059638,0.072875,0.078288,,,Singapore,http://dbpedia.org/resource/Singapore
+1,512542398,Facility,Paranakan Museum,0.978348,1,0.98944,0.91617,positive,0.166976,0.636214,0.062847,0.085709,0.067133,,,,
+1,502750917,Location,Singapore,0.978348,1,0.86628,0.990181,positive,0.009289,0.893986,0.02419,0.013042,0.018119,,,Singapore,http://dbpedia.org/resource/Singapore
+1,487195471,Facility,Stamford house,0.95577,1,0.149622,0.858043,positive,0.159967,0.575666,0.093553,0.083161,0.051482,,"['Location', 'Building', 'Skyscraper']",Stamford_House%2C_Singapore,http://dbpedia.org/resource/Stamford_House%2C_Singapore
+1,487195471,Facility,storey museum,0.795446,1,0.489521,0.99145,positive,0.056145,0.788545,0.133242,0.014359,0.028277,,,,
+1,487195471,Location,Singapore,0.769942,2,0.999947,0.931828,positive,0.100557,0.717764,0.0719,0.041284,0.030107,,,Singapore,http://dbpedia.org/resource/Singapore
+1,487195471,Quantity,10 years,0.461042,1,0.8,0.858043,positive,0.159967,0.575666,0.093553,0.083161,0.051482,,,,
+1,479210930,Organization,Peranakan heritage,0.978348,1,0.292408,0,neutral,0.197513,0.202635,0.092393,0.066755,0.134671,,,,
+1,467069776,Facility,Fort Canning Park,0.958279,1,0.975758,0.282464,positive,0.115379,0.655399,0.091525,0.087144,0.045742,,,,
+1,467069776,Location,Raffles City,0.504036,1,0.66468,0.282464,positive,0.115379,0.655399,0.091525,0.087144,0.045742,,,,
+1,467069776,Facility,National Museum of Singapore,0.152217,1,0.565357,0.0,neutral,0.139657,0.521634,0.158417,0.13428,0.029024,,"['Location', 'Building', 'Museum']",National_Museum_of_Singapore,http://dbpedia.org/resource/National_Museum_of_Singapore
+1,460818960,Facility,hall.The museum,0.958279,1,0.750021,0.971474,positive,0.031261,0.565226,0.116277,0.192585,0.180234,,,,
+1,460818960,Quantity,15min,0.836406,1,0.8,0.971474,positive,0.031261,0.565226,0.116277,0.192585,0.180234,,,,
+1,460818960,Facility,kid.The wedding gallery,0.367407,1,0.359592,0.971474,positive,0.031261,0.565226,0.116277,0.192585,0.180234,,,,
+1,449452941,Location,Singapore,0.958279,1,0.525785,0.0,neutral,0.101795,0.512665,0.048489,0.12019,0.100981,,,Singapore,http://dbpedia.org/resource/Singapore
+1,449452941,Facility,Asian Civilisations Museum,0.21598,1,0.826947,0.947482,positive,0.14249,0.721843,0.073031,0.017633,0.08002,,"['Location', 'Building', 'Museum']",Asian_Civilisations_Museum,http://dbpedia.org/resource/Asian_Civilisations_Museum
+1,449452941,Facility,National Museum,0.1603,1,0.975535,0.947482,positive,0.14249,0.721843,0.073031,0.017633,0.08002,,"['Location', 'Building', 'Museum']",National_Museum_of_Singapore,http://dbpedia.org/resource/National_Museum_of_Singapore
+1,448734718,Location,Singapore,0.978348,1,0.994696,0.964874,positive,0.015425,0.890956,0.026943,0.025147,0.03147,,,Singapore,http://dbpedia.org/resource/Singapore
+1,439664419,Facility,Singapore national museum,0.963296,1,0.480623,0.0,neutral,0.190579,0.509278,0.03576,0.15223,0.091832,,,,
+1,439664419,Quantity,2 hours,0.123219,1,0.8,0.881729,positive,0.158685,0.584575,0.043247,0.049071,0.264848,,,,
+1,437300309,Quantity,one hour,0.978348,1,0.8,0.951742,positive,0.208669,0.585628,0.071496,0.024186,0.093042,,,,
+1,429871015,Location,Singapore,0.9999,2,0.999893,0.934976,positive,0.077767,0.696374,0.112894,0.035729,0.10596,,,Singapore,http://dbpedia.org/resource/Singapore
+1,417756376,Location,Singapore,0.978348,1,0.997188,0.943534,positive,0.076958,0.71898,0.024452,0.012013,0.087164,,,Singapore,http://dbpedia.org/resource/Singapore
+1,391151186,Quantity,$10,0.978348,1,0.8,0,neutral,0,0,0,0,0,,,,
+1,383660613,Facility,Tao Nan School,0.958279,1,0.525634,0.0,neutral,0.090878,0.454486,0.34192,0.066093,0.082358,,,,
+1,383660613,Facility,Peranakan Museum,0.900148,1,0.956834,0.0,neutral,0.090878,0.454486,0.34192,0.066093,0.082358,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,383660613,Location,Singapore,0.74303,3,0.999999,0.462502,positive,0.114985,0.687312,0.063022,0.066728,0.07749,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,373579205,Location,Singapore,0.9999,2,0.999965,0.952321,positive,0.079857,0.878961,0.00862,0.006351,0.028218,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355893307,Location,Singapore,0.958279,1,0.970424,0.95262,positive,0.106719,0.784898,0.044275,0.034693,0.054097,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355893307,Quantity,$3,0.143583,1,0.8,0.0,neutral,0.388118,0.112359,0.09959,0.08037,0.119134,,,,
+1,355893307,Quantity,$6,0.012666,1,0.8,0.0,neutral,0.0,0.0,0.0,0.0,0.0,,,,
+1,355456249,Location,Singapore,0.978348,1,0.994185,0.849096,positive,0.47524,0.199028,0.173661,0.103763,0.062252,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341814289,Location,Singapore,0.978348,1,0.988392,0.853141,positive,0.021262,0.848363,0.003091,0.003527,0.00387,,,Singapore,http://dbpedia.org/resource/Singapore
+1,665558386,Location,Singapore,0.963296,1,0.964799,0.989311,positive,0.041819,0.675703,0.084423,0.087883,0.183269,,,Singapore,http://dbpedia.org/resource/Singapore
+1,665558386,Quantity,one hour,0.47307,1,0.8,0.762981,positive,0.072824,0.697078,0.091707,0.018062,0.069068,,,,
+1,662176568,Location,Singapore,0.978348,1,0.999168,0.825013,positive,0.037796,0.38769,0.048269,0.020185,0.02178,,,Singapore,http://dbpedia.org/resource/Singapore
+1,635840623,Location,Singapore,0.978348,1,0.991394,0.983879,positive,0.044969,0.395295,0.033991,0.004171,0.024187,,,Singapore,http://dbpedia.org/resource/Singapore
+1,625189990,Location,Singapore,0.9999,2,0.999723,0.973667,positive,0.02192,0.90612,0.012911,0.028008,0.032151,,,Singapore,http://dbpedia.org/resource/Singapore
+1,618410066,Location,singapore,0.9999,2,0.999095,0,neutral,0.370291,0.336039,0.028171,0.284183,0.058263,,,Singapore,http://dbpedia.org/resource/Singapore
+1,594765697,Location,Singapore,0.978348,1,0.946118,0.851788,positive,0.04239,0.2956,0.066571,0.07534,0.411205,,,Singapore,http://dbpedia.org/resource/Singapore
+1,594536261,Location,Singapore,0.978348,1,0.925756,0.81127,positive,0.164343,0.330643,0.130381,0.210816,0.084636,,,Singapore,http://dbpedia.org/resource/Singapore
+1,591287575,Facility,Fort Canning park,0.978348,1,0.957176,0,neutral,0.11309,0.220998,0.157368,0.077044,0.066192,,,,
+1,581823946,Location,Singapore,0.9999,2,0.999995,0.901607,positive,0.15712,0.305018,0.088221,0.224761,0.129096,,,Singapore,http://dbpedia.org/resource/Singapore
+1,579802209,Location,Singapore,0.978348,2,0.999879,0.873217,positive,0.063401,0.743711,0.109881,0.035859,0.057597,,,Singapore,http://dbpedia.org/resource/Singapore
+1,579802209,Facility,Peranakan Museum,0.391751,1,0.990899,0.981618,positive,0.093125,0.589112,0.088763,0.054957,0.101972,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,578963969,Location,Singapore,0.978348,1,0.993026,0.952783,positive,0.06775,0.777505,0.036686,0.009243,0.043306,,,Singapore,http://dbpedia.org/resource/Singapore
+1,574733296,Location,Singapore,0.978348,1,0.998555,0.987997,positive,0.044168,0.790986,0.063087,0.084534,0.046984,,,Singapore,http://dbpedia.org/resource/Singapore
+1,572623681,Location,South East Asian,0.978348,1,0.667299,0.724233,positive,0.128755,0.708425,0.051052,0.051347,0.024038,,,,
+1,563497712,Quantity,$10,0.963296,1,0.8,0.759729,positive,0.119376,0.072785,0.044519,0.08204,0.121092,,,,
+1,563497712,Quantity,$6,0.929729,1,0.8,0.759729,positive,0.119376,0.072785,0.044519,0.08204,0.121092,,,,
+1,563195222,Quantity,2 hour,0.95577,1,0.8,0.718298,positive,0.441778,0.412044,0.119766,0.033872,0.053684,,,,
+1,563195222,Person,Eugene,0.606419,1,0.965564,0.984201,positive,0.104376,0.828668,0.029278,0.003102,0.023604,,,,
+1,563195222,Quantity,one hour,0.555922,1,0.8,0.718298,positive,0.441778,0.412044,0.119766,0.033872,0.053684,,,,
+1,563195222,Organization,Armenian Church,0.251526,1,0.362581,-0.295325,negative,0.249847,0.195701,0.308123,0.159234,0.273127,,,,
+1,560161688,Person,Patricia,0.978348,1,0.989575,0.980125,positive,0.165076,0.624495,0.051623,0.005208,0.065515,,,,
+1,555163171,Location,Singapore,0.978348,1,0.98032,0.995672,positive,0.104303,0.571734,0.057141,0.025472,0.053639,,,Singapore,http://dbpedia.org/resource/Singapore
+1,539842265,Location,Singapore,0.978348,1,0.991077,0.973366,positive,0.061074,0.773973,0.014971,0.003406,0.047448,,,Singapore,http://dbpedia.org/resource/Singapore
+1,535485362,Quantity,3 hour,0.978348,1,0.8,0.989973,positive,0.355782,0.556262,0.074703,0.012468,0.004025,,,,
+1,534244297,Quantity,two hours,0.978348,1,0.8,0.868506,positive,0.166123,0.246413,0.332227,0.116849,0.250324,,,,
+1,531840492,Location,Southeast Asia,0.963296,1,0.615261,0.0,neutral,0.278772,0.49974,0.074796,0.134592,0.053026,,,,
+1,531840492,Location,Singapore,0.889533,2,0.999998,0.778965,positive,0.390836,0.411506,0.108122,0.098366,0.054675,,,Singapore,http://dbpedia.org/resource/Singapore
+1,515031256,Location,Singapore,0.978348,1,0.984786,0,neutral,0.054143,0.210374,0.078933,0.048163,0.166235,,,Singapore,http://dbpedia.org/resource/Singapore
+1,512437419,Quantity,$63,0.951589,1,0.8,0.0,neutral,0.0,0.0,0.0,0.0,0.0,,,,
+1,512437419,Quantity,3 hrs,0.940876,1,0.8,0.946981,positive,0.602832,0.123405,0.066186,0.030141,0.292754,,,,
+1,512437419,Person,Mr. Foo,0.88322,1,0.693718,0.979316,positive,0.074816,0.796295,0.021268,0.006515,0.071775,,,,
+1,512437419,Facility,Spice Gardens,0.78682,1,0.561967,-0.628592,negative,0.169373,0.545585,0.061282,0.117589,0.071697,,,,
+1,512437419,Person,Viator,0.657891,1,0.611984,0.627951,positive,0.419713,0.430081,0.038589,0.071882,0.030394,,,,
+1,512437419,Company,ea,0.490092,1,0.857548,0.0,neutral,0.0,0.0,0.0,0.0,0.0,,,,
+1,512437419,Location,Singapore,0.442391,1,0.625065,0.627951,positive,0.419713,0.430081,0.038589,0.071882,0.030394,,,Singapore,http://dbpedia.org/resource/Singapore
+1,512437419,Location,Heritage,0.42243,1,0.367418,0.627951,positive,0.419713,0.430081,0.038589,0.071882,0.030394,,,,
+1,512437419,Facility,Peranakan Museum,0.307523,1,0.972607,0.0,neutral,0.027623,0.727096,0.092427,0.034146,0.061296,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,511160778,Location,Singapore,0.978348,2,0.99998,0.745483,positive,0.062242,0.751144,0.094261,0.018627,0.040882,,,Singapore,http://dbpedia.org/resource/Singapore
+1,511160778,Location,Malaysia,0.742507,1,0.98244,0.595841,positive,0.162863,0.412672,0.130495,0.059751,0.127551,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,501490767,Location,Singapore,0.978348,1,0.966443,0.905684,positive,0.034065,0.697008,0.04596,0.029675,0.040685,,,Singapore,http://dbpedia.org/resource/Singapore
+1,498404889,Facility,Singapore National Museum,0.958279,1,0.788314,0,neutral,0.153855,0.48609,0.078453,0.096579,0.198271,,,,
+1,498404889,Facility,fort Canning Park,0.932749,1,0.978758,0,neutral,0.153855,0.48609,0.078453,0.096579,0.198271,,,,
+1,498404889,Location,Singapore,0.710982,2,0.999883,0,neutral,0.043753,0.45455,0.010556,0.08922,0.051143,,,Singapore,http://dbpedia.org/resource/Singapore
+1,492774721,Location,Singapore,0.978348,1,0.982948,0.869815,positive,0.10244,0.55268,0.028605,0.084972,0.02871,,,Singapore,http://dbpedia.org/resource/Singapore
+1,485468954,Facility,Peranakan Museum,0.95577,1,0.974935,0.0,neutral,0.057813,0.445712,0.112535,0.118747,0.140776,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,485468954,Location,Singapore,0.28797,1,0.959721,0.893839,positive,0.23589,0.683642,0.023208,0.024743,0.012179,,,Singapore,http://dbpedia.org/resource/Singapore
+1,485468954,Person,Julie,0.228251,1,0.993956,0.944377,positive,0.186175,0.404244,0.069918,0.028577,0.259189,,,,
+1,485468954,Quantity,3 hours,0.202834,1,0.8,0.944377,positive,0.186175,0.404244,0.069918,0.028577,0.259189,,,,
+1,477353325,Location,singapore,0.963296,1,0.99165,0.848653,positive,0.069802,0.814635,0.03935,0.007795,0.012543,,,Singapore,http://dbpedia.org/resource/Singapore
+1,477353325,Quantity,two hours,0.016207,1,0.8,0.0,neutral,0.316095,0.424726,0.11682,0.056416,0.156242,,,,
+1,475400717,Facility,National Museum,0.978348,1,0.928226,0.787099,positive,0.096134,0.616461,0.178085,0.114178,0.060521,,,National_Museum_of_Malaysia,http://dbpedia.org/resource/National_Museum_of_Malaysia
+1,470998542,Organization,National Heritage Board,0.958279,1,0.894859,0.702383,positive,0.231401,0.285006,0.095621,0.090123,0.052329,,,,
+1,470998542,Location,India,0.181921,1,0.856239,0.702383,positive,0.231401,0.285006,0.095621,0.090123,0.052329,,,,
+1,470998542,Location,singapore,0.018313,1,0.993643,0.702383,positive,0.231401,0.285006,0.095621,0.090123,0.052329,,,Singapore,http://dbpedia.org/resource/Singapore
+1,470777592,Quantity,$10,0.963296,1,0.8,0,neutral,0.146545,0.091183,0.097024,0.092478,0.046949,,,,
+1,470777592,Location,Singapore,0.185698,1,0.845623,0,neutral,0.146545,0.091183,0.097024,0.092478,0.046949,,,,
+1,470223927,Facility,Peranakan Museum,0.958279,1,0.795444,0,neutral,0.02961,0.7329,0.02458,0.024942,0.039258,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,470223927,GeographicFeature,Malay Peninsula,0.459304,1,0.889869,0,neutral,0.02961,0.7329,0.02458,0.024942,0.039258,,,Malay_Peninsula,http://dbpedia.org/resource/Malay_Peninsula
+1,470223927,Location,Singapore,0.233865,1,0.979034,0,neutral,0.02961,0.7329,0.02458,0.024942,0.039258,,,Singapore,http://dbpedia.org/resource/Singapore
+1,464931281,Location,Singapore,0.978348,2,0.999852,0.995277,positive,0.110965,0.713737,0.039111,0.024411,0.133601,,,Singapore,http://dbpedia.org/resource/Singapore
+1,464931281,Facility,National Gallery,0.930438,1,0.35872,0.89535,positive,0.046739,0.492222,0.120223,0.227182,0.099051,,,,
+1,460124661,Location,Singapore,0.978348,1,0.992988,0.859069,positive,0.068492,0.312076,0.07456,0.023953,0.033087,,,Singapore,http://dbpedia.org/resource/Singapore
+1,459650050,Location,Singapore,0.978348,1,0.938875,0.72222,positive,0.036438,0.580086,0.074299,0.075468,0.087544,,,Singapore,http://dbpedia.org/resource/Singapore
+1,456265541,Facility,Peranakan Museum,0.95577,1,0.974362,0.789211,positive,0.100449,0.370503,0.149837,0.310371,0.138707,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,456265541,Person,Mr Foo,0.539672,1,0.923371,0.954155,positive,0.033135,0.692396,0.029456,0.006684,0.023885,,,,
+1,456265541,Person,viator,0.461238,1,0.344389,0.692024,positive,0.102367,0.709747,0.034077,0.05928,0.007953,,,,
+1,456265541,Location,Singapore,0.120758,1,0.632683,0.954155,positive,0.033135,0.692396,0.029456,0.006684,0.023885,,,Singapore,http://dbpedia.org/resource/Singapore
+1,454645109,Location,Singapore,0.978348,1,0.998753,0.830567,positive,0.182757,0.624027,0.087168,0.024137,0.085741,,,Singapore,http://dbpedia.org/resource/Singapore
+1,452068927,Location,Singapore,0.978348,1,0.978263,0.996487,positive,0.06298,0.687752,0.042622,0.017529,0.005326,,,Singapore,http://dbpedia.org/resource/Singapore
+1,447026899,Organization,Armenian Apostolic Church,0.963296,1,0.57218,0,neutral,0.079134,0.335305,0.258734,0.076437,0.064762,,,,
+1,447026899,Location,Singapore,0.570937,1,0.998888,0,neutral,0.079134,0.335305,0.258734,0.076437,0.064762,,,Singapore,http://dbpedia.org/resource/Singapore
+1,444360849,Location,Singapore,0.9999,2,0.999984,0.954654,positive,0.023509,0.899333,0.024454,0.011679,0.02629,,,Singapore,http://dbpedia.org/resource/Singapore
+1,442973963,Location,Singapore,0.978348,1,0.988961,0.365677,positive,0.024614,0.907489,0.006304,0.010542,0.012179,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,439972654,Person,Nyonyas,0.958279,1,0.590132,0.977826,positive,0.346728,0.061175,0.036353,0.473058,0.043788,,,,
+1,439972654,GeographicFeature,Malay Archipelago,0.882081,1,0.280212,0.0,neutral,0.098355,0.283359,0.034659,0.022593,0.071125,,"['Location', 'Island', 'IslandGroup']",Malay_Archipelago,http://dbpedia.org/resource/Malay_Archipelago
+1,439972654,Facility,Tao Nan Chinese School,0.211771,1,0.354586,0.0,neutral,0.061573,0.61663,0.159099,0.054375,0.111494,,,,
+1,424406377,Location,Singapore,0.978348,1,0.999385,0.958869,positive,0.087581,0.763435,0.032833,0.012895,0.032577,,,Singapore,http://dbpedia.org/resource/Singapore
+1,423432848,Location,Singapore,0.978348,1,0.97883,0.932734,positive,0.056966,0.508034,0.094002,0.216814,0.046032,,,Singapore,http://dbpedia.org/resource/Singapore
+1,398399655,Facility,Peranakan Museum,0.978348,1,0.945558,0,neutral,0.090399,0.431764,0.147592,0.125129,0.067589,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,397819895,Location,Singapore,0.958279,1,0.998598,0.691266,positive,0.102189,0.652494,0.056978,0.09526,0.066252,,,Singapore,http://dbpedia.org/resource/Singapore
+1,397819895,Location,China,0.617058,1,0.999914,0.0,neutral,0.114105,0.050481,0.119917,0.009818,0.047449,,"['Region', 'AdministrativeDivision', 'Country', 'GovernmentalJurisdiction', 'Kingdom', 'FilmScreeningVenue']",China,http://dbpedia.org/resource/China
+1,397819895,Location,India,0.603273,1,0.999734,0.0,neutral,0.114105,0.050481,0.119917,0.009818,0.047449,,,,
+1,392413313,Facility,British Museum,0.958279,1,0.945177,-0.591631,negative,0.186603,0.466528,0.14993,0.032641,0.236421,,,,
+1,392413313,Facility,Aquarium,0.451177,1,0.877488,-0.447465,negative,0.653718,0.063534,0.065683,0.109939,0.019082,,['Location'],Aquarium_of_the_Pacific,http://dbpedia.org/resource/Aquarium_of_the_Pacific
+1,392413313,Location,Singapore,0.428332,1,0.99873,-0.447465,negative,0.653718,0.063534,0.065683,0.109939,0.019082,,,Singapore,http://dbpedia.org/resource/Singapore
+1,387984123,Facility,Lovely museum,0.958279,1,0.571853,0.989907,positive,0.008003,0.888801,0.089709,0.012218,0.005854,,,,
+1,387984123,Location,Singapore,0.288496,1,0.985752,0.0,neutral,0.362051,0.452668,0.018988,0.204206,0.011263,,,Singapore,http://dbpedia.org/resource/Singapore
+1,387984123,Person,Robert,0.130889,1,0.989961,0.987147,positive,0.084707,0.839805,0.006649,0.000935,0.00841,,,,
+1,380563607,Location,Singapore,0.978348,1,0.962977,0.940645,positive,0.048944,0.650928,0.044384,0.008743,0.153238,,,Singapore,http://dbpedia.org/resource/Singapore
+1,370366163,Facility,Peranakan Museum,0.963296,1,0.930009,0.987761,positive,0.023025,0.862087,0.030544,0.0335,0.05941,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,370366163,Quantity,10 minutes,0.419835,1,0.8,0.643579,positive,0.204895,0.690645,0.053012,0.018402,0.039363,,,,
+1,361904075,Location,Singapore,0.9999,2,0.995314,0.990628,positive,0.005683,0.944664,0.014411,0.007139,0.011567,,,Singapore,http://dbpedia.org/resource/Singapore
+1,359953686,Location,Singapore,0.978348,1,0.784071,0.928126,positive,0.013902,0.912616,0.028662,0.014303,0.034403,,,Singapore,http://dbpedia.org/resource/Singapore
+1,359319330,Location,singapore,0.978348,1,0.994437,0.723029,positive,0.082532,0.555812,0.090159,0.043994,0.03231,,,Singapore,http://dbpedia.org/resource/Singapore
+1,357076245,Facility,Peranakan Museum,0.950981,1,0.979064,0,neutral,0.038796,0.419751,0.095661,0.058405,0.118792,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,357076245,Organization,Peranakans,0.866417,1,0.480805,0,neutral,0.098817,0.672858,0.069534,0.016402,0.05281,,,,
+1,357076245,Location,Singapore,0.857142,3,1.0,0,neutral,0.084178,0.633343,0.094314,0.018479,0.068123,,,Singapore,http://dbpedia.org/resource/Singapore
+1,357076245,Organization,Straits Chinese community,0.848777,1,0.517021,0,neutral,0.098817,0.672858,0.069534,0.016402,0.05281,,,,
+1,357076245,Location,Malaysia,0.615465,2,1.0,0,neutral,0.169845,0.549166,0.102818,0.01692,0.047183,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,357076245,Location,Malacca,0.421256,1,0.984981,0,neutral,0.261197,0.281946,0.156436,0.034169,0.052941,,,,
+1,357076245,Location,Penang,0.36977,1,0.988873,0,neutral,0.261197,0.281946,0.156436,0.034169,0.052941,,,,
+1,357076245,Location,Philippines,0.335011,1,0.967839,0,neutral,0.261197,0.281946,0.156436,0.034169,0.052941,,"['Country', 'GovernmentalJurisdiction']",Philippines,http://dbpedia.org/resource/Philippines
+1,357076245,Location,Indonesia,0.329367,1,0.999769,0,neutral,0.261197,0.281946,0.156436,0.034169,0.052941,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,357076245,Location,China,0.267505,1,0.999995,0,neutral,0.261197,0.281946,0.156436,0.034169,0.052941,,,,
+1,357076245,Location,India,0.266562,1,0.999732,0,neutral,0.261197,0.281946,0.156436,0.034169,0.052941,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,353900663,Location,Singapore,0.9999,2,0.999352,0.940358,positive,0.071358,0.73318,0.035299,0.047717,0.058527,,,Singapore,http://dbpedia.org/resource/Singapore
+1,353551347,Location,Singapore,0.978348,1,0.982469,0.81138,positive,0.21048,0.572797,0.063817,0.136133,0.082325,,,Singapore,http://dbpedia.org/resource/Singapore
+1,350703729,Facility,Peranakan Museum,0.963296,1,0.96642,0,neutral,0.017078,0.601959,0.027144,0.035555,0.071588,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,350703729,Quantity,two hours,0.383668,1,0.8,0,neutral,0.394088,0.336902,0.155348,0.029651,0.033359,,,,
+1,345317926,Person,Queen Victoria,0.963296,1,0.306681,0,neutral,0.032007,0.776617,0.044552,0.051458,0.070781,,,Queen_Victoria,http://dbpedia.org/resource/Queen_Victoria
+1,345317926,Location,Singapore,0.31612,1,0.990173,0,neutral,0.032007,0.776617,0.044552,0.051458,0.070781,,,Singapore,http://dbpedia.org/resource/Singapore
+1,343683210,Location,Malay peninsular,0.963296,1,0.276573,0.976544,positive,0.038341,0.873361,0.034357,0.017896,0.026595,,,,
+1,343683210,Facility,Excellent museum,0.205088,1,0.586756,0.991962,positive,0.009266,0.891396,0.015501,0.045623,0.024086,,,,
+1,340607228,Person,Eugene,0.978348,1,0.969978,0.989507,positive,0.06414,0.400914,0.02237,0.021242,0.436488,,,,
+1,337487080,Location,Singapore,0.978348,1,0.965861,0.968607,positive,0.156111,0.71189,0.049972,0.017925,0.061734,,,Singapore,http://dbpedia.org/resource/Singapore
+1,661279435,Location,Singapore,0.978348,1,0.994703,0.799294,positive,0.060691,0.64133,0.052717,0.028856,0.021426,,,Singapore,http://dbpedia.org/resource/Singapore
+1,638138048,Person,Ian,0.978348,1,0.616693,0.956343,positive,0.167532,0.777172,0.037745,0.0067,0.005398,,,,
+1,625326469,Location,Singapore,0.978348,2,0.999947,-0.331644,negative,0.265671,0.37722,0.139364,0.052122,0.264435,,,Singapore,http://dbpedia.org/resource/Singapore
+1,625326469,Location,wa,0.342691,1,0.956784,0.0,neutral,0.199159,0.490318,0.060381,0.020267,0.076553,,,,
+1,624690029,Facility,Peranakan Museum,0.958279,1,0.948256,0.804544,positive,0.019335,0.555413,0.073711,0.10786,0.062937,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,624690029,Location,Singapore,0.397717,1,0.994444,0.804544,positive,0.019335,0.555413,0.073711,0.10786,0.062937,,,Singapore,http://dbpedia.org/resource/Singapore
+1,624690029,Quantity,three hours,0.216829,1,0.8,0.600629,positive,0.28947,0.20472,0.128244,0.048475,0.215493,,,,
+1,620432927,Location,Singapore,0.958279,1,0.996118,0,neutral,0.195448,0.350737,0.045724,0.098818,0.094671,,,Singapore,http://dbpedia.org/resource/Singapore
+1,620432927,Facility,City Hall MRT station,0.373832,1,0.789327,0,neutral,0.03872,0.081224,0.067975,0.117937,0.084253,,,,
+1,620432927,Quantity,1.5 hours,0.026445,1,0.8,0,neutral,0.400963,0.108566,0.169489,0.301712,0.260028,,,,
+1,614704958,GeographicFeature,Straits Settlements,0.963296,1,0.348201,0.824194,positive,0.074057,0.631094,0.031742,0.089508,0.049474,,,,
+1,614704958,Quantity,1.5 hours,0.69561,1,0.8,0.0,neutral,0.460269,0.075717,0.199807,0.029324,0.080977,,,,
+1,603182424,Location,Southeast Asia,0.963296,1,0.531957,0.534532,positive,0.150343,0.723175,0.03192,0.018769,0.02307,,,,
+1,603182424,Location,Singapore,0.402932,1,0.985895,0.0,neutral,0.117532,0.472638,0.038198,0.019036,0.076703,,,Singapore,http://dbpedia.org/resource/Singapore
+1,593539047,Facility,Peranakan Museum,0.963296,1,0.946418,0.867175,positive,0.046291,0.690052,0.088849,0.048366,0.022774,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,593539047,Location,Singapore,0.163183,1,0.844915,0.867175,positive,0.046291,0.690052,0.088849,0.048366,0.022774,,,Singapore,http://dbpedia.org/resource/Singapore
+1,588674330,Location,Singapore,0.978348,1,0.991529,0.96242,positive,0.055079,0.773972,0.04043,0.013962,0.047404,,,Singapore,http://dbpedia.org/resource/Singapore
+1,586890393,Facility,best Museum,0.978348,1,0.72594,0.942999,positive,0.010383,0.909599,0.014665,0.035038,0.03667,,,,
+1,585738347,Location,Asia,0.978348,1,0.992646,0.921325,positive,0.080737,0.780412,0.039896,0.057346,0.045206,,,,
+1,576101718,Location,Singapore,0.963296,2,0.999479,0.0,neutral,0.150279,0.450804,0.072351,0.075363,0.041557,,,Singapore,http://dbpedia.org/resource/Singapore
+1,576101718,Person,Chay Cheng Lim,0.795911,1,0.908923,0.997685,positive,0.129615,0.77921,0.026418,0.016585,0.047729,,,,
+1,576101718,Quantity,2 hours,0.277587,1,0.8,0.372067,positive,0.089789,0.406486,0.080469,0.090117,0.119334,,,,
+1,576101718,Company,google,0.088953,1,0.957526,0.797298,positive,0.106522,0.614413,0.139328,0.024239,0.085433,,"['AcademicInstitution', 'AwardPresentingOrganization', 'OperatingSystemDeveloper', 'ProgrammingLanguageDeveloper', 'SoftwareDeveloper', 'VentureFundedCompany']",Google,http://dbpedia.org/resource/Google
+1,573410075,Location,Penang,0.958279,1,0.998962,0.743691,positive,0.090974,0.672662,0.004584,0.045638,0.025072,,,,
+1,573410075,Location,Malaysia,0.789409,1,0.999925,0.743691,positive,0.090974,0.672662,0.004584,0.045638,0.025072,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,573410075,Location,Singapore,0.597134,1,0.998827,0.743691,positive,0.090974,0.672662,0.004584,0.045638,0.025072,,,Singapore,http://dbpedia.org/resource/Singapore
+1,569066464,Location,Southeast Asia,0.963296,3,0.888598,0.830435,positive,0.11569,0.687325,0.095236,0.043357,0.090041,,,,
+1,569066464,Quantity,2 hours,0.651251,1,0.8,0.0,neutral,0.092488,0.311555,0.199184,0.118618,0.055748,,,,
+1,569066464,Location,Malacca,0.610109,1,0.905804,0.811849,positive,0.061697,0.3817,0.061061,0.15659,0.098561,,"['Country', 'Kingdom']",Malacca_Sultanate,http://dbpedia.org/resource/Malacca_Sultanate
+1,569066464,Location,Penang,0.540024,1,0.994754,0.811849,positive,0.061697,0.3817,0.061061,0.15659,0.098561,,,,
+1,569066464,Location,Malaysia,0.437841,1,0.999937,0.811849,positive,0.061697,0.3817,0.061061,0.15659,0.098561,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,569066464,Location,Singapore,0.269367,1,0.998775,0.788553,positive,0.233798,0.537557,0.106267,0.026322,0.096768,,,Singapore,http://dbpedia.org/resource/Singapore
+1,566982520,Facility,Peranakan Museum,0.978348,1,0.894241,0,neutral,0.156504,0.345152,0.087298,0.088694,0.383215,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,559941525,Quantity,$10,0.958279,1,0.8,0.870604,positive,0.159721,0.633318,0.100742,0.001978,0.021486,,,,
+1,559941525,Facility,Asian Cultures Museum,0.579152,1,0.476917,0.82851,positive,0.07769,0.640549,0.056886,0.012225,0.099623,,,,
+1,559941525,Location,Singapore,0.189907,1,0.921107,0.82851,positive,0.07769,0.640549,0.056886,0.012225,0.099623,,,Singapore,http://dbpedia.org/resource/Singapore
+1,559003883,Facility,Good museum,0.978348,1,0.563774,0.932879,positive,0.014403,0.820282,0.081383,0.032554,0.037974,,,,
+1,554321896,Location,Asia,0.978348,1,0.995767,0.724224,positive,0.058641,0.711478,0.062441,0.021946,0.018515,,,,
+1,554150363,Location,Singapore,0.963296,1,0.985935,0.336523,positive,0.117706,0.47561,0.01269,0.352,0.059523,,,Singapore,http://dbpedia.org/resource/Singapore
+1,554150363,Location,India,0.12286,1,0.937652,0.0,neutral,0.348669,0.233875,0.213829,0.032694,0.083738,,,,
+1,552575918,Person,Angelika,0.958279,1,0.998177,0,neutral,0.388712,0.335578,0.139549,0.015066,0.019102,,,,
+1,552575918,Location,India,0.451912,1,0.999218,0,neutral,0.297812,0.510533,0.033855,0.044541,0.092217,,,,
+1,552575918,Location,China,0.429966,1,0.999237,0,neutral,0.297812,0.510533,0.033855,0.044541,0.092217,,,,
+1,541326598,Facility,Fort Canning Park,0.963296,1,0.972008,0.927366,positive,0.128726,0.739925,0.076937,0.009918,0.048425,,,,
+1,541326598,Location,South East Asia,0.798827,1,0.68353,0.927366,positive,0.128726,0.739925,0.076937,0.009918,0.048425,,,,
+1,532210982,Quantity,2 hour,0.963296,1,0.8,0.973641,positive,0.140593,0.170388,0.017433,0.109651,0.024763,,,,
+1,532210982,Location,Singapore,0.35013,1,0.982817,0.484257,positive,0.072631,0.777371,0.033922,0.010058,0.004636,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,530693200,Quantity,3hrs,0.978348,1,0.8,0.864592,positive,0.204553,0.578576,0.079522,0.053088,0.04506,,,,
+1,526001643,Location,Singapore,0.978348,1,0.99782,0.850917,positive,0.083083,0.36523,0.12851,0.055323,0.085775,,,Singapore,http://dbpedia.org/resource/Singapore
+1,479013440,Location,Singapore,0.978348,1,0.992426,0,neutral,0.106809,0.438261,0.115503,0.084934,0.127629,,,Singapore,http://dbpedia.org/resource/Singapore
+1,475532738,Facility,Museum of Asian Civilisations,0.963296,1,0.409327,0,neutral,0.243653,0.560777,0.06707,0.059065,0.10955,,,,
+1,475532738,Quantity,60 minutes,0.788187,1,0.8,0,neutral,0.308472,0.133159,0.26208,0.053601,0.153855,,,,
+1,469295259,Facility,Peranakan Museum,0.963296,1,0.964548,0.989782,positive,0.128792,0.640134,0.076368,0.015395,0.189011,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,469295259,Location,Singapore,0.304004,1,0.990136,0.989782,positive,0.128792,0.640134,0.076368,0.015395,0.189011,,,Singapore,http://dbpedia.org/resource/Singapore
+1,466253575,Facility,Peranakan Museum,0.978348,1,0.981672,0.994241,positive,0.20975,0.684506,0.02423,0.04719,0.037365,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,464744251,Location,Singapore,0.978348,1,0.962426,0,neutral,0.145206,0.462067,0.085769,0.146809,0.171285,,,Singapore,http://dbpedia.org/resource/Singapore
+1,461594907,Quantity,2.5 hours,0.958279,1,0.8,0.557481,positive,0.416109,0.205261,0.129976,0.029366,0.054528,,,,
+1,461594907,Location,Singapore,0.555366,1,0.980729,0.475892,positive,0.067583,0.609764,0.086411,0.070325,0.129276,,,Singapore,http://dbpedia.org/resource/Singapore
+1,461594907,Facility,dore restaurant,0.312247,1,0.307159,0.985678,positive,0.022587,0.90999,0.048523,0.00945,0.008185,,,,
+1,459449034,Location,Singapore,0.978348,1,0.97095,0.445667,positive,0.041427,0.68108,0.135774,0.067249,0.032213,,,Singapore,http://dbpedia.org/resource/Singapore
+1,458820954,Location,Singapore,0.963296,2,0.999999,0.601234,positive,0.209216,0.624871,0.074996,0.047268,0.06811,,,Singapore,http://dbpedia.org/resource/Singapore
+1,458820954,Quantity,12-day,0.590827,1,0.8,0.430906,positive,0.190425,0.695609,0.040891,0.015258,0.017061,,,,
+1,458820954,Location,China,0.447862,1,0.995864,0.601234,positive,0.344038,0.448059,0.129124,0.035341,0.041936,,,,
+1,458820954,Location,India,0.447761,1,0.999703,0.812443,positive,0.344038,0.448059,0.129124,0.035341,0.041936,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,453877775,Person,perankan,0.963296,1,0.888816,0.97182,positive,0.055581,0.744905,0.133202,0.030062,0.007465,,,,
+1,453877775,Facility,sister museum of the asian civilisation museum,0.435326,1,0.424714,0.975033,positive,0.119143,0.646919,0.079672,0.015835,0.184027,,,,
+1,443633545,Location,Singapore,0.978348,1,0.999792,0.761942,positive,0.117682,0.453596,0.083777,0.123833,0.147252,,,Singapore,http://dbpedia.org/resource/Singapore
+1,436075556,Facility,Peranakan Museum,0.978348,1,0.989116,0.965872,positive,0.120955,0.266091,0.387348,0.059474,0.291258,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,432594544,Quantity,20 mins,0.958279,1,0.8,0,neutral,0.032824,0.454404,0.059012,0.033757,0.15431,,,,
+1,432594544,Quantity,35 mins,0.912761,1,0.8,0,neutral,0.631676,0.02962,0.231962,0.065677,0.297016,,,,
+1,432594544,Company,Google,0.374931,1,0.998056,0,neutral,0.032824,0.454404,0.059012,0.033757,0.15431,,"['AcademicInstitution', 'AwardPresentingOrganization', 'OperatingSystemDeveloper', 'ProgrammingLanguageDeveloper', 'SoftwareDeveloper', 'VentureFundedCompany']",Google,http://dbpedia.org/resource/Google
+1,432212217,Facility,Peranakan Museum,0.963296,1,0.978813,0.958603,positive,0.106885,0.748002,0.036364,0.070291,0.056506,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,432212217,Location,Singapore,0.361987,1,0.990776,0.958603,positive,0.106885,0.748002,0.036364,0.070291,0.056506,,,Singapore,http://dbpedia.org/resource/Singapore
+1,429893856,Facility,Peranakan Museum,0.958279,1,0.960815,0.732495,positive,0.064161,0.521807,0.109131,0.054791,0.104072,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,429893856,Quantity,1 hour,0.57627,1,0.8,0.99859,positive,0.151558,0.538427,0.153189,0.058733,0.091222,,,,
+1,429893856,Location,Singapore,0.378407,1,0.971772,0.732495,positive,0.064161,0.521807,0.109131,0.054791,0.104072,,,Singapore,http://dbpedia.org/resource/Singapore
+1,421983190,Location,Singapore,0.963296,1,0.998174,0,neutral,0.028313,0.809503,0.037146,0.05899,0.030079,,,Singapore,http://dbpedia.org/resource/Singapore
+1,421983190,Location,Malaysia,0.305034,1,0.998868,0,neutral,0.028313,0.809503,0.037146,0.05899,0.030079,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,414176971,Location,Singapore,0.978348,3,0.999999,0.494979,positive,0.052451,0.756456,0.02585,0.020199,0.127155,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,414176971,Location,Hokkien,0.429676,1,0.534898,0.0,neutral,0.152884,0.602895,0.079001,0.057121,0.07624,,,,
+1,414176971,Location,Fujian,0.381953,1,0.892888,0.0,neutral,0.152884,0.602895,0.079001,0.057121,0.07624,,,,
+1,412161678,Person,Joan,0.958279,1,0.990849,0.0,neutral,0.252112,0.417759,0.143956,0.020717,0.037984,,,,
+1,412161678,Location,China,0.368895,1,0.999935,0.750581,positive,0.129185,0.70045,0.055691,0.046734,0.017447,,,,
+1,412161678,Location,India,0.344738,1,0.998514,0.750581,positive,0.129185,0.70045,0.055691,0.046734,0.017447,,,,
+1,399880899,Location,south east Asian,0.958279,1,0.306127,0.720615,positive,0.145292,0.472082,0.056557,0.022671,0.028211,,,,
+1,399880899,Location,Singapore,0.408597,1,0.949014,0.0,neutral,0.112572,0.555197,0.120877,0.006927,0.063023,,,Singapore,http://dbpedia.org/resource/Singapore
+1,399880899,Quantity,two hours,0.322634,1,0.8,-0.382378,negative,0.340839,0.311115,0.161535,0.081205,0.16509,,,,
+1,395756745,Person,Mrs Lee Kuan Yew,0.963296,1,0.785527,0.0,neutral,0.131866,0.343347,0.103753,0.109593,0.165663,,,,
+1,395756745,Quantity,$4,0.839135,1,0.8,0.928678,positive,0.079035,0.396983,0.04667,0.077566,0.157181,,,,
+1,387713214,Quantity,15 minutes,0.978348,1,0.8,-0.995927,negative,0.636715,0.026688,0.151524,0.159164,0.294196,,,,
+1,386818788,Location,Singapore,0.978348,1,0.998908,0.900153,positive,0.138127,0.28822,0.127441,0.122277,0.174086,,,Singapore,http://dbpedia.org/resource/Singapore
+1,375633159,Location,Singapore,0.9999,2,0.999681,0.913572,positive,0.145424,0.766121,0.045735,0.022356,0.03215,,,Singapore,http://dbpedia.org/resource/Singapore
+1,364456790,Person,Perankan,0.958279,1,0.378163,0.325816,positive,0.233407,0.707248,0.044319,0.019104,0.017605,,,,
+1,364456790,Person,daren,0.3573,1,0.918936,0.514156,positive,0.062338,0.723171,0.010508,0.091252,0.137108,,,,
+1,364456790,Location,china,0.048436,1,0.955329,0.961789,positive,0.173869,0.716319,0.048469,0.005381,0.031389,,"['Region', 'AdministrativeDivision', 'Country', 'GovernmentalJurisdiction', 'Kingdom', 'FilmScreeningVenue']",China,http://dbpedia.org/resource/China
+1,363594929,Location,Singapore,0.978348,1,0.998987,0.954295,positive,0.249071,0.626187,0.059099,0.010283,0.042472,,,Singapore,http://dbpedia.org/resource/Singapore
+1,352984655,Quantity,2hours,0.963296,1,0.8,0.956789,positive,0.092293,0.739137,0.017731,0.023517,0.040691,,,,
+1,352984655,Quantity,1 hour,0.275066,1,0.8,0.322092,positive,0.158309,0.469082,0.112264,0.066484,0.209149,,,,
+1,351457790,Facility,Peranakan building,0.978348,1,0.410621,0.999141,positive,0.012768,0.415636,0.061317,0.01985,0.032207,,,,
+1,348647211,Person,nonya,0.954265,1,0.884766,0.945129,positive,0.345785,0.372386,0.10399,0.122567,0.149835,,,,
+1,348647211,Quantity,one-hour,0.827915,1,0.8,0.877861,positive,0.292132,0.551652,0.081866,0.005711,0.068148,,,,
+1,348647211,Quantity,Three hours,0.737705,1,0.8,0.691069,positive,0.366234,0.370974,0.074624,0.020044,0.096014,,,,
+1,348647211,Quantity,$6,0.727619,1,0.8,0.0,neutral,0.222463,0.068061,0.034763,0.11083,0.11432,,,,
+1,348647211,Location,Singapore,0.576083,1,0.96683,0.999187,positive,0.006284,0.979156,0.00383,0.005619,0.004127,,,Singapore,http://dbpedia.org/resource/Singapore
+1,342973812,Location,Singapore,0.978348,1,0.993096,0.546337,positive,0.065009,0.436701,0.087852,0.078331,0.354086,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341430618,Facility,Peranakan museum,0.958279,1,0.936012,0.91441,positive,0.147018,0.689355,0.054975,0.016487,0.059965,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,341430618,Location,Singapore,0.522113,1,0.996447,0.91441,positive,0.147018,0.689355,0.054975,0.016487,0.059965,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341430618,Quantity,2 years,0.496474,1,0.8,0.91441,positive,0.147018,0.689355,0.054975,0.016487,0.059965,,,,
+1,339812819,Organization,Tao Nan School,0.963296,1,0.548182,0,neutral,0.122148,0.401957,0.119349,0.042303,0.049425,,['School'],Tao_Nan_School,http://dbpedia.org/resource/Tao_Nan_School
+1,339812819,Location,Singapore,0.39382,1,0.993432,0,neutral,0.122148,0.401957,0.119349,0.042303,0.049425,,,Singapore,http://dbpedia.org/resource/Singapore
+1,337091217,Location,Singapore,0.978348,1,0.871078,0.83537,positive,0.221795,0.633213,0.078422,0.025037,0.025666,,,Singapore,http://dbpedia.org/resource/Singapore
+1,336346316,Location,Singapore,0.978348,1,0.996451,0,neutral,0.33994,0.421339,0.156683,0.10245,0.028231,,,Singapore,http://dbpedia.org/resource/Singapore
+1,470944547,Location,Singapore,0.9999,2,0.999948,0.987671,positive,0.029977,0.853009,0.023678,0.027197,0.022325,,,Singapore,http://dbpedia.org/resource/Singapore
+1,432789516,Location,china,0.978348,1,0.96311,0,neutral,0.016159,0.954394,0.010598,0.003448,0.01106,,,,
+1,351728898,Location,Singapore,0.978348,1,0.964401,0.784284,positive,0.068164,0.42782,0.030325,0.036714,0.031774,,,Singapore,http://dbpedia.org/resource/Singapore
+1,699289036,Facility,Malaysian cultural museum,0.978348,1,0.348259,0,neutral,0.07418,0.416172,0.116764,0.10615,0.127475,,,,
+1,672867364,Location,Indonesia,0.95577,1,0.999938,0.0,neutral,0.153432,0.139524,0.046106,0.198668,0.055468,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,672867364,Location,Malaysia,0.949846,1,0.999906,0.0,neutral,0.153432,0.139524,0.046106,0.198668,0.055468,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,672867364,Location,Singapore,0.895711,1,0.978041,0.0,neutral,0.153432,0.139524,0.046106,0.198668,0.055468,,,Singapore,http://dbpedia.org/resource/Singapore
+1,672867364,Facility,Peranakan Museum,0.230395,1,0.893812,0.587114,positive,0.040381,0.131965,0.080693,0.281793,0.260974,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,645318005,Location,Singapore,0.978348,1,0.920022,0,neutral,0.128671,0.309473,0.062707,0.122733,0.068868,,,Singapore,http://dbpedia.org/resource/Singapore
+1,618431799,Location,Southeast Asia,0.978348,1,0.474406,0.728007,positive,0.180901,0.689677,0.052084,0.086093,0.0237,,,,
+1,604284305,Location,Singapore,0.978348,1,0.995723,0.951565,positive,0.196047,0.625209,0.034868,0.065779,0.06319,,,Singapore,http://dbpedia.org/resource/Singapore
+1,593793729,Facility,Peranakan Museum,0.958279,1,0.934975,0.987662,positive,0.020501,0.924145,0.022297,0.009498,0.023787,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,593793729,Facility,Peranakan Hall,0.489597,1,0.92558,0.865946,positive,0.010131,0.717196,0.057853,0.170274,0.065414,,,,
+1,593793729,Facility,Museum,0.247848,1,0.80932,0.71533,positive,0.18024,0.445392,0.188155,0.064179,0.155544,,"['Location', 'Building', 'Museum']",Musaeum,http://dbpedia.org/resource/Musaeum
+1,578513341,Facility,Peranakan museum,0.978348,1,0.855165,0,neutral,0.052116,0.434852,0.155192,0.081612,0.051553,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,572325961,Facility,Peranakan Museum,0.952007,1,0.978011,0.0,neutral,0.098015,0.326768,0.317394,0.116112,0.097433,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,572325961,Facility,Tao Nan School Building,0.914542,1,0.477396,0.0,neutral,0.098015,0.326768,0.317394,0.116112,0.097433,,,,
+1,572325961,Facility,Penang Peranakan Museum,0.813733,1,0.676105,0.952592,positive,0.130849,0.649546,0.023196,0.008327,0.045843,,,,
+1,572325961,Facility,Singapore Peranakan Museum,0.741085,1,0.529924,0.952592,positive,0.130849,0.649546,0.023196,0.008327,0.045843,,,,
+1,572325961,Location,Malacca,0.10575,1,0.999312,0.0,neutral,0.156235,0.674749,0.096049,0.06612,0.056945,,,,
+1,572325961,Location,Penang,0.099498,1,0.999182,0.0,neutral,0.156235,0.674749,0.096049,0.06612,0.056945,,,,
+1,572325961,Location,Singapore,0.06436,1,0.999817,0.0,neutral,0.156235,0.674749,0.096049,0.06612,0.056945,,,Singapore,http://dbpedia.org/resource/Singapore
+1,572325961,Location,Indonesia,0.060553,1,0.999392,0.680764,positive,0.156235,0.674749,0.096049,0.06612,0.056945,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,557890669,Facility,Peranakan museum,0.958279,1,0.856475,0.52423,positive,0.165788,0.26546,0.172989,0.116214,0.177169,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,557890669,GeographicFeature,Emerald Hill,0.753615,1,0.921166,0.52423,positive,0.165788,0.26546,0.172989,0.116214,0.177169,,,,
+1,557890669,Person,Tao Nan,0.043813,1,0.779049,0.52423,positive,0.165788,0.26546,0.172989,0.116214,0.177169,,,,
+1,557242460,Quantity,1 hour,0.978348,1,0.8,0,neutral,0.093363,0.414546,0.103574,0.142389,0.252277,,,,
+1,553243001,Organization,Raffles City Rotary club,0.978348,1,0.516312,0.969707,positive,0.061615,0.812816,0.038251,0.023256,0.03223,,,,
+1,552502506,Quantity,10 minutes,0.978348,1,0.8,0.567055,positive,0.260383,0.302106,0.224579,0.086409,0.239986,,,,
+1,550168757,Facility,Peranakan museum,0.978348,1,0.834607,0.561534,positive,0.080242,0.625899,0.068085,0.094328,0.096408,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,547676081,Person,Thomas Tay,0.978348,1,0.997912,0.996756,positive,0.110042,0.780612,0.025674,0.009307,0.02745,,,,
+1,517498313,Location,Singapore,0.978348,1,0.845656,0.803184,positive,0.057564,0.824959,0.088536,0.049089,0.004352,,,Singapore,http://dbpedia.org/resource/Singapore
+1,501540317,Facility,Peranakan Museum,0.963296,1,0.990015,0,neutral,0.049624,0.578593,0.198758,0.058449,0.110705,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,501540317,Location,Singapore,0.352577,1,0.863822,0,neutral,0.198743,0.467307,0.103949,0.071514,0.031377,,,Singapore,http://dbpedia.org/resource/Singapore
+1,495732050,Quantity,10 minutes,0.963296,1,0.8,0.0,neutral,0.260825,0.21316,0.148139,0.209414,0.238648,,,,
+1,495732050,Quantity,2 hours,0.831323,1,0.8,0.773938,positive,0.131397,0.2549,0.043694,0.094732,0.138719,,,,
+1,492302895,Location,Singapore,0.978348,2,0.999965,0.437774,positive,0.095843,0.593074,0.029361,0.022032,0.021777,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,492302895,Facility,Fort Canning Park,0.485958,1,0.98041,0.0,neutral,0.049995,0.594148,0.07009,0.033771,0.035164,,,,
+1,490534943,Facility,Peranakan Museum,0.963296,1,0.970467,0,neutral,0.29289,0.423248,0.091252,0.056887,0.067787,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,490534943,Quantity,two years,0.379867,1,0.8,0,neutral,0.29289,0.423248,0.091252,0.056887,0.067787,,,,
+1,490028093,Location,Singapore,0.978348,1,0.984107,0.988447,positive,0.063189,0.498564,0.102403,0.059989,0.040827,,,Singapore,http://dbpedia.org/resource/Singapore
+1,487315818,GeographicFeature,Malay peninsula,0.95577,1,0.286786,0,neutral,0.165233,0.60628,0.107371,0.082906,0.051229,,,Malay_Peninsula,http://dbpedia.org/resource/Malay_Peninsula
+1,487315818,Location,malacca,0.764431,1,0.994108,0,neutral,0.102136,0.067436,0.054614,0.0305,0.037837,,,,
+1,487315818,Location,Penang,0.660475,1,0.985903,0,neutral,0.102136,0.067436,0.054614,0.0305,0.037837,,,,
+1,487315818,Location,Singapore,0.567289,1,0.995697,0,neutral,0.102136,0.067436,0.054614,0.0305,0.037837,,,Singapore,http://dbpedia.org/resource/Singapore
+1,473135721,Person,Nonya,0.963296,1,0.967917,0,neutral,0.263874,0.480009,0.189372,0.058001,0.045194,,,,
+1,473135721,Facility,Dhoby Ghaut MRT station,0.109419,1,0.496901,0,neutral,0.16604,0.145137,0.090832,0.07179,0.131264,,,,
+1,471850369,Location,Singapore,0.963296,1,0.986238,0.0,neutral,0.062975,0.20381,0.101728,0.098783,0.056413,,,Singapore,http://dbpedia.org/resource/Singapore
+1,471850369,Person,Thomas,0.421699,1,0.994571,0.980679,positive,0.070602,0.769203,0.041387,0.009093,0.031383,,,,
+1,470079117,Location,Singapore,0.978348,1,0.994648,0.911132,positive,0.13007,0.625678,0.07684,0.131189,0.043318,,,Singapore,http://dbpedia.org/resource/Singapore
+1,460735115,Location,Singapore,0.9999,2,0.999976,0.794386,positive,0.148958,0.178969,0.068647,0.129022,0.133763,,,Singapore,http://dbpedia.org/resource/Singapore
+1,457482056,Quantity,2 hrs,0.978348,1,0.8,0.978873,positive,0.269936,0.248581,0.067058,0.05204,0.26296,,,,
+1,456630121,Location,Singapore,0.963296,1,0.992207,0.785899,positive,0.169466,0.509259,0.042041,0.087114,0.054951,,,Singapore,http://dbpedia.org/resource/Singapore
+1,456630121,Location,South Asia,0.78374,1,0.88608,0.785899,positive,0.169466,0.509259,0.042041,0.087114,0.054951,,,,
+1,449822597,Organization,Armenian Church,0.963296,1,0.627043,0,neutral,0.136101,0.312095,0.446822,0.112966,0.025519,,,,
+1,449822597,Location,Singapore,0.808027,1,0.999237,0,neutral,0.070065,0.419571,0.086353,0.125773,0.102028,,,Singapore,http://dbpedia.org/resource/Singapore
+1,444007557,Location,singapore,0.960286,2,0.995873,0.879922,positive,0.184316,0.510547,0.043684,0.087099,0.180854,,,Singapore,http://dbpedia.org/resource/Singapore
+1,444007557,Facility,City hall,0.717824,1,0.930847,0.897639,positive,0.031386,0.430414,0.02438,0.039616,0.069789,,,,
+1,444007557,Facility,Peranakan Museum,0.712356,1,0.914376,0.658945,positive,0.11197,0.339731,0.374638,0.259985,0.039264,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,444007557,Location,Capitol,0.610495,1,0.275446,0.860418,positive,0.424254,0.266301,0.095051,0.132201,0.210033,,,,
+1,444007557,Quantity,one hour,0.005935,1,0.8,0.0,neutral,0.259731,0.445348,0.105476,0.073072,0.187071,,,,
+1,434795822,Location,Singapore,0.978348,1,0.997519,0.975298,positive,0.131306,0.777152,0.043304,0.00631,0.023777,,,Singapore,http://dbpedia.org/resource/Singapore
+1,432287164,Organization,Chinese house,0.978348,1,0.097207,0,neutral,0.257068,0.460763,0.307813,0.032286,0.017053,,,,
+1,430217236,Quantity,one day,0.978348,1,0.8,0.605186,positive,0.281936,0.376314,0.183728,0.035576,0.232393,,,,
+1,425272368,Location,Singapore,0.978348,1,0.979892,0.83568,positive,0.186008,0.561172,0.054641,0.05441,0.109346,,,Singapore,http://dbpedia.org/resource/Singapore
+1,417333822,Location,South East Asia,0.978348,1,0.567651,0.996752,positive,0.192517,0.438694,0.190485,0.080732,0.08937,,,,
+1,415264336,Facility,Peranakan Museum,0.95577,1,0.990721,0.879942,positive,0.257423,0.518781,0.043719,0.04478,0.173357,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,415264336,Location,Singapore,0.476211,1,0.979312,0.879942,positive,0.257423,0.518781,0.043719,0.04478,0.173357,,,Singapore,http://dbpedia.org/resource/Singapore
+1,415264336,Location,Malaya,0.337244,1,0.969227,0.0,neutral,0.035442,0.365872,0.012622,0.060405,0.084306,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,415264336,Location,Indonesia,0.239511,1,0.999944,0.0,neutral,0.035442,0.365872,0.012622,0.060405,0.084306,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,414749090,Facility,Fantastic museum,0.958279,1,0.586729,0.971386,positive,0.026939,0.727678,0.037075,0.024821,0.018734,,,,
+1,414749090,Quantity,$10,0.449101,1,0.8,0.985657,positive,0.02485,0.758049,0.008045,0.019742,0.016374,,,,
+1,414749090,HealthCondition,cold,0.019658,1,0.632423,-0.807527,negative,0.139727,0.129523,0.248916,0.139273,0.123406,,,,
+1,414543206,Person,Dun,0.978348,1,0.752305,0.923252,positive,0.341598,0.291575,0.422856,0.031329,0.031147,,,,
+1,399407301,HealthCondition,blindness,0.978348,1,0.894783,0.982848,positive,0.24034,0.496783,0.14126,0.097674,0.057016,,,,
+1,392789902,Location,Penang,0.963296,1,0.998818,0.975261,positive,0.087174,0.740449,0.045462,0.037066,0.057735,,,,
+1,392789902,Location,Indonesia,0.785513,1,0.999331,0.975261,positive,0.087174,0.740449,0.045462,0.037066,0.057735,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,389761220,Facility,Peranakan Museum,0.952545,2,0.999331,0.865642,positive,0.106905,0.759217,0.059921,0.016953,0.090326,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,389761220,Location,Singapore,0.708436,3,1.0,0.669193,positive,0.037421,0.672474,0.017008,0.014902,0.089628,,,Singapore,http://dbpedia.org/resource/Singapore
+1,389761220,Facility,British Malaya,0.609263,1,0.124759,0.0,neutral,0.033819,0.320525,0.010182,0.014068,0.04561,,,,
+1,389761220,Location,Malaysia,0.513449,2,1.0,0.591979,positive,0.046032,0.474647,0.014206,0.019149,0.061937,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,389761220,Location,Indonesia,0.503793,2,0.999999,0.591979,positive,0.046032,0.474647,0.014206,0.019149,0.061937,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,389761220,Location,Thailand,0.456062,2,0.99999,0.591979,positive,0.073081,0.437363,0.004394,0.008955,0.139468,,"['Country', 'GovernmentalJurisdiction', 'Kingdom']",Thailand,http://dbpedia.org/resource/Thailand
+1,389761220,Location,Dutch East Indies,0.404386,1,0.276244,0.0,neutral,0.033819,0.320525,0.010182,0.014068,0.04561,,,Dutch_East_Indies,http://dbpedia.org/resource/Dutch_East_Indies
+1,389761220,Location,Myanmar,0.374401,2,0.99981,0.0,neutral,0.047666,0.488131,0.099456,0.08819,0.182027,,,Burma,http://dbpedia.org/resource/Burma
+1,389761220,Location,Peninsular,0.360947,1,0.975543,0.0,neutral,0.033819,0.320525,0.010182,0.014068,0.04561,,,,
+1,389761220,Company,Wikipedia,0.285725,1,0.669547,0.0,neutral,0.033819,0.320525,0.010182,0.014068,0.04561,,,,
+1,389761220,Location,Phuket,0.25457,1,0.954322,0.0,neutral,0.072474,0.280281,0.003035,0.00652,0.134765,,,,
+1,389761220,Location,Venice,0.088808,1,0.998978,0.861828,positive,0.129082,0.664905,0.019568,0.026051,0.16705,,,,
+1,389761220,Location,Italy,0.072704,1,0.99965,0.861828,positive,0.129082,0.664905,0.019568,0.026051,0.16705,,,,
+1,389761220,Person,kasut manek,0.070222,1,0.968951,0.43742,positive,0.239817,0.274197,0.113484,0.241187,0.325001,,,,
+1,379627412,Location,Singapore,0.978348,1,0.957263,0.990391,positive,0.156212,0.584608,0.024285,0.092669,0.043492,,,Singapore,http://dbpedia.org/resource/Singapore
+1,376859987,Facility,Peranakan Museum,0.978348,1,0.738721,0.875424,positive,0.046692,0.728584,0.033567,0.044924,0.062826,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,374426803,Location,Singapore,0.958279,1,0.989051,0.98221,positive,0.043302,0.73338,0.033642,0.194256,0.038288,,,Singapore,http://dbpedia.org/resource/Singapore
+1,374426803,Location,indochina,0.81935,1,0.982673,0.98221,positive,0.043302,0.73338,0.033642,0.194256,0.038288,,,,
+1,374426803,Location,Asia,0.529609,1,0.987716,0.98221,positive,0.043302,0.73338,0.033642,0.194256,0.038288,,,,
+1,374371121,Location,Singapore,0.978348,1,0.964739,0.855236,positive,0.061787,0.555278,0.133996,0.016756,0.072124,,,Singapore,http://dbpedia.org/resource/Singapore
+1,366972738,Location,Singapore,0.978348,1,0.997687,0.954701,positive,0.082349,0.754321,0.017175,0.040113,0.018354,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355400298,Facility,Truly excellent Museum,0.963296,1,0.304457,0.98376,positive,0.011827,0.870833,0.008594,0.085345,0.013554,,,,
+1,355400298,Location,Singapore,0.353482,2,0.999999,0.94104,positive,0.106564,0.741514,0.04175,0.005597,0.042442,,,Singapore,http://dbpedia.org/resource/Singapore
+1,354021369,Location,Singapore,0.978348,1,0.999313,0,neutral,0.041367,0.478166,0.101117,0.075694,0.083367,,,Singapore,http://dbpedia.org/resource/Singapore
+1,344709125,Location,Singapore,0.978348,1,0.999094,0.726235,positive,0.053587,0.48265,0.141018,0.078036,0.157326,,,Singapore,http://dbpedia.org/resource/Singapore
+1,342234888,Location,Singapore,0.978348,1,0.996795,0.832524,positive,0.125567,0.624893,0.014713,0.049433,0.079405,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341339598,Facility,Peranakan Museum,0.978348,1,0.926821,0,neutral,0.013743,0.772896,0.111968,0.045929,0.029183,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,339942835,Location,Singapore,0.978348,1,0.970078,0.956736,positive,0.031611,0.699396,0.046675,0.07386,0.035902,,,Singapore,http://dbpedia.org/resource/Singapore
+1,339804012,Facility,Peranakan Museum,0.963296,1,0.930991,0.0,neutral,0.208598,0.182081,0.058247,0.070487,0.084649,,"['Location', 'Building', 'Museum']",Peranakan_Museum,http://dbpedia.org/resource/Peranakan_Museum
+1,339804012,Quantity,two hours,0.446441,1,0.8,0.998267,positive,0.098746,0.809127,0.023408,0.015306,0.06481,,,,

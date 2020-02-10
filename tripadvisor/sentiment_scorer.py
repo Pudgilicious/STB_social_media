@@ -52,7 +52,13 @@ class SentimentScorer:
         'disambiguation.dbpedia_resource': 'DISAMBIGUATION_RESOURCE'
     }
 
-    def __init__(self, target_folder, continue_in_folder=None, continue_from_poi_index=None, continue_from_row_index=None):
+    def __init__(
+            self,
+            target_folder,
+            continue_in_folder=None,
+            continue_from_poi_index=None,
+            continue_from_row_index=None
+    ):
         self.target_folder = target_folder
         self.continue_in_folder = continue_in_folder
         self.continue_from_poi_index = continue_from_poi_index
@@ -139,7 +145,7 @@ class SentimentScorer:
             self.reset_per_poi_variables()
 
         self.fsm_state = 4
-        print("Scoring has ended.")
+        print("Scoring complete.")
 
     def score_sentiments_1_poi(self):
         if self.current_reviews_df is None:

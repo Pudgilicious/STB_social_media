@@ -1,0 +1,254 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+1,691737417,Location,Singapore,0.978348,1,0.999528,0,neutral,0.310586,0.278265,0.061466,0.045721,0.075977,,,Singapore,http://dbpedia.org/resource/Singapore
+1,684280630,Organization,Sultan Mosque,0.963296,1,0.31523,-0.360687,negative,0.168726,0.340976,0.171516,0.176204,0.155627,,,,
+1,684280630,Location,Singapore,0.713011,1,0.999809,0.0,neutral,0.178121,0.418886,0.088762,0.083456,0.165218,,,Singapore,http://dbpedia.org/resource/Singapore
+1,677273754,Person,Haji Lane,0.958279,1,0.692159,0.0,neutral,0.159126,0.255138,0.051521,0.088544,0.522063,,,,
+1,677273754,Organization,Malaysian Heritage Centre,0.269808,1,0.722913,-0.535618,negative,0.250913,0.465797,0.148275,0.082577,0.076252,,,,
+1,677273754,Facility,Sultan Mosque,0.172541,1,0.396088,-0.535618,negative,0.250913,0.465797,0.148275,0.082577,0.076252,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,675165229,Location,singapore,0.978348,1,0.942138,0.87832,positive,0.173008,0.343745,0.050839,0.061619,0.06767,,,Singapore,http://dbpedia.org/resource/Singapore
+1,650832092,Location,Singapore city,0.963296,1,0.591545,0.911754,positive,0.424247,0.198659,0.017247,0.017962,0.015067,,,Singapore,http://dbpedia.org/resource/Singapore
+1,650832092,Quantity,3 hrs,0.153222,1,0.8,0.0,neutral,0.287504,0.465788,0.076188,0.057374,0.123869,,,,
+1,648054278,Location,Masjid sultan,0.95577,1,0.403607,0.922272,positive,0.108411,0.781087,0.016532,0.015552,0.101414,,,,
+1,648054278,Facility,rich and good cake shop,0.777185,1,0.14539,0.922272,positive,0.108411,0.781087,0.016532,0.015552,0.101414,,,,
+1,648054278,Location,kandahar,0.558311,1,0.874658,0.922272,positive,0.108411,0.781087,0.016532,0.015552,0.101414,,,,
+1,648054278,Location,singapore,0.479708,2,0.999512,0.0,neutral,0.113183,0.251329,0.043899,0.395676,0.312178,,,Singapore,http://dbpedia.org/resource/Singapore
+1,619618212,Location,Singapore,0.978348,1,0.998623,0.977103,positive,0.104548,0.651467,0.074883,0.053234,0.095803,,,Singapore,http://dbpedia.org/resource/Singapore
+1,618557450,Location,Masjid sultan,0.963296,1,0.518875,0.0,neutral,0.107793,0.049194,0.19313,0.091494,0.07585,,,,
+1,618557450,Location,singapore,0.561581,1,0.998695,0.620062,positive,0.404742,0.197409,0.10544,0.313783,0.061662,,,Singapore,http://dbpedia.org/resource/Singapore
+1,603133213,Location,Singapore,0.978348,1,0.998877,0,neutral,0.270272,0.317412,0.124966,0.077911,0.060346,,,Singapore,http://dbpedia.org/resource/Singapore
+1,600723374,Person,Mustafa,0.978348,1,0.978549,0.928427,positive,0.052639,0.714558,0.132359,0.006854,0.03728,,,,
+1,582622709,Location,India,0.978348,1,0.969025,0.765351,positive,0.226633,0.440915,0.13464,0.044271,0.104248,,,,
+1,560152121,Location,Singapore,0.978348,1,0.998798,0.807248,positive,0.077307,0.355718,0.118808,0.232062,0.127295,,,Singapore,http://dbpedia.org/resource/Singapore
+1,554885954,Person,Haji lane,0.963296,1,0.926552,0.910776,positive,0.038955,0.71216,0.067685,0.061092,0.109744,,,,
+1,554885954,Person,Sultan mosque,0.770927,1,0.457847,0.910776,positive,0.038955,0.71216,0.067685,0.061092,0.109744,,,,
+1,550928296,Location,Singapore,0.978348,2,0.999997,0.961641,positive,0.115377,0.271912,0.221368,0.07966,0.138292,,,Singapore,http://dbpedia.org/resource/Singapore
+1,550928296,Location,masjid sultan,0.40702,1,0.252753,0.961641,positive,0.115377,0.271912,0.221368,0.07966,0.138292,,,,
+1,455087605,Quantity,10-min,0.95577,1,0.8,0.0,neutral,0.123859,0.588113,0.036244,0.089585,0.084534,,,,
+1,455087605,Facility,Bugis Junction shopping centre & MRT station,0.924824,1,0.357507,-0.777665,negative,0.123859,0.588113,0.036244,0.089585,0.084534,,,,
+1,455087605,Quantity,500 metres,0.762877,1,0.8,0.665402,positive,0.252875,0.487762,0.083012,0.029347,0.159544,,,,
+1,455087605,Location,Kampong,0.711655,1,0.91153,0.975977,positive,0.010567,0.799357,0.04912,0.008289,0.022659,,,,
+1,446181161,Location,Singapore,0.978348,2,0.999926,0.0,neutral,0.189613,0.217874,0.068726,0.309162,0.071559,,,Singapore,http://dbpedia.org/resource/Singapore
+1,446181161,Facility,Bugis Center,0.721454,1,0.540994,-0.823344,negative,0.191575,0.285547,0.136982,0.056582,0.127493,,,,
+1,443650627,GeographicFeature,Rochor River,0.958279,1,0.887764,0,neutral,0.363769,0.159747,0.070235,0.264629,0.098529,,"['Location', 'BodyOfWater', 'River']",Rochor_River,http://dbpedia.org/resource/Rochor_River
+1,443650627,Facility,Sultan Mosque,0.903711,1,0.208731,0,neutral,0.209377,0.204013,0.078551,0.195397,0.230255,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,443650627,Organization,Malay Cultural Centre,0.771198,1,0.58464,0,neutral,0.209377,0.204013,0.078551,0.195397,0.230255,,,,
+1,437419933,Location,Singapore,0.9999,2,0.998667,0,neutral,0.216618,0.202756,0.169738,0.083518,0.221451,,,Singapore,http://dbpedia.org/resource/Singapore
+1,405177576,Location,Singapore,0.978348,1,0.996161,0,neutral,0.130936,0.460192,0.074546,0.072397,0.051513,,,Singapore,http://dbpedia.org/resource/Singapore
+1,360546127,Location,Singapore,0.963296,1,0.997473,0,neutral,0.157654,0.152494,0.074117,0.438972,0.297254,,,Singapore,http://dbpedia.org/resource/Singapore
+1,360546127,Facility,Sultan mosque,0.43496,1,0.285858,0,neutral,0.371071,0.065789,0.411925,0.165344,0.099386,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,354468859,Organization,Malay Community,0.963296,1,0.27719,0.0,neutral,0.256404,0.370151,0.025228,0.067785,0.11714,,,,
+1,354468859,Facility,majestic Sultan Mosque,0.085981,1,0.380104,0.69964,positive,0.151392,0.420008,0.288089,0.042759,0.101645,,,,
+1,740921167,Facility,golden mosque,0.963296,1,0.322248,0.780536,positive,0.171094,0.587907,0.173151,0.035927,0.051074,,,Masjid_Al-Dahab,http://dbpedia.org/resource/Masjid_Al-Dahab
+1,740921167,Location,Singapore,0.009329,1,0.999516,0.789107,positive,0.129576,0.250836,0.040382,0.032828,0.064844,,,Singapore,http://dbpedia.org/resource/Singapore
+1,740312876,Facility,Blu Jazz Cafe,0.978348,1,0.623733,0.61858,positive,0.075374,0.34749,0.075375,0.087948,0.04257,,,,
+1,732632477,Location,singapore.also,0.978348,1,0.528896,0.678999,positive,0.162889,0.561869,0.138949,0.017986,0.034075,,,,
+1,695345627,Quantity,10 days,0.978348,1,0.8,0.59889,positive,0.235728,0.568717,0.088096,0.051128,0.050665,,,,
+1,691343124,Location,Singapore,0.978348,1,0.995433,0.858122,positive,0.025116,0.731189,0.021268,0.016562,0.021706,,,Singapore,http://dbpedia.org/resource/Singapore
+1,666929190,Location,Singapore,0.963296,1,0.989928,0,neutral,0.076404,0.072585,0.065721,0.167369,0.288882,,,Singapore,http://dbpedia.org/resource/Singapore
+1,666929190,Facility,Zam Zam,0.687906,1,0.902112,0,neutral,0.118564,0.454046,0.150576,0.101359,0.067943,,,,
+1,661751482,Quantity,$10,0.978348,2,0.96,0.908967,positive,0.083346,0.314221,0.047707,0.065876,0.053486,,,,
+1,661751482,Quantity,$6.50,0.540138,1,0.8,0.0,neutral,0.083346,0.314221,0.047707,0.065876,0.053486,,,,
+1,658922576,Location,Singapore,0.9999,2,0.999982,0.654311,positive,0.286823,0.603988,0.027431,0.060794,0.063529,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,650465675,Location,British East,0.953262,1,0.444338,0,neutral,0.252864,0.402928,0.111553,0.197925,0.08863,,,,
+1,650465675,Location,Singapore,0.925014,2,0.999887,0,neutral,0.132063,0.487885,0.067761,0.208156,0.149188,,,Singapore,http://dbpedia.org/resource/Singapore
+1,650465675,Person,Kampong,0.839398,1,0.691026,0,neutral,0.262257,0.359218,0.201529,0.029724,0.169816,,,,
+1,650465675,Location,Johor,0.63304,1,0.996296,0,neutral,0.252864,0.402928,0.111553,0.197925,0.08863,,,,
+1,650465675,Location,Malaysia,0.546766,1,0.99891,0,neutral,0.262257,0.359218,0.201529,0.029724,0.169816,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,650465675,Location,India,0.349783,1,0.696073,0,neutral,0.252864,0.402928,0.111553,0.197925,0.08863,,"['GovernmentalJurisdiction', 'Kingdom']",British_Raj,http://dbpedia.org/resource/British_Raj
+1,646709697,Location,Singapore,0.963296,1,0.999115,0.940943,positive,0.35631,0.433093,0.101605,0.026868,0.06882,,,Singapore,http://dbpedia.org/resource/Singapore
+1,646709697,Location,India,0.070037,1,0.939766,-0.442182,negative,0.360998,0.141768,0.164956,0.195375,0.177885,,,,
+1,644708730,Quantity,40 minute,0.978348,1,0.8,-0.97346,negative,0.438586,0.081257,0.111978,0.15394,0.425875,,,,
+1,640643975,Location,Singapore,0.978348,1,0.998628,0.988028,positive,0.027375,0.803818,0.023533,0.023773,0.015954,,,Singapore,http://dbpedia.org/resource/Singapore
+1,629029079,Facility,Sultan Mosque,0.963296,1,0.564845,0.991382,positive,0.085276,0.326286,0.103762,0.042045,0.086522,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,629029079,Location,Singapore,0.18563,1,0.994554,-0.825276,negative,0.453203,0.190021,0.130143,0.098092,0.132989,,,Singapore,http://dbpedia.org/resource/Singapore
+1,613347406,Location,Singapore,0.978348,1,0.990137,0.948609,positive,0.049917,0.69394,0.022298,0.015747,0.010861,,,Singapore,http://dbpedia.org/resource/Singapore
+1,607934405,Facility,Masjid Sultan Mosque,0.952007,1,0.393225,-0.591415,negative,0.15696,0.252457,0.149784,0.085006,0.172697,,,,
+1,607934405,Organization,Malay Heritage Centre,0.917724,1,0.743654,-0.591415,negative,0.15696,0.252457,0.149784,0.085006,0.172697,,,,
+1,607934405,Person,Sultan Husssein,0.869965,1,0.655339,-0.591415,negative,0.15696,0.252457,0.149784,0.085006,0.172697,,,,
+1,607934405,Quantity,40 years,0.545832,1,0.8,0.607478,positive,0.691366,0.225693,0.127609,0.034553,0.013626,,,,
+1,607934405,Company,East India Company,0.526108,1,0.313697,-0.591415,negative,0.15696,0.252457,0.149784,0.085006,0.172697,,"['ArmedForce', 'GovernmentalBody', 'SchoolFounder']",East_India_Company,http://dbpedia.org/resource/East_India_Company
+1,607934405,Location,Singapore,0.503706,1,0.991207,0.607478,positive,0.691366,0.225693,0.127609,0.034553,0.013626,,,Singapore,http://dbpedia.org/resource/Singapore
+1,607934405,Facility,Yellow House,0.478618,1,0.35588,0.0,neutral,0.069362,0.216735,0.510158,0.112927,0.125198,,,Beit_Beirut,http://dbpedia.org/resource/Beit_Beirut
+1,607934405,Location,Bali,0.284584,2,0.94799,0.485913,positive,0.067139,0.454712,0.128928,0.107523,0.21691,,,,
+1,600415540,Location,Kuala Lumpur,0.95577,1,0.91768,0.0,neutral,0.099919,0.1498,0.118222,0.029017,0.09008,,,,
+1,600415540,Location,Chinatown,0.471221,1,0.600517,0.948352,positive,0.108025,0.3508,0.135907,0.155171,0.109095,,,,
+1,600415540,Organization,Malay Heritage Centre,0.363506,1,0.464198,0.0,neutral,0.117222,0.097437,0.066754,0.145733,0.397885,,,,
+1,600415540,Location,India,0.340021,1,0.979687,0.948352,positive,0.108025,0.3508,0.135907,0.155171,0.109095,,,,
+1,595561392,Facility,zam zam,0.95577,1,0.538181,-0.501441,negative,0.042384,0.285095,0.231936,0.157658,0.104374,,,,
+1,595561392,Person,haji lane,0.58314,1,0.888086,-0.232683,negative,0.007926,0.282323,0.127916,0.335178,0.071551,,,,
+1,595561392,Location,bali,0.436877,1,0.617159,-0.501441,negative,0.042384,0.285095,0.231936,0.157658,0.104374,,,,
+1,595561392,Facility,blu jazz cafe,0.237252,1,0.869976,0.973004,positive,0.063615,0.838085,0.065076,0.009223,0.016871,,,,
+1,578475199,Location,Little India,0.963296,1,0.231571,0.725128,positive,0.027973,0.658174,0.086299,0.011704,0.025369,,,,
+1,578475199,Location,Singapore,0.024214,1,0.99774,0.0,neutral,0.112063,0.193049,0.110372,0.080729,0.089098,,,Singapore,http://dbpedia.org/resource/Singapore
+1,571644657,Person,Haji Lane,0.963296,1,0.878029,0.986378,positive,0.025387,0.822776,0.084318,0.015711,0.062522,,,,
+1,571644657,Location,Singapore,0.743762,1,0.993261,0.809662,positive,0.128648,0.589794,0.014601,0.002737,0.026772,,,Singapore,http://dbpedia.org/resource/Singapore
+1,570290887,Facility,Sultan Mosque,0.963296,1,0.216731,0,neutral,0.089263,0.410902,0.010974,0.013052,0.027604,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,570290887,Location,Singapore,0.558349,1,0.978135,0,neutral,0.089263,0.410902,0.010974,0.013052,0.027604,,,Singapore,http://dbpedia.org/resource/Singapore
+1,504634553,Facility,Sultan Mosque,0.963296,2,0.691784,-0.677655,negative,0.203403,0.275082,0.089703,0.222962,0.26221,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,504634553,Facility,Istana,0.802997,1,0.73928,0.0,neutral,0.173775,0.26294,0.065462,0.202911,0.086607,,,,
+1,504634553,Facility,Malay Palace,0.761151,1,0.931311,0.0,neutral,0.173775,0.26294,0.065462,0.202911,0.086607,,,,
+1,504634553,Location,Singapore,0.233682,1,0.998812,0.325652,positive,0.382436,0.253492,0.213656,0.05928,0.037723,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,502435840,Location,India,0.978348,1,0.793828,0.958698,positive,0.05524,0.582287,0.038835,0.04758,0.335947,,,,
+1,502171272,Person,us.they,0.978348,1,0.766891,-0.906887,negative,0.024932,0.193614,0.015188,0.037678,0.731909,,,,
+1,499313848,Quantity,1km,0.978348,1,0.8,0.867151,positive,0.004911,0.893948,0.025313,0.023678,0.030366,,,,
+1,499072716,Person,Haji Lane,0.978348,1,0.849681,0,neutral,0.126282,0.123158,0.167264,0.104885,0.308188,,,,
+1,481790803,Organization,Malay heritage centre,0.960286,2,0.730747,0.0,neutral,0.599172,0.125363,0.174734,0.038575,0.128189,,,,
+1,481790803,Quantity,three hours,0.664798,1,0.8,0.80224,positive,0.146434,0.472646,0.092489,0.070622,0.285074,,,,
+1,481790803,Location,Sultan,0.568713,1,0.563027,0.0,neutral,0.080852,0.189534,0.108407,0.1187,0.123526,,,,
+1,481790803,Location,Singapore,0.228644,1,0.955357,0.0,neutral,0.557105,0.049645,0.248897,0.071306,0.223316,,,Singapore,http://dbpedia.org/resource/Singapore
+1,481790803,Quantity,50%,0.002097,1,0.8,0.0,neutral,0.306581,0.173543,0.074652,0.035171,0.077974,,,,
+1,471776586,Facility,Kampong Glam Cafe,0.95577,1,0.389738,0.0,neutral,0.197599,0.468333,0.15137,0.028004,0.17209,,,,
+1,471776586,Quantity,10 minutes,0.727713,1,0.8,0.831751,positive,0.086093,0.790793,0.029975,0.043925,0.041248,,,,
+1,471776586,Facility,Masjid Sultan Mosque,0.150019,1,0.336861,0.0,neutral,0.206232,0.534359,0.056768,0.034751,0.103239,,,,
+1,471776586,Organization,Malay Heritage Centre,0.03166,1,0.693638,0.0,neutral,0.206232,0.534359,0.056768,0.034751,0.103239,,,,
+1,467467573,Quantity,30 minutes,0.978348,1,0.8,-0.901648,negative,0.297358,0.198459,0.234627,0.076436,0.389151,,,,
+1,464917021,Organization,Raffles Hospital,0.963296,1,0.48344,0,neutral,0.490913,0.141281,0.199793,0.095745,0.119005,,,,
+1,464917021,Location,Singapore,0.893841,1,0.999539,0,neutral,0.202181,0.529531,0.046189,0.070794,0.123116,,,Singapore,http://dbpedia.org/resource/Singapore
+1,462730469,Location,India,0.963296,1,0.981472,0.913399,positive,0.112238,0.734932,0.019734,0.073776,0.031329,,,,
+1,462730469,Location,Singapore,0.755263,1,0.998866,0.913399,positive,0.112238,0.734932,0.019734,0.073776,0.031329,,,Singapore,http://dbpedia.org/resource/Singapore
+1,456817171,Location,Singapore,0.978348,1,0.989045,0.56683,positive,0.471583,0.113843,0.137654,0.070003,0.064625,,,Singapore,http://dbpedia.org/resource/Singapore
+1,442264310,Facility,Bugis MRT station,0.953262,1,0.326523,0.0,neutral,0.16821,0.118487,0.232275,0.042924,0.126469,,,,
+1,442264310,Facility,Children Little Museum,0.651709,1,0.644712,0.493678,positive,0.067427,0.594621,0.093214,0.053166,0.030033,,,,
+1,442264310,Location,Sultan Mosque,0.419117,1,0.326366,0.0,neutral,0.12146,0.551554,0.154217,0.067669,0.122019,,,,
+1,442264310,Organization,Malay Heritage Centre,0.224569,1,0.245107,0.0,neutral,0.047468,0.317306,0.035625,0.041729,0.100195,,,,
+1,442264310,Quantity,$4,0.17373,1,0.8,0.0,neutral,0.047468,0.317306,0.035625,0.041729,0.100195,,,,
+1,442264310,Location,Singapore,0.158618,1,0.999015,0.0,neutral,0.12146,0.551554,0.154217,0.067669,0.122019,,,Singapore,http://dbpedia.org/resource/Singapore
+1,441434250,Facility,Sultans Mosque,0.978348,1,0.218841,-0.526053,negative,0.119057,0.51294,0.050186,0.063268,0.089409,,,,
+1,439798706,Person,Kampong Glam,0.954265,1,0.242109,0.745237,positive,0.164046,0.517858,0.022918,0.030804,0.020008,,,,
+1,439798706,GeographicFeature,Singapore River,0.508425,1,0.812362,0.0,neutral,0.107286,0.163776,0.145174,0.294427,0.283669,,"['Location', 'BodyOfWater']",Singapore_River,http://dbpedia.org/resource/Singapore_River
+1,439798706,Facility,Sultan Mosque,0.403052,1,0.539943,0.0,neutral,0.073433,0.547289,0.136145,0.063707,0.021766,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,439798706,Location,India,0.378656,1,0.952416,0.745237,positive,0.164046,0.517858,0.022918,0.030804,0.020008,,,,
+1,439798706,Location,Singapore,0.35317,1,0.986299,0.745237,positive,0.164046,0.517858,0.022918,0.030804,0.020008,,,Singapore,http://dbpedia.org/resource/Singapore
+1,437917351,Facility,Sultan Mosque,0.958279,1,0.499243,0.749444,positive,0.181758,0.413146,0.091829,0.123974,0.116298,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,437917351,Location,India,0.081337,1,0.911192,-0.62955,negative,0.202889,0.408673,0.126396,0.132491,0.157811,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,437917351,Location,Singapore,0.004663,1,0.997904,-0.891183,negative,0.21708,0.673667,0.116024,0.007617,0.006831,,,Singapore,http://dbpedia.org/resource/Singapore
+1,412167687,Facility,Sultan Mosque,0.963296,1,0.141811,0.999673,positive,0.183333,0.768477,0.019157,0.016251,0.016483,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,412167687,Location,Singapore,0.019846,1,0.987311,0.0,neutral,0.222483,0.181757,0.072939,0.214104,0.156045,,,Singapore,http://dbpedia.org/resource/Singapore
+1,404917021,Quantity,two hours,0.978348,1,0.8,0.973686,positive,0.172811,0.650734,0.107666,0.018864,0.071828,,,,
+1,393112171,Location,Singapore,0.963296,1,0.99902,0.731731,positive,0.145346,0.264656,0.091376,0.09468,0.084517,,,Singapore,http://dbpedia.org/resource/Singapore
+1,393112171,Facility,Sultan Mosque,0.599431,1,0.306517,0.0,neutral,0.162641,0.243617,0.142098,0.052513,0.105742,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,371085640,Location,Sultan Mosque,0.958279,1,0.350058,0,neutral,0.293399,0.237024,0.14902,0.090361,0.07151,,,,
+1,371085640,Location,Singapore,0.459732,1,0.994806,0,neutral,0.293399,0.237024,0.14902,0.090361,0.07151,,,Singapore,http://dbpedia.org/resource/Singapore
+1,371085640,Location,Little India,0.339876,1,0.522086,0,neutral,0.240496,0.098491,0.10267,0.08064,0.084607,,,,
+1,358572133,Facility,Sultan's palace,0.95577,1,0.193562,0.0,neutral,0.116984,0.269568,0.088256,0.145288,0.197687,,,,
+1,358572133,Facility,Malay Heritage museum,0.884081,1,0.437192,0.0,neutral,0.116984,0.269568,0.088256,0.145288,0.197687,,"['Location', 'Museum']",Malay_Heritage_Centre,http://dbpedia.org/resource/Malay_Heritage_Centre
+1,358572133,Location,Singapore,0.776152,3,0.999999,0.986905,positive,0.111194,0.633406,0.037758,0.018891,0.038028,,,Singapore,http://dbpedia.org/resource/Singapore
+1,358572133,Location,Sultan,0.772185,2,0.979525,0.0,neutral,0.092206,0.399946,0.051518,0.077875,0.123879,,,,
+1,352187622,Location,India,0.9999,2,0.997877,-0.714954,negative,0.2705,0.079863,0.092502,0.014236,0.092358,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,352013013,Quantity,2hrs,0.963296,1,0.8,0,neutral,0.107344,0.385711,0.082482,0.068646,0.453562,,,,
+1,352013013,Location,Turkey,0.173815,1,0.997171,0,neutral,0.169339,0.186682,0.115825,0.173452,0.081208,,"['Brand', 'Country', 'GovernmentalJurisdiction', 'ProjectParticipant']",Turkey,http://dbpedia.org/resource/Turkey
+1,337990683,Quantity,10 min,0.978348,1,0.8,0,neutral,0.316895,0.295142,0.129111,0.169509,0.241039,,,,
+1,336326086,Facility,Sultan Mosque,0.978348,1,0.479997,0,neutral,0.110045,0.109558,0.151052,0.046454,0.086551,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,718452759,Location,Singapore,0.9999,2,0.995403,0.29154,positive,0.185306,0.472445,0.011236,0.056424,0.045638,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,681536253,Facility,sultan mosque,0.963296,1,0.122509,0.912349,positive,0.254977,0.263038,0.060681,0.174616,0.222162,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,681536253,Location,Singapore,0.095841,1,0.989281,0.958796,positive,0.040612,0.769918,0.016428,0.020206,0.017141,,,Singapore,http://dbpedia.org/resource/Singapore
+1,648510296,Person,haji lane,0.978348,1,0.786943,0.623281,positive,0.090649,0.249986,0.076926,0.041302,0.311658,,,,
+1,629526560,Facility,Sultan Mosque,0.963296,1,0.090547,0.879604,positive,0.15022,0.405929,0.027368,0.3688,0.162476,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,629526560,Location,Singapore,0.517047,1,0.998595,0.803302,positive,0.130022,0.430829,0.06542,0.050288,0.057688,,,Singapore,http://dbpedia.org/resource/Singapore
+1,599360872,Location,Singapore,0.9999,2,0.999996,0.980297,positive,0.196238,0.214375,0.187361,0.102097,0.256375,,,Singapore,http://dbpedia.org/resource/Singapore
+1,572889944,Location,Sultan,0.978348,1,0.776206,0,neutral,0.396723,0.146262,0.076329,0.178976,0.113598,,,,
+1,539553284,Organization,Malay Heritage Centre,0.958279,1,0.828973,0.0,neutral,0.248519,0.115591,0.040136,0.086184,0.098568,,,,
+1,539553284,Quantity,$5,0.59233,1,0.8,0.0,neutral,0.15153,0.158169,0.040506,0.084446,0.112402,,,,
+1,539553284,Location,Singapore,0.158318,1,0.970782,0.909266,positive,0.071309,0.745477,0.059247,0.061445,0.039587,,,Singapore,http://dbpedia.org/resource/Singapore
+1,534307299,Location,India,0.963296,1,0.901436,0.869973,positive,0.108247,0.223919,0.13009,0.055918,0.073932,,,,
+1,534307299,Location,Singapore,0.838572,1,0.961868,0.0,neutral,0.173994,0.660924,0.061271,0.054196,0.019855,,,Singapore,http://dbpedia.org/resource/Singapore
+1,526679754,Facility,majestic Sultan Mosque,0.963296,1,0.285665,0.723389,positive,0.09362,0.230831,0.081732,0.123344,0.320862,,,,
+1,526679754,Location,Kampong,0.059581,1,0.657677,0.706412,positive,0.033321,0.813303,0.034872,0.021485,0.025685,,,,
+1,497850157,Location,Singapore,0.978348,2,0.999974,0.650777,positive,0.313589,0.509218,0.059286,0.029123,0.032677,,,Singapore,http://dbpedia.org/resource/Singapore
+1,497850157,Quantity,3 years,0.629831,1,0.8,0.650777,positive,0.313589,0.509218,0.059286,0.029123,0.032677,,,,
+1,495211829,Location,Singapore,0.95577,1,0.998912,0.881341,positive,0.04552,0.735693,0.00948,0.009227,0.01205,,,Singapore,http://dbpedia.org/resource/Singapore
+1,495211829,GeographicFeature,Marina Bay,0.53647,1,0.460262,0.0,neutral,0.316447,0.253929,0.112812,0.055636,0.191544,,,,
+1,495211829,Quantity,25 min,0.316852,1,0.8,0.0,neutral,0.329284,0.181291,0.155661,0.202812,0.313776,,,,
+1,495211829,Person,Marina,0.020362,1,0.570452,0.0,neutral,0.329284,0.181291,0.155661,0.202812,0.313776,,,,
+1,432922356,Location,Singapore,0.9999,2,0.999818,0.979132,positive,0.046002,0.877613,0.035135,0.026067,0.013912,,,Singapore,http://dbpedia.org/resource/Singapore
+1,427814903,Person,Haji Lane,0.958279,1,0.792333,0.883956,positive,0.042104,0.529602,0.062309,0.291239,0.139602,,,,
+1,427814903,Location,Singapore,0.693996,2,0.999998,0.780555,positive,0.190133,0.213132,0.062356,0.065231,0.083479,,,Singapore,http://dbpedia.org/resource/Singapore
+1,427814903,Facility,Sultan Mosque,0.666936,1,0.26664,0.93412,positive,0.068188,0.877395,0.016962,0.007376,0.016546,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,408584342,Location,Singapore,0.968313,2,0.999969,0.607406,positive,0.105126,0.493522,0.089257,0.079329,0.132643,,,Singapore,http://dbpedia.org/resource/Singapore
+1,408584342,Company,Google,0.479672,1,0.936636,0.0,neutral,0.211938,0.335359,0.17504,0.153016,0.124512,,"['AcademicInstitution', 'AwardPresentingOrganization', 'OperatingSystemDeveloper', 'ProgrammingLanguageDeveloper', 'SoftwareDeveloper', 'VentureFundedCompany']",Google,http://dbpedia.org/resource/Google
+1,408584342,Person,Bob,0.004057,1,0.979889,0.0,neutral,0.206606,0.566464,0.022667,0.054229,0.034419,,,,
+1,408084472,Quantity,100%,0.978348,1,0.8,0.938734,positive,0.034973,0.647552,0.020973,0.042845,0.032243,,,,
+1,385997020,Location,Singapore,0.978348,1,0.892236,0,neutral,0.243313,0.523266,0.072588,0.072499,0.083972,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355448883,Facility,Istana means palace,0.963296,1,0.333256,0,neutral,0.328331,0.12601,0.140749,0.142016,0.125147,,,,
+1,355448883,Location,singapore,0.335464,1,0.999509,0,neutral,0.328331,0.12601,0.140749,0.142016,0.125147,,,Singapore,http://dbpedia.org/resource/Singapore
+1,348050598,Facility,Sultan Mosque,0.978348,1,0.26983,0,neutral,0.107952,0.256471,0.02969,0.078287,0.06924,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,338346659,Facility,Sultan Mosque,0.953262,1,0.683178,0.0,neutral,0.081179,0.214478,0.054565,0.098275,0.083974,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,338346659,Person,Haji Lane,0.883745,1,0.636925,0.819393,positive,0.017464,0.774903,0.021824,0.038178,0.089465,,,,
+1,338346659,Organization,Malay Heritage Centre,0.54094,1,0.637341,0.705385,positive,0.13765,0.189965,0.076981,0.088247,0.109402,,,,
+1,338346659,Company,Malayan design,0.476685,1,0.482228,-0.402985,negative,0.095879,0.448996,0.231428,0.041587,0.086071,,,,
+1,338346659,Location,Singapore,0.412967,1,0.845781,0.0,neutral,0.081179,0.214478,0.054565,0.098275,0.083974,,,Singapore,http://dbpedia.org/resource/Singapore
+1,338346659,Location,Bali,0.402216,1,0.686273,0.0,neutral,0.021738,0.247247,0.035601,0.082265,0.361702,,,,
+1,661612897,Facility,Flying Monkey restaurant,0.963296,1,0.317887,0.0,neutral,0.069743,0.309925,0.28049,0.311546,0.061964,,,,
+1,661612897,Facility,majestic Masjid Sultan,0.72209,1,0.470791,0.697307,positive,0.342297,0.269381,0.065981,0.166111,0.044061,,,,
+1,560615946,Quantity,6months,0.963296,1,0.8,0.0,neutral,0.421291,0.387253,0.085128,0.056187,0.086457,,,,
+1,560615946,Location,Singapore,0.878337,2,0.999999,0.658431,positive,0.453978,0.443865,0.084835,0.035232,0.033006,,,Singapore,http://dbpedia.org/resource/Singapore
+1,682916416,Person,ginger tea,0.978348,1,0.423787,0,neutral,0.120482,0.562805,0.052186,0.083373,0.033197,,,,
+1,653025004,Location,Singapore,0.963296,1,0.998804,-0.740989,negative,0.682637,0.044887,0.061491,0.043907,0.292641,,,Singapore,http://dbpedia.org/resource/Singapore
+1,653025004,Quantity,2 week,0.241627,1,0.8,-0.740989,negative,0.682637,0.044887,0.061491,0.043907,0.292641,,,,
+1,645527613,Organization,Malay Heritage Centre,0.978348,1,0.793526,0.855191,positive,0.229256,0.553395,0.026088,0.012504,0.126451,,,,
+1,633369866,Facility,Blu Jazz Cafe,0.963296,1,0.819368,0.0,neutral,0.178612,0.558029,0.085513,0.059034,0.111291,,,,
+1,633369866,Location,Singapore,0.14257,1,0.995948,0.832995,positive,0.096859,0.633554,0.0254,0.0188,0.034382,,,Singapore,http://dbpedia.org/resource/Singapore
+1,633165700,Facility,Sultan Mosque,0.963296,1,0.196038,-0.395263,negative,0.062127,0.252263,0.271823,0.096143,0.089574,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,633165700,Location,Singapore,0.545783,1,0.994601,0.952545,positive,0.022692,0.386821,0.11411,0.071168,0.064539,,,Singapore,http://dbpedia.org/resource/Singapore
+1,614706709,Person,Haji Lane,0.958279,1,0.901055,0.0,neutral,0.076377,0.273471,0.080074,0.111486,0.133828,,,,
+1,614706709,Quantity,4 days,0.222941,1,0.8,0.646382,positive,0.164252,0.713066,0.065048,0.020058,0.057408,,,,
+1,614706709,Location,Singapore,0.168855,1,0.997805,0.358005,positive,0.164252,0.713066,0.065048,0.020058,0.057408,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,593978750,Facility,Masjid Sultan Mosque,0.978348,1,0.356395,0,neutral,0.158541,0.315784,0.140826,0.10815,0.084576,,,,
+1,565472992,Location,Singapore,0.978348,1,0.993258,0,neutral,0.407143,0.227051,0.098905,0.330909,0.101786,,,Singapore,http://dbpedia.org/resource/Singapore
+1,565407802,Quantity,10 days,0.958279,1,0.8,-0.801858,negative,0.15597,0.481771,0.02935,0.027292,0.054759,,,,
+1,565407802,Facility,Kampong glam cafe,0.714792,1,0.331032,0.782687,positive,0.041211,0.73678,0.130128,0.054007,0.04108,,,,
+1,565407802,Quantity,$1.20,0.255839,1,0.8,0.0,neutral,0.041211,0.73678,0.130128,0.054007,0.04108,,,,
+1,564968184,Quantity,"$750,000",0.978348,1,0.8,-0.582852,negative,0.150637,0.107564,0.102045,0.062246,0.079612,1,,,
+1,549924908,Facility,Sultan Mosque,0.954934,2,0.451962,0.898293,positive,0.387985,0.274616,0.185978,0.098234,0.295766,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,549924908,Facility,Sultan Gate,0.643355,1,0.791021,0.574898,positive,0.313999,0.231614,0.067653,0.154803,0.084952,,,,
+1,549924908,Organization,Malay Cultural Heritage Centre,0.622827,1,0.710141,0.574898,positive,0.313999,0.231614,0.067653,0.154803,0.084952,,,,
+1,549924908,Person,Sultan Hussein,0.599386,1,0.948234,0.0,neutral,0.219948,0.374635,0.064909,0.106296,0.165528,,,,
+1,549924908,Company,Raffles & the East India Company,0.578389,1,0.190034,0.0,neutral,0.219948,0.374635,0.064909,0.106296,0.165528,,,,
+1,549924908,Quantity,7-minute,0.550696,1,0.8,0.725955,positive,0.069327,0.659204,0.125225,0.01452,0.089288,,,,
+1,549924908,Location,Kandahar,0.39215,1,0.93825,0.574898,positive,0.313999,0.231614,0.067653,0.154803,0.084952,,,,
+1,549924908,Person,Haji Lane,0.185611,1,0.800274,0.625563,positive,0.3034,0.110772,0.101428,0.258928,0.453363,,,,
+1,549924908,Quantity,5 minutes,0.082274,1,0.8,0.0,neutral,0.3034,0.110772,0.101428,0.258928,0.453363,,,,
+1,539563744,Location,Singapore,0.963296,1,0.996885,0.689845,positive,0.288345,0.186431,0.116501,0.152697,0.111098,,,Singapore,http://dbpedia.org/resource/Singapore
+1,539563744,Location,Mediterranean,0.581007,1,0.959795,0.689845,positive,0.288345,0.186431,0.116501,0.152697,0.111098,,,,
+1,487560063,Person,Haji Lane,0.978348,1,0.67797,0,neutral,0.146405,0.266341,0.073338,0.082065,0.485139,,,,
+1,485207397,Organization,Malay Herritage Center,0.954265,1,0.462183,0.0,neutral,0.238822,0.082599,0.062358,0.009248,0.143207,,,,
+1,485207397,Location,Masjid Sultan,0.68607,1,0.247441,0.0,neutral,0.141719,0.191139,0.08519,0.078108,0.091797,,,,
+1,485207397,Facility,bugis MRT station,0.318275,1,0.553012,-0.625691,negative,0.024,0.041963,0.007856,0.014463,0.025008,,,,
+1,485207397,MusicGroup,Glam,0.228534,1,0.593568,0.0,neutral,0.214657,0.157908,0.057812,0.04684,0.123614,,,,
+1,485207397,Quantity,1Km,0.220818,1,0.8,0.0,neutral,0.024,0.041963,0.007856,0.014463,0.025008,,,,
+1,479445615,Location,Singapore,0.963296,1,0.999029,0.849812,positive,0.199813,0.509365,0.087749,0.068324,0.054509,,,Singapore,http://dbpedia.org/resource/Singapore
+1,479445615,Location,India,0.740307,1,0.968898,0.0,neutral,0.229918,0.218879,0.201294,0.181509,0.06772,,,,
+1,473024026,Location,Singapore,0.963296,1,0.972372,0.0,neutral,0.199543,0.343577,0.096369,0.081835,0.096915,,,Singapore,http://dbpedia.org/resource/Singapore
+1,473024026,Location,Perth,0.697163,1,0.569963,0.56804,positive,0.061401,0.785088,0.035881,0.074214,0.016312,,,,
+1,471238053,Location,India,0.963296,1,0.999869,0.881139,positive,0.057692,0.250875,0.043519,0.042041,0.088144,,,,
+1,471238053,Quantity,2 hours,0.478463,1,0.8,0.735493,positive,0.072755,0.69423,0.056691,0.049,0.073232,,,,
+1,455602579,Person,hipp,0.978348,1,0.55468,0.914424,positive,0.186388,0.500223,0.067244,0.01213,0.114871,,,,
+1,453029590,Location,Singapore,0.978348,1,0.993977,0.783446,positive,0.172862,0.61448,0.050955,0.023475,0.052492,,,Singapore,http://dbpedia.org/resource/Singapore
+1,445046259,Facility,Bugis Station,0.953262,1,0.2215,0.953126,positive,0.075416,0.503106,0.030638,0.032321,0.042126,,,,
+1,445046259,Person,Haji Lane,0.768296,1,0.911613,-0.561541,negative,0.378479,0.317034,0.142704,0.035055,0.064308,,,,
+1,445046259,Quantity,six years,0.422307,1,0.8,-0.561541,negative,0.378479,0.317034,0.142704,0.035055,0.064308,,,,
+1,445046259,Location,Singapore,0.408995,1,0.998551,0.953126,positive,0.075416,0.503106,0.030638,0.032321,0.042126,,,Singapore,http://dbpedia.org/resource/Singapore
+1,445046259,Facility,Green Kiwi Hostel,0.176459,1,0.693895,0.0,neutral,0.155768,0.446386,0.102175,0.127797,0.134818,,,,
+1,445046259,Facility,Sultan Mosque,0.087505,1,0.140327,0.0,neutral,0.020953,0.66484,0.035483,0.024346,0.096612,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,434978787,Location,Singapore,0.963296,1,0.962208,0.77776,positive,0.284739,0.239485,0.200182,0.225734,0.226636,,,Singapore,http://dbpedia.org/resource/Singapore
+1,434978787,Facility,Sultan Mosque,0.217636,1,0.33119,0.833207,positive,0.079989,0.152402,0.152201,0.124969,0.06973,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,416698777,Location,Singapore City,0.95577,1,0.956095,0.0,neutral,0.28225,0.094495,0.025342,0.070369,0.0594,,,Singapore,http://dbpedia.org/resource/Singapore
+1,416698777,Facility,Sultan's Palace,0.207261,1,0.308939,0.846211,positive,0.227253,0.1608,0.297815,0.340081,0.047898,,,,
+1,416698777,Facility,Sultan's Mosque,0.176778,1,0.102749,0.846211,positive,0.227253,0.1608,0.297815,0.340081,0.047898,,,,
+1,416698777,Facility,Mamanda Restaurant,0.018446,1,0.495392,0.846211,positive,0.227253,0.1608,0.297815,0.340081,0.047898,,,,
+1,402066382,Facility,Malay art gallery,0.963296,1,0.377209,0.0,neutral,0.067288,0.649759,0.084598,0.036541,0.048824,,,,
+1,402066382,Location,Singapore,0.011147,1,0.978123,0.965941,positive,0.014711,0.514451,0.079528,0.05087,0.056551,,,Singapore,http://dbpedia.org/resource/Singapore
+1,401620612,Quantity,15 minutes,0.963296,1,0.8,0,neutral,0.092729,0.503225,0.061759,0.202687,0.253019,,,,
+1,401620612,Facility,Raffles Hotel,0.390056,1,0.905456,0,neutral,0.092729,0.503225,0.061759,0.202687,0.253019,,,,
+1,394135585,Facility,Malay Heritage museum,0.954265,1,0.742652,0.720285,positive,0.047451,0.692463,0.077706,0.102345,0.03782,,"['Location', 'Museum']",Malay_Heritage_Centre,http://dbpedia.org/resource/Malay_Heritage_Centre
+1,394135585,Location,Singapore,0.79873,3,0.999997,0.841936,positive,0.036105,0.721429,0.049889,0.095811,0.052632,,,Singapore,http://dbpedia.org/resource/Singapore
+1,394135585,Facility,Sultan Mosque,0.515576,1,0.599658,0.720285,positive,0.047451,0.692463,0.077706,0.102345,0.03782,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,394135585,Location,South East Asia,0.449005,1,0.509309,0.720285,positive,0.047451,0.692463,0.077706,0.102345,0.03782,,,,
+1,394135585,Facility,Toy Museum,0.443814,1,0.710651,0.720285,positive,0.047451,0.692463,0.077706,0.102345,0.03782,,,,
+1,389636527,Location,Singapore,0.978348,1,0.971999,0.641615,positive,0.063614,0.258901,0.011441,0.02028,0.046919,,,Singapore,http://dbpedia.org/resource/Singapore
+1,388413381,Organization,Raffles Town Plan,0.95577,1,0.219194,0,neutral,0.256492,0.577651,0.132742,0.034947,0.06554,,,,
+1,388413381,Facility,Sultan Mosque,0.608177,1,0.287803,0,neutral,0.08888,0.202405,0.081605,0.157361,0.199614,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,388413381,Location,Sultan,0.448581,1,0.625603,0,neutral,0.08888,0.202405,0.081605,0.157361,0.199614,,,,
+1,388413381,Quantity,1.5 hours,0.043097,1,0.8,0,neutral,0.220689,0.373565,0.201949,0.111981,0.175855,,,,
+1,342236622,Facility,Sultan Mosque,0.978348,1,0.186059,0,neutral,0.13931,0.183791,0.06327,0.115981,0.250665,,"['Location', 'Building', 'PlaceOfWorship']",Masjid_Sultan,http://dbpedia.org/resource/Masjid_Sultan
+1,336369387,Facility,bugis station,0.978348,1,0.736712,0.662167,positive,0.042864,0.30112,0.050505,0.023098,0.053863,,,,

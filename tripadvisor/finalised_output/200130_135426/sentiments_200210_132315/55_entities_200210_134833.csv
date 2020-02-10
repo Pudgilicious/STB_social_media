@@ -1,0 +1,215 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+1,712299930,Location,Singapore,0.978348,1,0.977771,0.855836,positive,0.021935,0.531067,0.009578,0.003058,0.003629,,,Singapore,http://dbpedia.org/resource/Singapore
+1,708403744,Location,Singapore,0.978348,1,0.97166,0.671408,positive,0.346569,0.548738,0.065484,0.050728,0.006045,,,Singapore,http://dbpedia.org/resource/Singapore
+1,648279450,Person,Singas,0.978348,1,0.680862,0.981744,positive,0.08118,0.815441,0.023253,0.034713,0.023595,,,,
+1,640466765,Location,Singapore,0.978348,1,0.996075,0,neutral,0.13583,0.078052,0.009877,0.073481,0.017284,,,Singapore,http://dbpedia.org/resource/Singapore
+1,639533204,Organization,Maxwell hawker centre,0.978348,1,0.50862,0,neutral,0.277946,0.305786,0.125562,0.059891,0.129356,,,,
+1,620866673,Facility,Maxwell food center,0.978348,1,0.441784,0,neutral,0.151924,0.406035,0.279286,0.089534,0.033819,,,,
+1,612556235,Location,Singapore,0.978348,1,0.997206,0.886556,positive,0.081617,0.552908,0.011784,0.026231,0.014602,,,Singapore,http://dbpedia.org/resource/Singapore
+1,593135429,Location,Singapore,0.978348,1,0.994138,0.93082,positive,0.037689,0.52326,0.011121,0.061797,0.035821,,,Singapore,http://dbpedia.org/resource/Singapore
+1,585752007,Location,Singapore,0.978348,1,0.807567,0.662073,positive,0.131234,0.318494,0.18554,0.034548,0.026617,,,Singapore,http://dbpedia.org/resource/Singapore
+1,575187294,Location,Singapore,0.978348,1,0.831858,0.745798,positive,0.076029,0.382346,0.066204,0.076469,0.21443,,,Singapore,http://dbpedia.org/resource/Singapore
+1,516150048,Location,Singapore,0.9999,3,1,0.925376,positive,0.048778,0.628963,0.02132,0.024595,0.066461,,,Singapore,http://dbpedia.org/resource/Singapore
+1,513767841,Quantity,70min,0.958279,1,0.8,-0.808396,negative,0.462677,0.32682,0.068577,0.040452,0.120085,,,,
+1,513767841,Quantity,50 years,0.282276,1,0.8,0.648549,positive,0.272698,0.355189,0.087944,0.051745,0.047512,,,,
+1,513767841,Location,Singapore,0.224988,1,0.995525,0.648549,positive,0.272698,0.355189,0.087944,0.051745,0.047512,,,Singapore,http://dbpedia.org/resource/Singapore
+1,458407784,Location,Singapore,0.978348,1,0.983667,0.847607,positive,0.17965,0.498873,0.108696,0.172611,0.071816,,,Singapore,http://dbpedia.org/resource/Singapore
+1,454230220,Facility,Tanjong Pagar MRT Station,0.963296,1,0.875011,0.0,neutral,0.032663,0.079373,0.094215,0.047223,0.059927,,,,
+1,454230220,Location,Singapore,0.315815,1,0.977122,0.811204,positive,0.102452,0.344277,0.134865,0.011627,0.048172,,,Singapore,http://dbpedia.org/resource/Singapore
+1,442964705,Location,Singapore,0.978348,1,0.932568,0.444048,positive,0.125113,0.486296,0.047676,0.057332,0.047663,,,Singapore,http://dbpedia.org/resource/Singapore
+1,439630959,Company,SG,0.958279,1,0.463183,0.741462,positive,0.142399,0.304231,0.12306,0.037578,0.0265,,,,
+1,439630959,Company,SGs,0.492192,1,0.689347,0.792144,positive,0.313282,0.467913,0.062318,0.036663,0.139488,,,,
+1,439630959,Quantity,50 years,0.409553,1,0.8,0.792144,positive,0.313282,0.467913,0.062318,0.036663,0.139488,,,,
+1,427767960,Location,Singapore,0.9999,3,0.999999,0.920364,positive,0.074197,0.80497,0.026463,0.006683,0.015447,,,Singapore,http://dbpedia.org/resource/Singapore
+1,426550657,Location,Singapore,0.9999,2,0.999514,0.953649,positive,0.133728,0.668116,0.040323,0.069138,0.080422,,,Singapore,http://dbpedia.org/resource/Singapore
+1,421082543,Location,Singapore,0.9999,2,0.999918,0.890452,positive,0.121448,0.45558,0.119936,0.028379,0.039279,,,Singapore,http://dbpedia.org/resource/Singapore
+1,417728152,Location,Singapore,0.9999,2,0.999967,0.812497,positive,0.074979,0.662616,0.047634,0.061894,0.032476,,,Singapore,http://dbpedia.org/resource/Singapore
+1,414091102,Location,Singapore,0.963296,1,0.982285,0.0,neutral,0.120872,0.283806,0.158625,0.04705,0.088388,,,Singapore,http://dbpedia.org/resource/Singapore
+1,414091102,Quantity,50 years,0.557238,1,0.8,0.901001,positive,0.087787,0.822848,0.051259,0.03457,0.01247,,,,
+1,399412183,Location,Singapore,0.978348,1,0.976364,0.976613,positive,0.072976,0.717916,0.034127,0.006183,0.016302,,,Singapore,http://dbpedia.org/resource/Singapore
+1,381524219,Location,Singapore,0.9999,3,0.999999,0.683648,positive,0.140173,0.707065,0.169983,0.007943,0.018547,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,380404479,Location,Singapore,0.978348,1,0.99855,0.601081,positive,0.094042,0.222758,0.003721,0.007092,0.00749,,,Singapore,http://dbpedia.org/resource/Singapore
+1,379503116,Location,Singapore,0.978348,1,0.999104,0.65649,positive,0.184098,0.160298,0.067284,0.015667,0.015964,,,Singapore,http://dbpedia.org/resource/Singapore
+1,344761389,Location,Singapore,0.978348,1,0.884755,0.961141,positive,0.038342,0.834198,0.005712,0.043122,0.011702,,,Singapore,http://dbpedia.org/resource/Singapore
+1,337093644,Location,Singapore,0.978348,1,0.996266,0.966459,positive,0.037164,0.598315,0.005507,0.017911,0.016492,,,Singapore,http://dbpedia.org/resource/Singapore
+1,698255246,Location,Singapore,0.978348,2,0.999618,0.888431,positive,0.085727,0.434836,0.061721,0.038989,0.031123,,,Singapore,http://dbpedia.org/resource/Singapore
+1,698255246,Quantity,50 years,0.419774,1,0.8,0.0,neutral,0.587503,0.142614,0.215896,0.040617,0.068175,,,,
+1,681800546,Organization,Supreme Court,0.958279,1,0.740572,0.97118,positive,0.038516,0.477757,0.137485,0.114474,0.055458,,,,
+1,681800546,Facility,City Hall,0.939222,1,0.846535,0.97118,positive,0.038516,0.477757,0.137485,0.114474,0.055458,,,,
+1,681800546,Location,Singapore,0.256164,1,0.980844,0.965776,positive,0.037894,0.832765,0.042235,0.008114,0.033536,,,Singapore,http://dbpedia.org/resource/Singapore
+1,660248568,Location,Singapore,0.978348,1,0.987646,0.748358,positive,0.039797,0.708894,0.172199,0.040469,0.050528,,,Singapore,http://dbpedia.org/resource/Singapore
+1,654207452,Facility,Singapore City Gallery,0.958279,1,0.366234,0.642411,positive,0.09807,0.256751,0.014882,0.035052,0.129688,,,,
+1,654207452,Facility,Central Business District,0.641748,1,0.618039,0.642411,positive,0.09807,0.256751,0.014882,0.035052,0.129688,,,,
+1,654207452,Location,Singapore,0.206914,1,0.997382,0.642411,positive,0.09807,0.256751,0.014882,0.035052,0.129688,,,Singapore,http://dbpedia.org/resource/Singapore
+1,630262725,Facility,Maxwell Food Centre,0.978348,1,0.36879,0.941502,positive,0.281721,0.579192,0.036057,0.053081,0.08506,,,,
+1,604286815,Facility,Singapore City Gallery,0.963296,1,0.425482,0.785158,positive,0.107911,0.493959,0.021722,0.026609,0.014005,,,,
+1,604286815,Location,Singapore,0.323452,1,0.9427,0.785158,positive,0.107911,0.493959,0.021722,0.026609,0.014005,,,Singapore,http://dbpedia.org/resource/Singapore
+1,586315881,Location,Singapore,0.978348,1,0.994323,0.902976,positive,0.105372,0.700774,0.095352,0.007988,0.022371,,,Singapore,http://dbpedia.org/resource/Singapore
+1,576144365,Location,Singapore,0.978348,1,0.93974,0,neutral,0.068728,0.354648,0.043981,0.134534,0.076154,,,Singapore,http://dbpedia.org/resource/Singapore
+1,570312499,Facility,Maxwell Center Food Stalls,0.963296,1,0.346159,0.988068,positive,0.072805,0.818847,0.033462,0.042078,0.030298,,,,
+1,570312499,Location,Singapore,0.37365,1,0.985541,0.988068,positive,0.072805,0.818847,0.033462,0.042078,0.030298,,,Singapore,http://dbpedia.org/resource/Singapore
+1,569875794,Location,Singapore,0.978348,1,0.999022,0.93452,positive,0.212567,0.455772,0.084306,0.051123,0.124866,,,Singapore,http://dbpedia.org/resource/Singapore
+1,560480518,Location,Singapore,0.9999,3,0.999979,0.912154,positive,0.054943,0.58208,0.020069,0.014972,0.013022,,,Singapore,http://dbpedia.org/resource/Singapore
+1,554846906,Location,Singapore,0.988382,4,0.999993,0.879592,positive,0.117144,0.822706,0.017339,0.035438,0.012699,,,Singapore,http://dbpedia.org/resource/Singapore
+1,554846906,Facility,City Gallery,0.537981,1,0.95063,0.762701,positive,0.134835,0.554809,0.156907,0.050724,0.049445,,['Museum'],City_Gallery,http://dbpedia.org/resource/City_Gallery
+1,554846906,Facility,City Museum,0.143346,1,0.950578,0.92956,positive,0.053207,0.713536,0.028694,0.061631,0.020591,,,,
+1,550226482,Location,Singapore,0.978348,1,0.976894,0,neutral,0.1421,0.435281,0.069698,0.015697,0.038077,,,Singapore,http://dbpedia.org/resource/Singapore
+1,547367679,Location,Singapore,0.978348,1,0.925688,0,neutral,0.235907,0.379675,0.21913,0.061189,0.085419,,,Singapore,http://dbpedia.org/resource/Singapore
+1,535386869,Location,Singapore,0.9999,2,0.982273,0.708118,positive,0.219673,0.541073,0.145411,0.064087,0.014152,,,Singapore,http://dbpedia.org/resource/Singapore
+1,517694331,Location,Singapore,0.978348,1,0.980238,0.909557,positive,0.115628,0.479033,0.057684,0.020101,0.02669,,,Singapore,http://dbpedia.org/resource/Singapore
+1,504046931,Location,Singapore,0.978348,2,0.999862,0.0,neutral,0.093938,0.129758,0.01685,0.046272,0.016383,,,Singapore,http://dbpedia.org/resource/Singapore
+1,504046931,Quantity,30 minutes,0.253982,1,0.8,0.374074,positive,0.35944,0.215888,0.109505,0.098616,0.157945,,,,
+1,493744940,Location,Singapore,0.9999,2,0.999891,0.942354,positive,0.059283,0.838707,0.032964,0.043283,0.018571,,,Singapore,http://dbpedia.org/resource/Singapore
+1,483626212,Facility,National Stadium,0.963296,1,0.505737,0.0,neutral,0.416017,0.111846,0.024746,0.125972,0.066335,,"['Location', 'Stadium']",National_Stadium%2C_Singapore,http://dbpedia.org/resource/National_Stadium%2C_Singapore
+1,483626212,Location,Singapore,0.743144,1,0.95652,0.927273,positive,0.070301,0.686016,0.094673,0.037954,0.15115,,,Singapore,http://dbpedia.org/resource/Singapore
+1,479723372,Location,Singapore,0.978348,1,0.943065,0,neutral,0.301847,0.27284,0.207048,0.110451,0.073551,,,Singapore,http://dbpedia.org/resource/Singapore
+1,478827416,Location,Singapore,0.978348,1,0.89796,0.997522,positive,0.032413,0.820517,0.012616,0.042418,0.048169,,,Singapore,http://dbpedia.org/resource/Singapore
+1,469227681,Facility,Singapore City Gallery,0.963296,1,0.577104,0.880339,positive,0.098559,0.407995,0.011839,0.033456,0.015669,,,,
+1,469227681,Location,Singapore,0.495598,2,0.99897,0.873189,positive,0.060316,0.387271,0.046162,0.00875,0.010359,,,Singapore,http://dbpedia.org/resource/Singapore
+1,461879862,Location,Singapore,0.9999,2,0.999632,0.915859,positive,0.058176,0.767451,0.018281,0.038532,0.016325,,,Singapore,http://dbpedia.org/resource/Singapore
+1,459167488,Location,Singapore,0.978348,1,0.971807,0.874318,positive,0.224297,0.25138,0.079192,0.046893,0.056558,,,Singapore,http://dbpedia.org/resource/Singapore
+1,454642084,Organization,Urban Renewal Authority,0.963296,1,0.681969,-0.39961,negative,0.092095,0.561443,0.033745,0.020078,0.071173,,,Urban_Renewal_Authority,http://dbpedia.org/resource/Urban_Renewal_Authority
+1,454642084,Location,Singapore,0.758361,2,0.999818,0.77192,positive,0.168912,0.437893,0.050574,0.017992,0.022033,,,Singapore,http://dbpedia.org/resource/Singapore
+1,453846186,Location,singapore,0.978348,1,0.973595,0.692507,positive,0.068176,0.15101,0.083445,0.027979,0.019946,,,Singapore,http://dbpedia.org/resource/Singapore
+1,451922709,Location,Singapore,0.978348,1,0.991212,0.960211,positive,0.244234,0.573343,0.100312,0.015235,0.066394,,,Singapore,http://dbpedia.org/resource/Singapore
+1,451123658,Location,Singapore,0.978348,1,0.979361,0.965804,positive,0.021993,0.622995,0.03269,0.005246,0.006304,,,Singapore,http://dbpedia.org/resource/Singapore
+1,450437013,Location,Singapore,0.9999,2,0.995106,0.836788,positive,0.163043,0.482077,0.016463,0.028737,0.033863,,,Singapore,http://dbpedia.org/resource/Singapore
+1,440780824,Quantity,150 meters,0.978348,1,0.8,0,neutral,0.069981,0.407741,0.051427,0.123901,0.242301,,,,
+1,419353452,Location,Singapore,0.978348,1,0.997748,0.918744,positive,0.091845,0.677356,0.026044,0.023798,0.049326,,,Singapore,http://dbpedia.org/resource/Singapore
+1,415300370,Location,Singapore,0.978348,1,0.980743,0.926799,positive,0.124408,0.56243,0.057064,0.026137,0.025149,,,Singapore,http://dbpedia.org/resource/Singapore
+1,415163900,Location,Singapore,0.978348,1,0.939223,0.59514,positive,0.236908,0.293712,0.047603,0.123993,0.125574,,,Singapore,http://dbpedia.org/resource/Singapore
+1,405135561,Person,Anna Ong,0.963296,1,0.99395,0.989144,positive,0.13096,0.811913,0.008273,0.004376,0.003487,,,,
+1,405135561,Quantity,50 year,0.752491,1,0.8,0.989144,positive,0.13096,0.811913,0.008273,0.004376,0.003487,,,,
+1,403464156,Location,Singapore,0.9999,3,0.999718,0.427109,positive,0.191931,0.589615,0.066197,0.052429,0.190814,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,402210313,Facility,URA building,0.952545,1,0.422184,0.937518,positive,0.196613,0.318878,0.369297,0.107344,0.032184,,,,
+1,402210313,Location,China,0.330736,1,0.996003,0.937518,positive,0.196613,0.318878,0.369297,0.107344,0.032184,,,,
+1,402210313,GeographicFeature,Marina Bay Sands,0.273123,1,0.428856,-0.274064,negative,0.376521,0.433052,0.118994,0.070774,0.075643,,,,
+1,402210313,Location,Singapore,0.2361,1,0.99838,0.955158,positive,0.224864,0.443727,0.016877,0.019334,0.024805,,,Singapore,http://dbpedia.org/resource/Singapore
+1,402210313,Facility,Changi airport,0.222259,1,0.447415,-0.274064,negative,0.376521,0.433052,0.118994,0.070774,0.075643,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+1,402210313,Quantity,30 years,0.149552,1,0.8,-0.274064,negative,0.376521,0.433052,0.118994,0.070774,0.075643,,,,
+1,402210313,Quantity,50 years,0.065725,1,0.8,-0.274064,negative,0.376521,0.433052,0.118994,0.070774,0.075643,,,,
+1,392985858,Location,Singapore,0.9999,2,0.999966,0.726956,positive,0.13745,0.241644,0.070309,0.015362,0.085884,,,Singapore,http://dbpedia.org/resource/Singapore
+1,365995608,Location,Singapore,0.963296,1,0.965253,0.856031,positive,0.1379,0.430454,0.013273,0.021154,0.005279,,,Singapore,http://dbpedia.org/resource/Singapore
+1,365995608,Quantity,50 years,0.828517,1,0.8,0.856031,positive,0.1379,0.430454,0.013273,0.021154,0.005279,,,,
+1,358630158,Location,Singapore,0.9999,2,0.999995,0.520435,positive,0.153795,0.379573,0.280687,0.016698,0.030388,,,Singapore,http://dbpedia.org/resource/Singapore
+1,357738011,Location,Singapore,0.978348,1,0.982975,0.813757,positive,0.028498,0.766221,0.031903,0.087549,0.033708,,,Singapore,http://dbpedia.org/resource/Singapore
+1,356308899,Location,Chinatown,0.978348,1,0.626239,0,neutral,0.279116,0.199292,0.212129,0.05624,0.220502,,,,
+1,355503570,Location,Singapore,0.978348,1,0.974204,0.913546,positive,0.031017,0.498706,0.019846,0.013591,0.015851,,,Singapore,http://dbpedia.org/resource/Singapore
+1,354221099,Location,Singapore,0.978348,1,0.994499,0.97582,positive,0.03379,0.727208,0.033905,0.023909,0.012921,,,Singapore,http://dbpedia.org/resource/Singapore
+1,353066424,Location,Singapore,0.978348,1,0.983112,0.981419,positive,0.101037,0.703204,0.075327,0.003948,0.020978,,,Singapore,http://dbpedia.org/resource/Singapore
+1,349013390,Location,Singapore,0.968313,2,0.999842,0.0,neutral,0.08057,0.425084,0.089588,0.023118,0.007572,,,Singapore,http://dbpedia.org/resource/Singapore
+1,349013390,Quantity,50 years,0.352178,1,0.8,0.32341,positive,0.456558,0.101117,0.141593,0.173246,0.147328,,,,
+1,349013390,Organization,government,0.314558,1,0.824572,0.32341,positive,0.456558,0.101117,0.141593,0.173246,0.147328,,"['FieldOfStudy', 'BuildingFunction']",Government,http://dbpedia.org/resource/Government
+1,348699012,Location,Singapore,0.978348,2,0.999904,0.974932,positive,0.188372,0.658036,0.082564,0.028934,0.010343,,,Singapore,http://dbpedia.org/resource/Singapore
+1,348699012,Quantity,30 years,0.618723,1,0.8,0.952476,positive,0.235979,0.561299,0.059566,0.033896,0.026371,,,,
+1,348109410,Facility,Singapore City Gallery,0.958279,1,0.533778,0.955436,positive,0.010678,0.657674,0.007894,0.004288,0.008671,,,,
+1,348109410,Location,Singapore,0.428614,2,0.99965,0.867337,positive,0.008991,0.759093,0.007604,0.008182,0.004253,,,Singapore,http://dbpedia.org/resource/Singapore
+1,348109410,Location,Asia,0.217927,1,0.866099,0.955436,positive,0.010678,0.657674,0.007894,0.004288,0.008671,,,,
+1,348007117,Location,Singapore,0.985873,5,1.0,0.780326,positive,0.273818,0.57093,0.015788,0.022898,0.011164,,,Singapore,http://dbpedia.org/resource/Singapore
+1,348007117,Organization,Urban Redevelopment Authority,0.792401,1,0.858412,0.780326,positive,0.110249,0.41191,0.020829,0.037963,0.009921,,,Urban_Redevelopment_Authority,http://dbpedia.org/resource/Urban_Redevelopment_Authority
+1,348007117,Quantity,50 years,0.534917,2,0.96,0.699284,positive,0.242507,0.574511,0.029471,0.12969,0.076015,,,,
+1,348007117,Quantity,20 years,0.314668,1,0.8,0.437761,positive,0.332757,0.247347,0.131028,0.095291,0.113234,,,,
+1,341495978,Location,Singapore,0.963296,1,0.983765,0,neutral,0.149213,0.637389,0.01734,0.038859,0.068715,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341495978,Quantity,50 years,0.903792,1,0.8,0,neutral,0.149213,0.637389,0.01734,0.038859,0.068715,,,,
+1,339832152,Facility,Maxwell Centre,0.978348,1,0.544083,0.810579,positive,0.103084,0.667125,0.117136,0.018331,0.027386,,,,
+1,668566685,Facility,Singapore City Gallery,0.958279,1,0.396959,0.86148,positive,0.072635,0.56218,0.054481,0.030777,0.02591,,,,
+1,668566685,Facility,Maxwell Hawker food centre,0.160114,1,0.448314,0.0,neutral,0.117906,0.418229,0.198214,0.155121,0.091429,,,,
+1,668566685,Location,Singapore,0.127484,1,0.986106,0.0,neutral,0.076454,0.219204,0.010848,0.040894,0.00562,,,Singapore,http://dbpedia.org/resource/Singapore
+1,636716715,Facility,Singapore City Gallery,0.954265,1,0.471909,0.714479,positive,0.33687,0.484495,0.029335,0.096321,0.037222,,,,
+1,636716715,Location,Shanghai,0.487565,1,0.99674,0.714479,positive,0.33687,0.484495,0.029335,0.096321,0.037222,,,,
+1,636716715,Organization,Urban Redevelopment Authority,0.390648,1,0.641416,0.0,neutral,0.141074,0.30113,0.095108,0.02338,0.076297,,,Urban_Redevelopment_Authority,http://dbpedia.org/resource/Urban_Redevelopment_Authority
+1,636716715,Location,Singapore,0.256847,1,0.990268,0.908188,positive,0.143635,0.145113,0.007756,0.033987,0.09493,,,Singapore,http://dbpedia.org/resource/Singapore
+1,636716715,Organization,Maxwell Food Centre,0.207106,1,0.627036,0.4632,positive,0.306931,0.222323,0.310423,0.118913,0.112568,,,,
+1,573021795,Location,Singapore,0.978348,1,0.984252,0.830918,positive,0.0905,0.553649,0.038216,0.040015,0.07256,,,Singapore,http://dbpedia.org/resource/Singapore
+1,554548536,Location,Singapore City,0.963296,1,0.956038,0.821877,positive,0.517001,0.216646,0.054664,0.021896,0.117656,,,Singapore,http://dbpedia.org/resource/Singapore
+1,554548536,Person,Rene,0.566106,1,0.969433,0.821877,positive,0.517001,0.216646,0.054664,0.021896,0.117656,,,,
+1,526405133,Location,Singapore,0.9999,2,0.999867,0.893061,positive,0.033257,0.799763,0.05087,0.098644,0.021227,,,Singapore,http://dbpedia.org/resource/Singapore
+1,522548210,Location,Singapore,0.998416,5,1.0,0.895658,positive,0.111514,0.676045,0.014246,0.015833,0.102454,,,Singapore,http://dbpedia.org/resource/Singapore
+1,522548210,Quantity,50 years,0.395234,1,0.8,0.922525,positive,0.305544,0.35979,0.024907,0.03906,0.020593,,,,
+1,522548210,Facility,Marina Bay,0.364092,1,0.159501,0.889062,positive,0.099433,0.701661,0.096893,0.040459,0.067261,,,,
+1,492721163,Location,Singapore,0.978348,1,0.873324,0.9488,positive,0.021022,0.591253,0.018679,0.019593,0.020975,,,Singapore,http://dbpedia.org/resource/Singapore
+1,490075193,Organization,URA,0.978348,1,0.983325,0.906056,positive,0.040587,0.373522,0.062008,0.03013,0.13277,,,,
+1,485188119,Location,Singapore,0.963296,1,0.995047,0.993079,positive,0.165846,0.753514,0.00867,0.012232,0.01699,,,Singapore,http://dbpedia.org/resource/Singapore
+1,485188119,Person,Maxwell foodcourt,0.661382,1,0.964221,0.0,neutral,0.17201,0.458339,0.103267,0.039676,0.255716,,,,
+1,481970572,Location,Singapore,0.978348,1,0.964055,0.979606,positive,0.027961,0.770632,0.030593,0.018471,0.03073,,,Singapore,http://dbpedia.org/resource/Singapore
+1,481450967,Location,Singapore,0.9999,2,0.999836,-0.529686,negative,0.623556,0.326446,0.070086,0.03494,0.022547,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,480789274,Location,Singapore,0.993399,3,0.999996,0.891793,positive,0.047777,0.605007,0.017778,0.010669,0.010003,,,Singapore,http://dbpedia.org/resource/Singapore
+1,480789274,Quantity,1.5 hrs,0.755113,1,0.8,0.957352,positive,0.240032,0.456591,0.126016,0.034942,0.170365,,,,
+1,469293892,Facility,City Gallery,0.963296,1,0.921545,0.922523,positive,0.05304,0.443214,0.041762,0.032631,0.016804,,['Museum'],City_Gallery,http://dbpedia.org/resource/City_Gallery
+1,469293892,Location,Singapore,0.582158,1,0.954887,0.922523,positive,0.05304,0.443214,0.041762,0.032631,0.016804,,,Singapore,http://dbpedia.org/resource/Singapore
+1,463389960,Organization,Maxwell Hawker food center,0.958279,1,0.240409,0.646038,positive,0.327647,0.540729,0.027229,0.093781,0.059401,,,,
+1,463389960,Location,Singapore,0.884536,1,0.991677,0.984405,positive,0.012093,0.68734,0.023542,0.051961,0.04471,,,Singapore,http://dbpedia.org/resource/Singapore
+1,463389960,Person,Rice,0.071881,1,0.360887,0.646038,positive,0.327647,0.540729,0.027229,0.093781,0.059401,,,,
+1,443690358,Location,Singapore,0.958279,1,0.957817,0.971253,positive,0.068581,0.743218,0.026372,0.02048,0.014522,,,Singapore,http://dbpedia.org/resource/Singapore
+1,443690358,Quantity,40 years,0.888078,1,0.8,0.0,neutral,0.255658,0.606339,0.059043,0.014365,0.038686,,,,
+1,443690358,Location,Vietnam,0.298458,1,0.997292,0.827895,positive,0.081502,0.702624,0.039558,0.035966,0.096063,,,,
+1,443633118,Location,Singapore,0.978348,1,0.965963,0.925858,positive,0.055095,0.810632,0.074095,0.025899,0.014918,,,Singapore,http://dbpedia.org/resource/Singapore
+1,443404927,Facility,URA Gallery,0.953262,1,0.725436,0.0,neutral,0.119192,0.571537,0.05293,0.126837,0.033507,,,,
+1,443404927,Facility,hawker store,0.801689,1,0.396491,0.0,neutral,0.276324,0.468986,0.021664,0.072144,0.086187,,,,
+1,443404927,Facility,sports stadium,0.562589,1,0.490533,0.0,neutral,0.276324,0.468986,0.021664,0.072144,0.086187,,,,
+1,443404927,Location,Tampines,0.471075,1,0.498832,-0.614795,negative,0.161833,0.393479,0.383077,0.071628,0.019005,,,,
+1,443404927,Facility,Tampines Mall,0.447681,1,0.600729,0.0,neutral,0.389227,0.339346,0.087711,0.172767,0.032013,,"['Location', 'ShoppingCenter']",Tampines_Mall,http://dbpedia.org/resource/Tampines_Mall
+1,443404927,Quantity,3 years,0.277269,1,0.8,-0.614795,negative,0.461971,0.348766,0.057026,0.016527,0.059231,,,,
+1,442762531,Organization,Maxwell Hawker Centre,0.963296,1,0.30751,0.926902,positive,0.170353,0.321578,0.347321,0.059668,0.066207,,,,
+1,442762531,Location,Singapore,0.25692,1,0.999507,0.302818,positive,0.117891,0.1011,0.067246,0.048675,0.181137,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,440052638,Location,singapore,0.978348,1,0.994998,0,neutral,0.081835,0.545703,0.231216,0.014772,0.062506,,,Singapore,http://dbpedia.org/resource/Singapore
+1,425499119,Location,Singapore,0.963296,1,0.986991,0.981752,positive,0.180264,0.562499,0.01957,0.026688,0.081235,,,Singapore,http://dbpedia.org/resource/Singapore
+1,425499119,Location,Chinatown,0.039155,1,0.25679,0.853579,positive,0.056054,0.712435,0.167314,0.024305,0.040093,,,,
+1,416159070,Organization,Maxwell Food Center,0.958279,1,0.374278,0.0,neutral,0.407679,0.04306,0.236374,0.12578,0.129779,,,,
+1,416159070,Location,Chinatown,0.522148,1,0.294415,0.0,neutral,0.407679,0.04306,0.236374,0.12578,0.129779,,,,
+1,416159070,Location,Singapore,0.411374,2,0.999991,0.966503,positive,0.178393,0.70536,0.068383,0.00694,0.035121,,,Singapore,http://dbpedia.org/resource/Singapore
+1,398463280,Location,Singapore,0.978348,1,0.983084,0.966965,positive,0.070162,0.343085,0.079476,0.055715,0.11082,,,Singapore,http://dbpedia.org/resource/Singapore
+1,390811270,Location,Singapore,0.963296,1,0.983957,0.762014,positive,0.036754,0.662494,0.019028,0.014509,0.019935,,,Singapore,http://dbpedia.org/resource/Singapore
+1,390811270,Quantity,50 years,0.339549,1,0.8,0.847988,positive,0.091434,0.089159,0.112904,0.053399,0.153782,,,,
+1,390633249,Location,Singapore,0.978348,1,0.990443,0.965599,positive,0.123912,0.601451,0.058764,0.047025,0.065033,,,Singapore,http://dbpedia.org/resource/Singapore
+1,386986052,Location,Singapore,0.978348,1,0.988175,0.981774,positive,0.0455,0.777055,0.007345,0.00765,0.01549,,,Singapore,http://dbpedia.org/resource/Singapore
+1,375646413,Location,Singapore,0.9999,2,0.997995,0.970051,positive,0.299928,0.336634,0.093951,0.053516,0.345181,,,Singapore,http://dbpedia.org/resource/Singapore
+1,365985717,Location,Singapore,0.9999,2,0.999953,0.963776,positive,0.036693,0.918673,0.024904,0.003365,0.00322,,,Singapore,http://dbpedia.org/resource/Singapore
+1,362047021,Facility,Maxwell food court,0.963296,1,0.217022,0.861711,positive,0.100943,0.537814,0.119803,0.219331,0.091963,,,,
+1,362047021,Location,Singapore,0.154404,1,0.991775,0.811541,positive,0.043177,0.80145,0.108993,0.004567,0.020961,,,Singapore,http://dbpedia.org/resource/Singapore
+1,350644873,Location,Singapore,0.963296,1,0.97588,0.855544,positive,0.10877,0.453029,0.139553,0.01685,0.077888,,,Singapore,http://dbpedia.org/resource/Singapore
+1,350644873,Organization,Maxwell hawker centre,0.686956,1,0.3925,0.684262,positive,0.137275,0.726918,0.085575,0.030495,0.028138,,,,
+1,346491262,Location,Singapore,0.978348,2,0.999461,0.798682,positive,0.177282,0.395582,0.039886,0.091779,0.046786,,,Singapore,http://dbpedia.org/resource/Singapore
+1,346491262,Location,China Town,0.779601,1,0.563338,0.0,neutral,0.218289,0.454562,0.11656,0.255739,0.026958,,,,
+1,345497192,Location,Singapore,0.963296,1,0.662376,0.844733,positive,0.136673,0.597117,0.034497,0.063005,0.02857,,,Singapore,http://dbpedia.org/resource/Singapore
+1,345497192,Quantity,30 years,0.479849,1,0.8,0.844733,positive,0.136673,0.597117,0.034497,0.063005,0.02857,,,,
+1,342541583,Location,Singapore,0.963296,1,0.964445,0.917581,positive,0.059306,0.776501,0.071549,0.017881,0.026389,,,Singapore,http://dbpedia.org/resource/Singapore
+1,342541583,Facility,Maxwell Food Center,0.628248,1,0.457992,0.795533,positive,0.120095,0.5915,0.054167,0.05616,0.067291,,,,
+1,573371377,Facility,Maxwell Food Centre,0.954265,1,0.380647,0.0,neutral,0.086184,0.111859,0.165115,0.109228,0.165459,,,,
+1,573371377,Quantity,11 metre,0.691213,1,0.8,0.836571,positive,0.144494,0.169225,0.03135,0.039149,0.058929,,,,
+1,573371377,Location,Singapore,0.559252,2,0.981807,0.836571,positive,0.169541,0.223508,0.036077,0.031937,0.053115,,,Singapore,http://dbpedia.org/resource/Singapore
+1,573371377,Quantity,10 metre,0.476315,1,0.8,0.836571,positive,0.144494,0.169225,0.03135,0.039149,0.058929,,,,
+1,573371377,Quantity,50 years,0.356118,1,0.8,0.836571,positive,0.213602,0.336713,0.095003,0.044307,0.045694,,,,
+1,388311154,Quantity,1 hour,0.978348,1,0.8,0.927291,positive,0.258427,0.340202,0.195042,0.009628,0.054964,,,,
+1,352469483,Facility,City Gallery,0.963296,1,0.921359,0.97176,positive,0.058886,0.769256,0.053425,0.038703,0.012974,,['Museum'],City_Gallery,http://dbpedia.org/resource/City_Gallery
+1,352469483,Location,Singapore,0.62337,2,0.999632,0.891126,positive,0.048417,0.762706,0.085475,0.077105,0.017903,,,Singapore,http://dbpedia.org/resource/Singapore
+1,339307394,Location,Singapore,0.978348,1,0.999565,0.988544,positive,0.117812,0.462505,0.029212,0.0308,0.022281,,,Singapore,http://dbpedia.org/resource/Singapore
+1,717679034,Quantity,200 years,0.978348,1,0.8,0,neutral,0.048262,0.432665,0.052848,0.019776,0.075482,,,,
+1,713098120,Location,Singapore,0.978348,1,0.900256,0.983765,positive,0.025343,0.796483,0.069082,0.012968,0.025067,,,Singapore,http://dbpedia.org/resource/Singapore
+1,693821129,Location,Singapore,0.978348,1,0.990008,0.930508,positive,0.058179,0.827096,0.01034,0.010063,0.010583,,,Singapore,http://dbpedia.org/resource/Singapore
+1,663331048,Location,Singapore,0.978348,1,0.984307,0,neutral,0.135529,0.160539,0.039446,0.068084,0.047277,,,Singapore,http://dbpedia.org/resource/Singapore
+1,566172515,Location,Singapore,0.978348,1,0.999325,0.971598,positive,0.04576,0.725595,0.041175,0.020335,0.020604,,,Singapore,http://dbpedia.org/resource/Singapore
+1,560968712,Location,Singapore,0.978348,1,0.988498,0.921635,positive,0.093962,0.690108,0.053386,0.01171,0.021907,,,Singapore,http://dbpedia.org/resource/Singapore
+1,556210011,Location,Singapore,0.9999,2,0.999655,0.897913,positive,0.066251,0.498214,0.016681,0.010676,0.011933,,,Singapore,http://dbpedia.org/resource/Singapore
+1,515423483,Organization,Urban Redevelopment Authority,0.963296,1,0.522246,-0.414788,negative,0.097745,0.313989,0.081289,0.052647,0.098943,,,Urban_Redevelopment_Authority,http://dbpedia.org/resource/Urban_Redevelopment_Authority
+1,515423483,Location,Singapore,0.543947,2,0.997736,0.929766,positive,0.078836,0.336541,0.023617,0.012918,0.072999,,,Singapore,http://dbpedia.org/resource/Singapore
+1,459501157,Location,Singapore,0.9999,2,0.999995,0.776212,positive,0.089349,0.387526,0.025808,0.020635,0.031029,,,Singapore,http://dbpedia.org/resource/Singapore
+1,445553100,Location,Singapore,0.978348,1,0.987413,0.9874,positive,0.029985,0.896124,0.017513,0.025503,0.01914,,,Singapore,http://dbpedia.org/resource/Singapore
+1,442986786,Location,Singapore,0.9999,2,0.999388,0.851519,positive,0.055297,0.434755,0.310078,0.032631,0.036453,,,Singapore,http://dbpedia.org/resource/Singapore
+1,441281033,Location,Singapore,0.978348,1,0.915538,0.973887,positive,0.024741,0.606217,0.04139,0.018877,0.027581,,,Singapore,http://dbpedia.org/resource/Singapore
+1,438073427,Location,Singapore,0.978348,1,0.994675,0.885095,positive,0.144807,0.401425,0.163679,0.143208,0.095174,,,Singapore,http://dbpedia.org/resource/Singapore
+1,425552371,Location,Singapore,0.9999,2,0.999886,0.685349,positive,0.285781,0.271351,0.148791,0.066736,0.227358,,,Singapore,http://dbpedia.org/resource/Singapore
+1,419434856,Organization,URA,0.963296,1,0.967742,0.993165,positive,0.020801,0.917745,0.035649,0.00903,0.011329,,,,
+1,419434856,Quantity,2 hours,0.212763,1,0.8,0.856078,positive,0.296009,0.42221,0.156458,0.039954,0.160482,,,,
+1,402263353,Location,Singapore,0.9999,3,0.999955,0.93282,positive,0.113521,0.375793,0.018207,0.032511,0.119036,,,Singapore,http://dbpedia.org/resource/Singapore
+1,402024546,Quantity,10years,0.963296,1,0.8,0.802209,positive,0.098068,0.594941,0.051248,0.03243,0.025706,,,,
+1,402024546,Location,Singapore,0.925782,3,1.0,0.72037,positive,0.101293,0.586428,0.112313,0.026555,0.031978,,,Singapore,http://dbpedia.org/resource/Singapore
+1,392455564,Location,Singapore,0.978348,1,0.959709,-0.711501,negative,0.183851,0.212744,0.059268,0.018386,0.025904,,,Singapore,http://dbpedia.org/resource/Singapore
+1,387983763,Location,Singapore,0.978348,1,0.997889,0.955394,positive,0.019177,0.82855,0.033845,0.00997,0.00999,,,Singapore,http://dbpedia.org/resource/Singapore
+1,383951920,Location,singapore,0.9999,2,0.999122,0.91883,positive,0.032685,0.243995,0.15636,0.011467,0.024207,,,Singapore,http://dbpedia.org/resource/Singapore
+1,359707432,Facility,Singapore City Gallery,0.958279,1,0.57839,0.0,neutral,0.095907,0.325924,0.049234,0.027151,0.022007,,,,
+1,359707432,Organization,Urban Redevelopment Authority of Singapore,0.890526,1,0.5606,0.0,neutral,0.095907,0.325924,0.049234,0.027151,0.022007,,,Urban_Redevelopment_Authority,http://dbpedia.org/resource/Urban_Redevelopment_Authority
+1,359707432,Location,Singapore,0.737447,4,1.0,0.890725,positive,0.059679,0.477322,0.010914,0.009291,0.019723,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341558628,Facility,Tanjong Pagar MRT station,0.958279,1,0.622157,0,neutral,0.079283,0.232318,0.11354,0.030994,0.026979,,,,
+1,341558628,Location,singapore city,0.907794,2,0.994001,0,neutral,0.090072,0.180443,0.084535,0.019599,0.027596,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341558628,Facility,URA building,0.256161,1,0.515753,0,neutral,0.079283,0.232318,0.11354,0.030994,0.026979,,,,
