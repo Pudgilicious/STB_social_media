@@ -146,6 +146,7 @@ dependencies:
     - scrapy==1.8.0
     - secretstorage==3.1.1
     - selenium==3.141.0
+    - sematch==1.0.4
     - service-identity==18.1.0
     - six==1.13.0
     - sklearn==0.0
@@ -167,6 +168,7 @@ dependencies:
     - tensorflow==2.1.0
     - tensorflow-estimator==2.1.0
     - testpath==0.4.4
+    - textblob==0.15.3
     - tornado==6.0.3
     - traitlets==4.3.3
     - twint==2.1.11

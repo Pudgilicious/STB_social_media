@@ -1,0 +1,44 @@
+#This script copies the files from git folder across social media sites to secure thumbdrive
+#Copying the file to secured thumbdrive -->/media/jirong/Secure Key/stb_social_media/tripadvisor/finalised_output
+library(dplyr)
+
+########################################Tripadvisor#################################################
+#list.files("/media/jirong/Secure Key/stb_social_media/tripadvisor/finalised_output")
+
+#Read to_be_processed.csv
+trip_processed = read.csv("./tripadvisor/to_be_processed.csv", stringsAsFactors = F)
+trip_copied = read.csv("./tripadvisor/is_copied_files.csv", stringsAsFactors = F)
+
+#Determine which folders are not copied yet (check csv in git folder)
+trip_processed_rdy = trip_processed %>%
+                      dplyr::filter(IS_READY == 1)
+
+trip_processed_rdy = trip_processed_rdy[which(!(trip_processed_rdy$DATE_TIME %in% trip_copied$DATE_TIME)), ]
+
+write.table(trip_processed_rdy,
+            file="./finances.csv",
+            append = T,
+            sep=',',
+            row.names=F,
+            col.names=F)
+
+# data = read.csv("./tripadvisor/test1.csv", stringsAsFactors = F)
+# 
+# data1 = data  
+# data1[1, ] = 1
+# 
+# write.table( data1,
+#              file="./tripadvisor/test1.csv",
+#              append = T,
+#              sep=',',
+#              row.names=F,
+#              col.names=F )
+
+#Copy the folders to thumbdrive
+
+# write.table( dataplus,  
+#              file="./finances.csv", 
+#              append = T, 
+#              sep=',', 
+#              row.names=F, 
+#              col.names=F )
