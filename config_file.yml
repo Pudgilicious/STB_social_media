@@ -5,8 +5,6 @@ General:
     password: Password123!
     chromedriver_path: ./chromedriver
     thumb_dir: /media/jirong/Secure Key/stb_social_media
-    test: 1
-    test: 2
     
 TripAdvisor:
     # Crawler parameters
