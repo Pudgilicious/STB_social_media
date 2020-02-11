@@ -1,0 +1,230 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+1,695360683,Location,Singapore,0.963296,1,0.998192,0.0,neutral,0.103901,0.090968,0.067979,0.030514,0.026038,,,Singapore,http://dbpedia.org/resource/Singapore
+1,695360683,Location,Indonesia,0.602149,1,0.999521,0.616292,positive,0.059467,0.236498,0.02972,0.054489,0.029174,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,687359126,Location,Singapore,0.978348,1,0.810679,0,neutral,0.144982,0.429559,0.042465,0.050027,0.037097,,,Singapore,http://dbpedia.org/resource/Singapore
+1,667769384,Organization,Mt Faber,0.978348,1,0.306394,0.992868,positive,0.084749,0.631465,0.033871,0.117705,0.029041,,,,
+1,661084919,Location,Southern Ridges,0.963296,1,0.339113,0.855003,positive,0.244238,0.169077,0.263653,0.059284,0.243446,,,,
+1,661084919,Facility,Central Water Catchment,0.303434,1,0.076548,0.704589,positive,0.019834,0.645011,0.243993,0.101599,0.057419,,,,
+1,641927157,GeographicFeature,Mount Faber,0.978348,1,0.497896,0.64811,positive,0.146082,0.737839,0.06614,0.018611,0.028437,,,,
+1,641270150,Quantity,two hours,0.978348,1,0.8,0.618942,positive,0.135306,0.372653,0.189823,0.101,0.132372,,,,
+1,641255093,Location,Singapore,0.978348,1,0.999593,0,neutral,0.146596,0.34478,0.010898,0.002811,0.134573,,,Singapore,http://dbpedia.org/resource/Singapore
+1,615700703,Facility,Harbourfront station,0.963296,1,0.506266,0,neutral,0.269586,0.04882,0.07696,0.04196,0.291751,,,,
+1,615700703,Location,Singapore,0.60552,1,0.989251,0,neutral,0.269586,0.04882,0.07696,0.04196,0.291751,,,Singapore,http://dbpedia.org/resource/Singapore
+1,603617862,GeographicFeature,Sentosa island,0.978348,1,0.631928,0.835382,positive,0.178411,0.054738,0.142869,0.019026,0.278097,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,602449682,Location,Paris,0.978348,1,0.999842,0.949006,positive,0.044161,0.863433,0.024637,0.014466,0.006468,,,,
+1,599587501,GeographicFeature,mount Faber,0.978348,1,0.566817,0,neutral,0.262352,0.03067,0.14439,0.038977,0.309931,,,,
+1,595395652,GeographicFeature,Sentosa Island,0.968313,2,0.844645,0.613668,positive,0.18908,0.368749,0.155373,0.032068,0.231593,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,595395652,GeographicFeature,Mount Faber,0.783899,1,0.507875,0.613668,positive,0.08093,0.520684,0.08932,0.050302,0.079547,,,,
+1,595395652,Location,Singapore,0.281143,1,0.994005,0.613668,positive,0.08093,0.520684,0.08932,0.050302,0.079547,,,Singapore,http://dbpedia.org/resource/Singapore
+1,590807760,GeographicFeature,Sentosa Island,0.968313,2,0.806585,0.776754,positive,0.037668,0.83273,0.037792,0.017411,0.043304,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,590807760,Location,Singapore city,0.501313,1,0.689533,0.776754,positive,0.132388,0.751508,0.020396,0.024589,0.021927,,,Singapore,http://dbpedia.org/resource/Singapore
+1,590807760,Person,Gaudi,0.089452,1,0.405936,0.736658,positive,0.021568,0.621117,0.156061,0.024222,0.118673,,,,
+1,589133364,GeographicFeature,Mount Faber,0.978348,1,0.558441,0,neutral,0.319426,0.009583,0.172123,0.067335,0.511313,,,,
+1,574942907,Quantity,16 month,0.963296,1,0.8,0.887138,positive,0.282599,0.681131,0.022866,0.017332,0.007643,,,,
+1,574942907,Location,Singapore,0.44476,1,0.997001,0.680082,positive,0.44417,0.056089,0.102065,0.059138,0.241096,,,Singapore,http://dbpedia.org/resource/Singapore
+1,571321977,Facility,cablecar station,0.958279,1,0.535512,0.0,neutral,0.381834,0.194603,0.126905,0.14654,0.272986,,,,
+1,571321977,Location,Sentosa,0.68291,1,0.55277,0.953768,positive,0.032274,0.810655,0.026162,0.027314,0.019063,,,,
+1,571321977,Quantity,7 minutes,0.592429,1,0.8,0.0,neutral,0.381834,0.194603,0.126905,0.14654,0.272986,,,,
+1,549661432,Person,Henderson,0.978348,1,0.394352,0,neutral,0.163637,0.11408,0.278227,0.122086,0.092686,,,,
+1,538249698,Location,Singapore,0.978348,1,0.985124,0.976985,positive,0.029635,0.89656,0.008408,0.009162,0.022485,,,Singapore,http://dbpedia.org/resource/Singapore
+1,528060686,GeographicFeature,Mount Faber,0.968313,2,0.747018,0,neutral,0.236258,0.308928,0.165204,0.055024,0.204219,,,,
+1,528060686,Facility,Vivo City mall,0.635919,1,0.679255,0,neutral,0.320361,0.213872,0.202254,0.060365,0.185622,,,,
+1,528060686,GeographicFeature,Sentosa island,0.491574,1,0.647657,0,neutral,0.320361,0.213872,0.202254,0.060365,0.185622,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,519719488,Location,Singapore,0.978348,1,0.998075,-0.699084,negative,0.558612,0.054234,0.028603,0.022556,0.076178,,,Singapore,http://dbpedia.org/resource/Singapore
+1,495558486,Location,Singapore City,0.978348,1,0.778033,0.937549,positive,0.195188,0.365482,0.022659,0.070396,0.036509,,,Singapore,http://dbpedia.org/resource/Singapore
+1,492837010,GeographicFeature,Sentosa Island,0.958279,1,0.58315,0.669218,positive,0.236997,0.180968,0.127929,0.04819,0.295313,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,492837010,Location,Singapore,0.477386,1,0.892038,0.669218,positive,0.236997,0.180968,0.127929,0.04819,0.295313,,,Singapore,http://dbpedia.org/resource/Singapore
+1,492837010,Location,Indonesia,0.412434,1,0.999683,0.669218,positive,0.236997,0.180968,0.127929,0.04819,0.295313,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,479009183,Facility,Harbourfront,0.958279,1,0.604445,0.940385,positive,0.090601,0.708857,0.046047,0.044474,0.01518,,,,
+1,479009183,Location,Singapore,0.742847,1,0.985562,0.940385,positive,0.090601,0.708857,0.046047,0.044474,0.01518,,,Singapore,http://dbpedia.org/resource/Singapore
+1,479009183,Location,indonesia,0.016844,1,0.996211,0.783202,positive,0.108176,0.618864,0.164751,0.079891,0.043154,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,472640443,GeographicFeature,Mount Faber Peak,0.978348,1,0.417451,0.317037,positive,0.367517,0.356154,0.186449,0.039554,0.060334,,,,
+1,460493444,Location,Singapore,0.978348,1,0.93982,0.994139,positive,0.026925,0.931897,0.005286,0.005439,0.025029,,,Singapore,http://dbpedia.org/resource/Singapore
+1,446385499,GeographicFeature,Sentosa Island,0.963296,1,0.572458,0.727559,positive,0.38316,0.085793,0.221233,0.021441,0.201485,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,446385499,Location,Singapore,0.788115,1,0.998064,0.727559,positive,0.38316,0.085793,0.221233,0.021441,0.201485,,,Singapore,http://dbpedia.org/resource/Singapore
+1,428946709,GeographicFeature,Sentosa Island,0.978348,2,0.92118,0.860291,positive,0.017003,0.76338,0.112297,0.01472,0.017474,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,428946709,Facility,Merlion station,0.340783,1,0.470809,0.0,neutral,0.366676,0.073286,0.236921,0.037701,0.300891,,,,
+1,423509143,GeographicFeature,Sentosa island,0.9999,2,0.479191,0.93124,positive,0.25703,0.245886,0.212917,0.04138,0.234482,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,401543717,Location,Singapore,0.9999,2,0.99978,0.578733,positive,0.080371,0.261407,0.062579,0.039883,0.143073,,,Singapore,http://dbpedia.org/resource/Singapore
+1,393562341,Location,Singapore,0.978348,1,0.993944,0,neutral,0.324517,0.321192,0.1124,0.120147,0.056529,,,Singapore,http://dbpedia.org/resource/Singapore
+1,391957623,GeographicFeature,Sentosa island,0.978348,1,0.589678,0.846786,positive,0.06237,0.796878,0.061254,0.017116,0.024647,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,371930526,GeographicFeature,Mount Faber,0.963296,1,0.50025,0.882046,positive,0.060579,0.675131,0.057257,0.04977,0.012599,,,,
+1,371930526,Facility,Marina Bay Sands,0.735461,1,0.011075,0.882046,positive,0.060579,0.675131,0.057257,0.04977,0.012599,,,,
+1,349633358,GeographicFeature,Bukit Timah Hill,0.95577,1,0.31327,0,neutral,0.196915,0.176312,0.077473,0.061397,0.184697,,['Location'],Bukit_Timah,http://dbpedia.org/resource/Bukit_Timah
+1,349633358,Quantity,360 degrees,0.508356,1,0.8,0,neutral,0.057468,0.626735,0.170709,0.049856,0.040083,,,,
+1,349633358,Location,Singapore,0.446313,1,0.997665,0,neutral,0.196915,0.176312,0.077473,0.061397,0.184697,,,Singapore,http://dbpedia.org/resource/Singapore
+1,349633358,Quantity,100m,0.322349,1,0.8,0,neutral,0.052227,0.347037,0.045169,0.038864,0.013413,,,,
+1,347773639,GeographicFeature,Sentosa Island,0.9999,2,0.862624,0.568693,positive,0.229108,0.371636,0.236013,0.056913,0.145839,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,338792560,GeographicFeature,Mount Faber,0.963296,2,0.849957,0.0,neutral,0.182458,0.270892,0.245246,0.123615,0.251777,,,,
+1,338792560,GeographicFeature,Sentosa Island,0.572744,1,0.766144,0.0,neutral,0.350432,0.088199,0.288152,0.058065,0.317908,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,338792560,Quantity,$25,0.092359,1,0.8,0.483739,positive,0.274387,0.417107,0.052858,0.15278,0.094794,,,,
+1,338792560,Quantity,$35,0.079671,1,0.8,0.483739,positive,0.274387,0.417107,0.052858,0.15278,0.094794,,,,
+1,691281740,Person,Kelvin,0.963296,1,0.973799,0.96275,positive,0.160363,0.506843,0.015393,0.07125,0.165255,,,,
+1,691281740,Company,Faber,0.145287,1,0.379305,0.990257,positive,0.02399,0.888724,0.056714,0.005254,0.022859,,,,
+1,673107438,GeographicFeature,Mount Faber,0.958279,1,0.491931,0.0,neutral,0.190042,0.254605,0.085996,0.0627,0.137296,,,,
+1,673107438,GeographicFeature,Southern Ridges,0.676435,1,0.184192,0.692896,positive,0.155148,0.668541,0.016435,0.044826,0.016852,,,,
+1,673107438,Location,Singapore,0.353664,1,0.998757,0.0,neutral,0.190042,0.254605,0.085996,0.0627,0.137296,,,Singapore,http://dbpedia.org/resource/Singapore
+1,665050759,Location,Singapore,0.978348,1,0.992385,0,neutral,0.201633,0.346394,0.168322,0.047143,0.126474,,,Singapore,http://dbpedia.org/resource/Singapore
+1,651883877,Location,Singapore,0.963296,1,0.989706,0.998513,positive,0.0053,0.861031,0.051353,0.030673,0.010339,,,Singapore,http://dbpedia.org/resource/Singapore
+1,651883877,GeographicFeature,Sentosa island,0.207014,1,0.827264,0.998513,positive,0.0053,0.861031,0.051353,0.030673,0.010339,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,646321084,GeographicFeature,Mount Faber,0.978348,2,0.753327,0.744228,positive,0.057946,0.423874,0.024215,0.028157,0.113051,,,,
+1,646321084,Location,Singapore,0.327788,1,0.961217,0.746135,positive,0.026232,0.715788,0.006207,0.036554,0.012669,,,Singapore,http://dbpedia.org/resource/Singapore
+1,627647153,GeographicFeature,Mount Faber,0.958279,1,0.520535,0.858878,positive,0.211865,0.65021,0.05655,0.010041,0.015649,,,,
+1,627647153,Location,Singapore,0.130607,1,0.998671,0.0,neutral,0.278466,0.055584,0.137372,0.040701,0.238416,,,Singapore,http://dbpedia.org/resource/Singapore
+1,627647153,GeographicFeature,Sentosa Island,0.037857,1,0.62338,0.0,neutral,0.278466,0.055584,0.137372,0.040701,0.238416,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,597203349,Organization,Mt Faber,0.963296,1,0.388945,0.0,neutral,0.247975,0.517847,0.070063,0.122038,0.084888,,,,
+1,597203349,Location,Singapore,0.161535,1,0.993999,0.92165,positive,0.022869,0.886186,0.035201,0.017935,0.010502,,,Singapore,http://dbpedia.org/resource/Singapore
+1,577631235,GeographicFeature,Mount Faber,0.958279,1,0.689515,0.0,neutral,0.284784,0.125522,0.281499,0.072393,0.328292,,,,
+1,577631235,GeographicFeature,Sentosa Island,0.788038,1,0.591653,0.0,neutral,0.284784,0.125522,0.281499,0.072393,0.328292,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,577631235,Location,singapore,0.007064,1,0.987422,0.988617,positive,0.083701,0.774197,0.018248,0.016842,0.056573,,,Singapore,http://dbpedia.org/resource/Singapore
+1,577159097,GeographicFeature,Mount Faber,0.963296,1,0.520628,0.0,neutral,0.291084,0.047153,0.211621,0.0445,0.156839,,,,
+1,577159097,Location,Singapore,0.529562,2,0.999975,0.817445,positive,0.184797,0.2098,0.127061,0.014526,0.11249,,,Singapore,http://dbpedia.org/resource/Singapore
+1,565249974,GeographicFeature,Mt Faber,0.978348,1,0.439642,0.930507,positive,0.104265,0.826173,0.019461,0.044325,0.010912,,,,
+1,564263065,Person,Mount Faber,0.954265,1,0.413472,0.0,neutral,0.111798,0.570148,0.063123,0.01819,0.149943,,,,
+1,564263065,Facility,Mount Faber Park,0.814984,1,0.746328,0.255872,positive,0.230015,0.271126,0.172405,0.021631,0.203,,,,
+1,564263065,GeographicFeature,Sentosa Island,0.64863,1,0.507341,-0.401016,negative,0.305705,0.238579,0.065685,0.185831,0.264874,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,564263065,Location,Singapore,0.546218,3,1.0,0.758872,positive,0.102267,0.763884,0.048712,0.018001,0.060919,,,Singapore,http://dbpedia.org/resource/Singapore
+1,564263065,Location,Sentosa,0.217897,1,0.814306,0.890149,positive,0.158039,0.640628,0.073579,0.028431,0.039995,,,,
+1,563601050,GeographicFeature,Mount Faber,0.968313,2,0.786494,0,neutral,0.247289,0.5971,0.077565,0.031213,0.027868,,,,
+1,563601050,Location,Vivo,0.130025,1,0.937863,0,neutral,0.318383,0.46258,0.11516,0.049922,0.040687,,,,
+1,563601050,Facility,Mount Faber station,0.075509,1,0.774486,0,neutral,0.18822,0.243217,0.067962,0.066213,0.054669,,,,
+1,562253053,GeographicFeature,mount faber,0.978348,1,0.478169,0,neutral,0.496991,0.01496,0.206922,0.040495,0.368839,,,,
+1,557726180,Organization,Mt Faber,0.958279,1,0.478687,0.979687,positive,0.095213,0.835089,0.004966,0.025112,0.039118,,,,
+1,557726180,Facility,Telok Blangah,0.548572,1,0.347993,0.0,neutral,0.177039,0.280065,0.300932,0.029074,0.040072,,,,
+1,557726180,Facility,Telok Blangah Hill park,0.433474,1,0.645929,0.936176,positive,0.177039,0.280065,0.300932,0.029074,0.040072,,,,
+1,532054327,GeographicFeature,Mount Faber,0.963296,1,0.619933,0.904644,positive,0.046434,0.769839,0.081814,0.021106,0.018464,,,,
+1,532054327,Location,Singapore,0.15422,1,0.999925,-0.981628,negative,0.095609,0.605872,0.030781,0.0125,0.035621,,,Singapore,http://dbpedia.org/resource/Singapore
+1,527946162,Quantity,3 months,0.958279,1,0.8,0.725408,positive,0.550971,0.324136,0.05985,0.076855,0.03973,,,,
+1,527946162,Location,Singapore,0.684762,1,0.991015,0.725408,positive,0.550971,0.324136,0.05985,0.076855,0.03973,,,Singapore,http://dbpedia.org/resource/Singapore
+1,527946162,MusicGroup,Total,0.440345,1,0.59544,-0.679973,negative,0.115434,0.013614,0.13024,0.211074,0.368955,,,,
+1,526883039,GeographicFeature,Santosa island,0.953262,1,0.528413,-0.977528,negative,0.668869,0.036704,0.227548,0.089961,0.228637,,,,
+1,526883039,Quantity,$84,0.826728,1,0.8,0.0,neutral,0.125234,0.277238,0.03724,0.024865,0.087686,,,,
+1,526883039,Quantity,5 mins,0.774998,1,0.8,-0.772994,negative,0.510188,0.296809,0.125631,0.059659,0.061623,,,,
+1,526883039,GeographicFeature,mount Faber,0.757628,1,0.509549,-0.772994,negative,0.510188,0.296809,0.125631,0.059659,0.061623,,,,
+1,526883039,Quantity,30 mins,0.540487,1,0.8,-0.977528,negative,0.668869,0.036704,0.227548,0.089961,0.228637,,,,
+1,526883039,Quantity,10 mins,0.0396,1,0.8,-0.730742,negative,0.40393,0.176423,0.147931,0.116844,0.23772,,,,
+1,517711363,Location,singapore,0.978348,1,0.693656,0.868831,positive,0.080251,0.735573,0.044843,0.021448,0.022781,,,Singapore,http://dbpedia.org/resource/Singapore
+1,516463334,Location,Singapore,0.978348,1,0.988321,0.987015,positive,0.062164,0.819056,0.019705,0.020402,0.009132,,,Singapore,http://dbpedia.org/resource/Singapore
+1,473308500,Organization,Mt. Faber,0.963296,1,0.143268,0.649083,positive,0.168922,0.614839,0.085921,0.089421,0.095966,,,,
+1,473308500,Location,Singapore,0.349183,1,0.993948,0.881163,positive,0.131871,0.770803,0.017807,0.003312,0.058944,,,Singapore,http://dbpedia.org/resource/Singapore
+1,469958654,Location,Singapore,0.9999,2,0.998592,0,neutral,0.417529,0.033672,0.107365,0.028648,0.303463,,,Singapore,http://dbpedia.org/resource/Singapore
+1,469261419,Person,hudson,0.978348,1,0.577713,-0.784784,negative,0.608514,0.035987,0.072176,0.018374,0.121231,,,,
+1,459646584,GeographicFeature,Mount Faber,0.978348,1,0.513929,0.949448,positive,0.0983,0.676044,0.076929,0.046271,0.018046,,,,
+1,446888350,Location,Singapore,0.978348,1,0.988361,0,neutral,0.145978,0.57204,0.12788,0.057622,0.021363,,,Singapore,http://dbpedia.org/resource/Singapore
+1,439953255,Person,Mt. Faber,0.952545,1,0.502639,0.0,neutral,0.340272,0.301739,0.080522,0.172678,0.075592,,,,
+1,439953255,Quantity,105 metres,0.937499,1,0.8,0.0,neutral,0.340272,0.301739,0.080522,0.172678,0.075592,,,,
+1,439953255,Facility,Mt. Faber offers visitors,0.892194,1,0.143601,0.754709,positive,0.204763,0.182438,0.255402,0.115859,0.148865,,,,
+1,439953255,GeographicFeature,Sentosa Island,0.843593,1,0.751694,0.754709,positive,0.204763,0.182438,0.255402,0.115859,0.148865,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,439953255,Location,Singapore,0.325394,1,0.997701,0.839222,positive,0.027746,0.797543,0.03108,0.025341,0.019529,,,Singapore,http://dbpedia.org/resource/Singapore
+1,439953255,Facility,Bay Hotel,0.119992,1,0.72836,0.902485,positive,0.018612,0.730446,0.1117,0.121003,0.062028,,,,
+1,439953255,Quantity,15 minute,0.096066,1,0.8,0.902485,positive,0.018612,0.730446,0.1117,0.121003,0.062028,,,,
+1,393797775,GeographicFeature,Mount Faber,0.958279,1,0.700795,0.0,neutral,0.339148,0.044574,0.306225,0.03467,0.361128,,,,
+1,393797775,GeographicFeature,Sentosa island,0.780311,1,0.545682,0.0,neutral,0.339148,0.044574,0.306225,0.03467,0.361128,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,393797775,Facility,Harbour center,0.355919,1,0.492907,0.744319,positive,0.07787,0.455722,0.049908,0.005874,0.026053,,"['Location', 'Building', 'Skyscraper']",Harbour_Centre,http://dbpedia.org/resource/Harbour_Centre
+1,379863961,Location,Singapore,0.978348,1,0.9945,0.711386,positive,0.044029,0.289383,0.042862,0.077283,0.100275,,,Singapore,http://dbpedia.org/resource/Singapore
+1,372237060,Location,Singapore,0.978348,1,0.94948,0.729015,positive,0.157759,0.343427,0.063796,0.077723,0.125291,,,Singapore,http://dbpedia.org/resource/Singapore
+1,348822781,Location,Harbourfront,0.958279,1,0.361225,0.0,neutral,0.091095,0.612764,0.062383,0.036432,0.034928,,,,
+1,348822781,Location,Sentosa,0.869388,1,0.728672,0.877193,positive,0.146412,0.650113,0.028861,0.028039,0.019771,,,,
+1,348822781,Location,Singapore,0.664224,2,0.999995,0.78124,positive,0.171981,0.520085,0.033772,0.036109,0.050807,,,Singapore,http://dbpedia.org/resource/Singapore
+1,348065630,GeographicFeature,Sentosa island,0.958279,1,0.511306,0.972345,positive,0.030932,0.80046,0.046438,0.049185,0.014005,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,348065630,Quantity,15 min,0.792559,1,0.8,-0.605467,negative,0.077456,0.16665,0.021234,0.032038,0.052636,,,,
+1,348065630,Location,Singapore,0.768716,1,0.999568,0.955796,positive,0.09244,0.770818,0.102994,0.020146,0.031354,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341343471,GeographicFeature,Mount Faber,0.954265,2,0.726496,-0.302067,negative,0.134341,0.414156,0.048045,0.050281,0.166882,1,,,
+1,341343471,Facility,Fort Canning Park,0.882148,1,0.931395,0.807396,positive,0.066167,0.61191,0.03443,0.044492,0.015737,,,,
+1,341343471,Facility,Sentosa theme park,0.684287,1,0.251409,0.0,neutral,0.113756,0.480341,0.098532,0.053633,0.046136,,,,
+1,341343471,Company,Vivo City,0.586597,1,0.118421,0.679682,positive,0.211839,0.372129,0.203977,0.110679,0.138528,,,,
+1,341343471,Facility,Botanic Gardens,0.565052,1,0.952278,0.807396,positive,0.066167,0.61191,0.03443,0.044492,0.015737,,['Location'],Hong_Kong_Zoological_and_Botanical_Gardens,http://dbpedia.org/resource/Hong_Kong_Zoological_and_Botanical_Gardens
+1,341343471,Facility,Helix Bridge,0.52688,1,0.608681,0.679682,positive,0.211839,0.372129,0.203977,0.110679,0.138528,,,The_Helix_Bridge,http://dbpedia.org/resource/The_Helix_Bridge
+1,341343471,GeographicFeature,Marina Bay,0.416531,1,0.497683,0.679682,positive,0.113756,0.480341,0.098532,0.053633,0.046136,,,,
+1,341343471,Location,Singapore,0.360598,1,0.997615,0.807396,positive,0.066167,0.61191,0.03443,0.044492,0.015737,,,Singapore,http://dbpedia.org/resource/Singapore
+1,341343471,Quantity,90 minutes,0.324872,1,0.8,0.679682,positive,0.211839,0.372129,0.203977,0.110679,0.138528,,,,
+1,341343471,GeographicFeature,Sentosa Island,0.322659,1,0.497744,-0.901163,negative,0.194817,0.176722,0.065628,0.069276,0.199448,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,736529489,GeographicFeature,Mount Faber,0.9999,2,0.752417,0.8973,positive,0.029373,0.86774,0.007945,0.013326,0.032035,,,,
+1,723719152,Facility,Mt. Faber,0.963296,1,0.127012,0.857825,positive,0.205425,0.380657,0.401689,0.063472,0.021273,,,,
+1,723719152,Facility,Terrace Garden,0.121298,1,0.666522,0.843878,positive,0.070206,0.656077,0.075683,0.040052,0.025475,,,,
+1,616618626,GeographicFeature,Sentosa island,0.963296,1,0.454577,0.672235,positive,0.451907,0.239751,0.141043,0.051959,0.184993,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,616618626,Location,Singapore,0.670672,1,0.935027,0.312215,positive,0.127374,0.471441,0.066511,0.036934,0.040208,,,Singapore,http://dbpedia.org/resource/Singapore
+1,535514111,Facility,Harbourfront MRT station,0.953262,1,0.612985,0.638793,positive,0.176784,0.143215,0.091779,0.057965,0.064888,,,,
+1,535514111,Person,Alexandra Arch,0.535724,1,0.579993,0.842885,positive,0.045324,0.600596,0.090225,0.209209,0.046688,,,,
+1,535514111,Location,Singapore,0.346858,1,0.9976,0.0,neutral,0.166717,0.536058,0.051689,0.024154,0.067803,,,Singapore,http://dbpedia.org/resource/Singapore
+1,535514111,Sport,cycling,0.296409,1,0.505344,0.655799,positive,0.036245,0.770366,0.076313,0.03197,0.04985,,['OrganizationSector'],Cycling,http://dbpedia.org/resource/Cycling
+1,535514111,Person,Henderson,0.278928,1,0.821769,0.842885,positive,0.045324,0.600596,0.090225,0.209209,0.046688,,,,
+1,535514111,GeographicFeature,Mount Faber,0.095897,1,0.533115,0.0,neutral,0.403066,0.131555,0.041364,0.167739,0.110224,,,,
+1,521574537,Facility,Marang trail,0.950981,1,0.491286,-0.586707,negative,0.554735,0.136474,0.427786,0.060229,0.016237,,,,
+1,521574537,Facility,Southern Ridges walkway,0.906288,1,0.418322,-0.586707,negative,0.554735,0.136474,0.427786,0.060229,0.016237,,,,
+1,521574537,GeographicFeature,Henderson Waves Bridge,0.876694,1,0.239631,-0.586707,negative,0.554735,0.136474,0.427786,0.060229,0.016237,,,,
+1,521574537,GeographicFeature,Southern Ridges,0.517532,1,0.300943,0.929963,positive,0.047365,0.756676,0.087583,0.038664,0.082273,,,,
+1,521574537,Facility,VivoCity mall,0.496826,1,0.895544,0.396801,positive,0.047365,0.756676,0.087583,0.038664,0.082273,1,,,
+1,521574537,Quantity,5 kilometers,0.450236,1,0.8,0.92829,positive,0.43409,0.113111,0.243301,0.140573,0.270848,,,,
+1,521574537,GeographicFeature,Mount Faber,0.394211,1,0.487359,0.593712,positive,0.080436,0.458879,0.038507,0.082819,0.076271,,,,
+1,521574537,Facility,Alexandra,0.318945,1,0.587647,0.929963,positive,0.047365,0.756676,0.087583,0.038664,0.082273,,['Location'],Newport_Docks,http://dbpedia.org/resource/Newport_Docks
+1,521574537,GeographicFeature,Sentosa island,0.302764,1,0.498788,0.593712,positive,0.080436,0.458879,0.038507,0.082819,0.076271,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,521574537,Location,Singapore,0.102424,1,0.839546,0.593712,positive,0.080436,0.458879,0.038507,0.082819,0.076271,,,Singapore,http://dbpedia.org/resource/Singapore
+1,521574537,Quantity,10 minutes,0.037945,1,0.8,-0.89262,negative,0.562366,0.061153,0.15152,0.217529,0.250727,,,,
+1,515048592,GeographicFeature,mount faber,0.9999,2,0.877566,0,neutral,0.333946,0.041855,0.209429,0.086599,0.180685,,,,
+1,486332736,Quantity,25 minutes,0.978348,1,0.8,-0.724062,negative,0.263657,0.200723,0.174414,0.052359,0.345661,,,,
+1,482283874,Organization,Singapore Tourism Board,0.963296,1,0.947973,0,neutral,0.13838,0.416015,0.071912,0.04675,0.164352,,,Singapore_Tourism_Board,http://dbpedia.org/resource/Singapore_Tourism_Board
+1,482283874,Location,Singapore,0.903009,1,0.999266,0,neutral,0.13838,0.416015,0.071912,0.04675,0.164352,,,Singapore,http://dbpedia.org/resource/Singapore
+1,473225141,GeographicFeature,Mount Faber,0.978348,1,0.510552,0.759702,positive,0.022506,0.804594,0.023167,0.016923,0.011989,,,,
+1,437460025,Location,singapore,0.978348,1,0.979183,0.65329,positive,0.395495,0.341411,0.170803,0.087671,0.105649,,,Singapore,http://dbpedia.org/resource/Singapore
+1,429066556,GeographicFeature,Mount Faber,0.970822,3,0.85564,0.892961,positive,0.11268,0.79072,0.04261,0.007693,0.036352,,,,
+1,429066556,GeographicFeature,SENTOSA Island,0.596672,3,0.971292,0.533371,positive,0.114177,0.749762,0.040467,0.023848,0.069491,1,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,429066556,Location,Singapore,0.461886,3,1.0,0.910118,positive,0.153501,0.745378,0.04362,0.010082,0.012901,,,Singapore,http://dbpedia.org/resource/Singapore
+1,429066556,Facility,Singapore Cruise terminal,0.251369,1,0.466882,0.0,neutral,0.150409,0.573274,0.035554,0.043346,0.027095,,,,
+1,427718658,GeographicFeature,Mount Faber,0.978348,1,0.68043,0.401198,positive,0.394224,0.058452,0.146416,0.028428,0.411326,,,,
+1,383717105,Facility,Hort Park,0.961146,3,0.999616,0.909417,positive,0.025469,0.760432,0.03543,0.014443,0.184647,,,,
+1,383717105,GeographicFeature,Mount Faber,0.893446,2,0.768169,0.937564,positive,0.103171,0.580763,0.050653,0.053323,0.232332,,,,
+1,383717105,Facility,Mount Faber station,0.823974,1,0.756136,0.0,neutral,0.440209,0.094155,0.160497,0.087906,0.412147,,,,
+1,383717105,Quantity,274m,0.355419,1,0.8,0.0,neutral,0.180509,0.267357,0.149918,0.051926,0.044679,,,,
+1,383717105,Quantity,36m,0.340967,1,0.8,0.0,neutral,0.180509,0.267357,0.149918,0.051926,0.044679,,,,
+1,383717105,Person,Alexandra Arch,0.16484,1,0.614085,0.878958,positive,0.010251,0.765255,0.057818,0.005173,0.086878,,,,
+1,383717105,Location,Singapore,0.143485,1,0.97657,0.0,neutral,0.180509,0.267357,0.149918,0.051926,0.044679,,,Singapore,http://dbpedia.org/resource/Singapore
+1,368448180,GeographicFeature,Mount Faber,0.978348,2,0.808241,0.854832,positive,0.039195,0.873943,0.007051,0.052643,0.016997,,,,
+1,368448180,Location,Singapore,0.27295,2,0.999556,0.909861,positive,0.045038,0.896222,0.00459,0.046003,0.009764,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355912734,Quantity,6km,0.978348,1,0.8,0,neutral,0.096539,0.511397,0.026485,0.038117,0.073573,,,,
+1,352267599,Facility,Hort Park,0.958279,1,0.966588,0.847501,positive,0.088011,0.688548,0.089319,0.025056,0.028668,,,,
+1,352267599,Location,Henderson,0.380116,1,0.265735,0.847501,positive,0.088011,0.688548,0.089319,0.025056,0.028668,,,,
+1,352267599,Location,Singapore,0.155171,1,0.998348,0.847501,positive,0.088011,0.688548,0.089319,0.025056,0.028668,,,Singapore,http://dbpedia.org/resource/Singapore
+1,572360858,GeographicFeature,Mount Faber,0.958279,1,0.474725,0.730101,positive,0.373076,0.115747,0.099619,0.023711,0.29814,,,,
+1,572360858,Facility,Mount Faber station,0.654162,1,0.685076,0.0,neutral,0.08944,0.631601,0.040223,0.077858,0.076269,,,,
+1,572360858,Location,Singapore,0.032153,1,0.837903,0.927358,positive,0.034861,0.789708,0.015946,0.016707,0.047732,,,Singapore,http://dbpedia.org/resource/Singapore
+1,452638287,GeographicFeature,Mount Faber,0.978348,1,0.516278,0.926188,positive,0.013413,0.933355,0.0029,0.005669,0.00517,,,,
+1,360099229,Location,Singapore,0.9999,2,0.999852,0.783615,positive,0.083679,0.540179,0.035709,0.050432,0.071368,,,Singapore,http://dbpedia.org/resource/Singapore
+1,665679411,GeographicFeature,Sentosa Island,0.978348,1,0.78621,0.975568,positive,0.213272,0.658383,0.013898,0.018639,0.085585,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,652927253,Quantity,3 hours,0.978348,1,0.8,-0.905279,negative,0.48803,0.017107,0.291679,0.022761,0.407047,,,,
+1,643546292,Quantity,$500,0.978348,1,0.8,-0.68289,negative,0.130784,0.50985,0.262128,0.10769,0.04659,,,,
+1,639164920,GeographicFeature,Sentosa Island,0.978348,1,0.543636,0.926539,positive,0.04883,0.796514,0.099969,0.063606,0.017251,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,601429967,Facility,Mount Faber Park,0.978348,1,0.633202,0,neutral,0.325811,0.043214,0.161225,0.064636,0.476444,,,,
+1,553743353,GeographicFeature,Mount Faber,0.978348,1,0.588389,0.406076,positive,0.075009,0.678494,0.045294,0.038786,0.075302,,,,
+1,506627165,GeographicFeature,Mount Fabre,0.963296,1,0.441289,0,neutral,0.099663,0.624504,0.041109,0.095048,0.098684,,,,
+1,506627165,Location,singapore,0.175577,1,0.402818,0,neutral,0.322135,0.244594,0.126995,0.057928,0.068495,,,Singapore,http://dbpedia.org/resource/Singapore
+1,488761863,Facility,HarbourFront station,0.952545,1,0.41344,0.807112,positive,0.106326,0.569558,0.039666,0.072442,0.091683,,,,
+1,488761863,Location,strait,0.788986,1,0.340851,0.0,neutral,0.109167,0.4881,0.027675,0.114333,0.04493,,,,
+1,488761863,Location,Indonesia,0.681001,1,0.999674,0.0,neutral,0.109167,0.4881,0.027675,0.114333,0.04493,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction']",Indonesia,http://dbpedia.org/resource/Indonesia
+1,488761863,Location,Singapore,0.661094,1,0.957745,0.0,neutral,0.109167,0.4881,0.027675,0.114333,0.04493,,,Singapore,http://dbpedia.org/resource/Singapore
+1,488761863,GeographicFeature,Mt Faber,0.403515,1,0.325302,0.0,neutral,0.288738,0.533096,0.01902,0.026693,0.024357,,,,
+1,488761863,Facility,Kent ridge,0.254811,1,0.298486,0.784199,positive,0.288738,0.533096,0.01902,0.026693,0.024357,,,,
+1,488761863,Company,Google,0.152887,1,0.908425,0.789566,positive,0.0,0.0,0.0,0.0,0.0,,"['AcademicInstitution', 'AwardPresentingOrganization', 'OperatingSystemDeveloper', 'ProgrammingLanguageDeveloper', 'SoftwareDeveloper', 'VentureFundedCompany']",Google,http://dbpedia.org/resource/Google
+1,486101516,GeographicFeature,Sentosa island,0.9999,2,0.842288,0.918247,positive,0.026602,0.615251,0.05791,0.315213,0.023266,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,458773769,GeographicFeature,mount faber,0.968313,2,0.819893,0.80163,positive,0.134451,0.568596,0.117833,0.110924,0.069384,,,,
+1,458773769,Location,singapore,0.623872,2,0.999907,0.925548,positive,0.070587,0.52986,0.15161,0.074661,0.102187,,,Singapore,http://dbpedia.org/resource/Singapore
+1,458773769,GeographicFeature,faber peak,0.414632,1,0.309237,0.870529,positive,0.139035,0.626542,0.117871,0.052139,0.027168,,,,
+1,451402952,GeographicFeature,Mount Faber,0.978348,2,0.757443,0.0,neutral,0.11852,0.118705,0.139861,0.102067,0.190765,,,,
+1,451402952,Quantity,28 degrees celsius,0.081194,1,0.8,-0.695571,negative,0.107488,0.254675,0.114935,0.032999,0.057767,,,,
+1,436708511,Facility,Telok Blangah,0.978348,1,0.440712,0.84174,positive,0.02799,0.666356,0.058644,0.056641,0.103289,,,,
+1,416753874,GeographicFeature,Mount Faber,0.954265,1,0.498453,0.0,neutral,0.166967,0.540189,0.080293,0.022501,0.039042,,,,
+1,416753874,Location,Southern Ridges,0.774683,1,0.091366,0.0,neutral,0.166967,0.540189,0.080293,0.022501,0.039042,,,,
+1,416753874,Location,Singapore,0.601305,2,0.999941,0.807866,positive,0.199696,0.579997,0.059542,0.019259,0.033145,,,Singapore,http://dbpedia.org/resource/Singapore
+1,416753874,Person,Faber Point,0.160014,1,0.507153,0.0,neutral,0.270663,0.326736,0.124527,0.098859,0.223566,,,,
+1,416753874,Quantity,106 m,0.129705,1,0.8,0.0,neutral,0.270663,0.326736,0.124527,0.098859,0.223566,,,,
+1,388590544,GeographicFeature,Mount Faber,0.958279,1,0.474374,0,neutral,0.128759,0.368192,0.095672,0.074333,0.041177,,,,
+1,388590544,Facility,Faber Peak,0.906599,1,0.398339,0,neutral,0.077429,0.106223,0.055346,0.024447,0.033786,,,,
+1,388590544,Sport,swimming,0.144957,1,0.862693,0,neutral,0.110751,0.548249,0.069879,0.23224,0.011063,,,,
+1,384492669,Company,Singapore Flyer,0.963296,1,0.408295,0.686448,positive,0.231236,0.312461,0.083506,0.167618,0.292547,,,,
+1,384492669,Location,Singapore,0.919803,2,0.999881,0.70391,positive,0.095441,0.739767,0.021793,0.087422,0.073839,,,Singapore,http://dbpedia.org/resource/Singapore
+1,366001246,Facility,Mount Faber Park,0.958279,1,0.736639,0.584492,positive,0.156827,0.616897,0.166251,0.079065,0.04275,,,,
+1,366001246,GeographicFeature,Sentosa island,0.849493,1,0.743652,0.584492,positive,0.156827,0.616897,0.166251,0.079065,0.04275,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+1,366001246,Location,Singapore city,0.051415,1,0.764526,0.907101,positive,0.025663,0.906046,0.018362,0.026589,0.009887,,,Singapore,http://dbpedia.org/resource/Singapore
+1,345552316,Facility,Kent Ridge,0.958279,1,0.685147,0.0,neutral,0.058509,0.410666,0.072118,0.018591,0.067113,,,,
+1,345552316,Location,Singapore,0.70223,1,0.997759,0.944787,positive,0.169709,0.589085,0.01756,0.081838,0.082538,,,Singapore,http://dbpedia.org/resource/Singapore
+1,345552316,Quantity,9km,0.589123,1,0.8,0.0,neutral,0.058509,0.410666,0.072118,0.018591,0.067113,,,,

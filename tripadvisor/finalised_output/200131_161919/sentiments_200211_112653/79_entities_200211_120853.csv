@@ -1,0 +1,166 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+1,741866029,Facility,Dhoby Ghuat MRT station,0.978348,1,0.600188,0,neutral,0.261107,0.264991,0.061765,0.016621,0.066488,,,,
+1,677973256,Quantity,50%,0.978348,1,0.8,0.827145,positive,0.091781,0.480852,0.232508,0.10304,0.011999,,,,
+1,650681161,Facility,Dhoby Ghuat MRT station,0.978348,1,0.667181,0,neutral,0.129815,0.24119,0.072803,0.051743,0.081345,,,,
+1,648646252,Location,singapore,0.978348,1,0.992844,0.608249,positive,0.193258,0.460172,0.05674,0.020597,0.024511,,,Singapore,http://dbpedia.org/resource/Singapore
+1,634967054,Quantity,2 dollar,0.958279,1,0.8,0,neutral,0.084513,0.471395,0.029483,0.156433,0.057015,,,,
+1,634967054,Quantity,10 dollar,0.859678,1,0.8,0,neutral,0.102098,0.416475,0.094754,0.059754,0.129789,,,,
+1,634967054,Company,Lego,0.232113,1,0.679276,0,neutral,0.063937,0.082153,0.037148,0.025605,0.047487,,,,
+1,607858385,Facility,Dhoby Ghaut station,0.963296,1,0.571559,0.593587,positive,0.124675,0.148708,0.084212,0.080656,0.067224,,,,
+1,607858385,Location,Singapore,0.821799,2,0.999821,0.353892,positive,0.156172,0.702218,0.066895,0.014249,0.03024,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,587009286,Organization,Food court,0.963296,1,0.410607,0.935339,positive,0.075123,0.121932,0.295319,0.239091,0.23348,,,,
+1,587009286,Sport,swimming,0.823544,1,0.956211,0.338431,positive,0.176552,0.386919,0.059964,0.397982,0.014425,,,,
+1,552125845,Person,Tim Ho Wan,0.963296,1,0.552282,-0.558037,negative,0.417361,0.231763,0.068831,0.144893,0.046693,,,,
+1,552125845,Facility,Cold Storage,0.121887,1,0.390968,0.759313,positive,0.119217,0.709423,0.042672,0.062104,0.027721,,,,
+1,506768863,Facility,Dhoby Ghaut MRT Station,0.978348,1,0.701652,0.697684,positive,0.548126,0.177888,0.078052,0.095348,0.172552,,,,
+1,475426416,Facility,Dhoby Ghaut MRT station,0.978348,1,0.812204,0.77129,positive,0.061237,0.503691,0.064056,0.042601,0.101605,,,,
+1,474081387,Location,singapore,0.978348,1,0.998344,0.632114,positive,0.079479,0.503777,0.121854,0.047258,0.013562,,,Singapore,http://dbpedia.org/resource/Singapore
+1,459596306,Facility,Dhoby Ghout MRT station,0.963296,1,0.645751,0.746473,positive,0.268705,0.331329,0.092494,0.051801,0.051063,,,,
+1,459596306,Facility,YWCA,0.137716,1,0.213132,0.650424,positive,0.225646,0.326064,0.133367,0.286736,0.130801,,"['Location', 'Museum']",Riverside_Art_Museum,http://dbpedia.org/resource/Riverside_Art_Museum
+1,448711114,Organization,Food court,0.978348,1,0.502648,0,neutral,0.210228,0.070353,0.233408,0.461935,0.229694,,,,
+1,442286843,Organization,Food court,0.963296,1,0.486693,0.0,neutral,0.185137,0.020266,0.089282,0.215918,0.259433,,,,
+1,442286843,Facility,Dhoby Ghaut MRT station,0.235837,1,0.335472,0.968043,positive,0.138168,0.594723,0.050143,0.019114,0.015454,,,,
+1,440578936,Facility,Sakae Teppanyaki Restaurant,0.958279,1,0.62234,0.754674,positive,0.063454,0.40473,0.040757,0.302314,0.05655,,,,
+1,440578936,Person,Jonah,0.568874,1,0.975117,0.754674,positive,0.063454,0.40473,0.040757,0.302314,0.05655,,['ReligiousLeader'],Jonah,http://dbpedia.org/resource/Jonah
+1,440578936,Quantity,4 years,0.517507,1,0.8,0.754674,positive,0.063454,0.40473,0.040757,0.302314,0.05655,,,,
+1,422389396,Organization,Food court,0.978348,1,0.382095,0,neutral,0.260859,0.440615,0.062404,0.212453,0.14038,,,,
+1,375745389,Facility,Singapura Plaza,0.963296,1,0.547718,0.589155,positive,0.15353,0.609701,0.069533,0.036222,0.022772,,,,
+1,375745389,Location,Singapore,0.470038,1,0.984817,0.589155,positive,0.15353,0.609701,0.069533,0.036222,0.022772,,,Singapore,http://dbpedia.org/resource/Singapore
+1,362219253,Location,Golden Village,0.958279,1,0.417882,0.0,neutral,0.182983,0.54227,0.13205,0.043866,0.047882,,,,
+1,362219253,Facility,Cold Storage,0.211751,1,0.219647,0.452761,positive,0.566322,0.10451,0.20251,0.041905,0.132129,,,,
+1,362219253,Location,Singapore,0.007042,1,0.998258,0.452761,positive,0.566322,0.10451,0.20251,0.041905,0.132129,,,Singapore,http://dbpedia.org/resource/Singapore
+1,355932028,Location,Singapore,0.9999,2,0.999992,0.721472,positive,0.195,0.628634,0.084691,0.014631,0.038807,,,Singapore,http://dbpedia.org/resource/Singapore
+1,340910726,Organization,Shopping Centre,0.963296,1,0.212991,0.0,neutral,0.331771,0.535538,0.024724,0.04154,0.046845,,,,
+1,340910726,Quantity,$12,0.796284,1,0.8,0.671878,positive,0.068471,0.47668,0.073177,0.049195,0.090936,,,,
+1,339448426,Location,singapore,0.978348,1,0.997945,0.941272,positive,0.065359,0.54143,0.058284,0.043742,0.006841,,,Singapore,http://dbpedia.org/resource/Singapore
+1,657893031,Facility,Dhobi Ghaut Metro station,0.963296,1,0.424743,0.0,neutral,0.110748,0.358987,0.167058,0.144086,0.126276,,,,
+1,657893031,Facility,Plaza Singapura,0.408971,1,0.306018,0.821388,positive,0.109822,0.749291,0.075608,0.00397,0.064759,,"['Location', 'ShoppingCenter']",Plaza_Singapura,http://dbpedia.org/resource/Plaza_Singapura
+1,640223364,Quantity,20 years,0.978348,1,0.8,0,neutral,0.290493,0.538316,0.09639,0.024483,0.006522,,,,
+1,624974927,Company,Yamaha,0.978348,1,0.876227,0.871825,positive,0.233219,0.454939,0.061587,0.074548,0.114079,,,Yamaha_Corporation,http://dbpedia.org/resource/Yamaha_Corporation
+1,588231607,Location,Singapore,0.963296,1,0.997331,0.937017,positive,0.337438,0.534534,0.03194,0.057394,0.020265,,,Singapore,http://dbpedia.org/resource/Singapore
+1,588231607,Facility,Plaza Singapura,0.781853,1,0.776796,0.845391,positive,0.240181,0.329239,0.096357,0.04334,0.049563,,"['Location', 'ShoppingCenter']",Plaza_Singapura,http://dbpedia.org/resource/Plaza_Singapura
+1,544182103,Facility,Plaza singapura,0.958279,1,0.531222,0,neutral,0.154967,0.2429,0.112812,0.049724,0.133091,,"['Location', 'ShoppingCenter']",Plaza_Singapura,http://dbpedia.org/resource/Plaza_Singapura
+1,544182103,Company,public transport systems,0.812997,1,0.540817,0,neutral,0.154967,0.2429,0.112812,0.049724,0.133091,,,,
+1,544182103,Location,singapore,0.638175,3,1.0,0,neutral,0.203267,0.088351,0.091429,0.050785,0.037956,,,Singapore,http://dbpedia.org/resource/Singapore
+1,515742070,Location,Singapore,0.978348,1,0.99887,0,neutral,0.042461,0.363801,0.145284,0.024071,0.021127,,,Singapore,http://dbpedia.org/resource/Singapore
+1,506246086,Facility,Great mall,0.963296,1,0.924508,0.928167,positive,0.034866,0.685155,0.028353,0.009036,0.002471,,"['Location', 'ShoppingCenter']",Great_Mall_of_the_Bay_Area,http://dbpedia.org/resource/Great_Mall_of_the_Bay_Area
+1,506246086,Facility,Dhoby Ghaut station,0.435161,1,0.547941,0.0,neutral,0.269994,0.151013,0.050504,0.185752,0.021274,,,,
+1,493016667,Facility,MRT Dhoby Ghaut station,0.978348,1,0.419376,0,neutral,0.11312,0.551998,0.057606,0.074549,0.01377,,,,
+1,469301812,Location,Singapore,0.9999,2,0.999997,-0.437134,negative,0.095403,0.715899,0.071691,0.041257,0.01773,1,,Singapore,http://dbpedia.org/resource/Singapore
+1,456568391,Quantity,$2,0.978348,1,0.8,0.971055,positive,0.026818,0.637312,0.005929,0.002924,0.042417,,,,
+1,432285204,Facility,memorial plaza,0.963296,1,0.548871,-0.496436,negative,0.579088,0.037808,0.226025,0.101371,0.231436,,,,
+1,432285204,Location,Singapore,0.338008,1,0.998274,-0.496436,negative,0.579088,0.037808,0.226025,0.101371,0.231436,,,Singapore,http://dbpedia.org/resource/Singapore
+1,417859434,Facility,Plaza Singapura,0.963296,1,0.242247,0.607097,positive,0.030049,0.571195,0.059422,0.020977,0.025425,,"['Location', 'ShoppingCenter']",Plaza_Singapura,http://dbpedia.org/resource/Plaza_Singapura
+1,417859434,Facility,MRT station,0.802394,1,0.509882,0.607097,positive,0.030049,0.571195,0.059422,0.020977,0.025425,,,,
+1,411937062,Company,Mcdonalds,0.963296,1,0.988012,0.907418,positive,0.18883,0.42459,0.086405,0.033653,0.091546,,['Organization'],McDonald%27s,http://dbpedia.org/resource/McDonald%27s
+1,411937062,Company,KFC,0.941694,1,0.971577,0.907418,positive,0.18883,0.42459,0.086405,0.033653,0.091546,,,,
+1,409067297,Facility,Cathay theatre,0.978348,1,0.492751,0,neutral,0.208931,0.384629,0.161221,0.127093,0.014337,,,,
+1,399859660,Company,Daiso,0.963296,1,0.540941,0,neutral,0.293497,0.161848,0.006309,0.035821,0.157777,,,Daiso,http://dbpedia.org/resource/Daiso
+1,399859660,Quantity,two dollars,0.554706,1,0.8,0,neutral,0.293497,0.161848,0.006309,0.035821,0.157777,,,,
+1,392755679,Person,mc donalds,0.958279,1,0.477218,0,neutral,0.073268,0.567943,0.046597,0.0943,0.044075,,,,
+1,392755679,Company,burger king,0.861186,1,0.591608,0,neutral,0.073268,0.567943,0.046597,0.0943,0.044075,,['VideoGamePublisher'],Burger_King,http://dbpedia.org/resource/Burger_King
+1,392755679,Company,kfc,0.735353,1,0.912433,0,neutral,0.073268,0.567943,0.046597,0.0943,0.044075,,,,
+1,386411599,Facility,Dhoby Ghaut MRT station,0.978348,1,0.45996,0.809678,positive,0.331903,0.289804,0.027131,0.063632,0.015691,,,,
+1,336330029,Facility,Dollar store,0.978348,1,0.217267,0.791266,positive,0.088418,0.51961,0.001933,0.001587,0.020757,,,,
+1,731994025,Location,Singapore,0.978348,1,0.99796,0.43654,positive,0.376234,0.445669,0.113101,0.051459,0.01155,,,Singapore,http://dbpedia.org/resource/Singapore
+1,694680464,Location,Singapore,0.978348,1,0.999623,0,neutral,0.219028,0.378958,0.137821,0.111672,0.026728,,,Singapore,http://dbpedia.org/resource/Singapore
+1,660228392,Facility,Plaza Singapura,0.954265,1,0.537722,0,neutral,0.044588,0.442969,0.145085,0.040731,0.041085,,"['Location', 'ShoppingCenter']",Plaza_Singapura,http://dbpedia.org/resource/Plaza_Singapura
+1,660228392,Location,Singapore,0.654919,2,0.999862,0,neutral,0.062358,0.570809,0.098243,0.036141,0.029123,,,Singapore,http://dbpedia.org/resource/Singapore
+1,660228392,Location,South East Asia,0.423892,1,0.515824,0,neutral,0.112874,0.531796,0.092648,0.03561,0.019428,,,,
+1,660228392,Facility,Yaohan department store,0.410972,1,0.157133,0,neutral,0.16442,0.064415,0.020554,0.028555,0.007057,,,,
+1,660228392,Facility,flower store,0.118332,1,0.774809,0,neutral,0.26359,0.141425,0.033866,0.015747,0.056329,,,,
+1,654903746,Quantity,40percent,0.95577,2,0.96,-0.735353,negative,0.650665,0.184499,0.121296,0.126694,0.08232,,,,
+1,654903746,Quantity,4 yards,0.868747,2,0.96,-0.519136,negative,0.642151,0.142425,0.110463,0.129553,0.055666,,,,
+1,654903746,Quantity,$30,0.515191,1,0.8,0.0,neutral,0.0,0.0,0.0,0.0,0.0,,,,
+1,654903746,Quantity,$18,0.477412,1,0.8,-0.651127,negative,0.186777,0.144674,0.022258,0.039111,0.074736,,,,
+1,654903746,Quantity,50percent,0.446863,1,0.8,0.0,neutral,0.566499,0.204262,0.099455,0.10307,0.060519,,,,
+1,654903746,Quantity,60%,0.395725,1,0.8,-0.490206,negative,0.291351,0.13009,0.105413,0.178947,0.038087,,,,
+1,654903746,Quantity,1 metre,0.267439,1,0.8,0.0,neutral,0.291351,0.13009,0.105413,0.178947,0.038087,,,,
+1,654903746,Location,UK,0.225586,1,0.998542,0.0,neutral,0.223599,0.11433,0.05373,0.019375,0.17101,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction', 'Kingdom', 'MeteorologicalService']",United_Kingdom,http://dbpedia.org/resource/United_Kingdom
+1,638263787,Person,tim ho wan,0.963296,1,0.595784,0.737595,positive,0.352259,0.500953,0.026221,0.056937,0.045705,,,,
+1,638263787,Company,starbucks,0.084358,1,0.991879,0.737595,positive,0.352259,0.500953,0.026221,0.056937,0.045705,,,Starbucks,http://dbpedia.org/resource/Starbucks
+1,596869364,Facility,starhub store,0.95577,1,0.71044,0.0,neutral,0.276897,0.291533,0.121917,0.035211,0.126105,,,,
+1,596869364,Person,tim ho,0.48766,1,0.956512,-0.620847,negative,0.386708,0.298416,0.0736,0.021963,0.071032,,,,
+1,596869364,Quantity,5 years,0.262859,1,0.8,-0.620847,negative,0.386708,0.298416,0.0736,0.021963,0.071032,,,,
+1,596869364,Company,cineplex,0.247378,1,0.723794,0.0,neutral,0.287096,0.128317,0.070723,0.04919,0.039279,,['MusicalArtist'],Ludacris,http://dbpedia.org/resource/Ludacris
+1,526760719,Facility,Istana,0.952007,1,0.538195,0.0,neutral,0.058173,0.25239,0.050081,0.072388,0.055105,,,,
+1,526760719,Quantity,20 bus,0.817248,1,0.8,0.0,neutral,0.269679,0.210897,0.042648,0.216844,0.046343,,,,
+1,526760719,Facility,Dhoby Ghaut station,0.789718,1,0.491815,0.0,neutral,0.200306,0.111444,0.075324,0.072073,0.168662,,,,
+1,526760719,Quantity,40 years,0.514693,1,0.8,0.0,neutral,0.058173,0.25239,0.050081,0.072388,0.055105,,,,
+1,526760719,Location,Singapore,0.409736,1,0.99913,0.0,neutral,0.058173,0.25239,0.050081,0.072388,0.055105,,,Singapore,http://dbpedia.org/resource/Singapore
+1,526760719,Facility,Daiso department store,0.367247,1,0.314346,0.0,neutral,0.246893,0.066406,0.069349,0.075142,0.167351,,,,
+1,526760719,Facility,Time Zone,0.288508,1,0.343347,-0.868089,negative,0.12801,0.639534,0.190083,0.027324,0.052949,,,,
+1,526760719,Company,Yamaha,0.19713,1,0.809298,0.0,neutral,0.039393,0.729792,0.01869,0.06298,0.095757,,,Yamaha_Corporation,http://dbpedia.org/resource/Yamaha_Corporation
+1,523028150,Facility,Typical Singapore mall,0.963296,1,0.3686,0.0,neutral,0.17341,0.362243,0.067018,0.35036,0.012891,,,,
+1,523028150,Location,Singapore,0.206899,1,0.999463,0.90297,positive,0.082551,0.683964,0.039715,0.03932,0.070916,,,Singapore,http://dbpedia.org/resource/Singapore
+1,473387467,Facility,Plaza Singapura,0.956845,2,0.734562,0.0,neutral,0.168883,0.467216,0.156621,0.055625,0.145018,,"['Location', 'ShoppingCenter']",Plaza_Singapura,http://dbpedia.org/resource/Plaza_Singapura
+1,473387467,Location,Singapore,0.848714,3,1.0,0.700804,positive,0.279347,0.385397,0.0975,0.034393,0.128968,,,Singapore,http://dbpedia.org/resource/Singapore
+1,473387467,Facility,Dhoby Ghaut MRT station,0.822191,1,0.659536,0.0,neutral,0.298168,0.075258,0.073836,0.274966,0.025613,,,,
+1,473387467,Facility,Bras Basah,0.687235,1,0.384156,0.0,neutral,0.500142,0.114791,0.179708,0.167258,0.271948,,,,
+1,473387467,Facility,Clarke Quay,0.396086,1,0.238822,0.572006,positive,0.428403,0.101924,0.211089,0.052937,0.082501,,,,
+1,473387467,Location,India,0.19352,1,0.899914,0.572006,positive,0.428403,0.101924,0.211089,0.052937,0.082501,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,473387467,Location,Little,0.144571,1,0.940426,0.572006,positive,0.428403,0.101924,0.211089,0.052937,0.082501,,,,
+1,468060957,Location,Singapore,0.963296,1,0.99468,0.773493,positive,0.059861,0.407458,0.056361,0.089435,0.014702,,,Singapore,http://dbpedia.org/resource/Singapore
+1,468060957,Company,Yamaha,0.177567,1,0.318862,0.832002,positive,0.084782,0.454552,0.093477,0.017254,0.085995,,,Yamaha_Corporation,http://dbpedia.org/resource/Yamaha_Corporation
+1,461103012,Person,crowdy,0.978348,1,0.824731,-0.69611,negative,0.172973,0.63987,0.098005,0.113747,0.034089,,,,
+1,366015410,Location,Australia,0.978348,1,0.99947,0.777617,positive,0.216708,0.323327,0.075769,0.290867,0.093676,,,,
+1,591164794,Quantity,3 hrs,0.978348,1,0.8,0,neutral,0.451589,0.237803,0.075307,0.046536,0.278536,,,,
+1,336586157,Location,parkand,0.958279,1,0.772995,0.996218,positive,0.055351,0.88304,0.005587,0.038813,0.021906,,,,
+1,336586157,Location,victoria,0.440455,1,0.868869,0.996218,positive,0.055351,0.88304,0.005587,0.038813,0.021906,,,,
+1,336586157,Facility,hyatt hotel,0.035721,1,0.352394,0.996218,positive,0.055351,0.88304,0.005587,0.038813,0.021906,,,,
+1,654402236,Location,India,0.978348,1,0.982644,-0.591755,negative,0.635314,0.039212,0.331355,0.127981,0.139229,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,608726728,Location,Singapore,0.968313,2,0.999985,0.712685,positive,0.213255,0.539565,0.090289,0.071976,0.030426,,,Singapore,http://dbpedia.org/resource/Singapore
+1,608726728,Person,Giordano,0.564983,1,0.643441,0.0,neutral,0.020792,0.256885,0.145842,0.050975,0.043671,,,,
+1,608726728,Company,Nike,0.39372,1,0.450875,0.0,neutral,0.020792,0.256885,0.145842,0.050975,0.043671,,['Organization'],Nike%2C_Inc.,http://dbpedia.org/resource/Nike%2C_Inc.
+1,585150598,Organization,Singapore management university,0.978348,1,0.273303,0.571169,positive,0.41083,0.373985,0.218866,0.0584,0.062625,,"['Location', 'CollegeUniversity', 'University']",Singapore_Management_University,http://dbpedia.org/resource/Singapore_Management_University
+1,554685372,Company,"Marks and Spencer, Hamley Toys",0.958279,1,0.58056,0,neutral,0.025951,0.497718,0.052592,0.28095,0.027865,,,,
+1,554685372,Location,Oxford,0.359675,1,0.814957,0,neutral,0.025951,0.497718,0.052592,0.28095,0.027865,,,,
+1,554685372,Location,London,0.237964,1,0.999949,0,neutral,0.025951,0.497718,0.052592,0.28095,0.027865,,,,
+1,548961936,Facility,Dhoby Ghaut interchange station,0.978348,1,0.469884,0,neutral,0.149592,0.062551,0.044966,0.049422,0.033032,,,,
+1,545471307,Location,Golden Village,0.963296,1,0.413186,0.854404,positive,0.163333,0.744867,0.043403,0.030742,0.04225,,,,
+1,545471307,Organization,Justice League,0.566873,1,0.477242,0.854404,positive,0.163333,0.744867,0.043403,0.030742,0.04225,,,,
+1,537539858,Quantity,5 minutes,0.978348,1,0.8,-0.880743,negative,0.241675,0.04132,0.025786,0.14415,0.292379,,,,
+1,516941791,Facility,Kopitiam food court,0.963296,1,0.159814,-0.296927,negative,0.301832,0.165347,0.070518,0.048503,0.445968,,,,
+1,516941791,Quantity,two years,0.825871,1,0.8,0.986925,positive,0.317114,0.538157,0.048131,0.035497,0.01163,,,,
+1,514187524,Company,Capital mall group,0.95577,1,0.224629,0.0,neutral,0.104962,0.583281,0.091931,0.146336,0.009143,,,,
+1,514187524,Company,mark and spencer,0.266487,1,0.587314,0.0,neutral,0.054763,0.139456,0.04808,0.024126,0.065694,,,,
+1,514187524,Location,Singapore,0.263467,1,0.998051,-0.774429,negative,0.121425,0.054642,0.037039,0.048634,0.073547,,,Singapore,http://dbpedia.org/resource/Singapore
+1,514187524,Location,U.K.,0.116223,1,0.137046,0.0,neutral,0.054763,0.139456,0.04808,0.024126,0.065694,,"['AdministrativeDivision', 'Country', 'GovernmentalJurisdiction', 'Kingdom', 'MeteorologicalService']",United_Kingdom,http://dbpedia.org/resource/United_Kingdom
+1,501420646,Location,Singapore,0.9999,2,0.999962,0.721472,positive,0.124264,0.687018,0.077454,0.065867,0.029562,,,Singapore,http://dbpedia.org/resource/Singapore
+1,489556980,Facility,Dhoby Ghaut mrt station,0.978348,1,0.636246,0,neutral,0.278269,0.379537,0.082034,0.154879,0.019571,,,,
+1,488607099,Facility,Dhoby Ghaut Station,0.978348,1,0.25832,0.696676,positive,0.249878,0.428584,0.011725,0.019049,0.034296,,,,
+1,460269547,Quantity,one month,0.963296,1,0.8,0.762714,positive,0.327999,0.268016,0.131848,0.113795,0.098935,,,,
+1,460269547,Facility,Big mall,0.660758,1,0.555799,0.980599,positive,0.059768,0.842766,0.051741,0.041766,0.003071,,,,
+1,436271529,Quantity,$100,0.978348,1,0.8,-0.70076,negative,0.183971,0.120409,0.030729,0.16738,0.135651,,,,
+1,433813721,Facility,Fort Canning,0.95577,1,0.433681,0.0,neutral,0.463753,0.126,0.195309,0.228139,0.208866,,,,
+1,433813721,Quantity,5 minutes,0.669072,1,0.8,0.0,neutral,0.463753,0.126,0.195309,0.228139,0.208866,,,,
+1,433813721,Person,Tim Ho Wan,0.357217,1,0.618025,0.0,neutral,0.271767,0.532406,0.030155,0.074678,0.018858,,,,
+1,433813721,Location,Hong Kong,0.104308,1,0.995021,-0.699757,negative,0.271767,0.532406,0.030155,0.074678,0.018858,,"['HumanLanguage', 'AdministrativeDivision', 'Country', 'GovernmentalJurisdiction', 'BodyOfWater', 'CityTown', 'Cuisine']",Hong_Kong,http://dbpedia.org/resource/Hong_Kong
+1,425497830,Facility,Plaza Singapura,0.963296,1,0.42724,0.0,neutral,0.177982,0.119558,0.104524,0.077433,0.046853,,"['Location', 'ShoppingCenter']",Plaza_Singapura,http://dbpedia.org/resource/Plaza_Singapura
+1,425497830,Person,Costa Coffee,0.213052,1,0.026268,-0.880981,negative,0.639198,0.028461,0.251047,0.199479,0.205107,,,,
+1,424307650,Facility,dobby ghout MRT station,0.963296,1,0.392765,0,neutral,0.564108,0.175591,0.129228,0.047971,0.136722,,,,
+1,424307650,Quantity,5 min,0.652194,1,0.8,0,neutral,0.564108,0.175591,0.129228,0.047971,0.136722,,,,
+1,421207560,Person,Xin Wang,0.978348,1,0.241001,0,neutral,0.127632,0.649444,0.078155,0.018292,0.087569,,,,
+1,407358690,Facility,Golden Village complex,0.95577,1,0.579876,0.843682,positive,0.28324,0.50759,0.148027,0.012173,0.045701,,,,
+1,407358690,Facility,Nam Nam Vietnamese restaurant,0.86627,1,0.355593,0.602673,positive,0.076756,0.565344,0.040758,0.033083,0.007242,,,,
+1,407358690,Location,Singapore,0.522563,2,0.999844,0.865728,positive,0.141098,0.501899,0.132921,0.062942,0.056574,,,Singapore,http://dbpedia.org/resource/Singapore
+1,407358690,Facility,Dhauby Ghaut SMRT station,0.42723,1,0.328874,0.656265,positive,0.289508,0.064293,0.068847,0.088829,0.010469,,,,
+1,390629472,Person,John Little,0.978348,1,0.599826,0.964575,positive,0.085382,0.736349,0.064935,0.033763,0.028363,,,,
+1,389592529,Facility,visited Plaza Singapura,0.958279,1,0.545103,0.0,neutral,0.128281,0.514662,0.082965,0.079317,0.060962,,,,
+1,389592529,Facility,Huge mall,0.844881,1,0.526989,-0.618304,negative,0.041789,0.831557,0.032712,0.051204,0.036955,,,,
+1,389592529,Facility,Golden Village cineplex,0.441216,1,0.356917,-0.618304,negative,0.041789,0.831557,0.032712,0.051204,0.036955,,,,
+1,375309713,Location,Golden Village,0.978348,1,0.274063,0.589774,positive,0.168241,0.444169,0.143267,0.044645,0.039473,,,,
+1,354489478,Person,Tim Ho,0.952545,1,0.968753,0.500515,positive,0.16692,0.284053,0.033415,0.044151,0.143329,,,,
+1,354489478,Facility,Xin Wang HK cafe,0.833874,1,0.371814,0.500515,positive,0.16692,0.284053,0.033415,0.044151,0.143329,,,,
+1,354489478,Company,fastfood,0.512651,1,0.849625,0.0,neutral,0.132589,0.064501,0.051554,0.062854,0.120714,,"['Industry', 'Cuisine']",Fast_food,http://dbpedia.org/resource/Fast_food
+1,354489478,Company,kfc,0.410291,1,0.955518,0.0,neutral,0.132589,0.064501,0.051554,0.062854,0.120714,,,,
+1,354489478,Company,Burger King,0.366583,1,0.585196,0.0,neutral,0.132589,0.064501,0.051554,0.062854,0.120714,,['VideoGamePublisher'],Burger_King,http://dbpedia.org/resource/Burger_King
+1,354489478,Facility,Cold Storage,0.245119,1,0.520179,0.0,neutral,0.132589,0.064501,0.051554,0.062854,0.120714,,,,
+1,354489478,Person,spencer,0.215045,1,0.634791,0.0,neutral,0.132589,0.064501,0.051554,0.062854,0.120714,,,,
+1,352871604,Quantity,$2,0.95577,1,0.8,0.654563,positive,0.10087,0.633933,0.029487,0.044901,0.020403,,,,
+1,352871604,Facility,Starhub main service center,0.390299,1,0.16413,0.0,neutral,0.283107,0.032441,0.022988,0.055758,0.122713,,,,
+1,352871604,Location,japan,0.38192,1,0.99902,0.654563,positive,0.10087,0.633933,0.029487,0.044901,0.020403,,,,
+1,352871604,Location,singapore,0.190742,1,0.998134,0.88266,positive,0.097896,0.208085,0.031194,0.304678,0.522359,,,Singapore,http://dbpedia.org/resource/Singapore
+1,351308245,Location,taiwan,0.978348,1,0.988856,0.974352,positive,0.077913,0.805098,0.041542,0.054117,0.043228,,,,
+1,338151877,Facility,MRT station,0.963296,1,0.492339,0.921437,positive,0.018382,0.887424,0.03035,0.008044,0.012597,,,,
+1,338151877,Facility,lucky plaza,0.875933,1,0.992121,0.921437,positive,0.018382,0.887424,0.03035,0.008044,0.012597,,"['Location', 'ShoppingCenter']",Lucky_Plaza,http://dbpedia.org/resource/Lucky_Plaza

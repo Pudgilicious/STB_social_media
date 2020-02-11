@@ -1,0 +1,179 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+1,688007707,Location,India,0.978348,2,0.999683,0.849828,positive,0.03009,0.880955,0.047437,0.043859,0.009686,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,688007707,Location,Singapore,0.066599,1,0.995708,0.0,neutral,0.055995,0.464322,0.122161,0.038043,0.147079,,,Singapore,http://dbpedia.org/resource/Singapore
+1,673281142,Location,Little India,0.978348,1,0.493164,0,neutral,0.293898,0.134598,0.189503,0.106248,0.111469,,,,
+1,668770547,Location,Singapore,0.978348,1,0.999755,0,neutral,0.436596,0.097374,0.049038,0.032043,0.018713,,,Singapore,http://dbpedia.org/resource/Singapore
+1,641926485,Location,Singapore,0.978348,1,0.998569,0.871287,positive,0.404252,0.186306,0.140009,0.098641,0.092127,,,Singapore,http://dbpedia.org/resource/Singapore
+1,637932269,Facility,Hilton Garden Inn,0.978348,1,0.907129,0.72723,positive,0.077224,0.587921,0.078871,0.064891,0.091338,,['Brand'],Hilton_Garden_Inn,http://dbpedia.org/resource/Hilton_Garden_Inn
+1,625958147,Location,India,0.963296,1,0.977911,0.923153,positive,0.052487,0.698011,0.099722,0.022133,0.036051,,,,
+1,625958147,Location,Singapore,0.561562,1,0.999332,0.938391,positive,0.278984,0.1819,0.09659,0.083158,0.102821,,,Singapore,http://dbpedia.org/resource/Singapore
+1,561535585,Location,India,0.978348,1,0.828262,0.962169,positive,0.037068,0.751791,0.074474,0.053822,0.026164,,,,
+1,549214205,Location,Little India,0.963296,1,0.541128,0.987977,positive,0.248504,0.150636,0.151808,0.097754,0.109318,,,,
+1,549214205,Location,India,0.00574,1,0.903812,0.0,neutral,0.184204,0.145062,0.198549,0.113181,0.123537,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,548535438,Person,mustafa,0.963296,1,0.94058,0.775728,positive,0.546816,0.247142,0.11472,0.098555,0.135597,,,,
+1,548535438,Person,darshan,0.175749,1,0.967377,0.880829,positive,0.010228,0.957827,0.006875,0.003561,0.00835,,,,
+1,501740916,Facility,Buddhist temple,0.978348,1,0.390726,0.630809,positive,0.078446,0.540742,0.064012,0.017487,0.019323,,,,
+1,486735686,Location,Little India,0.963296,1,0.542461,-0.607335,negative,0.144614,0.089103,0.254081,0.026517,0.134793,,,,
+1,486735686,Person,tuck,0.840157,1,0.43148,-0.607335,negative,0.144614,0.089103,0.254081,0.026517,0.134793,,,,
+1,485929061,Location,India,0.958279,1,0.946823,0,neutral,0.57431,0.068158,0.119396,0.080932,0.111918,,,,
+1,485929061,Person,darshan,0.700784,1,0.693483,0,neutral,0.49501,0.362295,0.083406,0.033239,0.055667,,,,
+1,485929061,Person,Kesari Sheera,0.441304,1,0.299882,0,neutral,0.49501,0.362295,0.083406,0.033239,0.055667,,,,
+1,476054348,Facility,South Indian temple,0.958279,1,0.400489,0.832943,positive,0.330529,0.593306,0.017879,0.018329,0.021361,,,,
+1,476054348,Location,Chennai,0.24219,1,0.987209,0.99387,positive,0.615954,0.152825,0.266795,0.059011,0.063053,,,,
+1,476054348,Location,India,0.005925,1,0.858449,0.845054,positive,0.086938,0.162932,0.087769,0.050832,0.065816,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,475447031,Location,India,0.963296,1,0.999776,0.539178,positive,0.213693,0.699434,0.031013,0.02324,0.065203,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,475447031,Location,Singapore,0.400807,1,0.990255,0.539178,positive,0.213693,0.699434,0.031013,0.02324,0.065203,,,Singapore,http://dbpedia.org/resource/Singapore
+1,446391649,Location,India,0.963296,1,0.941268,0.936087,positive,0.115171,0.655644,0.018472,0.021375,0.015187,,,,
+1,446391649,Location,Little,0.81288,1,0.936405,0.936087,positive,0.115171,0.655644,0.018472,0.021375,0.015187,,,,
+1,446178930,Location,Singapore,0.95577,1,0.99666,0.0,neutral,0.162592,0.165336,0.066734,0.19058,0.027033,,,Singapore,http://dbpedia.org/resource/Singapore
+1,446178930,Location,India,0.617457,1,0.982325,0.0,neutral,0.215881,0.214463,0.242072,0.082841,0.163769,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,446178930,Location,Little,0.488734,1,0.964034,0.0,neutral,0.215881,0.214463,0.242072,0.082841,0.163769,,,,
+1,446178930,Quantity,15 minutes,0.248953,1,0.8,0.600742,positive,0.271761,0.243198,0.204164,0.199597,0.214722,,,,
+1,443650442,Location,India,0.963296,1,0.934375,0.662161,positive,0.314564,0.21718,0.070588,0.029573,0.017513,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,443650442,Location,Singapore,0.955546,1,0.999677,0.0,neutral,0.638751,0.137309,0.041653,0.040412,0.052029,,,Singapore,http://dbpedia.org/resource/Singapore
+1,434135763,Quantity,Milk,0.963296,1,0.8,0.789244,positive,0.322276,0.329649,0.005584,0.314815,0.062078,,,,
+1,434135763,Person,milk,0.760984,1,0.853429,0.0,neutral,0.353069,0.02064,0.161101,0.490845,0.280943,,,,
+1,408493258,Facility,Sri Veeramakaliamman Temple,0.956845,2,0.645719,0.0,neutral,0.464653,0.286941,0.043252,0.068483,0.130622,,,,
+1,408493258,Location,kali amman,0.844557,1,0.340925,0.995209,positive,0.407345,0.568805,0.013907,0.019513,0.022361,,,,
+1,408493258,Person,Murugan,0.508472,1,0.957094,0.995209,positive,0.407345,0.568805,0.013907,0.019513,0.022361,,,,
+1,408493258,Location,Bengal,0.452793,2,0.757233,0.935152,positive,0.464653,0.286941,0.043252,0.068483,0.130622,,,,
+1,408493258,Person,Ganesh,0.446743,1,0.994129,0.995209,positive,0.407345,0.568805,0.013907,0.019513,0.022361,,,,
+1,408493258,Location,Singapore,0.402751,2,1.0,0.0,neutral,0.464653,0.286941,0.043252,0.068483,0.130622,,,Singapore,http://dbpedia.org/resource/Singapore
+1,408493258,Location,India,0.302204,1,0.937062,0.995209,positive,0.407345,0.568805,0.013907,0.019513,0.022361,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,361357864,Location,India,0.978348,1,0.904532,0.936759,positive,0.107776,0.492391,0.070419,0.11413,0.054525,,,,
+1,707219879,Location,Singapore,0.978348,1,0.963779,0.997646,positive,0.116161,0.7729,0.02898,0.028364,0.0697,,,Singapore,http://dbpedia.org/resource/Singapore
+1,702779505,Facility,Sri Veeramakaliamman Temple,0.958279,1,0.395493,0.0,neutral,0.409428,0.372226,0.058158,0.041763,0.035162,,,,
+1,702779505,Location,India,0.513039,2,0.990362,0.935958,positive,0.298433,0.60702,0.054689,0.02097,0.019988,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,702779505,Location,Singapore,0.40975,1,0.991299,0.0,neutral,0.409428,0.372226,0.058158,0.041763,0.035162,,,Singapore,http://dbpedia.org/resource/Singapore
+1,680018933,Location,India,0.978348,1,0.99437,0.71473,positive,0.278047,0.276183,0.123846,0.059798,0.071318,,,,
+1,647066945,Facility,Heritage Trail,0.963296,1,0.62973,0,neutral,0.255688,0.189334,0.098594,0.082373,0.127989,,,,
+1,647066945,Location,India,0.53988,1,0.990042,0,neutral,0.255688,0.189334,0.098594,0.082373,0.127989,,,,
+1,635617264,Facility,Sri Vadapathira Kaliamman Temple,0.978348,1,0.301198,0.712831,positive,0.159784,0.321325,0.068836,0.052531,0.213747,,,,
+1,631821841,Quantity,15 min,0.963296,1,0.8,0.91935,positive,0.403274,0.503021,0.036965,0.048239,0.043376,,,,
+1,631821841,Location,India,0.59433,1,0.595373,0.91935,positive,0.403274,0.503021,0.036965,0.048239,0.043376,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,627918928,Location,Singapore,0.963296,1,0.984361,0.0,neutral,0.567028,0.191123,0.074129,0.095402,0.154017,,,Singapore,http://dbpedia.org/resource/Singapore
+1,627918928,Location,india,0.009312,1,0.957092,0.965528,positive,0.061357,0.613529,0.036325,0.256303,0.075614,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,576759308,Location,India,0.978348,1,0.90613,0.996871,positive,0.112172,0.683636,0.170898,0.01483,0.042346,,,,
+1,562059213,Location,India,0.978348,1,0.992119,0.887951,positive,0.161907,0.402734,0.081271,0.094359,0.285278,,,,
+1,561859115,Organization,Mustafa Centre,0.978348,1,0.666183,0.959454,positive,0.253837,0.272077,0.05275,0.091965,0.174135,,"['Location', 'Company', 'Facility', 'ShoppingCenter']",Mustafa_Centre,http://dbpedia.org/resource/Mustafa_Centre
+1,561310794,Location,india,0.978348,1,0.966553,0.694061,positive,0.179415,0.685354,0.079248,0.025164,0.029886,,,,
+1,558813561,Location,India,0.978348,1,0.829915,0.97803,positive,0.093891,0.82489,0.032271,0.023006,0.019384,,,,
+1,558693424,Location,India,0.978348,1,0.919213,0.907409,positive,0.47142,0.250182,0.11224,0.094669,0.095374,,,,
+1,545520452,Location,Singapore,0.978348,1,0.999171,0.798843,positive,0.082099,0.765349,0.03667,0.035198,0.052393,,,Singapore,http://dbpedia.org/resource/Singapore
+1,540427495,Location,Singapore,0.978348,1,0.999857,0,neutral,0.251381,0.194681,0.090676,0.083076,0.103842,,,Singapore,http://dbpedia.org/resource/Singapore
+1,539141990,Person,Deepvali,0.963296,1,0.36136,0,neutral,0.23229,0.08677,0.131481,0.077354,0.077018,,,,
+1,539141990,Location,India,0.369642,1,0.919093,0,neutral,0.23229,0.08677,0.131481,0.077354,0.077018,,,,
+1,534314615,Person,Deepvali,0.978348,1,0.954238,0,neutral,0.029242,0.76648,0.013835,0.126967,0.012007,,,,
+1,529792983,Location,india,0.978348,1,0.901762,0.792022,positive,0.10684,0.326468,0.090878,0.100271,0.075073,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,510794816,Location,Singapore,0.9999,2,0.999998,0,neutral,0.033968,0.322681,0.107401,0.045886,0.035869,,,Singapore,http://dbpedia.org/resource/Singapore
+1,503364481,Person,Kali,0.963296,1,0.271943,0.92884,positive,0.17426,0.702007,0.014476,0.017396,0.02085,,,,
+1,503364481,Quantity,3 weeks,0.080222,1,0.8,0.35477,positive,0.175834,0.404316,0.064702,0.18059,0.097861,,,,
+1,502172367,Facility,temple.classic indian temple,0.978348,1,0.318677,0.883295,positive,0.333075,0.269255,0.067888,0.058968,0.097192,,,,
+1,464492563,Location,India,0.963296,1,0.951215,0,neutral,0.185895,0.06079,0.067912,0.016633,0.057794,,,,
+1,464492563,Location,Little,0.769633,1,0.948676,0,neutral,0.185895,0.06079,0.067912,0.016633,0.057794,,,,
+1,463417238,Location,India,0.978348,1,0.970476,0.906025,positive,0.039142,0.902182,0.002685,0.012635,0.027514,,"['GovernmentalJurisdiction', 'Kingdom']",British_Raj,http://dbpedia.org/resource/British_Raj
+1,462406709,Location,India,0.978348,1,0.902724,0.970081,positive,0.042895,0.834118,0.062503,0.019792,0.029353,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,460235358,Facility,Jamae Chulia Mosque,0.978348,1,0.810001,0.885101,positive,0.093878,0.417136,0.063564,0.094884,0.102538,,,,
+1,446550743,Location,India,0.978348,1,0.918478,0.959658,positive,0.355895,0.598113,0.018545,0.001564,0.011054,,,,
+1,445734916,Location,India,0.978348,1,0.881284,0.849222,positive,0.171975,0.423892,0.147982,0.02663,0.048941,,,,
+1,435718738,Facility,Sri Veeramakaliamman Temple,0.963296,1,0.46574,0.0,neutral,0.046189,0.177683,0.174903,0.036858,0.062902,,,,
+1,435718738,Location,India,0.477303,2,0.999684,0.830216,positive,0.21353,0.322514,0.044227,0.031895,0.077716,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,433205863,Location,Little India,0.963296,1,0.384896,0.949606,positive,0.332329,0.536596,0.053036,0.064868,0.051074,,,,
+1,433205863,Person,Kali,0.479619,1,0.23735,0.901961,positive,0.066908,0.334897,0.347934,0.107034,0.14947,,,,
+1,426087672,Quantity,5 minutes,0.978348,1,0.8,0.817565,positive,0.213347,0.607364,0.051177,0.025446,0.028988,,,,
+1,420378828,Location,India,0.978348,1,0.861071,0.931503,positive,0.450603,0.284726,0.110174,0.148636,0.033958,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,419297896,Quantity,10 minutes,0.978348,1,0.8,0,neutral,0.149677,0.149173,0.125382,0.144733,0.118278,,,,
+1,416091231,Location,India,0.978348,1,0.911151,0,neutral,0.317753,0.383763,0.160697,0.086174,0.021204,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,389933842,Quantity,15 minutes,0.95577,1,0.8,0.943673,positive,0.177435,0.712315,0.036878,0.016376,0.061338,,,,
+1,389933842,Location,India,0.420504,2,0.99907,0.568142,positive,0.256929,0.127505,0.155763,0.079696,0.279468,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,389933842,Location,Singapore,0.279128,1,0.998092,-0.628363,negative,0.378125,0.081339,0.164092,0.100195,0.318295,,,Singapore,http://dbpedia.org/resource/Singapore
+1,389933842,Quantity,15 minute,0.081879,1,0.8,0.0,neutral,0.380854,0.024227,0.182195,0.219261,0.522988,,,,
+1,371315231,Location,India,0.978348,1,0.992771,0.992996,positive,0.162424,0.319928,0.145459,0.120133,0.140934,,,,
+1,354528814,Location,India,0.978348,1,0.915102,0.948145,positive,0.472734,0.370682,0.054955,0.016059,0.058522,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,349572915,Location,Singapore,0.963296,1,0.992486,0.80292,positive,0.313686,0.103117,0.01902,0.039981,0.062034,,,Singapore,http://dbpedia.org/resource/Singapore
+1,349572915,Location,India,0.857084,1,0.996592,0.80292,positive,0.313686,0.103117,0.01902,0.039981,0.062034,,,,
+1,346767490,Location,India,0.963296,1,0.959826,0.930967,positive,0.249494,0.2401,0.249614,0.134273,0.155849,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,346767490,Location,Singapore,0.22537,1,0.995238,0.930967,positive,0.008267,0.840951,0.004879,0.012337,0.01208,,,Singapore,http://dbpedia.org/resource/Singapore
+1,342747031,Location,India,0.978348,1,0.855494,-0.740145,negative,0.30742,0.106401,0.153758,0.137442,0.18511,,,,
+1,717852340,Location,Singapore,0.963296,1,0.998064,0.903925,positive,0.120735,0.530467,0.136282,0.034667,0.050807,,,Singapore,http://dbpedia.org/resource/Singapore
+1,717852340,Location,India,0.952068,1,0.884932,0.903925,positive,0.120735,0.530467,0.136282,0.034667,0.050807,,,,
+1,712524472,Quantity,300 meters,0.963296,1,0.8,0,neutral,0.33538,0.187553,0.247553,0.097768,0.23406,,,,
+1,712524472,Location,India,0.552464,1,0.99399,0,neutral,0.33538,0.187553,0.247553,0.097768,0.23406,,,,
+1,698594126,Location,India,0.963296,1,0.900467,0,neutral,0.311055,0.147225,0.167563,0.057764,0.15008,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,698594126,Quantity,30 mins,0.321695,1,0.8,0,neutral,0.452699,0.235496,0.078856,0.10394,0.225772,,,,
+1,683070961,Facility,Sri Veeramakaliamman Temple,0.95577,1,0.316243,0,neutral,0.184979,0.150832,0.049099,0.024056,0.073745,,,,
+1,683070961,Person,Shakti,0.475258,1,0.488649,0,neutral,0.675776,0.181608,0.026863,0.093213,0.153762,,,,
+1,683070961,Location,India,0.322026,1,0.998926,0,neutral,0.184979,0.150832,0.049099,0.024056,0.073745,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,683070961,Person,Kali,0.148025,1,0.311194,0,neutral,0.147664,0.335176,0.2097,0.305475,0.136408,,,,
+1,679610332,Quantity,ten minute,0.954265,1,0.8,0.635114,positive,0.343849,0.441663,0.090486,0.068983,0.088277,,,,
+1,679610332,Facility,Mustafa Centre,0.937586,1,0.304395,0.635114,positive,0.343849,0.441663,0.090486,0.068983,0.088277,,"['Organization', 'Location', 'Company', 'ShoppingCenter']",Mustafa_Centre,http://dbpedia.org/resource/Mustafa_Centre
+1,679610332,Person,Lim Square,0.836964,1,0.602742,0.635114,positive,0.343849,0.441663,0.090486,0.068983,0.088277,,,,
+1,679610332,Location,Singapore,0.359963,1,0.972087,0.635114,positive,0.343849,0.441663,0.090486,0.068983,0.088277,,,Singapore,http://dbpedia.org/resource/Singapore
+1,679610332,Location,India,0.001074,1,0.956589,0.0,neutral,0.087212,0.715693,0.062689,0.048783,0.036046,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,661397388,Facility,Sri Veeramakaliamman Temple,0.954265,1,0.336432,0,neutral,0.26382,0.102644,0.102004,0.070347,0.12836,,,,
+1,661397388,Location,Singapore,0.307051,1,0.999215,0,neutral,0.26382,0.102644,0.102004,0.070347,0.12836,,,Singapore,http://dbpedia.org/resource/Singapore
+1,661397388,Location,India,0.288835,1,0.812614,0,neutral,0.26382,0.102644,0.102004,0.070347,0.12836,,,,
+1,661397388,Person,Shakti,0.091366,1,0.45991,0,neutral,0.445783,0.39762,0.04285,0.042941,0.073119,,,,
+1,661397388,Person,Parvati,0.016453,1,0.997859,0,neutral,0.445783,0.39762,0.04285,0.042941,0.073119,,,,
+1,658064050,Facility,Sri Veeramakaliamman Temple,0.958279,1,0.292653,0,neutral,0.38662,0.130095,0.165419,0.054454,0.115376,,,,
+1,658064050,Location,India,0.340167,1,0.965091,0,neutral,0.38662,0.130095,0.165419,0.054454,0.115376,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,658064050,Location,Bengal,0.311522,1,0.824118,0,neutral,0.320276,0.220126,0.033954,0.035372,0.020999,,,,
+1,650441057,Location,Little India,0.978348,1,0.525497,0.819821,positive,0.767774,0.071422,0.273941,0.037203,0.034667,,,,
+1,649628389,Facility,Sri Veeramakaliamman Temple,0.963296,1,0.331772,0,neutral,0.286379,0.396111,0.143815,0.043286,0.026747,,,,
+1,649628389,Location,India,0.304644,1,0.844476,0,neutral,0.286379,0.396111,0.143815,0.043286,0.026747,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,573364748,Location,India,0.968313,2,0.999987,0.895208,positive,0.175367,0.450026,0.03612,0.129401,0.172143,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,573364748,Location,Singapore,0.920956,1,0.998754,0.581373,positive,0.211283,0.200961,0.094207,0.052912,0.071791,,,Singapore,http://dbpedia.org/resource/Singapore
+1,573364748,Person,Kali,0.774484,1,0.719983,0.0,neutral,0.620268,0.038303,0.049514,0.349604,0.117134,,,,
+1,533717799,Location,India,0.978348,1,0.593546,0.441975,positive,0.127073,0.620916,0.127412,0.058898,0.074981,,,,
+1,529706911,Location,Singapore,0.963296,1,0.911141,0.933787,positive,0.081107,0.736499,0.059895,0.013457,0.033413,,,Singapore,http://dbpedia.org/resource/Singapore
+1,529706911,Location,India,0.762904,1,0.937834,0.933787,positive,0.081107,0.736499,0.059895,0.013457,0.033413,,,,
+1,517102578,Quantity,10 minute,0.958279,1,0.8,0,neutral,0.074397,0.085374,0.074922,0.070866,0.050945,,,,
+1,517102578,Location,Singapore,0.928458,1,0.999814,0,neutral,0.402526,0.1713,0.059998,0.068187,0.073812,,,Singapore,http://dbpedia.org/resource/Singapore
+1,517102578,Location,India,0.805882,2,0.976561,0,neutral,0.074397,0.085374,0.074922,0.070866,0.050945,,,,
+1,502138623,Location,Little India,0.963296,1,0.537861,0.902025,positive,0.085257,0.706844,0.045697,0.034352,0.055258,,,,
+1,502138623,Location,Singapore,0.340672,1,0.912501,0.713581,positive,0.269257,0.589795,0.125243,0.048043,0.032904,,,Singapore,http://dbpedia.org/resource/Singapore
+1,495213105,Facility,Great temple,0.963296,1,0.634659,0.964279,positive,0.024901,0.811447,0.035461,0.013768,0.016619,,,,
+1,495213105,Location,Singapore,0.021313,1,0.960214,0.956592,positive,0.059974,0.523632,0.054861,0.045246,0.043396,,,Singapore,http://dbpedia.org/resource/Singapore
+1,461625626,Location,India,0.963296,1,0.863069,0.0,neutral,0.141117,0.102159,0.221332,0.115252,0.10514,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,461625626,Location,Singapore,0.04323,1,0.987271,0.938402,positive,0.06507,0.640014,0.069166,0.027201,0.061955,,,Singapore,http://dbpedia.org/resource/Singapore
+1,446823056,Location,india,0.968313,2,0.999569,0.900872,positive,0.133081,0.380192,0.046151,0.054476,0.118794,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,446823056,Location,Singapore,0.760981,1,0.999815,0.900872,positive,0.100144,0.528042,0.020139,0.037689,0.110911,,,Singapore,http://dbpedia.org/resource/Singapore
+1,446823056,Organization,Indians,0.501128,1,0.602845,0.0,neutral,0.237932,0.394344,0.044825,0.030083,0.283879,,"['SportsTeam', 'ProfessionalSportsTeam']",Cleveland_Indians,http://dbpedia.org/resource/Cleveland_Indians
+1,411831493,Location,Singapore,0.978348,1,0.999649,0.715187,positive,0.155905,0.134777,0.142572,0.040861,0.059348,,,Singapore,http://dbpedia.org/resource/Singapore
+1,395324147,Location,India,0.978348,1,0.826971,0.554534,positive,0.310941,0.431239,0.14221,0.08258,0.023563,,,,
+1,547499942,Location,India,0.978348,1,0.66718,0.702431,positive,0.257615,0.415727,0.221631,0.030412,0.036217,,,,
+1,528167743,Quantity,three year,0.978348,1,0.8,0,neutral,0.429438,0.164522,0.07124,0.084948,0.054935,,,,
+1,496756451,Location,Little India,0.963296,1,0.526156,0.831471,positive,0.142218,0.658051,0.059386,0.038498,0.041855,,,,
+1,496756451,Location,Singapore,0.811488,1,0.999297,0.831471,positive,0.142218,0.658051,0.059386,0.038498,0.041855,,,Singapore,http://dbpedia.org/resource/Singapore
+1,699104014,Location,Singapore,0.958279,1,0.999786,0,neutral,0.258165,0.143403,0.043488,0.040045,0.104711,,,Singapore,http://dbpedia.org/resource/Singapore
+1,699104014,Location,India,0.766266,1,0.92827,0,neutral,0.258165,0.143403,0.043488,0.040045,0.104711,,,,
+1,699104014,Location,Little,0.607966,1,0.989848,0,neutral,0.258165,0.143403,0.043488,0.040045,0.104711,,,,
+1,620111592,Location,Singapore,0.963296,1,0.999784,0.956781,positive,0.132279,0.640172,0.07295,0.014683,0.026266,,,Singapore,http://dbpedia.org/resource/Singapore
+1,620111592,Location,India,0.848411,1,0.941928,0.956781,positive,0.132279,0.640172,0.07295,0.014683,0.026266,,,,
+1,568868533,Location,Singapore,0.963296,1,0.99801,0.972974,positive,0.152959,0.574617,0.032596,0.021943,0.04187,,,Singapore,http://dbpedia.org/resource/Singapore
+1,568868533,Location,India,0.846632,1,0.968669,0.972974,positive,0.152959,0.574617,0.032596,0.021943,0.04187,,,,
+1,565477172,Person,Kali,0.978348,1,0.342691,0.90467,positive,0.182714,0.627355,0.09108,0.009244,0.054105,,,,
+1,523099811,Location,India,0.968313,2,0.999978,0.0,neutral,0.276862,0.359934,0.211028,0.068805,0.0676,,,,
+1,523099811,Location,Singapore,0.89215,1,0.988195,0.0,neutral,0.276862,0.359934,0.211028,0.068805,0.0676,,,Singapore,http://dbpedia.org/resource/Singapore
+1,523099811,Organization,un,0.118993,1,0.998122,0.957479,positive,0.124752,0.657638,0.15515,0.038598,0.058603,,,,
+1,494528005,Location,India,0.978348,1,0.980113,0.987933,positive,0.242145,0.689294,0.04329,0.005197,0.028153,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,459314600,Location,Barcelona,0.963296,1,0.978231,0.997564,positive,0.033204,0.86841,0.042714,0.015741,0.024728,,,,
+1,459314600,Person,Gaudi,0.036678,1,0.473585,0.997564,positive,0.033204,0.86841,0.042714,0.015741,0.024728,,,,
+1,426052154,Location,Singapore,0.97333,5,1.0,0.693889,positive,0.429997,0.06494,0.014617,0.008498,0.011183,,,Singapore,http://dbpedia.org/resource/Singapore
+1,426052154,Location,Malaysia,0.733836,2,1.0,0.920457,positive,0.412851,0.153561,0.028409,0.009432,0.023829,,"['Country', 'GovernmentalJurisdiction']",Malaysia,http://dbpedia.org/resource/Malaysia
+1,426052154,Person,Kali,0.638086,1,0.629171,0.0,neutral,0.483709,0.193922,0.112573,0.005905,0.068523,,,,
+1,426052154,Location,India,0.544725,3,0.999931,0.644087,positive,0.279197,0.099081,0.033255,0.007796,0.01633,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,426052154,Location,Madurai,0.392618,1,0.856657,0.0,neutral,0.413027,0.10892,0.024973,0.009258,0.01332,,,,
+1,426052154,Location,Bengal,0.153257,1,0.98655,0.0,neutral,0.193265,0.157689,0.078334,0.065848,0.047199,,,,
+1,421369164,Person,Sir Standford Raffles,0.954265,1,0.626652,0,neutral,0.354582,0.178482,0.054159,0.025346,0.032119,,,,
+1,421369164,Location,Singapore,0.884863,3,1.0,0,neutral,0.371962,0.436526,0.061541,0.017324,0.03503,,,Singapore,http://dbpedia.org/resource/Singapore
+1,421369164,Facility,Sri Veeramakaliamman Temple,0.75303,1,0.345571,0,neutral,0.352109,0.477846,0.102463,0.023769,0.049761,,,,
+1,421369164,Person,Sri Veeramakaliamman,0.607691,1,0.508907,0,neutral,0.511639,0.189067,0.29272,0.034603,0.201025,,,,
+1,421369164,Location,India,0.276347,1,0.933511,0,neutral,0.354582,0.178482,0.054159,0.025346,0.032119,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,386854893,Location,Singapore,0.978348,2,1.0,0.937847,positive,0.286904,0.516059,0.029011,0.020181,0.047336,,,Singapore,http://dbpedia.org/resource/Singapore
+1,386854893,Location,Little India,0.592499,1,0.534198,0.937847,positive,0.286904,0.516059,0.029011,0.020181,0.047336,,,,
+1,385275163,Location,india,0.9999,2,0.998315,0,neutral,0.210896,0.07606,0.232654,0.029019,0.097895,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,361473608,Facility,Hindu temple of Madras style.The temple,0.978348,1,0.23132,0.72002,positive,0.184952,0.472109,0.053914,0.039906,0.069019,,,,
+1,355458576,Location,India,0.978348,1,0.954773,0.708156,positive,0.121905,0.120684,0.046545,0.056156,0.058684,,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,349464507,Location,India,0.978348,2,0.997165,0.529021,positive,0.646186,0.168309,0.043026,0.10695,0.104045,1,"['HumanLanguage', 'Region', 'Country', 'GovernmentalJurisdiction', 'FilmEditor']",India,http://dbpedia.org/resource/India
+1,349464507,Location,Singapore,0.024034,1,0.990338,-0.660975,negative,0.801763,0.033664,0.021694,0.162364,0.072467,,,Singapore,http://dbpedia.org/resource/Singapore
