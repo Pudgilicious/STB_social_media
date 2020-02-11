@@ -1,0 +1,84 @@
+0, 新加坡环球影城, 2020-02-11 23:22:17.653281, caught by Ctrip, authentication test
+0, 新加坡环球影城, 2020-02-11 23:23:36.936906, 
+118.69.140.108:53281, 
+loading incomplete, proxy fails
+ 0, 新加坡环球影城, page: 1, 2020-02-11 23:23:39.885076
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+0, 新加坡环球影城, page: 1, 2020-02-11 23:23:46.432738
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+0, 新加坡环球影城, page: 1, 2020-02-11 23:23:53.394843
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+0, 新加坡环球影城, page: 1, 2020-02-11 23:23:59.516248
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+0, 新加坡环球影城, page: 1, 2020-02-11 23:24:06.095131
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+0, 新加坡环球影城, page: 1, 2020-02-11 23:24:12.154814
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+0, 新加坡环球影城, page: 1, 2020-02-11 23:24:19.496453
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+0, 新加坡环球影城, page: 1, 2020-02-11 23:24:26.109291
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 269, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 387, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 588, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+

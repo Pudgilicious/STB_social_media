@@ -16,14 +16,16 @@ import traceback
 from random import random,randint
 from selenium import webdriver
 from datetime import datetime, date, timedelta
-from random import random
 #for proxy account
-from http_request_randomizer.requests.proxy.requestProxy import RequestProxy
-
+import urllib.request
+import socket
+import urllib.error
+from proxy import working_proxies
 
 
 class CtripCrawler:
     attributes_col_names = ['POI_INDEX',
+                            'ENG_NAME',
                             'TOTAL_REVIEWS',
                             'RANKING',
                             'RATINGS',
@@ -54,13 +56,13 @@ class CtripCrawler:
             self.cursor = cnx.cursor()
         self.db_out_flag = db_out_flag 
         #for FMS
-        self.fsm_state=0
+        self.fsm_state="0_init"
         
-        # User input parameters into crawl_pois method, from config_file_QY.yml
+        # User input parameters into crawl_pois method, from config_file_Ctrip.yml
         self.number_of_pages = None
 
         #update after each POI is crawled
-        self.current_page = None
+        self.current_page = 1                                                  #current crawling review page
         self.current_poi_index = None
         self.current_poi_name = None
         self.current_poi_url = None
@@ -69,14 +71,20 @@ class CtripCrawler:
         self.reviews_crawled=False
         self.attributes_df = pd.DataFrame(columns=self.attributes_col_names)
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
-        self.sel = None                                
         self.current_url=None
         self.last_page_number=0
        
-        #for authentication test
-        self.count=1
-        self.ip_number=0
-        
+        #for proxy and authentication
+        self.authen_count=None
+        self.initial_proxy_mode=None                                           #to know whether to switch back to local IP
+        self.sel = None                                                        #for authentication test
+        self.proxy_mode=None
+        self.count=0                                                           #double check authentication
+        self.count_proxy=1                                                     #count number of proxies tested
+        self.PROXY=None
+        self.proxy_num=0                                                       #proxy position in working proxy list
+        self.working_proxies=list((working_proxies())['IP'])
+        self.timeout=None   
         # Create unique CSVs.
         self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
         os.makedirs('./output/{}/'.format(self.datetime_string))
@@ -90,173 +98,238 @@ class CtripCrawler:
         return
     
     
-    def crawl_pois(self, number_of_pages=None):
-        if self.fsm_state == 0:
+    def crawl_pois(self, number_of_pages=None,proxy_mode=None,timeout=None,authen_count=None):
+        if self.fsm_state == "0_init":
+            
+            #number of pages to crawl
             if number_of_pages is not None:
                 self.number_of_pages = number_of_pages
+            if proxy_mode is not None:
+                self.initial_proxy_mode = proxy_mode
+                self.proxy_mode = proxy_mode
+            if authen_count is not None:
+                self.authen_count=authen_count
+                
             #initialization finish, change state
-            self.fsm_state = 1
+            self.fsm_state = "1_normal"
+        
+        #to disable images
+        #chromeOptions = webdriver.ChromeOptions()
+        #prefs = {"profile.managed_default_content_settings.images": 2}
+        #chromeOptions.add_experimental_option("prefs", prefs)    
+        #self.driver = webdriver.Chrome(self.chromedriver_path)#chrome_options=chromeOptions)
         
         
-
-        while len(self.poi_df.index) > 0:
-            req_proxy = RequestProxy() #you may get different number of proxy when  you run th
-            proxies = req_proxy.get_proxy_list();#this will create proxy list
-            PROXY = proxies[self.ip_number].get_address();
-            webdriver.DesiredCapabilities.CHROME['proxy']={
-                                "httpProxy":PROXY,
-                                "ftpProxy":PROXY,
-                                "sslProxy":PROXY,                    
-                                "proxyType":"MANUAL",          
-                            }
-            self.driver = webdriver.Chrome(self.chromedriver_path)  
+                
+        while len(self.poi_df.index) > 0 :
             
-            # Create <POI_INDEX>.csv in reviews and reviewers folders.
-            if self.fsm_state == 1:
+            if self.fsm_state == "3_crash": 
+                    self.fsm_state="2_error_handling"
+            sleep(random())
+                
+            if self.fsm_state !="3_crash":
+                if self.fsm_state == "2_error_handling":
+                    # Note change in FSM state
+                    self.fsm_state = "1_normal"   
+               #while fsm date == 1 (start crawling) 
+                    
+                           
+            #set proxy        
+            if self.proxy_mode == 3:
+                print(str(len(self.working_proxies)) +' proxies in list')
+                self.count_proxy += 1
+                self.PROXY= self.working_proxies[self.proxy_num]
+                webdriver.DesiredCapabilities.CHROME['proxy']={
+                    "httpProxy":self.PROXY,
+                    "ftpProxy":self.PROXY,
+                    "sslProxy":self.PROXY,                    
+                    "proxyType":"MANUAL",          
+                    }
+                socket.setdefaulttimeout(self.timeout)                         
+             
+                 #switch back to local IP address for faster crawling
+                if self.initial_proxy_mode == 2:
+                    if self.count_proxy == round(5400/int(self.timeout)):              #wait for 2.5hr to switch back to local ip                       
+                        self.proxy_mode = 2    
+           
+                
+                
+            self.driver = webdriver.Chrome(self.chromedriver_path)
+
+           
+            
+            if self.fsm_state == "1_normal":
                 self.current_poi_index = self.poi_df.iloc[0][0]
                 self.current_poi_name = self.poi_df.iloc[0][1]
                 self.current_poi_url = self.poi_df.iloc[0][2]
-                self.reviews_df.to_csv('./output/{}/reviews/{}.csv'
-                                       .format(self.datetime_string,
-                                               self.current_poi_index),
-                                       mode='a',
-                                       index=False
-                                       )
-                     
-            self.driver.get(self.current_poi_url)
-            if self.fsm_state == 3: 
-                self.fsm_state=2
-            sleep(1+random()*2)
-            self.sel = Selector(text=self.driver.page_source)               
-    #################handle error of authentication########################################
-            res=self.sel.xpath('/html/body/div[3]/div[3]/img')
-            if res != []:
-                self.count+=1
-                if self.count == 5:
-                    log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
-                    log_file.write('{}, {}, {}, {}\n'.format(self.current_poi_index,
-                                                           self.current_poi_name,
-                                                           datetime.now(),
-                                                           'Caught by Ctrip, go authentication test'))
-                    log_file.close()
-                    self.driver.quit()
-                    self.ip_number=randint(2,100)
-                    self.count = 1
-
                 
-                continue
-    ####################################################################################################
-    
-            if self.fsm_state != 3:
-                if self.fsm_state == 2:
-                    # Note change in FSM state
-                    self.fsm_state = 1   
+                self.driver.get(self.current_poi_url)
+               
+                
+                #handling time out error, (currently no need)
+                #log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
+                #log_file.write('{}, {}, {}, \n{}, \n{}\n '.format(self.current_poi_index,
+                                                           #self.current_poi_name,
+                                                           #datetime.now(),
+                                                           #PROXY,
+                                                           #'time out error'))
+                #log_file.close()
+                #self.driver.quit()
+                #change to another proxy
+                #self.working_proxies.remove(PROXY)
+                #self.proxy_num=randint(1,len(self.working_proxies))
+                #return
+            
                     
-                try:
-            #################handle error of redirecting########################################
-                    self. current_url= self.driver.current_url
-                    if self.current_url == 'https://you.ctrip.com/':
+                sleep(1+random())
+                self.sel = Selector(text=self.driver.page_source)
+                
+                if self. proxy_mode == 3:                   
+    #################handle proxy failure, case 1 ########################################
+                    #the proxy is able to access the page, but fail to load all information properly
+                    res1=self.sel.xpath('//*[@id="root"]//div[@class="full_failure"]')
+                    if res1!=[]:
+                        sleep(randint(1,3)+random())
+                        log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
+                        log_file.write('{}, {}, {}, \n{}, \n{}\n '.format(self.current_poi_index,
+                                                                   self.current_poi_name,
+                                                                   datetime.now(),
+                                                                   self.PROXY,
+                                                                   'loading incomplete, proxy fails'))
+                        log_file.close()
+                        self.driver.quit()
+                        #change to another proxy
+                        #self.working_proxies.remove(PROXY)
+                        self.proxy_num=randint(1,len(self.working_proxies)-1)   #switch to another PROXY
+                        self.PROXY = self.working_proxies[self.proxy_num]
+                        continue
+               
+      
+    #################handle proxy failure, case 2 ########################################
+                    #the page display error msg, nothing is displayed, res2,res3 are for 2 diff web structures
+                    #res2=self.sel.xpath('.//div[@class="brief-box clearfix"]')
+                    #res3=self.sel.xpath('.//div[@class="content cf dest_details"]')
+                    #if res2 == [] or res3 == []:
+                     #   sleep(randint(1,3)+random())
+                      #  log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
+                       # log_file.write('{}, {}, {}, \n{}, \n{}\n '.format(self.current_poi_index,
+                        #                                           self.current_poi_name,
+                         #                                          datetime.now(),
+                          #                                         PROXY,
+                           #                                        'chrome loading error, proxy fails'))
+                        #log_file.close()
+                        #self.driver.quit()
+                        #change to another proxy
+                        #self.working_proxies.remove(PROXY)
+                        #self.proxy_num=randint(1,len(self.working_proxies))
+                        #continue
+               
+     
+      #################handle error of authentication########################################
+               #check whether the authentication img exist
+               #reload 3 times to aviod error due to lagging
+                res=self.sel.xpath('/html/body/div[3]/div[3]/img')             #path does not exist if no authentication
+                if res != []:
+                    self.count +=1
+                    sleep(randint(1,3)+random())
+                    if self.count == self.authen_count:  
                         log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
                         log_file.write('{}, {}, {}, {}\n'.format(self.current_poi_index,
                                                                self.current_poi_name,
                                                                datetime.now(),
-                                                               'current POI does not exist'))
+                                                               'caught by Ctrip, authentication test'))
                         log_file.close()
-                        raise Exception("current POI does not exist")
-                        self.poi_df = self.poi_df.iloc[1:]
-                        continue
-            ####################################################################################################
-                    if not self.attributes_crawled:    
-                            print('########## {}##########'.format(self.current_poi_name))
-                            self.crawl_attributes()
-                            self.attributes_df.to_csv('./output/{}/attributes.csv'.format(self.datetime_string),
-                                                      mode='a', 
-                                                      header=False,
-                                                      index=False)
-                            self.attributes_df = pd.DataFrame(
-                                columns=self.attributes_col_names)
-                            self.attributes_crawled = True  
+                        self.driver.quit()
+                        #self.working_proxies.remove(PROXY)
+                        self.count=0
+                        self.timeout=timeout
+                        self.proxy_mode=3
+                    continue
+       
+    ####################################################################################################  
+            #finally, start crawling
+       
+                try:    
+       #################handle error of redirecting########################################
+                   self. current_url= self.driver.current_url
+                   if self.current_url == 'https://you.ctrip.com/':
+                       log_file = open('./output/{}/log.txt'.format(self.datetime_string), 'a+')
+                       log_file.write('{}, {}, {}, {}\n'.format(self.current_poi_index,
+                                                              self.current_poi_name,
+                                                              datetime.now(),
+                                                              'current POI does not exist'))
+                       log_file.close()
+                       self.poi_df = self.poi_df.iloc[1:]
+                       raise Exception("current POI does not exist")
+                       continue
+    ####################################################################################################
+         
                    
-                    # Crawl reviews
-                    if not self.reviews_crawled:
-                        self.crawl_reviews()
-            
-                        if self.db_out_flag != 'csv':
-                            self.add_to_database()
-                            
-                    
-                    self.current_page = None
-                    self.attributes_crawled = False
-                    self.reviews_crawled = False
-                    
-                    self.poi_df = self.poi_df.iloc[1:]
-        
-                        
+                   if not self.attributes_crawled:    
+                           print('########## {}##########'.format(self.current_poi_name))
+                           self.crawl_attributes()
+                           self.attributes_df.to_csv('./output/{}/attributes.csv'.format(self.datetime_string),
+                                                     mode='a', 
+                                                     header=False,
+                                                     index=False)
+                           self.attributes_df = pd.DataFrame(
+                               columns=self.attributes_col_names)
+                           self.attributes_crawled = True  
                    
+                   # Crawl reviews
+                   if not self.reviews_crawled and self.number_of_pages != 0:
+                       self.reviews_df.to_csv('./output/{}/reviews/{}.csv'
+                                      .format(self.datetime_string,
+                                              self.current_poi_index),
+                                      mode='a',
+                                      index=False
+                                      )  
+                       self.crawl_reviews()
+           
+                       if self.db_out_flag != 'csv':
+                           self.add_to_database()
+                       
+                   
+                   self.attributes_crawled = False
+                   self.reviews_crawled = False
+                   self.driver.quit()
+                   self.poi_df = self.poi_df.iloc[1:]
+       
+                       
+                  
                 except:
-                    self.fsm_state=3
-                    #self.driver.quit()
-                    self.current_page = None
-                    log_file = open('./output/{}/log.txt'
-                                    .format(self.datetime_string), 'a+')
-                    log_file.write('{}, {}, page: {}, {}\n'\
-                               .format(self.current_poi_index,
-                                       self.current_poi_name,
-                                       self.current_page,
-                                       datetime.now()))
-                    log_file.write(traceback.format_exc() + '\n')
-                    log_file.close()
-                    #erase every thing from the POI review csv, rewrite in next loop
-                
-                    if self.reviews_crawled==True:
-                        os.remove('./output/{}/reviews/{}.csv'
-                                           .format(self.datetime_string,
-                                                   self.current_poi_index)) 
-                    print("Exception has occurred. Please check log file.")
-                    self.reviews_crawled=False
-                    sleep(1)
-                    return
-            
-                
-                
-            
+                   self.fsm_state= "3_crash"
+                   #self.driver.quit()
+                   self.current_page = 1
+                   log_file = open('./output/{}/log.txt'
+                                   .format(self.datetime_string), 'a+')
+                   log_file.write('{}, {}, page: {}, {}\n'\
+                              .format(self.current_poi_index,
+                                      self.current_poi_name,
+                                      self.current_page,
+                                      datetime.now()))
+                   log_file.write(traceback.format_exc() + '\n')
+                   log_file.close()
+                   #erase every thing from the POI review csv, rewrite in next loop
+                   
+                   if self.reviews_crawled==True:
+                       os.remove('./output/{}/reviews/{}.csv'
+                                          .format(self.datetime_string,
+                                                  self.current_poi_index)) 
+                   print("Exception has occurred. Please check log file.")
+                   self.reviews_crawled=False
+                   self.driver.quit()
+                   #self.working_proxies.remove(PROXY)
+                   #self.proxy_num=randint(1,len(self.working_proxies)-1)
+                   sleep(1)
+                   return
+           
+               
+               
+           
         self.driver.quit()
-        self.fsm_state = 4
- 
-                
-    def crawl_reviews(self):
-        res = self.sel.xpath('//div[@class="clearfix"]')    
-        res1= self.sel.xpath('//div[@class="weibocombox"]')
-        if res:
-            xpath_end='.//a[@class="btn-last-page  "]/text()'
-            last=res.xpath(xpath_end).getall()
-        else:
-            xpath_end='//b[@class="numpage"]/text()'
-            last=res1.xpath(xpath_end).getall()
-        if last==[]:
-            self.last_page_number==1
-        else:
-            self.last_page_number = int(last[0])
-        if self.current_page==None:
-            self.current_page=1
-        if self.number_of_pages is not None:
-            for i in range(self.number_of_pages):
-                self.crawl_reviews_1_page(self.current_poi_index)
-                print('Page {} done.'.format(self.current_page))
-                self.current_page += 1
-                self.reviews_to_csv()
-                if self.review_final_page:
-                    self.review_final_page = False
-                    break
-        else:
-            while not self.review_final_page:
-                self.crawl_reviews_1_page(self.current_poi_index)
-                self.reviews_to_csv()
-                print('Page {} done.'.format(self.current_page))
-                self.current_page += 1
-                if self.review_final_page:
-                    self.review_final_page = False
-                    break
+        self.fsm_state = "4_complete"
+         
                     
                     
     def reviews_to_csv(self):
@@ -272,6 +345,8 @@ class CtripCrawler:
 
         
         if res:
+            eng_name="not available"
+            
             xpath_total_reviews = '//a[@data-reactid="58"]/text()'    
             total_review =res.xpath(xpath_total_reviews).extract_first() 
 
@@ -291,6 +366,9 @@ class CtripCrawler:
             total_reviews = self.parse_total_reviews1(total_review)
  
         else:
+            xpath_eng='//div[@class="f_left"]/p/text()'
+            eng_name1=res1.xpath(xpath_eng).extract_first() 
+            
             xpath_total_reviews = '//span[@class="f_orange"]/text()'  
             total_reviews =res1.xpath(xpath_total_reviews).extract_first() 
 
@@ -308,12 +386,14 @@ class CtripCrawler:
             
             # Parsing attributes
             address=self.parse_attribute_address(add)
+            eng_name=self.parse_eng_name(eng_name1)
             
      
         ranking=poi_index
         #crawltime=(datetime.now()).strftime("%Y-%m-%d %H:%M:%S")
                                     
         poi_attributes = [poi_index,
+                          eng_name,
                           total_reviews, 
                           ranking, 
                           rating,  
@@ -328,6 +408,41 @@ class CtripCrawler:
         poi_attributes_dict = dict(zip(self.attributes_col_names, poi_attributes))
         self.attributes_df = self.attributes_df.append(poi_attributes_dict, ignore_index=True)
         sleep(2+random()*2)
+        
+    
+    def crawl_reviews(self):
+        res = self.sel.xpath('//div[@class="clearfix"]')    
+        res1= self.sel.xpath('//div[@class="weibocombox"]')
+        if res:
+            xpath_end='.//a[@class="btn-last-page  "]/text()'
+            last=res.xpath(xpath_end).getall()
+        else:
+            xpath_end='//b[@class="numpage"]/text()'
+            last=res1.xpath(xpath_end).getall()
+        if last==[]:
+            self.last_page_number==1
+        else:
+            self.last_page_number = int(last[0])
+            
+            
+        if self.number_of_pages is not None:
+            for i in range(self.number_of_pages):
+                self.crawl_reviews_1_page(self.current_poi_index)
+                print('Page {} done.'.format(self.current_page))
+                self.current_page += 1
+                self.reviews_to_csv()
+                if self.review_final_page:
+                    self.review_final_page = False
+                    break
+        else:
+            while not self.review_final_page:
+                self.crawl_reviews_1_page(self.current_poi_index)
+                self.reviews_to_csv()
+                print('Page {} done.'.format(self.current_page))
+                self.current_page += 1
+                if self.review_final_page:
+                    self.review_final_page = False
+                    break
 
     def crawl_reviews_1_page(self,poi_index):   
         #driver = self.driver
@@ -425,8 +540,10 @@ class CtripCrawler:
                     if self.last_page_number < self.number_of_pages and self.current_page < self.last_page_number:
                         raise Exception("lagged, need to recrawl")
                     else:
+                        self.current_page = 1
                         self.review_final_page= True
                 else:
+                    self.current_page = 1
                     self.review_final_page= True
                 
                 
@@ -446,8 +563,10 @@ class CtripCrawler:
                     if self.last_page_number < self.number_of_pages and self.current_page < self.last_page_number:
                         raise Exception("lagged, need to recrawl")
                     else:
+                        self.current_page = 1
                         self.review_final_page= True
                 else:
+                    self.current_page = 1
                     self.review_final_page= True
                 
             
@@ -462,6 +581,9 @@ class CtripCrawler:
             return int(re.search(r'\d+', text).group())
         else:
             return 0
+        
+    def parse_eng_name(self,text):
+        return ''.join(filter(str.isalpha, text))
     
     def parse_attribute_address(self, text):
         return (text[3:]).replace(' ','')
@@ -480,3 +602,33 @@ class CtripCrawler:
     
     def parse_review_body1(self, text):
         return text.replace('\n','')
+
+
+
+    #for proxy
+    def is_bad_proxy(self,pip):    
+        print('testing proxies')
+        try:
+            proxy_handler = urllib.request.ProxyHandler({'http': pip})
+            opener = urllib.request.build_opener(proxy_handler)
+            opener.addheaders = [('User-agent', 'Mozilla/5.0')]
+            urllib.request.install_opener(opener)
+            req=urllib.request.Request('http://you.ctrip.com')  # change the URL to test here
+            sock=urllib.request.urlopen(req)
+        except urllib.error.HTTPError as e:
+            return e.code
+        except Exception as detail:
+            return True
+        return False
+    
+    def main(self,proxy_list):
+        print('main function excuting')
+        socket.setdefaulttimeout(10)
+        # two sample proxy IPs
+        proxyList = proxy_list[0:10]
+        working_proxies=[]
+        for currentProxy in proxyList:
+            if not self.is_bad_proxy(currentProxy):
+                working_proxies += [currentProxy]
+        return working_proxies
+
