@@ -59,15 +59,23 @@ class SentimentScorer:
             continue_from_poi_index=None,
             continue_from_row_index=None
     ):
+        # To continue from previous calls
         self.target_folder = target_folder
         self.continue_in_folder = continue_in_folder
         self.continue_from_poi_index = continue_from_poi_index
         self.continue_from_row_index = continue_from_row_index
+
+        # Set up directories
         self.csv_list = os.listdir('./tripadvisor/finalised_output/{}/reviews'.format(target_folder))
+
+        # Read list of POIs to score from target folder
         self.poi_list = sorted([int(i[:i.find('.csv')]) for i in self.csv_list])  # List of POI indexes from file names
+
+        # Creating empty dataframes to store scores
         self.keywords_col_names_df = pd.DataFrame(columns=self.keywords_col_names)
         self.entities_col_names_df = pd.DataFrame(columns=self.entities_col_names)
 
+        # Create output directory
         if self.continue_in_folder is None:
             self.sentiment_folder_path = './tripadvisor/finalised_output/{}/sentiments_{}/'.format(
                 self.target_folder,
@@ -80,6 +88,7 @@ class SentimentScorer:
                 self.continue_in_folder
             )
 
+        # To continue from certain POI index
         if self.continue_from_poi_index is not None:
             self.poi_list = self.poi_list[self.poi_list.index(self.continue_from_poi_index):]
 
@@ -87,7 +96,7 @@ class SentimentScorer:
         self.api_calls_made = 0
         self.fsm_state = 0
 
-        # Per-POI variables
+        # Per-POI variables, reset after every POI
         self.datetime_string = None
         self.current_poi_index = None
         self.current_reviews_df = None
@@ -95,7 +104,7 @@ class SentimentScorer:
         self.entities_file_path = None
         self.current_row_index = None
 
-        # Per-review variables
+        # Per-review variables, reset after every API call
         self.current_df_row = None
         self.current_review_id = None
         self.current_review_text = None
@@ -103,6 +112,7 @@ class SentimentScorer:
         self.keywords_df = None
         self.entities_df = None
 
+    # Score reviews in target folder
     def score_sentiments(self, nlu):
         self.nlu = nlu
         while self.poi_list or self.current_poi_index is not None:
@@ -156,6 +166,7 @@ class SentimentScorer:
                 )
             )
 
+        # To continue from certain row index
         if self.continue_from_row_index is not None:
             self.current_row_index = self.continue_from_row_index
             self.continue_from_row_index = None  # Need to reset
@@ -183,7 +194,6 @@ class SentimentScorer:
 
             try:
                 self.get_api_response()
-
             except Exception as e:
                 print('Error in API call. Please see log file.')
                 log = open(self.sentiment_folder_path + 'log.txt', 'a+')
@@ -247,6 +257,7 @@ class SentimentScorer:
         ).get_result()
 
     def parse_response(self):
+        # In case 'keywords' not in api response
         if 'keywords' in self.current_api_response.keys():
             self.keywords_df = json_normalize(self.current_api_response['keywords'])\
                 .rename(columns=self.keywords_col_names_map)
@@ -254,6 +265,7 @@ class SentimentScorer:
             self.keywords_df.insert(0, 'WEBSITE_ID', 1)
             self.keywords_df = self.keywords_col_names_df.append(self.keywords_df, sort=False)
 
+        # In case 'entities' not in api response
         if 'entities' in self.current_api_response.keys():
             self.entities_df = json_normalize(self.current_api_response['entities'])\
                 .rename(columns=self.entities_col_names_map)
