@@ -117,6 +117,24 @@ if (length(unique(trip_processed$DATE_TIME)) == nrow(trip_processed)){
   message(msg)
 }
  
+#Copy the file
+tryCatch({
+  file.copy(
+    from = "./tripadvisor/is_copied_files.csv",
+    to = paste0(config$General$thumb_dir, "/tripadvisor")   
+  )
+}, error = function(e){
+  msg = "Thumbdrive is not inserted or is_copied_files.csv do not exist"    
+  write.table(data.frame(message = c(msg), stringsAsFactors = F),
+              file=filename,
+              append = T,
+              sep=',',
+              row.names=F,
+              col.names=F)
+  message(msg)
+}
+)
+
 message("copy_trip function ran")
 
 }
