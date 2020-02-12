@@ -128,7 +128,8 @@ copy_to_thumb = function(thumb_dir, is_copied_files_csv_path, is_pasted_files_cs
   tryCatch({
     file.copy(
       from = is_pasted_files_csv_path,
-      to = paste0(thumb_dir, "/", media_review_name)   
+      to = paste0(thumb_dir, "/", media_review_name),
+      overwrite = T
     )
   }, error = function(e){
     msg = "Thumbdrive is not inserted or is_copied_files.csv do not exist"    
