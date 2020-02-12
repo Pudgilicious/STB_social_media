@@ -6,7 +6,7 @@ from pandas.io.json import json_normalize
 from ibm_watson.natural_language_understanding_v1 import Features, EntitiesOptions, KeywordsOptions
 
 
-class SentimentScorer:
+class IBMSentimentScorer:
     keywords_col_names = ['WEBSITE_ID', 'REVIEW_ID', 'TEXT', 'RELEVANCE',
                           'COUNT', 'SENTIMENT_SCORE', 'SENTIMENT_LABEL',
                           'SADNESS', 'JOY', 'FEAR', 'DISGUST', 'ANGER',
@@ -54,19 +54,24 @@ class SentimentScorer:
 
     def __init__(
             self,
+            site_name,
             target_folder,
             continue_in_folder=None,
             continue_from_poi_index=None,
             continue_from_row_index=None
     ):
         # To continue from previous calls
+        self.site_name = site_name
         self.target_folder = target_folder
         self.continue_in_folder = continue_in_folder
         self.continue_from_poi_index = continue_from_poi_index
         self.continue_from_row_index = continue_from_row_index
 
         # Set up directories
-        self.csv_list = os.listdir('./tripadvisor/finalised_output/{}/reviews'.format(target_folder))
+        self.csv_list = os.listdir('./{}/finalised_output/{}/reviews'.format(
+            self.site_name,
+            self.target_folder
+        ))
 
         # Read list of POIs to score from target folder
         self.poi_list = sorted([int(i[:i.find('.csv')]) for i in self.csv_list])  # List of POI indexes from file names
@@ -77,13 +82,15 @@ class SentimentScorer:
 
         # Create output directory
         if self.continue_in_folder is None:
-            self.sentiment_folder_path = './tripadvisor/finalised_output/{}/sentiments_{}/'.format(
+            self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
+                self.site_name,
                 self.target_folder,
                 datetime.now().strftime('%y%m%d_%H%M%S')
             )
             os.makedirs(self.sentiment_folder_path)
         else:
-            self.sentiment_folder_path = './tripadvisor/finalised_output/{}/sentiments_{}/'.format(
+            self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
+                self.site_name,
                 self.target_folder,
                 self.continue_in_folder
             )
@@ -160,7 +167,8 @@ class SentimentScorer:
     def score_sentiments_1_poi(self):
         if self.current_reviews_df is None:
             self.current_reviews_df = pd.read_csv(
-                './tripadvisor/finalised_output/{}/reviews/{}.csv'.format(
+                './{}/finalised_output/{}/reviews/{}.csv'.format(
+                    self.site_name,
                     self.target_folder,
                     self.current_poi_index
                 )
