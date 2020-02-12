@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580812838938.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3486639844",
+    "id" : "D1FAC2FC",
+    "lastKnownWriteTime" : 1580291163,
+    "last_content_update" : 1580291163,
+    "path" : "~/Desktop/stb_crawl/STB_social_media_analytics/ctrip/ctrip_r/1_prep_ctrip_agg_list.R",
+    "project_path" : "ctrip/ctrip_r/1_prep_ctrip_agg_list.R",
+    "properties" : {
+        "cursorPosition" : "22,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

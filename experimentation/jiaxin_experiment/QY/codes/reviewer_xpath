@@ -1,0 +1,18 @@
+#REVIEWER_LEVEL
+xpath_level='//a[@data-bn-ipg="usercenter-grade"]/text()
+
+
+#GENDER
+xpath_gen='//h3[@class="name"]/span/@title'
+
+#IMAGE_URL
+xpath_img='//div[@class="img"]//img/@src'
+
+#CHINESE RAW LOCATION
+xpath_cn_loc='//span[@class="fb cGray pr20"]/text()
+
+#NUM_CITIES_VISITED
+xpath_cities = '//a[@data-bn-ipg="usercenter-place-city"]/text()'
+
+#NUM_CTRIES_VISITED
+xpath_countries = '//a[@data-bn-ipg="usercenter-place-country"]/text()

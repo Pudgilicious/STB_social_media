@@ -1,0 +1,630 @@
+POI_INDEX,ENG_NAME,TOTAL_REVIEWS,RANKING,RATINGS,ADDRESS,OPENING_HOURS,ATTRIBUTES_CRAWLED_TIME
+0,not available,16692,0,4.8,"8 Sentosa Gateway, Sentosa Island Singapore",全年  10:00-19:00；其他特殊日期开放时间如下： 1、开放时间为10:00-20:00的日期有3月15-20日、3月22日、4月4/25日；2、开放时间为10:00-21:00的日期有3月14/28日、4月10/11/18日；3、开放时间为10:00-17:00的日期有2月10-29日、3月1-12日；4、另外：如闭园时间在20点和21点的会分别有以下两项活动：（20点）好莱坞璀璨夜间巡游，（21点）印象好莱坞；5、以上开放时间仅供参考，景区可能临时变更开放时间，具体开放时间请以景区当天安排为准。,2020-02-11 19:49:32.855639
+1,not available,6537,1,4.8,"18 Marina Gardens Dr, Singapore 018953",全年  09:00-21:00；云雾林+花穹+ocbc空中走道：9:00-21:00（最晚入园时间20:00）；室外花园开放时间：5:00am-2:00pm；远东儿童乐园：周二-周五10:00-19:00；周末及假期：9:00-21:00；。,2020-02-11 19:49:52.106044
+2,not available,4001,2,4.7,Sentosa Island,以景区当天安排为准。,2020-02-11 19:50:09.414679
+3,OrchardRoad,2112,3,4.5,"OrchardRd,Singapore",全天开放,2020-02-11 19:50:31.026903
+4,not available,2471,4,4.6,"3E River Valley Rd, Singapore 179024",09:00 — 22:00。,2020-02-11 19:50:40.821767
+5,not available,6185,5,4.7,80 Mandai Lake Road Singapore 729826,全年  08:30-18:00；8:30-18:00（周一-周日）（最晚入园时间17：30）。,2020-02-11 19:50:49.851277
+6,LittleIndia,1357,6,4.3,"48SerangoonRoad,#02-16,LittleIndiaArcadeSingapore217959",全天开放,2020-02-11 19:51:01.156064
+7,ChinatownSingapore,1207,7,4.3,",Chinatown,PagodaStreet,TrengganuStreet,SagoStreet,SmithStSingapore050005",全天开放,2020-02-11 19:51:12.972412
+8,SingaporeFlyer,3652,8,4.7,30RafflesAvenueSingapore039803,每天上午 8:30 至晚上 10:30 （售票处开放至晚上 10:00）。,2020-02-11 19:51:24.709418
+9,not available,6338,9,4.7,"8 Sentosa Gateway, Sentosa Island",全年  10:00-19:00；1、其中SEA海洋馆特殊日期开放时间为10:00-17:00的日期2月10-29日、3月1-12日；2、海事博物馆特殊开放时间为10:00-18:00的日期：2月10日-3月1日；3、此开放时间仅供参考，景区可能临时变更开放时间，具体开放时间请以景区当天安排为准。,2020-02-11 19:51:36.134893
+10,MerlionPark,1722,10,4.5,浮尔顿一号（浮尔顿酒店正前方）,全年  全天开放。,2020-02-11 19:51:47.901337
+11,not available,3452,11,4.4,"80 Mandai Lake Rd, Singapore",全年  19:15-23:55；19:15-24:00（周一-周日）（最晚入园时间23:15）。,2020-02-11 19:51:58.891335
+12,not available,555,12,4.6,10 Bayfront Avenue，Singapore 018956,全天开放,2020-02-11 19:52:15.544615
+13,not available,708,13,4.6,"1 Cluny Rd, Singapore 259569",新加坡植物园5:00-24:00。国家胡姬花园8:30-19:00，最后进入时间为18:00。。,2020-02-11 19:52:33.091927
+14,not available,579,14,4.7,"8 Sentosa Gateway, Sentosa Island, Singapore 098269",全天开放（餐厅营业时间各不相同，请参考具体产品的营业时间）,2020-02-11 19:52:43.823435
+15,EsplanadeTheatresontheBay,429,15,4.4,"1EsplanadeDrive,Singapore038981",周一-周五10:00-20:00，周六11:00-20:00，周日关闭。,2020-02-11 19:53:06.073061
+16,not available,3286,16,4.8,"Imbiah Lookout 51 Cable Car Road | 45 Siloso Beach Walk, Sentosa Island 099003",全年  10:00-21:30；最晚入园时间21:15。,2020-02-11 19:53:24.650725
+17,not available,853,17,4.6,"93 Stanford Road, Singapore",10:00 AM - 19:00 PM。,2020-02-11 19:53:44.776228
+18,MarinaBay,418,18,4.7,10BayfrontAvenueSingapore018956,全天开放 新加坡滨海湾Prudential嘉年华开放时间：至2018年4月1日，16:00至23:00（最后入场时间22:00）,2020-02-11 19:54:07.523575
+19,not available,462,19,4.6,"Singapore River, Singapore",City Tours鸭子船：9:30-17:30。DUCKtours鸭子船：10：00至傍晚18：00。克拉码头：09:00 — 22:00。。,2020-02-11 19:54:25.541398
+20,StAndrewsCathedral,462,20,4.4,11StAndrew'sRoad，Singapore178959,周一、周二、周四、周五、周六：9:00-17:00;周三：9:45-17:00;周日：9:00-13:30,2020-02-11 19:54:37.262465
+21,not available,762,21,4.5,10 Bayfront Avenue，Singapore,周一-周四：9:30—22:00；	 周五-周日：9:30—23:00。,2020-02-11 19:54:53.802234
+22,not available,593,22,4.6,1 St. Andrew’s Road Singapore 178957,10:00-19:00（周一至周四，周六周日）； 10:00-21:00（周五）。,2020-02-11 19:55:03.213058
+23,not available,1232,23,4.7,80 Mandai Lake Road Singapore 729826,全年  10:00-19:00；10:00-19:00（周一-周日）最晚入园时间18点30分。,2020-02-11 19:55:14.313738
+24,MarinaBaySandsHotelInfinityPool,649,24,4.8,"10BayfrontAve,Singapore018956",6:00-23:00，无边泳池（包括南花园和南花园）可能会因私人​​活动而关闭。,2020-02-11 19:55:27.599382
+25,not available,2622,25,4.7,"10 Beach View, Sentosa Island 099538, Singapore",全年  13:00-20:40；13:00-20:40为可换票时间，一天有两个表演场次，分别是19:40和20:40。,2020-02-11 19:55:42.877444
+26,not available,2075,26,4.8,"8 Sentosa Gateway, Resorts World Sentosa, Singapore 098269",全年  10:00-18:00；1、开放时间为10:00-17:00的日期：2月10日-3月1日；2、此开放时间仅供参考，景区可能临时变更开放时间，具体开放时间请以景区当天安排为准；3、探险水迷宫将从2020年2月7日停止运营，直至另行通知。,2020-02-11 19:56:02.053074
+27,PalawanBeach,406,27,4.5,"85APalawanBeachWalkSentosa-SwimmingLagoonRest|SouthernmostPoint,SentosaIsland098521,Singapore",全天开放,2020-02-11 19:56:15.183461
+28,HajiLane,376,28,4.4,"HajiLn,Singapore",全天开放,2020-02-11 19:56:32.049260
+29,MasjidSultan,274,29,4.4,"3MuscatStreet,Singapore198833",周一-周四、周六、周日10:00-12:00、14:00-16:00，周五14:30-16:00。,2020-02-11 19:56:47.959748
+30,not available,896,30,4.7,2 Jurong Hill Singapore 628925,8:30-18:00（周一-周日）（最晚入园时间是17:30）。,2020-02-11 19:57:06.212822
+31,Chijmes,210,31,4.5,"30VictoriaStreet,Singapore187996",全天开放,2020-02-11 19:57:18.921066
+32,SilosoBeach,302,32,4.4,"SilosoBeachWalk,Singapore",全天开放,2020-02-11 19:57:33.291003
+33,HelixBridge,365,33,4.5,"LinkingbetweenMarinaBayandMarinaCentre,Singapore038981,Singapore",全天开放，无需门票。,2020-02-11 19:57:47.449859
+34,SriMariammanTemple,397,34,4.3,"244SouthBridgeRd,Singapore058793","7:00-11:30,18:00-20:45",2020-02-11 19:58:00.354257
+35,not available,631,35,4.6,"6 Bayfront Ave,Singapore 018956",10:00-19:00（最后入场时间为18:00）。,2020-02-11 19:58:11.137495
+36,not available,975,36,4.8,"1 Harbourfront Ave, tower 2 Keppel Bay Tower , Singapore",全年  09:00-22:00；缆车最后登车时间为21:30。,2020-02-11 19:58:27.133480
+37,KampongGlam,254,37,4.4,"385BeachRoad,Singapore199581",全天开放,2020-02-11 19:58:48.604830
+38,EastCoastPark,284,38,4.5,AlongEastCoastParkwayandEastCoastParkServiceRoadSingapore449876,全天开放,2020-02-11 19:58:59.520059
+39,not available,297,39,4.4,"109 Mount Faber Road, Faber Peak , Singapore 099203",8:45-22:00(周一-周日）（最后登车时间为21:30）,2020-02-11 19:59:14.508429
+40,OldHillStreetPoliceStation,197,40,4.5,"140HillSt,Singapore179369",全天开放,2020-02-11 19:59:26.681535
+41,BuddhaToothRelicTemple,287,41,4.5,"288,SouthBridgeRoad，Singapore058840",7:00-19:00（2020年1月24日山门将在11:00关闭，23:30开启）；博物馆和佛塔室9:00-18:00。,2020-02-11 19:59:37.829829
+42,NationalUniversityofSingapore,140,42,4.6,21LowerKentRidgeRoad，Singapore119077,全天开放,2020-02-11 20:00:00.083445
+43,GeylangSerai,173,43,4.3,1GeylangSerai,8:00-22:00,2020-02-11 20:00:18.879017
+44,not available,400,44,4.6,1 Cluny Road Singapore 259569,10:00-19:00（周一-周日）（最晚入场时间18:00）,2020-02-11 20:00:38.551191
+45,SingaporeArtMuseum,209,45,4.4,"8QueenStreet,Singapore188535.",暂停营业,2020-02-11 20:00:51.752943
+46,not available,402,46,4.6,"8 Sentosa Gateway, Resorts World Sentosa",全年  10:00-18:00。,2020-02-11 20:01:12.670258
+47,NanyangTechnologicalUniversity,190,47,4.7,"50NanyangAvenue,Singapore639798",全天开放,2020-02-11 20:01:24.668834
+48,BukitTimahNatureReserve,150,48,4.5,"177HindhedeDriveBukitTimahVhfStation,Singapore589333,Singapore",周六、周日7:00-18:00,2020-02-11 20:01:36.386134
+49,PulauUbin,151,49,4.4,"PulauUbin,PulauUbin000701",全天开放,2020-02-11 20:01:49.729214
+50,not available,190,50,4.4,Red Dot Design Museum，11 Marina Boulevard. ，Singapore 018940.,全年  10:00-20:00；博物馆内展览&设计商店&咖啡吧&酒吧的开放时间以时令公告为准。。,2020-02-11 20:02:06.484962
+51,VictoriaTheatreVictoriaConcertHall,141,51,4.4,"9EmpressPlace,Singapore179556",10:00-21:00,2020-02-11 20:02:18.490962
+52,HollandVillage,122,52,4.2,HollandVillage，Singapore,全天开放,2020-02-11 20:02:31.199376
+53,TheArtsHouse,119,53,4.3,"1OldParliamentLn,Singapore179429",10:00-22:00。游客服务中心周一-周日10:00-20:00，公共假日关闭。,2020-02-11 20:02:48.791402
+54,BugisVillage,119,54,4.3,"3NewBugisStreet,#03-01,，Singapore188867",11:00-22:00,2020-02-11 20:03:02.598569
+55,not available,391,55,4.6,"01-05 Singapore Flyer | Tourist Hub, Singapore, Singapore",9:30-17:30。,2020-02-11 20:03:13.777177
+56,FortCanningPark,157,56,4.4,"RiverValleyRd,Singapore179037",全天开放,2020-02-11 20:03:27.661275
+57,SingaporePhilatelicMuseum,112,57,4.6,23-BColemanStreet，Singapore179807,"13:00-19:00（周一）,9:30-19:00（周二至周日）。",2020-02-11 20:03:38.638181
+58,not available,111,58,4.5,"1 Empress Pl, Singapore 179555",周六-周四10:00-19:00，周五10:00-21:00,2020-02-11 20:03:55.551726
+59,JamaeMosque,117,59,4.4,"218SouthBridgeRoad,Singapore058767",周一-周四、周六、周日10:00-18:00；周五10:00-12:00，14:30-18:00；斋戒月的访问时间会有所变化，详情请咨询官网。,2020-02-11 20:04:07.029924
+60,WaterfrontPromenade,95,60,4.7,2BayfrontAvenue,全天开放。,2020-02-11 20:04:21.986506
+61,not available,109,61,4.6,"10A Siloso Beach Walk, Singapore 099008",11:00-19:00（周一-周日）,2020-02-11 20:04:44.215521
+62,IONSky,113,62,4.6,"2OrchardTurnIONOrchard,Level56,Singapore238801",2020年1月27日-2月2日：Adventures in Food Wonderland by Ang Ku Kueh Girl® and Friends™演出时间14:00、16:00、19:00；The Transformation of Orchard Road by Dick Lee演出时间15:00、17:00、20:00。演出时间随节目安排会有变动，详情请参考官网公示信息。,2020-02-11 20:05:00.914433
+63,not available,183,63,4.4,26 Sentosa Gateway #01-43/44,全年  09:00-21:00；其中最晚入园时间为20:00。此开放时间仅供参考，景区可能临时变更开放时间而不提前通知，请以现场景区的开放时间为准。,2020-02-11 20:05:19.446108
+64,PunggolBeach,72,64,4.3,22PunggolRoad-Track19,全天开放,2020-02-11 20:05:32.490060
+65,MacRitchieReservoir,62,65,4.7,"OffLornieRoad,Singapore",8:00-19:00,2020-02-11 20:05:45.336449
+66,DempseyHill,69,66,4.3,Blk8D#03-01，DempseyRoad，Singapore249679,全天开放,2020-02-11 20:06:04.090704
+67,PasirRisPark,78,67,4.4,"PasirRisCentral,Singapore510534",全天开放。,2020-02-11 20:06:22.368972
+68,PeranakanMuseum,77,68,4.5,"39ArmenianStreet,Singapore179941,Singapore",周一-周四、周六、周日10:00-19:00，周五10:00-21:00,2020-02-11 20:06:34.964155
+69,not available,0,69,4.4,"6 Raffles Blvd, 01-221, Singapore 039594",,2020-02-11 20:06:45.708678
+70,HendersonWaves,55,70,4.5,HendersonRoad;SouthernRidges;BukitMerahSingapore159557,全天开放,2020-02-11 20:06:58.242137
+71,MacRitchieNatureTrail,41,71,4.5,"MacRitchieReservoirPark,Singapore298717",周一10:00–20:00，周二-周五9:00-17:00；周六、周日8:30-17:00。,2020-02-11 20:07:17.323328
+72,SingaporeCityGallery,54,72,4.5,"45MaxwellRoad,TheURACentre,069118",周一-周六9:00-17:00，周日、公众假期休息。,2020-02-11 20:07:36.761466
+73,CivilDefenceHeritageGallery,67,73,4.2,62HillSt，Singapore179367,周二-周日10:00-17:00，周一关闭。,2020-02-11 20:07:47.637272
+74,not available,1077,74,4.6,"220 Orchard Rd, #B1-03 Midpoint Orchar",10：00至傍晚18：00。,2020-02-11 20:08:03.500811
+75,EmeraldHill,67,75,4.5,"OffOrchardRoad,Singapore,Singapore",全天开放,2020-02-11 20:08:17.408447
+76,not available,0,76,4.6,Suntec City Unit #01-330,,2020-02-11 20:08:35.996097
+77,STPICreativeWorkshopGallery,34,77,4.4,41RobertsonQuay，Singapore238236,"周一-周五10:00-19:00;周六9:00-18:00,周日及节假日关闭。",2020-02-11 20:08:48.380291
+78,SentosaBeach,311,78,4.5,"SantosaIsland,Singapore",11:00-21:00,2020-02-11 20:09:01.727483
+79,not available,285,79,4.5,"48 Pagoda Street, Singapore 059207, Singapore",9:00-20:00（周一至周日），最后入场时间为19:00。每个月的第一个周一闭馆。,2020-02-11 20:09:11.610667
+80,not available,654,80,4.7,15 Science Centre Road Singapore 609081,全年  10:00-18:00；科学馆：每天: 10:00am-6:00pm (最晩入场时间 5:15pm)；  萬像电影馆：星期一至五: 12:00pm-6:00pm (最晩一场表演 5:00pm) 周末，学校假期和假日 12:00pm-7:00pm (最晩一场表演时间6:00pm) 2019年闭馆日期：1月7/14/21日；2月4/18/25日。。,2020-02-11 20:09:20.385501
+81,not available,473,81,4.5,"30 Imbiah Road, Sentosa Island, Singapore 099958",10:00-20:00（周一-周日）（最后入场时间晚上19:30）,2020-02-11 20:09:29.733180
+82,EntertainmentDeckofChangiAirport,162,82,4.8,新加坡樟宜机场T2三层离境过境区域（靠近向日葵花园）,全天开放。娱乐区内各设施开放时间不同，详情请参考樟宜机场官网。,2020-02-11 20:09:41.017363
+83,not available,202,83,4.5,8 Sentosa Gateway， Resorts World Sentosa,全年  10:00-19:00；1、海事博物馆特殊开放时间为10:00-20:00的日期：1月25/26日；开放时间为10:00-18:00的日期：2月24日。2、此开放时间仅供参考，景区可能临时变更开放时间，具体开放时间请以景区当天安排为准；。,2020-02-11 20:09:53.282599
+84,,9,84,4.4,"Blk333,KretaAyerRoad,#03-23",,2020-02-11 20:10:07.059632
+85,,5,85,4,"Blk333,KretaAyerRoad,#03-23",,2020-02-11 20:10:26.322546
+86,,2,86,5,SMUSchoolofInformationSystems-BigSteps,,2020-02-11 20:10:39.414058
+87,SkatePark,3,87,4.3,"31ExeterRd,Singapore239732",,2020-02-11 20:10:56.962107
+88,SingaporeTurfClub,2,88,4.5,"1TurfClubAvenue,SingaporeRacecourse,Singapore738078​",,2020-02-11 20:11:10.779735
+89,,2,89,3.5,"Singapore,130EMindenRd,Singapore248819",,2020-02-11 20:11:24.979809
+90,FestiveWalk,147,90,4.5,"FestiveWalk,Singapore",全天开放,2020-02-11 20:11:37.497471
+91,not available,177,91,4.7,40 Imbiah Road， Sentosa， Singapore 099700,周一至周五：10:00-20:30  最后入馆时间为19:00。特殊日期开放时间：11月9日开放时间为16:15-19:00。以上时间仅供参考，具体以景区当天的安排为准。,2020-02-11 20:11:48.558005
+92,Imbiah,120,92,4.4,"Imbiah,（圣淘沙境内）",全天开放,2020-02-11 20:12:04.265880
+93,TanjongBeach,133,93,4.5,120TanjongBeachWalk,全天开放。,2020-02-11 20:12:18.687583
+94,RafflesPlace,99,94,4.5,"RafflesPlace,Singapore",全天开放,2020-02-11 20:12:32.414487
+95,BoatQuay,127,95,4.4,"BonhamSt,Singapore049782",全天开放,2020-02-11 20:12:46.059395
+96,,1,96,3,HougangAve7,,2020-02-11 20:12:58.769661
+97,FountainofWealth,115,97,4.3,3TemasekBlvd,10:00-12:00;14:00-16:00;18:00-19:30,2020-02-11 20:13:12.603897
+98,CavenaghBridge,133,98,4.5,"1FullertonSquare,Singapore049178",全天开放,2020-02-11 20:13:32.603231
+99,TheSlideT,84,99,4.5,新加坡樟宜机场T3一层入境大厅,12:00-22:30,2020-02-11 20:13:45.955598
+100,MintMuseumofToys,175,100,4.3,26SeahSt,9:30-18:30（最晚入园时间18:00）,2020-02-11 20:13:58.722408
+101,HawParVillaTigerBalmGardens,99,101,4.3,"262PasirPanjangRoad,Singapore118628",9:00-22:00（最晚入园时间21:30）；Ten Courts of Hell：9:00-21:30（最后入场时间为21:15）。,2020-02-11 20:14:13.296368
+102,XperienceZoneofChangiAirport,81,102,4.8,新加坡樟宜机场T2二层离境过境区域中央的LeeHwa钻石店后面,全天开放,2020-02-11 20:14:31.576383
+103,FortSiloso,111,103,4.2,"Siloso,SentosaIsland,Singapore",10:00-18:00（最迟入场下午17:30）,2020-02-11 20:14:44.453225
+104,not available,86,104,4.8,"78 Airport Blvd, Singapore 819666",10:00-22:00，各小景点的开放时间以现场实际情况为准。,2020-02-11 20:15:04.230970
+105,not available,159,105,4.3,51 Imbiah Rd， Sentosa，, 9:30-19:00（周一-周日） (最迟入场下午18:30）,2020-02-11 20:15:21.710840
+106,not available,100,106,4.4,"85 Sultan Gate, Singapore 198501","周一休馆，周二至周日：10:00-18:00（最后入馆时间为下午17:30）。  免费英文导览：周二与周五（11:00 AM） / 周二 与 四（2：00pm） / 周六（2:00 PM） 
+免费中文导览：每月第三个周六（1:00 PM）",2020-02-11 20:15:39.265287
+107,ChildrensPlaygroundofChangiAirport,69,107,4.6,新加坡樟宜机场T1、T2、T3的离境过境区域内,全天开放,2020-02-11 20:15:51.610405
+108,TheSocialTreeofChangiAirport,66,108,4.5,新加坡樟宜机场T1二层离境过境区域中央广场,全天开放,2020-02-11 20:16:09.937301
+109,CraneDanceatResortWorldSentosa,82,109,4.7,"8SentosaGateway,",20:00开始。,2020-02-11 20:16:23.231900
+110,ArmenianChurch,118,110,4.4,"60HillSt,Singapore179366",10:00-18:00,2020-02-11 20:16:43.664032
+111,WaveHouseSentosa,77,111,4.5,圣淘沙西乐索海滩步道36号,周一-周五11:30-21:30 周末和新加坡公众假期10:30-21:30,2020-02-11 20:16:55.985750
+112,CivilianWarMemorial,139,112,4.3,"WarMemorialParkBeachRoad,Singapore",全天开放,2020-02-11 20:17:09.488829
+113,SungeiBulohWetlandReserve,76,113,4.5,301NeoTiewCrescentSingapore718925,7:30-19:00（周一至周六）；7:00-19:00（周日与公共假日）,2020-02-11 20:19:43.191255
+114,InteractiveArtStationofChangiAirport,46,114,4.5,新加坡樟宜机场T1、T2、T3,全天开放,2020-02-11 20:19:56.284419
+115,ThianHockKengTemple,100,115,4.3,158TelokAyerStreet,7:30-17:30,2020-02-11 20:20:08.056257
+116,VolcanoLand,57,116,4.3,39ArtilleryAve,暂停营业,2020-02-11 20:20:21.485275
+117,not available,142,117,4.7,"#01 Sentosa Island, 43 Siloso Beach Walk, 01, Singapore 099010",周一、周二、周四和周五（10:00-21:30），周三（12:00-21:30），周六和周日（10:00-11:30，12:00-17:30，18:00-21:30），其中2020年的1月15日提早闭园（最后一场飞行时间在17点，因此您至少需要在16点前在柜台办理登记）。,2020-02-11 20:20:40.014754
+118,OneFullerton,99,118,4.4,1FullertonRd,全天开放,2020-02-11 20:20:51.340194
+119,StJohnsIsland,50,119,4.3,StJohn'sIsland，Singapore,,2020-02-11 20:21:02.526525
+120,FlowerDome,100,120,4.6,"18MarinaGardensDriveGardensBytheBay,Singapore018953,Singapore",9:00-21:00，最后售票时间：20:00；最后入场时间：20:00。,2020-02-11 20:21:16.984602
+121,JooChiatCommunityCentre,81,121,4.3,"113EastCoastRoad,Singapore428803",全天开放,2020-02-11 20:21:29.762630
+122,CloudForest,112,122,4.9,"GardensbytheBay|18MarinaGardensDrive,Singapore018953,Singapore",9:00-21:00，最后入场和售票时间为20:00。迷雾时间10:00、12:00、14:00、 16:00、18:00、20:00。更多开放时间请以官网公示为准。,2020-02-11 20:21:43.254665
+123,not available,45,123,4.8,"Singapore River, Singapore","每天9:00 AM - 23:00 PM（每30分钟一班）
+最后一班船出发时间为22:30 PM",2020-02-11 20:22:01.663326
+124,RafflesLandingSite,126,124,4.2,"SingaporeRiver,attheendofOldParliamentLane,Singapore",全天开放,2020-02-11 20:22:14.878463
+125,Orchidville,52,125,4.3,"82SungeiTengahRd,Singapore698985",周一-周日9:30-21:30，公共假日9:30-21:30。,2020-02-11 20:22:26.001123
+126,HerbSpiceGarden,48,126,4.5,在圣淘沙鱼尾狮公园后面,,2020-02-11 20:22:37.830717
+127,not available,137,127,4.1,51B Imbiah Road,10：00-21:00 其中4合1游戏配套的最后入场时间：19:30；单项游戏的最后入场时间：20:45，以上时间仅供参考，具体以景区现场安排为准。,2020-02-11 20:22:48.699195
+128,not available,85,128,4.3,"12 Tai Gin Road Sun Yat Sen Nanyang Memorial Hall, Singapore 327874, Singapore","周二-周日10:00-17:00，周一休馆。（最晚入园时间16:30） 免费英文向导：周二 - 周五：2:00 PM / 周六 - 周日：3:00 PM
+ 免费普通话向导：周二，周四，周六，周日：2:30 PM
+",2020-02-11 20:23:07.621543
+129,SingaporeDiscoveryCentre,75,129,4.2,510UpperJurongRoad,周二-周日9:00-18:00，周一闭馆（公共假期和学期假期除外）。,2020-02-11 20:23:19.720925
+130,TimbreTheSubstation,29,130,4.3,"45ArmenianStreet,Singapore179936,Singapore",周二-周四、周日18:00-次日1:00，周五、周六18:00-次日2:00，周一关闭,2020-02-11 20:23:32.648640
+131,not available,75,131,4.4,"40 Imbiah Rd, Imbiah Lookout Sentosa, Singapore 099700",全年  11:00-19:00；最后一场的时间是19:00，以上时间仅供参考，具体以景区当天的安排为准。。,2020-02-11 20:23:47.460735
+132,Istana,128,132,4.6,"OrchardRoad,Singapore238823",暂停营业,2020-02-11 20:24:05.484410
+133,SentosaNatureDiscovery,54,133,4.5,40ImbiahRoad,9:00-17:00,2020-02-11 20:24:20.136110
+134,ShentonWay,41,134,4.3,"ShentonWay,Singapore",全天开放,2020-02-11 20:24:39.411239
+135,CineBlast,46,135,4.4,51BImbiahRoad,8:00–18:00,2020-02-11 20:24:51.057853
+136,ChangiVillage,42,136,4.5,Singapore,全天开放,2020-02-11 20:27:38.628206
+137,AbdulGaffoorMosque,54,137,4.4,"41DunlopStreet,Singapore,Singapore",周六-周四10:00-12:00，14:00-16:00；周五14:30-16:00,2020-02-11 20:27:56.350511
+138,TheSouthernRidges,27,138,4.7,",TheSouthernRidgesSingapore099203",全天开放,2020-02-11 20:28:13.624074
+139,CanopyPlaygroundofChangiAirport,31,139,4.4,新加坡樟宜机场T1三层公共区域ViewingMall,10:30-22:30,2020-02-11 20:28:37.033161
+140,SingaporeManagementUniversity,45,140,4.4,"70StamfordRoad,#B1-38a,Singapore178901",,2020-02-11 20:28:52.780988
+141,ChangiBeach,44,141,4.3,"ChangiBeach,Singapore",全天开放,2020-02-11 20:29:12.668762
+142,SupertreeGrove,66,142,4.7,"18MarinaGardensDriveGardensBytheBay|GardensbytheBay,Singapore018953,Singapore",5:00-次日2:00,2020-02-11 20:29:27.307544
+143,LibraryOrchard,76,143,4.7,"277OrchardRoad,OrchardGateway,Singapore",11:00-21:00；圣诞节前夕17:00关闭，新年和中国新年、公众假期闭馆。,2020-02-11 20:29:44.736180
+144,SakyaMuniBuddhaGayaTemple,39,144,4.2,"336RaceCourseRd.,Singapore,Singapore",8:30-16:45,2020-02-11 20:29:56.620915
+145,not available,37,145,4.5,50 Beach View， #01-k5， Gogreen Hub,思维车探险旅程：10:00-19:30（周一-周日）（首轮探险旅程：上午10:30，最后出发时间：18:30） 思维车乐趣游：10:00-19:30（最后出发时间19:00）,2020-02-11 20:30:13.289261
+146,KusuIsland,56,146,4.1,10KhusuIsland,全天开放,2020-02-11 20:30:25.195713
+147,KranjiWarMemorial,50,147,4.1,9WoodlandsRoad,全天开放,2020-02-11 20:30:37.719003
+148,TheChangiMuseum,47,148,4.1,"1000,UpperChangiRoadNorth,Singapore507707",9:30-17:00（16:30停止入场）,2020-02-11 20:30:55.873027
+149,JurongLakeGardens,30,149,4.6,"1ChineseGarden,Singapore619795,Singapore",全天开放,2020-02-11 20:31:07.287764
+150,SuntecSingaporeInternationalConventionandExhibitionCentre,43,150,4.7,"1RafflesBoulevard,Singapore039593,Singapore",7:00-23:00,2020-02-11 20:31:22.440558
+151,not available,99,151,4.7,Palawan Kidz City. 31 Beach View #01-01/02 Singapore 098008,10:00-18:00，最晚入园时间：16:30，园区内最后一场角色扮演的时间：17:30。以下日期景区闭园，请您改期前往：2020年1月15日，2月12/19/26日、4月29日、5月6/13日、8月19日、9月16日。以上时间仅供参考，实际开放时间以景区当天为准。,2020-02-11 20:31:35.279699
+152,KuanImThongHoodChoTemple,37,152,4.4,"178WaterlooSt.,Singapore187964,Singapore",周一-周日6:00-18:00,2020-02-11 20:31:48.848715
+153,MalabarMosque,33,153,4.2,"471VictoriaStreet,Singapore198370",全天开放,2020-02-11 20:32:01.578864
+154,NationalLibraryofSingapore,91,154,4.8,"100VictoriaStreet,Singapore188064,Singapore",10:00-21:00，圣诞节前夕、新年和农历新年17:00关闭，公众假期休息。,2020-02-11 20:32:15.906824
+155,KranjiFarm,25,155,4.4,"WoodlandsRd,Singapore738702",全天,2020-02-11 20:32:26.716519
+156,GogreenBicycleRental,17,156,4.4,"GogreenSegwayEcoAdventure,SilosoBeach,Sentosa",全天开放,2020-02-11 20:32:40.970157
+157,ZoneXofChangiAirport,37,157,4.3,新加坡樟宜机场T3地下二层（公共区域）,10:00-23:00,2020-02-11 20:32:52.687079
+158,FormulaSingaporeGrandPrix,21,158,4.4,"MarinaBay,Singapore",暂停营业,2020-02-11 20:33:10.034053
+159,VanKleefAquarium,50,159,4.4,史丹福路乔治五世公园内,,2020-02-11 20:33:22.956142
+160,LauPaSat,60,160,4.4,"18RafflesQuayTelokAyerFestivalMarket,Singapore048582",全天开放,2020-02-11 20:33:33.851094
+161,OCBCSkyway,32,161,4.7,"18MarinaGardensDriveGardensBytheBay|GardensbytheBay,Singapore018953,Singapore",9:00-21:00（最后售票和入场时间为20:00）；将在以下日期关闭进行维护：2月17日、3月23日、4月20日、5月4日、6月1日、7月20日、8月24日、9月28日、10月19日、11月16日、12月21日；景点可能会因容量，恶劣天气，特殊事件或其他原因而更改营业时间，具体开放时间请见官网公示信息。,2020-02-11 20:33:45.563662
+162,CathedraloftheGoodShepherd,31,162,4.1,"AQueenStreet,Singapore188533",每天弥撒时间不同，具体请查看官网。,2020-02-11 20:33:56.007094
+163,MarinaSquare,11,163,4.5,6RafflesBoulevard,10:00-22:00,2020-02-11 20:34:14.582491
+164,TanjongPagar,35,164,4.5,"21McCallumSt,Singapore069047",全天开放,2020-02-11 20:34:25.607342
+165,CentralBusinessDistrict,51,165,4.6,"ShentonWay,Singapore,Singapore",,2020-02-11 20:34:36.985901
+166,AngMoKioTown,20,166,3.3,新加坡,全天开放,2020-02-11 20:34:48.888476
+167,AndersonBridge,51,167,4.5,"MouthofSingaporeRiver,Singapore,Singapore",,2020-02-11 20:34:58.858572
+168,TheLuxeHouse,19,168,4.3,"BLK7ADempseyRoad,Singapore",13:00-次日1:00，23:00为最后招待时间,2020-02-11 20:35:19.879219
+169,CentralFireStation,48,169,4.6,"62HillStreet,Singapore,Singapore",,2020-02-11 20:35:32.760415
+170,KentRidgePark,19,170,4.4,"Vigilantedrive,Singapore,Singapore",全天开放,2020-02-11 20:35:46.600956
+171,Spectra,28,171,4.6,MarinaBay,周一-周四、周日：20:00、21:00两场；周五、周六：20:00、21:00、22:00三场；每场表演约15分钟。,2020-02-11 20:35:59.009992
+172,KongMengSanPhorKarkSeeTemple,34,172,4.5,"88BrightHillRoad,Singapore574117,Singapore",8:00-16:00,2020-02-11 20:36:12.746258
+173,RainForestLumina,33,173,4.4,RainforestLuminaatSingaporeZoo，80MandaiLakeRoad，Singapore729826,19:30-24:00（最晚入园时间10:30）,2020-02-11 20:36:24.645098
+174,BedokReservoirPark,26,174,4.4,"760BedokReservoirRd,新加坡479245",全天开放,2020-02-11 20:36:35.610181
+175,LianShanShuangLinTemple,24,175,4.7,"184EJalanToaPayoh,Singapore319941,Singapore",8:00-17:00,2020-02-11 20:36:47.389649
+176,HajjahFatimahMosque,33,176,4.2,"4001BeachRoadHajjahFatimahMosque,Singapore199584,Singapore",9:00-21:00,2020-02-11 20:37:21.292614
+177,Zouk,16,177,4.3,"3CRiverValleyRoad,TheCannery,新加坡179022",周三22:00-次日3:00，周五22:00-次日5:00，周六和节假日前夕22:00-次日4:00。,2020-02-11 20:37:34.643334
+178,not available,41,178,4.7,21 Jurong Town Hall Road， Singapore 609433,"1）场次1：9:30-13:30（最后入园12:45）
+						 2）场次2-：14:00-18:00（最后入场17:15）		",2020-02-11 20:37:51.658736
+179,WaterWorld,19,179,4.7,"新加坡环球影城失落的世界区，8SentosaGateway,SentosaIsland,Singapore",10:30-17:00,2020-02-11 20:38:02.678006
+180,JurongEcoGarden,23,180,4.6,"1CleantechLoopCleantechOne,Singapore637141,Singapore",暂无,2020-02-11 20:38:16.000649
+181,not available,20,181,4.5,"2 Conservatory Drive | National University of Singapore, Singapore 117377, Singapore",周二至周日：每天10:00 AM - 7:00 PM (最后入馆时间为5:30 PM)，新加坡法定节假日正常开放； 周一闭馆 (新加坡法定节假日除外) 馆内定期设有免费导览团：周四至周日1:00 PM (节假日除外)，先到先得，直接前往柜台报名登记即,2020-02-11 20:38:26.047881
+182,not available,34,182,4.7,"1 Sentosa, Singapore 099081, Singapore",全年  10:00-18:00。,2020-02-11 20:38:37.234602
+183,TanahMerahFerryTerminal,18,183,4.4,"50TanahMerahFerryRoad#01-21,Singapore498833,Singapore",,2020-02-11 20:38:50.474597
+184,LakeofDreams,25,184,4.5,"SentosaIsland,Singapore",10:00-20:00,2020-02-11 20:39:04.934689
+185,not available,15,185,4.5,"21 Jurong Town Hall Road, Singapore 609433, Singapore",10:00-18:00（周一-周日），2小时门票最后入场时间为14:00；1小时门票最后入场时间为15:00。,2020-02-11 20:39:16.648942
+186,GardenRhapsody,21,186,4.8,gardenbythebay,每日19:45、20:45各一场；高峰时间为每天19:00-21:00。,2020-02-11 20:39:28.949895
+187,not available,6,187,4.8,Inside Starlight Changi Mall in Singapore Changi Airport,全年营业10:00-22:00,2020-02-11 20:39:39.619807
+188,SingaporeIndoorStadium,11,188,4.5,"2StadiumWalk,Singapore397691,Singapore",9:00-18:00,2020-02-11 20:39:52.591675
+189,not available,11,189,4.6,"30 Siloso Beach Walk, Sentosa Island, 099011 Singapore","周一至周四: 1pm - 7pm 
+, 周五: 1pm-8pm 周六周日及公众假期 : 12pm-8pm
+ 平安夜和公众假期园区正常开放 园区内的餐饮服务每天11am开放 景区有可能会因为临时的活动或节日延长运营时间 景区会因为临时情况调整运营时间并不做提前通知，请您以当天实际运营时间为准。",2020-02-11 20:40:03.630223
+190,MarinaBarrage,57,190,4.5,"8MarinaGardensDr,Singapore018951",,2020-02-11 20:40:23.231481
+191,NationalDesignCentre,17,191,4.5,"111MiddleRoad,Singapore,Singapore",星期日 - 星期六 上午9点00分 - 下午9点00分,2020-02-11 20:40:36.503805
+192,not available,6,192,4.8,"5 Campbell Lane, Singapore 209924",周二-周四：10:00-19:00，周五-周六：10:00-20:00，周日及公众假期：10:00-16:00，周一闭馆（如果公众假期在周一，当天也照旧闭馆，除非有另外的通知）,2020-02-11 20:40:47.277724
+193,Padang,36,193,4.6,"BetweenSt.AndrewRoadandConnaughtDrive,Singapore179682,Singapore",,2020-02-11 20:41:01.155060
+194,Woodlands,10,194,3.8,"30WoodlandsAvenue2,Singapore738343",全天开放,2020-02-11 20:41:13.494074
+195,LabradorNatureReserve,20,195,4.6,"AlongLabradorVillaRoadoffPasirPanjangRoad,Singapore119187,Singapore",,2020-02-11 20:41:25.373494
+196,ChurchoftheSacredHeart,19,196,4.6,"111TankRoad,Singapore238069,Singapore",9:00-17:00,2020-02-11 20:41:37.782177
+197,SistersIslands,9,197,4.7,"Sisters'Island,Singapore000703",全天开放,2020-02-11 20:41:49.302679
+198,Cenotaph,26,198,4.3,"EsplanadePark,Singapore,Singapore",,2020-02-11 20:42:01.742425
+199,OurLadyofLourdesChurch,16,199,4.5,"50OphirRoad,Singapore,Singapore",外观全天开放，内部参观时间请参考官网。,2020-02-11 20:42:21.581343
+200,JohoreBattery,25,200,3.9,CosfordRoadSingapore,每日9:00-17:00,2020-02-11 20:42:36.342499
+201,,6,201,4.5,乌敏岛,,2020-02-11 20:42:48.875402
+202,DigitalLightCanvas,2,202,5,10BayfrontAvenueSingapore018956,周日-周四：11:3-21:00，周五、周六及公共假日前夕：11:00-22:00。,2020-02-11 20:43:00.669181
+203,LowerSeletarReservoirPark,14,203,4.5,"YishunAvenue1,Singapore,Singapore",,2020-02-11 20:43:10.621736
+204,ArabStreet,4,204,4.3,"ArabStreet,KampongGlam,Singapore,Singapore",,2020-02-11 20:43:24.498744
+205,SampanRides,2,205,5,新加坡滨海湾金沙购物商城运河层B2,周日至周四：上午 11:30 至晚上 9:00 周五、周六及公共节假日前夕：上午 11:00 - 晚上 10:00。,2020-02-11 20:43:35.203684
+206,not available,2,206,4.5,"38C Belvedere Close, Singapore 159883",8:00-19:00,2020-02-11 20:43:53.324760
+207,not available,23,207,4.5,"1 Raffles Place, Singapore 048616","1）1-Altitude摩天酒吧观景台：8:30-17:30（周一-周日）（游玩时长为30分钟，每位客人只能逗留最多30分钟）
+								 2）Funvee双层巴士：9:00-17:00（周一-周日） 3）南洋咖啡或茶：11:00-18:00（周一-周日）",2020-02-11 20:44:07.358916
+208,SingaporeHongSanSee,10,208,4.4,"31MohamedSultanRoad,Singapore238975,Singapore",8:00-18:00,2020-02-11 20:44:20.931290
+209,SingaporeSportsHub,4,209,5,"2StadiumWalk,Singapore",,2020-02-11 20:44:34.175367
+210,not available,18,210,4.6,"26 Sentosa Gateway, #01-38/39, Singapore 098138",10:00 AM - 8:00 PM（最后入场时间为7:00 PM）。,2020-02-11 20:44:45.007051
+211,KliveSentosa,38,211,4.5,"26SentosaGateway,#01-37/38/39,Singapore09813",剧场于2017年10月2日起停止营业，重新开放时间待定。,2020-02-11 20:44:55.647437
+212,,10,212,4.7,集合地点：牛车水附近的尼路（NeilRoad）,,2020-02-11 20:45:25.557782
+213,Airzone,3,213,4.3,"CitySquareMall,180KitchenerRd，Singapore208539",11:00-21:30 上午10点45分开放售票，上午11点开放入场，最后入场时间是晚上21点~,2020-02-11 20:45:40.535834
+214,TempleStreet,15,214,4.4,"TempleStreet|Chinatown,Singapore,Singapore",暂无,2020-02-11 20:45:52.777311
+215,not available,15,215,4.3,"Singapore Flyer,30 Raffles Ave #02-06 S/G, Singapore 039803",	营业时间：10：00-21:30（周三时间12:00-21:30）-须提前预约时间,2020-02-11 20:46:15.707087
+216,,15,216,4.7,"187964,新加坡滑铁卢街178",每天上午7.00至下午6.00,2020-02-11 20:46:26.941786
+217,ArtSpaceMuseum,23,217,4.6,"MarinaBaySands,Singapore,Singapore",星期日 - 星期六 上午11点00分 - 下午7点00分,2020-02-11 20:46:40.208965
+218,SupremeCourt,25,218,4.4,"1St.Andrew'sRoadNationalGallerySingapore,Singapore178957,Singapore",,2020-02-11 20:46:52.073073
+219,ElginBridge,1,219,5,"Singapore,Singapore",暂无,2020-02-11 20:47:04.001590
+220,SasanaransiBuddhistTemple,25,220,4.3,"14TaiGinRd,Singapore,Singapore",6:30-21:00,2020-02-11 20:47:16.666707
+221,not available,3,221,5,"2 Cox Terrace, Fort Canning Park, Singapore 179622",9:30-17:00,2020-02-11 20:47:27.882048
+222,EmpressPlaceBuilding,28,222,4.3,"1EmpressPlace,Singapore179555,Singapore",,2020-02-11 20:47:40.893029
+223,SriVeeramakaliammanTemple,10,223,5,"141SerangoonRoad,Singapore218042,Singapore","周日 - 周六上午5:00 - 下午9:00days: 周日 - 周六, times: 上午5:00 - 下午9:00,",2020-02-11 20:47:52.029072
+224,TelokAyerStreet,13,224,4.8,"Singapore,Singapore",,2020-02-11 20:48:11.665162
+225,ChurchofSaintsPeterandPaul,16,225,4.3,"225AQueenStreetChurchofStPeterAndStPaul,Singapore188551,Singapore",9:00-17:00,2020-02-11 20:48:23.761815
+226,not available,11,226,3.3,"1 Pasir Ris Close,Singapore (519599)","高峰 –》取票时间10:00~17:00， 入园时间 10:00~18:00 非高峰 –》取票时间12:00~17:00， 入园时间  12:00~18:00
+",2020-02-11 20:48:35.982626
+227,OmniTheatrebyScienceCentreSingapore,17,227,4.6,"15ScienceCentreRoad,Singapore609081,Singapore",星期日 - 星期六 上午10点00分 - 下午6点00分,2020-02-11 20:48:47.134229
+228,DalhousieObelisk,17,228,4.4,"1EmpressPlaceEmpressPlaceBuilding,Singapore179555,Singapore",,2020-02-11 20:49:10.026475
+229,,19,229,4.8,3TemasekBoulevard#01-330SuntecShoppingMall038983,10:00-18:00，游览约60分钟。,2020-02-11 20:49:22.645153
+230,BounceSingapore,2,230,5,"CathayCineleisureOrchard,8GrangeRoad,#09-01,Singapore239695",周一-周四：10:00-22:00，周五：10:00-23:00，周六：9:00-23:00，周日：9:00-22:00。公众假日休息。 儿童跳跃者:星期一至五: 10:00am-4:00pm;星期六及日: 9:00am-12:00pm;*公众假日: 休息,2020-02-11 20:49:37.258456
+231,BollywoodVeggies,7,231,4.3,"100NeoTiewRoad,Singapore719026,Singapore",周三-周五:上午9:30-下午6:30;周六-周日:上午8:00-下午6:30;,2020-02-11 20:49:48.750644
+232,,5,232,5,"327874,新加坡TaiGin路12(中山广场)",周二到周天早上10点至晚5点（周一闭馆）,2020-02-11 20:50:08.124650
+233,SingaporeMusicalBoxMuseum,6,233,4.5,"168TelokAyerStreet,Singapore068619,Singapore",暂无,2020-02-11 20:50:21.158977
+234,,7,234,4.7,新加坡,,2020-02-11 20:50:35.437412
+235,OCBCAquaticCentre,16,235,4.3,"7StadiumDrive|SingaporeSportsHub,Singapore397632,Singapore",暂无,2020-02-11 20:50:51.772915
+236,UOBPlaza,22,236,4.6,"80RafflesPlaceUobPlaza,Singapore048624,Singapore",,2020-02-11 20:51:05.037858
+237,SriKrishnanTemple,20,237,4.3,"152WaterlooSt,Singapore187961,Singapore",,2020-02-11 20:51:18.731066
+238,EsplanadePark,24,238,4.9,"18MarinaGardensDr,Singapore018953",,2020-02-11 20:51:30.875677
+239,TheCathayGallery,14,239,4.4,"2HandyRoadTheCathay,Singapore229233,Singapore",暂无,2020-02-11 20:51:42.230089
+240,,3,240,4.3,"9RafflesBoulevard,Singapore039596",,2020-02-11 20:51:53.898178
+241,SingaporeXDTheatre,18,241,4.4,"SingaporeFlyer,30RafflesAvenue.#02-09Singapore039803",9:00-23:00,2020-02-11 20:52:06.735828
+242,PoliceHeritageCentre,13,242,4.4,"28IrrawaddyRoad,Singapore329560,Singapore",星期二 - 星期五 上午10点00分 - 下午5点30分 星期六 上午10点00分 - 下午1点00分,2020-02-11 20:52:21.086357
+243,YuehHaiChingTemple,19,243,4.2,"30BPhillipStreetWanHaiChengBioTemple,Singapore048696,Singapore",,2020-02-11 20:52:32.104853
+244,MegaBounceCrazyBounce,15,244,4.5,"ResortsWorldSentosa,nearCraneDanceandUniversalStudio’sGlobe(MB5)",每天11:00am to 7:00pm（最后入场时间 6:45pm)，具体开放时间以景区现场为准。,2020-02-11 20:52:45.644239
+245,MadagascarACrateAdventure,18,245,4.3,"新加坡环球影城马达加斯加区，8SentosaGateway,SentosaIsland,Singapore",,2020-02-11 20:52:59.056733
+246,,1,246,5,"LazarusIsland,Singapore",,2020-02-11 20:53:11.331618
+247,SembawangPark,34,247,4.3,"SembawangRd,Singapore,Singapore",,2020-02-11 20:53:24.131956
+248,ArmyMuseumofSingapore,15,248,4.3,"520UpperJurongRd,Singapore638367,Singapore",,2020-02-11 20:53:36.449072
+249,,1,249,5,"34PulauUbin,508287",,2020-02-11 20:53:49.038672
+250,OperaGallery,15,250,4.7,"2OrchardTurnIonOrchard|#04-15IONOrchard,Singapore238801,Singapore",周一-周五:上午11:00-下午8:00;周六-周日:上午10:00-下午8:00;,2020-02-11 20:54:03.003466
+251,IstanaWoodneuk,11,251,4.5,"|HollandRoadandTyersallRoad,Singapore,Singapore",,2020-02-11 20:54:21.905809
+252,TourAboutSingapore,19,252,4.5,"新加坡,新加坡","周日上午9:00 - 下午5:00days: 周日, times: 上午9:00 - 下午5:00,days: 周一 - 周六, times: 上午9:00 - 下午6:00,",2020-02-11 20:54:33.898064
+253,SengWongBeoTemple,21,253,4,"113PeckSeahSt,Singapore079332,Singapore",,2020-02-11 20:54:45.114359
+254,Mosh,11,254,4.5,"31BeachView#03-01,PalawanKidzCity,Singapore098008",10:00-21:00（周一-周日）（周六、周日、公共假期期间，游玩时间将会被限制在2个小时之内）,2020-02-11 20:54:59.210
+255,ChineseHeritageMuseum,1,255,5,"#02-21,MilleniaWalk美年径,9RafflesBoulevard,039596",Mon-Sun:10:00-22:00,2020-02-11 20:55:25.626860
+256,FukTakChiMuseum,18,256,4.6,"FarEastSquare|TelokAyerStreet,Singapore,Singapore",,2020-02-11 20:55:37.401138
+257,PororoParkSingapore,12,257,4.3,"6RafflesBoulevard,MarinaSquare#02-29",周日-周四：10:30-20:00，周五、周六：10:30-21:00,2020-02-11 20:55:58.200630
+258,NUSBabaHouse,17,258,4.4,"157NeilRoad,Singapore,Singapore",周一 - 周二 14:00 - 15:00 周二 18:30 - 19:30 周四 10:00 - 11:00 周六 11:00 - 12:00,2020-02-11 20:56:21.142452
+259,SembawangHotSpring,17,259,4.2,"GambasAve,Singapore",7：00-19：00,2020-02-11 20:56:33.824304
+260,PetainRoad,11,260,4.5,"LittleIndia,Singapore,Singapore",,2020-02-11 20:56:45.467119
+261,JubileeBridge,3,261,5,"|MarinaBay,Singapore018978,Singapore",暂无,2020-02-11 20:56:59.005405
+262,StJosephsChurch,15,262,4.6,"143VictoriaSt,Singapore188020,Singapore",,2020-02-11 20:57:12.092025
+263,ChettiarTemple,15,263,4.3,"1TankRoadChettiarTemple,Singapore238058,Singapore",,2020-02-11 20:57:23.914229
+264,FreeSingaporeTour,12,264,4.6,"新加坡,新加坡","周日 - 周六上午7:00 - 下午6:30days: 周日 - 周六, times: 上午7:00 - 下午6:30,",2020-02-11 20:57:35.405030
+265,TheRinkatJCube,13,265,4.5,"2JurongEastCentral1Jcube|Level3,JCube,Singapore609731,Singapore",暂无,2020-02-11 20:57:47.802241
+266,ChangiBeachBoardwalk,3,266,4.3,"7AGosportRoad|ChangiBeach,Singapore509710,Singapore",暂无,2020-02-11 20:57:59.699256
+267,MiajaGallery,6,267,4.5,"190BukitTimahRoad,Singapore229857,Singapore",,2020-02-11 20:58:14.271456
+268,TheOtherRoom,6,268,4.6,"320OrchardRoadSingaporeMarriottTangPlazaHotel,Singapore238865,Singapore",暂无,2020-02-11 20:58:25.844068
+269,AlAbrarMosque,16,269,4.4,"192TelokAyerStreet,Singapore068635,Singapore",,2020-02-11 20:58:38.422211
+270,GrandTheater,1,270,5,"10BayfrontAvenueMarinaBaySands|MarinaBaySands,Singapore018956,Singapore",暂无,2020-02-11 20:58:50.710281
+271,FarEastOrganizationChildrensGarden,1,271,5,"18MarinaGardensDriveGardensBytheBay,Singapore018953,Singapore",暂无,2020-02-11 20:59:03.749239
+272,NationalStadium,12,272,4.6,"2StadiumWalk,Singapore397718,Singapore",,2020-02-11 20:59:17.415334
+273,PunggolWaterwayPark,2,273,0,"10SentulCrescentRoad,Singapore828851,Singapore",暂无,2020-02-11 20:59:28.447831
+274,SengkangSwimmingComplex,0,274,,"57AnchorvaleRd,Singapore544964,Singapore",暂无,2020-02-11 20:59:39.103044
+275,SunflowerGarden,1,275,5,"AirportBoulevard|Terminal2,Singapore,Singapore",暂无,2020-02-11 20:59:51.419107
+276,JacobBallasChildrensGarden,15,276,4.6,"1ClunyRoad,Singapore259569,Singapore",,2020-02-11 21:00:02.979905
+277,ChineseHeritageCentre,2,277,5,"12NanyangDive,NanyangTechnologicalUniversity,Singapore637721,Singapore",周一至周五上午 9:30至下午 5 点,2020-02-11 21:00:15.352143
+278,SingaporeCricketClub,5,278,4.6,"ConnaughtDr,Singapore179681",,2020-02-11 21:00:29.376031
+279,NationalHeritageBoard,2,279,5,"61StamfordRd,#03-08,Singapore178892",09:00 -17:30,2020-02-11 21:00:41.374973
+280,DowntownEast,11,280,4.3,"1PasirRisCloseE!Hub@DowntownEast,Singapore519599,Singapore","周日 - 周六上午10:00 - 下午10:00days: 周日 - 周六, times: 上午10:00 - 下午10:00,",2020-02-11 21:00:54.236314
+281,LimBoSengMemorial,13,281,4.4,"Esplanade,Singapore,Singapore",,2020-02-11 21:01:08.595830
+282,LoyangTuaKong,7,282,4,"20LoyangWay,Singapore508774",,2020-02-11 21:01:22.853634
+283,ChurchofTrueLight,16,283,4.2,"25GPerakRd,Singapore208142,Singapore",,2020-02-11 21:01:34.641526
+284,ChurchoftheNativityoftheBlessedVirginMary,1,284,5,"1259UpperSerangoonRoad,Singapore534795,Singapore",暂无,2020-02-11 21:01:46.277543
+285,TelokAyerMarket,10,285,4.4,"|BoundedbyMaxwellRoad,CecilStreetandTelokAyerStreet,Singapore,Singapore",,2020-02-11 21:01:57.384555
+286,StandardCharteredMarathonSingapore,8,286,4.6,"MarinaBayBlvd|MarinaBay,Singapore,Singapore",暂无,2020-02-11 21:02:10.444287
+287,ArtPluralGallery,8,287,4.6,"38ArmenianStreet,Singapore179942,Singapore",暂无,2020-02-11 21:02:23.571174
+288,NagoreDurghaShrine,17,288,4.1,"140TelokAyerSt,Singapore,Singapore",,2020-02-11 21:02:35.566219
+289,KretaAyerSquare,8,289,4.6,"TrengganuStreet,Singapore,Singapore",暂无,2020-02-11 21:02:54.755667
+290,ParliamentofSingapore,2,290,4.5,"1ParliamentPlace|ParliamentHouse,Singapore178880,Singapore",,2020-02-11 21:03:11.063669
+291,ConeyIslandPark,0,291,,"PunggolPromenadeNatureWalk|PunggolPointPark,BesidePunggolPromenadeNatureWalk,Singapore,Singapore",暂无,2020-02-11 21:03:23.412173
+292,FishBigSplash,8,292,4.5,"902EastCoastParkwayAquaticComplex(BigSplash)|#01-30,BlockH,BigSplash,Singapore449874,Singapore",暂无,2020-02-11 21:03:35.443593
+293,SriSrinivasaPerumalTemple,12,293,4.4,"397SerangoonRoad,Singapore218123,Singapore",,2020-02-11 21:03:47.929663
+294,,18,294,4.5,"80,SilosoRoad,Sentosa(SilosoPoint)",10:00-19:00(最后入场时间 18:30),2020-02-11 21:04:00.283930
+295,LaichunYuenTheatre,7,295,4.6,"SmithStreet|Chinatown,Singapore,Singapore",暂无,2020-02-11 21:04:14.111572
+296,MyLittleGiantKidsIndoorPlaypark,4,296,4.5,"BigBox,1VentureAvenueSingapore",11:00-22:00,2020-02-11 21:04:26.160697
+297,SingaporePinacothèquedeParis,6,297,4.7,"5CoxTerraceFortCanningArtsCentre|FortCanningArtsCentre,Singapore179620,Singapore","周日 - 周六上午10:00 - 下午6:00days: 周日 - 周六, times: 上午10:00 - 下午6:00,",2020-02-11 21:04:38.552993
+298,BedokJetty,9,298,4.3,"EastCoastParkServiceRoad,Singapore,Singapore",暂无,2020-02-11 21:04:51.689985
+299,AnnSiangHillPark,8,299,4.5,"AnnSiangRoad,Singapore,Singapore",,2020-02-11 21:05:09.007119
+300,OdeToArt,5,300,4.4,"252NorthBridgeRoadRafflesCityShoppingCentre|RafflesCityShoppingCentre,#01-36E/F,Singapore179103,Singapore","周日 - 周六上午11:00 - 下午9:00days: 周日 - 周六, times: 上午11:00 - 下午9:00,",2020-02-11 21:05:22.484022
+301,TheCatCafe,14,301,3.9,"241BVictoriaStreet,Singapore188030,Singapore",周日:上午10:00-下午10:00;周一:下午3:00-下午10:00;周二-周四:上午10:00-下午10:00;周五-周六:上午10:00-下午11:00;,2020-02-11 21:05:32.925740
+302,not available,2,302,4,"459 Jalan Ahmad, Ibrahim, 639934","星期一至六 (公众假日除外): 13:00pm - 18:30pm(最晚入园时间17:00)
+
+ 导览团时间: 1:00pm, 2:00pm, 3:00pm, 4:00pm, 5:00pm 最后参观时间: 5:00pm",2020-02-11 21:05:53.197718
+303,JalanBesarStadium,6,303,4.5,"100TyrwhittRoadJalanBesarStadium,Singapore207542,Singapore",暂无,2020-02-11 21:06:10.640977
+304,SwiftletGardenMuseum,7,304,4.4,"No.10NeoTiewLane2|D'KranjiFarmResort,Singapore718813,Singapore",星期日 - 星期六 上午12点00分 - 下午6点00分  下午10点00分 - 上午12点00分,2020-02-11 21:06:23.764079
+305,AsianArtPlatform,10,305,4.1,"292RiverValleyRoad|Level2,Singapore238333,Singapore","周二 - 周日上午11:00 - 下午6:00days: 周二 - 周日, times: 上午11:00 - 下午6:00,",2020-02-11 21:06:37.584806
+306,RobertsonQuay,12,306,4.5,"NearSingaporeRiver,Singapore,Singapore",,2020-02-11 21:06:49.514663
+307,NUSMuseum,18,307,4.2,"UniversityCulturalCentreNationalUniversityofSingapore50KentRidgeCrescent,Singapore119279,Singapore",,2020-02-11 21:07:01.140047
+308,TheBicycleHut,5,308,4.6,"新加坡,新加坡","周二 - 周五上午10:00 - 下午8:00days: 周二 - 周五, times: 上午10:00 - 下午8:00,days: 周六 - 周日, times: 上午10:00 - 下午9:00,",2020-02-11 21:07:13.877712
+309,JurongCentralPark,14,309,4.7,"BoonLaySt.JunctionwithBoonLayWay,Singapore,Singapore",,2020-02-11 21:07:25.932181
+310,PieceofPeace,1,310,5,新加坡CoxTerrace5号福康宁艺术中心,,2020-02-11 21:07:37.551163
+311,KallangIceWorld,7,311,4.2,"5StadiumWalkLeisureParkKallang|LeisureParkKallang,Singapore397693,Singapore",暂无,2020-02-11 21:07:50.667479
+312,,2,312,5,金沙购物商场,,2020-02-11 21:08:02.470740
+313,SriSenpagaVinayagarTemple,8,313,4.8,"19CeylonRd,Singapore429613,Singapore",星期日 - 星期六 上午6点30分 - 下午12点00分  下午6点30分 - 下午9点00分,2020-02-11 21:08:17.441837
+314,not available,2,314,5,"30 Merchant Road 03-18, Singapore 058282","The Round Cruise船期为每天9点至22点，每20至25分钟一班船。活动开展受天气和潮汐条件影响
+ Tokidoki Boat Cruise船期每天17点/19点/21点发船 
+",2020-02-11 21:08:36.176247
+315,Native,5,315,4.5,"52AAmoyStreet,Singapore069878,Singapore",暂无,2020-02-11 21:08:53.379359
+316,HSBCSingaporeRugbySevens,5,316,4.4,"1StadiumDrive|NationalStadium,Singapore397691,Singapore",暂无,2020-02-11 21:09:15.543225
+317,LittleGuilin,8,317,3.9,"BukitBatokEastAvenue5,Singapore043359,Singapore",暂无,2020-02-11 21:09:36.666178
+318,PolarBearGallery,3,318,4.7,"69AHajiLane,Singapore189262,Singapore",暂无,2020-02-11 21:09:49.606754
+319,TuaPehKongTemple,10,319,4.2,"KusuIsland,Singapore,Singapore",,2020-02-11 21:10:01.001995
+320,GajahGallery,5,320,4.4,"39KeppelRoadTanjongPagarDistripark|#03-04,TanjongPagarDistripar,Singapore089065,Singapore",周一-周五:上午11:00-下午7:00;周六-周日:下午12:00-下午6:00;,2020-02-11 21:10:21.781740
+321,TiongBahruHaritageTrail,4,321,4.8,"300TiongBahruRoadTiongBahruMrtStation,Singapore168731,Singapore",暂无,2020-02-11 21:10:42.089957
+322,FireFliesHealthFarm,3,322,4.3,"50LimChuKangLane2Lot75,Singapore718822,Singapore",暂无,2020-02-11 21:10:55.479904
+323,Degiosart,4,323,4.5,"TiongBahru,Blk57|01-82EngHoonStreet,Singapore160057,Singapore",周日-周六:上午10:00-下午7:00;,2020-02-11 21:11:18.739226
+324,SagoStreetStreetOfTheDead,13,324,4.7,"Chinatown,Singapore,Singapore",,2020-02-11 21:11:32.996817
+325,NanyangPolytechnic,5,325,4.8,新加坡宏茂桥8街180号(180AngMoKioAvenue8Singapore569830),,2020-02-11 21:11:45.509795
+326,ClementiWoods,4,326,4.8,"ClementiRoad,Singapore,Singapore",暂无,2020-02-11 21:11:56.767299
+327,GOURMETbus,3,327,4.7,"新加坡,新加坡",暂无,2020-02-11 21:12:10.077433
+328,HarleyDavidsonofSingapore,3,328,4.7,"253AlexandraRoad#01-04,Singapore159936,Singapore",周日-周六:上午9:00-下午7:00;,2020-02-11 21:12:21.454874
+329,TheGemMuseum,3,329,4.3,"26KandaharStreet|Level2,Singapore198888,Singapore",周二-周五:下午12:00-下午5:00;周六:上午11:00-下午3:00;,2020-02-11 21:12:34.794339
+330,RedseaGallery,4,330,4.3,"DempseyRoad|Block9,#01-10DempseyHill,Singapore247697,Singapore",暂无,2020-02-11 21:12:46.178391
+331,LottoCarpetsGallery,3,331,4.7,"Blk26#01-04,DempseyRoad,Singapore249686,Singapore",周日-周六:上午10:00-下午8:00;,2020-02-11 21:13:00.143499
+332,ParkviewSquare,16,332,4.7,"600NorthBridgeRoadParkviewSquare,Singapore188778,Singapore",,2020-02-11 21:13:12.972630
+333,UpperSeletarReservoir,3,333,4,"AlongOldUpperThomsonRoad,Singapore,Singapore",暂无,2020-02-11 21:13:24.649627
+334,WTAFinals,7,334,4.4,"2StadiumWalkKallangIndoorStadium|NationalStadium,Singapore397691,Singapore",暂无,2020-02-11 21:13:44.832847
+335,DreamDrivePteLtd,3,335,4.3,"3TemasekBoulevardFloor1SuntecCityMall|SuntecCityMall,Singapore038983,Singapore",周日-周六:上午10:00-下午8:00;,2020-02-11 21:13:55.963148
+336,EagleWingsYachtCharters,3,336,4.3,"新加坡,新加坡","周日 - 周六上午8:00 - 下午11:00days: 周日 - 周六, times: 上午8:00 - 下午11:00,",2020-02-11 21:14:08.545021
+337,MADMuseumofArtDesign,4,337,4,"10TanglinRoad|#01-01/02-01,Singapore247908,Singapore",周日-周六:上午11:00-下午8:00;,2020-02-11 21:14:30.604686
+338,FaberPeak,2,338,5,"109MountFaberRoadFaberPeak|FaberPeak,Singapore099203,Singapore","周日 - 周六上午9:00 - 下午10:00days: 周日 - 周六, times: 上午9:00 - 下午10:00,",2020-02-11 21:14:48.547679
+339,Anjalichocolat,2,339,5,"73LoewenRoad|Units01-15&01-16,Singapore248843,Singapore",周二-周日:上午10:00-下午5:00;,2020-02-11 21:15:00.743667
+340,ToaPayohTownPark,3,340,5,"JunctionofToaPayohLor2andToaPayohLor6,Singapore,Singapore",,2020-02-11 21:15:13.792627
+341,BOBMarineYachtChartersSingapore,3,341,4.3,"新加坡,新加坡",暂无,2020-02-11 21:15:25.867756
+342,HayDairies,3,342,4.3,"3LimChuKangLane4,Singapore718859,Singapore",周三-周一:上午9:00-下午4:00;,2020-02-11 21:15:36.673672
+343,BenjaminShearesBridge,2,343,5,"Singapore,Singapore",暂无,2020-02-11 21:15:49.444643
+344,NTUCentreforContemporaryArt,2,344,4.5,"Blk43MalanRoadGillmanBarracks,Singapore109443,Singapore",周二-周四:下午12:00-下午7:00;周五:下午12:00-下午9:00;周六-周日:下午12:00-下午7:00;,2020-02-11 21:16:18.129353
+345,NTUCentreforContemporaryArt,2,345,4.5,"Blk43MalanRoadGillmanBarracks,Singapore109443,Singapore",周二-周四:下午12:00-下午7:00;周五:下午12:00-下午9:00;周六-周日:下午12:00-下午7:00;,2020-02-11 21:16:30.185958
+346,ArtPortersGallery,2,346,4.5,"64SpottiswoodeParkRoad,Singapore088652,Singapore",周日-周六:上午10:30-下午7:00;,2020-02-11 21:16:42.406984
+347,BukitBrownCemetery,13,347,4.1,"LorongHalwa,Singapore,Singapore",,2020-02-11 21:16:54.870240
+348,CooldeSacPlayCentre,3,348,4,"3TemasekBoulevardSuntecCityMall|SuntecCityMall,Singapore038983,Singapore",周日-周四:上午10:00-下午8:00;周五-周六:上午10:00-下午10:00;,2020-02-11 21:17:16.622222
+349,InterContinentalSingaporeHeritageTrail,10,349,4.7,"新加坡,新加坡",,2020-02-11 21:17:31.503699
+350,JetaimePerfumeryandPerfumeWorkshopSingapore,2,350,4.5,"90GoodmanRoadGoodmanArtsCentre|GoodManArtCenterBlockO,#01-57,Singapore439053,Singapore","周一 - 周二上午10:00 - 下午4:00days: 周一 - 周二, times: 上午10:00 - 下午4:00,days: 周三 - 周日, times: 上午10:00 - 下午8:00,",2020-02-11 21:17:43.754297
+351,FarmartCentre,2,351,4.5,"67SungeiTengahRoadFarmartCentre,Singapore699008,Singapore",暂无,2020-02-11 21:17:55.427494
+352,GMAXReverseBungy,1,352,5,"3ERiverValleyRoadClarkeQuay,Singapore179019,Singapore",周日-周四:下午2:00-上午1:00;周五-周六:下午2:00-上午3:00;,2020-02-11 21:18:14.129633
+353,MonsterDayTours,1,353,5,"新加坡,新加坡","周日 - 周六上午8:00 - 下午11:00days: 周日 - 周六, times: 上午8:00 - 下午11:00,",2020-02-11 21:18:25.681057
+354,PuayHengNoodles,1,354,5,"#01-01,FarEastSquare远东广场,45PekinStreet,048775(RafflesPlace/BoatQuay)",Mon-Sun: 09:30-21:00(Closed on Alternate Sundays),2020-02-11 21:18:38.741980
+355,ChurchofStTeresa,1,355,5,"510KampongBahruRoad,Singapore099446,Singapore",暂无,2020-02-11 21:18:51.061312
+356,TouristandTransitHub,11,356,4.5,"30RafflesAvenue#01-05SingaporeFlyer,Singapore039803,Singapore",,2020-02-11 21:19:03.240206
+357,ConeyIslandPark,1,357,5,"|SerangoonIsland,Singapore,Singapore",暂无,2020-02-11 21:19:22.489952
+358,SriLayanSithiVinayagarTemple,12,358,4.3,"73KeongSaikRoad,Singapore089167,Singapore",,2020-02-11 21:19:47.448922
+359,SingaporeMobilityGallery,1,359,5,"翰莎路陆交局总部|第一座,Singapore219428,Singapore",周一-周五:上午9:30-下午5:00;,2020-02-11 21:19:59.965828
+360,SouthernmostpointofAsia,1,360,5,"Palawanbeach|Bridgetoanislandwith2towers,SentosaIsland,Singapore",暂无,2020-02-11 21:20:22.254057
+361,MarineCovePlayground,1,361,5,"EastCoastParkServiceRoad|EastCoastCarParksC2andC3,Singapore,Singapore",暂无,2020-02-11 21:20:35.675481
+362,ButterflyGarden,0,362,,"AirportBlvd|ChangiAirport,Terminal3,DepartureTransitLounge,Level2&3,Singapore,Singapore",暂无,2020-02-11 21:20:47.678519
+363,OhChinHuatHydroponicFarms,2,363,4,"14ABahSoonPahRoad,Singapore769970,Singapore",暂无,2020-02-11 21:21:00.802603
+364,,1,364,5,"069886,新加坡厦门街66(安详山)",8：00-17：00,2020-02-11 21:21:13.702687
+365,BukitBatokNaturePark,14,365,4.2,"26BukitBatokEastAvenue2HillviewRegency,Singapore659920,Singapore",,2020-02-11 21:21:26.262494
+366,ChangiSailingClub,3,366,4.3,"32NetheravonRoadChangiSailingClub,Singapore508508,Singapore",,2020-02-11 21:21:39.084625
+367,KFC,4,367,4.3,"Terminal1,ChangiAirport80AirportBoulevard,#031-004BViewingMallEast,Level3,ChangiAirportT1,Singapore",,2020-02-11 21:21:52.508637
+368,,1,368,5,"18MarinaGardensDrive,OCBCSkywayandSupertreeSingapore018953","Daily openTime:05:00,closeTime:02:00
+public_holiday openTime:05:00,closeTime:02:00",2020-02-11 21:22:05.180953
+369,EurasianHeritageCentre,11,369,4.4,"139CeylonRd|EurasianCommunityHouse,Singapore429744,Singapore",,2020-02-11 21:22:17.525779
+370,Changibusinesspark,7,370,4.9,"ChangiBusinessParkCrescent,Singapore,Singapore",,2020-02-11 21:22:31.457973
+371,Hdb,10,371,4.5,"480,ToaPayohLorong6,Singapore310480,Singapore",,2020-02-11 21:22:44.198113
+372,,7,372,4.6,80mandairoad,,2020-02-11 21:23:17.418856
+373,TheIntan,4,373,5,"69JooChiatTerrace,Singapore427231,Singapore",周一-周日7:00-22:00,2020-02-11 21:23:30.834697
+374,JurongWestSwimmingComplex,3,374,4.3,"20JurongWestStreet93JurongWestSports&RecreationCtr,Jurong648965,Singapore",,2020-02-11 21:23:43.476581
+375,RunWithMeSingapore,7,375,4.9,"新加坡,新加坡",,2020-02-11 21:23:54.668
+376,MaghainAbothSynagogue,21,376,4.5,"24/26WaterlooSt,Singapore187950,Singapore",,2020-02-11 21:24:06.275512
+377,SpringleafNaturePark,2,377,3.5,"NeeSoonRoad,UpperThomsonRoad,Singapore,Singapore",暂无,2020-02-11 21:24:41.202866
+378,MOEHeritageCentre,10,378,4.4,"402CommonwealthDrive,Singapore149599,Singapore",,2020-02-11 21:24:51.636763
+379,SriThandayuthapaniTemple,17,379,4.6,"15TankRd,Singapore238065,Singapore",,2020-02-11 21:25:15.678323
+380,MasjidBencoolen,12,380,4.2,"42BencoolenStreet,Singapore189626,Singapore",,2020-02-11 21:25:43.270713
+381,TaoTianKengTemple,11,381,4.5,"2JurongWestSt76,Singapore648370,Singapore",,2020-02-11 21:25:56.527784
+382,ResortsWorldTheater,6,382,4.8,"8SentosaGatewayResortsWorldSentosa|ResortsWorldSentosa,Singapore098269,Singapore",,2020-02-11 21:26:11.551637
+383,TheTheatrePractice,1,383,4,"54WaterlooStreet,Singapore187953,Singapore",周一-周五:上午9:00-下午6:30;,2020-02-11 21:26:22.971255
+384,JanesSGTours,1,384,4,"新加坡,新加坡",周日-周六:上午12:00-下午11:59;,2020-02-11 21:26:35.374557
+385,,2,385,4,樟宜机场，T1/T2/T3过境区域,,2020-02-11 21:26:48.369122
+386,BikramYogaKatong,1,386,3,"130EastCoastRoad,Singapore428815,Singapore",暂无,2020-02-11 21:26:59.921798
+387,LeeWeeNamLibrary,1,387,5,"50NanyangAvenue,BlkNS3-03-01",,2020-02-11 21:27:12.437541
+388,ShimanoCyclingWorld,7,388,4.6,"6StadiumBoulevard#01KallangNetballCentre02|RightnexttotheSingaporeSportsMuseumandSportsHubVisitorCentre,Singapore397797,Singapore",,2020-02-11 21:27:24.952332
+389,SchoolOfArtDesignandMedia,1,389,5,"81NanyangDr,Singapore637458",,2020-02-11 21:27:36.116449
+390,SurvivingtheJapaneseOccupationWarandItsLegacies,9,390,4.3,"351UpperBukitTimahRoad,Singapore588192,Singapore",,2020-02-11 21:27:48.990649
+391,TheLiveTurtleandTortoiseMuseum,12,391,4,"1ChineseGardenRoad,Singapore619795,Singapore",,2020-02-11 21:28:00.712764
+392,Theatreworks,7,392,4.6,"72-13MohammadSultanRoad,Singapore239007,Singapore",,2020-02-11 21:28:16.379410
+393,TheStarPerformingArtsCentre,2,393,2.5,"1VistaExchangeGreenTheStarVista|#04-01,Singapore138617,Singapore",暂无,2020-02-11 21:28:28.244455
+394,TanSiChongChuTemple,8,394,4.4,"15MagazineRd,Singapore059568,Singapore",,2020-02-11 21:28:41.261594
+395,PearlsHillCityPark,5,395,4.6,"|AlongChinSweeRoadandPearl'sHillRoad,Singapore,Singapore",,2020-02-11 21:28:53.796360
+396,LakeofDreams,1,396,4,"SentosaIsland,Singapore",,2020-02-11 21:29:04.934405
+397,,3,397,5,ResortsWorldSentosa26SentosaGateway#01-/38/39,周一 ~ 周日：10:00-21:00；最后入场时间：20:00,2020-02-11 21:29:18.186248
+398,TheEpicureanState,5,398,4.8,"新加坡,新加坡",,2020-02-11 21:29:30.341637
+399,TheNEWaterVisitorCentre,14,399,4.6,"20KohSekLimRoad,Singapore486593,Singapore",,2020-02-11 21:29:42.673631
+400,COMNUS,1,400,3,QueenstownResearchLink,,2020-02-11 21:29:53.840919
+401,NyeePhoeFlowerGarden,7,401,4.3,"240NeoTiewCrescent,Singapore718878,Singapore",,2020-02-11 21:30:07.821431
+402,PunggolPark,6,402,4,"11HougangAvenue10,Singapore538768,Singapore",,2020-02-11 21:30:20.042094
+403,ChangiMurals,7,403,4.1,"ChangiCamp|Block151MartleshamRoad,Singapore,Singapore",,2020-02-11 21:30:33.596020
+404,RepublicofSingaporeNavyMuseum,12,404,4.6,"112TanahMerahCoastRoad,Singapore,Singapore",,2020-02-11 21:30:51.247561
+405,PeranakanTrail,5,405,4.4,"JooChiatRoad,Singapore427585,Singapore",,2020-02-11 21:31:04.432050
+406,CathayPicturehouse,1,406,0,"2HandyRoadTheCathay|2HandyRoad,Singapore229233,Singapore",暂无,2020-02-11 21:31:17.001298
+407,Orto,0,407,,"81LorongChencharuOrto|Orto,Singapore769198,Singapore",暂无,2020-02-11 21:31:29.234838
+408,WildlifeReservesSingapore,1,408,0,"80MandaiLakeRoadSingaporeZoologicalGardens,Singapore729826,Singapore",暂无,2020-02-11 21:31:42.797331
+409,BukitBatokMemorialSite,9,409,4,"LorongSesuai,Singapore,Singapore",,2020-02-11 21:31:55.480465
+410,KatongDistrict,1,410,0,"EastCoastRoad,Singapore,Singapore",暂无,2020-02-11 21:32:14.468061
+411,ArtfolioGallery,1,411,0,"328NorthBridgeRoad#02-25RafflesShoppingArcade,Singapore188719,Singapore",暂无,2020-02-11 21:32:30.059668
+412,ThePrivateMuseum,5,412,4.2,"51WaterlooSt|Unit#02-06,Singapore187969,Singapore",,2020-02-11 21:32:47.156936
+413,EvertonRoadStreetArt,4,413,4,"EvertonRoad,Singapore,Singapore",周一 - 周日 0:00 - 23:59;,2020-02-11 21:33:11.174248
+414,LeongSanSeeTemple,16,414,4.3,"371RaceCourseRoadLittleIndia,Singapore218641,Singapore",,2020-02-11 21:33:33.967989
+415,JapaneseCemeteryPark,7,415,4,"22ChuanHoeAvenue,Singapore549854,Singapore",,2020-02-11 21:33:46.928982
+416,ColdstreamAncestralMuseum,9,416,4.7,"9ColdstreamAvenueFrankelEstate,Singapore459595,Singapore",,2020-02-11 21:33:59.665664
+417,SiongLengMusicalAssociation,3,417,4,"4BBukitPasohRoad,Singapore089818,Singapore",周二 - 周六 11:00 - 17:00;,2020-02-11 21:34:26.508284
+418,,3,418,4,"8QSingaporeArtMuseum,8QueenSt.",周一至周日上午 10:00 至晚上 7:00,2020-02-11 21:34:38.306659
+419,PasirRisFishingPond,12,419,4.4,"94PasirRisCentral,Singapore519637,Singapore",,2020-02-11 21:34:50.748432
+420,MaxoutHydrosports,3,420,4.3,"新加坡,新加坡",,2020-02-11 21:35:01.560160
+421,PulauSemakau,9,421,4.6,"PulauSemakau,Singapore000706,Singapore",,2020-02-11 21:35:15.446670
+422,ThePinnacleDuxton,1,422,0,"1CantonmentRoadThePinnacle@Duxton,Singapore080001,Singapore",,2020-02-11 21:35:27.524195
+423,SquareBunsJunior,1,423,5,"#B1-03D,OneRafflesPlace,1RafflesPlace(RafflesPlace/BoatQuay)",Mon - Fri: 08:00 - 20:00,2020-02-11 21:35:40.418787
+424,PulauHantu,11,424,4.4,"PulauHantuIsland,Singapore000705,Singapore",,2020-02-11 21:35:52.554862
+425,TanSwieHianMuseum,9,425,4.6,"460SimsAvenue,Singapore387601,Singapore",,2020-02-11 21:36:05.128605
+426,NorthernEasternRiverineLoop,3,426,4.3,"PunggolPromenadeNatureWalk,Singapore,Singapore",,2020-02-11 21:36:17.043343
+427,SunriseTraditionalCoffeeToast,1,427,5,"#02-33,MarketStreetFoodCentre,50MarketStreet(RafflesPlace/BoatQuay)","Closed: Sat, Sun &",2020-02-11 21:36:30.119349
+428,,2,428,4,109EastCoastRoadSingapore428800,周一～周日 10:00-22:00,2020-02-11 21:36:44.130059
+429,Tamoya,1,429,5,"#B1-48/49,ChinatownPoint,133NewBridgeRoad(Chinatown)",Daily: 11:00 - 21:30,2020-02-11 21:36:56.026520
+430,StickemOn,1,430,5,"#02-35,MarketStreetFoodCentre,50MarketStreet(RafflesPlace/BoatQuay)",Closed: Sat & Sun,2020-02-11 21:37:08.097065
+431,NgeeAnnCulturalCentre,17,431,4.1,"TeochewBuilding(2ndfloor)97TankRoad,Singapore238066,Singapore",,2020-02-11 21:37:32.114111
+432,HongLimPark,12,432,4.3,"43NorthCanalRoad,Singapore059299,Singapore",,2020-02-11 21:37:53.443267
+433,HortPark,5,433,4.7,"33HyderabadRoad,Singapore119578,Singapore",,2020-02-11 21:38:08.763852
+434,ChildrenLittleMuseum,11,434,4.2,"42BussorahStreet,Singapore199460,Singapore",,2020-02-11 21:38:28.174863
+435,SingaporeCityExplorers,2,435,4.5,"新加坡,新加坡",,2020-02-11 21:38:41.695209
+436,LorongHalusWetland,10,436,4.2,"LorongHalus|Punggol,Singapore823172,Singapore",,2020-02-11 21:38:53.990353
+437,TiongBahruEstate,10,437,4.2,"TiongBahruRoad,Singapore,Singapore",,2020-02-11 21:39:08.548141
+438,,1,438,3,3HarbourfrontPlace,8:45-22:00,2020-02-11 21:39:22.823395
+439,SingaporeMaritimeGallery,8,439,4.5,"MarinaSouthPier|31MarinaCoastalDrive,Singapore,Singapore",,2020-02-11 21:39:43.398068
+440,IndianNationalArmyMonument,14,440,4.1,"EsplanadePark,Singapore,Singapore",,2020-02-11 21:39:55.742240
+441,SingaporeCableCar,0,441,,"HarbourFrontTower2,3HarbourfrontPl,Level1,Singapore099254","Daily openTime:08:45,closeTime:22:00",2020-02-11 21:40:09.904960
+442,KeongSaikRoad,1,442,5,"KeongSaikRoad,Singapore",,2020-02-11 21:40:22.921189
+443,TeaterEkamatra,1,443,5,"AliwalArtsCentre28AliwalStreet#02-10Singapore199918,Singapore199918,Singapore",,2020-02-11 21:40:36.081605
+444,WldRice,1,444,4,"3AKerbauRoad,Singapore219142,Singapore",,2020-02-11 21:40:47.891571
+445,SerangoonSingapore,1,445,5,Singapore,,2020-02-11 21:41:00.038010
+446,NightSafariTourWendyTour,1,446,5,"新加坡,新加坡",,2020-02-11 21:41:13.098001
+447,TouristarsPrivateRunningTours,1,447,5,"新加坡,新加坡",,2020-02-11 21:41:24.835998
+448,TanjongPagarRailwayStation,4,448,5,"30KeppelRd,Singapore,Singapore",,2020-02-11 21:41:44.176028
+449,RiverHongbao,2,449,5,"20RafflesAvenueTheFloat@MarinaBay|TheFloat@MarinaBay,Singapore039805,Singapore",,2020-02-11 21:41:57.104697
+450,HaiBinPunggol,0,450,,"6TebingLane,#01-04,Singapore828835",,2020-02-11 21:42:14.961492
+451,TheFullertonMaritimeJourneyTour,1,451,5,"新加坡,新加坡",,2020-02-11 21:42:27.242993
+452,NTUChineseLibrary,1,452,5,"50NanyangAve,BlockS3.2-B5,Singapore639798",,2020-02-11 21:42:41.206598
+453,BidadariMemorialGarden,2,453,4,"10MountVernonRoad,Singapore,Singapore",,2020-02-11 21:42:59.743107
+454,LeVeL,0,454,,"8MarinaBlvd,#33-01,Singapore018981",,2020-02-11 21:43:12.717020
+455,ThekchenCholing,10,455,4.3,"2BeattyLane,Singapore209945,Singapore",,2020-02-11 21:43:25.324277
+456,AlbertCourtVillageHotelLobbyLounge,1,456,5,"180AlbertStreetVillageHotelAlbertCourt,Singapore189971,Singapore",,2020-02-11 21:43:38.332800
+457,TreetopWalk,2,457,5,"新加坡,新加坡",,2020-02-11 21:44:00.469053
+458,RMGToursPrivateLimited,1,458,5,"新加坡,新加坡",,2020-02-11 21:44:13.622239
+459,PopAndContemporaryFineArt,0,459,,"350OrchardRoadShawHouse|TongBuilding#07-03,Singapore238862,Singapore",周日:下午12:00-下午5:00;,2020-02-11 21:44:25.554990
+460,FPitBuilding,5,460,4.8,"1RepublicBlvd,Singapore038975",,2020-02-11 21:44:39.846315
+461,EWavesFishbytePteLtd,1,461,4,"ClementiWestStreet2|Block713,#01-12,Singapore120713,Singapore",,2020-02-11 21:44:50.823279
+462,,1,462,4,"HDBToaPayoh#01-127,4Lorong7ToaPayoh",,2020-02-11 21:45:01.550092
+463,SingaporeRepertoryTheatre,1,463,4,"20MerbauRoad|KCArtsCentre-HomeoftheSRT,Singapore239035,Singapore",,2020-02-11 21:45:17.331679
+464,NewBridgeRoad,6,464,4.5,"NewBridgeRoad,Singapore,Singapore",,2020-02-11 21:45:29.105527
+465,ChineseGarden,7,465,4.3,"32/34AljuniedRd,Singapore389818",,2020-02-11 21:45:42.053604
+466,FarEastSquare,3,466,5,"19ChinaSt,Singapore049561",,2020-02-11 21:45:55.845044
+467,AirForceMuseum,11,467,3.9,"Singapore,Singapore",,2020-02-11 21:46:07.577867
+468,GoldenVillageVivoCity,4,468,4.8,"1HarbourfrontWalk,02-30,Singapore098585",,2020-02-11 21:46:20.121184
+469,CollegeofMedicineBuilding,7,469,4.3,"16CollegeRoad,Singapore169854,Singapore",,2020-02-11 21:46:33.544631
+470,SingaporeDanceTheatre,4,470,4.8,"FortCanningCentre2ndStorey,CoxTerrace,Singapore179618,Singapore",,2020-02-11 21:46:45.892213
+471,ShenNongSpa,4,471,4.8,"17CarpenterSt|#02-01,Singapore059906,Singapore",,2020-02-11 21:46:58.316406
+472,CentralSikhTemple,12,472,3.8,"2TownerRd,Singapore327804,Singapore",,2020-02-11 21:47:27.101929
+473,KimSengPark,5,473,4.4,"KimSengRoad,Singapore,Singapore",,2020-02-11 21:47:47.021815
+474,TampinesChangkatButterflyGarden,9,474,3.9,"TampinesStreet11,nexttoBlock124,Singapore,Singapore",,2020-02-11 21:48:06.504250
+475,KatongPark,3,475,5,"59FortRoad,Singapore439105,Singapore",,2020-02-11 21:48:19.995462
+476,,4,476,4.8,,,2020-02-11 21:48:39.336614
+477,SingaporeQuarry,12,477,3.7,"100DairyFarmRoad,Singapore679057,Singapore",,2020-02-11 21:48:53.135640
+478,TangDynastyMassageSpa,1,478,5,"25ClubStreet,Singapore069412,Singapore",暂无,2020-02-11 21:49:04.127230
+479,TraditionalOrientalTherapy,1,479,5,"25ClubStreet,Singapore069412,Singapore",暂无,2020-02-11 21:49:19.522156
+480,GalerieBelvedere,4,480,4.5,"140HillStreet#01-10/11/12OldHillStreetPoliceStation,Singapore179369,Singapore",,2020-02-11 21:49:32.143514
+481,BishanAngMoKioPark,4,481,4,"AngMoKioAvenue,Singapore,Singapore",,2020-02-11 21:49:45.062936
+482,HouseofTanTengNiah,2,482,4,"37KerbauRoadGholia'sVillage|Gholia’sVillage,Singapore219168,Singapore",,2020-02-11 21:49:57.660167
+483,AlexandraArch,2,483,5,"AlexandraRoad,Tampines,Singapore",,2020-02-11 21:50:11.577188
+484,LASALLECollegeoftheArts,2,484,5,,,2020-02-11 21:50:25.486534
+485,TheHiveNTU,3,485,5,52NanyangAvenue,,2020-02-11 21:50:39.700401
+486,OrchidCountryClubGolfSchool,1,486,5,"1OrchidClubRoad,Singapore76Singapore",,2020-02-11 21:50:50.902529
+487,SingaporeVisitorCentre,0,487,,"216OrchardRoadOrchardGateway@Emerald|OrchardGatewayAtEmerald,OppositeSomersetMRT,Singapore238898,Singapore",周日-周六:上午8:30-下午9:30;,2020-02-11 21:51:04.900118
+488,SengkangRiversidePark,2,488,4.5,"AnchorvaleStreet,Singapore,Singapore",,2020-02-11 21:51:17.035588
+489,BoonTatSt,2,489,4.5,"BoonTatSt,Singapore,Singapore",,2020-02-11 21:51:29.503666
+490,StamfordHouse,2,490,4.5,"Singapore,Singapore",,2020-02-11 21:51:53.436039
+491,WestCoastPark,1,491,5,"27WestCoastHighwayWestway,Singapore117867,Singapore",,2020-02-11 21:52:14.038029
+492,ShoeboxCanteen,1,492,5,"36NorthCanalRoad,Singapore059292,Singapore",,2020-02-11 21:52:27.142968
+493,OrientHealthManagement,1,493,5,12AUpperCrossStreet(Chinatown),,2020-02-11 21:52:46.933980
+494,SplashatKidzAmaze,1,494,5,"9SentulCrescent|Level3Punggol,Singapore828654,Singapore",,2020-02-11 21:52:58.858092
+495,Kraven,1,495,5,"#01-01,63CircularRoad(RafflesPlace/BoatQuay)",,2020-02-11 21:53:11.712112
+496,NasiPadangSederhana,1,496,5,"#02-91,AmoyStreetFoodCentre,7MaxwellRoad(TanjongPagar/RafflesPlace)",,2020-02-11 21:53:23.940840
+497,NALAA,1,497,5,"Stall28,LauPaSatFestivalMarket,18RafflesQuay(RafflesPlace/BoatQuay)",,2020-02-11 21:53:38.422166
+498,TelokAyerChineseMethodistChurch,1,498,5,"235TelokAyerStreet,Singapore068656,Singapore068656,Singapore",,2020-02-11 21:53:52.376689
+499,ChurchoftheHolyFamily,1,499,5,Singapore,,2020-02-11 21:54:15.300250
+500,HiballManagement,1,500,5,"#01-02,CapitalSquare3,25ChurchStreet(RafflesPlace/BoatQuay)",,2020-02-11 21:54:26.859516
+501,NewHongKongCongee,1,501,5,"#01-04,AmoyStreetFoodCentre,7MaxwellRoad(TanjongPagar/RafflesPlace)",,2020-02-11 21:54:37.898371
+502,TheDiningRoomatTanjongBeachClub,1,502,5,"TheDiningRoomatTanjongBeachClub,120TanjongBeachWalk,Singapore",,2020-02-11 21:54:50.638378
+503,NagoreDargahIndianMuslimHeritageCentre,1,503,5,140TelokAyerStSingapore068604SingaporeTanjongPagar,,2020-02-11 21:55:04.214758
+504,SaySeng,1,504,5,"#03-14,MarketStreetFoodCentre,50MarketStreet(RafflesPlace/BoatQuay)",,2020-02-11 21:55:16.269985
+505,MrTehTarik,1,505,5,"#B1-04,OneRafflesPlace,1RafflesPlace(RafflesPlace/BoatQuay)",,2020-02-11 21:55:30.352085
+506,SchooloftheArts,1,506,5,"1ZubirSaidDr,Singapore227968",,2020-02-11 21:55:46.667765
+507,ArabQuarter,1,507,5,BassorahStreetArabQuarterSingaporeSingapore,,2020-02-11 21:55:59.537072
+508,FormerKengTeckWhayBuilding,1,508,5,"150TelokAyerStreet,Singapore068608,Singapore",,2020-02-11 21:56:12.584807
+509,Bistro,1,509,5,"3TemasekBoulevardSuntecCityMall|SuntecCity,Tower4#01-643,Singapore038983,Singapore",,2020-02-11 21:56:25.120158
+510,SLIIMuffin,1,510,5,"#02-32,HongLimFoodCentre,531AUpperCrossStreet(Chinatown)",,2020-02-11 21:56:37.971366
+511,YingFoFuiKun,1,511,5,"98TelokAyerStreet,Singapore048474,Singapore048474,Singapore",,2020-02-11 21:56:50.254709
+512,OUETower,1,512,5,60CollyerQuaySingapore049322Singapore,,2020-02-11 21:57:15.539758
+513,MandaiCrematoriumandColumbarium,0,513,,"300MandaiRoad,Singapore",,2020-02-11 21:57:29.130860
+514,AramsaTheGardenSpa,1,514,5,"1384AngMoKioAvenue1|BishanParkII,Singapore569932,Singapore",,2020-02-11 21:57:45.937257
+515,OtaFineArts,2,515,2.5,"7LockRoad|#02-13GillmanBarracks,Singapore108935,Singapore",,2020-02-11 21:57:59.557474
+516,,1,516,0,"62TembelingRd,Singapore423586",,2020-02-11 21:58:12.518320
+517,GermanGirlShrine,0,517,,Singapore,,2020-02-11 21:58:24.649970
+518,KidZania,0,518,,"1CoveAve#03-02,BlockB,Level3SouthernIslands098537SingaporeSentosa",,2020-02-11 21:58:38.105461
+519,Playhouse,1,519,0,"3TemasekBoulevard,Singapore",,2020-02-11 21:58:51.381217
+520,BeyondBeauty,1,520,5,"181OrchardRoadOrchardCentral|#04-14,Singapore238896,Singapore",,2020-02-11 21:59:04.572117
+521,WoodlandsWaterfrontPark,0,521,,"AdmiraltyRoadWest,Singapore,Singapore",,2020-02-11 21:59:16.089445
+522,ChangiPointBoardwalk,7,522,4.2,"51LorongBekukongChangiPointFerryTerminal|ChangiEast,Singapore499172,Singapore",,2020-02-11 21:59:37.386665
+523,ResortworldSentosatrickeyemusuem,1,523,4,"Tampines,Singapore",,2020-02-11 21:59:50.597425
+524,SingaporeSidewaysVespaTour,1,524,0,,"Daily openTime:09:30,closeTime:12:30",2020-02-11 22:00:10.982770
+525,TanjongKatongComplex,0,525,,"845GeylangRd,Singapore400845,Singapore,Singapore",,2020-02-11 22:00:23.310963
+526,LeSpa,1,526,5,"14GemmillLaneAllanVille,Singapore069253,Singapore",,2020-02-11 22:00:36.739036
+527,Bioskin,1,527,5,"30RafflesPlaceChevronHouse|#03-03ChervonHouse,Singapore048622,Singapore",,2020-02-11 22:00:48.323543
+528,NueShape,1,528,5,"6AShentonWay|#03-18,Singapore068816,Singapore",,2020-02-11 22:01:00.908032
+529,SingaporeChineseOrchestra,1,529,5,"7ShentonWaySingaporeConferenceHall,Singapore068810,Singapore",,2020-02-11 22:01:12.206952
+530,BeautyEmpire,1,530,5,"33ErskineRoadTheScarletHotelFloor01Unit0607|TheScarletHotel,Singapore069333,Singapore",,2020-02-11 22:01:23.827768
+531,RenazaHairNailSpa,1,531,5,"12MarinaViewAsiaSquareTower2|#02-18/19AsiaSquareTower2,Singapore018961,Singapore",,2020-02-11 22:01:35.216150
+532,OrchidBowl,0,532,,"1OrchidClubRoad,Singapore",,2020-02-11 22:01:47.472684
+533,AdmiraltyPark,1,533,3,"31RiversideRoad,Singapore739087,Singapore",,2020-02-11 22:02:00.322446
+534,SingaporeCityBikeTour,1,534,4,,"Daily openTime:08:30,closeTime:17:30",2020-02-11 22:02:16.299951
+535,CELAVIClubLounge,0,535,,"1BayfrontAvenueMarinaBaySands|SkyParkatMarinaBaySands,Tower3,Singapore018971,Singapore",周日:上午11:00-上午2:00;周一:下午12:00-上午2:00;周二-周五:下午12:00-上午4:00;周六:上午11:00-上午4:00;,2020-02-11 22:02:28.299961
+536,,0,536,,"TanjongBeach,新加坡",海滩全天开放。,2020-02-11 22:02:39.744588
+537,SingaporeConventionandExhibitionCentre,0,537,,1ExpoDriveSingapore486150,外观全天开放，展会时间请参考官网,2020-02-11 22:02:51.236112
+538,MosqueStreet,0,538,,"Singapore,Singapore",暂无,2020-02-11 22:03:03.579408
+539,SentosaGolfClub,0,539,,"27BukitManisRoadSentosaGolfClub,SentosaIsland099892,Singapore",暂无,2020-02-11 22:03:16.293108
+540,not available,0,540,,Inside Starlight Changi Mall in Singapore Changi Airport,全年营业：周日-周四：10:00-凌晨24:00；周五及周六和节假日前夕：10:00-凌晨1:00,2020-02-11 22:03:33.936107
+541,not available,0,541,,"Starlight inside Changi Airport, Singapore",全年营业10:00-22:00,2020-02-11 22:03:50.228402
+542,not available,0,542,,Starlight Changi Mall in Singapore Changi Airport,全年营业10:00-22:00,2020-02-11 22:04:03.039378
+543,not available,0,543,,Marina Bay Mall in Singapore,全年开放：10:00-22:00（最晚售票时间19:30）,2020-02-11 22:04:20.972247
+544,not available,0,544,,Inside Starlight Changi Mall in Singapore Changi Airport,全年营业10:00-22:00,2020-02-11 22:04:38.893756
+545,PeranakanHouses,0,545,,"Singapore,287JooChiatRd427540",全天开放,2020-02-11 22:04:50.937738
+546,YongSiewTohConservatoryofMusic,0,546,,"3ConservatoryDrive,Singapore117376,Singapore",暂无,2020-02-11 22:05:13.115753
+547,ExecutiveGolfCourse,0,547,,"UpperSeletarReservoirMandaiRoadTrack7,Singapore779384,Singapore",暂无,2020-02-11 22:05:25.206382
+548,UFactory,0,548,,"37MalanRoadGillmanBarracks|GillmanBarracks,Singapore109452,Singapore",暂无,2020-02-11 22:05:40.034660
+549,CrossFitFireCity,0,549,,"111CKingGeorge'sAvenue,Singapore208559,Singapore",周一-周四:上午6:30-下午8:30;周五:上午6:30-下午7:30;周六:上午8:00-下午2:00;,2020-02-11 22:05:51.835525
+550,MasjidYusofIshak,0,550,,"10WoodlandsDrive17MasjidYusofIshak|Woodlands,Singapore737740,Singapore",暂无,2020-02-11 22:06:15.710469
+551,KCuratorialSpace,0,551,,"6ScottsRoadScottsSquare|ScottsSquare#03-11/12/13,Singapore228209,Singapore",周一-周四:上午11:30-下午8:30;周五-周日:上午11:00-下午8:30;,2020-02-11 22:06:36.275313
+552,EGTScooter,0,552,,"18MountElizabethOakwoodStudiosSingapore|OakwoodStudiosSingapore,Singapore228514,Singapore",周日-周六:上午12:00-下午11:59;,2020-02-11 22:06:50.025872
+553,KokFahTechnologyFarm,0,553,,"18SungeiTengahRoad,Singapore698974,Singapore",周日-周六:上午9:00-下午5:00;,2020-02-11 22:07:12.208763
+554,TeringBayGolfandCountryClub,0,554,,"Singapore29467,Singapore",暂无,2020-02-11 22:07:24.711596
+555,EGTScooter,0,555,,"18MountElizabethOakwoodStudiosSingapore|OakwoodStudiosSingapore,Singapore228514,Singapore",周日-周六:上午12:00-下午11:59;,2020-02-11 22:08:36.306149
+556,KokFahTechnologyFarm,0,556,,"18SungeiTengahRoad,Singapore698974,Singapore",周日-周六:上午9:00-下午5:00;,2020-02-11 22:08:48.375505
+557,ExecutiveGolfCourse,0,557,,"UpperSeletarReservoirMandaiRoadTrack7,Singapore779384,Singapore",暂无,2020-02-11 22:09:00.962093
+558,TeringBayGolfandCountryClub,0,558,,"Singapore29467,Singapore",暂无,2020-02-11 22:09:21.951725
+559,MAMHolidaysSingapore,0,559,,"新加坡,新加坡","周一 - 周五上午9:00 - 下午10:00days: 周一 - 周五, times: 上午9:00 - 下午10:00,",2020-02-11 22:09:34.126665
+560,KhadijahMosque,0,560,,"583GeylangRoadMasjidKhadijah|AftterLorong-30&BeforeLorong-29Geylang,Singapore389522,Singapore",暂无,2020-02-11 22:09:46.752541
+561,DynastiesAntiqueArtGallery,0,561,,"18BoonLayWayTradehub2121136#01,Singapore609966,Singapore",暂无,2020-02-11 22:10:10.999700
+562,WildDiscovererTour,0,562,,"新加坡,新加坡",暂无,2020-02-11 22:10:23.868774
+563,ShawTheatresLidoImax,0,563,,"350OrchardRoadLevel5ShawHouse,Singapore238868,Singapore",暂无,2020-02-11 22:10:38.691087
+565,MOVEAcademySingapore,0,565,,"43CarpenterStreetGreatwoodBuilding|02-01,Singapore059922,Singapore",周日:上午10:00-下午12:00;周二:上午8:00-上午11:30;周三-周五:下午7:30-下午9:30;周四:上午8:00-上午10:00;周五:下午4:00-下午5:30;周六:下午3:00-下午5:00;,2020-02-11 22:11:10.402357
+566,ShiseidoForestValley,0,566,,新加坡樟宜机场星耀樟宜,全年营业10:00-22:00,2020-02-11 22:11:31.922677
+567,ChanHampeGalleries,0,567,,"328NorthBridgeRoadRafflesShoppingArcade|#01-20RafflesShoppingArcade,Singapore108934,Singapore",周二-周日:上午11:00-下午7:00;,2020-02-11 22:11:49.504036
+568,TheEscapeHuntExperienceSingapore,0,568,,"100OrchardRoadConcordeHotelAndShoppingMallFloor02Unit434445|ConcordeHotel&ShoppingMall,Singapore238840,Singapore","周日 - 周六上午10:00 - 下午10:00days: 周日 - 周六, times: 上午10:00 - 下午10:00,",2020-02-11 22:12:13.466556
+569,Arul,0,569,,"Mayspring,Singapore,Singapore",暂无,2020-02-11 22:12:26.038494
+570,RoomraiderSG,0,570,,"181OrchardRoadOrchardCentral|#05-45OrchardCentral,Singapore238896,Singapore",周日-周六:下午12:30-下午10:30;,2020-02-11 22:12:38.650305
+571,PangSuaPond,0,571,,"BukitPanjang,Singapore,Singapore",暂无,2020-02-11 22:12:51.394209
+572,WaterlooCycles,0,572,,"261WaterlooStreetWaterlooCentre,Singapore180261,Singapore",暂无,2020-02-11 22:13:03.672325
+573,Nantsuttei,0,573,,"238896,新加坡乌节路181乌节中央大楼#07-12/13(Orchard/RiverValley)",全年 整周 11:00-22:30,2020-02-11 22:13:16.688659
+574,AerogreenTechnology,0,574,,"260NeoTiewCrescent,Singapore718899,Singapore",暂无,2020-02-11 22:13:30.403284
+575,AmbassadorTransitLounge,0,575,,"AirportBoulevard|Terminal2(DepartureTransitLounge,Level3),Singapore,Singapore",周日-周六:上午12:00-下午11:59;,2020-02-11 22:13:41.959012
+576,MoshiMoshiBollywood,0,576,,"5KoekRoad#26-27CuppagePlaza|SomersetMRTStationandnexttoCentrepointShoppingCentre,Singapore228796,Singapore","周一 - 周四下午9:00 - 上午4:30days: 周一 - 周四, times: 下午9:00 - 上午4:30,days: 周五 - 周六, times: 下午9:00 - 上午5:00,",2020-02-11 22:14:04.127578
+577,EmpressLawn,0,577,,"10EmpressPl,Singapore179555,Singapore",暂无,2020-02-11 22:14:15.336282
+578,GXXtremeSwing,0,578,,"3ERiverValleyRoadClarkeQuay,Singapore179019,Singapore",暂无,2020-02-11 22:14:36.241593
+579,,0,579,,"#05-30,Paragon百利宫,290OrchardRoad,Singapore238859",每日：10:00 - 21:00,2020-02-11 22:14:49.186126
+580,LumbiaTheSalsaClub,0,580,,"Block163,BukitMerahCentral,#04-3575,Singapore150163,Singapore",暂无,2020-02-11 22:15:00.837741
+581,MysteryEscape,0,581,,"283JalanBesar,Singapore208946,Singapore",暂无,2020-02-11 22:15:13.579193
+582,SGDartsHaven,0,582,,"2KallangAvenue#02-06CtHub|CTHub,Singapore339407,Singapore",周日-周六:下午4:00-上午1:00;,2020-02-11 22:15:33.790
+583,PasirPanjang,0,583,,"PasirPanjangRoad,Singapore,Singapore",暂无,2020-02-11 22:15:44.762546
+584,ManekinekoBugis,0,584,,"201VictoriaStreetBugis+,Singapore188067,Singapore",暂无,2020-02-11 22:15:55.736338
+585,FortSerapong,0,585,,"Singapore,Singapore",暂无,2020-02-11 22:16:20.490100
+586,BakinCalfBakingWorkshops,0,586,,"Blk257YishunRingRoadYishunSunshine|#09-1013,Singapore760257,Singapore",暂无,2020-02-11 22:16:58.414124
+587,Playkeroo,0,587,,"100TrasStreet100am|100AMMall,#04-16A,Singapore079027,Singapore","周日 - 周六上午10:00 - 下午8:00days: 周日 - 周六, times: 上午10:00 - 下午8:00,",2020-02-11 22:17:46.981204
+588,WaterlooCycles,0,588,,"261WaterlooStreetWaterlooCentre,Singapore180261,Singapore",暂无,2020-02-11 22:18:36.299283
+589,MysteryEscape,0,589,,"283JalanBesar,Singapore208946,Singapore",暂无,2020-02-11 22:19:05.606133
+590,MesjidTemenggongDaengIbrahim,0,590,,"TemenggongRoad,Singapore,Singapore",暂无,2020-02-11 22:19:18.773985
+591,TheMusicSalon,0,591,,"49NivenRoad,Singapore228397,Singapore",暂无,2020-02-11 22:19:47.605528
+592,ChallengeCube,0,592,,"41WestCoastHighway,Singapore117868,Singapore",暂无,2020-02-11 22:20:15.661176
+593,SGDartsHaven,0,593,,"2KallangAvenue#02-06CtHub|CTHub,Singapore339407,Singapore",周日-周六:下午4:00-上午1:00;,2020-02-11 22:20:31.707059
+594,PasirPanjang,0,594,,"PasirPanjangRoad,Singapore,Singapore",暂无,2020-02-11 22:20:49.818512
+595,ManekinekoBugis,0,595,,"201VictoriaStreetBugis+,Singapore188067,Singapore",暂无,2020-02-11 22:21:09.332189
+596,HSBCWomensChampions,0,596,,"27BukitManisRd|SentosaGolfClub,SentosaIsland,Singapore",暂无,2020-02-11 22:21:22.044678
+597,SembawangCountryClub,0,597,,"249SembawangRoadSembawangCountryClub,Singapore758352,Singapore",暂无,2020-02-11 22:21:34.842743
+598,HomageToNewton,0,598,,"80ChuliaStreetSingapore|UOBPlazaCourtyard,Singapore048624,Singapore",暂无,2020-02-11 22:21:46.779598
+599,YogaSeeds,0,599,,"1384AngMoKioAvenue1|BishanPark2,Singapore569932,Singapore",周一-周四:上午8:00-下午9:30;周五-周日:上午8:00-上午10:30;,2020-02-11 22:22:06.144588
+600,Trapped,0,600,,"42KandaharStreet|KampungGlamShopHouses,Singapore198896,Singapore",周一-周四:上午11:00-下午11:00;周五-周日:上午11:00-上午3:00;,2020-02-11 22:22:25.855312
+601,YogaSeeds,0,601,,"1384AngMoKioAvenue1|BishanPark2,Singapore569932,Singapore",周一-周四:上午8:00-下午9:30;周五-周日:上午8:00-上午10:30;,2020-02-11 22:22:36.894013
+602,YachtEscapeMikanna,0,602,,"新加坡,新加坡",暂无,2020-02-11 22:22:48.670754
+603,TrappedEscapeRoomSingapore,0,603,,"2OrchardLinkScape0221Unit2022,Singapore237978,Singapore",周日:上午11:00-下午11:00;周一:上午11:00-下午10:00;周二:上午9:00-下午10:00;周三-周四:上午11:00-下午10:00;周五-周六:上午11:00-上午12:00;,2020-02-11 22:23:01.690726
+604,YANGGallery,0,604,,"581OrchardRoadHiltonInternationalSingapore|#01-11TheShoppingGalleryHilton,Singapore238883,Singapore",周日:上午11:00-下午6:00;周一-周六:上午10:00-下午7:00;,2020-02-11 22:23:17.038986
+605,DragonwickGallery,0,605,,"71UbiCrescent#02-07ExcaliburCentre,Singapore408571,Singapore",暂无,2020-02-11 22:23:29.430810
+606,ArtRetreat,0,606,,"10UbiCrescentUbiTechparkLobbyC#014547,Singapore408564,Singapore",暂无,2020-02-11 22:23:48.664256
+607,LivingPortraitGallery,0,607,,"31TanjongPagarRoad,Singapore088454,Singapore",暂无,2020-02-11 22:24:01.840622
+608,WhiteSpaceArtAsia,0,608,,"79ChayYanStreetTiongBahruEstate|#01-26TiongBahruEstate,Singapore160079,Singapore",暂无,2020-02-11 22:24:20.091002
+609,Gallery,0,609,,"11BMountSophiaOldSchool@MountSophia,Singapore228466,Singapore",暂无,2020-02-11 22:24:39.761043
+610,LockdownEscape,0,610,,"277OrchardRoadOrchardGateway|#02-02,OrchardGateway,Singapore238858,Singapore",暂无,2020-02-11 22:24:51.432834
+611,HyattDamaiSpa,0,611,,"10ScottsRoadGrandHyattSingapore|DamaiSpa,GrandHyattSingapore,Singapore228211,Singapore",周日-周六:上午10:00-下午10:00;,2020-02-11 22:25:08.408546
+612,FalconPEV,0,612,,"2AlexandraRoadDeltaHouse|#06-06DeltaHouse,Singapore159919,Singapore",周一-周六:上午9:30-下午7:00;,2020-02-11 22:25:28.821912
+613,TablePips,0,613,,"#B2-11to22,OrchardCentral乌节中央城,181OrchardRd,238896(Orchard/RiverValley)",Mon - Sun: 11:00 - 15:00Mon - Sun: 18:30 - 22:30,2020-02-11 22:25:40.351975
+614,Loof,0,614,,"331NorthBridgeRoad#03-07OdeonTowers,Singapore188720,Singapore","周四 - 周五下午5:00 - 上午2:00days: 周四 - 周五, times: 下午5:00 - 上午2:00,days: 周六 - 周三, times: 下午5:00 - 上午1:00,",2020-02-11 22:25:53.769628
+615,Firefly,0,615,,"MarriottHotel320OrchardRd#B1-00,Singapore238865,Singapore",暂无,2020-02-11 22:26:15.782362

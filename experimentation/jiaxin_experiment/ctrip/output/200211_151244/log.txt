@@ -1,0 +1,68 @@
+16, 圣淘沙天际线斜坡滑车, page: 1, 2020-02-11 15:17:15.027656
+Traceback (most recent call last):
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 153, in quit
+    RemoteWebDriver.quit(self)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 698, in quit
+    self.execute(Command.QUIT)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/request.py", line 76, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 294, in crawl_pois
+    self.driver.quit()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 158, in quit
+    self.service.stop()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/common/service.py", line 151, in stop
+    self.send_remote_shutdown_command()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/selenium/webdriver/common/service.py", line 127, in send_remote_shutdown_command
+    url_request.urlopen("%s/shutdown" % self.service_url)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/urllib/request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/urllib/request.py", line 1320, in do_open
+    r = h.getresponse()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+

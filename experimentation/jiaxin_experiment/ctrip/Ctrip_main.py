@@ -25,6 +25,7 @@ csv_input_path = configs['Ctrip']['csv_input_path']
 db_in_flag = configs['Ctrip']['read_from_database']
 db_out_flag = configs['Ctrip']['write_to_database']
 
+
 if db_in_flag == 'csv':
     
     df = pd.read_csv(csv_input_path)
@@ -73,7 +74,10 @@ if __name__=="__main__":
     start_time = time.time()
     fsm = Ctrip_FSM(chromedriver_path, poi_df, cnx, db_out_flag)
     number_of_pages=configs['Ctrip']['number_of_pages']
+    proxy_mode=configs['Ctrip']['proxy_mode']
+    timeout=configs['Ctrip']['timeout']
+    authen_count=configs['Ctrip']['authen_count']
     #start_page=configs['QY']['start_page']
-    fsm.start(number_of_pages)
+    fsm.start(number_of_pages,proxy_mode,timeout,authen_count)
     end_time = time.time()
     print('Total time taken (min): ' + str(round((end_time - start_time)/60, 2)))
