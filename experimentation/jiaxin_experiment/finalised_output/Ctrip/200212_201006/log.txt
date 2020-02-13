@@ -1,0 +1,51 @@
+97, 财富喷泉, 2020-02-13 02:10:32.696589, caught by Ctrip, authentication test
+97, 财富喷泉, page: 1, 2020-02-13 02:11:06.550540
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 274, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 392, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 593, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+97, 财富喷泉, page: 1, 2020-02-13 02:11:43.722110
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 274, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 392, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 593, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+97, 财富喷泉, page: 1, 2020-02-13 02:12:20.480171
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 274, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 392, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 593, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+97, 财富喷泉, page: 1, 2020-02-13 02:12:57.112732
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 274, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 392, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 593, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+97, 财富喷泉, page: 1, 2020-02-13 07:25:13.922115
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 291, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 443, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 454, in crawl_reviews_1_page
+    sleep(random()*2)
+KeyboardInterrupt
+
