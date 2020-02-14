@@ -1,0 +1,86 @@
+564, 千灯寺 , 2020-02-12 11:24:35.422544, current POI does not exist
+564, 千灯寺 , page: 1, 2020-02-12 11:24:35.423164
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+759, 欧姆尼剧院和天文馆, 2020-02-12 12:08:36.369266, current POI does not exist
+759, 欧姆尼剧院和天文馆, page: 1, 2020-02-12 12:08:36.369821
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+1042, LE Privaté Clinic, page: 1, 2020-02-12 13:37:06.217915
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 274, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 392, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 593, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+1042, LE Privaté Clinic, page: 1, 2020-02-12 13:37:12.949335
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 274, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 392, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 593, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
+1154, Singapore Pools, 2020-02-12 14:42:43.273517, current POI does not exist
+1154, Singapore Pools, page: 1, 2020-02-12 14:42:43.281626
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+1468, Nagoya, 2020-02-12 17:42:03.078180, current POI does not exist
+1468, Nagoya, page: 1, 2020-02-12 17:42:03.079002
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+1485, Singapore Skyline, 2020-02-12 17:48:57.686279, current POI does not exist
+1485, Singapore Skyline, page: 1, 2020-02-12 17:48:57.687027
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+1500, Nagoya, 2020-02-12 17:55:27.473148, current POI does not exist
+1500, Nagoya, page: 1, 2020-02-12 17:55:27.474195
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+1520, Kenko Wellness, 2020-02-12 18:03:34.767040, current POI does not exist
+1520, Kenko Wellness, page: 1, 2020-02-12 18:03:34.768026
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+1550, Kenko Wellness, 2020-02-12 18:15:32.635241, current POI does not exist
+1550, Kenko Wellness, page: 1, 2020-02-12 18:15:32.636106
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 267, in crawl_pois
+    raise Exception("current POI does not exist")
+Exception: current POI does not exist
+
+1586, City Plaza, page: 1, 2020-02-12 19:24:02.210854
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 274, in crawl_pois
+    self.crawl_attributes()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 392, in crawl_attributes
+    address=self.parse_attribute_address(add)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 593, in parse_attribute_address
+    return (text[3:]).replace(' ','')
+TypeError: 'NoneType' object is not subscriptable
+
