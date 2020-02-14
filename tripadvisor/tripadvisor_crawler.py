@@ -234,7 +234,7 @@ class TripAdvisorCrawler:
         rating_breakdown_elements = self.driver.find_elements_by_xpath(
             '//span[@class="row_num  is-shown-at-tablet"]')
         poi_type_elements = self.driver.find_elements_by_xpath(
-            '//span[@class="is-hidden-mobile header_detail attractionCategories"]')
+            '//span[@classyou need to git pull again="is-hidden-mobile header_detail attractionCategories"]')
         address_text = self.driver.find_element_by_xpath(
             '//span[@class="textAlignWrapper address"]')\
             .text
