@@ -14,14 +14,16 @@ with open('api_keys.yml') as file:
 class IBMSentimentScorerFSM:
     def __init__(
             self,
-            site_name,
+            website_name,
+            website_id,
             target_folder,
             continue_in_folder=None,
             continue_from_poi_index=None,
             continue_from_row_index=None
     ):
         self.sentiment_scorer = IBMSentimentScorer(
-            site_name=site_name,
+            website_name=website_name,
+            website_id=website_id,
             target_folder=target_folder,
             continue_in_folder=continue_in_folder,
             continue_from_poi_index=continue_from_poi_index,

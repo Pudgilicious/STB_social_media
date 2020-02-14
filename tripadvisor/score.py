@@ -16,7 +16,8 @@ continue_from_row_index = configs['TripAdvisor']['continue_from_row_index']
 
 # Initialize FSM object
 fsm = IBMSentimentScorerFSM(
-    site_name='tripadvisor',
+    website_name='tripadvisor',
+    website_id=1,
     target_folder=target_folder,
     continue_in_folder=continue_in_folder,
     continue_from_poi_index=continue_from_poi_index,

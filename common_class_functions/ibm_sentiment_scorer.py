@@ -54,14 +54,16 @@ class IBMSentimentScorer:
 
     def __init__(
             self,
-            site_name,
+            website_name,
+            website_id,
             target_folder,
             continue_in_folder=None,
             continue_from_poi_index=None,
             continue_from_row_index=None
     ):
         # To continue from previous calls
-        self.site_name = site_name
+        self.website_name = website_name
+        self.website_id = website_id
         self.target_folder = target_folder
         self.continue_in_folder = continue_in_folder
         self.continue_from_poi_index = continue_from_poi_index
@@ -69,7 +71,7 @@ class IBMSentimentScorer:
 
         # Set up directories
         self.csv_list = os.listdir('./{}/finalised_output/{}/reviews'.format(
-            self.site_name,
+            self.website_name,
             self.target_folder
         ))
 
@@ -83,14 +85,14 @@ class IBMSentimentScorer:
         # Create output directory
         if self.continue_in_folder is None:
             self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
-                self.site_name,
+                self.website_name,
                 self.target_folder,
                 datetime.now().strftime('%y%m%d_%H%M%S')
             )
             os.makedirs(self.sentiment_folder_path)
         else:
             self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
-                self.site_name,
+                self.website_name,
                 self.target_folder,
                 self.continue_in_folder
             )
@@ -168,7 +170,7 @@ class IBMSentimentScorer:
         if self.current_reviews_df is None:
             self.current_reviews_df = pd.read_csv(
                 './{}/finalised_output/{}/reviews/{}.csv'.format(
-                    self.site_name,
+                    self.website_name,
                     self.target_folder,
                     self.current_poi_index
                 )
@@ -270,7 +272,7 @@ class IBMSentimentScorer:
             self.keywords_df = json_normalize(self.current_api_response['keywords'])\
                 .rename(columns=self.keywords_col_names_map)
             self.keywords_df.insert(0, 'REVIEW_ID', self.current_review_id)
-            self.keywords_df.insert(0, 'WEBSITE_ID', 1)
+            self.keywords_df.insert(0, 'WEBSITE_ID', self.website_id)
             self.keywords_df = self.keywords_col_names_df.append(self.keywords_df, sort=False)
 
         # In case 'entities' not in api response
@@ -279,7 +281,7 @@ class IBMSentimentScorer:
                 .rename(columns=self.entities_col_names_map)
             if self.entities_df.shape[1] != 0:
                 self.entities_df.insert(0, 'REVIEW_ID', self.current_review_id)
-                self.entities_df.insert(0, 'WEBSITE_ID', 1)
+                self.entities_df.insert(0, 'WEBSITE_ID', self.website_id)
                 self.entities_df = self.entities_col_names_df.append(self.entities_df, sort=False)
 
     def write_to_csv(self):
