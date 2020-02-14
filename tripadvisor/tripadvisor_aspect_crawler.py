@@ -18,7 +18,7 @@ poi_df = poi_df
 
 class TripAdvisorAspectCrawler:
     aspects_col_names = ['POI_INDEX',
-                         'ASPECTS'
+                         'ASPECTS',
                          'ASPECTS_CRAWLED_TIME'
                          ]
     def __init__(self):
@@ -39,42 +39,23 @@ class TripAdvisorAspectCrawler:
             index=False
         )
 
+        # Certain aspects are only displayed on maximized window
+        self.driver.maximize_window()
+
     def crawl_aspects(self):
         while len(self.poi_df.index) > 0:
+            self.current_df_row = self.poi_df.iloc[0]
+            self.current_poi_index = self.current_df_row['POI_INDEX']
+            self.current_poi_name = self.current_df_row['POI_NAME']
+            self.current_poi_url = self.current_df_row['URL']
+
             try:
-                self.current_df_row = self.poi_df.iloc[0]
-                self.current_poi_index = self.current_df_row['POI_INDEX']
-                self.current_poi_name = self.current_df_row['POI_NAME']
-                self.current_poi_url = self.current_df_row['URL']
-
-
                 self.driver.get(self.current_poi_url)
-                print("crawling {}".format(self.current_poi_name))
-                sleep(5)
-
+                print("POI index:{}, {}".format(self.current_poi_index, self.current_poi_name))
+                sleep(10)
                 aspects_elements = self.driver.find_elements_by_xpath(
                     '//button[@class="ui_button secondary small location-review-review-list-parts-SearchFilter__word_button_secondary--2p0YL"]')
 
-                for element in aspects_elements:
-                    aspect = element.text
-                    aspect_details = [self.current_poi_index, aspect, datetime.now()]
-                    aspect_dict = dict(zip(self.aspects_col_names, aspect_details))
-                    self.aspects_df = self.aspects_df.append(aspect_dict, ignore_index=True)
-
-                # Write all aspects for 1 POI to csv
-                self.aspects_df.to_csv(
-                    './tripadvisor/output/aspects_{}.csv'.format(
-                        self.datetime_string),
-                    mode='a',
-                    index=False,
-                    header=False
-                )
-
-                # Reset aspects_df to header-only for next POI
-                self.aspects_df = pd.DataFrame(columns=self.aspects_col_names)
-
-                # Remove first row from poi_df
-                self.poi_df = self.poi_df.iloc[1:]
             except:
                 print("Exception has occurred. Please check log file.")
                 log = open('./tripadvisor/output/aspects_log_{}.txt'.format(self.datetime_string), 'a+')
@@ -84,6 +65,42 @@ class TripAdvisorAspectCrawler:
                                             ))
                 log.write(traceback.format_exc() + '\n')
                 log.close()
+
+                # Restart chromedriver
+                self.driver.close()
+                sleep(2)  # To allow keyboard interrupt
+                self.driver = webdriver.Chrome(self.chromedriver_path)
+                self.driver.maximize_window()
+
+                # Reset aspects_df to header-only for next POI
+                self.aspects_df = pd.DataFrame(columns=self.aspects_col_names)
+
+                # Remove first row from poi_df
+                self.poi_df = self.poi_df.iloc[1:]
+
+                continue
+
+            for element in aspects_elements:
+                aspect = element.text
+                aspect_details = [self.current_poi_index, aspect, datetime.now()]
+                aspect_dict = dict(zip(self.aspects_col_names, aspect_details))
+                self.aspects_df = self.aspects_df.append(aspect_dict, ignore_index=True)
+
+            # Write all aspects for 1 POI to csv
+            self.aspects_df.to_csv(
+                './tripadvisor/output/aspects_{}.csv'.format(
+                    self.datetime_string),
+                mode='a',
+                index=False,
+                header=False
+            )
+
+            # Reset aspects_df to header-only for next POI
+            self.aspects_df = pd.DataFrame(columns=self.aspects_col_names)
+
+            # Remove first row from poi_df
+            self.poi_df = self.poi_df.iloc[1:]
+
 
 crawler = TripAdvisorAspectCrawler()
 crawler.crawl_aspects()
