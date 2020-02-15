@@ -13,7 +13,7 @@ csv_input_path = configs['TripAdvisor']['csv_input_path']
 
 poi_df = pd.read_csv(csv_input_path)
 poi_df['URL'] = poi_df['URL'].apply(lambda x: 'https://tripadvisor.com.sg' + x)
-poi_df = poi_df
+poi_df = poi_df[717:]
 
 
 class TripAdvisorAspectCrawler:
@@ -51,7 +51,7 @@ class TripAdvisorAspectCrawler:
 
             try:
                 self.driver.get(self.current_poi_url)
-                print("POI index:{}, {}".format(self.current_poi_index, self.current_poi_name))
+                print("POI index: {}, {}".format(self.current_poi_index, self.current_poi_name))
                 sleep(10)
                 aspects_elements = self.driver.find_elements_by_xpath(
                     '//button[@class="ui_button secondary small location-review-review-list-parts-SearchFilter__word_button_secondary--2p0YL"]')

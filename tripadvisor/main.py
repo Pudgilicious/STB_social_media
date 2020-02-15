@@ -18,8 +18,7 @@ if db_in_flag == 'csv':
     poi_df = pd.read_csv(csv_input_path)
     poi_df['URL'] = poi_df['URL'].apply(lambda x: 'https://tripadvisor.com.sg' + x)
     # poi_df = poi_df[69:]
-    poi_df = poi_df.iloc[[0],]
-    # poi_df = poi_df.iloc[[34],]
+    poi_df = poi_df.iloc[0]
 
 if db_in_flag != 'csv':
     poi_df = pd.DataFrame()
