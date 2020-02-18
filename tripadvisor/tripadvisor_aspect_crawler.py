@@ -13,7 +13,6 @@ csv_input_path = configs['TripAdvisor']['csv_input_path']
 
 poi_df = pd.read_csv(csv_input_path)
 poi_df['URL'] = poi_df['URL'].apply(lambda x: 'https://tripadvisor.com.sg' + x)
-poi_df = poi_df[717:]
 
 
 class TripAdvisorAspectCrawler:

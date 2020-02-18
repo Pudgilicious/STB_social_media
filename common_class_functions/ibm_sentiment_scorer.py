@@ -216,8 +216,9 @@ class IBMSentimentScorer:
                 log.write(traceback.format_exc() + '\n')
                 log.close()
 
-                # Unsupported text language case
-                if str(e).find('unsupported text language') != -1:
+                # Unsupported text language or not enough text case
+                if str(e).find('unsupported text language') != -1 \
+                        or str(e).find('not enough text') != -1:
                     self.reset_per_review_variables()
                     self.current_reviews_df = self.current_reviews_df.iloc[1:]
                     self.current_row_index += 1
