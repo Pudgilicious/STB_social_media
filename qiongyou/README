@@ -132,6 +132,6 @@ turn the date string into a datetime object
 cleaning the review body, removing irrelevant emptu strings and '\n'
 
 #def parse_review_numbers
-use to parse the number of reviews when crawling attributes of individual POI, similar as parse_Total_reviews
+use to parse the number of reviews when crawling attributes of individual POI, similar as parse_total_reviews
 
 		

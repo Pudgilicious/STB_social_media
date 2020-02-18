@@ -1,7 +1,0 @@
-564, 千灯寺 , 2020-02-11 12:50:53.200845, current POI does not exist
-564, 千灯寺 , page: 1, 2020-02-11 12:50:53.200992
-Traceback (most recent call last):
-  File "/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/ctrip/Ctrip_crawler.py", line 253, in crawl_pois
-    self. current_url= self.driver.current_url
-Exception: current POI does not exist
-

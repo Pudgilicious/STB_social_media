@@ -27,10 +27,10 @@ db_out_flag = configs['QY']['write_to_database']
 if db_in_flag == 'csv':
     
     df = pd.read_csv(csv_input_path)
-    poi_index=list(range(len(df['POI_NAME'])))
+    df['URL']=list(map(lambda x: 'https://'+ x[2:], df['URL']))
     
-    poi_df = pd.DataFrame({'poi_index':poi_index, 
-                           'poi_name':df['POI_NAME'], 
+    poi_df = pd.DataFrame({'poi_index':df['POI_INDEX'], 
+                           'poi_name':df['POI_RAW_NAME'], 
                            'poi_url':df['URL']}
                            )
     

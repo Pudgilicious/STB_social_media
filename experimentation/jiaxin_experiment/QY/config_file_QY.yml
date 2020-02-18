@@ -1,0 +1,22 @@
+General:
+    host: localhost
+    database: sentimentDB
+    user: test_user
+    password: Password123!
+    chromedriver_path: ./chromedriver
+    
+QY:
+    #review crawler parameters
+    csv_input_path: ./20200203_qy_list.csv
+    read_from_database: csv  # mysql, sqlite or csv
+    write_to_database: csv  # mysql, sqlite or csv
+    number_of_pages:  # int or None. if 0, only Attributes are crawled.
+    start_page:  # int or None
+    csv_folder:  # in the format yyymmdd_hhmmss
+
+
+    #reviewer crawler parameters
+    target_folder: '200131_161919'  # in the format 'yyymmdd_hhmmss'
+    continue_in_folder: # in the format 'yyymmdd_hhmmss' 
+    continue_from_poi_index:
+    continue_from_row_index:

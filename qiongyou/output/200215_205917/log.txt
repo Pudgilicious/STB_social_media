@@ -1,0 +1,30 @@
+7, Singapore Zoological Gardens, page: None, 2020-02-15 21:26:33.919198
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 163, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 323, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 412, in crawl_reviews_1_page
+    raise Exception("lagged, need to recrawl")
+Exception: lagged, need to recrawl
+
+8, Merlion Park, page: None, 2020-02-15 21:36:39.354084
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 163, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 323, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 412, in crawl_reviews_1_page
+    raise Exception("lagged, need to recrawl")
+Exception: lagged, need to recrawl
+
+74, Henderson Waves, page: None, 2020-02-15 22:37:26.847805
+Traceback (most recent call last):
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 163, in crawl_pois
+    self.crawl_reviews()
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 323, in crawl_reviews
+    self.crawl_reviews_1_page(self.current_poi_index)
+  File "/home/jia/Desktop/git/STB_social_media_analytics/qiongyou/QY_crawler.py", line 412, in crawl_reviews_1_page
+    raise Exception("lagged, need to recrawl")
+Exception: lagged, need to recrawl
+
