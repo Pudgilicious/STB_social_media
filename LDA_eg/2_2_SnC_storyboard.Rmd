@@ -1,0 +1,200 @@
+---
+title: "Styles and Climate Analysis (Proof-of-concept)"
+output: 
+  flexdashboard::flex_dashboard:
+    storyboard: true
+    source: embed
+---
+
+```{r setup, include=FALSE,echo=TRUE}
+ library(tidytext)
+library(tidyr)
+library(dplyr)
+
+#setwd("C:/Users/huangj/Desktop/items/Styles and climate verbatim research")
+
+if(Sys.info()[1] == "Linux"){
+  setwd("/run/user/1000/gvfs/smb-share:server=sinspfs01,share=asia$/kfi_research_intranet/Styles and climate verbatim research")
+}else{
+  # setwd("O:/kfi_research_intranet/KF4D competencies analysis")
+  setwd("C:/Users/huangj/Desktop/items/Styles and climate verbatim research")
+}
+
+
+#read in the dataset
+dat = read.csv("./raw_dat/20170129_include_language_ALLCommentsSC2.csv",stringsAsFactors = F)
+names(dat) = c("GroupID","PerID","UserName","Version", "Assessor","Strengths","Weakensses","language")
+
+
+#subset data by english
+dat = subset(dat,dat$language == "english")
+
+#As POC subset out GroupID and Strengths
+dat = subset(dat,select = c("GroupID","PerID","UserName","Strengths"))
+
+#Arrnge by unigram
+dat_tokens = dat %>%
+  unnest_tokens(ngram, Strengths, token = "ngrams", n = 1)
+
+names(dat_tokens)[4] = "word"
+
+#Remove stop words
+data(stop_words)
+
+dat_tokens <- dat_tokens %>%
+  anti_join(stop_words)
+
+```
+
+### Example dataset
+
+```{r,message=F, warning=F, echo=FALSE}
+head(dat,2)
+
+```
+
+***
+Note: This POC is to showcase the type of text analysis that we could do to support our studies. I genrally relied on this framework here (https://www.tidytextmining.com/) for the analysis
+
+Before I started my analysis, I used textcat package to identify the text rows that're in English.
+
+Here is an example of the 1st 2 rows in the dataset (only Strengths used here. I left out weakneess in the analysis). 
+
+
+
+### Most common terms in data
+
+```{r,message=F, warning=F, echo=FALSE}
+library(ggplot2)
+
+dat_tokens %>%
+  count(word, sort = TRUE) %>%
+  filter(n > 10000) %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n)) +
+  geom_col() +
+  xlab(NULL) +
+  coord_flip()
+
+```
+
+***
+Then I tokenize the dataset through unigrams i.e 1 word / term
+
+Next I identify stop words in the data frame by merging in a taxonomy from tidytext package. And removed them thereafter.
+
+I then use count function to find the most common words under the 'Strengths Column'. 
+
+We could see that the most common words are 'team', 'people', 'leadership', 'positive' - suggesting that people tend to have these attributes as their strengths
+
+
+### Sentiment Analysis
+
+```{r,message=F, warning=F, echo=FALSE}
+bing_word_counts <- dat_tokens %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  ungroup()
+
+bing_word_counts %>%
+  group_by(sentiment) %>%
+  top_n(10) %>%
+  ungroup() %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n, fill = sentiment)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~sentiment, scales = "free_y") +
+  labs(y = "Contribution to sentiment",
+       x = NULL) +
+  coord_flip()
+```
+
+***
+1 of the common toolkits in text analysis is Sentiment Analysis. Using an existing sentiment taxonomy, I'm able to tag words as positive or negative. 
+
+We could see that the words the top 10 most common words are positively connotated which is intuitive since I limited the dataset to only the strengths. 
+
+
+### Word clouds
+
+```{r,message=F, warning=F, echo=FALSE}
+library(wordcloud)
+
+bing_word_counts %>%
+  with(wordcloud(word, n, max.words = 90))
+```
+
+***
+A common way to visualize text-analysis is through word clouds. In this section, I plot the word cloud - with the larger words depicting the more common terms in the text. 
+
+
+### Topic Modelling & Word-topic probabilities
+
+```{r,message=F, warning=F, echo=FALSE}
+library(tm)
+library(topicmodels)
+
+#1st use mutate to assign count for each document
+#Arrnge by unigram
+dat_tokens = dat %>%
+  unnest_tokens(word, Strengths) %>%
+  anti_join(stop_words) %>%
+  count(word, UserName) %>%
+  cast_dtm(UserName,word,n)
+
+ap_lda <- LDA(dat_tokens, k = 2, control = list(seed = 1234))
+ap_lda
+
+ap_topics <- tidy(ap_lda, matrix = "beta")
+ap_topics
+```
+
+***
+I then fit a document term matrix into the Latent Dirichlet Allocation (LDA) unsupervised machine-learning framework. 'Unsupervised Machine Learning' is a fancy way of saying Exploratory Thematic Analysis.
+
+As a POC, I set 2 as the number of latent topics that are able to represent the dataset. There are diagnostics to determine the optimal number. I will explore that in future iterations.  
+
+LDA allows us to extract per-topic-per-word probabilities (Beta) from the model.
+
+The model assigned probabilities to each term of being generated from either of the 2 topics.
+
+As you would notice, many of the terms below are not formatted properly (e.g. punctuations and numbers ought to be removed; only keep the root words through stemming). I will do so in further iterations.
+
+
+### Top 10 terms that best represents each topic
+
+```{r,message=F, warning=F, echo=FALSE}
+library(ggplot2)
+#library(dplyr)
+
+ap_top_terms <- ap_topics %>%
+  group_by(topic) %>%
+  top_n(10, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+ap_top_terms %>%
+  mutate(term = reorder(term, beta)) %>%
+  ggplot(aes(term, beta, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  coord_flip()
+```
+
+***
+Next, I find the top 10 terms that best represents each topic. In the graphs below, it doesn't show any clear distinction - with a couple of terms falling in both baskets.
+
+Model could be further tuned to obtain better distinctions (e.g. increasing number of topics, further data-cleaning, using n-grams i.e. n words per term instead of 1 word per term now)
+
+
+### Per-document classification
+
+```{r,message=F, warning=F, echo=FALSE}
+class_gamma <- tidy(ap_lda, matrix = "gamma")
+arrange(class_gamma, document)
+```
+
+***
+Through LDA, we are also able to assign a topic to each document - in our case, a topic to each comment. 
+
+

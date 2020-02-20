@@ -1,0 +1,295 @@
+---
+title: "Styles and Climate Analysis (Proof-of-concept)"
+author: "KFI research"
+output: html_document
+---
+Note: This POC is to showcase the type of text analysis that we could do to support our studies. I generally relied on this framework here (https://www.tidytextmining.com/) for the analysis
+
+```{r, include=FALSE}
+library(tidytext)
+library(tidyr)
+library(dplyr)
+library(stringr)
+library(SnowballC)
+
+#lda reference
+#setwd("C:/Users/huangj/Desktop/items/Styles and climate verbatim research")
+
+if(Sys.info()[1] == "Linux"){
+  setwd("/run/user/1000/gvfs/smb-share:server=sinspfs01,share=asia$/kfi_research_intranet/Styles and climate verbatim research")
+}else{
+  # setwd("O:/kfi_research_intranet/KF4D competencies analysis")
+  setwd("C:/Users/huangj/Desktop/items/Styles and climate verbatim research")
+}
+
+
+#read in the dataset
+dat = read.csv("./raw_dat/20170129_include_language_ALLCommentsSC2.csv",stringsAsFactors = F)
+names(dat) = c("GroupID","PerID","UserName","Version", "Assessor","Strengths","Weaknesses","language")
+
+#read in common names for stopword later
+common_name1 = read.csv("./raw_dat/common_name_source1.csv",stringsAsFactors = F)
+common_name1$word = tolower(common_name1$word)
+
+common_name2 = read.csv("./raw_dat/common_name_source2.csv",stringsAsFactors = F)
+common_name2$word = tolower(common_name2$word)
+
+```
+Before I dive into the modelling aspect of the analysis, I did some exploratory analysis. These are the names of the variables.  
+```{r, echo=FALSE}
+names(dat)
+```
+
+Here is the distribution of **'Version'** variable (in %). **JR's comments: Any idea what's the meaning of this variable?**
+```{r, echo=FALSE}
+round(100*table(dat$Version)/sum(table(dat$Version)),1)
+```
+
+And the distribution of **'Assessor'** variable (in %). **JR's comments: Any idea what's the meaning of this variable?**
+```{r, echo=FALSE}
+round(100*table(dat$Assessor)/sum(table(dat$Assessor)),1)
+```
+
+From observation, the data consists of a mixture of languages. Hence, I assigned a language tag to each data point via R's textcat Natural Language Processing  package. Here is a distribution (in %) of the languages over 306,127 data points.
+
+```{r, echo=FALSE}
+print(round(100*table(dat$language)/sum(table(dat$language)),1))
+```
+
+Then I limit my analysis to only the data points tagged with 'English Language'. Future developments could involve using Google Translate API to convert the Non-English text to English. But I'm not inclined to do since there're usually subtle nuances associated with each language. 
+
+```{r, include=FALSE}
+#subset data by english
+dat = subset(dat,dat$language == "english")
+
+#As POC subset out GroupID and Strengths
+dat = subset(dat,select = c("GroupID","PerID","UserName","Strengths"))
+
+#Further data munging to remove punctuation marks and numbers 
+#regex for numbers or punctuations-->before unnest -->replace_reg = "[:punct:]|[:digit:]"
+replace_reg = "[:punct:]|[:digit:]"
+dat$Strengths = str_replace_all(dat$Strengths,replace_reg,"")
+
+#Arrnge by unigram
+dat_tokens = dat %>%
+  unnest_tokens(ngram, Strengths, token = "ngrams", n = 1)
+
+names(dat_tokens)[4] = "word"
+
+#change to lowercase
+dat_tokens$word = tolower(dat_tokens$word)
+
+#Remove stop words
+data(stop_words)
+
+dat_tokens <- dat_tokens %>%
+  anti_join(stop_words)
+
+#Include names here as stop words..http://www.babynamewizard.com/the-top-1000-baby-names-of-2011-united-states-of-america
+#anti_join first source
+dat_tokens <- dat_tokens %>%
+  filter(!word %in% common_name1$word)
+
+#anti_join second source
+dat_tokens <- dat_tokens %>%
+  filter(!word %in% common_name2$word)
+
+
+#stemming
+dat_tokens <- dat_tokens %>%
+  mutate(word = wordStem(word))
+
+
+#Merge in tf-idf
+#mutate to create a count by person and word
+dat_tokens <- dat_tokens %>%
+  group_by(PerID,word) %>%
+  mutate(num = n())
+
+dat_tokens <- dat_tokens %>%
+  bind_tf_idf(word,PerID,num)
+
+#Filter out low tf-idf. Kee more than 1st quartile
+p10 = quantile(dat_tokens$tf_idf,probs = 0.10)
+dat_tokens <- dat_tokens %>%
+  filter(tf_idf > p10) 
+
+```
+
+Here is an example of the 1st 2 rows in the dataset (only Strengths used here. I left out 'Weaknesses' column in the analysis). 
+
+```{r, echo=FALSE}
+head(dat,2)
+```
+
+Then I tokenize the dataset through unigrams i.e 1 word / term
+
+Next I identify stop words in the data frame by merging in a taxonomy from tidytext package. And removed them thereafter.
+
+Count function is used to find the most common words under the 'Strengths Column'. 
+
+We could see that the most common words are 'team', 'people', 'leadership', 'positive' - suggesting that people tend to have these attributes as their strenghts
+```{r, echo=FALSE}
+#Count the most common words
+# nrow(dat_tokens)   # 2510484
+
+dat_tokens %>%
+  count(word, sort = TRUE)
+
+#count
+# dat_tokens_count = dat_tokens %>%
+#   count(word, sort = TRUE)
+
+# dat_tokens_dedup = dat_tokens[!duplicated(dat_tokens$word),]
+# write.csv(dat_tokens_dedup,"C:/Users/HUANGJ/Desktop/dat_tokens_dedup.csv")
+```
+```{r, echo=FALSE}
+library(ggplot2)
+
+dat_tokens %>%
+  count(word, sort = TRUE) %>%
+  filter(n > 10000) %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n)) +
+  geom_col() +
+  xlab(NULL) +
+  coord_flip()
+
+# dat_tokens %>%
+#   count(word, sort = TRUE) %>%
+#   mutate(word = reorder(word, n)) %>%
+#   ggplot(aes(word, n)) +
+#   geom_col() +
+#   xlab(NULL) +
+#   coord_flip()
+
+```
+
+##Sentiment analysis
+
+1 of the common toolkits in text analysis is Sentiment Analysis. Using an existing sentiment taxonomy, I'm able to tag words as positive or negative. 
+
+We could see that the top 10 most common words are positively connotated which is intuitive since I limited the dataset to only the strengths. 
+```{r, echo=FALSE}
+bing_word_counts <- dat_tokens %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  ungroup()
+
+bing_word_counts
+
+```
+
+```{r, echo=FALSE}
+bing_word_counts %>%
+  group_by(sentiment) %>%
+  top_n(10) %>%
+  ungroup() %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n, fill = sentiment)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~sentiment, scales = "free_y") +
+  labs(y = "Contribution to sentiment",
+       x = NULL) +
+  coord_flip()
+```
+##Word-cloud
+
+A common way to visualize text-analysis is through word clouds. In this section, I plot the word cloud - with the larger words depicting the more common terms in the text. 
+
+```{r, echo=FALSE}
+library(wordcloud)
+
+bing_word_counts %>%
+  with(wordcloud(word, n, max.words = 90))
+
+```
+
+##TF-IDF (KIV this section first)
+```{r, echo=FALSE}
+
+```
+
+##Topic-Modelling
+
+Next, I fit a document term matrix into the Latent Dirichlet Allocation (LDA) unsupervised machine-learning framework. 'Unsupervised Machine Learning' is just a fancy way of saying Exploratory Thematic Analysis.
+
+As a POC, I set 2 as the number of latent topics that are able to represent the dataset. There are diagnostics to determine the optimal number which I will use in future iterations.  
+```{r, echo=FALSE, message = FALSE}
+library(tm)
+library(topicmodels)
+
+#1st use mutate to assign count for each document
+#Arrnge by unigram
+# dat_tokens = dat %>%
+#   unnest_tokens(word, Strengths) %>%
+#   anti_join(stop_words) %>%
+#   count(word, UserName) %>%
+#   cast_dtm(UserName,word,n)
+# 
+# dat_tokens = dat_tokens %>%
+#   cast_dtm(UserName,word,n)
+# 
+# ap_lda <- LDA(dat_tokens, k = 5, control = list(seed = 1234))
+
+dat_tokens = dat_tokens %>%
+  cast_dtm(PerID,word,num)
+
+ap_lda <- LDA(dat_tokens, k = 5, control = list(seed = 1234))
+ap_lda
+
+# a = terms(ap_lda,20)
+```
+##Word-topic probabilities
+
+LDA allows us to extract per-topic-per-word probabilities (Beta) from the model.
+
+The model assigned probabilities to each term of being generated from either of the 2 topics.
+
+As you notice, many of the terms below are not formatted properly (e.g. remove non-alphabets; keep only the root words through stemming). I will do so in further iterations.
+
+```{r, echo=FALSE, message = FALSE}
+#library(tidytext)
+
+ap_topics <- tidy(ap_lda, matrix = "beta")
+ap_topics
+```
+
+Next, I find the top 10 terms that best represents each topic. In the graphs below, it doesn't show any clear distinction - with a couple of terms falling in both baskets.
+
+Model could be further tuned to obtain better distinctions (e.g. increasing number of topics, further data-cleaning, using n-grams i.e. n words per term instead of 1 word per term now)
+
+```{r, echo=FALSE}
+library(ggplot2)
+#library(dplyr)
+
+ap_top_terms <- ap_topics %>%
+  group_by(topic) %>%
+  top_n(20, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+# write.csv(ap_top_terms,"C:/Users/huangj/Desktop/items/Styles and climate verbatim research/Output/LDA.csv",row.names = F)
+
+ap_top_terms %>%
+  mutate(term = reorder(term, beta)) %>%
+  ggplot(aes(term, beta, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  coord_flip()
+```
+
+##Per-document classification
+
+Through LDA, we are also able to assign a topic to each document - in our case, a topic to each comment. In the 1st 2 rows for Documents 2222276Z, we see gammas of 49.3% and 50.7%. This means that an estimated 49.3% comes from Topic 1 and 50.7% from Topic 2.   
+
+```{r, echo=FALSE}
+class_gamma <- tidy(ap_lda, matrix = "gamma")
+arrange(class_gamma, document)
+```
+
+###Potential applications
+
+With LDA, we're able to find out the topics that are commonly associated with high performers. And if there're demographic and job variables, we can explore these tendencies by gender, occupations, industries, etc.
+
+

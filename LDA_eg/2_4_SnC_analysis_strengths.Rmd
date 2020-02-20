@@ -1,0 +1,365 @@
+---
+title: "Styles and Climate Analysis (Proof-of-concept)"
+author: "KFI Research"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+runtime: shiny
+tags: ["Styles_Climate"]
+---
+
+```{r global, include=FALSE}
+
+library("shiny")
+library("flexdashboard")
+library("ggplot2")
+library("tidyr")
+library("dplyr")
+library("gridExtra")
+library("DT")
+library("tidytext")
+library("stringr")
+library("reshape2")
+library("tm")
+library("wordcloud")
+library("topicmodels")
+library("ldatuning")
+
+if(Sys.info()[1] == "Linux"){
+  setwd("/run/user/1000/gvfs/smb-share:server=sinspfs01,share=asia$/kfi_research_intranet/Styles and climate verbatim research")
+}else{
+  # setwd("O:/kfi_research_intranet/KF4D competencies analysis")
+  setwd("C:/Users/huangj/Desktop/items/Styles and climate verbatim research")
+}
+
+#Use source file here
+source("2_SnC_ngram_function.R")
+
+#Global data-frame here (calculate recommended threshold for LDA). Maybe as an example analysis for a tab
+
+```
+
+Inputs {.sidebar data-width=200}
+-----------------------------------------------------------------------
+
+```{r}
+if(Sys.info()[1] == "Linux"){
+  setwd("/run/user/1000/gvfs/smb-share:server=sinspfs01,share=asia$/kfi_research_intranet/Styles and climate verbatim research")
+}else{
+  # setwd("O:/kfi_research_intranet/KF4D competencies analysis")
+  setwd("C:/Users/huangj/Desktop/items/Styles and climate verbatim research")
+}
+
+sliderInput('ngram', 'N grams for analysis (i.e. how many words per term do you prefer)', min= 1, max = 3,
+                step = 1, round = 1, value = 1)
+
+
+sliderInput('num_lda_topics', 'How many latent topics do you prefer to represent your dataset', min= 1, max = 10,
+                step = 1, round = 1, value = 2)
+
+selectInput("StrOrWeak", "Do you wish to analyze strengths or areas of development", 
+           choices = c("Strengths","Areas_of_Development"),"Strengths")
+
+selectInput("Language", "What language do you wish to analyze (only English as of now)", 
+           choices = c("english"),"english")
+    
+# selectInput("sector", "Filter Sector? If Yes, Choose one", 
+#             choices = c("No","Consumer","Financials","Health and Life Sciences","Industrials","Natural materials, Oil and Gas","Public Sector, NFP and Utilities "),"No")
+      
+
+```
+
+```{r}
+  dataset <- reactive({
+
+    #data = indeed_analysis(input$type,input$overall,input$culture,input$work_life_bal,input$mgt,input$comp_ben,input$job_sec_adv,input$sector,input$perc)
+     data = dat_snc(input$ngram,input$StrOrWeak,input$Language)
+    #data = dat_snc(1,"Strengths","english")
+
+  })  #End of reactive dataset
+```
+
+Row
+-----------------------------------------------------------------------
+### Placeholder
+
+```{r}
+renderValueBox({
+# h = dataset() %>%
+#   dplyr::filter(perc_index == "H") %>%
+#   dplyr::group_by(perc_index) %>%
+#   dplyr::summarize(avg = round(mean(index,na.rm = T),2))
+# valueBox(value = h,color = "blue",icon = "fa-thumbs-up")
+})
+```
+
+### Placeholder
+
+```{r}
+renderValueBox({
+# h = dataset() %>%
+#   dplyr::filter(perc_index == "L") %>%
+#   dplyr::group_by(perc_index) %>%
+#   dplyr::summarize(avg = round(mean(index,na.rm = T),2))
+# valueBox(value = h,color = "orange",icon = "fa-thumbs-down")
+})
+```
+
+### Placeholder
+
+```{r}
+renderValueBox({
+# h = dataset() %>%
+#   dplyr::filter(perc_index == "M") %>%
+#   dplyr::group_by(perc_index) %>%
+#   dplyr::summarize(avg = round(mean(index,na.rm = T),2))
+# valueBox(value = h,color = "black",icon = "fa-thumbs-up")
+})
+```
+
+Column {.tabset}
+-------------------------------------
+###README
+
+**Description of tabs**
+
+###Counts of most common terms
+
+```{r}
+renderPlot({
+if(Sys.info()[1] == "Linux"){
+  setwd("/run/user/1000/gvfs/smb-share:server=sinspfs01,share=asia$/kfi_research_intranet/Styles and climate verbatim research")
+}else{
+  # setwd("O:/kfi_research_intranet/KF4D competencies analysis")
+  setwd("C:/Users/huangj/Desktop/items/Styles and climate verbatim research")
+}
+
+graph_1 = dataset() %>%
+  count(word, sort = TRUE) %>%
+  filter(n > 10000) %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n)) +
+  geom_col() +
+  xlab(NULL) +
+  coord_flip()
+
+print(graph_1)
+
+#Graph 2
+# variable = dataset() %>%
+#   dplyr::filter(perc_index == "H"|perc_index == "M"|perc_index == "L") %>%
+#   dplyr::group_by(perc_index) %>%
+#   dplyr::summarize(mean = round(100 * mean(variable_pay_prop_coy, na.rm = T),1)) %>%
+#   ggplot(aes(x = perc_index, y = mean, fill = perc_index)) + geom_bar(position = "dodge", stat = "identity")+
+#   xlab("High, Low and Mid Flexible Index") + ylab("Variable Proportion (%)")+ 
+#   geom_text(aes(label = round(mean,2)), vjust = -1) + 
+#   theme(axis.text=element_text(size=12),axis.title=element_text(size=20,face="bold"),legend.position="none") +  
+#   scale_fill_manual("legend", values = c("M" = "black","L" = "orange", "H" = "blue")) + ylim(0,10)
+
+# comb = grid.arrange(compa,variable,ncol=2)
+# 
+# print(comb)
+
+ })
+
+
+```
+###Sentiment Analysis
+```{r}
+# dataset() %>%
+#   inner_join(get_sentiments("bing")) %>%
+#   count(word, sentiment, sort = TRUE) %>%
+#   ungroup()
+```
+###Sentiment Analysis (positive and negagtive)
+```{r}
+renderPlot({
+dataset() %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  ungroup() %>%
+  group_by(sentiment) %>%
+  top_n(10) %>%
+  ungroup() %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n, fill = sentiment)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~sentiment, scales = "free_y") +
+  labs(y = "Contribution to sentiment",
+       x = NULL) +
+  coord_flip()
+})
+```
+
+###Wordcloud by sentiments
+```{r}
+renderPlot({
+  dataset() %>%
+    inner_join(get_sentiments("bing")) %>%
+    count(word, sentiment, sort = TRUE) %>%
+    acast(word ~ sentiment, value.var = "n", fill = 0) %>%
+    comparison.cloud(colors = c("red", "blue"),
+                     max.words = 100)
+})
+```
+
+###LDA (Unsupervised ML) topics:
+
+Top 10 terms that best represent each topic.
+
+```{r}
+renderPlot({
+dat_tokens = dataset() %>%
+  count(word, UserName) %>%
+  cast_dtm(UserName,word,n)
+
+ap_lda <- LDA(dat_tokens, k = input$num_lda_topics, control = list(seed = 1234))
+
+ap_topics <- tidy(ap_lda, matrix = "beta")
+
+ap_top_terms <- ap_topics %>%
+  group_by(topic) %>%
+  top_n(10, beta) %>%
+  ungroup() %>%
+  arrange(topic, -beta)
+
+graph_1 = ap_top_terms %>%
+  mutate(term = reorder(term, beta)) %>%
+  ggplot(aes(term, beta, fill = factor(topic))) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~ topic, scales = "free") +
+  coord_flip()
+
+print(graph_1)
+
+#diagnostic
+# result <- FindTopicsNumber(
+#   dat_tokens,
+#   topics = seq(from = 2, to = 15, by = 1),
+#   metrics = c("Griffiths2004", "CaoJuan2009", "Arun2010", "Deveaud2014"),
+#   method = "Gibbs",
+#   control = list(seed = 77),
+#   mc.cores = 2L,
+#   verbose = TRUE
+# )
+# 
+# graph_2 = FindTopicsNumber_plot(result)
+# 
+# #Combining LDA and the diagnostic graph
+# comb = grid.arrange(graph_1,graph_2,ncol=2)
+# print(comb)
+})
+```
+
+###Per-document classification
+
+
+###Optimal number of topics for LDA
+```{r}
+# data = as.data.frame(dataset())
+# data = as.data.frame(data$text)
+# # tweets = as.data.frame(gsub("xzxzxzxzxzy"," ",tweets[,1]))
+# # tweets <- iconv(tweets[,1], to = "ASCII", sub = " ")  # Convert to basic ASCII text to avoid silly characters
+# corpus <- Corpus(VectorSource(data))  # Create corpus object
+# doc.lengths <- rowSums(as.matrix(DocumentTermMatrix(corpus)))
+# dtm <- DocumentTermMatrix(corpus[doc.lengths > 0])
+
+
+
+#Finding optimal number of topics
+# result <- FindTopicsNumber(
+#   dtm,
+#   topics = seq(from = 2, to = 15, by = 1),
+#   metrics = c("Griffiths2004", "CaoJuan2009", "Arun2010", "Deveaud2014"),
+#   method = "Gibbs",
+#   control = list(seed = 77),
+#   mc.cores = 2L,
+#   verbose = TRUE
+# )
+# 
+# FindTopicsNumber_plot(result)
+```
+
+###Distribution in text 1
+
+
+```{r}
+# dat = dat
+# dat$sector = factor(dat$sector, levels = c("Consumer","Industrials","Natural materials, Oil and Gas","Financials","Public Sector, NFP and Utilities","Health and Life Sciences"))
+# 
+# # c("Health and Life Sciences","Public Sector, NFP and Utilities","Financials","Natural materials, Oil and Gas","Industrials","Consumer")
+# 
+# a = dat %>%
+#   dplyr::group_by(sector) %>%
+#   dplyr::summarize(prop = round(100*n()/nrow(dat),1)) %>%
+#   dplyr:: arrange(prop)
+# 
+# datatable(as.data.frame(a))
+
+```
+
+###Distribution in text 2
+
+```{r}
+# renderTable(
+# dataset() %>%
+#   dplyr::group_by(perc_index) %>%
+#   dplyr::summarize(count = n(),
+#                    Variable_Proportion_Pay_in_percent  = round(mean(variable_pay_prop_coy,na.rm = T) * 100,1),
+#                    Compa_Ratio  = mean(compar_ratio_coy_hg_ver_total_cash,na.rm = T),
+#                    overall = mean(overall,na.rm = T),
+#                    culture = mean(culture,na.rm = T),
+#                    work_life_bal = mean(work_life_bal,na.rm = T),
+#                    mgt = mean(mgt,na.rm = T),
+#                    comp_ben = mean(comp_ben,na.rm = T),
+#                    job_sec_adv = mean(job_sec_adv,na.rm = T)) 
+# )
+```
+
+###Placeholder for results1
+
+<!-- *Similar to t-stats -->
+<!-- * Change according to sector filtering criteria -->
+```{r}
+# renderUI(
+# HTML(
+# reg_table(dataset())
+# )
+# )
+```
+
+###Placeholder for results2
+
+<!-- *Similar to t-stats -->
+<!-- * Change according to sector filtering criteria -->
+```{r}
+# renderUI(
+# HTML(
+# reg_table_var_prop(dataset())
+# )
+# )
+
+```
+
+###Summary of results
+<!-- **Overarching results** -->
+
+<!-- In the following paragraph, I shall use overall ratings and index based on Culture and Management for my explanation. -->
+
+<!-- **Variable pay proportions** -->
+
+<!-- * Generally, we see flexible organizations tend to incorporate significantly higher variable proportion into pay packages.   -->
+<!-- * Overall ratings index: 6.3% (H) against 2.4% (L)  -->
+<!-- * Culture + Management : 5.1% (H) against 2.4% (L) -->
+
+<!-- **Compa ratio: Pay competitiveness** -->
+
+<!-- * They also tend to pay higher wages (higher compa ratios. Statistically siginificant) than their counterparts low on the 'Flexibility' index  -->
+<!-- * Overall ratings index: 1.04 (H) against 0.93 (L)  -->
+<!-- * Culture + Management : 1.01 (H) against 0.92 (L) -->
+
+
+###Dataset used in analysis
+```{r}
+
+```
