@@ -1,0 +1,92 @@
+---
+title: "TripAdvisor Word Cloud"
+author: "Zheng Yifei"
+date: "2/20/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "~/git/STB_social_media_analytics")
+knitr::opts_chunk$set(root.dir = "~/git/STB_social_media_analytics", echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(tm)
+library(stopwords)
+library(wordcloud)
+library(wordcloud2)
+```
+
+```{r}
+# Read reviews CSVs in this chunk
+
+tripa_path <- "./tripadvisor/finalised_output/"
+folders <- list.files(path = tripa_path, include.dirs = TRUE)
+
+col_names <- c(
+  "REVIEW_INDEX",
+  "WEBSITE_INDEX",
+  "POI_INDEX",
+  "REVIEWER_URL",
+  "REVIEW_ID",
+  "REVIEW_DATE",
+  "REVIEW_RATING",
+  "REVIEW_TITLE",
+  "REVIEW_BODY",
+  "DATE_OF_EXPERIENCE",
+  "TRIP_TYPE",
+  "REVIEW_CRAWLED_TIME"
+)
+
+tripa_df <- data.frame(matrix(nrow = 0, ncol = 12))
+names(tripa_df) <- col_names
+
+for (folder in folders) {
+  path <- paste0(tripa_path, folder, "/reviews/")
+  csv_files <- list.files(path = path)
+  for (csv_file in csv_files) {
+    csv_path <- paste0(path, csv_file)
+    poi_df <- read.csv(csv_path, as.is = TRUE)
+    tripa_df <- rbind(tripa_df, poi_df)
+  }
+}
+
+summary(tripa_df)
+```
+
+```{r}
+text <- paste(tripa_df$REVIEW_BODY, collapse = " ")
+```
+
+
+```{r}
+docs <- Corpus(VectorSource(text))
+docs <- docs %>%
+  tm_map(removeNumbers) %>%
+  tm_map(removePunctuation) %>%
+  tm_map(stripWhitespace)
+docs <- tm_map(docs, content_transformer(tolower))
+# docs <- tm_map(docs, removeWords, stopwords("english")) # Takes to long to run
+
+tdm <- TermDocumentMatrix(docs)
+tdm_matrix <- as.matrix(tdm)
+words <- sort(rowSums(tdm_matrix), decreasing = TRUE)
+words_df <- data.frame(word = names(words), freq = words)
+```
+
+```{r}
+stopwords <- stopwords()
+words_df <- subset(words_df, !(word %in% stopwords))
+words_df
+```
+
+```{r}
+set.seed(1) # for reproducibility
+wordcloud(words = words_df$word, freq = words_df$freq, min.freq = 1, max.words = 300, random.order = FALSE, rot.per = 0, colors = brewer.pal(8, "Dark2"), scale=c(4, 0.1))
+```
+
+```{r}
+wordcloud2(data=words_df, size=1.6, color='random-dark')
+```
+
