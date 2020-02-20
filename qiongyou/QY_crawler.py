@@ -95,6 +95,11 @@ class QYCrawler:
     
     
     def crawl_pois(self, number_of_pages=None):
+        """
+
+        @param number_of_pages: the number of pages of reviews to be crawled for each POI, if None, all reviews will be crawled, if 0, only attributes of the POI will be crawled
+        @return:
+        """
         if self.fsm_state == 0:
             if number_of_pages is not None:
                 self.number_of_pages = number_of_pages
