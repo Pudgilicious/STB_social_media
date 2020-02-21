@@ -18,6 +18,7 @@ poi_df['URL'] = poi_df['URL'].apply(lambda x: 'https://tripadvisor.com.sg' + x)
 class TripAdvisorAspectCrawler:
     aspects_col_names = ['POI_INDEX',
                          'ASPECTS',
+                         'ATTRACTION_TYPES',
                          'ASPECTS_CRAWLED_TIME'
                          ]
     def __init__(self):
@@ -52,8 +53,16 @@ class TripAdvisorAspectCrawler:
                 self.driver.get(self.current_poi_url)
                 print("POI index: {}, {}".format(self.current_poi_index, self.current_poi_name))
                 sleep(10)
+                view_more_elements = self.driver.find_elements_by_xpath('//span[@class="viewMore"]')
+                if view_more_elements:
+                    view_more_elements[0].click()
+                    sleep(1)
+                attraction_types = self.driver.find_element_by_xpath(
+                    '//span[@class="is-hidden-mobile header_detail attractionCategories"]'
+                ).text
                 aspects_elements = self.driver.find_elements_by_xpath(
-                    '//button[@class="ui_button secondary small location-review-review-list-parts-SearchFilter__word_button_secondary--2p0YL"]')
+                    '//button[@class="ui_button secondary small location-review-review-list-parts-SearchFilter__word_button_secondary--2p0YL"]'
+                )
 
             except:
                 print("Exception has occurred. Please check log file.")
@@ -81,7 +90,7 @@ class TripAdvisorAspectCrawler:
 
             for element in aspects_elements:
                 aspect = element.text
-                aspect_details = [self.current_poi_index, aspect, datetime.now()]
+                aspect_details = [self.current_poi_index, aspect, attraction_types, datetime.now()]
                 aspect_dict = dict(zip(self.aspects_col_names, aspect_details))
                 self.aspects_df = self.aspects_df.append(aspect_dict, ignore_index=True)
 
