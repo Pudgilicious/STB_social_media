@@ -26,8 +26,8 @@ get_docs <- function(text) {
     tm_map(removeNumbers) %>%
     tm_map(removePunctuation) %>%
     tm_map(stripWhitespace) %>%
-    tm_map(stemDocument, language = "english")%>%
-    tm_map(content_transformer(tolower))
+    tm_map(content_transformer(tolower)) %>%
+    tm_map(stemDocument, language = "english")
   return(docs)
 }
 
@@ -55,7 +55,6 @@ generate_wordcloud <- function(dtm, seed = 1) {
   ))
 }
 ```
-
 
 ```{r}
 # Read reviews CSVs in this chunk
