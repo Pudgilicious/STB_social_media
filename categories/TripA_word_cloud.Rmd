@@ -15,6 +15,7 @@ knitr::opts_chunk$set(message = FALSE)
 library(dplyr)
 library(tm)
 library(stopwords)
+library(stringr)
 library(wordcloud)
 library(wordcloud2)
 ```
@@ -36,7 +37,7 @@ get_dtm <- function(docs) {
   dtm_matrix <- as.matrix(dtm)
   words <- sort(rowSums(dtm_matrix), decreasing = TRUE)
   words_df <- data.frame(word = names(words), freq = words)
-  stopwords <- stopwords()
+  stopwords <- stopwords("english" ,source = "stopwords-iso")
   words_df <- subset(words_df, !(word %in% stopwords))
   return(words_df)
 }
@@ -57,7 +58,67 @@ generate_wordcloud <- function(dtm, seed = 1) {
 ```
 
 ```{r}
-# Read reviews CSVs in this chunk
+## Aspects from TripA
+
+tripa_aspects_path <- "./tripadvisor/aspects_output/"
+tripa_aspects_csvs <- list.files(path = tripa_aspects_path, include.dirs = TRUE)[1]
+tripa_aspects_df <- data.frame(matrix(nrow = 0, ncol = 4))
+names(tripa_aspects_df) <- c("POI_INDEX", "ASPECTS", "ATTRACTION_TYPE", "ASPECTS_CRAWLED_TIME")
+
+for (file_name in tripa_aspects_csvs) {
+  path <- paste0(tripa_aspects_path, file_name)
+  aspects_df <- read.csv(path, as.is = TRUE)
+  tripa_aspects_df <- rbind(tripa_aspects_df, aspects_df)
+}
+
+tripa_aspects_df <- subset(tripa_aspects_df, ASPECTS != "")
+
+summary(tripa_aspects_df)
+```
+
+```{r}
+## Parse POI attraction types from TripA
+
+attraction_types = c(
+  "Sights & Landmarks",
+  "Nature & Parks",
+  "Zoos & Aquariums",
+  "Museums",
+  "Nightlife",
+  "Fun & Games",
+  "Spas & Wellness",
+  "Water & Amusement Parks",
+  "Casinos & Gambling")
+
+poi_attraction_types <- tripa_aspects_df[match(unique(tripa_aspects_df$POI_INDEX), tripa_aspects_df$POI_INDEX),]
+poi_attraction_types <- poi_attraction_types[, c(1, 3)]
+poi_attraction_types$ATTRACTION_TYPES <- strsplit(poi_attraction_types$ATTRACTION_TYPES, ", ")
+
+poi_attraction_types_temp <- data.frame(matrix(nrow = 0, ncol = 2))
+names(poi_attraction_types_temp) <- c("POI_INDEX", "ATTRACTION_TYPE")
+
+for (i in 1:dim(poi_attraction_types)[1]) {
+  df <- data.frame(
+    POI_INDEX = poi_attraction_types[i,][1],
+    ATTRACTION_TYPE = poi_attraction_types[i,][[2]])
+  names(df) <- c("POI_INDEX", "ATTRACTION_TYPE")
+  poi_attraction_types_temp <- rbind(poi_attraction_types_temp, df)
+}
+
+poi_attraction_types <- poi_attraction_types_temp
+row.names(poi_attraction_types) <- NULL
+head(poi_attraction_types)
+```
+
+```{r}
+tripa_aspects_text <- paste(tripa_aspects_df$ASPECTS, collapse = " ")
+docs2 <- get_docs(tripa_aspects_text)
+dtm2 <- get_dtm(docs2)
+generate_wordcloud(dtm2, seed = 1)
+```
+
+```{r}
+## Read reviews CSVs in this chunk
 
 tripa_path <- "./tripadvisor/finalised_output/"
 folders <- list.files(path = tripa_path, include.dirs = TRUE)
@@ -102,30 +163,7 @@ generate_wordcloud(dtm1, seed = 1)
 
 
 ```{r}
-# Aspects from TripA
-tripa_aspects_path <- "./tripadvisor/aspects_output/"
-tripa_aspects_csvs <- list.files(path = tripa_aspects_path, include.dirs = TRUE)[1:3]
-tripa_aspects_df <- data.frame(matrix(nrow = 0, ncol = 3))
-names(tripa_aspects_df) <- c("POI_INDEX", "ASPECTS", "ASPECTS_CRAWLED_TIME")
-
-for (file_name in tripa_aspects_csvs) {
-  path <- paste0(tripa_aspects_path, file_name)
-  aspects_df <- read.csv(path, as.is = TRUE)
-  tripa_aspects_df <- rbind(tripa_aspects_df, aspects_df)
-}
-
-summary(tripa_aspects_df)
-```
-
-```{r}
-tripa_aspects_text <- paste(tripa_aspects_df$ASPECTS, collapse = " ")
-docs2 <- get_docs(tripa_aspects_text)
-dtm2 <- get_dtm(docs2)
-generate_wordcloud(dtm2, seed = 1)
-```
-
-```{r}
-# Tripadvisor Keywords from IBM
+## Tripadvisor Keywords from IBM
 
 keywords_col_names <- c(
   "WEBSITE_ID", 
