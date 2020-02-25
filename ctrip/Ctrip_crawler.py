@@ -10,12 +10,11 @@ import pandas as pd
 from scrapy import Selector
 import os
 import re
-import utils
 from time import sleep
 import traceback
 from random import random, randint
 from selenium import webdriver
-from datetime import datetime, date, timedelta
+from datetime import datetime
 # for proxy account
 import urllib.request
 import socket

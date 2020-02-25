@@ -1,7 +1,9 @@
 library(ggplot2)
 library(dplyr)
-df_raw <- read.csv("Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/Baidu_API/2.csv")
+df_raw <- read.csv("Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/descriptive_stats/2.csv")
 
+
+#getting all ctrip data
 #number of reviews by month
 df <-df_raw[order(df_raw$REVIEW_DATE,df_raw$REVIEW_TIME),]
 df$Yr_month=format(as.Date(df$REVIEW_DATE), "%Y-%m")

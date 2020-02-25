@@ -98,7 +98,7 @@ class QYCrawler:
         """
 
         @param number_of_pages: the number of pages of reviews to be crawled for each POI, if None, all reviews will be crawled, if 0, only attributes of the POI will be crawled
-        @return:
+        @return: a csv file containing all attributes of all POIs and a folder containing reviews of each POI, label by the POI index
         """
         if self.fsm_state == 0:
             if number_of_pages is not None:
@@ -211,6 +211,9 @@ class QYCrawler:
 
   
     def crawl_attributes(self):
+        """
+        crawl the attributes of a POI
+        """
         sleep(random())
         #select areas where we going to extract info
         res = self.sel.xpath('.//div[@class="poi-detail"]')    
@@ -302,6 +305,9 @@ class QYCrawler:
         
         
     def crawl_reviews(self):
+        """
+        crawl all reviews of a POI
+        """
         sleep(random())
         res = self.sel.xpath('.//div[@class="compo-main compo-feed"]') 
         xpath_last_page='.//div[@class="ui_page"]/a/@data-page'
@@ -344,7 +350,12 @@ class QYCrawler:
         self.reviews_df = pd.DataFrame(columns=self.reviews_col_names)
     
 
-    def crawl_reviews_1_page(self, poi_index): 
+    def crawl_reviews_1_page(self, poi_index):
+        '''
+
+        @param poi_index: the current crawling POI, input automatically
+        @return: fill in the reviews csv with one page of reviews
+        '''
         self.sel = Selector(text=self.driver.page_source)
         res1 = self.sel.xpath('.//div[@class="compo-main compo-feed"]')
         self.reviews_crawled=True
@@ -419,6 +430,9 @@ class QYCrawler:
                 self.review_final_page= True
             
     def crawl_agg_list(self):
+        """
+        crawl the aggregate list of POI in qiongyou
+        """
         url= "https://place.qyer.com/singapore/sight/"
         self.driver = webdriver.Chrome(self.chromedriver_path) 
         self.driver.get(url)
@@ -489,33 +503,54 @@ class QYCrawler:
     
     # Methods below are all utility functions.all are static method
     def parse_total_reviews(self, text):
+        '''
+
+        @param text: the string containing the total number of reviews of a POI
+        @return: integer
+        '''
         if re.search(r'\d+',str(text)):
             return int(re.search(r'\d+', text).group())
         else:
             return 0
     
     def parse_ranking(self, text):
+        '''
+
+        @param text: the string containing the rank of a POI
+        @return: int
+        '''
         return int(re.search(r'\d+', text).group())
     
     def parse_rate(self, text):
+        '''
+
+        @param text: the string containing the rate of a review
+        @return: int
+        '''
         if text:
             return float(text.replace(' ', ''))
         else:
             return 0
         
     def parse_review_date(self, text):
+        """
+
+        @param text: date time string
+        @return: date time object
+        """
         text1=text.replace('\n                  ','')
         return datetime.strptime(text1[0:10],"%Y-%m-%d")
     
     def parse_review_body(self, list_item):
+        """
+
+        @param list_item: a list containing review body
+        @return: a parsed string
+        """
         text=' '.join(list_item)
         return text.replace('\n','')
     
-    def parse_review_numbers(self, text):
-        if re.search(r'\d+',str(text)):
-            return int(re.search(r'\d+', text).group())
-        else:
-            return 0
+
     
 
     
