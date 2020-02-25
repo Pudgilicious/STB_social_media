@@ -1,0 +1,209 @@
+---
+title: "TripAdvisor Word Cloud"
+author: "Zheng Yifei"
+date: "2/20/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "~/git/STB_social_media_analytics")
+knitr::opts_chunk$set(root.dir = "~/git/STB_social_media_analytics", echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(tm)
+library(stopwords)
+library(stringr)
+library(wordcloud)
+library(wordcloud2)
+```
+
+```{r}
+get_docs <- function(text) {
+  docs <- Corpus(VectorSource(text))
+  docs <- docs %>%
+    tm_map(removeNumbers) %>%
+    tm_map(removePunctuation) %>%
+    tm_map(stripWhitespace) %>%
+    tm_map(content_transformer(tolower)) %>%
+    tm_map(stemDocument, language = "english")
+  return(docs)
+}
+
+get_dtm <- function(docs) {
+  dtm <- TermDocumentMatrix(docs)
+  dtm_matrix <- as.matrix(dtm)
+  words <- sort(rowSums(dtm_matrix), decreasing = TRUE)
+  words_df <- data.frame(word = names(words), freq = words)
+  stopwords <- stopwords("english" ,source = "stopwords-iso")
+  words_df <- subset(words_df, !(word %in% stopwords))
+  return(words_df)
+}
+
+generate_wordcloud <- function(dtm, seed = 1) {
+  set.seed(seed) # for reproducibility
+  return(wordcloud(
+    words = dtm$word,
+    freq = dtm$freq,
+    min.freq = 1,
+    max.words = 300,
+    random.order = FALSE,
+    rot.per = 0,
+    colors = brewer.pal(8, "Dark2"),
+    scale = c(4, 0.1)
+  ))
+}
+```
+
+```{r}
+## Aspects from TripA
+
+tripa_aspects_path <- "./tripadvisor/aspects_output/"
+tripa_aspects_csvs <- list.files(path = tripa_aspects_path, include.dirs = TRUE)[1]
+tripa_aspects_df <- data.frame(matrix(nrow = 0, ncol = 4))
+names(tripa_aspects_df) <- c("POI_INDEX", "ASPECTS", "ATTRACTION_TYPE", "ASPECTS_CRAWLED_TIME")
+
+for (file_name in tripa_aspects_csvs) {
+  path <- paste0(tripa_aspects_path, file_name)
+  aspects_df <- read.csv(path, as.is = TRUE)
+  tripa_aspects_df <- rbind(tripa_aspects_df, aspects_df)
+}
+
+tripa_aspects_df <- subset(tripa_aspects_df, ASPECTS != "")
+
+summary(tripa_aspects_df)
+```
+
+```{r}
+## Parse POI attraction types from TripA
+
+attraction_types = c(
+  "Sights & Landmarks",
+  "Nature & Parks",
+  "Zoos & Aquariums",
+  "Museums",
+  "Nightlife",
+  "Fun & Games",
+  "Spas & Wellness",
+  "Water & Amusement Parks",
+  "Casinos & Gambling")
+
+poi_attraction_types <- tripa_aspects_df[match(unique(tripa_aspects_df$POI_INDEX), tripa_aspects_df$POI_INDEX),]
+poi_attraction_types <- poi_attraction_types[, c(1, 3)]
+poi_attraction_types$ATTRACTION_TYPES <- strsplit(poi_attraction_types$ATTRACTION_TYPES, ", ")
+
+poi_attraction_types_temp <- data.frame(matrix(nrow = 0, ncol = 2))
+names(poi_attraction_types_temp) <- c("POI_INDEX", "ATTRACTION_TYPE")
+
+for (i in 1:dim(poi_attraction_types)[1]) {
+  df <- data.frame(
+    POI_INDEX = poi_attraction_types[i,][1],
+    ATTRACTION_TYPE = poi_attraction_types[i,][[2]])
+  names(df) <- c("POI_INDEX", "ATTRACTION_TYPE")
+  poi_attraction_types_temp <- rbind(poi_attraction_types_temp, df)
+}
+
+poi_attraction_types <- poi_attraction_types_temp
+row.names(poi_attraction_types) <- NULL
+head(poi_attraction_types)
+```
+
+```{r}
+tripa_aspects_text <- paste(tripa_aspects_df$ASPECTS, collapse = " ")
+docs2 <- get_docs(tripa_aspects_text)
+dtm2 <- get_dtm(docs2)
+generate_wordcloud(dtm2, seed = 1)
+```
+
+```{r}
+## Read reviews CSVs in this chunk
+
+tripa_path <- "./tripadvisor/finalised_output/"
+folders <- list.files(path = tripa_path, include.dirs = TRUE)
+
+col_names <- c(
+  "REVIEW_INDEX",
+  "WEBSITE_INDEX",
+  "POI_INDEX",
+  "REVIEWER_URL",
+  "REVIEW_ID",
+  "REVIEW_DATE",
+  "REVIEW_RATING",
+  "REVIEW_TITLE",
+  "REVIEW_BODY",
+  "DATE_OF_EXPERIENCE",
+  "TRIP_TYPE",
+  "REVIEW_CRAWLED_TIME"
+)
+
+tripa_df <- data.frame(matrix(nrow = 0, ncol = 12))
+names(tripa_df) <- col_names
+
+for (folder in folders) {
+  path <- paste0(tripa_path, folder, "/reviews/")
+  csv_files <- list.files(path = path)
+  for (csv_file in csv_files) {
+    csv_path <- paste0(path, csv_file)
+    poi_df <- read.csv(csv_path, as.is = TRUE)
+    tripa_df <- rbind(tripa_df, poi_df)
+  }
+}
+
+summary(tripa_df)
+```
+
+```{r}
+tripa_review_text <- paste(tripa_df$REVIEW_BODY, collapse = " ")
+docs1 <- get_docs(tripa_review_text)
+dtm1 <- get_dtm(docs1)
+generate_wordcloud(dtm1, seed = 1)
+```
+
+
+```{r}
+## Tripadvisor Keywords from IBM
+
+keywords_col_names <- c(
+  "WEBSITE_ID", 
+  "REVIEW_ID", 
+  "TEXT", 
+  "RELEVANCE", 
+  "COUNT", 
+  "SENTIMENT_SCORE", 
+  "SENTIMENT_LABEL", 
+  "SADNESS", 
+  "JOY", 
+  "FEAR", 
+  "DISGUST", 
+  "ANGER", 
+  "MIXED_SENTIMENT"
+)
+
+tripa_keywords_df <- data.frame(matrix(nrow = 0, ncol = 13))
+names(tripa_keywords_df) <- keywords_col_names
+
+for (folder in folders) {
+  path1 <- paste0(tripa_path, folder)
+  sentiment_folder = list.files(path = path1, include.dirs = TRUE)[4]
+  path2 <- paste0(tripa_path, folder, "/",sentiment_folder, "/")
+  csv_files <- list.files(path = path2)
+  indices <- grep("keywords", csv_files)
+  
+  for (i in indices) {
+    csv_path <- paste0(path2, csv_files[i])
+    poi_df <- read.csv(csv_path, as.is = TRUE)
+    tripa_keywords_df <- rbind(tripa_keywords_df, poi_df)
+  }
+}
+
+summary(tripa_keywords_df)
+```
+
+```{r}
+tripa_keywords_text <- paste(tripa_keywords_df$TEXT, collapse = " ")
+docs3 <- get_docs(tripa_keywords_text)
+dtm3 <- get_dtm(docs3)
+generate_wordcloud(dtm3, seed = 1)
+```
