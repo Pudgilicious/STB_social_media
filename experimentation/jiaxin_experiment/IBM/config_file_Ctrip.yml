@@ -17,7 +17,7 @@ Ctrip:
     
 
 # Scorer parameters
-    target_folder: 'Gardens_by_the_bay'  # in the format 'yyymmdd_hhmmss'
+    target_folder: 'sentiment'  # in the format 'yyymmdd_hhmmss'
     continue_in_folder: # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
     continue_from_poi_index:
     continue_from_row_index:

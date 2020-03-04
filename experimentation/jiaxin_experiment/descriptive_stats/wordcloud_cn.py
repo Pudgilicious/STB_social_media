@@ -48,7 +48,7 @@ data=data.drop(['REVIEW_INDEX','WEBSITE_INDEX','POI_INDEX','REVIEWER_NAME','REVI
 string1=list(map(lambda x: str(x),data['REVIEW_BODY']))
 
 #input stop words
-os.chdir('/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/descriptive_stats')
+os.chdir('/home/jia/Desktop/git/STB_social_media_analytics/experimentation/jiaxin_experiment/descriptive_stats/data')
 stop=pd.read_csv('./stop_words.txt',header=None,index_col=False)
 stop=list(stop.iloc[:,0])
 #print(stop)
@@ -66,25 +66,39 @@ def jiebaclearText(text,stoplist):
 pos=[]
 for i in range(len(string1)):
     pos.append(jiebaclearText(string1[i],stop))
+#editing corpus
+punc = "！？｡。＂＃＄％＆＇（）＊＋，－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏."
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+punc=punc+punctuation
+corpus=[]
+for i in range(len(pos)):
+   corpus.append(pos[i].translate(pos[i].maketrans("","", punc)))
 
-    
-text1=' '.join(pos)
+corpus = list(filter(None, corpus))
+
+ with open('corpus.txt', 'w') as filehandle:
+    for listitem in corpus:
+        filehandle.write('%s\n' % listitem)
+#text1=' '.join(pos)
+#keywords = jieba.analyse.extract_tags(str(text1), topK=100, withWeight=True, allowPOS=('nr','ns','nt','nz','n','vn','v'))
+#tf_idf=list(map(lambda x:x[0],keywords)) 
 
 
-wc=WordCloud(width=800,
-             height=400,
-    background_color="white",
-    max_words=100,
-    max_font_size=60,
-    random_state=42,
-    font_path='/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc'   #allow system to output chinese
-    ).generate(text1)
 
-plt.imshow(wc,interpolation="bilinear")
-plt.axis("off")
-plt.show()
-plt.axis("off")
-plt.show()
+#wc=WordCloud(width=800,
+ #            height=400,
+  #  background_color="white",
+   # max_words=100,
+    #max_font_size=60,
+    #random_state=42,
+    #font_path='/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc'   #allow system to output chinese
+    #).generate(text1)
 
-wc.to_file('./pic2.png')
+#plt.imshow(wc,interpolation="bilinear")
+#plt.axis("off")
+#plt.show()
+#plt.axis("off")
+#plt.show()
+
+#wc.to_file('./pic2.png')
 
