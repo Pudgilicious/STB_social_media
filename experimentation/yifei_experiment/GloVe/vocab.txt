@@ -772,6 +772,10 @@ spots 196
 april 195
 clear_day 195
 galleries 195
+<<<<<<< HEAD
+children's_garden 194
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 destination 194
 europe 194
 minute_walk 194
@@ -926,7 +930,10 @@ landscape 161
 live_music 161
 recommendation 161
 cent 160
+<<<<<<< HEAD
+=======
 children's_garden 160
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 door 160
 short_time 160
 world_war 160
@@ -942,6 +949,10 @@ degrees 158
 fear_of_heights 158
 intan 158
 marina_barrage 158
+<<<<<<< HEAD
+singapore's_history 158
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 store 158
 worlds 158
 air_conditioning 157
@@ -1137,7 +1148,10 @@ gates 130
 insects 130
 middle_of_the_city 130
 mistake 130
+<<<<<<< HEAD
+=======
 singapore's_history 130
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 changes 129
 memories 129
 national_museum 129
@@ -1666,6 +1680,10 @@ tracks 84
 walking_tour 84
 wonderful_gardens 84
 accident 83
+<<<<<<< HEAD
+bird's_eye_view 83
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 continents 83
 eating_places 83
 fruit 83
@@ -1941,7 +1959,10 @@ amazing_structure 71
 amazing_waterfall 71
 amazon 71
 beautiful_trees 71
+<<<<<<< HEAD
+=======
 bird's_eye_view 71
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 buffet 71
 everytime 71
 fragile_forest 71
@@ -2632,6 +2653,10 @@ raffles_city 52
 regret 52
 romantic_place 52
 side_of_the_road 52
+<<<<<<< HEAD
+singapore's_chinatown 52
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 skybar 52
 skydeck 52
 standard 52
@@ -2642,6 +2667,10 @@ taxi_ride 52
 tian_tian_chicken_rice 52
 total 52
 vehicle 52
+<<<<<<< HEAD
+world's_tallest_indoor_waterfall 52
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 15mins 51
 ball 51
 buddhas 51
@@ -3079,7 +3108,11 @@ pockets 43
 rest_of_the_garden 43
 se 43
 shower 43
+<<<<<<< HEAD
+singapore's_heat 43
+=======
 singapore's_chinatown 43
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 steel 43
 sunshine 43
 super_grove 43
@@ -3438,7 +3471,10 @@ tram_tickets 38
 treasure 38
 universal_studio 38
 wheels 38
+<<<<<<< HEAD
+=======
 world's_tallest_indoor_waterfall 38
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 accessibility 37
 affordable_price 37
 architectural_marvel 37
@@ -3529,6 +3565,10 @@ big_brands 36
 boon_lay 36
 cattle 36
 central_location 36
+<<<<<<< HEAD
+children's_area 36
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 christmas_display 36
 colourful_flowers 36
 cornwall 36
@@ -3707,7 +3747,10 @@ capacity 34
 cats 34
 centers 34
 cheetahs 34
+<<<<<<< HEAD
+=======
 children’s_garden 34
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 chocolates 34
 christmas_eve 34
 climates 34
@@ -3770,7 +3813,10 @@ saturday_evening 34
 screens 34
 shopaholic 34
 side_of_the_bay 34
+<<<<<<< HEAD
+=======
 singapore's_heat 34
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 slopes 34
 small_cafe 34
 small_shop 34
@@ -3798,6 +3844,10 @@ bamboo 33
 boat_trips 33
 buddha_tooth 33
 bugis_street 33
+<<<<<<< HEAD
+children's_playground 33
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 chinese_mythology 33
 clarke 33
 compound 33
@@ -4249,7 +4299,10 @@ ce_la_vie 29
 ceramics 29
 cheap_shopping 29
 chickens 29
+<<<<<<< HEAD
+=======
 children's_area 29
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 concern 29
 concessions 29
 congratulations 29
@@ -4395,6 +4448,10 @@ bio_domes 28
 brilliant_experience 28
 carriages 28
 celebrations 28
+<<<<<<< HEAD
+children's_park 28
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 christmas_music 28
 combo 28
 costumes 28
@@ -4477,7 +4534,10 @@ separate_tickets 28
 sheer_size 28
 shopping_complex 28
 sides_of_the_road 28
+<<<<<<< HEAD
+=======
 singapore’s_history 28
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_airport 28
 singapore_gardens 28
 small_park 28
@@ -4526,8 +4586,11 @@ businesses 27
 canopies 27
 cents 27
 childhood 27
+<<<<<<< HEAD
+=======
 children's_park 27
 children's_playground 27
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 chili_crab 27
 chinese_restaurant 27
 chinese_restaurants 27
@@ -4761,6 +4824,10 @@ sat 26
 scenic_view 26
 sea_aquarium 26
 sellers 26
+<<<<<<< HEAD
+shopper's_paradise 26
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 shopping_street 26
 singapore_humidity 26
 single_day 26
@@ -4943,6 +5010,10 @@ whole_evening 25
 whole_morning 25
 youre 25
 5km 24
+<<<<<<< HEAD
+60's 24
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 7th_floor 24
 amazing_concept 24
 amazing_hotel 24
@@ -4960,6 +5031,10 @@ brisk_walk 24
 bunkers 24
 bus_trip 24
 ceremonies 24
+<<<<<<< HEAD
+children's_play_area 24
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 chimpanzees 24
 conjunction 24
 contents 24
@@ -5348,7 +5423,10 @@ central_area 22
 century 22
 chanting 22
 cheap_eats 22
+<<<<<<< HEAD
+=======
 children's_play_area 22
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 chinese_people 22
 christmas_displays 22
 clear_night 22
@@ -5487,10 +5565,17 @@ romantic_walk 22
 roof_top_garden 22
 safari_ride 22
 sauce 22
+<<<<<<< HEAD
+short_film 22
+short_taxi_ride 22
+signboards 22
+singapore's_skyline 22
+=======
 shopper's_paradise 22
 short_film 22
 short_taxi_ride 22
 signboards 22
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_citizens 22
 singapore_eye 22
 singapore_people 22
@@ -5535,7 +5620,10 @@ worth_experiencing 22
 ww 22
 zoo_closes 22
 50th_floor 21
+<<<<<<< HEAD
+=======
 60's 21
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 80s 21
 absolute_highlight 21
 amazing_buildings 21
@@ -5707,6 +5795,10 @@ sooo 21
 spouse 21
 sprinklers 21
 stock 21
+<<<<<<< HEAD
+stone's_throw 21
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 stones 21
 strangers 21
 suntec 21
@@ -5852,6 +5944,10 @@ informative_displays 20
 ingenuity 20
 interesting_displays 20
 intervals 20
+<<<<<<< HEAD
+jacob_ballas_children's_garden 20
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 jaw 20
 kinds_of_orchids 20
 late_lunch 20
@@ -5904,6 +6000,10 @@ own_country 20
 panoramic_view_of_singapore 20
 peak_periods 20
 peak_time 20
+<<<<<<< HEAD
+photographer's_paradise 20
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 picnic_lunch 20
 pit_lane 20
 plates 20
@@ -5929,6 +6029,11 @@ royalty 20
 satay_stalls 20
 selves 20
 short_videos 20
+<<<<<<< HEAD
+singapore's_gardens 20
+singapore's_national_flower 20
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_history_gallery 20
 skirts 20
 small_part 20
@@ -6179,8 +6284,11 @@ sheep 19
 shop_owners 19
 similar_views 19
 sinapore 19
+<<<<<<< HEAD
+=======
 singapore's_gardens 19
 singapore's_skyline 19
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singaporean_dollars 19
 skylines 19
 slots 19
@@ -6231,6 +6339,10 @@ wonderful_architecture 19
 wonderful_sight 19
 wonderful_spot 19
 wonderful_things 19
+<<<<<<< HEAD
+world's_largest_indoor_waterfall 19
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 yards 19
 years_of_age 19
 zoo_area 19
@@ -6423,7 +6535,10 @@ personal_stories 18
 personnel 18
 perth 18
 pet 18
+<<<<<<< HEAD
+=======
 photographer's_paradise 18
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 poinsettias 18
 polar_bear_enclosure 18
 popularity 18
@@ -6734,6 +6849,10 @@ p.s. 17
 pair 17
 part_of_our_city_tour 17
 peaceful_environment 17
+<<<<<<< HEAD
+people's_park_complex 17
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 permanent_exhibition 17
 personal_experience 17
 pillars 17
@@ -6899,6 +7018,10 @@ ce_la 16
 ce_la_vi_restaurant 16
 cheapest_way 16
 cherry 16
+<<<<<<< HEAD
+children's_gardens 16
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 children_of_all_ages 16
 chilli 16
 chinese_lanterns 16
@@ -7024,7 +7147,10 @@ intent 16
 interesting_temples 16
 istana 16
 jackets 16
+<<<<<<< HEAD
+=======
 jacob_ballas_children's_garden 16
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 jewel_changi 16
 jurong_east 16
 jus 16
@@ -7157,6 +7283,10 @@ shopkeepers 16
 short_period_of_time 16
 shrines 16
 side_of_the_park 16
+<<<<<<< HEAD
+singapore's_zoo 16
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_attraction 16
 singapore_experience 16
 singapore_souvenirs 16
@@ -7173,7 +7303,10 @@ solar_power 16
 sorts_of_plants 16
 standard_ticket 16
 standout 16
+<<<<<<< HEAD
+=======
 stone's_throw 16
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 storey_waterfall 16
 succulent_garden 16
 sungei_buloh_wetland_reserve 16
@@ -7578,8 +7711,11 @@ shopping_options 15
 short_films 15
 shouting 15
 side_of_the_street 15
+<<<<<<< HEAD
+=======
 singapore's_national_flower 15
 singapore's_zoo 15
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_china_town 15
 singapore_city_gallery 15
 singapore_culture 15
@@ -7650,7 +7786,10 @@ wonderful_trees 15
 wonderful_view_of_singapore 15
 wonderful_waterfall 15
 woodlands 15
+<<<<<<< HEAD
+=======
 world's_largest_indoor_waterfall 15
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 ww11 15
 year_of_the_dog 15
 zhen_zhen_porridge 15
@@ -7868,6 +8007,10 @@ lights_dance 14
 lights_display 14
 limited_access 14
 links 14
+<<<<<<< HEAD
+lion's_head 14
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 lion_head 14
 little_cafe 14
 local_time 14
@@ -7930,7 +8073,11 @@ park_staff 14
 parking_lot 14
 part_of_the_tour 14
 peak_period 14
+<<<<<<< HEAD
+people's_park 14
+=======
 people's_park_complex 14
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 perfect_shot 14
 permanent_residents 14
 photo_shots 14
@@ -8066,7 +8213,10 @@ wonderful_food 14
 wonderful_sculptures 14
 wonderful_view_of_the_city 14
 wonderfull 14
+<<<<<<< HEAD
+=======
 world’s_tallest_indoor_waterfall 14
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 world_war_ii 14
 worths 14
 worthy_of_a_visit 14
@@ -8137,6 +8287,10 @@ blend 13
 brainer 13
 bring_water 13
 bubble 13
+<<<<<<< HEAD
+buddha's_tooth 13
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 buffet_meal 13
 bus_driver 13
 bus_ticket 13
@@ -8152,12 +8306,20 @@ cg 13
 chains 13
 cheap_goods 13
 cherry_blossom_time 13
+<<<<<<< HEAD
+children's_water_park 13
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 chills 13
 chimps 13
 chinese_style 13
 choa_chu_kang 13
 churches 13
 city_skyscrapers 13
+<<<<<<< HEAD
+clarke's_quay 13
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 clean_garden 13
 clean_park 13
 clear_signs 13
@@ -8449,6 +8611,10 @@ palm_valley 13
 peaceful_area 13
 peanuts 13
 penguin_coast 13
+<<<<<<< HEAD
+people's_park_centre 13
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 percival 13
 photo_session 13
 photo_spot 13
@@ -8505,6 +8671,10 @@ siblings 13
 signapore 13
 siloso_beach 13
 silver 13
+<<<<<<< HEAD
+singapore's_attractions 13
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_museum 13
 singapore_sling_flight 13
 singapores_history 13
@@ -8675,7 +8845,10 @@ big_gardens 12
 big_shopping_malls 12
 big_time 12
 bikers 12
+<<<<<<< HEAD
+=======
 bird’s_eye_view 12
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 bit_of_a_hike 12
 blue_sky 12
 boon_lay_mrt 12
@@ -8924,7 +9097,10 @@ layers 12
 light_performance 12
 lighted_trees 12
 link_bridge 12
+<<<<<<< HEAD
+=======
 lion's_head 12
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 lite 12
 little_confusing 12
 little_information 12
@@ -9043,7 +9219,10 @@ pasir_ris 12
 passenger 12
 passing_interest 12
 pause 12
+<<<<<<< HEAD
+=======
 people's_park 12
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 peranakan_people 12
 permanent_collection 12
 personal_preference 12
@@ -9105,6 +9284,12 @@ show_timing 12
 side_street 12
 signboard 12
 singa 12
+<<<<<<< HEAD
+singapore's_climate 12
+singapore's_humidity 12
+singapore's_weather 12
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_airline 12
 singapore_area 12
 singapore_changi_airport 12
@@ -9352,7 +9537,10 @@ brisk_walking 11
 browse 11
 bubbles 11
 bucket 11
+<<<<<<< HEAD
+=======
 buddha's_tooth 11
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 buffalo_tours 11
 buffaloes 11
 bukit_chandu 11
@@ -9375,14 +9563,22 @@ cavern 11
 char_kway_teow 11
 cheap_drinks 11
 cheaper_food 11
+<<<<<<< HEAD
+children's_section 11
+children's_water_play_area 11
+=======
 children's_gardens 11
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 china_town_area 11
 chinese_cuisine 11
 chinese_folklore 11
 christmas_songs 11
 city_tours 11
 claim 11
+<<<<<<< HEAD
+=======
 clarke's_quay 11
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 clarkes_quay 11
 clients 11
 close_contact 11
@@ -9733,6 +9929,10 @@ new_displays 11
 new_exhibition 11
 new_exhibitions 11
 new_species 11
+<<<<<<< HEAD
+new_year's_eve 11
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 next_month 11
 next_station 11
 nice_design 11
@@ -9784,7 +9984,10 @@ paying 11
 peaceful_oasis 11
 pelican 11
 pen 11
+<<<<<<< HEAD
+=======
 people's_park_centre 11
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 petting_zoo 11
 pharmacy 11
 photo_booth 11
@@ -9864,9 +10067,12 @@ signposting 11
 similarities 11
 simple_walk 11
 singapor 11
+<<<<<<< HEAD
+=======
 singapore's_attractions 11
 singapore's_climate 11
 singapore's_weather 11
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_gp 11
 singapore_landmark 11
 singapore_prices 11
@@ -10129,7 +10335,10 @@ cheap_clothes 10
 cheap_shops 10
 cheap_trinkets 10
 cheek 10
+<<<<<<< HEAD
+=======
 children's_water_park 10
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 chimpanzee 10
 chinese 10
 chinese_market 10
@@ -10726,7 +10935,12 @@ sign_posts 10
 siloso_point 10
 similar_view 10
 sinagpore 10
+<<<<<<< HEAD
+singapore's_development 10
+singapore's_icon 10
+=======
 singapore's_humidity 10
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_art_museum 10
 singapore_holiday 10
 singapore_style 10
@@ -10888,6 +11102,10 @@ visitor's_centre 10
 walk_trails 10
 wallaby 10
 warm_welcome 10
+<<<<<<< HEAD
+water's_edge 10
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 water_droplets 10
 water_lilies 10
 waterfront_area 10
@@ -10904,6 +11122,10 @@ wizard_of_oz_theme 10
 wonderful_collection_of_plants 10
 wonderful_respite 10
 wonderful_restaurants 10
+<<<<<<< HEAD
+world's_largest_glass_greenhouse 10
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 worthwile 10
 ww_ii 10
 xmas_wonderland 10
@@ -10912,6 +11134,10 @@ young_daughter 10
 zoo_entry 10
 1.3km 9
 165m 9
+<<<<<<< HEAD
+1950's 9
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 1960's 9
 1970's 9
 20minutes 9
@@ -11040,7 +11266,11 @@ cheaper_shops 9
 cheapest_beer 9
 chelsea_flower_show 9
 childhood_days 9
+<<<<<<< HEAD
+children's_festival 9
+=======
 children's_water_play_area 9
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 china_town_singapore 9
 chinatown_seafood_restaurant 9
 chinatown_visitor_centre 9
@@ -11542,6 +11772,10 @@ national_parks 9
 national_symbol 9
 natural_touch 9
 natural_waterfall 9
+<<<<<<< HEAD
+nature's_beauty 9
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 negotiation 9
 neighbour 9
 neon 9
@@ -11551,7 +11785,10 @@ new_exhibit 9
 new_garden 9
 new_mrt_station 9
 new_rides 9
+<<<<<<< HEAD
+=======
 new_year's_eve 9
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 new_year_celebrations 9
 new_years 9
 nice_contrast 9
@@ -11631,6 +11868,10 @@ personal_space 9
 personal_tour 9
 pharmacies 9
 photo_id 9
+<<<<<<< HEAD
+photographer's_delight 9
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 photos_of_the_city 9
 photos_of_the_merlion 9
 photoshoots 9
@@ -11758,10 +11999,13 @@ shutters 9
 shuttle_ride 9
 side_of_the_world 9
 silks 9
+<<<<<<< HEAD
+=======
 singapore’s_chinatown 9
 singapore’s_heat 9
 singapore's_development 9
 singapore's_icon 9
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_🇸🇬 9
 singapore_authorities 9
 singapore_bay 9
@@ -11954,7 +12198,10 @@ wonderful_shops 9
 wonderful_space 9
 wonderful_views_of_singapore 9
 wonderland_theme 9
+<<<<<<< HEAD
+=======
 world's_largest_glass_greenhouse 9
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 world_today 9
 worth_buying 9
 yum_cha 9
@@ -11964,7 +12211,10 @@ zookeeper 9
 1-2hrs 8
 14km 8
 1920s 8
+<<<<<<< HEAD
+=======
 1950's 8
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 3-4hrs 8
 3d 8
 3h 8
@@ -12158,8 +12408,12 @@ cheaper_ways 8
 cheapest_option 8
 cherry_blossom_display 8
 cherry_blossom_season 8
+<<<<<<< HEAD
+children's_biennale 8
+=======
 children's_festival 8
 children's_section 8
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 childrens_garden 8
 china_town_market 8
 chinatown_markets 8
@@ -12214,6 +12468,10 @@ cooling_breeze 8
 cost_of_the_ticket 8
 cost_s 8
 costume 8
+<<<<<<< HEAD
+country's_history 8
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 country_of_origin 8
 couple_of_friends 8
 cove 8
@@ -12747,6 +13005,10 @@ medicine 8
 mee_siam 8
 memorable_photos 8
 memory_card 8
+<<<<<<< HEAD
+merlion's_mouth 8
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 mesh 8
 mesmerizing 8
 metal_walkway 8
@@ -12805,6 +13067,10 @@ new_dimension 8
 new_places 8
 new_temple 8
 new_theme 8
+<<<<<<< HEAD
+new_year's_day 8
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 new_year_eve 8
 new_years_day 8
 next_flight 8
@@ -13007,6 +13273,11 @@ sigapore 8
 signature 8
 sim_card 8
 similar_prices 8
+<<<<<<< HEAD
+singapore's_best_attractions 8
+singapore's_national_orchid_garden 8
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore's_symbol 8
 singapore_air_boarding_pass 8
 singapore_day 8
@@ -13196,7 +13467,10 @@ volume_of_people 8
 walker 8
 war_graves 8
 warm_walking 8
+<<<<<<< HEAD
+=======
 water's_edge 8
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 water_garden 8
 water_mist 8
 water_refill_stations 8
@@ -13255,6 +13529,10 @@ youth_olympic_park 8
 zoo-rassic_park 8
 1-altitude 7
 15sgd 7
+<<<<<<< HEAD
+1980's 7
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 1sgd 7
 1st_day 7
 2hr 7
@@ -13262,6 +13540,10 @@ zoo-rassic_park 8
 3rd_tower 7
 40minutes 7
 45minutes 7
+<<<<<<< HEAD
+50's 7
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 500m 7
 52nd_floor 7
 56th_floor_of_the_marina_bay_sands_hotel 7
@@ -13518,8 +13800,11 @@ cheer 7
 chennai 7
 chicken_rice_stalls 7
 childhood_memories 7
+<<<<<<< HEAD
+=======
 children’s_area 7
 children's_biennale 7
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 china_street_fritters 7
 chinatown_food_complex 7
 chinese_heritage_museum 7
@@ -13772,6 +14057,10 @@ fantastic_restaurant 7
 fantastic_spot 7
 fantastic_trees 7
 fantastic_trip 7
+<<<<<<< HEAD
+far_east_organization_children's_garden 7
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 fascinating_look 7
 fascinating_story 7
 fashions 7
@@ -14239,7 +14528,10 @@ mediterranean_climate 7
 mee_goreng 7
 melbourne_zoo 7
 memorable_evening 7
+<<<<<<< HEAD
+=======
 merlion's_mouth 7
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 merlion_cub 7
 merlion_lion 7
 michael 7
@@ -14299,7 +14591,10 @@ native 7
 natural_landscape 7
 natural_place 7
 natural_way 7
+<<<<<<< HEAD
+=======
 nature's_beauty 7
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 nature_enthusiast 7
 nature_enthusiasts 7
 nearby_areas 7
@@ -14451,7 +14746,10 @@ personal_highlight 7
 personalities 7
 perspective_of_singapore 7
 photo-ops 7
+<<<<<<< HEAD
+=======
 photographer's_delight 7
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 photography_enthusiast 7
 photography_lovers 7
 photos_of_flowers 7
@@ -14647,7 +14945,10 @@ shuttle_ticket 7
 side_of_the_city 7
 sides_of_the_bay 7
 similar_places 7
+<<<<<<< HEAD
+=======
 singapore's_best_attractions 7
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore.you 7
 singapore_air 7
 singapore_airline_boarding_pass 7
@@ -14988,7 +15289,10 @@ zoo_train 7
 35-metre_waterfall 6
 3yrs 6
 5-year 6
+<<<<<<< HEAD
+=======
 50's 6
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 56th_floor_of_marina_bay_sands 6
 57th_floor_bar 6
 58th_floor 6
@@ -15164,6 +15468,10 @@ beautiful_waterfront 6
 beauty_of_orchids 6
 beauty_of_the_temple 6
 beauty_of_this_temple 6
+<<<<<<< HEAD
+bee's_knees 6
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 beeline 6
 beginners 6
 behaviors 6
@@ -15313,7 +15621,11 @@ cherry_trees 6
 chest 6
 chester_zoo 6
 chiang_mai 6
+<<<<<<< HEAD
+children's_world 6
+=======
 children’s_playground 6
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 children_water_park 6
 chilled_beer 6
 chilli_sauce 6
@@ -15341,6 +15653,10 @@ chua_ek_kay 6
 cicadas 6
 circle_line_mrt 6
 circular_route 6
+<<<<<<< HEAD
+city's_skyline 6
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 city_buildings 6
 city_bustle 6
 city_gallery 6
@@ -15408,7 +15724,10 @@ cool_temp 6
 coolest_place 6
 corner_of_the_garden 6
 countdown 6
+<<<<<<< HEAD
+=======
 country's_history 6
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 countryside 6
 couple_days 6
 couple_of_beers 6
@@ -16893,7 +17212,13 @@ similar_attractions 6
 similar_experience 6
 similar_price 6
 simplicity 6
+<<<<<<< HEAD
+singapore's_humid_weather 6
+singapore's_original_name 6
+singapore's_version 6
+=======
 singapore's_national_orchid_garden 6
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore.there 6
 singapore_city_centre 6
 singapore_city_skyline 6
@@ -16973,6 +17298,10 @@ spiritual_experience 6
 spirituality 6
 spittoons 6
 square_mall 6
+<<<<<<< HEAD
+st_andrew's_cathedral 6
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 stalagmite 6
 stall_owner 6
 stamford_road 6
@@ -17147,6 +17476,10 @@ un 6
 unbelievable_gardens 6
 underground_bunker_system 6
 underground_connections 6
+<<<<<<< HEAD
+unesco's_world_heritage_list 6
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 unexpected_bonus 6
 unexpected_surprise 6
 unforgettable_day 6
@@ -17201,6 +17534,10 @@ viewing_points 6
 viewing_spot 6
 violet_oon 6
 visit_flower_dome 6
+<<<<<<< HEAD
+visitors'_centre 6
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 visual_displays 6
 visual_experience 6
 vulture 6
@@ -17276,6 +17613,10 @@ wonderful_scenery 6
 wonderful_service 6
 wonderful_thing 6
 world's_best_zoo 6
+<<<<<<< HEAD
+world's_largest_collection 6
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 world_brands 6
 world_gardens 6
 world_history 6
@@ -17349,6 +17690,10 @@ zoom_lens 6
 7:45p 5
 8km 5
 8s 5
+<<<<<<< HEAD
+90's 5
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 abouts 5
 absolute_blast 5
 absolute_credit 5
@@ -17581,7 +17926,10 @@ beautiful_wood_carvings 5
 beautifull_place 5
 beauty_of_plants 5
 bedok_jetty 5
+<<<<<<< HEAD
+=======
 bee's_knees 5
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 bee_hoon 5
 beginner 5
 behalf 5
@@ -17803,8 +18151,12 @@ chicken_satays 5
 chicks 5
 child-friendly 5
 child_ticket 5
+<<<<<<< HEAD
+children's_waterpark 5
+=======
 children’s_gardens 5
 children's_world 5
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 children_area 5
 children_park 5
 chilly_crab 5
@@ -17995,6 +18347,10 @@ dances 5
 dangers 5
 dark_room 5
 darling 5
+<<<<<<< HEAD
+day's_visit 5
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 day_activity 5
 day_business_trip 5
 day_hours 5
@@ -18742,6 +19098,10 @@ hot_tip 5
 hot_water 5
 hotdog 5
 hotel_marina_bay 5
+<<<<<<< HEAD
+hour's_wait 5
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 hour_flight 5
 hours_atleast 5
 hours_of_peace 5
@@ -18887,6 +19247,10 @@ japanese_supermarket 5
 japanese_theme 5
 jasmine 5
 jeep 5
+<<<<<<< HEAD
+jerry's_ice_cream 5
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 jessie 5
 jets 5
 jewel_mall 5
@@ -19284,6 +19648,10 @@ miles_of_paths 5
 min_tour 5
 mini_gardens 5
 minimal_crowds 5
+<<<<<<< HEAD
+minutes'_walk 5
+=======
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 minutes_max 5
 miracle_garden 5
 miscommunication 5
@@ -19402,7 +19770,10 @@ new_sections 5
 new_shops 5
 new_thing 5
 new_wing 5
+<<<<<<< HEAD
+=======
 new_year's_day 5
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 newspaper 5
 next_area 5
 next_building 5
@@ -20012,11 +20383,20 @@ similar_things 5
 simple_food 5
 sing_dollar 5
 singaore 5
+<<<<<<< HEAD
+singapore's_botanic_garden 5
+singapore's_crown 5
+singapore's_fall 5
+singapore's_hot_weather 5
+singapore's_pride 5
+singapore's_top_attractions 5
+=======
 singapore’s_national_flower 5
 singapore's_hot_weather 5
 singapore's_humid_weather 5
 singapore's_top_attractions 5
 singapore's_version 5
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 singapore_airways 5
 singapore_bay_area 5
 singapore_cricket_club 5
@@ -20172,7 +20552,10 @@ steep_price 5
 steer 5
 sticky_day 5
 stoll 5
+<<<<<<< HEAD
+=======
 stone’s_throw 5
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 store_owner 5
 strange_place 5
 strategic_location 5
@@ -20386,7 +20769,10 @@ underground_malls 5
 underground_shopping 5
 underground_system 5
 underground_walkway 5
+<<<<<<< HEAD
+=======
 unesco’s_world_heritage_list 5
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 uneven_surfaces 5
 unexpected_treat 5
 unique_beauty 5
@@ -20594,7 +20980,11 @@ wooden_floor 5
 woodland 5
 workplace 5
 world's_highest_indoor_waterfall 5
+<<<<<<< HEAD
+world's_largest_orchid_display 5
+=======
 world's_largest_collection 5
+>>>>>>> 22c7aff9f662dc6204376f1527f78224e398b4e0
 world-class_attraction 5
 world_class_shopping 5
 world_standard 5
