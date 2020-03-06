@@ -2,17 +2,19 @@ import numpy as np
 import pandas as pd
 import random
 
-path_to_text = 'vectors.txt'
-path_to_excel = '20200304_Aspects_Annotation.xlsx'
+## Default arguments
+path_to_text = './experimentation/yifei_experiment/GloVe/vectors.txt'
+path_to_excel = './experimentation/yifei_experiment/GloVe/20200304_Aspects_Annotation.xlsx'
 train_size = 400
 annotated_size = 500
 word_count_limit = 5
 
-def get_final_dfs(
+def get_final_dfs(  # Returns 4 DFs
     path_to_text,
     path_to_excel,
     train_size=None,
     annotated_size=None,
+    categories=None,
     word_count_limit=5
 ):
     if train_size is None:
@@ -22,9 +24,15 @@ def get_final_dfs(
         
     print("Reading .txt and .xlsx...")
     vectors_df, keywords_df = get_parsed_dfs(path_to_text, path_to_excel, word_count_limit)
-    aspect_categories = get_aspect_categories(keywords_df)
-    aspect_categories_numbered = dict(zip(range(1, 12), aspect_categories))
+    
+    if categories is None:
+        aspect_categories = get_aspect_categories(keywords_df)
+
+    else:
+        aspect_categories = categories    
     no_of_categories = len(aspect_categories)
+    aspect_categories_numbered = dict(zip(range(1, no_of_categories+1), aspect_categories))
+    
     matrix = get_matrix(vectors_df)
     centroids = get_centroids(keywords_df, matrix, aspect_categories, train_size)
     
@@ -177,6 +185,7 @@ def get_accuracy(model, keywords_df, test_indices):
     print("Accuracy: {}".format(sum/len(test_indices)))
     
 if __name__ == "__main__":
+    print('Using default arguments. To ')
     get_final_dfs(
         path_to_text,
         path_to_excel,

@@ -4,9 +4,9 @@
 api_keys.yml
 
 # certain large files
-experimentation/yifei_experiment/GloVe/text8
-experimentation/yifei_experiment/GloVe/vectors.bin
-experimentation/yifei_experiment/GloVe/vectors.txt
-experimentation/yifei_experiment/GloVe/cooccurrence.shuf.bin
-experimentation/yifei_experiment/GloVe/cooccurrence.bin
+//experimentation/yifei_experiment/GloVe/text8
+//experimentation/yifei_experiment/GloVe/vectors.bin
+//experimentation/yifei_experiment/GloVe/vectors.txt
+//experimentation/yifei_experiment/GloVe/cooccurrence.shuf.bin
+//experimentation/yifei_experiment/GloVe/cooccurrence.bin
 
