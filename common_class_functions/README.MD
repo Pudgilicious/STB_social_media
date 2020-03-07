@@ -12,7 +12,7 @@ get_final_dfs(path_to_text, path_to_excel, train_size=None, annotated_size=None,
 - `categories` can be specified. Defaults to all unique categories identified from excel.
 - keywords with count less than `word_count_limit` will automatically be ignored. Defaults to 5.
 
-Returns 4 dataframes of the following structure:
+Returns a tuple of 4 dataframes, each with the following structure:
 | TEXT | 1 | 2 | ... | CLOSEST | PREDICTION |
 |---------|----------|----------|----------|---------|---------------------------------|
 | husband | 4.014806 | 4.218744 | ... | 6 | Family/Children family/ Friends |

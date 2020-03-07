@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import random
 
 ## Default arguments
 path_to_text = './experimentation/yifei_experiment/GloVe/vectors.txt'
@@ -97,7 +96,7 @@ def get_keywords_df(path_to_excel, word_count_limit):
     keywords_df.drop_duplicates('TEXT', inplace=True) # There are duplicates after the .replace() functions
     return keywords_df
 
-def get_parsed_dfs(path_to_text, path_to_excel, word_count_limit):
+def get_parsed_dfs(path_to_text, path_to_excel, word_count_limit):  # inner-join then split to ensure matching row orders
     vectors_df = get_vectors_df(path_to_text)
     keywords_df = get_keywords_df(path_to_excel, word_count_limit=word_count_limit)
     joint_df = vectors_df.merge(keywords_df)
