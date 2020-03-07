@@ -6,6 +6,7 @@ path_to_text = './experimentation/yifei_experiment/GloVe/vectors.txt'
 path_to_excel = './experimentation/yifei_experiment/GloVe/20200304_Aspects_Annotation.xlsx'
 train_size = 400
 annotated_size = 500
+categories = None
 word_count_limit = 5
 
 def get_final_dfs(  # Use this function to get 4 DFs
@@ -24,7 +25,7 @@ def get_final_dfs(  # Use this function to get 4 DFs
         aspect_categories = categories
     no_of_categories = len(aspect_categories)
     aspect_categories_numbered = dict(zip(range(1, no_of_categories+1), aspect_categories))
-
+    
     matrix = get_matrix(vectors_df)
     centroids = get_centroids(keywords_df, matrix, aspect_categories, train_size)
 
@@ -102,6 +103,8 @@ def get_parsed_dfs(path_to_text, path_to_excel, word_count_limit):  # inner-join
     joint_df = vectors_df.merge(keywords_df)
     vectors_df = joint_df.iloc[:, :vectors_df.shape[1]]
     keywords_df = joint_df.iloc[:, vectors_df.shape[1]:]
+    print("vectors_df shape:", vectors_df.shape)
+    print("keywords_df shape:", keywords_df.shape)
     return vectors_df, keywords_df
 
 def get_matrix(vectors_df):
@@ -132,7 +135,7 @@ def get_centroids(keywords_df, matrix, aspect_categories, train_size):
     df_train = keywords_df.iloc[:train_size, :]
     no_of_categories = len(aspect_categories)
     centroids = np.zeros((no_of_categories, 300))
-    print('Number of keywords per category used for centroids:')
+    print('\nNumber of keywords per category used for centroids:')
     for i in range(no_of_categories):
         indices = df_train[df_train.ASPECT_CATEGORY_NAME == aspect_categories[i]].index
         print('{}: {}'.format(aspect_categories[i], len(indices)))
@@ -175,7 +178,8 @@ def parse_to_df(matrix, vectors_df, no_of_categories):
 
 def get_test_indices(df, annotated_size, aspect_categories):
     temp_df = df.iloc[train_size:annotated_size, :]
-    return temp_df[temp_df.ASPECT_CATEGORY_NAME.isin(aspect_categories)].index
+    indices = temp_df[temp_df.ASPECT_CATEGORY_NAME.isin(aspect_categories)].index
+    return indices
 
 def get_accuracy(df, keywords_df, test_indices):
     sum = (df.PREDICTION[test_indices] == keywords_df.ASPECT_CATEGORY_NAME[test_indices]).sum()
@@ -186,7 +190,8 @@ if __name__ == "__main__":
     get_final_dfs(
         path_to_text,
         path_to_excel,
-        train_size=None,
-        annotated_size=None,
-        word_count_limit=5
+        train_size,
+        annotated_size,
+        categories,
+        word_count_limit
     )
