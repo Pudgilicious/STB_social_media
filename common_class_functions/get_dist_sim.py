@@ -12,16 +12,11 @@ word_count_limit = 5
 def get_final_dfs(  # Use this function to get 4 DFs
     path_to_text,
     path_to_excel,
-    train_size=None,
-    annotated_size=None,
+    train_size=400,
+    annotated_size=500,
     categories=None,
     word_count_limit=5
 ):
-    if train_size is None:
-        train_size = 400
-    if annotated_size is None:
-        annotated_size = 500
-
     vectors_df, keywords_df = get_parsed_dfs(path_to_text, path_to_excel, word_count_limit)
 
     if categories is None:
