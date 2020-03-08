@@ -50,7 +50,11 @@ def get_final_dfs(  # Use this function to get tuple of 4 DFs
         )
         df['PREDICTION'] = [aspect_categories_numbered[x] for x in df['CLOSEST']]
 
-    test_indices = get_test_indices(keywords_df, annotated_size, aspect_categories)
+    test_indices = get_test_indices(
+        keywords_df,
+        train_size, 
+        annotated_size, 
+        aspect_categories)
 
     for df in [manhattan_df, euclidean_df, cos_sim_df, corr_df]:
         get_accuracy(df, keywords_df, test_indices)
@@ -164,7 +168,7 @@ def parse_to_df(matrix, vectors_df, no_of_categories):
     final_df.columns = colnames
     return final_df
 
-def get_test_indices(df, annotated_size, aspect_categories):
+def get_test_indices(df, train_size, annotated_size, aspect_categories):
     temp_df = df.iloc[train_size:annotated_size, :]
     indices = temp_df[temp_df.ASPECT_CATEGORY_NAME.isin(aspect_categories)].index
     return indices
