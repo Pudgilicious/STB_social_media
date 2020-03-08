@@ -1,20 +1,16 @@
 import numpy as np
 import pandas as pd
 
-## Default arguments
+## Default paths
 path_to_text = './experimentation/yifei_experiment/GloVe/vectors.txt'
 path_to_excel = './experimentation/yifei_experiment/GloVe/20200304_Aspects_Annotation.xlsx'
-train_size = 400
-annotated_size = 500
-categories = None
-word_count_limit = 5
 
-def get_final_dfs(  # Use this function to get 4 DFs
+def get_final_dfs(  # Use this function to get tuple of 4 DFs
     path_to_text,
     path_to_excel,
     train_size=400,
-    annotated_size=500,
-    categories=None,
+    annotated_size=500,  # Test size is, by default, annotated minus train size
+    categories=None,  # Default is 'None': auto-determined based on annotation
     word_count_limit=5
 ):
     vectors_df, keywords_df = get_parsed_dfs(path_to_text, path_to_excel, word_count_limit)
@@ -86,10 +82,10 @@ def get_keywords_df(path_to_excel, word_count_limit):
         keyword = keyword.replace('ã©', 'é')
         parsed_col_2.append(keyword)
     keywords_df['TEXT'] = parsed_col_2
-    keywords_df.drop_duplicates('TEXT', inplace=True) # There are duplicates after the .replace() functions
+    keywords_df.drop_duplicates('TEXT', inplace=True) # There are duplicates after the .replace() methods
     return keywords_df
 
-def get_parsed_dfs(path_to_text, path_to_excel, word_count_limit):  # inner-join then split to ensure matching row orders
+def get_parsed_dfs(path_to_text, path_to_excel, word_count_limit):  # inner-join then split to ensure rows match based on keyword ('TEXT' column)
     vectors_df = get_vectors_df(path_to_text)
     keywords_df = get_keywords_df(path_to_excel, word_count_limit=word_count_limit)
     joint_df = vectors_df.merge(keywords_df)
@@ -135,7 +131,7 @@ def get_centroids(keywords_df, matrix, aspect_categories, train_size):
     print('\n{} centroids found.\n'.format(len(aspect_categories)))
     return centroids
 
-def get_distances(centroids, matrix, no_of_categories):  # Returns 4 matrices
+def get_distances(centroids, matrix, no_of_categories):  # Returns tuple of 4 matrices
     manhattan_distances = np.zeros((matrix.shape[0], no_of_categories))
     euclidean_distances = np.zeros((matrix.shape[0], no_of_categories))
     cos_sim = np.zeros((matrix.shape[0], no_of_categories))
@@ -178,12 +174,8 @@ def get_accuracy(df, keywords_df, test_indices):
     print("Accuracy: {}".format(sum/len(test_indices)))
 
 if __name__ == "__main__":
-    print('\nUsing default arguments...\n')
+    print('\nUsing default paths and arguments...\n')
     get_final_dfs(
         path_to_text,
-        path_to_excel,
-        train_size,
-        annotated_size,
-        categories,
-        word_count_limit
+        path_to_excel
     )
