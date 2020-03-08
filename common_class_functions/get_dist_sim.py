@@ -40,24 +40,16 @@ def get_final_dfs(  # Use this function to get 4 DFs
     cos_sim_df = parse_to_df(cos_sim, vectors_df, no_of_categories)
     corr_df = parse_to_df(corr, vectors_df, no_of_categories)
 
-    def get_closest_index(row):
-        dictionary = dict(zip(row, list(range(1, no_of_categories+1))))
-        return dictionary[min(row)]
-
-    def get_furthest_index(row):
-        dictionary = dict(zip(row, list(range(1, no_of_categories+1))))
-        return dictionary[max(row)]
-
     for df in [manhattan_df, euclidean_df]:
         df['CLOSEST'] = df.iloc[:, 1:no_of_categories+1].apply(
-            get_closest_index,
+            pd.Series.idxmin,
             axis=1
         )
         df['PREDICTION'] = [aspect_categories_numbered[x] for x in df['CLOSEST']]
 
     for df in [cos_sim_df, corr_df]:
         df['CLOSEST'] = df.iloc[:, 1:no_of_categories+1].apply(
-            get_furthest_index,
+            pd.Series.idxmax,
             axis=1
         )
         df['PREDICTION'] = [aspect_categories_numbered[x] for x in df['CLOSEST']]
