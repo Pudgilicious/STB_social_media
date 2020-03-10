@@ -16,7 +16,7 @@ from Ctrip_fsm import Ctrip_FSM
 
 
 
-with open('config_file_Ctrip.yml') as file:
+with open('config_file.yml') as file:
     configs = yaml.load(file, Loader=yaml.FullLoader)
 
 chromedriver_path = configs['General']['chromedriver_path']
