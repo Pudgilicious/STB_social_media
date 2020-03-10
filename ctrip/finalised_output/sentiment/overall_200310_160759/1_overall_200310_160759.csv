@@ -1,0 +1,9 @@
+WEBSITE_ID,REVIEW_ID,OVERVALL_SCORE,LABEL
+2,0,0.830443,positive
+2,1,0.660619,positive
+2,2,0.719873,positive
+2,3,0.659005,positive
+2,4,-0.591886,negative
+2,5,0.839081,positive
+2,6,0.975686,positive
+2,7,0.950834,positive
