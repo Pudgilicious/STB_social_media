@@ -19,7 +19,8 @@ class IBMSentimentScorerFSM:
             target_folder,
             continue_in_folder=None,
             continue_from_poi_index=None,
-            continue_from_row_index=None
+            continue_from_row_index=None,
+            API_options=None
     ):
         self.sentiment_scorer = IBMSentimentScorer(
             website_name=website_name,
@@ -27,7 +28,8 @@ class IBMSentimentScorerFSM:
             target_folder=target_folder,
             continue_in_folder=continue_in_folder,
             continue_from_poi_index=continue_from_poi_index,
-            continue_from_row_index=continue_from_row_index)
+            continue_from_row_index=continue_from_row_index,
+            API_options=API_options)
         self.authenticator = None
         self.nlu = None
         self.api_key_index = None

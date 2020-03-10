@@ -1,9 +1,10 @@
 import pandas as pd
+import json
 import traceback
 import os
 from datetime import datetime
 from pandas.io.json import json_normalize
-from ibm_watson.natural_language_understanding_v1 import Features, EntitiesOptions, KeywordsOptions
+from ibm_watson.natural_language_understanding_v1 import Features, EntitiesOptions, KeywordsOptions,SentimentOptions
 
 
 class IBMSentimentScorer:
@@ -18,7 +19,9 @@ class IBMSentimentScorer:
                           'DISGUST', 'ANGER', 'MIXED_SENTIMENT',
                           'DISAMBIGUATION_SUBTYPE', 'DISAMBIGUATION_NAME',
                           'DISAMBIGUATION_RESOURCE']
-
+    
+    sentiments_col_names = ['WEBSITE_ID', 'REVIEW_ID','OVERVALL_SCORE','LABEL']
+     
     keywords_col_names_map = {
         'text': 'TEXT',
         'relevance': 'RELEVANCE',
@@ -59,7 +62,8 @@ class IBMSentimentScorer:
             target_folder,
             continue_in_folder=None,
             continue_from_poi_index=None,
-            continue_from_row_index=None
+            continue_from_row_index=None,
+            API_options=None
     ):
         # To continue from previous calls
         self.website_name = website_name
@@ -68,7 +72,8 @@ class IBMSentimentScorer:
         self.continue_in_folder = continue_in_folder
         self.continue_from_poi_index = continue_from_poi_index
         self.continue_from_row_index = continue_from_row_index
-
+        self.API_options=API_options
+        
         # Set up directories
         self.csv_list = os.listdir('./{}/finalised_output/{}/reviews'.format(
             self.website_name,
@@ -81,22 +86,65 @@ class IBMSentimentScorer:
         # Creating empty dataframes to store scores
         self.keywords_col_names_df = pd.DataFrame(columns=self.keywords_col_names)
         self.entities_col_names_df = pd.DataFrame(columns=self.entities_col_names)
-
+        self.overall_sentiment_df = pd.DataFrame(columns=self.sentiments_col_names)
+        
         # Create output directory
-        if self.continue_in_folder is None:
-            self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
-                self.website_name,
-                self.target_folder,
-                datetime.now().strftime('%y%m%d_%H%M%S')
-            )
-            os.makedirs(self.sentiment_folder_path)
+        if self.API_options=="aspects":
+            if self.continue_in_folder is None:
+                self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    datetime.now().strftime('%y%m%d_%H%M%S')
+                )
+                os.makedirs(self.sentiment_folder_path)
+            else:
+                self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    self.continue_in_folder
+                )
+        elif self.API_options=='overall':
+            if self.continue_in_folder is None:
+                self.overall_folder_path = './{}/finalised_output/{}/overall_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    datetime.now().strftime('%y%m%d_%H%M%S')
+                )
+                os.makedirs(self.overall_folder_path)
+            else:
+                self.overall_folder_path = './{}/finalised_output/{}/overall_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    self.continue_in_folder
+                )
         else:
-            self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
-                self.website_name,
-                self.target_folder,
-                self.continue_in_folder
-            )
-
+            if self.continue_in_folder is None:
+                self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    datetime.now().strftime('%y%m%d_%H%M%S')
+                )
+                os.makedirs(self.sentiment_folder_path)
+                self.overall_folder_path = './{}/finalised_output/{}/overall_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    datetime.now().strftime('%y%m%d_%H%M%S')
+                )
+                os.makedirs(self.overall_folder_path)
+            else:
+                self.sentiment_folder_path = './{}/finalised_output/{}/sentiments_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    self.continue_in_folder
+                )
+                self.overall_folder_path = './{}/finalised_output/{}/overall_{}/'.format(
+                    self.website_name,
+                    self.target_folder,
+                    datetime.now().strftime('%y%m%d_%H%M%S')
+                )
+                os.makedirs(self.overall_folder_path)
+                
+                
         # To continue from certain POI index
         if self.continue_from_poi_index is not None:
             self.poi_list = self.poi_list[self.poi_list.index(self.continue_from_poi_index):]
@@ -111,8 +159,9 @@ class IBMSentimentScorer:
         self.current_reviews_df = None
         self.keywords_file_path = None
         self.entities_file_path = None
+        self.sentiment_file_path = None
         self.current_row_index = None
-
+        
         # Per-review variables, reset after every API call
         self.current_df_row = None
         self.current_review_id = None
@@ -120,7 +169,8 @@ class IBMSentimentScorer:
         self.current_api_response = None
         self.keywords_df = None
         self.entities_df = None
-
+        self.overall_df = None
+        
     # Score reviews in target folder
     def score_sentiments(self, nlu):
         self.nlu = nlu
@@ -128,31 +178,80 @@ class IBMSentimentScorer:
 
             # Only create the below if FSM state is not 2 or 3
             if self.fsm_state not in (2, 3):
-                self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
-                self.current_poi_index = self.poi_list.pop(0)
-                self.keywords_file_path = self.sentiment_folder_path + '{}_keywords_{}.csv'.format(
-                    self.current_poi_index,
-                    self.datetime_string
-                )
-                self.entities_file_path = self.sentiment_folder_path + '{}_entities_{}.csv'.format(
-                    self.current_poi_index,
-                    self.datetime_string
-                )
+                if self.API_options=="aspects":
+                    self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
+                    self.current_poi_index = self.poi_list.pop(0)
+                    self.keywords_file_path = self.sentiment_folder_path + '{}_keywords_{}.csv'.format(
+                        self.current_poi_index,
+                        self.datetime_string
+                    )
+                    self.entities_file_path = self.sentiment_folder_path + '{}_entities_{}.csv'.format(
+                        self.current_poi_index,
+                        self.datetime_string
+                    )
+                elif self.API_options=="overall":
+                    self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
+                    self.current_poi_index = self.poi_list.pop(0)
+                    self.overall_file_path = self.overall_folder_path + '{}_overall_{}.csv'.format(
+                        self.current_poi_index,
+                        self.datetime_string
+                    )
+                else:
+                    self.datetime_string = datetime.now().strftime('%y%m%d_%H%M%S')
+                    self.current_poi_index = self.poi_list.pop(0)
+                    self.keywords_file_path = self.sentiment_folder_path + '{}_keywords_{}.csv'.format(
+                        self.current_poi_index,
+                        self.datetime_string
+                    )
+                    self.entities_file_path = self.sentiment_folder_path + '{}_entities_{}.csv'.format(
+                        self.current_poi_index,
+                        self.datetime_string
+                    )
+                    self.overall_file_path = self.overall_folder_path + '{}_overall_{}.csv'.format(
+                        self.current_poi_index,
+                        self.datetime_string
+                    )
 
                 # Create empty CSVs with all headers
-                keywords_col_names_df = pd.DataFrame(columns=self.keywords_col_names)
-                keywords_col_names_df.to_csv(
-                    self.keywords_file_path,
+                if self.API_options=="aspects":
+                    keywords_col_names_df = pd.DataFrame(columns=self.keywords_col_names)
+                    keywords_col_names_df.to_csv(
+                        self.keywords_file_path,
+                        mode='a',
+                        index=False
+                    )
+                    entities_col_names_df = pd.DataFrame(columns=self.entities_col_names)
+                    entities_col_names_df.to_csv(
+                        self.entities_file_path,
+                        mode='a',
+                        index=False
+                    )
+                elif self.API_options=="overall":
+                    overall_sentiment_df = pd.DataFrame(columns=self.sentiments_col_names)
+                    overall_sentiment_df.to_csv(
+                    self.overall_file_path,
                     mode='a',
-                    index=False
-                )
-                entities_col_names_df = pd.DataFrame(columns=self.entities_col_names)
-                entities_col_names_df.to_csv(
-                    self.entities_file_path,
+                    index=False)
+                else:
+                    keywords_col_names_df = pd.DataFrame(columns=self.keywords_col_names)
+                    keywords_col_names_df.to_csv(
+                        self.keywords_file_path,
+                        mode='a',
+                        index=False
+                    )
+                    entities_col_names_df = pd.DataFrame(columns=self.entities_col_names)
+                    entities_col_names_df.to_csv(
+                        self.entities_file_path,
+                        mode='a',
+                        index=False
+                    )
+                    overall_sentiment_df = pd.DataFrame(columns=self.sentiments_col_names)
+                    overall_sentiment_df.to_csv(
+                    self.overall_file_path,
                     mode='a',
-                    index=False
-                )
-
+                    index=False)
+                    
+                    
             # Scoring
             self.score_sentiments_1_poi()
 
@@ -206,7 +305,7 @@ class IBMSentimentScorer:
                 self.get_api_response()
             except Exception as e:
                 print('Error in API call. Please see log file.')
-                log = open(self.sentiment_folder_path + 'log.txt', 'a+')
+                log = open('./finalised_output/{}/log(API).txt'.format(self.target_folder), 'a+')
                 log.write('Error in API call.\n')
                 log.write('POI index: {}, review ID: {}, row index: {}, time: {}\n'.format(
                     self.current_poi_index,
@@ -239,7 +338,7 @@ class IBMSentimentScorer:
                 self.write_to_csv()
             except Exception as e:
                 print('Error in parsing API response or writing to CSV. Please see log file.')
-                log = open(self.sentiment_folder_path + 'log.txt', 'a+')
+                log = open('./finalised_output/{}/log(API).txt'.format(self.target_folder), 'a+')
                 log.write('Error in parsing API response or writing to CSV.\n')
                 log.write('POI index: {}, review ID: {}, row index: {}, time: {}\n'.format(
                     self.current_poi_index,
@@ -259,48 +358,118 @@ class IBMSentimentScorer:
             self.current_row_index += 1
 
     def get_api_response(self):
-        self.current_api_response = self.nlu.analyze(
-            text=self.current_review_text,
-            features=Features(
-                entities=EntitiesOptions(emotion=True, sentiment=True, limit=10000),
-                keywords=KeywordsOptions(emotion=True, sentiment=True, limit=10000)
-            )
-        ).get_result()
-
-    def parse_response(self):
-        # In case 'keywords' not in api response
-        if 'keywords' in self.current_api_response.keys():
-            self.keywords_df = json_normalize(self.current_api_response['keywords'])\
-                .rename(columns=self.keywords_col_names_map)
-            self.keywords_df.insert(0, 'REVIEW_ID', self.current_review_id)
-            self.keywords_df.insert(0, 'WEBSITE_ID', self.website_id)
-            self.keywords_df = self.keywords_col_names_df.append(self.keywords_df, sort=False)
-
-        # In case 'entities' not in api response
-        if 'entities' in self.current_api_response.keys():
-            self.entities_df = json_normalize(self.current_api_response['entities'])\
-                .rename(columns=self.entities_col_names_map)
-            if self.entities_df.shape[1] != 0:
-                self.entities_df.insert(0, 'REVIEW_ID', self.current_review_id)
-                self.entities_df.insert(0, 'WEBSITE_ID', self.website_id)
-                self.entities_df = self.entities_col_names_df.append(self.entities_df, sort=False)
-
-    def write_to_csv(self):
-        self.keywords_df.to_csv(
-            self.keywords_file_path,
-            mode='a',
-            header=False,
-            index=False
-        )
-        if self.entities_df is None or self.entities_df.shape[1] == 0:
-            return
+        if self.API_options=="aspects":
+            self.current_api_response = self.nlu.analyze(
+                text=self.current_review_text,
+                features=Features(
+                    entities=EntitiesOptions(emotion=True, sentiment=True, limit=10000),
+                    keywords=KeywordsOptions(emotion=True, sentiment=True, limit=10000)
+                )
+            ).get_result()
+        elif self.API_options=="overall":
+            self.current_api_response=self.nlu.analyze(
+                text=self.current_review_text,
+                features=Features(sentiment=SentimentOptions(document=True))).get_result()
         else:
-            self.entities_df.to_csv(
-                self.entities_file_path,
+           self.current_api_response = self.nlu.analyze(
+                text=self.current_review_text,
+                features=Features(
+                    entities=EntitiesOptions(emotion=True, sentiment=True, limit=10000),
+                    keywords=KeywordsOptions(emotion=True, sentiment=True, limit=10000),
+                    sentiment=SentimentOptions(document=True)
+                )
+            ).get_result() 
+    def parse_response(self):
+        if self.API_options=="aspects":
+            # In case 'keywords' not in api response
+            if 'keywords' in self.current_api_response.keys():
+                self.keywords_df = json_normalize(self.current_api_response['keywords'])\
+                    .rename(columns=self.keywords_col_names_map)
+                self.keywords_df.insert(0, 'REVIEW_ID', self.current_review_id)
+                self.keywords_df.insert(0, 'WEBSITE_ID', self.website_id)
+                self.keywords_df = self.keywords_col_names_df.append(self.keywords_df, sort=False)
+    
+            # In case 'entities' not in api response
+            if 'entities' in self.current_api_response.keys():
+                self.entities_df = json_normalize(self.current_api_response['entities'])\
+                    .rename(columns=self.entities_col_names_map)
+                if self.entities_df.shape[1] != 0:
+                    self.entities_df.insert(0, 'REVIEW_ID', self.current_review_id)
+                    self.entities_df.insert(0, 'WEBSITE_ID', self.website_id)
+                    self.entities_df = self.entities_col_names_df.append(self.entities_df, sort=False)
+        elif self.API_options=="overall":
+            if 'sentiment' in self.current_api_response.keys():
+                self.overall_df = json_normalize(self.current_api_response['sentiment']['document'])       
+                self.overall_df.insert(0, 'REVIEW_ID', self.current_review_id)
+                self.overall_df.insert(0, 'WEBSITE_ID', self.website_id)             
+        else:
+            if 'sentiment' in self.current_api_response.keys():
+                self.overall_df = json_normalize(self.current_api_response['sentiment']['document'])       
+                self.overall_df.insert(0, 'REVIEW_ID', self.current_review_id)
+                self.overall_df.insert(0, 'WEBSITE_ID', self.website_id)
+            # In case 'keywords' not in api response
+            if 'keywords' in self.current_api_response.keys():
+                self.keywords_df = json_normalize(self.current_api_response['keywords'])\
+                    .rename(columns=self.keywords_col_names_map)
+                self.keywords_df.insert(0, 'REVIEW_ID', self.current_review_id)
+                self.keywords_df.insert(0, 'WEBSITE_ID', self.website_id)
+                self.keywords_df = self.keywords_col_names_df.append(self.keywords_df, sort=False)
+    
+            # In case 'entities' not in api response
+            if 'entities' in self.current_api_response.keys():
+                self.entities_df = json_normalize(self.current_api_response['entities'])\
+                    .rename(columns=self.entities_col_names_map)
+                if self.entities_df.shape[1] != 0:
+                    self.entities_df.insert(0, 'REVIEW_ID', self.current_review_id)
+                    self.entities_df.insert(0, 'WEBSITE_ID', self.website_id)
+                    self.entities_df = self.entities_col_names_df.append(self.entities_df, sort=False)
+  
+                
+    def write_to_csv(self):
+        if self.API_options=="aspects":
+            self.keywords_df.to_csv(
+                self.keywords_file_path,
                 mode='a',
                 header=False,
                 index=False
             )
+            if self.entities_df is None or self.entities_df.shape[1] == 0:
+                return
+            else:
+                self.entities_df.to_csv(
+                    self.entities_file_path,
+                    mode='a',
+                    header=False,
+                    index=False
+                )
+        elif self.API_options=="overall":
+            self.overall_df.to_csv(
+            self.overall_file_path,
+            mode='a',
+            header=False,
+            index=False)
+        else:
+            self.overall_df.to_csv(
+                self.overall_file_path,
+                mode='a',
+                header=False,
+                index=False)
+            self.keywords_df.to_csv(
+                    self.keywords_file_path,
+                    mode='a',
+                    header=False,
+                    index=False
+                )
+            if self.entities_df is None or self.entities_df.shape[1] == 0:
+                return
+            else:
+                self.entities_df.to_csv(
+                    self.entities_file_path,
+                    mode='a',
+                    header=False,
+                    index=False
+                )
+            
 
     def reset_per_poi_variables(self):
         self.datetime_string = None
@@ -308,6 +477,7 @@ class IBMSentimentScorer:
         self.current_reviews_df = None
         self.keywords_file_path = None
         self.entities_file_path = None
+        self.sentiments_file_path = None
         self.current_row_index = None
 
     def reset_per_review_variables(self):
@@ -317,3 +487,4 @@ class IBMSentimentScorer:
         self.current_api_response = None
         self.keywords_df = None
         self.entities_df = None
+        self.overall_df = None
