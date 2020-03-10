@@ -20,3 +20,21 @@ TripAdvisor:
     continue_in_folder: # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
     continue_from_poi_index:
     continue_from_row_index:
+
+Ctrip:
+    csv_input_path: ./ctrip/0216_prio_list.csv
+    read_from_database: csv  # mysql, sqlite or csv
+    write_to_database: csv  # mysql, sqlite or csv
+    number_of_pages:  # int or None. if 0, only Attributes are crawled. number of pages per POI
+    proxy_mode: 2 #1:SG, 2: SG->proxy; 3: proxy
+    timeout: 120 #in seconds, stop loading after limit reached. If None, always complete loading 
+    authen_count: 3 #reload time to test whether authentication error exist or not. Min 1
+    prioritize: TRUE #True, only crawl prioritized POIs;False, crawl all POIs
+    
+
+# Scorer parameters
+    target_folder: 'sentiment'  # in the format 'yyymmdd_hhmmss'
+    continue_in_folder: # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
+    continue_from_poi_index:
+    continue_from_row_index:
+    API_options: "overall_aspect" #"aspect","overall_aspect"
