@@ -1,0 +1,109 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,746,Location,Osaka,0.963296,1,0.981162,0,neutral,0.032276,0.568253,0.312305,0.077989,0.011248,,,,
+2,746,Facility,Universal Studios,0.47728,1,0.338805,0,neutral,0.032276,0.568253,0.312305,0.077989,0.011248,,,,
+2,1806,Person,出行当日下雨 有,0.978348,1,,0,neutral,,,,,,,,,
+2,2246,Person,出行太方便了,0.978348,1,,0,neutral,,,,,,,,,
+2,2437,Ordinal,一次,0.978348,1,,0,neutral,,,,,,,,,
+2,2761,Ordinal,一次,0.978348,1,,0.635953,positive,,,,,,,,,
+2,3213,Location,singapore,0.978348,1,0.999294,0.939484,positive,0.110253,0.729238,0.055996,0.057565,0.023316,,,Singapore,http://dbpedia.org/resource/Singapore
+2,5298,Person,Vy gd,0.978348,1,0.236476,0.942286,positive,0.144716,0.127282,0.030277,0.102523,0.109234,,,,
+2,5317,GeographicFeature,好玩哈哈哈哈哈,0.958279,1,,-0.511403,negative,,,,,,,,,
+2,5317,GeographicFeature,选哈哈哈哈,0.821303,1,,-0.511403,negative,,,,,,,,,
+2,5317,GeographicFeature,哈哈哈,0.423646,1,,0.0,neutral,,,,,,,,,
+2,6219,GeographicFeature,Sentosa Island,0.958279,1,0.602889,0.0,neutral,0.076875,0.441001,0.138141,0.074217,0.028575,,"['Location', 'Island']",Sentosa,http://dbpedia.org/resource/Sentosa
+2,6219,Facility,Universal Studios,0.414522,1,0.452004,0.706049,positive,0.102125,0.206415,0.064052,0.084197,0.052311,,,,
+2,6219,Location,Singapore,0.368884,1,0.998972,0.0,neutral,0.076875,0.441001,0.138141,0.074217,0.028575,,,Singapore,http://dbpedia.org/resource/Singapore
+2,7144,Location,Singapore,0.978348,2,0.999857,0.900271,positive,0.060794,0.642717,0.04047,0.045352,0.033961,,,Singapore,http://dbpedia.org/resource/Singapore
+2,7144,Facility,Universal Studio,0.826876,1,0.649712,-0.93412,negative,0.167702,0.453552,0.098509,0.030748,0.125976,,,,
+2,7465,Location,セントーサ島,0.978348,1,,0,neutral,,,,,,,,,
+2,9247,Location,Singapore,0.978348,1,0.971718,0,neutral,0.157996,0.242751,0.187241,0.047401,0.113752,,,Singapore,http://dbpedia.org/resource/Singapore
+2,13893,Location,Singapore,0.978348,1,0.998063,0.953265,positive,0.08114,0.773822,0.015126,0.017513,0.028371,,,Singapore,http://dbpedia.org/resource/Singapore
+2,14797,Location,Singapore,0.978348,1,0.980783,0.947021,positive,0.053526,0.866989,0.003753,0.011163,0.029171,,,Singapore,http://dbpedia.org/resource/Singapore
+2,15440,Facility,！！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,17518,Location,Singapore,0.978348,1,,0,neutral,,,,,,,,Singapore,http://it.dbpedia.org/resource/Singapore
+2,17937,Location,Singapore,0.963296,1,0.984965,0.742929,positive,0.397156,0.39421,0.104125,0.032133,0.07945,,,Singapore,http://dbpedia.org/resource/Singapore
+2,17937,Location,China Town,0.272553,1,0.566369,0.985641,positive,0.040183,0.850626,0.030042,0.038405,0.021675,,,,
+2,20754,Person,超美,0.978348,1,,0,neutral,,,,,,,,,
+2,21115,Time,夜,0.978348,1,,0.87257,positive,,,,,,,,,
+2,21166,Facility,！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,23519,Person,海底生物非常多,0.978348,1,,0,neutral,,,,,,,,,
+2,29780,Hashtag,#supermoon,0.963296,1,0.8,0,neutral,0.402412,0.121132,0.187838,0.034667,0.172373,,,,
+2,29780,Location,LV,8.3e-05,1,0.627311,0,neutral,0.402412,0.121132,0.187838,0.034667,0.172373,,,,
+2,30991,Location,Singapore,0.9999,2,0.999908,0.792893,positive,0.489242,0.358245,0.108565,0.045414,0.104169,,,Singapore,http://dbpedia.org/resource/Singapore
+2,31219,GeographicFeature,Beautiful beach,0.978348,1,0.242501,0.983392,positive,0.009399,0.974612,0.004675,0.004029,0.004526,,,,
+2,34018,Facility,！！！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,37391,Person,ペール,0.978348,1,,-0.814459,negative,,,,,,,,,
+2,37501,Facility,！！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,37720,Facility,Singapore Art Gallery,0.963296,1,0.496664,0.995886,positive,0.046456,0.847485,0.047924,0.011623,0.066683,,,,
+2,37720,Quantity,2 hours,0.243728,2,0.96,0.995886,positive,0.046456,0.847485,0.047924,0.011623,0.066683,,,,
+2,37764,Organization,National Gallery Singapore,0.963296,1,0.368694,0,neutral,0.018058,0.663196,0.082001,0.076329,0.097094,,,,
+2,37764,Location,Singapore,0.315813,1,0.993924,0,neutral,0.018058,0.663196,0.082001,0.076329,0.097094,,,Singapore,http://dbpedia.org/resource/Singapore
+2,37813,Date,览日期,0.963296,1,,0,neutral,,,,,,,,,
+2,37813,Date,2017年6月9日至9月3日,0.455137,1,,0,neutral,,,,,,,,,
+2,39139,Person,太好了,0.963296,1,,0,neutral,,,,,,,,,
+2,39139,Organization,下次会,0.532933,1,,0,neutral,,,,,,,,,
+2,39148,Facility,good！！！！！！！！！！！！！,0.978348,1,,0.881005,positive,,,,,,,,,
+2,39701,Sport,swimming,0.963296,1,0.917649,0.64987,positive,0.130727,0.669068,0.124664,0.049006,0.029765,,,,
+2,39701,Facility,infinity pool marina bay,0.943253,1,0.353706,0.64987,positive,0.130727,0.669068,0.124664,0.049006,0.029765,,,,
+2,40526,Person,期望与失望成正比,0.978348,1,,-0.862888,negative,,,,,,,,,
+2,40920,Person,可以不看,0.978348,1,,0,neutral,,,,,,,,,
+2,41106,Facility,！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,41989,Facility,！！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,42031,Person,值得看！！,0.978348,1,,0.671186,positive,,,,,,,,,
+2,42332,Person,只能用神奇形容,0.963296,1,,0,neutral,,,,,,,,,
+2,42332,Person,都完美,0.56879,1,,0,neutral,,,,,,,,,
+2,46601,Facility,Jurong Bird Park,0.978348,1,0.725058,0,neutral,0.112848,0.275257,0.108466,0.150431,0.138457,,"['Location', 'TouristAttraction']",Jurong_Bird_Park,http://dbpedia.org/resource/Jurong_Bird_Park
+2,46651,Facility,！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,48392,Person,可以待很久,0.978348,1,,-0.482152,negative,,,,,,,,,
+2,48685,Location,Singapore,0.978348,1,0.975962,0,neutral,0.208217,0.570507,0.113609,0.024493,0.101287,,,Singapore,http://dbpedia.org/resource/Singapore
+2,52642,GeographicFeature,Natural Island,0.978348,1,0.460899,0.935709,positive,0.040996,0.823754,0.06577,0.063471,0.029122,,,,
+2,53045,Date,明日,0.978348,1,,0.383898,positive,,,,,,,,,
+2,53369,Person,チョウ博士,0.978348,1,,0.831817,positive,,,,,,,,,
+2,54557,Time,夜,0.978348,1,,-0.416906,negative,,,,,,,,,
+2,56851,GeographicFeature,海,0.978348,1,,-0.730108,negative,,,,,,,,,
+2,57231,Location,シンガポール,0.978348,1,,0,neutral,,,,,,,,,
+2,57395,Person,地方不算大，内容多,0.963296,1,,0,neutral,,,,,,,,,
+2,57395,Organization,下次有机会再看,0.274153,1,,0,neutral,,,,,,,,,
+2,58325,Person,マーライオン,0.978348,1,,-0.889553,negative,,,,,,,,,
+2,58389,Facility,Changi Airport,0.978348,1,0.850131,0.691771,positive,0.17239,0.159563,0.076278,0.015056,0.08954,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,59193,Duration,毎日2〜3日,0.978348,1,,-0.685487,negative,,,,,,,,,
+2,59824,Facility,Changi Airport Terminal,0.954265,1,0.821845,0.451515,positive,0.116037,0.305717,0.124684,0.154635,0.340625,,,,
+2,59824,Quantity,12 meters,0.579353,1,0.8,0.451515,positive,0.116037,0.305717,0.124684,0.154635,0.340625,,,,
+2,59824,Location,Singapore,0.401174,1,0.890449,0.451515,positive,0.116037,0.305717,0.124684,0.154635,0.340625,,,Singapore,http://dbpedia.org/resource/Singapore
+2,59824,Quantity,4 seconds,0.206843,1,0.8,0.451515,positive,0.116037,0.305717,0.124684,0.154635,0.340625,,,,
+2,59824,Facility,Changi Airport,0.154088,1,0.977914,0.0,neutral,0.387854,0.188386,0.115604,0.038193,0.095963,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60182,Facility,Changi Airport Terminal,0.978348,1,0.860544,0.998284,positive,0.031768,0.831358,0.017719,0.019048,0.016675,,,,
+2,60377,Facility,Changi airport,0.963296,1,0.917326,0.617608,positive,0.364301,0.068165,0.200751,0.096678,0.046029,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60377,Quantity,4 hours,0.433434,1,0.8,0.870193,positive,0.234103,0.47819,0.179795,0.054399,0.095203,,,,
+2,60405,Facility,Changi airport,0.958279,1,0.908357,0.937535,positive,0.111917,0.697126,0.043405,0.016,0.131937,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60405,Quantity,20 minute,0.799981,1,0.8,-0.426915,negative,0.123959,0.390893,0.201628,0.316613,0.13376,,,,
+2,60405,Quantity,3 minutes,0.383841,1,0.8,0.609798,positive,0.123959,0.390893,0.201628,0.316613,0.13376,1,,,
+2,60406,GeographicFeature,Forest Valley,0.95577,1,0.281349,0.0,neutral,0.164754,0.349092,0.261067,0.013826,0.039473,,,,
+2,60406,Facility,Singapore Airport,0.899484,1,0.467516,0.0,neutral,0.164754,0.349092,0.261067,0.013826,0.039473,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60406,Quantity,40 meters,0.486602,1,0.8,0.679138,positive,0.159969,0.379448,0.128457,0.21225,0.131556,,,,
+2,60406,Company,HSBC,0.476991,1,0.896044,0.0,neutral,0.164754,0.349092,0.261067,0.013826,0.039473,,,,
+2,60770,Person,楽園,0.978348,1,,0.902737,positive,,,,,,,,,
+2,60788,Quantity,9 meters,0.963296,1,0.8,0.790799,positive,0.076554,0.421537,0.185867,0.006352,0.10625,,,,
+2,60788,Facility,Changi Airport,0.648231,2,0.991874,0.920624,positive,0.292798,0.554882,0.047806,0.012145,0.038756,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60989,Location,アルメニア,0.978348,1,,0,neutral,,,,,,,,,
+2,61240,Location,シンガポール,0.978348,1,,0,neutral,,,,,,,,,
+2,61343,Location,Singapore,0.978348,1,0.825738,0.939618,positive,0.099488,0.246079,0.069764,0.028651,0.058976,,,Singapore,http://dbpedia.org/resource/Singapore
+2,61377,Facility,虹の丘,0.978348,1,,0.992413,positive,,,,,,,,,
+2,62113,Hashtag,#cloudforest,0.978348,1,0.8,0,neutral,0.101565,0.792805,0.032248,0.024644,0.025123,,,,
+2,62785,Location,シンガポール,0.978348,1,,0,neutral,,,,,,,,,
+2,62936,Time,午前中,0.978348,1,,-0.686059,negative,,,,,,,,,
+2,63212,Facility,Terminal 1,0.958279,1,0.163394,0.0,neutral,0.320158,0.187813,0.185415,0.074761,0.14311,,"['Location', 'ShoppingCenter']",Terminal_One_Mall,http://dbpedia.org/resource/Terminal_One_Mall
+2,63212,Quantity,18-month,0.712685,1,0.8,0.642742,positive,0.405934,0.46577,0.087371,0.067823,0.051577,,,,
+2,63212,Quantity,12-year,0.637168,1,0.8,0.642742,positive,0.405934,0.46577,0.087371,0.067823,0.051577,,,,
+2,64099,Facility,Changi Airport,0.963296,1,0.911493,0,neutral,0.231477,0.417664,0.025892,0.183915,0.206231,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,64099,Facility,Terminal 3,0.708091,1,0.409204,0,neutral,0.231477,0.417664,0.025892,0.183915,0.206231,,,,
+2,66022,Ordinal,最後,0.978348,1,,-0.801677,negative,,,,,,,,,
+2,66201,Facility,Miaja Gallery,0.963296,1,0.855402,0.909279,positive,0.040691,0.824482,0.053976,0.026866,0.015572,,,,
+2,66201,Location,Singapore,0.451173,1,0.994525,0.909279,positive,0.040691,0.824482,0.053976,0.026866,0.015572,,,Singapore,http://dbpedia.org/resource/Singapore
+2,66636,Location,Singapore,0.968313,2,0.999815,0.908447,positive,0.026159,0.810122,0.050357,0.025418,0.076746,,,Singapore,http://dbpedia.org/resource/Singapore
+2,66636,Company,Michelin,0.732118,1,0.474513,0.911249,positive,0.012603,0.831797,0.04085,0.018586,0.026162,,['AwardPresentingOrganization'],Michelin,http://dbpedia.org/resource/Michelin
+2,66636,Organization,hawker centre,0.279932,1,0.453377,0.862237,positive,0.230759,0.439512,0.030064,0.12411,0.059748,,,,
+2,66637,Location,Singapore,0.968313,2,0.999815,0.908447,positive,0.026159,0.810122,0.050357,0.025418,0.076746,,,Singapore,http://dbpedia.org/resource/Singapore
+2,66637,Company,Michelin,0.732118,1,0.474513,0.911249,positive,0.012603,0.831797,0.04085,0.018586,0.026162,,['AwardPresentingOrganization'],Michelin,http://dbpedia.org/resource/Michelin
+2,66637,Organization,hawker centre,0.279932,1,0.453377,0.862237,positive,0.230759,0.439512,0.030064,0.12411,0.059748,,,,
+2,67158,Date,春,0.978348,1,,0.903239,positive,,,,,,,,,

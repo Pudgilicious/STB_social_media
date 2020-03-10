@@ -74,7 +74,7 @@ class IBMSentimentScorer:
         self.continue_from_poi_index = continue_from_poi_index
         self.continue_from_row_index = continue_from_row_index
         self.API_options=API_options
-	self.website=website_name
+        self.website=website_name
         
         # Set up directories
         self.csv_list = os.listdir('./{}/finalised_output/{}/reviews'.format(
