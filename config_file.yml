@@ -37,4 +37,4 @@ Ctrip:
     continue_in_folder: # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
     continue_from_poi_index:
     continue_from_row_index:
-    API_options: "overall_aspect" #"aspect","overall_aspect"
+    API_options: "overall" #"aspect","overall_aspect"

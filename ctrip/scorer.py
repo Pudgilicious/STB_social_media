@@ -22,6 +22,7 @@ continue_in_folder = configs['Ctrip']['continue_in_folder']
 continue_from_poi_index = configs['Ctrip']['continue_from_poi_index']
 continue_from_row_index = configs['Ctrip']['continue_from_row_index']
 API_options = configs['Ctrip']['API_options']
+
 # Initialize FSM object
 fsm = IBMSentimentScorerFSM(
     website_name='ctrip',

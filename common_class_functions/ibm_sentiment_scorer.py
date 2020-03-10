@@ -63,7 +63,8 @@ class IBMSentimentScorer:
             continue_in_folder=None,
             continue_from_poi_index=None,
             continue_from_row_index=None,
-            API_options=None
+            API_options=None,
+	    website=None
     ):
         # To continue from previous calls
         self.website_name = website_name
@@ -73,6 +74,7 @@ class IBMSentimentScorer:
         self.continue_from_poi_index = continue_from_poi_index
         self.continue_from_row_index = continue_from_row_index
         self.API_options=API_options
+	self.website=website_name
         
         # Set up directories
         self.csv_list = os.listdir('./{}/finalised_output/{}/reviews'.format(
@@ -305,7 +307,7 @@ class IBMSentimentScorer:
                 self.get_api_response()
             except Exception as e:
                 print('Error in API call. Please see log file.')
-                log = open('./finalised_output/{}/log(API).txt'.format(self.target_folder), 'a+')
+                log = open('./{}/finalised_output/{}/log(API).txt'.format(self.website,self.target_folder), 'a+')
                 log.write('Error in API call.\n')
                 log.write('POI index: {}, review ID: {}, row index: {}, time: {}\n'.format(
                     self.current_poi_index,
@@ -338,7 +340,7 @@ class IBMSentimentScorer:
                 self.write_to_csv()
             except Exception as e:
                 print('Error in parsing API response or writing to CSV. Please see log file.')
-                log = open('./finalised_output/{}/log(API).txt'.format(self.target_folder), 'a+')
+                log = open('./{}/finalised_output/{}/log(API).txt'.format(self.website,self.target_folder), 'a+')
                 log.write('Error in parsing API response or writing to CSV.\n')
                 log.write('POI index: {}, review ID: {}, row index: {}, time: {}\n'.format(
                     self.current_poi_index,

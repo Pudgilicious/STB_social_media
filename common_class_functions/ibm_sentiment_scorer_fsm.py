@@ -20,7 +20,8 @@ class IBMSentimentScorerFSM:
             continue_in_folder=None,
             continue_from_poi_index=None,
             continue_from_row_index=None,
-            API_options=None
+            API_options=None,
+	    website=None
     ):
         self.sentiment_scorer = IBMSentimentScorer(
             website_name=website_name,
