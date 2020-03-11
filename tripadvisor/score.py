@@ -13,7 +13,7 @@ target_folder = configs['TripAdvisor']['target_folder']
 continue_in_folder = configs['TripAdvisor']['continue_in_folder']
 continue_from_poi_index = configs['TripAdvisor']['continue_from_poi_index']
 continue_from_row_index = configs['TripAdvisor']['continue_from_row_index']
-
+API_options = configs['TripAdvisor']['API_options']
 # Initialize FSM object
 fsm = IBMSentimentScorerFSM(
     website_name='tripadvisor',
@@ -21,7 +21,8 @@ fsm = IBMSentimentScorerFSM(
     target_folder=target_folder,
     continue_in_folder=continue_in_folder,
     continue_from_poi_index=continue_from_poi_index,
-    continue_from_row_index=continue_from_row_index
+    continue_from_row_index=continue_from_row_index,
+    API_options=API_options
 )
 
 # Start API calls
