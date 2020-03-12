@@ -1,0 +1,39 @@
+Error in API call.
+POI index: 4, review ID: 660006131, row index: 4011, time: 2020-03-11 19:23:43.657923
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: sk, Code: 400 , X-global-transaction-id: 99c98ccb4a899aefc3a6141940094677
+
+Error in API call.
+POI index: 5, review ID: 660007046, row index: 6287, time: 2020-03-11 20:34:45.472760
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: sk, Code: 400 , X-global-transaction-id: f1b8b8ae8238ab55ec3101d00a6b24c4
+
+Error in API call.
+POI index: 6, review ID: 598449946, row index: 4399, time: 2020-03-11 21:32:08.498029
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: ms, Code: 400 , X-global-transaction-id: 23b3f63e89789e5db3578b8820cf5687
+

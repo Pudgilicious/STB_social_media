@@ -1,0 +1,136 @@
+Error in API call.
+POI index: 9, review ID: 539009983, row index: 1554, time: 2020-03-11 22:10:13.658930
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: Bad Gateway, Code: 502
+
+Error in API call.
+POI index: 9, review ID: 501111117, row index: 2218, time: 2020-03-11 22:18:38.066644
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: <HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;a5a3db17&#46;1583936317&#46;26d815c7
+</BODY></HTML>
+, Code: 503
+
+Error in API call.
+POI index: 10, review ID: 490239720, row index: 542, time: 2020-03-11 22:26:48.834648
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: <HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;947f3517&#46;1583936808&#46;12874083
+</BODY></HTML>
+, Code: 503
+
+Error in API call.
+POI index: 18, review ID: 732674453, row index: 5, time: 2020-03-12 01:01:17.089029
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: pl, Code: 400 , X-global-transaction-id: 1f8501f043efda0ea321900f413082f0
+
+Error in API call.
+POI index: 19, review ID: 494480247, row index: 103, time: 2020-03-12 01:31:22.214102
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: fa, Code: 400 , X-global-transaction-id: 25a5c0b7bec978eff65c3ea69e91e92a
+
+Error in API call.
+POI index: 20, review ID: 443892721, row index: 598, time: 2020-03-12 01:44:53.639940
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: id, Code: 400 , X-global-transaction-id: d309d93a88ace51acdcc77823ac26995
+
+Error in API call.
+POI index: 21, review ID: 500638023, row index: 649, time: 2020-03-12 02:12:08.169931
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: <HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;5776d317&#46;1583950328&#46;10195d0b
+</BODY></HTML>
+, Code: 503
+
+Error in API call.
+POI index: 21, review ID: 630101103, row index: 1714, time: 2020-03-12 02:21:23.754097
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 374, in get_api_response
+    features=Features(sentiment=SentimentOptions(document=True))).get_result()
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 185, in analyze
+    response = self.send(request)
+  File "/home/stb/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 229, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: <HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;21781bb8&#46;1583950883&#46;1b43169e
+</BODY></HTML>
+, Code: 503
+
