@@ -78,7 +78,7 @@ def get_vectors_df(path_to_text):
 def get_keywords_df(path_to_excel, word_count_limit):
     print("Reading xlsx...\n")
     keywords_df = pd.read_excel(path_to_excel)
-    keywords_df = keywords_df[keywords_df['count'] >= word_count_limit]
+    keywords_df = keywords_df[keywords_df['COUNT'] >= word_count_limit]
     parsed_col_2 = []
     for keyword in list(keywords_df['TEXT']):
         keyword = str(keyword)

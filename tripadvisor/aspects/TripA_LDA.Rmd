@@ -19,8 +19,8 @@ library(textmineR)
 
 ```{r}
 # Aspects from TripA
-tripa_aspects_path <- "./tripadvisor/aspects_output/"
-tripa_aspects_csvs <- list.files(path = tripa_aspects_path, include.dirs = TRUE)[1:3]
+tripa_aspects_path <- "./tripadvisor/output/"
+tripa_aspects_csvs <- list.files(path = tripa_aspects_path, include.dirs = TRUE)[1]
 tripa_aspects_df <- data.frame(matrix(nrow = 0, ncol = 3))
 names(tripa_aspects_df) <- c("POI_INDEX", "ASPECTS", "ASPECTS_CRAWLED_TIME")
 
