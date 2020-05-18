@@ -1,0 +1,26 @@
+General:
+    host: localhost
+    database: sentimentDB
+    user: test_user
+    password: Password123!
+    chromedriver_path: ./chromedriver
+    thumb_dir: /media/jirong/Secure Key/stb_social_media
+
+
+
+Ctrip:
+    csv_input_path: ./crawling_list.csv
+    read_from_database: csv  # mysql, sqlite or csv
+    write_to_database: csv  # mysql, sqlite or csv
+    proxy_mode: 1 #1:SG, 2: SG->proxy; 3: proxy
+    timeout: 120 #in seconds, stop loading after limit reached. If None, always complete loading 
+    authen_count: 3 #reload time to test whether authentication error exist or not. Min 1
+    earliest_date:  2020-02-01 #the date rage
+
+
+# Scorer parameters
+    target_folder: '200418_220323'  # in the format 'yyymmdd_hhmmss'
+    continue_in_folder:   # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
+    continue_from_poi_index: 
+    continue_from_row_index: 
+    API_options: "overall_aspect" #"aspect","overall_aspect"

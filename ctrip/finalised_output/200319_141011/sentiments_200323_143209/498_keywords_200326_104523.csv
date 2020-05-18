@@ -1,0 +1,10 @@
+WEBSITE_ID,REVIEW_ID,TEXT,RELEVANCE,COUNT,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT
+2,67404,新加坡道教协会,0.710913,1,0,neutral,,,,,,
+2,67404,德会理事,0.670581,1,0,neutral,,,,,,
+2,67404,德楼,0.667336,2,0,neutral,,,,,,
+2,67404,象征性费用,0.631616,1,0,neutral,,,,,,
+2,67404,新加坡玉皇宫,0.454526,1,0,neutral,,,,,,
+2,67404,直落亚逸街天福宫,0.390716,1,0,neutral,,,,,,
+2,67404,玉皇宫,0.325839,1,0,neutral,,,,,,
+2,67404,当局,0.32551,1,0,neutral,,,,,,
+2,67404,以前,0.317862,1,0,neutral,,,,,,

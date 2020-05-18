@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar  9 11:44:03 2020
+
+@author: jia
+
+"""
+import os
+import pandas as pd
+from collections import Counter
+os.chdir('/home/jia/Desktop/git/STB_social_media_analytics/ctrip/')
+corpus=pd.read_csv('./corpus.txt',header=None)
+string1=' '.join(corpus.iloc[:,0])
+text=string1.split(' ')
+result=Counter(text).most_common()
+
+output=pd.DataFrame(columns=['KEYWORDS','FREQUENCY'])
+col_names=['KEYWORDS','FREQUENCY']
+
+for i in range(len(result)):
+    col_values=[result[i][0],result[i][1]]
+    freq_words_dict = dict(zip(col_names, col_values))
+    output = output.append(freq_words_dict, ignore_index=True)  
+
+
+  
+output.to_csv('./freq_word.csv',mode='a', index=False)

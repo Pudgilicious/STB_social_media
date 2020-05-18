@@ -1,0 +1,7 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,66636,Location,Singapore,0.968313,2,0.999815,0.908447,positive,0.026159,0.810122,0.050357,0.025418,0.076746,,,Singapore,http://dbpedia.org/resource/Singapore
+2,66636,Company,Michelin,0.732118,1,0.474513,0.911249,positive,0.012603,0.831797,0.04085,0.018586,0.026162,,['AwardPresentingOrganization'],Michelin,http://dbpedia.org/resource/Michelin
+2,66636,Organization,hawker centre,0.279932,1,0.453377,0.862237,positive,0.230759,0.439512,0.030064,0.12411,0.059748,,,,
+2,66637,Location,Singapore,0.968313,2,0.999815,0.908447,positive,0.026159,0.810122,0.050357,0.025418,0.076746,,,Singapore,http://dbpedia.org/resource/Singapore
+2,66637,Company,Michelin,0.732118,1,0.474513,0.911249,positive,0.012603,0.831797,0.04085,0.018586,0.026162,,['AwardPresentingOrganization'],Michelin,http://dbpedia.org/resource/Michelin
+2,66637,Organization,hawker centre,0.279932,1,0.453377,0.862237,positive,0.230759,0.439512,0.030064,0.12411,0.059748,,,,

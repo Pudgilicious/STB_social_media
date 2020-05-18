@@ -1,0 +1,367 @@
+Error in API call.
+POI index: 2, review ID: 0, row index: 0, time: 2020-03-16 18:11:15.520447
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: Forbidden, Code: 403
+
+Error in API call.
+POI index: 2, review ID: 349, row index: 349, time: 2020-03-16 18:17:49.876316
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 29410e4ad93fc6a81be2fea5dd3f6e1c
+
+Error in API call.
+POI index: 2, review ID: 737, row index: 737, time: 2020-03-16 18:25:14.092110
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: a603492e7772a00bf254d3ae645556af
+
+Error in API call.
+POI index: 2, review ID: 0, row index: 0, time: 2020-03-16 21:41:25.285315
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: Forbidden, Code: 403
+
+Error in API call.
+POI index: 2, review ID: 349, row index: 349, time: 2020-03-16 21:47:22.772119
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 75f38f3a93a5e054c4fbee9904747e4c
+
+Error in API call.
+POI index: 2, review ID: 737, row index: 737, time: 2020-03-16 21:54:32.140765
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 4ff48f1fac773392d0035fd8de3908a6
+
+Error in API call.
+POI index: 2, review ID: 1080, row index: 1080, time: 2020-03-16 22:38:58.826288
+Traceback (most recent call last):
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
+    raise timeout("The read operation timed out")
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 423, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/urllib3/connectionpool.py", line 331, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='gateway.watsonplatform.net', port=443): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 136, in send
+    response = requests.request(**request, cookies=self.jar, **kwargs)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='gateway.watsonplatform.net', port=443): Read timed out. (read timeout=60)
+
+Error in API call.
+POI index: 2, review ID: 1154, row index: 1154, time: 2020-03-16 22:40:21.864212
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: fc154fc8d5ac7a143ffe879f40d13cc3
+
+Error in API call.
+POI index: 2, review ID: 1157, row index: 1157, time: 2020-03-16 22:40:24.500133
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: c201b7b2e483c6f6bfa658c803b20f99
+
+Error in API call.
+POI index: 2, review ID: 1167, row index: 1167, time: 2020-03-16 22:40:34.265324
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: c048c3e1e614429413ccc6680e4c41c2
+
+Error in API call.
+POI index: 2, review ID: 1168, row index: 1168, time: 2020-03-16 22:40:34.763450
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: df0f9e1dcdb7da53fb88543b2566a711
+
+Error in API call.
+POI index: 2, review ID: 1175, row index: 1175, time: 2020-03-16 22:40:40.959100
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 2376dd940c35bd0478e077772ab536a1
+
+Error in API call.
+POI index: 2, review ID: 1177, row index: 1177, time: 2020-03-16 22:40:42.421483
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: e5cdab48b1e1c51b6c86cbb1a11c1b00
+
+Error in API call.
+POI index: 2, review ID: 1180, row index: 1180, time: 2020-03-16 22:40:44.223439
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: f12f891a9883cdd1f2add76196b46399
+
+Error in API call.
+POI index: 2, review ID: 1181, row index: 1181, time: 2020-03-16 22:40:44.869432
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 125393df63b9312ff63ba3a93af47c07
+
+Error in API call.
+POI index: 2, review ID: 1184, row index: 1184, time: 2020-03-16 22:40:47.755558
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 39ee819ddb2528ba9f50b0374f8094cb
+
+Error in API call.
+POI index: 2, review ID: 1191, row index: 1191, time: 2020-03-16 22:40:54.645622
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: d1054fe297ac1d7541215c92a9f3c494
+
+Error in API call.
+POI index: 2, review ID: 1195, row index: 1195, time: 2020-03-16 22:40:58.617583
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 9ec7e7fe4cd42c2d55e6f3f97c485d2c
+
+Error in API call.
+POI index: 2, review ID: 1198, row index: 1198, time: 2020-03-16 22:41:01.293558
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 644a89c8407f6869bc9b7b14ea220542
+
+Error in API call.
+POI index: 2, review ID: 1200, row index: 1200, time: 2020-03-16 22:41:03.009577
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: f5449e8b9d2f5ae3eaeec38e0a668ab3
+
+Error in API call.
+POI index: 2, review ID: 1207, row index: 1207, time: 2020-03-16 22:41:09.541909
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 091b2a96327b3082215d64fd6a49ed2d
+
+Error in API call.
+POI index: 2, review ID: 1629, row index: 1629, time: 2020-03-16 22:49:01.066809
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: not enough text for language id, Code: 422 , X-global-transaction-id: 0703c834d1928e2d630ae165319343b0
+
+Error in API call.
+POI index: 2, review ID: 1661, row index: 1661, time: 2020-03-16 22:49:37.643074
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: unsupported text language: unknown, Code: 400 , X-global-transaction-id: 8315f619e04337bf92bfb2f0dca94e88
+
+Error in API call.
+POI index: 2, review ID: 2872, row index: 2872, time: 2020-03-16 23:13:29.364987
+Traceback (most recent call last):
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 307, in score_sentiments_1_poi
+    self.get_api_response()
+  File "./common_class_functions/ibm_sentiment_scorer.py", line 381, in get_api_response
+    sentiment=SentimentOptions(document=True)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_watson/natural_language_understanding_v1.py", line 186, in analyze
+    response = self.send(request)
+  File "/home/jia/anaconda3/envs/crawl/lib/python3.7/site-packages/ibm_cloud_sdk_core/base_service.py", line 157, in send
+    response.status_code, error_message, http_response=response)
+ibm_cloud_sdk_core.api_exception.ApiException: Error: <HTML><HEAD>
+<TITLE>Internal Server Error</TITLE>
+</HEAD><BODY>
+<H1>Internal Server Error - Read</H1>
+The server encountered an internal error or misconfiguration and was unable to
+complete your request.<P>
+Reference&#32;&#35;3&#46;5f267368&#46;1584371609&#46;2c428b3d
+</BODY></HTML>
+, Code: 500
+

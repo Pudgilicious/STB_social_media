@@ -1,0 +1,10 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,4892,GeographicFeature,黄浦江,0.958279,1,,0,neutral,,,,,,,,,
+2,4892,Facility,外滩,0.677131,1,,0,neutral,,,,,,,,,
+2,4892,Facility,南京路附近,0.203737,1,,0,neutral,,,,,,,,,
+2,5035,Person,知名的世界建筑,0.958279,1,,0,neutral,,,,,,,,,
+2,5035,Person,小蛮腰,0.540798,1,,0,neutral,,,,,,,,,
+2,5035,Person,夜景更美,0.116284,1,,0,neutral,,,,,,,,,
+2,5425,Person,夜景更迷人,0.978348,1,,0,neutral,,,,,,,,,
+2,5639,Person,完美,0.978348,1,,0,neutral,,,,,,,,,
+2,7045,Ordinal,第一次,0.978348,1,,0,neutral,,,,,,,,,

@@ -1,0 +1,13 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,14975,Person,看完大熊猫,0.963296,1,,0,neutral,,,,,,,,,
+2,14975,Person,🐼,,1,,0,neutral,,,,,,,,,
+2,15032,Person,熊猫萌萌哒,0.978348,1,,0,neutral,,,,,,,,,
+2,15053,Facility,成都大熊猫繁育研究基地,0.978348,1,,0,neutral,,,,,,,,,
+2,15054,Facility,成都大熊猫繁育研究基地,0.978348,1,,0,neutral,,,,,,,,,
+2,15073,Person,大熊猫就,0.978348,1,,0,neutral,,,,,,,,,
+2,15081,Person,熊猫有,0.978348,1,,0,neutral,,,,,,,,,
+2,15115,Person,必去景,0.978348,1,,0,neutral,,,,,,,,,
+2,15168,Facility,来成都大熊猫基地,0.978348,1,,0,neutral,,,,,,,,,
+2,15194,Person,大熊猫繁,0.978348,1,,0,neutral,,,,,,,,,
+2,15360,Person,熊猫萌萌哒,0.978348,1,,0,neutral,,,,,,,,,
+2,15418,Person,熊猫宝宝太可,0.978348,1,,0,neutral,,,,,,,,,

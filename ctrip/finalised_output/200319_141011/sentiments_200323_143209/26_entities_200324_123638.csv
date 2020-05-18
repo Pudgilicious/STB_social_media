@@ -1,0 +1,8 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,40526,Person,期望与失望成正比,0.978348,1,,-0.862888,negative,,,,,,,,,
+2,40920,Person,可以不看,0.978348,1,,0,neutral,,,,,,,,,
+2,41106,Facility,！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,41989,Facility,！！！！！！！！！！！！！！！,0.978348,1,,0,neutral,,,,,,,,,
+2,42031,Person,值得看！！,0.978348,1,,0.671186,positive,,,,,,,,,
+2,42332,Person,只能用神奇形容,0.963296,1,,0,neutral,,,,,,,,,
+2,42332,Person,都完美,0.56879,1,,0,neutral,,,,,,,,,

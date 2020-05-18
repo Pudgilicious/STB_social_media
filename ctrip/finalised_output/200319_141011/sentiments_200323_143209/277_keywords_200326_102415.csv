@@ -1,0 +1,10 @@
+WEBSITE_ID,REVIEW_ID,TEXT,RELEVANCE,COUNT,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT
+2,66273,华裔馆,0.963069,1,0.975138,positive,,,,,,
+2,66273,历史的窗口平台,0.645478,1,0.975138,positive,,,,,,
+2,66273,全球旅客,0.616847,1,0.975138,positive,,,,,,
+2,66273,国人,0.110405,1,0.975138,positive,,,,,,
+2,66273,精神,0.095361,1,0.975138,positive,,,,,,
+2,66274,早期中国移民,0.709089,1,0.621824,positive,,,,,,
+2,66274,文化世界,0.458241,1,0.621824,positive,,,,,,
+2,66274,南洋大学的行政楼,0.439547,1,0.621824,positive,,,,,,
+2,66274,其中有一些中国移民文化的展品,0.382126,1,0.621824,positive,,,,,,

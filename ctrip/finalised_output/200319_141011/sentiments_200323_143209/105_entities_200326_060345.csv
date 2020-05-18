@@ -1,0 +1,10 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,60377,Facility,Changi airport,0.963296,1,0.917326,0.617608,positive,0.364301,0.068165,0.200751,0.096678,0.046029,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60377,Quantity,4 hours,0.433434,1,0.8,0.870193,positive,0.234103,0.47819,0.179795,0.054399,0.095203,,,,
+2,60405,Facility,Changi airport,0.958279,1,0.908357,0.937535,positive,0.111917,0.697126,0.043405,0.016,0.131937,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60405,Quantity,20 minute,0.799981,1,0.8,-0.426915,negative,0.123959,0.390893,0.201628,0.316613,0.13376,,,,
+2,60405,Quantity,3 minutes,0.383841,1,0.8,0.609798,positive,0.123959,0.390893,0.201628,0.316613,0.13376,1,,,
+2,60406,GeographicFeature,Forest Valley,0.95577,1,0.281349,0.0,neutral,0.164754,0.349092,0.261067,0.013826,0.039473,,,,
+2,60406,Facility,Singapore Airport,0.899484,1,0.467516,0.0,neutral,0.164754,0.349092,0.261067,0.013826,0.039473,,"['Location', 'TransportTerminus', 'Airport']",Singapore_Changi_Airport,http://dbpedia.org/resource/Singapore_Changi_Airport
+2,60406,Quantity,40 meters,0.486602,1,0.8,0.679138,positive,0.159969,0.379448,0.128457,0.21225,0.131556,,,,
+2,60406,Company,HSBC,0.476991,1,0.896044,0.0,neutral,0.164754,0.349092,0.261067,0.013826,0.039473,,,,

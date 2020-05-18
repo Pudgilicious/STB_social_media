@@ -30,14 +30,14 @@ os.getcwd()
 
 
 #input data and change to string
-os.chdir('/home/jia/Desktop/git/STB_social_media_analytics/ctrip/200216_102752/reviews')
+os.chdir('/home/jia/Desktop/git/STB_social_media_analytics/ctrip/finalised_output/200216_102752/reviews')
 data=pd.read_csv('./1.csv')
 
 #read all the review files
-path = '/home/jia/Desktop/git/STB_social_media_analytics/ctrip/200216_102752/reviews'
+file_path = '/home/jia/Desktop/git/STB_social_media_analytics/ctrip/finalised_output/200216_102752/reviews'
 for i in range(2,519):
     try:
-        data=data.append(pd.read_csv(path+'/{}.csv'.format(i)))
+        data=data.append(pd.read_csv(file_path+'/{}.csv'.format(i)))
     except:
         print(str(i)+' not exist')
         continue
@@ -65,18 +65,22 @@ def jiebaclearText(text,stoplist):
 
 pos=[]
 for i in range(len(string1)):
-    pos.append(jiebaclearText(string1[i],stop))
+    seg_list=jieba.cut(string1[i], use_paddle=True)
+    sentence=' '.join(list(seg_list))
+    pos.append(sentence)
+    #pos.append(jiebaclearText(string1[i],stop))
+print(pos)
 #editing corpus
 punc = "！？｡。＂＃＄％＆＇（）＊＋，－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏."
 punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
-punc=punc+punctuation
+punc=punc+punctuations
 corpus=[]
 for i in range(len(pos)):
    corpus.append(pos[i].translate(pos[i].maketrans("","", punc)))
 
 corpus = list(filter(None, corpus))
 
- with open('corpus.txt', 'w') as filehandle:
+with open('corpus.txt', 'w') as filehandle:
     for listitem in corpus:
         filehandle.write('%s\n' % listitem)
 #text1=' '.join(pos)

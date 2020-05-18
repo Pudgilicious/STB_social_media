@@ -1,0 +1,11 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,17268,Person,宫真是百,0.963296,1,,0,neutral,,,,,,,,,
+2,17268,Duration,厌～～～～～～～～～,0.373383,1,,0,neutral,,,,,,,,,
+2,17415,Location,豪,0.978348,1,,0,neutral,,,,,,,,,
+2,17517,Person,太美了,0.978348,1,,0,neutral,,,,,,,,,
+2,17558,Person,完美,0.978348,1,,0,neutral,,,,,,,,,
+2,17953,Person,地方太大,0.963296,1,,0,neutral,,,,,,,,,
+2,17953,Person,有点累,0.134724,1,,0,neutral,,,,,,,,,
+2,17960,Location,中国人都要来的地方,0.978348,1,,0,neutral,,,,,,,,,
+2,18130,Location,中国人必去的地方,0.978348,1,,0,neutral,,,,,,,,,
+2,18541,Person,嗯ヽ,0.978348,1,,0,neutral,,,,,,,,,

@@ -16,7 +16,7 @@ TripAdvisor:
     number_of_pages:  # int or None. if 0, only Attributes are crawled.
 
     # Scorer parameters
-    target_folder: '200125_142611'  # in the format 'yyymmdd_hhmmss'
+    target_folder: '200129_102527'  # in the format 'yyymmdd_hhmmss'
     continue_in_folder: # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
     continue_from_poi_index:
     continue_from_row_index:
@@ -30,11 +30,11 @@ Ctrip:
     timeout: 120 #in seconds, stop loading after limit reached. If None, always complete loading 
     authen_count: 3 #reload time to test whether authentication error exist or not. Min 1
     prioritize: TRUE #True, only crawl prioritized POIs;False, crawl all POIs
-    
+    earliest_date:  #the date rage
 
 # Scorer parameters
-    target_folder: 'sentiment'  # in the format 'yyymmdd_hhmmss'
-    continue_in_folder: # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
-    continue_from_poi_index:
-    continue_from_row_index:
-    API_options: "overall" #"aspect","overall_aspect"
+    target_folder: '200319_141011'  # in the format 'yyymmdd_hhmmss'
+    continue_in_folder:   # in the format 'yyymmdd_hhmmss' (no need to prepend 'sentiment')
+    continue_from_poi_index: 
+    continue_from_row_index: 
+    API_options: "overall_aspect" #"aspect","overall_aspect"

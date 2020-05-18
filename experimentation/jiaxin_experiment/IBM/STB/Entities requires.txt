@@ -1,0 +1,48 @@
+- Are we able to identify key words/ entities?
+- Assign it to category
+- Find the sentiment score at the key words/ entities level?
+- Find the sentiment score at the overall review level?
+- Are we able to import customised dictionary? E.g. K-Cups is tied to product directly
+
+************************************************************************************************
+Sightseeing - view of the place, aesthetics, scenery, ambience
+Transportation - getting there
+Service Quality
+F&B - food only
+Shopping / Retail - all except food
+Accesibility - info availability, opening hours, information accesibility
+Facilities - washroom, aircon, wheelchair accesibility, 
+Cultural shows - events, performances and tours
+Price - affordability, value of money, ticket prices
+
+**************************************************************************************************
+
+Annotation overlap - task creation and review
+
+***************************************************************************************************
+Agenda:
+
+1. Overview of IBM Offerings in text analytics - Intro (5 min) 2 slides
+2. Service details: (60 min)
+	a) Watson Discover
+	b) Watson NLU
+	c) Watson Tone Analyzer
+	d) Watson NLC
+	c) Watson Knowledge Studio
+3. Demo - STB dataset (1 hr)
+4. Hands on using STB dataset ( 1hr)
+5. Q&A (15 min) & Wrap up
+
+Pre-reqs
+
+1. Internet Access
+2. IBM Cloud Account - all participants should sign up on cloud.ibm.com free account
+3. Laptop with Chrome or Firefox
+
+send deck tomorrow
+custom models with sentiments
+Methodology 
+Chinese sentiment analysis - during POC: DSE
+Languages covered
+sentiment score at keyword level and overall
+

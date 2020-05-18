@@ -1,0 +1,8 @@
+WEBSITE_ID,REVIEW_ID,TYPE,TEXT,RELEVANCE,COUNT,CONFIDENCE,SENTIMENT_SCORE,SENTIMENT_LABEL,SADNESS,JOY,FEAR,DISGUST,ANGER,MIXED_SENTIMENT,DISAMBIGUATION_SUBTYPE,DISAMBIGUATION_NAME,DISAMBIGUATION_RESOURCE
+2,11537,Location,上海,0.963296,1,,0,neutral,,,,,,,,,
+2,11537,Person,手信全都有,0.436571,1,,0,neutral,,,,,,,,,
+2,11581,Person,手信,0.958279,1,,0,neutral,,,,,,,,,
+2,11581,Location,上海,0.937486,1,,0,neutral,,,,,,,,,
+2,11581,Facility,美食一条街,0.423125,1,,0,neutral,,,,,,,,,
+2,11784,Facility,老上海的味道,0.978348,1,,0,neutral,,,,,,,,,
+2,11964,Person,性价比,0.978348,1,,0,neutral,,,,,,,,,
